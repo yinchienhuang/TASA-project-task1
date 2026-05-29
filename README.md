@@ -2,6 +2,8 @@
 
 A web-based Space Situational Awareness (SSA) platform for tracking, analyzing, and visualizing satellite activity. Combines 3D orbital visualization, a structured knowledge graph, AI-powered analysis, and NOTAM-based restricted area mapping.
 
+![TASA Screenshot](docs/Screenshot.png)
+
 ---
 
 ## Features
