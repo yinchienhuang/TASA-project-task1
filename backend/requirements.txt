@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+sgp4
+numpy
+requests
+apscheduler
+openai
+pyyaml
+pymupdf
+python-multipart
+python-dotenv
+beautifulsoup4
+lxml

@@ -1,0 +1,1574 @@
+{
+  "sha_af580fe7b2250bcf": {
+    "source_id": "sha_af580fe7b2250bcf",
+    "file": "docs/sha_af580fe7b2250bcf.json",
+    "ingested_at": "2026-04-20T13:30:40.124355+00:00",
+    "type": "report",
+    "title": "https://www.nasaspaceflight.com/2026/04/ng-3-launch/",
+    "url": "https://www.nasaspaceflight.com/2026/04/ng-3-launch/",
+    "date": "2026-04-20",
+    "news_site": ""
+  },
+  "sha_bc5d53540eedd9ca": {
+    "source_id": "sha_bc5d53540eedd9ca",
+    "file": "docs/sha_bc5d53540eedd9ca.json",
+    "ingested_at": "2026-04-20T13:41:55.934117+00:00",
+    "type": "report",
+    "title": "https://spacenews.com/china-launches-new-group-of-classified-yaogan-30-satellites/",
+    "url": "https://spacenews.com/china-launches-new-group-of-classified-yaogan-30-satellites/",
+    "date": "2026-04-20",
+    "news_site": ""
+  },
+  "sha_f4f1d0e40e1b15b8": {
+    "source_id": "sha_f4f1d0e40e1b15b8",
+    "file": "docs/sha_f4f1d0e40e1b15b8.json",
+    "ingested_at": "2026-04-20T13:44:05.780241+00:00",
+    "type": "report",
+    "title": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-artemis-ii-human-research-data-methodology-challenge/",
+    "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-artemis-ii-human-research-data-methodology-challenge/",
+    "date": "2026-04-20",
+    "news_site": ""
+  },
+  "sha_4f5d7d8d3adfdb57": {
+    "source_id": "sha_4f5d7d8d3adfdb57",
+    "file": "docs/sha_4f5d7d8d3adfdb57.json",
+    "ingested_at": "2026-04-20T13:45:18.140717+00:00",
+    "type": "report",
+    "title": "https://europeanspaceflight.com/avio-to-launch-four-earth-observation-satellites-for-taiwan/",
+    "url": "https://europeanspaceflight.com/avio-to-launch-four-earth-observation-satellites-for-taiwan/",
+    "date": "2026-04-20",
+    "news_site": ""
+  },
+  "sha_464c378eabfdeb3d": {
+    "source_id": "sha_464c378eabfdeb3d",
+    "file": "docs/sha_464c378eabfdeb3d.json",
+    "ingested_at": "2026-04-20T13:59:55.113670+00:00",
+    "type": "report",
+    "title": "https://www.nasaspaceflight.com/2019/07/long-march-2c-yaogan-30-group-05-satellites/",
+    "url": "https://www.nasaspaceflight.com/2019/07/long-march-2c-yaogan-30-group-05-satellites/",
+    "date": "2026-04-20",
+    "news_site": ""
+  },
+  "snapi_37603": {
+    "source_id": "snapi_37603",
+    "file": "docs/snapi_37603.json",
+    "ingested_at": "2026-04-21T20:22:31.327057+00:00",
+    "type": "news",
+    "title": "NASA’s Hubble Dazzles With Young Stars in Trifid Nebula",
+    "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-dazzles-with-young-stars-in-trifid-nebula/",
+    "date": "2026-04-20T14:01:01Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "20580"
+    ]
+  },
+  "sha_ce149fad26ca2b9c": {
+    "source_id": "sha_ce149fad26ca2b9c",
+    "file": "docs/sha_ce149fad26ca2b9c.json",
+    "ingested_at": "2026-04-20T14:19:46.064368+00:00",
+    "type": "report",
+    "title": "https://science.nasa.gov/missions/libera/nasa-earth-energy-instrument-completes-testing-ready-for-delivery/",
+    "url": "https://science.nasa.gov/missions/libera/nasa-earth-energy-instrument-completes-testing-ready-for-delivery/",
+    "date": "2026-04-20",
+    "news_site": ""
+  },
+  "sha_f470746cedbaecd1": {
+    "source_id": "sha_f470746cedbaecd1",
+    "file": "docs/sha_f470746cedbaecd1.json",
+    "ingested_at": "2026-04-20T14:43:19.724457+00:00",
+    "type": "report",
+    "title": "https://www.cnsa.gov.cn/n6758823/n6758838/c10739812/content.html",
+    "url": "https://www.cnsa.gov.cn/n6758823/n6758838/c10739812/content.html",
+    "date": "2026-04-20",
+    "news_site": ""
+  },
+  "snapi_37608": {
+    "source_id": "snapi_37608",
+    "file": "docs/snapi_37608.json",
+    "ingested_at": "2026-04-20T18:16:44.799718+00:00",
+    "type": "news",
+    "title": "NASA Invites Media to SpaceX’s 34th Resupply Launch to Space Station",
+    "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-spacexs-34th-resupply-launch-to-space-station/",
+    "date": "2026-04-20T18:02:28Z",
+    "news_site": "NASA"
+  },
+  "sha_15bee02539f07db9": {
+    "source_id": "sha_15bee02539f07db9",
+    "file": "docs/sha_15bee02539f07db9.json",
+    "ingested_at": "2026-04-20T18:27:54.831511+00:00",
+    "type": "report",
+    "title": "NASA’s Hubble Dazzles With Young Stars in Trifid Nebula",
+    "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-dazzles-with-young-stars-in-trifid-nebula/",
+    "date": "2026-04-20",
+    "news_site": ""
+  },
+  "snapi_36994": {
+    "source_id": "snapi_36994",
+    "file": "docs/snapi_36994.json",
+    "ingested_at": "2026-04-20T18:40:26.577792+00:00",
+    "type": "news",
+    "title": "NASA’s Hubble Revisits Crab Nebula to Track 25 Years of Expansion",
+    "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-revisits-crab-nebula-to-track-25-years-of-expansion/",
+    "date": "2026-03-23T14:00:54Z",
+    "news_site": "NASA"
+  },
+  "snapi_35079": {
+    "source_id": "snapi_35079",
+    "file": "docs/snapi_35079.json",
+    "ingested_at": "2026-04-20T18:40:34.652416+00:00",
+    "type": "news",
+    "title": "TanDEM X marks 15 years mapping Earth in 3D",
+    "url": "https://www.spacedaily.com/reports/TanDEM_X_marks_15_years_mapping_Earth_in_3D_999.html",
+    "date": "2026-01-01T11:20:58Z",
+    "news_site": "SpaceDaily"
+  },
+  "snapi_37000": {
+    "source_id": "snapi_37000",
+    "file": "docs/snapi_37000.json",
+    "ingested_at": "2026-04-20T18:40:39.306914+00:00",
+    "type": "news",
+    "title": "NASA’s Hubble, Webb Telescopes Survey Pinwheel Galaxy",
+    "url": "https://www.nasa.gov/image-article/nasas-hubble-webb-telescopes-survey-pinwheel-galaxy/",
+    "date": "2026-03-23T16:32:17Z",
+    "news_site": "NASA"
+  },
+  "snapi_36871": {
+    "source_id": "snapi_36871",
+    "file": "docs/snapi_36871.json",
+    "ingested_at": "2026-04-20T18:40:53.124236+00:00",
+    "type": "news",
+    "title": "New Moog Innovations for the Satellite Market on Full Display at SATELLITE 2026 Conference",
+    "url": "https://spacenews.com/new-moog-innovations-for-the-satellite-market-on-full-display-at-satellite-2026-conference/",
+    "date": "2026-03-16T12:00:00Z",
+    "news_site": "SpaceNews"
+  },
+  "snapi_34590": {
+    "source_id": "snapi_34590",
+    "file": "docs/snapi_34590.json",
+    "ingested_at": "2026-04-20T18:40:57.203052+00:00",
+    "type": "news",
+    "title": "RISTRETTO spectrograph cleared for Proxima b atmospheric hunt",
+    "url": "https://www.spacedaily.com/reports/RISTRETTO_spectrograph_cleared_for_Proxima_b_atmospheric_hunt_999.html",
+    "date": "2025-12-09T04:08:14Z",
+    "news_site": "SpaceDaily"
+  },
+  "snapi_36901": {
+    "source_id": "snapi_36901",
+    "file": "docs/snapi_36901.json",
+    "ingested_at": "2026-04-20T18:41:03.132201+00:00",
+    "type": "news",
+    "title": "Sirius Space Services Acquires AMM-42 as It Prepares for Inaugural Flight",
+    "url": "https://europeanspaceflight.com/sirius-space-services-acquires-amm-42-as-it-prepares-for-inaugural-flight/",
+    "date": "2026-03-17T14:22:19Z",
+    "news_site": "European Spaceflight"
+  },
+  "snapi_36917": {
+    "source_id": "snapi_36917",
+    "file": "docs/snapi_36917.json",
+    "ingested_at": "2026-04-20T18:41:11.123868+00:00",
+    "type": "news",
+    "title": "NASA’s Hubble Unexpectedly Catches Comet Breaking Up",
+    "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-unexpectedly-catches-comet-breaking-up/",
+    "date": "2026-03-18T14:00:36Z",
+    "news_site": "NASA"
+  },
+  "snapi_37309": {
+    "source_id": "snapi_37309",
+    "file": "docs/snapi_37309.json",
+    "ingested_at": "2026-04-20T18:41:21.209569+00:00",
+    "type": "news",
+    "title": "Moog Highlights Growing Satellite Bus Capabilities with Full‑Scale METEOR Reveal at Space Symposium",
+    "url": "https://spacenews.com/moog-highlights-growing-satellite-bus-capabilities-with-full-scale-meteor-reveal-at-space-symposium/",
+    "date": "2026-04-06T19:19:49Z",
+    "news_site": "SpaceNews"
+  },
+  "snapi_37437": {
+    "source_id": "snapi_37437",
+    "file": "docs/snapi_37437.json",
+    "ingested_at": "2026-04-20T18:41:28.569507+00:00",
+    "type": "news",
+    "title": "Moog Technology Keeps Artemis II Astronauts Safe During Historic Lunar Mission",
+    "url": "https://spacenews.com/moog-technology-keeps-artemis-ii-astronauts-safe-during-historic-lunar-mission/",
+    "date": "2026-04-11T00:41:38Z",
+    "news_site": "SpaceNews"
+  },
+  "sha_30fd8e1a6e0f5b45": {
+    "source_id": "sha_30fd8e1a6e0f5b45",
+    "file": "docs/sha_30fd8e1a6e0f5b45.json",
+    "ingested_at": "2026-04-20T18:46:23.496972+00:00",
+    "type": "report",
+    "title": "China launches three more Yaogan spysats",
+    "url": "https://spaceflightnow.com/2021/07/25/china-launches-three-more-yaogan-spysats/",
+    "date": "2026-04-20",
+    "news_site": ""
+  },
+  "snapi_37050": {
+    "source_id": "snapi_37050",
+    "file": "docs/snapi_37050.json",
+    "ingested_at": "2026-04-20T18:56:02.484690+00:00",
+    "type": "news",
+    "title": "NASA Awards Astrophysics Postdoctoral Fellowships for 2026",
+    "url": "https://science.nasa.gov/missions/hubble/nasa-awards-astrophysics-postdoctoral-fellowships-for-2026/",
+    "date": "2026-03-25T16:00:08Z",
+    "news_site": "NASA"
+  },
+  "snapi_36578": {
+    "source_id": "snapi_36578",
+    "file": "docs/snapi_36578.json",
+    "ingested_at": "2026-04-20T18:57:17.016721+00:00",
+    "type": "news",
+    "title": "Two Observatories, One Cosmic Eye: Hubble and Euclid View Cat’s Eye Nebula",
+    "url": "https://science.nasa.gov/missions/hubble/two-observatories-one-cosmic-eye-hubble-and-euclid-view-cats-eye-nebula/",
+    "date": "2026-03-03T14:00:09Z",
+    "news_site": "NASA"
+  },
+  "sha_5d451e3be09139c7": {
+    "source_id": "sha_5d451e3be09139c7",
+    "file": "docs/sha_5d451e3be09139c7.json",
+    "ingested_at": "2026-04-20T20:05:20.962975+00:00",
+    "type": "report",
+    "title": "China launches latest trio of Yaogan-30 remote sensing satellites",
+    "url": "https://spacenews.com/china-launches-latest-trio-of-yaogan-30-remote-sensing-satellites/",
+    "date": "2026-04-20",
+    "news_site": ""
+  },
+  "sha_b6e32b21c1a73b5f": {
+    "source_id": "sha_b6e32b21c1a73b5f",
+    "file": "docs/sha_b6e32b21c1a73b5f.json",
+    "ingested_at": "2026-04-20T20:05:30.455633+00:00",
+    "type": "report",
+    "title": "China launches Chang Zheng 2C with trio of Yaogan-30 satellites",
+    "url": "https://www.nasaspaceflight.com/2021/06/yaogan-30-group-9/",
+    "date": "2026-04-20",
+    "news_site": ""
+  },
+  "sha_ff92db2ffdf3247e": {
+    "source_id": "sha_ff92db2ffdf3247e",
+    "file": "docs/sha_ff92db2ffdf3247e.json",
+    "ingested_at": "2026-04-20T23:43:31.744193+00:00",
+    "type": "report",
+    "title": "https://www.friendsofnasa.org/2026/04/china-launches-high-precision.html?m=1",
+    "url": "https://www.friendsofnasa.org/2026/04/china-launches-high-precision.html?m=1",
+    "date": "2026-04-20",
+    "news_site": ""
+  },
+  "sha_56a8b9a1ea2f120e": {
+    "source_id": "sha_56a8b9a1ea2f120e",
+    "file": "docs/sha_56a8b9a1ea2f120e.json",
+    "ingested_at": "2026-04-21T00:20:37.392164+00:00",
+    "type": "report",
+    "title": "https://zh.wikipedia.org/zh-tw/%E7%A6%8F%E7%88%BE%E6%91%A9%E6%B2%99%E8%A1%9B%E6%98%9F%E4%B8%83%E8%99%9F",
+    "url": "https://zh.wikipedia.org/zh-tw/%E7%A6%8F%E7%88%BE%E6%91%A9%E6%B2%99%E8%A1%9B%E6%98%9F%E4%B8%83%E8%99%9F",
+    "date": "2026-04-21",
+    "news_site": ""
+  },
+  "sha_59221c2b228a2c2f": {
+    "source_id": "sha_59221c2b228a2c2f",
+    "file": "docs/sha_59221c2b228a2c2f.json",
+    "ingested_at": "2026-04-21T13:22:05.819595+00:00",
+    "type": "report",
+    "title": "https://mmb.dragonarmy.rocks/notso/77bb0aae-8690-4800-9f4e-86618afb5c03",
+    "url": "https://mmb.dragonarmy.rocks/notso/77bb0aae-8690-4800-9f4e-86618afb5c03",
+    "date": "2026-04-21",
+    "news_site": ""
+  },
+  "sha_18af273a1f413dc4": {
+    "source_id": "sha_18af273a1f413dc4",
+    "file": "docs/sha_18af273a1f413dc4.json",
+    "ingested_at": "2026-04-21T13:52:31.077686+00:00",
+    "type": "wikipedia",
+    "title": "COSMIC-2",
+    "url": "https://en.wikipedia.org/wiki/COSMIC-2",
+    "date": "2026-03-27",
+    "news_site": "en.wikipedia.org"
+  },
+  "sha_0ea3665e575ed4d2": {
+    "source_id": "sha_0ea3665e575ed4d2",
+    "file": "docs/sha_0ea3665e575ed4d2.json",
+    "ingested_at": "2026-04-21T15:58:28.285850+00:00",
+    "type": "wikipedia",
+    "title": "Yaogan",
+    "url": "https://en.wikipedia.org/wiki/Yaogan",
+    "date": "2026-04-12",
+    "news_site": "en.wikipedia.org"
+  },
+  "sha_a7eb59c17a9664c6": {
+    "source_id": "sha_a7eb59c17a9664c6",
+    "file": "docs/sha_a7eb59c17a9664c6.json",
+    "ingested_at": "2026-04-21T19:28:09.046502+00:00",
+    "type": "report",
+    "title": "2026年1月16日04时10分，星河动力航天公司在山东日照近海海域（海龙湾海域）使用由烟台海阳东方航天港总装出厂的谷神…",
+    "url": "",
+    "date": "2026-04-21",
+    "news_site": ""
+  },
+  "snapi_37619": {
+    "source_id": "snapi_37619",
+    "file": "docs/snapi_37619.json",
+    "ingested_at": "2026-04-21T19:42:32.990009+00:00",
+    "type": "news",
+    "title": "A Fresh Look at the Crab Nebula",
+    "url": "https://www.nasa.gov/image-article/a-fresh-look-at-the-crab-nebula/",
+    "date": "2026-04-21T15:30:12Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "20580"
+    ]
+  },
+  "sha_445a872f380c7c81": {
+    "source_id": "sha_445a872f380c7c81",
+    "file": "docs/sha_445a872f380c7c81.json",
+    "ingested_at": "2026-04-21T19:43:10.395895+00:00",
+    "type": "report",
+    "title": "TIANQI-6, 46810 is a payload satellite owned by Guodian Gaok…",
+    "url": "",
+    "date": "2026-04-21",
+    "news_site": ""
+  },
+  "snapi_10046": {
+    "source_id": "snapi_10046",
+    "file": "docs/snapi_10046.json",
+    "ingested_at": "2026-04-21T20:22:33.942200+00:00",
+    "type": "news",
+    "title": "China tests fairing recovery technologies on Long March 2C launch with four satellites",
+    "url": "https://www.nasaspaceflight.com/2021/07/china-fairing-recovery-long-march-2c/",
+    "date": "2021-07-19T04:19:28Z",
+    "news_site": "NASASpaceflight",
+    "related_norad_ids": [
+      "41473",
+      "tianqi_constellation"
+    ]
+  },
+  "snapi_13413": {
+    "source_id": "snapi_13413",
+    "file": "docs/snapi_13413.json",
+    "ingested_at": "2026-04-21T20:22:36.842404+00:00",
+    "type": "news",
+    "title": "China launches pair of experimental satellites on Chang Zheng 7A",
+    "url": "https://www.nasaspaceflight.com/2021/12/experimental-sats-cz-7a/",
+    "date": "2021-12-23T19:03:36Z",
+    "news_site": "NASASpaceflight",
+    "related_norad_ids": [
+      "50321",
+      "50322",
+      "shiyan_12_series"
+    ]
+  },
+  "snapi_37602": {
+    "source_id": "snapi_37602",
+    "file": "docs/snapi_37602.json",
+    "ingested_at": "2026-04-21T20:22:44.381887+00:00",
+    "type": "news",
+    "title": "Hubble turns 36 with a dazzling Trifid Nebula portrait",
+    "url": "https://www.esa.int/Science_Exploration/Space_Science/Hubble_turns_36_with_a_dazzling_Trifid_Nebula_portrait",
+    "date": "2026-04-20T14:00:00Z",
+    "news_site": "ESA",
+    "related_norad_ids": [
+      "20580"
+    ]
+  },
+  "snapi_37456": {
+    "source_id": "snapi_37456",
+    "file": "docs/snapi_37456.json",
+    "ingested_at": "2026-04-21T20:22:57.940926+00:00",
+    "type": "news",
+    "title": "Hubble Spies an Active Spiral",
+    "url": "https://science.nasa.gov/missions/hubble/hubble-spies-an-active-spiral/",
+    "date": "2026-04-13T12:24:40Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "20580"
+    ]
+  },
+  "snapi_37076": {
+    "source_id": "snapi_37076",
+    "file": "docs/snapi_37076.json",
+    "ingested_at": "2026-04-21T20:23:14.314839+00:00",
+    "type": "news",
+    "title": "NASA’s Hubble Detects First-Ever Spin Reversal of Tiny Comet",
+    "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-detects-first-ever-spin-reversal-of-tiny-comet/",
+    "date": "2026-03-26T14:00:11Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "20580"
+    ]
+  },
+  "snapi_9737": {
+    "source_id": "snapi_9737",
+    "file": "docs/snapi_9737.json",
+    "ingested_at": "2026-04-21T20:23:15.533075+00:00",
+    "type": "news",
+    "title": "China launches Chang Zheng 2C with trio of Yaogan-30 satellites",
+    "url": "https://www.nasaspaceflight.com/2021/06/yaogan-30-group-9/",
+    "date": "2021-06-18T13:36:36Z",
+    "news_site": "NASASpaceflight",
+    "related_norad_ids": [
+      "41473"
+    ]
+  },
+  "snapi_37056": {
+    "source_id": "snapi_37056",
+    "file": "docs/snapi_37056.json",
+    "ingested_at": "2026-04-21T20:23:30.123179+00:00",
+    "type": "news",
+    "title": "Webb Captures Saturn in Infrared",
+    "url": "https://www.nasa.gov/image-article/webb-captures-saturn-in-infrared/",
+    "date": "2026-03-25T18:33:40Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "20580"
+    ]
+  },
+  "snapi_37055": {
+    "source_id": "snapi_37055",
+    "file": "docs/snapi_37055.json",
+    "ingested_at": "2026-04-21T20:23:40.895744+00:00",
+    "type": "news",
+    "title": "NASA Webb, Hubble Share Most Comprehensive View of Saturn to Date",
+    "url": "https://science.nasa.gov/missions/webb/nasa-webb-hubble-share-most-comprehensive-view-of-saturn-to-date/",
+    "date": "2026-03-25T18:00:00Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "20580"
+    ]
+  },
+  "snapi_9734": {
+    "source_id": "snapi_9734",
+    "file": "docs/snapi_9734.json",
+    "ingested_at": "2026-04-21T20:23:41.432020+00:00",
+    "type": "news",
+    "title": "China launches new group of classified Yaogan-30 satellites",
+    "url": "https://spacenews.com/china-launches-new-group-of-classified-yaogan-30-satellites/",
+    "date": "2021-06-18T10:43:54Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "41473"
+    ]
+  },
+  "snapi_37072": {
+    "source_id": "snapi_37072",
+    "file": "docs/snapi_37072.json",
+    "ingested_at": "2026-04-21T20:23:50.255838+00:00",
+    "type": "news",
+    "title": "Webb & Hubble capture new views of Saturn",
+    "url": "https://www.esa.int/Science_Exploration/Space_Science/Webb/Webb_Hubble_capture_new_views_of_Saturn",
+    "date": "2026-03-25T18:00:00Z",
+    "news_site": "ESA",
+    "related_norad_ids": [
+      "20580"
+    ]
+  },
+  "snapi_7145": {
+    "source_id": "snapi_7145",
+    "file": "docs/snapi_7145.json",
+    "ingested_at": "2026-04-21T20:23:51.529501+00:00",
+    "type": "news",
+    "title": "China launches latest trio of Yaogan-30 remote sensing satellites",
+    "url": "https://spacenews.com/china-launches-latest-trio-of-yaogan-30-remote-sensing-satellites/",
+    "date": "2020-10-26T22:48:58Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "41473"
+    ]
+  },
+  "snapi_7138": {
+    "source_id": "snapi_7138",
+    "file": "docs/snapi_7138.json",
+    "ingested_at": "2026-04-21T20:23:53.691801+00:00",
+    "type": "news",
+    "title": "China launches new Yaogan-30 group of military satellites",
+    "url": "https://www.nasaspaceflight.com/2020/10/china-launches-new-yaogan-30-group-of-military-satellites/",
+    "date": "2020-10-26T16:43:26Z",
+    "news_site": "NASASpaceflight",
+    "related_norad_ids": [
+      "41473"
+    ]
+  },
+  "snapi_3319": {
+    "source_id": "snapi_3319",
+    "file": "docs/snapi_3319.json",
+    "ingested_at": "2026-04-21T20:23:56.096570+00:00",
+    "type": "news",
+    "title": "Long March 2C lofts Yaogan-30 Group 05 satellites",
+    "url": "https://www.nasaspaceflight.com/2019/07/long-march-2c-yaogan-30-group-05-satellites/",
+    "date": "2019-07-26T04:53:54Z",
+    "news_site": "NASASpaceflight",
+    "related_norad_ids": [
+      "41473"
+    ]
+  },
+  "snapi_13410": {
+    "source_id": "snapi_13410",
+    "file": "docs/snapi_13410.json",
+    "ingested_at": "2026-04-21T20:26:13.542392+00:00",
+    "type": "news",
+    "title": "Long March 7A launches classified Shiyan-12 satellites",
+    "url": "https://spacenews.com/long-march-7a-launches-classified-shiyan-12-satellites/",
+    "date": "2021-12-23T11:36:42Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "50322",
+      "shiyan_12_series"
+    ]
+  },
+  "snapi_6415": {
+    "source_id": "snapi_6415",
+    "file": "docs/snapi_6415.json",
+    "ingested_at": "2026-04-21T20:26:16.767966+00:00",
+    "type": "news",
+    "title": "Weather models improve with COSMIC-2 and Spire Global data",
+    "url": "https://spacenews.com/radio-occultations-growing-importance/",
+    "date": "2020-08-14T15:25:47Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "44349",
+      "formosat7_cosmic2_constellation"
+    ]
+  },
+  "sha_3233a83f6a474404": {
+    "source_id": "sha_3233a83f6a474404",
+    "file": "docs/sha_3233a83f6a474404.json",
+    "ingested_at": "2026-04-22T17:53:09.098781+00:00",
+    "type": "report",
+    "title": "Long March 7A launches classified Shiyan-12 satellites",
+    "url": "https://spacenews.com/long-march-7a-launches-classified-shiyan-12-satellites/",
+    "date": "2026-04-22",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "snapi_36869": {
+    "source_id": "snapi_36869",
+    "file": "docs/snapi_36869.json",
+    "ingested_at": "2026-04-22T17:53:45.406291+00:00",
+    "type": "news",
+    "title": "China launches new highly retrograde Yaogan satellite, KZ-11 rideshare deploys 8 satellites",
+    "url": "https://spacenews.com/china-launches-new-highly-retrograde-yaogan-satellite-kz-11-rideshare-deploys-8-satellites/",
+    "date": "2026-03-16T10:59:46Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_35380": {
+    "source_id": "snapi_35380",
+    "file": "docs/snapi_35380.json",
+    "ingested_at": "2026-04-22T17:53:50.654205+00:00",
+    "type": "news",
+    "title": "China’s first launches of 2026 send Yaogan spacecraft into unusual orbit, loft Guowang satellites",
+    "url": "https://spacenews.com/chinas-first-launches-of-2026-send-yaogan-spacecraft-into-unusual-orbit-loft-guowang-satellites/",
+    "date": "2026-01-14T10:46:43Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "yaogan",
+      "guowang"
+    ]
+  },
+  "snapi_35481": {
+    "source_id": "snapi_35481",
+    "file": "docs/snapi_35481.json",
+    "ingested_at": "2026-04-22T17:53:54.160053+00:00",
+    "type": "news",
+    "title": "Galactic Energy conducts sixth offshore Ceres 1 mission from Yellow Sea platform",
+    "url": "https://www.spacedaily.com/reports/Galactic_Energy_conducts_sixth_offshore_Ceres_1_mission_from_Yellow_Sea_platform_999.html",
+    "date": "2026-01-19T09:56:59Z",
+    "news_site": "SpaceDaily",
+    "related_norad_ids": [
+      "tianqi_constellation"
+    ]
+  },
+  "snapi_34602": {
+    "source_id": "snapi_34602",
+    "file": "docs/snapi_34602.json",
+    "ingested_at": "2026-04-22T17:53:58.801992+00:00",
+    "type": "news",
+    "title": "China launches 4 times in 4 days, boosting megaconstellation and surveillance assets",
+    "url": "https://spacenews.com/china-launches-4-times-in-4-days-boosting-megaconstellation-and-surveillance-assets/",
+    "date": "2025-12-09T11:06:05Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "yaogan",
+      "guowang"
+    ]
+  },
+  "snapi_36746": {
+    "source_id": "snapi_36746",
+    "file": "docs/snapi_36746.json",
+    "ingested_at": "2026-04-22T17:54:03.462960+00:00",
+    "type": "news",
+    "title": "NASA’s Van Allen Probe A to Re-Enter Atmosphere",
+    "url": "https://www.nasa.gov/missions/van-allen-probes/nasa-van-allen-probe-a-to-re-enter-atmosphere/",
+    "date": "2026-03-09T19:55:37Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "formosat7_cosmic2_constellation"
+    ]
+  },
+  "snapi_21505": {
+    "source_id": "snapi_21505",
+    "file": "docs/snapi_21505.json",
+    "ingested_at": "2026-04-22T17:54:40.541323+00:00",
+    "type": "news",
+    "title": "Launch Roundup: Starship, Falcon 9, and Chang Zheng-2C this week",
+    "url": "https://www.nasaspaceflight.com/2023/11/roundup-3/",
+    "date": "2023-11-15T17:57:44Z",
+    "news_site": "NASASpaceflight",
+    "related_norad_ids": [
+      "long_march_2c"
+    ]
+  },
+  "snapi_33741": {
+    "source_id": "snapi_33741",
+    "file": "docs/snapi_33741.json",
+    "ingested_at": "2026-04-22T17:54:46.616077+00:00",
+    "type": "news",
+    "title": "China launches first GEO Yaogan satellite as India lofts record-mass commsat",
+    "url": "https://spacenews.com/china-launches-first-geo-yaogan-satellite-as-india-lofts-record-mass-commsat/",
+    "date": "2025-11-03T11:14:10Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_12695": {
+    "source_id": "snapi_12695",
+    "file": "docs/snapi_12695.json",
+    "ingested_at": "2026-04-22T17:54:53.266230+00:00",
+    "type": "news",
+    "title": "China launches second pair of Yaogan 32 satellites on Chang Zheng 2C",
+    "url": "https://www.nasaspaceflight.com/2021/11/yaogan-32-2-launch/",
+    "date": "2021-11-03T17:01:10Z",
+    "news_site": "NASASpaceflight",
+    "related_norad_ids": [
+      "long_march_2c"
+    ]
+  },
+  "snapi_35447": {
+    "source_id": "snapi_35447",
+    "file": "docs/snapi_35447.json",
+    "ingested_at": "2026-04-22T17:54:55.523447+00:00",
+    "type": "news",
+    "title": "China launches AlSat-3A for Algeria, Ceres-1 sea launch adds to Tianqi constellation",
+    "url": "https://spacenews.com/china-launches-alsat-3a-for-algeria-ceres-1-sea-launch-adds-to-tianqi-constellation/",
+    "date": "2026-01-16T10:51:15Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "tianqi_constellation"
+    ]
+  },
+  "snapi_32940": {
+    "source_id": "snapi_32940",
+    "file": "docs/snapi_32940.json",
+    "ingested_at": "2026-04-22T17:54:57.183521+00:00",
+    "type": "news",
+    "title": "China launches mystery Yaogan-45 spysat, expands Geesatcom constellation",
+    "url": "https://spacenews.com/china-launches-mystery-yaogan-45-spysat-expands-geesatcom-constellation/",
+    "date": "2025-09-09T11:29:21Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_36626": {
+    "source_id": "snapi_36626",
+    "file": "docs/snapi_36626.json",
+    "ingested_at": "2026-04-22T17:55:03.330769+00:00",
+    "type": "news",
+    "title": "Origami style lunar rover wheel expands to climb steep caves",
+    "url": "https://www.spacedaily.com/reports/Origami_style_lunar_rover_wheel_expands_to_climb_steep_caves_999.html",
+    "date": "2026-03-05T09:54:43Z",
+    "news_site": "SpaceDaily",
+    "related_norad_ids": [
+      "formosat7_cosmic2_constellation"
+    ]
+  },
+  "snapi_32890": {
+    "source_id": "snapi_32890",
+    "file": "docs/snapi_32890.json",
+    "ingested_at": "2026-04-22T17:55:04.504793+00:00",
+    "type": "news",
+    "title": "China launches new set of Yaogan-40 satellites into polar orbit",
+    "url": "https://spacenews.com/china-launches-new-set-of-yaogan-40-satellites-into-polar-orbit/",
+    "date": "2025-09-07T11:21:15Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_36473": {
+    "source_id": "snapi_36473",
+    "file": "docs/snapi_36473.json",
+    "ingested_at": "2026-04-22T17:55:07.304056+00:00",
+    "type": "news",
+    "title": "Rare lensed supernova offers new route to measure cosmic expansion",
+    "url": "https://www.spacedaily.com/reports/Rare_lensed_supernova_offers_new_route_to_measure_cosmic_expansion_999.html",
+    "date": "2026-02-25T10:14:21Z",
+    "news_site": "SpaceDaily",
+    "related_norad_ids": [
+      "formosat7_cosmic2_constellation"
+    ]
+  },
+  "snapi_31198": {
+    "source_id": "snapi_31198",
+    "file": "docs/snapi_31198.json",
+    "ingested_at": "2026-04-22T17:55:07.848936+00:00",
+    "type": "news",
+    "title": "China adds to classified TJS, Yaogan satellite series with two launches",
+    "url": "https://spacenews.com/china-adds-to-classified-tjs-yaogan-satellite-series-with-two-launches/",
+    "date": "2025-05-12T22:10:25Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_25735": {
+    "source_id": "snapi_25735",
+    "file": "docs/snapi_25735.json",
+    "ingested_at": "2026-04-22T17:55:12.679286+00:00",
+    "type": "news",
+    "title": "China launches new set of classified Yaogan-43 satellites",
+    "url": "https://spacenews.com/china-launches-new-set-of-classified-yaogan-43-satellites/",
+    "date": "2024-09-03T09:53:00Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_10463": {
+    "source_id": "snapi_10463",
+    "file": "docs/snapi_10463.json",
+    "ingested_at": "2026-04-22T17:55:13.857346+00:00",
+    "type": "news",
+    "title": "Chang Zheng 2C lofts experimental Chinese internet satellites into orbit",
+    "url": "https://www.nasaspaceflight.com/2021/08/cz-2c-internet-satellite-launch/",
+    "date": "2021-08-24T16:46:12Z",
+    "news_site": "NASASpaceflight",
+    "related_norad_ids": [
+      "long_march_2c"
+    ]
+  },
+  "snapi_25396": {
+    "source_id": "snapi_25396",
+    "file": "docs/snapi_25396.json",
+    "ingested_at": "2026-04-22T17:55:15.537192+00:00",
+    "type": "news",
+    "title": "Long March 4B launches experimental Yaogan-43 satellite group",
+    "url": "https://spacenews.com/long-march-4b-launches-experimental-yaogan-43-satellite-group/",
+    "date": "2024-08-16T11:40:07Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_35489": {
+    "source_id": "snapi_35489",
+    "file": "docs/snapi_35489.json",
+    "ingested_at": "2026-04-22T17:55:16.782094+00:00",
+    "type": "news",
+    "title": "China lofts AlSat 3A imaging craft for Algeria",
+    "url": "https://www.spacedaily.com/reports/China_lofts_AlSat_3A_imaging_craft_for_Algeria_999.html",
+    "date": "2026-01-19T09:56:59Z",
+    "news_site": "SpaceDaily",
+    "related_norad_ids": [
+      "long_march_2c"
+    ]
+  },
+  "snapi_23304": {
+    "source_id": "snapi_23304",
+    "file": "docs/snapi_23304.json",
+    "ingested_at": "2026-04-22T17:55:18.911901+00:00",
+    "type": "news",
+    "title": "China launches second Yaogan-42 reconnaissance satellite",
+    "url": "https://spacenews.com/china-launches-second-yaogan-42-reconnaissance-satellite/",
+    "date": "2024-04-22T11:22:20Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_36443": {
+    "source_id": "snapi_36443",
+    "file": "docs/snapi_36443.json",
+    "ingested_at": "2026-04-22T17:55:20.253836+00:00",
+    "type": "news",
+    "title": "Record LOFAR Radio Sky Map Charts Millions Of Growing Black Holes",
+    "url": "https://www.spacedaily.com/reports/Record_LOFAR_Radio_Sky_Map_Charts_Millions_Of_Growing_Black_Holes_999.html",
+    "date": "2026-02-24T08:42:37Z",
+    "news_site": "SpaceDaily",
+    "related_norad_ids": [
+      "formosat7_cosmic2_constellation"
+    ]
+  },
+  "snapi_37585": {
+    "source_id": "snapi_37585",
+    "file": "docs/snapi_37585.json",
+    "ingested_at": "2026-04-22T17:55:20.679376+00:00",
+    "type": "news",
+    "title": "NASA’s SPHEREx Observatory Maps Interstellar Ice in Milky Way",
+    "url": "https://www.nasa.gov/image-article/nasas-spherex-observatory-maps-interstellar-ice-in-milky-way/",
+    "date": "2026-04-17T14:14:33Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_7285": {
+    "source_id": "snapi_7285",
+    "file": "docs/snapi_7285.json",
+    "ingested_at": "2026-04-22T17:55:20.921022+00:00",
+    "type": "news",
+    "title": "Introducing China’s new commercial rocket, Ceres-1",
+    "url": "https://www.nasaspaceflight.com/2020/11/introducing-chinas-new-commercial-rocket-ceres-1/",
+    "date": "2020-11-08T23:06:52Z",
+    "news_site": "NASASpaceflight",
+    "related_norad_ids": [
+      "tianqi_constellation"
+    ]
+  },
+  "snapi_34137": {
+    "source_id": "snapi_34137",
+    "file": "docs/snapi_34137.json",
+    "ingested_at": "2026-04-22T17:55:24.485428+00:00",
+    "type": "news",
+    "title": "New satellites boost China's orbital technology capabilities",
+    "url": "https://www.spacewar.com/reports/New_satellites_boost_Chinas_orbital_technology_capabilities_999.html",
+    "date": "2025-11-21T09:30:15Z",
+    "news_site": "SpaceDaily",
+    "related_norad_ids": [
+      "long_march_2c"
+    ]
+  },
+  "snapi_37557": {
+    "source_id": "snapi_37557",
+    "file": "docs/snapi_37557.json",
+    "ingested_at": "2026-04-22T17:55:24.579795+00:00",
+    "type": "news",
+    "title": "Just opened: five tonnes of science and supplies",
+    "url": "https://www.esa.int/ESA_Multimedia/Images/2026/04/Just_opened_five_tonnes_of_science_and_supplies",
+    "date": "2026-04-16T07:34:00Z",
+    "news_site": "ESA",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_36442": {
+    "source_id": "snapi_36442",
+    "file": "docs/snapi_36442.json",
+    "ingested_at": "2026-04-22T17:55:25.046751+00:00",
+    "type": "news",
+    "title": "Simple collapse may build cosmic snowman worlds",
+    "url": "https://www.spacedaily.com/reports/Simple_collapse_may_build_cosmic_snowman_worlds_999.html",
+    "date": "2026-02-24T08:42:37Z",
+    "news_site": "SpaceDaily",
+    "related_norad_ids": [
+      "formosat7_cosmic2_constellation"
+    ]
+  },
+  "snapi_29560": {
+    "source_id": "snapi_29560",
+    "file": "docs/snapi_29560.json",
+    "ingested_at": "2026-04-22T17:55:25.125630+00:00",
+    "type": "news",
+    "title": "China adds to SuperView remote sensing constellation with Long March 2C launch",
+    "url": "https://spacenews.com/china-adds-to-superview-remote-sensing-constellation-with-long-march-2c-launch/",
+    "date": "2025-02-27T10:16:42Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "long_march_2c"
+    ]
+  },
+  "snapi_36340": {
+    "source_id": "snapi_36340",
+    "file": "docs/snapi_36340.json",
+    "ingested_at": "2026-04-22T17:55:25.201816+00:00",
+    "type": "news",
+    "title": "Study revisits chances of detecting alien technosignatures",
+    "url": "https://www.spacedaily.com/reports/Study_revisits_chances_of_detecting_alien_technosignatures_999.html",
+    "date": "2026-02-19T12:07:23Z",
+    "news_site": "SpaceDaily",
+    "related_norad_ids": [
+      "formosat7_cosmic2_constellation"
+    ]
+  },
+  "snapi_36326": {
+    "source_id": "snapi_36326",
+    "file": "docs/snapi_36326.json",
+    "ingested_at": "2026-04-22T17:55:26.970700+00:00",
+    "type": "news",
+    "title": "42 Years of Measuring the Sun, the Earth and the Energy in Between",
+    "url": "https://science.nasa.gov/missions/explorer/42-years-of-measuring-the-sun-the-earth-and-the-energy-in-between/",
+    "date": "2026-02-18T19:23:36Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "formosat7_cosmic2_constellation"
+    ]
+  },
+  "snapi_37545": {
+    "source_id": "snapi_37545",
+    "file": "docs/snapi_37545.json",
+    "ingested_at": "2026-04-22T17:55:27.143217+00:00",
+    "type": "news",
+    "title": "NASA Launches Six CubeSats to International Space Station",
+    "url": "https://www.nasa.gov/image-article/nasa-launches-six-cubesats-to-international-space-station/",
+    "date": "2026-04-15T20:27:22Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_36316": {
+    "source_id": "snapi_36316",
+    "file": "docs/snapi_36316.json",
+    "ingested_at": "2026-04-22T17:55:27.703836+00:00",
+    "type": "news",
+    "title": "NASA’s Hubble Identifies One of Darkest Known Galaxies",
+    "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-identifies-one-of-darkest-known-galaxies/",
+    "date": "2026-02-18T15:00:27Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "formosat7_cosmic2_constellation"
+    ]
+  },
+  "snapi_28114": {
+    "source_id": "snapi_28114",
+    "file": "docs/snapi_28114.json",
+    "ingested_at": "2026-04-22T17:55:27.781217+00:00",
+    "type": "news",
+    "title": "Celebrating 20 Years: Night Sky Network",
+    "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/celebrating-20-years-night-sky-network/",
+    "date": "2024-12-16T19:25:17Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "tianqi_constellation"
+    ]
+  },
+  "snapi_37536": {
+    "source_id": "snapi_37536",
+    "file": "docs/snapi_37536.json",
+    "ingested_at": "2026-04-22T17:55:31.751947+00:00",
+    "type": "news",
+    "title": "NASA’s SPHEREx Mission Maps Water Ice Throughout Cygnus X",
+    "url": "https://science.nasa.gov/photojournal/nasas-spherex-mission-maps-water-ice-throughout-cygnus-x/",
+    "date": "2026-04-15T15:04:38Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_26995": {
+    "source_id": "snapi_26995",
+    "file": "docs/snapi_26995.json",
+    "ingested_at": "2026-04-22T17:55:32.117811+00:00",
+    "type": "news",
+    "title": "Memorable Moment 2024",
+    "url": "https://www.nasa.gov/image-article/memorable-moment-2024/",
+    "date": "2024-10-29T15:02:31Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "tianqi_constellation"
+    ]
+  },
+  "snapi_36258": {
+    "source_id": "snapi_36258",
+    "file": "docs/snapi_36258.json",
+    "ingested_at": "2026-04-22T17:55:33.505396+00:00",
+    "type": "news",
+    "title": "Einstein probe catch may show black hole shredding white dwarf",
+    "url": "https://www.spacedaily.com/reports/Einstein_probe_catch_may_show_black_hole_shredding_white_dwarf_999.html",
+    "date": "2026-02-16T02:42:40Z",
+    "news_site": "SpaceDaily",
+    "related_norad_ids": [
+      "formosat7_cosmic2_constellation"
+    ]
+  },
+  "snapi_24244": {
+    "source_id": "snapi_24244",
+    "file": "docs/snapi_24244.json",
+    "ingested_at": "2026-04-22T17:55:34.260602+00:00",
+    "type": "news",
+    "title": "Johnson Celebrates LGBTQI+ Pride Month: Eva Granger",
+    "url": "https://www.nasa.gov/general/johnson-celebrates-lgbtqi-pride-month-eva-granger/",
+    "date": "2024-06-24T21:00:00Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "tianqi_constellation"
+    ]
+  },
+  "snapi_35897": {
+    "source_id": "snapi_35897",
+    "file": "docs/snapi_35897.json",
+    "ingested_at": "2026-04-22T17:55:35.092802+00:00",
+    "type": "news",
+    "title": "Lab made cosmic dust experiment reveals paths to life chemistry",
+    "url": "https://www.spacedaily.com/reports/Lab_made_cosmic_dust_experiment_reveals_paths_to_life_chemistry_999.html",
+    "date": "2026-02-03T04:52:30Z",
+    "news_site": "SpaceDaily",
+    "related_norad_ids": [
+      "formosat7_cosmic2_constellation"
+    ]
+  },
+  "snapi_37521": {
+    "source_id": "snapi_37521",
+    "file": "docs/snapi_37521.json",
+    "ingested_at": "2026-04-22T17:55:35.911281+00:00",
+    "type": "news",
+    "title": "Curiosity Blog, Sols 4859-4866: One Small Crater and Thousands of Polygons",
+    "url": "https://science.nasa.gov/blog/curiosity-blog-sols-4859-4866-one-small-crater-and-thousands-of-polygons/",
+    "date": "2026-04-15T00:07:09Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_23993": {
+    "source_id": "snapi_23993",
+    "file": "docs/snapi_23993.json",
+    "ingested_at": "2026-04-22T17:55:37.074044+00:00",
+    "type": "news",
+    "title": "Johnson Celebrates LGBTQI+ Pride Month: Meet Maya FarrHenderson",
+    "url": "https://www.nasa.gov/centers-and-facilities/johnson/johnson-celebrates-lgbtqi-pride-month-meet-maya-farrhenderson/",
+    "date": "2024-06-17T20:42:53Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "tianqi_constellation"
+    ]
+  },
+  "snapi_37496": {
+    "source_id": "snapi_37496",
+    "file": "docs/snapi_37496.json",
+    "ingested_at": "2026-04-22T17:55:37.205068+00:00",
+    "type": "news",
+    "title": "NASA’s Webb Redefines Dividing Line Between Planets, Stars",
+    "url": "https://science.nasa.gov/missions/webb/nasas-webb-redefines-dividing-line-between-planets-stars/",
+    "date": "2026-04-14T14:00:00Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_21038": {
+    "source_id": "snapi_21038",
+    "file": "docs/snapi_21038.json",
+    "ingested_at": "2026-04-22T17:55:41.787378+00:00",
+    "type": "news",
+    "title": "Alba Orbital Move into new PocketQube Manufacturing Facility",
+    "url": "https://europeanspaceflight.com/alba-orbital-move-into-new-pocketqube-manufacturing-facility/",
+    "date": "2023-10-03T14:17:56Z",
+    "news_site": "European Spaceflight",
+    "related_norad_ids": [
+      "tianqi_constellation"
+    ]
+  },
+  "snapi_37464": {
+    "source_id": "snapi_37464",
+    "file": "docs/snapi_37464.json",
+    "ingested_at": "2026-04-22T17:55:42.110064+00:00",
+    "type": "news",
+    "title": "Live coverage: Space Station to capture, berth Cygnus XL ’S.S. Steven R. Nagel’ cargo spacecraft",
+    "url": "https://spaceflightnow.com/2026/04/13/live-coverage-space-station-to-capture-berth-cygnus-xl-s-s-steven-r-nagel-cargo-spacecraft/",
+    "date": "2026-04-13T16:01:20Z",
+    "news_site": "Spaceflight Now",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_27667": {
+    "source_id": "snapi_27667",
+    "file": "docs/snapi_27667.json",
+    "ingested_at": "2026-04-22T17:55:44.128716+00:00",
+    "type": "news",
+    "title": "China launches pair of SuperView Neo-2 radar satellites",
+    "url": "https://spacenews.com/china-launches-pair-of-superview-neo-2-radar-satellites/",
+    "date": "2024-11-25T11:44:14Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "long_march_2c"
+    ]
+  },
+  "snapi_37446": {
+    "source_id": "snapi_37446",
+    "file": "docs/snapi_37446.json",
+    "ingested_at": "2026-04-22T17:55:47.567058+00:00",
+    "type": "news",
+    "title": "Falcon 9 launches Cygnus cargo spacecraft to the ISS",
+    "url": "https://spacenews.com/falcon-9-launches-cygnus-cargo-spacecraft-to-the-iss/",
+    "date": "2026-04-11T16:28:21Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_37444": {
+    "source_id": "snapi_37444",
+    "file": "docs/snapi_37444.json",
+    "ingested_at": "2026-04-22T17:55:47.771417+00:00",
+    "type": "news",
+    "title": "NASA Science, Cargo Launch Aboard Northrop Grumman CRS-24",
+    "url": "https://www.nasa.gov/news-release/nasa-science-cargo-launch-aboard-northrop-grumman-crs-24/",
+    "date": "2026-04-11T13:49:05Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_37443": {
+    "source_id": "snapi_37443",
+    "file": "docs/snapi_37443.json",
+    "ingested_at": "2026-04-22T17:55:53.461776+00:00",
+    "type": "news",
+    "title": "Falcon 9 launches CRS NG-24 cargo ship to ISS",
+    "url": "https://www.nasaspaceflight.com/2026/04/crs-ng-24-launch/",
+    "date": "2026-04-11T13:37:36Z",
+    "news_site": "NASASpaceflight",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_23114": {
+    "source_id": "snapi_23114",
+    "file": "docs/snapi_23114.json",
+    "ingested_at": "2026-04-22T17:55:55.291009+00:00",
+    "type": "news",
+    "title": "China launches first of a new series of Yaogan reconnaissance satellites",
+    "url": "https://spacenews.com/china-launches-first-of-a-new-series-of-yaogan-reconnaissance-satellites/",
+    "date": "2024-04-03T11:40:38Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_27233": {
+    "source_id": "snapi_27233",
+    "file": "docs/snapi_27233.json",
+    "ingested_at": "2026-04-22T17:55:55.999966+00:00",
+    "type": "news",
+    "title": "Long March 2C launches 4 PIESAT-2 commercial radar satellites",
+    "url": "https://spacenews.com/long-march-2c-launches-4-piesat-2-commercial-radar-satellites/",
+    "date": "2024-11-09T22:12:36Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "long_march_2c"
+    ]
+  },
+  "snapi_16649": {
+    "source_id": "snapi_16649",
+    "file": "docs/snapi_16649.json",
+    "ingested_at": "2026-04-22T17:56:04.675009+00:00",
+    "type": "news",
+    "title": "China conducts three launches with Shiyan and Yaogan satellites",
+    "url": "https://www.nasaspaceflight.com/2022/09/china-three-launches-shiyan-yaogan/",
+    "date": "2022-09-27T15:51:45Z",
+    "news_site": "NASASpaceflight",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_8385": {
+    "source_id": "snapi_8385",
+    "file": "docs/snapi_8385.json",
+    "ingested_at": "2026-04-22T17:56:07.071262+00:00",
+    "type": "news",
+    "title": "China launches trio of Yaogan-31 ocean reconnaissance satellites",
+    "url": "https://spacenews.com/china-launches-trio-of-yaogan-31-ocean-reconnaissance-satellites/",
+    "date": "2021-02-24T09:14:48Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_15816": {
+    "source_id": "snapi_15816",
+    "file": "docs/snapi_15816.json",
+    "ingested_at": "2026-04-22T17:56:14.048536+00:00",
+    "type": "news",
+    "title": "Long March rocket launches two radar satellites for China Siwei",
+    "url": "https://spaceflightnow.com/2022/07/18/long-march-rocket-launches-two-radar-satellites-for-china-siwei/",
+    "date": "2022-07-18T04:10:03Z",
+    "news_site": "Spaceflight Now",
+    "related_norad_ids": [
+      "long_march_2c"
+    ]
+  },
+  "sha_983ffdbce4fbd1f8": {
+    "source_id": "sha_983ffdbce4fbd1f8",
+    "file": "docs/sha_983ffdbce4fbd1f8.json",
+    "ingested_at": "2026-04-22T17:59:20.514729+00:00",
+    "type": "report",
+    "title": "China’s first launches of 2026 send Yaogan spacecraft into unusual orbit, loft Guowang satellites",
+    "url": "https://spacenews.com/chinas-first-launches-of-2026-send-yaogan-spacecraft-into-unusual-orbit-loft-guowang-satellites/",
+    "date": "2026-04-22",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "sha_7b40851e453ffa7c": {
+    "source_id": "sha_7b40851e453ffa7c",
+    "file": "docs/sha_7b40851e453ffa7c.json",
+    "ingested_at": "2026-04-22T19:32:40.303845+00:00",
+    "type": "report",
+    "title": "JDay 111 at 0600z:\n\nBased on current SDA observations and av…",
+    "url": "",
+    "date": "2026-04-22",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "snapi_36833": {
+    "source_id": "snapi_36833",
+    "file": "docs/snapi_36833.txt",
+    "ingested_at": "2026-04-22T19:46:04.156720+00:00",
+    "type": "news",
+    "title": "China ends month-long launch hiatus with separate Guowang and Shiyan-30 satellite missions",
+    "url": "https://spacenews.com/china-ends-month-long-launch-hiatus-with-separate-guowang-and-shiyan-30-satellite-missions/",
+    "date": "2026-03-13T10:58:31Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "65851",
+      "guowang"
+    ]
+  },
+  "snapi_33337": {
+    "source_id": "snapi_33337",
+    "file": "docs/snapi_33337.txt",
+    "ingested_at": "2026-04-22T19:46:04.227571+00:00",
+    "type": "news",
+    "title": "China sends experimental Shiyan-30 satellites into orbit as launch cadence intensifies",
+    "url": "https://spacenews.com/china-sends-experimental-shiyan-30-satellites-into-orbit-as-launch-cadence-intensifies/",
+    "date": "2025-09-30T05:20:26Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "65851"
+    ]
+  },
+  "sha_1425b27254b02cf3": {
+    "source_id": "sha_1425b27254b02cf3",
+    "file": "docs/sha_1425b27254b02cf3.json",
+    "ingested_at": "2026-04-22T19:54:02.944576+00:00",
+    "type": "report",
+    "title": "China sends experimental Shiyan-30 satellites into orbit as launch cadence intensifies",
+    "url": "https://spacenews.com/china-sends-experimental-shiyan-30-satellites-into-orbit-as-launch-cadence-intensifies/",
+    "date": "2026-04-22",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "file_ee2977c30fbe5ce9": {
+    "source_id": "file_ee2977c30fbe5ce9",
+    "file": "docs/file_ee2977c30fbe5ce9.json",
+    "ingested_at": "2026-04-22T20:38:20.542335+00:00",
+    "type": "report",
+    "title": "Mission Management Board 2.pdf",
+    "url": "",
+    "date": "D:20260421133715+00'00'",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "file_29a4194bbcf2283e": {
+    "source_id": "file_29a4194bbcf2283e",
+    "file": "docs/file_29a4194bbcf2283e.json",
+    "ingested_at": "2026-04-22T20:39:31.257416+00:00",
+    "type": "report",
+    "title": "Mission Management Board 2.mhtml",
+    "url": "",
+    "date": "",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "file_81d967007bb6a546": {
+    "source_id": "file_81d967007bb6a546",
+    "file": "docs/file_81d967007bb6a546.json",
+    "ingested_at": "2026-04-24T14:28:02.151756+00:00",
+    "type": "report",
+    "title": "JCO_launch_report.mhtml",
+    "url": "",
+    "date": "",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "sha_1847145aef5f35b4": {
+    "source_id": "sha_1847145aef5f35b4",
+    "file": "docs/sha_1847145aef5f35b4.json",
+    "ingested_at": "2026-04-29T20:46:43.316425+00:00",
+    "type": "wikipedia",
+    "title": "高分三号",
+    "url": "https://zh.wikipedia.org/wiki/%E9%AB%98%E5%88%86%E4%B8%89%E5%8F%B7",
+    "date": "2025-12-05",
+    "news_site": "zh.wikipedia.org",
+    "related_norad_ids": []
+  },
+  "file_d7ec093dc174de8d": {
+    "source_id": "file_d7ec093dc174de8d",
+    "file": "docs/file_d7ec093dc174de8d.json",
+    "ingested_at": "2026-05-02T17:54:30.559680+00:00",
+    "type": "report",
+    "title": "JCO_launch_report_0502.mhtml",
+    "url": "",
+    "date": "",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "snapi_37749": {
+    "source_id": "snapi_37749",
+    "file": "docs/snapi_37749.txt",
+    "ingested_at": "2026-05-03T13:09:01.893829+00:00",
+    "type": "news",
+    "title": "Hubble Spots a Starry Spiral",
+    "url": "https://science.nasa.gov/missions/hubble/hubble-spots-a-starry-spiral/",
+    "date": "2026-05-01T11:48:55Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "20580"
+    ]
+  },
+  "snapi_37717": {
+    "source_id": "snapi_37717",
+    "file": "docs/snapi_37717.txt",
+    "ingested_at": "2026-05-03T13:09:01.964553+00:00",
+    "type": "news",
+    "title": "A Gently Glowing Galaxy",
+    "url": "https://www.nasa.gov/image-article/a-gently-glowing-galaxy/",
+    "date": "2026-04-29T15:28:31Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "20580"
+    ]
+  },
+  "snapi_37673": {
+    "source_id": "snapi_37673",
+    "file": "docs/snapi_37673.txt",
+    "ingested_at": "2026-05-03T13:09:02.017939+00:00",
+    "type": "news",
+    "title": "The Day of the Trifid Nebula",
+    "url": "https://www.nasa.gov/image-article/the-day-of-the-trifid-nebula/",
+    "date": "2026-04-24T14:56:35Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "20580"
+    ]
+  },
+  "snapi_37654": {
+    "source_id": "snapi_37654",
+    "file": "docs/snapi_37654.txt",
+    "ingested_at": "2026-05-03T13:09:54.032401+00:00",
+    "type": "news",
+    "title": "Everyday operations in orbit: toilet maintenance",
+    "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/04/Everyday_operations_in_orbit_toilet_maintenance",
+    "date": "2026-04-23T11:51:00Z",
+    "news_site": "ESA",
+    "related_norad_ids": [
+      "yaogan"
+    ]
+  },
+  "snapi_37369": {
+    "source_id": "snapi_37369",
+    "file": "docs/snapi_37369.txt",
+    "ingested_at": "2026-05-03T13:10:18.417576+00:00",
+    "type": "news",
+    "title": "China conducts pair of Long March launches for Thousand Sails and Guowang megaconstellations",
+    "url": "https://spacenews.com/china-conducts-pair-of-long-march-launches-for-thousand-sails-and-guowang-megaconstellations/",
+    "date": "2026-04-09T14:23:45Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "guowang"
+    ]
+  },
+  "snapi_35028": {
+    "source_id": "snapi_35028",
+    "file": "docs/snapi_35028.txt",
+    "ingested_at": "2026-05-03T13:10:18.571197+00:00",
+    "type": "news",
+    "title": "China hits 90 launches as Guowang deployment continues, Fengyun-4C heads to GEO",
+    "url": "https://spacenews.com/china-hits-90-launches-as-guowang-deployment-continues-fengyun-4c-heads-to-geo/",
+    "date": "2025-12-29T12:12:54Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "guowang"
+    ]
+  },
+  "snapi_34697": {
+    "source_id": "snapi_34697",
+    "file": "docs/snapi_34697.txt",
+    "ingested_at": "2026-05-03T13:10:18.617712+00:00",
+    "type": "news",
+    "title": "China launches new Guowang satellites, Long March 12A launch and landing attempt date set",
+    "url": "https://spacenews.com/china-launches-new-guowang-satellites-long-march-12a-launch-and-landing-attempt-date-set/",
+    "date": "2025-12-12T08:19:02Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "guowang"
+    ]
+  },
+  "snapi_33841": {
+    "source_id": "snapi_33841",
+    "file": "docs/snapi_33841.txt",
+    "ingested_at": "2026-05-03T13:10:18.717118+00:00",
+    "type": "news",
+    "title": "China expands Guowang constellation, Galactic Energy suffers Ceres-1 launch failure",
+    "url": "https://spacenews.com/china-expands-guowang-constellation-galactic-energy-suffers-ceres-1-launch-failure/",
+    "date": "2025-11-10T11:52:08Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "guowang"
+    ]
+  },
+  "snapi_33535": {
+    "source_id": "snapi_33535",
+    "file": "docs/snapi_33535.txt",
+    "ingested_at": "2026-05-03T13:10:18.779633+00:00",
+    "type": "news",
+    "title": "China launches 12th group of Guowang broadband satellites as rocket milestone highlights accelerating launch rate",
+    "url": "https://spacenews.com/china-launches-12th-group-of-guowang-broadband-satellites-as-rocket-milestone-highlights-accelerating-launch-rate/",
+    "date": "2025-10-16T10:18:12Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "guowang"
+    ]
+  },
+  "snapi_31614": {
+    "source_id": "snapi_31614",
+    "file": "docs/snapi_31614.txt",
+    "ingested_at": "2026-05-03T13:10:18.837325+00:00",
+    "type": "news",
+    "title": "China launches fourth group of Guowang megaconstellation satellites",
+    "url": "https://spacenews.com/china-launches-fourth-group-of-guowang-megaconstellation-satellites/",
+    "date": "2025-06-06T08:35:59Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "guowang"
+    ]
+  },
+  "snapi_30912": {
+    "source_id": "snapi_30912",
+    "file": "docs/snapi_30912.txt",
+    "ingested_at": "2026-05-03T13:10:18.892776+00:00",
+    "type": "news",
+    "title": "China launches third batch of Guowang megaconstellation satellites",
+    "url": "https://spacenews.com/china-launches-third-batch-of-guowang-megaconstellation-satellites/",
+    "date": "2025-04-29T11:23:43Z",
+    "news_site": "SpaceNews",
+    "related_norad_ids": [
+      "guowang"
+    ]
+  },
+  "sha_538b8d2943d9804c": {
+    "source_id": "sha_538b8d2943d9804c",
+    "file": "docs/sha_538b8d2943d9804c.json",
+    "ingested_at": "2026-05-03T13:23:44.944863+00:00",
+    "type": "report",
+    "title": "HELSINKI — China took its total launches this year to 26 ove…",
+    "url": "",
+    "date": "2026-05-03",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "snapi_37769": {
+    "source_id": "snapi_37769",
+    "file": "docs/snapi_37769.txt",
+    "ingested_at": "2026-05-05T14:40:15.391540+00:00",
+    "type": "news",
+    "title": "Hubble Spots a Starry Spiral",
+    "url": "https://www.nasa.gov/image-article/hubble-spots-a-starry-spiral/",
+    "date": "2026-05-04T15:17:19Z",
+    "news_site": "NASA",
+    "related_norad_ids": [
+      "20580"
+    ]
+  },
+  "snapi_37794": {
+    "source_id": "snapi_37794",
+    "file": "docs/snapi_37794.txt",
+    "ingested_at": "2026-05-06T14:26:42.338017+00:00",
+    "type": "news",
+    "title": "Webb & Hubble find massive star clusters emerge faster",
+    "url": "https://www.esa.int/Science_Exploration/Space_Science/Webb/Webb_Hubble_find_massive_star_clusters_emerge_faster",
+    "date": "2026-05-06T10:00:00Z",
+    "news_site": "ESA",
+    "related_norad_ids": [
+      "20580"
+    ]
+  },
+  "file_02cb6795ce56f4e6": {
+    "source_id": "file_02cb6795ce56f4e6",
+    "file": "docs/file_02cb6795ce56f4e6.json",
+    "ingested_at": "2026-05-06T15:36:33.254470+00:00",
+    "type": "report",
+    "title": "JCO_manuver_report_0506.mhtml",
+    "url": "",
+    "date": "",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "sha_0cb561b52c0603f2": {
+    "source_id": "sha_0cb561b52c0603f2",
+    "file": "docs/sha_0cb561b52c0603f2.json",
+    "ingested_at": "2026-05-06T15:46:28.176977+00:00",
+    "type": "report",
+    "title": "https://www.space.com/classified-chinese-satellite-shijian-23-releases-subsatellite",
+    "url": "https://www.space.com/classified-chinese-satellite-shijian-23-releases-subsatellite",
+    "date": "2026-05-06",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "sha_f74ea7d5b932d38d": {
+    "source_id": "sha_f74ea7d5b932d38d",
+    "file": "docs/sha_f74ea7d5b932d38d.json",
+    "ingested_at": "2026-05-06T18:31:49.863868+00:00",
+    "type": "report",
+    "title": "https://www.nasaspaceflight.com/2023/01/kicks-off-2023/",
+    "url": "https://www.nasaspaceflight.com/2023/01/kicks-off-2023/",
+    "date": "2026-05-06",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "sha_07e0b668990e9ba6": {
+    "source_id": "sha_07e0b668990e9ba6",
+    "file": "docs/sha_07e0b668990e9ba6.json",
+    "ingested_at": "2026-05-06T18:36:34.758439+00:00",
+    "type": "report",
+    "title": "One of the five satellites was Tianqi-13, part of the Tianqi…",
+    "url": "",
+    "date": "2026-05-06",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "file_2cb0b4b999df1bf1": {
+    "source_id": "file_2cb0b4b999df1bf1",
+    "file": "docs/file_2cb0b4b999df1bf1.json",
+    "ingested_at": "2026-05-06T19:17:56.159128+00:00",
+    "type": "report",
+    "title": "JCO_manuver_report_0501.mhtml",
+    "url": "",
+    "date": "",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "file_874ab4e172ff35fb": {
+    "source_id": "file_874ab4e172ff35fb",
+    "file": "docs/file_874ab4e172ff35fb.json",
+    "ingested_at": "2026-05-20T19:21:43.057212+00:00",
+    "type": "report",
+    "title": "NOTSO_Photometric Change_COSMOS_2589(64467)_19May_2101Z.mhtml",
+    "url": "",
+    "date": "",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "file_f8129074e591fff3": {
+    "source_id": "file_f8129074e591fff3",
+    "file": "docs/file_f8129074e591fff3.json",
+    "ingested_at": "2026-05-20T19:24:51.959074+00:00",
+    "type": "report",
+    "title": "NOTSO_Photometric Change_Cosmos_2589_(64467)_18May-1527Z.mhtml",
+    "url": "",
+    "date": "",
+    "news_site": "",
+    "related_norad_ids": []
+  },
+  "file_5fe9e8fe0a70ac79": {
+    "source_id": "file_5fe9e8fe0a70ac79",
+    "file": "docs/file_5fe9e8fe0a70ac79.json",
+    "ingested_at": "2026-05-20T20:04:11.595055+00:00",
+    "type": "report",
+    "title": "NOTSO_Launch_LM-8 (94486)_Qianfan_Digui_Group_10A_R_(94468_94485).mhtml",
+    "url": "",
+    "date": "",
+    "news_site": "",
+    "related_norad_ids": []
+  }
+}

@@ -1,0 +1,4615 @@
+{
+  "nodes": {
+    "blue_origin": {
+      "id": "blue_origin",
+      "label": "Blue Origin",
+      "type": "Company",
+      "inferred_types": [
+        "Organization",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "Blue Origin",
+          "event_date": "2026-04-18",
+          "source_id": "sha_af580fe7b2250bcf"
+        },
+        "country": {
+          "value": "USA",
+          "event_date": "2026-04-18",
+          "source_id": "sha_af580fe7b2250bcf"
+        },
+        "website": {
+          "value": null,
+          "event_date": "2026-04-18",
+          "source_id": "sha_af580fe7b2250bcf"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_af580fe7b2250bcf",
+          "date": "2026-04-20"
+        }
+      ],
+      "created_at": "2026-04-20T13:38:52.965412+00:00",
+      "updated_at": "2026-04-20T13:38:52.965432+00:00"
+    },
+    "new_glenn": {
+      "id": "new_glenn",
+      "label": "New Glenn",
+      "type": "Mission",
+      "inferred_types": [
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "New Glenn",
+          "event_date": "2026-04-18",
+          "source_id": "sha_af580fe7b2250bcf"
+        },
+        "description": {
+          "value": "New Glenn launches on third mission, successfully reuses booster for the first time",
+          "event_date": "2026-04-18",
+          "source_id": "sha_af580fe7b2250bcf"
+        },
+        "start_date": {
+          "value": "2026-04-18",
+          "event_date": "2026-04-18",
+          "source_id": "sha_af580fe7b2250bcf"
+        },
+        "status": {
+          "value": "Active",
+          "event_date": "2026-04-18",
+          "source_id": "sha_af580fe7b2250bcf"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_af580fe7b2250bcf",
+          "date": "2026-04-20"
+        }
+      ],
+      "created_at": "2026-04-20T13:39:29.652110+00:00",
+      "updated_at": "2026-04-20T13:39:29.652143+00:00"
+    },
+    "nasa": {
+      "id": "nasa",
+      "label": "NASA",
+      "type": "SpaceAgency",
+      "inferred_types": [
+        "Organization",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "country": {
+          "value": "USA",
+          "event_date": "2026-04-20",
+          "source_id": "snapi_37603"
+        },
+        "website": {
+          "value": "https://www.nasa.gov",
+          "event_date": "",
+          "source_id": ""
+        },
+        "founded_year": {
+          "value": 1958,
+          "event_date": "2026-04-20",
+          "source_id": "snapi_37603"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "snapi_37603",
+          "date": "2026-04-20T14:01:01Z"
+        }
+      ],
+      "created_at": "2026-04-20T13:44:17.579228+00:00",
+      "updated_at": "2026-04-20T14:20:14.051678+00:00"
+    },
+    "avio": {
+      "id": "avio",
+      "label": "Avio",
+      "type": "Company",
+      "inferred_types": [
+        "Organization",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "Avio",
+          "event_date": "2025-12-25",
+          "source_id": "sha_4f5d7d8d3adfdb57"
+        },
+        "description": {
+          "value": null,
+          "event_date": "2025-12-25",
+          "source_id": "sha_4f5d7d8d3adfdb57"
+        },
+        "country": {
+          "value": null,
+          "event_date": "2025-12-25",
+          "source_id": "sha_4f5d7d8d3adfdb57"
+        },
+        "website": {
+          "value": null,
+          "event_date": "2025-12-25",
+          "source_id": "sha_4f5d7d8d3adfdb57"
+        },
+        "stock_ticker": {
+          "value": null,
+          "event_date": "2025-12-25",
+          "source_id": "sha_4f5d7d8d3adfdb57"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_4f5d7d8d3adfdb57",
+          "date": "2026-04-20"
+        }
+      ],
+      "created_at": "2026-04-20T13:46:40.881496+00:00",
+      "updated_at": "2026-04-20T13:46:40.881518+00:00"
+    },
+    "taiwan_space_agency": {
+      "id": "taiwan_space_agency",
+      "label": "Taiwan Space Agency",
+      "type": "SpaceAgency",
+      "inferred_types": [
+        "Organization",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "Taiwan Space Agency",
+          "event_date": "2025-12-25",
+          "source_id": "sha_4f5d7d8d3adfdb57"
+        },
+        "description": {
+          "value": null,
+          "event_date": "2025-12-25",
+          "source_id": "sha_4f5d7d8d3adfdb57"
+        },
+        "country": {
+          "value": "Taiwan",
+          "event_date": "2025-12-25",
+          "source_id": "sha_4f5d7d8d3adfdb57"
+        },
+        "website": {
+          "value": null,
+          "event_date": "2025-12-25",
+          "source_id": "sha_4f5d7d8d3adfdb57"
+        },
+        "founded_year": {
+          "value": null,
+          "event_date": "2025-12-25",
+          "source_id": "sha_4f5d7d8d3adfdb57"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_4f5d7d8d3adfdb57",
+          "date": "2026-04-20"
+        }
+      ],
+      "created_at": "2026-04-20T13:46:42.385100+00:00",
+      "updated_at": "2026-04-20T13:46:42.385119+00:00"
+    },
+    "long_march_2c": {
+      "id": "long_march_2c",
+      "label": "Long March",
+      "type": "LaunchVehicle",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "Long March",
+          "event_date": "2026-01-14T10:46:43Z",
+          "source_id": ""
+        },
+        "manufacturer": {
+          "value": "China Aerospace Science and Technology Corp. (CASC)",
+          "event_date": "2026-01-14",
+          "source_id": "snapi_35380"
+        },
+        "country_of_origin": {
+          "value": "China",
+          "event_date": "2026-01-14",
+          "source_id": "snapi_35380"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "snapi_35380",
+          "date": "2026-01-14T10:46:43Z"
+        }
+      ],
+      "created_at": "2026-04-20T14:06:43.559315+00:00",
+      "updated_at": "2026-04-22T20:34:31.100013+00:00"
+    },
+    "20580": {
+      "id": "20580",
+      "label": "Hubble Space Telescope",
+      "type": "CivilSatellite",
+      "inferred_types": [
+        "Satellite",
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "norad_id": {
+          "value": "20580",
+          "event_date": "2026-04-20",
+          "source_id": "snapi_37603"
+        },
+        "launch_date": {
+          "value": "1990-04-24",
+          "event_date": "2026-04-20",
+          "source_id": "snapi_37603"
+        },
+        "manufacturer": {
+          "value": "Lockheed Martin",
+          "event_date": "2026-04-20",
+          "source_id": "snapi_37603"
+        },
+        "operator": {
+          "value": "NASA",
+          "event_date": "2026-04-20",
+          "source_id": "snapi_37603"
+        },
+        "operator_country": {
+          "value": "USA",
+          "event_date": "2026-04-20",
+          "source_id": "snapi_37603"
+        },
+        "mission": {
+          "value": "Astronomical observations",
+          "event_date": "2026-04-20",
+          "source_id": "snapi_37603"
+        },
+        "orbit_type": {
+          "value": "LEO",
+          "event_date": "2026-04-20",
+          "source_id": "snapi_37603"
+        },
+        "altitude_km": {
+          "value": 547,
+          "event_date": "2026-04-20",
+          "source_id": "snapi_37603"
+        },
+        "inclination_deg": {
+          "value": 28.5,
+          "event_date": "2026-04-20",
+          "source_id": "snapi_37603"
+        },
+        "funding_agency": {
+          "value": "NASA",
+          "event_date": "2026-04-20",
+          "source_id": "snapi_37603"
+        },
+        "news_keywords": {
+          "value": "Hubble Space Telescope, Hubble",
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "snapi_37603",
+          "date": "2026-04-20T14:01:01Z"
+        }
+      ],
+      "created_at": "2026-04-20T14:19:07.160911+00:00",
+      "updated_at": "2026-04-20T14:19:07.160936+00:00"
+    },
+    "libera": {
+      "id": "libera",
+      "label": "Libera",
+      "type": "Mission",
+      "inferred_types": [
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "Libera",
+          "event_date": "2026-04-20",
+          "source_id": "sha_ce149fad26ca2b9c"
+        },
+        "description": {
+          "value": "NASA's Libera instrument, which is designed to maintain the global data record of Earth's radiation budget, has successfully completed comprehensive testing.",
+          "event_date": "2026-04-20",
+          "source_id": "sha_ce149fad26ca2b9c"
+        },
+        "norad_id": {
+          "value": null,
+          "event_date": "2026-04-20",
+          "source_id": "sha_ce149fad26ca2b9c"
+        },
+        "launch_date": {
+          "value": null,
+          "event_date": "2026-04-20",
+          "source_id": "sha_ce149fad26ca2b9c"
+        },
+        "manufacturer": {
+          "value": null,
+          "event_date": "2026-04-20",
+          "source_id": "sha_ce149fad26ca2b9c"
+        },
+        "operator": {
+          "value": "NASA",
+          "event_date": "2026-04-20",
+          "source_id": "sha_ce149fad26ca2b9c"
+        },
+        "operator_country": {
+          "value": "USA",
+          "event_date": "2026-04-20",
+          "source_id": "sha_ce149fad26ca2b9c"
+        },
+        "mission": {
+          "value": "Maintain the global data record of Earth's radiation budget",
+          "event_date": "2026-04-20",
+          "source_id": "sha_ce149fad26ca2b9c"
+        },
+        "orbit_type": {
+          "value": null,
+          "event_date": "2026-04-20",
+          "source_id": "sha_ce149fad26ca2b9c"
+        },
+        "altitude_km": {
+          "value": null,
+          "event_date": "2026-04-20",
+          "source_id": "sha_ce149fad26ca2b9c"
+        },
+        "inclination_deg": {
+          "value": null,
+          "event_date": "2026-04-20",
+          "source_id": "sha_ce149fad26ca2b9c"
+        },
+        "funding_agency": {
+          "value": null,
+          "event_date": "2026-04-20",
+          "source_id": "sha_ce149fad26ca2b9c"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_ce149fad26ca2b9c",
+          "date": "2026-04-20"
+        }
+      ],
+      "created_at": "2026-04-20T14:20:37.470495+00:00",
+      "updated_at": "2026-04-20T19:24:23.567164+00:00"
+    },
+    "china_national_space_administration": {
+      "id": "china_national_space_administration",
+      "label": "China National Space Administration",
+      "type": "SpaceAgency",
+      "inferred_types": [
+        "Organization",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "China National Space Administration",
+          "event_date": "2026-04-17",
+          "source_id": "sha_f470746cedbaecd1"
+        },
+        "description": {
+          "value": "The national space agency of China responsible for the planning and development of space activities.",
+          "event_date": "2026-04-17",
+          "source_id": "sha_f470746cedbaecd1"
+        },
+        "country": {
+          "value": "China",
+          "event_date": "2026-04-17",
+          "source_id": "sha_f470746cedbaecd1"
+        },
+        "website": {
+          "value": null,
+          "event_date": "2026-04-17",
+          "source_id": "sha_f470746cedbaecd1"
+        },
+        "founded_year": {
+          "value": null,
+          "event_date": "2026-04-17",
+          "source_id": "sha_f470746cedbaecd1"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_f470746cedbaecd1",
+          "date": "2026-04-20"
+        }
+      ],
+      "created_at": "2026-04-20T14:45:21.925688+00:00",
+      "updated_at": "2026-04-20T14:45:21.925726+00:00"
+    },
+    "41473": {
+      "id": "41473",
+      "label": "Yaogan-30",
+      "type": "MilitarySatellite",
+      "inferred_types": [
+        "Satellite",
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "Yaogan-30",
+          "event_date": "2026-04-20",
+          "source_id": ""
+        },
+        "description": {
+          "value": "A group of Chinese military satellites launched by Long March 2C.",
+          "event_date": "",
+          "source_id": ""
+        },
+        "norad_id": {
+          "value": "41473",
+          "event_date": "2026-04-20",
+          "source_id": ""
+        },
+        "launch_date": {
+          "value": null,
+          "event_date": "2026-04-20",
+          "source_id": "sha_bc5d53540eedd9ca"
+        },
+        "manufacturer": {
+          "value": null,
+          "event_date": "2026-04-20",
+          "source_id": "sha_bc5d53540eedd9ca"
+        },
+        "operator": {
+          "value": null,
+          "event_date": "2026-04-20",
+          "source_id": "sha_bc5d53540eedd9ca"
+        },
+        "operator_country": {
+          "value": "China",
+          "event_date": "2026-04-20",
+          "source_id": "sha_bc5d53540eedd9ca"
+        },
+        "mission": {
+          "value": "Classified",
+          "event_date": "2026-04-20",
+          "source_id": ""
+        },
+        "orbit_type": {
+          "value": null,
+          "event_date": "2026-04-20",
+          "source_id": "sha_bc5d53540eedd9ca"
+        },
+        "altitude_km": {
+          "value": null,
+          "event_date": "2026-04-20",
+          "source_id": "sha_bc5d53540eedd9ca"
+        },
+        "inclination_deg": {
+          "value": null,
+          "event_date": "2026-04-20",
+          "source_id": "sha_bc5d53540eedd9ca"
+        },
+        "military_branch": {
+          "value": null,
+          "event_date": "2026-04-20",
+          "source_id": "sha_bc5d53540eedd9ca"
+        },
+        "country_of_origin": {
+          "value": "China",
+          "event_date": "2026-04-20",
+          "source_id": "sha_bc5d53540eedd9ca"
+        },
+        "classification": {
+          "value": "Classified",
+          "event_date": "2026-04-20",
+          "source_id": "sha_bc5d53540eedd9ca"
+        },
+        "news_keywords": {
+          "value": "遥感三十号, 遥感-30, Yaogan-30",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "aliases": {
+          "value": [
+            "Yaogan 30",
+            "YG-30",
+            "遥感三十号",
+            "YAOGAN 30"
+          ],
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_bc5d53540eedd9ca",
+          "date": "2026-04-20"
+        }
+      ],
+      "created_at": "2026-04-20T13:42:09.575379+00:00",
+      "updated_at": "2026-04-20T20:08:35.186121+00:00"
+    },
+    "42920": {
+      "id": "42920",
+      "label": "FORMOSAT-5",
+      "type": "CivilSatellite",
+      "inferred_types": [
+        "Satellite",
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "COSMIC-2/FORMOSAT-7",
+          "event_date": "2026-03-27",
+          "source_id": ""
+        },
+        "description": {
+          "value": "Joint U.S.-Taiwanese research satellite constellation",
+          "event_date": "2026-03-27",
+          "source_id": ""
+        },
+        "norad_id": {
+          "value": "42920",
+          "event_date": "2026-04-21",
+          "source_id": ""
+        },
+        "launch_date": {
+          "value": "2019-06-25",
+          "event_date": "2019-06-25",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "manufacturer": {
+          "value": "National Space Organization and SSTL",
+          "event_date": "2026-03-27",
+          "source_id": ""
+        },
+        "operator": {
+          "value": "National Space Organization",
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "operator_country": {
+          "value": "Taiwan",
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "mission": {
+          "value": "Meteorological forecasting, climate change research, and ionospheric monitoring",
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "orbit_type": {
+          "value": "LEO",
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "altitude_km": {
+          "value": 550,
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "inclination_deg": {
+          "value": 24,
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "news_keywords": {
+          "value": "FORMOSAT-5, FS-5, FS-5/C-2",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "launch_vehicle": {
+          "value": "Falcon Heavy",
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "funding_agency": {
+          "value": "National Space Organization",
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "launch_vehicle_name": {
+          "value": "Falcon 9",
+          "event_date": "2026-04-21",
+          "source_id": "reference_csv"
+        },
+        "aliases": {
+          "value": [
+            "FORMOSAT 5",
+            "FS-5",
+            "福卫五号",
+            "FORMOSAT5"
+          ],
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_56a8b9a1ea2f120e",
+          "date": "2026-04-21"
+        }
+      ],
+      "created_at": "2026-04-20T13:47:46.496362+00:00",
+      "updated_at": "2026-04-21T20:15:00.746225+00:00"
+    },
+    "china_aerospace_science_and_technology_corp._(casc)": {
+      "id": "china_aerospace_science_and_technology_corp._(casc)",
+      "label": "China Aerospace Science and Technology Corp. (CASC)",
+      "type": "Company",
+      "inferred_types": [
+        "Organization",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "China Aerospace Science and Technology Corp. (CASC)",
+          "event_date": "2020-10-26",
+          "source_id": "sha_5d451e3be09139c7"
+        },
+        "description": {
+          "value": "China's state-owned main space contractor.",
+          "event_date": "2020-10-26",
+          "source_id": "sha_5d451e3be09139c7"
+        },
+        "country": {
+          "value": "China",
+          "event_date": "2020-10-26",
+          "source_id": "sha_5d451e3be09139c7"
+        },
+        "website": {
+          "value": null,
+          "event_date": "2020-10-26",
+          "source_id": "sha_5d451e3be09139c7"
+        },
+        "stock_ticker": {
+          "value": null,
+          "event_date": "2020-10-26",
+          "source_id": "sha_5d451e3be09139c7"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_5d451e3be09139c7",
+          "date": "2026-04-20"
+        }
+      ],
+      "created_at": "2026-04-20T20:07:57.865485+00:00",
+      "updated_at": "2026-04-20T20:07:57.865503+00:00"
+    },
+    "beijing_guodian_gaoke_technology_co._ltd.": {
+      "id": "beijing_guodian_gaoke_technology_co._ltd.",
+      "label": "Guodian Gaokeji",
+      "type": "Organization",
+      "inferred_types": [
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "Guodian Gaokeji",
+          "event_date": "2026-04-21",
+          "source_id": "sha_445a872f380c7c81"
+        },
+        "country": {
+          "value": "CN",
+          "event_date": "2026-04-21",
+          "source_id": "sha_445a872f380c7c81"
+        },
+        "website": {
+          "value": null,
+          "event_date": "2026-04-21",
+          "source_id": "sha_445a872f380c7c81"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_445a872f380c7c81",
+          "date": "2026-04-21"
+        }
+      ],
+      "created_at": "2026-04-20T20:08:05.046113+00:00",
+      "updated_at": "2026-04-21T19:45:26.176973+00:00"
+    },
+    "falcon_heavy": {
+      "id": "falcon_heavy",
+      "label": "Falcon Heavy",
+      "type": "LaunchVehicle",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "Falcon Heavy",
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "manufacturer": {
+          "value": "SpaceX",
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "country_of_origin": {
+          "value": "USA",
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "vehicle_family": {
+          "value": "Falcon",
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "payload_capacity_kg": {
+          "value": null,
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "reusable": {
+          "value": "Yes",
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "status": {
+          "value": "Active",
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "first_flight": {
+          "value": null,
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_56a8b9a1ea2f120e",
+          "date": "2026-04-21"
+        }
+      ],
+      "created_at": "2026-04-21T03:07:52.313015+00:00",
+      "updated_at": "2026-04-21T03:07:52.313038+00:00"
+    },
+    "50321": {
+      "id": "50321",
+      "label": "SHIYAN-12 01 (SY-12 01)",
+      "type": "Satellite",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "attributes": {
+        "norad_id": {
+          "value": "50321",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "news_keywords": {
+          "value": "SHIYAN-12 01",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "aliases": {
+          "value": [
+            "SY-12 01",
+            "Shiyan-12 01",
+            "试验十二号01",
+            "SHIYAN 12-01"
+          ],
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [],
+      "created_at": "2026-04-21T13:15:42.664186+00:00",
+      "updated_at": "2026-04-21T13:16:20.340310+00:00"
+    },
+    "noaa": {
+      "id": "noaa",
+      "label": "NOAA",
+      "type": "Organization",
+      "inferred_types": [
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "National Oceanic and Atmospheric Administration",
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "country": {
+          "value": "USA",
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        },
+        "website": {
+          "value": null,
+          "event_date": "2026-04-21",
+          "source_id": "sha_56a8b9a1ea2f120e"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_56a8b9a1ea2f120e",
+          "date": "2026-04-21"
+        }
+      ],
+      "created_at": "2026-04-21T13:54:01.768080+00:00",
+      "updated_at": "2026-04-21T13:54:34.224045+00:00"
+    },
+    "44910": {
+      "id": "44910",
+      "label": "SHIJIAN-20 (SJ-20)",
+      "type": "Satellite",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "attributes": {
+        "norad_id": {
+          "value": "44910",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "news_keywords": {
+          "value": "SJ-20, SHIJIAN-20,实践二十号卫星,实践二十号",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "aliases": {
+          "value": [
+            "SJ-20",
+            "Shijian 20",
+            "Shijian-20",
+            "实践二十号",
+            "实践-20"
+          ],
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [],
+      "created_at": "2026-04-21T15:00:39.561596+00:00",
+      "updated_at": "2026-04-21T15:54:34.403505+00:00"
+    },
+    "50322": {
+      "id": "50322",
+      "label": "SHIYAN-12 02 (SY-12 02)",
+      "type": "Satellite",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "attributes": {
+        "norad_id": {
+          "value": "50322",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "aliases": {
+          "value": [
+            "SY-12 02",
+            "Shiyan-12 02",
+            "试验十二号02",
+            "SHIYAN 12-02"
+          ],
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "news_keywords": {
+          "value": "SHIYAN-12 02, SY-12 02, Shiyan 12",
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [],
+      "created_at": "2026-04-21T15:01:33.480270+00:00",
+      "updated_at": "2026-04-21T15:01:33.480270+00:00"
+    },
+    "44349": {
+      "id": "44349",
+      "label": "FORMOSAT 7-1",
+      "type": "Satellite",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "attributes": {
+        "norad_id": {
+          "value": "44349",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "aliases": {
+          "value": [
+            "FORMOSAT-7/1",
+            "COSMIC-2 E1",
+            "COSMIC-2E1",
+            "FS7-1"
+          ],
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "news_keywords": {
+          "value": "FORMOSAT-7, COSMIC-2, FORMOSAT 7-1",
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [],
+      "created_at": "2026-04-21T19:23:57.357389+00:00",
+      "updated_at": "2026-04-21T19:23:57.357389+00:00"
+    },
+    "星河动力航天公司": {
+      "id": "星河动力航天公司",
+      "label": "星河动力航天公司",
+      "type": "Company",
+      "inferred_types": [
+        "Organization",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "星河动力航天公司",
+          "event_date": "2026-01-16",
+          "source_id": "sha_a7eb59c17a9664c6"
+        },
+        "country": {
+          "value": "China",
+          "event_date": "2026-01-16",
+          "source_id": "sha_a7eb59c17a9664c6"
+        },
+        "website": {
+          "value": null,
+          "event_date": "2026-01-16",
+          "source_id": "sha_a7eb59c17a9664c6"
+        },
+        "stock_ticker": {
+          "value": null,
+          "event_date": "2026-01-16",
+          "source_id": "sha_a7eb59c17a9664c6"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_a7eb59c17a9664c6",
+          "date": "2026-04-21"
+        }
+      ],
+      "created_at": "2026-04-21T19:40:50.522795+00:00",
+      "updated_at": "2026-04-21T19:40:50.522815+00:00"
+    },
+    "谷神星一号海射型遥七火箭": {
+      "id": "谷神星一号海射型遥七火箭",
+      "label": "谷神星一号海射型遥七火箭",
+      "type": "LaunchVehicle",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "谷神星一号海射型遥七火箭",
+          "event_date": "2026-01-16",
+          "source_id": "sha_a7eb59c17a9664c6"
+        },
+        "manufacturer": {
+          "value": "烟台海阳东方航天港",
+          "event_date": "2026-01-16",
+          "source_id": "sha_a7eb59c17a9664c6"
+        },
+        "country_of_origin": {
+          "value": "China",
+          "event_date": "2026-01-16",
+          "source_id": "sha_a7eb59c17a9664c6"
+        },
+        "vehicle_family": {
+          "value": "谷神星",
+          "event_date": "2026-01-16",
+          "source_id": "sha_a7eb59c17a9664c6"
+        },
+        "payload_capacity_kg": {
+          "value": 300,
+          "event_date": "2026-01-16",
+          "source_id": "sha_a7eb59c17a9664c6"
+        },
+        "reusable": {
+          "value": "No",
+          "event_date": "2026-01-16",
+          "source_id": "sha_a7eb59c17a9664c6"
+        },
+        "status": {
+          "value": "Active",
+          "event_date": "2026-01-16",
+          "source_id": "sha_a7eb59c17a9664c6"
+        },
+        "first_flight": {
+          "value": "2023-09-05",
+          "event_date": "2026-01-16",
+          "source_id": "sha_a7eb59c17a9664c6"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_a7eb59c17a9664c6",
+          "date": "2026-04-21"
+        }
+      ],
+      "created_at": "2026-04-21T19:40:51.995804+00:00",
+      "updated_at": "2026-04-21T19:40:51.995821+00:00"
+    },
+    "yaogan": {
+      "id": "yaogan",
+      "label": "Yaogan",
+      "type": "SatelliteSeries",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "Yaogan",
+          "event_date": "2026-04-12",
+          "source_id": "sha_0ea3665e575ed4d2"
+        },
+        "description": {
+          "value": "Chinese military reconnaissance satellite series",
+          "event_date": "2026-04-12",
+          "source_id": "sha_0ea3665e575ed4d2"
+        },
+        "operator": {
+          "value": "PLA Strategic Support Force",
+          "event_date": "2026-04-12",
+          "source_id": "sha_0ea3665e575ed4d2"
+        },
+        "operator_country": {
+          "value": "China",
+          "event_date": "2026-04-12",
+          "source_id": "sha_0ea3665e575ed4d2"
+        },
+        "purpose": {
+          "value": "Military reconnaissance and remote sensing",
+          "event_date": "2026-04-12",
+          "source_id": "sha_0ea3665e575ed4d2"
+        },
+        "first_launch": {
+          "value": "2006-04-26",
+          "event_date": "2026-04-12",
+          "source_id": "sha_0ea3665e575ed4d2"
+        },
+        "total_count": {
+          "value": null,
+          "event_date": "2026-04-12",
+          "source_id": "sha_0ea3665e575ed4d2"
+        },
+        "aliases": {
+          "value": [
+            "遥感",
+            "遥感卫星",
+            "YG",
+            "Yaogan satellite series"
+          ],
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_0ea3665e575ed4d2",
+          "date": "2026-04-12"
+        }
+      ],
+      "created_at": "2026-04-21T19:40:55.190221+00:00",
+      "updated_at": "2026-04-21T19:52:27.041583+00:00"
+    },
+    "people's_liberation_army's_strategic_support_force": {
+      "id": "people's_liberation_army's_strategic_support_force",
+      "label": "People's Liberation Army's Strategic Support Force",
+      "type": "MilitaryUnit",
+      "inferred_types": [
+        "Organization",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "People's Liberation Army's Strategic Support Force",
+          "event_date": "2026-04-12",
+          "source_id": "sha_0ea3665e575ed4d2"
+        },
+        "description": {
+          "value": "Formerly the Aerospace Reconnaissance Bureau of the Second Department of the General Staff",
+          "event_date": "2026-04-12",
+          "source_id": "sha_0ea3665e575ed4d2"
+        },
+        "country": {
+          "value": "China",
+          "event_date": "2026-04-12",
+          "source_id": "sha_0ea3665e575ed4d2"
+        },
+        "website": {
+          "value": null,
+          "event_date": "2026-04-12",
+          "source_id": "sha_0ea3665e575ed4d2"
+        },
+        "branch": {
+          "value": "SSF",
+          "event_date": "2026-04-12",
+          "source_id": "sha_0ea3665e575ed4d2"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_0ea3665e575ed4d2",
+          "date": "2026-04-12"
+        }
+      ],
+      "created_at": "2026-04-21T19:40:55.595437+00:00",
+      "updated_at": "2026-04-21T19:40:55.595455+00:00"
+    },
+    "46810": {
+      "id": "46810",
+      "label": "Tianqi-6",
+      "type": "CommercialSatellite",
+      "inferred_types": [
+        "Satellite",
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "USAF",
+          "event_date": "2026-04-20",
+          "source_id": ""
+        },
+        "description": {
+          "value": "A data acquisition satellite part of technology verification tests for the narrow-band Internet of Things constellation.",
+          "event_date": "2020-10-26",
+          "source_id": "sha_5d451e3be09139c7"
+        },
+        "norad_id": {
+          "value": "46810",
+          "event_date": "2026-04-21",
+          "source_id": ""
+        },
+        "launch_date": {
+          "value": "2020-10-26",
+          "event_date": "2020-10-26",
+          "source_id": "sha_5d451e3be09139c7"
+        },
+        "manufacturer": {
+          "value": "Beijing Guodian Gaoke Technology Co. Ltd.",
+          "event_date": "2020-10-26",
+          "source_id": "sha_5d451e3be09139c7"
+        },
+        "operator": {
+          "value": "Beijing Guodian Gaoke Technology Co. Ltd.",
+          "event_date": "2020-10-26",
+          "source_id": "sha_5d451e3be09139c7"
+        },
+        "operator_country": {
+          "value": "China",
+          "event_date": "2020-10-26",
+          "source_id": "sha_5d451e3be09139c7"
+        },
+        "mission": {
+          "value": "Data acquisition",
+          "event_date": "2020-10-26",
+          "source_id": "sha_5d451e3be09139c7"
+        },
+        "orbit_type": {
+          "value": "LEO",
+          "event_date": "2020-10-26",
+          "source_id": "sha_5d451e3be09139c7"
+        },
+        "altitude_km": {
+          "value": 594.0,
+          "event_date": "2020-10-26",
+          "source_id": "reference_csv"
+        },
+        "inclination_deg": {
+          "value": "35",
+          "event_date": "2020-10-26",
+          "source_id": "reference_csv"
+        },
+        "revenue_model": {
+          "value": "narrow-band Internet of Things",
+          "event_date": "2020-10-26",
+          "source_id": "sha_5d451e3be09139c7"
+        },
+        "launch_vehicle_name": {
+          "value": "Long March 2C",
+          "event_date": "2020-10-26",
+          "source_id": "reference_csv"
+        },
+        "news_keywords": {
+          "value": "tianqi-6",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "aliases": {
+          "value": [
+            "TQ-6",
+            "天启6号",
+            "天启卫星6号",
+            "Tianqi 6"
+          ],
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_5d451e3be09139c7",
+          "date": "2026-04-20"
+        }
+      ],
+      "created_at": "2026-04-20T20:06:17.142451+00:00",
+      "updated_at": "2026-04-21T19:55:48.016338+00:00"
+    },
+    "tianqi_constellation": {
+      "id": "tianqi_constellation",
+      "label": "Tianqi Constellation",
+      "type": "SatelliteConstellation",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "Tianqi Constellation",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "description": {
+          "value": "Chinese commercial NB-IoT LEO satellite constellation by Guodian Gaoke",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "operator": {
+          "value": "Beijing Guodian Gaoke Technology Co. Ltd.",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "operator_country": {
+          "value": "China",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "mission": {
+          "value": "Narrow-band Internet of Things (NB-IoT) data acquisition",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "orbit_shell": {
+          "value": "LEO ~850 km, 45 deg inclination",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "total_planned": {
+          "value": 38,
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "total_deployed": {
+          "value": null,
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "first_launch": {
+          "value": "2018-09-29",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "status": {
+          "value": "Active",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "aliases": {
+          "value": [
+            "天启星座",
+            "天启",
+            "Tianqi",
+            "TQ",
+            "天启卫星星座"
+          ],
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [],
+      "created_at": "2026-04-21T19:52:27.041583+00:00",
+      "updated_at": "2026-04-21T19:52:27.041583+00:00"
+    },
+    "formosat7_cosmic2_constellation": {
+      "id": "formosat7_cosmic2_constellation",
+      "label": "FORMOSAT-7 Constellation",
+      "type": "SatelliteConstellation",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "FORMOSAT-7/COSMIC-2",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "description": {
+          "value": "Joint US-Taiwan 6-satellite LEO constellation for GPS radio occultation meteorology",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "operator": {
+          "value": "NOAA / Taiwan Space Agency (TASA)",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "operator_country": {
+          "value": "USA/Taiwan",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "mission": {
+          "value": "GPS radio occultation, meteorological forecasting, ionospheric monitoring",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "orbit_shell": {
+          "value": "LEO ~550 km, 24 deg inclination, 6 orbital planes",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "total_planned": {
+          "value": 6,
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "total_deployed": {
+          "value": 6,
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "first_launch": {
+          "value": "2019-06-25",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "status": {
+          "value": "Active",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "aliases": {
+          "value": [
+            "COSMIC-2",
+            "FORMOSAT-7/COSMIC-2",
+            "COSMIC 2",
+            "FORMOSAT7",
+            "FS7/C2"
+          ],
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [],
+      "created_at": "2026-04-21T19:52:27.041583+00:00",
+      "updated_at": "2026-04-21T20:15:24.933658+00:00"
+    },
+    "shiyan_12_series": {
+      "id": "shiyan_12_series",
+      "label": "SHIYAN-12 Series",
+      "type": "SatelliteSeries",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "SHIYAN-12 Series",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "description": {
+          "value": "Chinese experimental technology demonstration satellite series (SY-12 / 试验十二号)",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "operator": {
+          "value": "China Academy of Space Technology (CAST)",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "operator_country": {
+          "value": "China",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "purpose": {
+          "value": "Space technology verification and experimental research",
+          "event_date": "",
+          "source_id": ""
+        },
+        "first_launch": {
+          "value": "2026-04-22",
+          "event_date": "",
+          "source_id": ""
+        },
+        "total_count": {
+          "value": null,
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "news_keywords": {
+          "value": "shiyan-12",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "aliases": {
+          "value": [
+            "SY-12",
+            "试验十二号",
+            "Shiyan 12",
+            "SHIYAN 12"
+          ],
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [],
+      "created_at": "2026-04-21T19:52:27.041583+00:00",
+      "updated_at": "2026-04-22T17:58:12.304447+00:00"
+    },
+    "long_march_7a": {
+      "id": "long_march_7a",
+      "label": "Long March 7A",
+      "type": "LaunchVehicle",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "Long March 7A",
+          "event_date": "2026-04-22",
+          "source_id": "sha_3233a83f6a474404"
+        },
+        "manufacturer": {
+          "value": "China Aerospace Science and Technology Corp. (CASC)",
+          "event_date": "2026-04-22",
+          "source_id": "sha_3233a83f6a474404"
+        },
+        "country_of_origin": {
+          "value": "China",
+          "event_date": "2026-04-22",
+          "source_id": "sha_3233a83f6a474404"
+        },
+        "vehicle_family": {
+          "value": "Long March",
+          "event_date": "2026-04-22",
+          "source_id": "sha_3233a83f6a474404"
+        },
+        "payload_capacity_kg": {
+          "value": 7000,
+          "event_date": "2026-04-22",
+          "source_id": "sha_3233a83f6a474404"
+        },
+        "reusable": {
+          "value": "No",
+          "event_date": "2026-04-22",
+          "source_id": "sha_3233a83f6a474404"
+        },
+        "status": {
+          "value": "Active",
+          "event_date": "2026-04-22",
+          "source_id": "sha_3233a83f6a474404"
+        },
+        "first_flight": {
+          "value": "2020-03-16",
+          "event_date": "2026-04-22",
+          "source_id": "sha_3233a83f6a474404"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_3233a83f6a474404",
+          "date": "2026-04-22"
+        }
+      ],
+      "created_at": "2026-04-22T17:56:04.253977+00:00",
+      "updated_at": "2026-04-22T17:56:04.254003+00:00"
+    },
+    "china_academy_of_space_technology_(cast)": {
+      "id": "china_academy_of_space_technology_(cast)",
+      "label": "China Academy of Space Technology (CAST)",
+      "type": "Company",
+      "inferred_types": [
+        "Organization",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "China Academy of Space Technology (CAST)",
+          "event_date": "2026-04-22",
+          "source_id": "sha_3233a83f6a474404"
+        },
+        "country": {
+          "value": "China",
+          "event_date": "2026-04-22",
+          "source_id": "sha_3233a83f6a474404"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_3233a83f6a474404",
+          "date": "2026-04-22"
+        }
+      ],
+      "created_at": "2026-04-22T17:56:05.680840+00:00",
+      "updated_at": "2026-04-22T17:56:05.680857+00:00"
+    },
+    "guowang": {
+      "id": "guowang",
+      "label": "Guowang",
+      "type": "SatelliteConstellation",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "Guowang",
+          "event_date": "2026-01-14",
+          "source_id": "snapi_35380"
+        },
+        "operator": {
+          "value": "China National Space Administration",
+          "event_date": "2026-01-14",
+          "source_id": "snapi_35380"
+        },
+        "operator_country": {
+          "value": "China",
+          "event_date": "2026-01-14",
+          "source_id": "snapi_35380"
+        },
+        "mission": {
+          "value": "communications",
+          "event_date": "2026-01-14",
+          "source_id": "snapi_35380"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "snapi_35380",
+          "date": "2026-01-14T10:46:43Z"
+        }
+      ],
+      "created_at": "2026-04-22T17:57:42.289957+00:00",
+      "updated_at": "2026-04-22T17:57:42.289975+00:00"
+    },
+    "55131": {
+      "id": "55131",
+      "label": "SHIJIAN-23 (SJ-23)",
+      "type": "Satellite",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "attributes": {
+        "norad_id": {
+          "value": "55131",
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [],
+      "created_at": "2026-04-22T19:40:58.040885+00:00",
+      "updated_at": "2026-04-22T19:40:58.040885+00:00"
+    },
+    "65851": {
+      "id": "65851",
+      "label": "SHIYAN-30 01",
+      "type": "Satellite",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "attributes": {
+        "norad_id": {
+          "value": "65851",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "news_keywords": {
+          "value": "sy-30, shiyan-30",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "name": {
+          "value": "Shiyan-30 (01)",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "launch_date": {
+          "value": "2025-09-28",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "manufacturer": {
+          "value": "Shanghai Academy of Spaceflight Technology (SAST)",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "operator": {
+          "value": "China Aerospace Science and Technology Corporation (CASC)",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "operator_country": {
+          "value": "China",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "mission": {
+          "value": "testing and verifying Earth observation technology",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "orbit_type": {
+          "value": "LEO",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "altitude_km": {
+          "value": 590,
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "inclination_deg": {
+          "value": 35,
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "launch_vehicle": {
+          "value": "Long March 2D",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "launch_vehicle_name": {
+          "value": "Long March 2C",
+          "event_date": "2026-04-22",
+          "source_id": "reference_csv"
+        },
+        "aliases": {
+          "value": [
+            "Shiyan-30 (01)"
+          ],
+          "event_date": null,
+          "source_id": null
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_1425b27254b02cf3",
+          "date": "2026-04-22"
+        }
+      ],
+      "created_at": "2026-04-22T19:45:43.558909+00:00",
+      "updated_at": "2026-04-22T20:05:23.942343+00:00"
+    },
+    "shiyan_30_series": {
+      "id": "shiyan_30_series",
+      "label": "Shiyan-30 Series",
+      "type": "SatelliteSeries",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "Shiyan-30 Series",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "description": {
+          "value": "A series of experimental satellites primarily used for testing and verifying Earth observation technology.",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "operator": {
+          "value": "China Aerospace Science and Technology Corporation (CASC)",
+          "event_date": "2026-04-22",
+          "source_id": ""
+        },
+        "operator_country": {
+          "value": "China",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "purpose": {
+          "value": "technology demonstrations, space environment monitoring, electronic intelligence, remote sensing, space situational awareness, and space operations",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_1425b27254b02cf3",
+          "date": "2026-04-22"
+        }
+      ],
+      "created_at": "2026-04-22T19:55:13.509125+00:00",
+      "updated_at": "2026-04-22T20:43:49.731374+00:00"
+    },
+    "shanghai_academy_of_spaceflight_technology_(sast)": {
+      "id": "shanghai_academy_of_spaceflight_technology_(sast)",
+      "label": "Shanghai Academy of Spaceflight Technology (SAST)",
+      "type": "Organization",
+      "inferred_types": [
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "Shanghai Academy of Spaceflight Technology (SAST)",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "country": {
+          "value": "China",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_1425b27254b02cf3",
+          "date": "2026-04-22"
+        }
+      ],
+      "created_at": "2026-04-22T19:55:16.724198+00:00",
+      "updated_at": "2026-04-22T19:55:16.724219+00:00"
+    },
+    "65852": {
+      "id": "65852",
+      "label": "SHIYAN-30 02",
+      "type": "MilitarySatellite",
+      "inferred_types": [
+        "Satellite",
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "SHIYAN-30 02",
+          "event_date": "2026-04-10",
+          "source_id": "file_29a4194bbcf2283e"
+        },
+        "norad_id": {
+          "value": "65852",
+          "event_date": "2026-04-10",
+          "source_id": "file_29a4194bbcf2283e"
+        },
+        "launch_date": {
+          "value": "2025-09-29",
+          "event_date": "2026-04-10",
+          "source_id": "file_29a4194bbcf2283e"
+        },
+        "manufacturer": {
+          "value": "China Academy of Space Technology (CAST)",
+          "event_date": "2026-04-10",
+          "source_id": "reference_csv"
+        },
+        "operator": {
+          "value": "China Aerospace Science and Technology Corporation (CASC)",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "operator_country": {
+          "value": "China",
+          "event_date": "2026-04-10",
+          "source_id": "file_29a4194bbcf2283e"
+        },
+        "mission": {
+          "value": "Earth Observation / Remote Sensing",
+          "event_date": "2026-04-10",
+          "source_id": "file_29a4194bbcf2283e"
+        },
+        "orbit_type": {
+          "value": "LEO",
+          "event_date": "2026-04-10",
+          "source_id": "file_29a4194bbcf2283e"
+        },
+        "altitude_km": {
+          "value": 590,
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "inclination_deg": {
+          "value": 35,
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "news_keywords": {
+          "value": "",
+          "event_date": "2026-04-10",
+          "source_id": "file_29a4194bbcf2283e"
+        },
+        "launch_vehicle": {
+          "value": "Long March 2D",
+          "event_date": "2026-04-22",
+          "source_id": "sha_1425b27254b02cf3"
+        },
+        "military_branch": {
+          "value": "Chinese Ministry of Defence",
+          "event_date": "2026-04-10",
+          "source_id": "file_29a4194bbcf2283e"
+        },
+        "country_of_origin": {
+          "value": "China",
+          "event_date": "2026-04-10",
+          "source_id": "file_29a4194bbcf2283e"
+        },
+        "classification": {
+          "value": "Military",
+          "event_date": "2026-04-10",
+          "source_id": "file_29a4194bbcf2283e"
+        },
+        "launch_vehicle_name": {
+          "value": "Long March 2C",
+          "event_date": "2026-04-10",
+          "source_id": "reference_csv"
+        },
+        "aliases": {
+          "value": [
+            "Shiyan-30 (02)"
+          ],
+          "event_date": null,
+          "source_id": null
+        }
+      },
+      "sources": [
+        {
+          "source_id": "file_29a4194bbcf2283e",
+          "date": ""
+        },
+        {
+          "source_id": "sha_1425b27254b02cf3",
+          "date": "2026-04-22"
+        }
+      ],
+      "created_at": "2026-04-22T20:44:02.560875+00:00",
+      "updated_at": "2026-04-22T20:51:27.788117+00:00"
+    },
+    "49495": {
+      "id": "49495",
+      "label": "GAOFEN-3 02",
+      "type": "Satellite",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "attributes": {
+        "norad_id": {
+          "value": "49495",
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [],
+      "created_at": "2026-04-29T20:44:50.577942+00:00",
+      "updated_at": "2026-04-29T20:44:50.577942+00:00"
+    },
+    "52200": {
+      "id": "52200",
+      "label": "GAOFEN-3 03",
+      "type": "Satellite",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "attributes": {
+        "norad_id": {
+          "value": "52200",
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [],
+      "created_at": "2026-04-29T20:45:08.805874+00:00",
+      "updated_at": "2026-04-29T20:45:08.805874+00:00"
+    },
+    "41727": {
+      "id": "41727",
+      "label": "GAOFEN-3",
+      "type": "Satellite",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "attributes": {
+        "norad_id": {
+          "value": "41727",
+          "event_date": null,
+          "source_id": "manual"
+        },
+        "news_keywords": {
+          "value": "高分三號, GAOFEN-3",
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [],
+      "created_at": "2026-04-29T20:45:25.402926+00:00",
+      "updated_at": "2026-04-29T20:45:48.641185+00:00"
+    },
+    "long_march_6": {
+      "id": "long_march_6",
+      "label": "Long March 6",
+      "type": "LaunchVehicle",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "manufacturer": {
+          "value": "China Aerospace Science and Technology Corp. (CASC)",
+          "event_date": "2026-04-25",
+          "source_id": "file_d7ec093dc174de8d"
+        },
+        "country_of_origin": {
+          "value": "China",
+          "event_date": "2026-04-25",
+          "source_id": "file_d7ec093dc174de8d"
+        },
+        "status": {
+          "value": "Active",
+          "event_date": "2026-04-25",
+          "source_id": "file_d7ec093dc174de8d"
+        },
+        "first_flight": {
+          "value": null,
+          "event_date": "2026-04-25",
+          "source_id": "file_d7ec093dc174de8d"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "file_d7ec093dc174de8d",
+          "date": ""
+        }
+      ],
+      "created_at": "2026-05-02T17:55:17.926198+00:00",
+      "updated_at": "2026-05-02T17:55:17.926211+00:00"
+    },
+    "taiyuan_satellite_launch_center": {
+      "id": "taiyuan_satellite_launch_center",
+      "label": "Taiyuan Satellite Launch Center",
+      "type": "LaunchSite",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "country": {
+          "value": "China",
+          "event_date": "2026-04-25",
+          "source_id": "file_d7ec093dc174de8d"
+        },
+        "location": {
+          "value": "Taiyuan",
+          "event_date": "2026-04-25",
+          "source_id": "file_d7ec093dc174de8d"
+        },
+        "status": {
+          "value": "Active",
+          "event_date": "2026-04-25",
+          "source_id": "file_d7ec093dc174de8d"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "file_d7ec093dc174de8d",
+          "date": ""
+        }
+      ],
+      "created_at": "2026-05-02T17:55:18.891207+00:00",
+      "updated_at": "2026-05-02T17:55:18.891232+00:00"
+    },
+    "prsc-e03": {
+      "id": "prsc-e03",
+      "label": "PRSC-EO3",
+      "type": "Satellite",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "norad_id": {
+          "value": "68835",
+          "event_date": null,
+          "source_id": "file_d7ec093dc174de8d"
+        },
+        "notos_id": {
+          "value": "94220",
+          "event_date": null,
+          "source_id": "file_d7ec093dc174de8d"
+        },
+        "launch_date": {
+          "value": "2026-04-25",
+          "event_date": "2026-05-03",
+          "source_id": "sha_538b8d2943d9804c"
+        },
+        "manufacturer": {
+          "value": "SUPARCO",
+          "event_date": "2026-04-25",
+          "source_id": "file_d7ec093dc174de8d"
+        },
+        "operator": {
+          "value": "Pakistan Space and Upper Atmosphere Research Commission (SUPARCO)",
+          "event_date": "2026-05-03",
+          "source_id": "sha_538b8d2943d9804c"
+        },
+        "operator_country": {
+          "value": "Pakistan",
+          "event_date": "2026-05-03",
+          "source_id": "sha_538b8d2943d9804c"
+        },
+        "mission": {
+          "value": "Earth studies to support agriculture, urban planning, environmental management, disaster management, deforestation, glacier recession, and water resources",
+          "event_date": "2026-04-25",
+          "source_id": "file_d7ec093dc174de8d"
+        },
+        "orbit_type": {
+          "value": "LEO",
+          "event_date": "2026-04-25",
+          "source_id": "file_d7ec093dc174de8d"
+        },
+        "altitude_km": {
+          "value": null,
+          "event_date": "2026-05-03",
+          "source_id": "sha_538b8d2943d9804c"
+        },
+        "inclination_deg": {
+          "value": 38.0045,
+          "event_date": "2026-04-25",
+          "source_id": "file_d7ec093dc174de8d"
+        },
+        "inclination": {
+          "value": 38.0045,
+          "event_date": "2026-04-25T12:16:00Z",
+          "source_id": "file_d7ec093dc174de8d"
+        },
+        "orbital_period": {
+          "value": 95.6,
+          "event_date": "2026-04-25T12:16:00Z",
+          "source_id": "file_d7ec093dc174de8d"
+        },
+        "news_keywords": {
+          "value": null,
+          "event_date": "2026-05-03",
+          "source_id": "sha_538b8d2943d9804c"
+        },
+        "aliases": {
+          "value": [
+            "PRSC-E03"
+          ],
+          "event_date": null,
+          "source_id": null
+        }
+      },
+      "sources": [
+        {
+          "source_id": "sha_538b8d2943d9804c",
+          "date": "2026-05-03"
+        },
+        {
+          "source_id": "file_d7ec093dc174de8d",
+          "date": ""
+        }
+      ],
+      "created_at": "2026-05-04T14:15:24.058008+00:00",
+      "updated_at": "2026-05-04T14:17:36.420718+00:00"
+    },
+    "63157": {
+      "id": "63157",
+      "label": "TJS-15",
+      "type": "MilitarySatellite",
+      "inferred_types": [
+        "Satellite",
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "norad_id": {
+          "value": "63157",
+          "event_date": "2026-05-01",
+          "source_id": "file_2cb0b4b999df1bf1"
+        },
+        "launch_date": {
+          "value": null,
+          "event_date": "2026-05-01",
+          "source_id": "file_2cb0b4b999df1bf1"
+        },
+        "manufacturer": {
+          "value": null,
+          "event_date": "2026-05-01",
+          "source_id": "file_2cb0b4b999df1bf1"
+        },
+        "operator": {
+          "value": null,
+          "event_date": "2026-05-01",
+          "source_id": "file_2cb0b4b999df1bf1"
+        },
+        "operator_country": {
+          "value": "China",
+          "event_date": "2026-05-01",
+          "source_id": "file_2cb0b4b999df1bf1"
+        },
+        "mission": {
+          "value": "missile early warning, signals intelligence, and/or other unidentified missions",
+          "event_date": "2026-05-01",
+          "source_id": "file_2cb0b4b999df1bf1"
+        },
+        "orbit_type": {
+          "value": "GEO",
+          "event_date": "2026-05-01",
+          "source_id": "file_2cb0b4b999df1bf1"
+        },
+        "altitude_km": {
+          "value": null,
+          "event_date": "2026-05-01",
+          "source_id": "file_2cb0b4b999df1bf1"
+        },
+        "inclination_deg": {
+          "value": 0.2753,
+          "event_date": "2026-05-01",
+          "source_id": "file_2cb0b4b999df1bf1"
+        },
+        "inclination": {
+          "value": 0.2753,
+          "event_date": "2026-05-01",
+          "source_id": "file_2cb0b4b999df1bf1"
+        },
+        "orbital_period": {
+          "value": 1440.0,
+          "event_date": "2026-05-01",
+          "source_id": "file_2cb0b4b999df1bf1"
+        },
+        "news_keywords": {
+          "value": "",
+          "event_date": "2026-05-01",
+          "source_id": "file_2cb0b4b999df1bf1"
+        },
+        "military_branch": {
+          "value": null,
+          "event_date": "2026-05-01",
+          "source_id": "file_2cb0b4b999df1bf1"
+        },
+        "country_of_origin": {
+          "value": "China",
+          "event_date": "2026-05-01",
+          "source_id": "file_2cb0b4b999df1bf1"
+        },
+        "classification": {
+          "value": null,
+          "event_date": "2026-05-01",
+          "source_id": "file_2cb0b4b999df1bf1"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "file_2cb0b4b999df1bf1",
+          "date": ""
+        }
+      ],
+      "created_at": "2026-05-06T19:18:18.547929+00:00",
+      "updated_at": "2026-05-06T19:18:18.547968+00:00"
+    },
+    "66666": {
+      "id": "66666",
+      "label": "FORMOSAT-8A",
+      "type": "Satellite",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "attributes": {
+        "norad_id": {
+          "value": "66666",
+          "event_date": null,
+          "source_id": "manual"
+        }
+      },
+      "sources": [],
+      "created_at": "2026-05-08T01:22:48.440594+00:00",
+      "updated_at": "2026-05-08T01:22:48.440594+00:00"
+    },
+    "64467": {
+      "id": "64467",
+      "label": "COSMOS 2589",
+      "type": "MilitarySatellite",
+      "inferred_types": [
+        "Satellite",
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "COSMOS 2589",
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "norad_id": {
+          "value": "64467",
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "launch_date": {
+          "value": "2025-06-19",
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "manufacturer": {
+          "value": null,
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "operator": {
+          "value": "Russian Ministry of Defence - VKS (MORF)",
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "operator_country": {
+          "value": "Russia",
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "mission": {
+          "value": "Servicing/Inspection / Inspection Satellite,Cargo / Spacecraft Delivery/Deployment",
+          "event_date": "",
+          "source_id": ""
+        },
+        "orbit_type": {
+          "value": "GEO-GSO / Geostationary",
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "altitude_km": {
+          "value": null,
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "inclination_deg": {
+          "value": null,
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "inclination": {
+          "value": null,
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "orbital_period": {
+          "value": null,
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "news_keywords": {
+          "value": null,
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "military_branch": {
+          "value": "Russian Ministry of Defence - VKS (MORF)",
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "country_of_origin": {
+          "value": "Russia",
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "classification": {
+          "value": "Uncertain function",
+          "event_date": "",
+          "source_id": ""
+        }
+      },
+      "sources": [
+        {
+          "source_id": "file_874ab4e172ff35fb",
+          "date": ""
+        }
+      ],
+      "created_at": "2026-05-20T19:22:13.439781+00:00",
+      "updated_at": "2026-05-20T19:26:54.729955+00:00"
+    },
+    "51281": {
+      "id": "51281",
+      "label": "USA 325",
+      "type": "MilitarySatellite",
+      "inferred_types": [
+        "Satellite",
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "USA 325",
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "norad_id": {
+          "value": "51281",
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "launch_date": {
+          "value": "2022/1/21",
+          "event_date": "2026-05-19",
+          "source_id": "reference_csv"
+        },
+        "manufacturer": {
+          "value": "Northrup Grumman",
+          "event_date": "2026-05-19",
+          "source_id": "reference_csv"
+        },
+        "operator": {
+          "value": "Air Force Satellite Control Network",
+          "event_date": "2026-05-19",
+          "source_id": "reference_csv"
+        },
+        "operator_country": {
+          "value": "USA",
+          "event_date": "2026-05-19",
+          "source_id": "reference_csv"
+        },
+        "mission": {
+          "value": "Space Observation — Imaging",
+          "event_date": "2026-05-19",
+          "source_id": "reference_csv"
+        },
+        "orbit_type": {
+          "value": "GEO",
+          "event_date": "2026-05-19",
+          "source_id": "reference_csv"
+        },
+        "altitude_km": {
+          "value": null,
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "inclination_deg": {
+          "value": "0.11",
+          "event_date": "2026-05-19",
+          "source_id": "reference_csv"
+        },
+        "inclination": {
+          "value": null,
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "orbital_period": {
+          "value": null,
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "news_keywords": {
+          "value": null,
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "military_branch": {
+          "value": null,
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "country_of_origin": {
+          "value": null,
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        },
+        "classification": {
+          "value": null,
+          "event_date": "2026-05-19",
+          "source_id": "file_874ab4e172ff35fb"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "file_874ab4e172ff35fb",
+          "date": ""
+        }
+      ],
+      "created_at": "2026-05-20T19:22:14.033939+00:00",
+      "updated_at": "2026-05-20T19:22:14.033961+00:00"
+    },
+    "64527": {
+      "id": "64527",
+      "label": "COSMOS 2590",
+      "type": "MilitarySatellite",
+      "inferred_types": [
+        "Satellite",
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "name": {
+          "value": "COSMOS 2590",
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        },
+        "norad_id": {
+          "value": "64527",
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        },
+        "launch_date": {
+          "value": "2025-06-26",
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        },
+        "manufacturer": {
+          "value": "Central Scientific Research Institute of Chemistry and Mechanics (TsNIIKhM)",
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        },
+        "operator": {
+          "value": "Russian Aerospace Forces (VKS)",
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        },
+        "operator_country": {
+          "value": "Russia",
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        },
+        "mission": {
+          "value": "Military satellite of uncertain function",
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        },
+        "orbit_type": {
+          "value": "GEO",
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        },
+        "altitude_km": {
+          "value": null,
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        },
+        "inclination_deg": {
+          "value": null,
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        },
+        "inclination": {
+          "value": null,
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        },
+        "orbital_period": {
+          "value": null,
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        },
+        "news_keywords": {
+          "value": "",
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        },
+        "military_branch": {
+          "value": "Russian Aerospace Forces",
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        },
+        "country_of_origin": {
+          "value": "Russia",
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        },
+        "classification": {
+          "value": "Uncertain function",
+          "event_date": "2026-05-18",
+          "source_id": "file_f8129074e591fff3"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "file_f8129074e591fff3",
+          "date": ""
+        }
+      ],
+      "created_at": "2026-05-20T19:26:46.657621+00:00",
+      "updated_at": "2026-05-20T19:26:46.657653+00:00"
+    },
+    "qianfan_jigui_group_10a_r": {
+      "id": "qianfan_jigui_group_10a_r",
+      "label": "Qianfan Jigui Group 10A-R",
+      "type": "Satellite",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "notos_id": {
+          "value": "94468",
+          "event_date": null,
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "inclination": {
+          "value": 98.1931,
+          "event_date": "2026-05-17T14:42:00Z",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "orbital_period": {
+          "value": 98.8,
+          "event_date": "2026-05-17T14:42:00Z",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "file_5fe9e8fe0a70ac79",
+          "date": ""
+        }
+      ],
+      "created_at": "2026-05-20T20:04:31.301762+00:00",
+      "updated_at": "2026-05-20T20:04:31.301806+00:00"
+    },
+    "qianfan_jigui_polar_group_08": {
+      "id": "qianfan_jigui_polar_group_08",
+      "label": "Qianfan Jigui Polar Group 08",
+      "type": "SatelliteSeries",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "description": {
+          "value": "Qianfan Jigui Polar Group 08 is a batch of 18 flat-pack broadband internet satellites manufactured by Genesat under contract to Shanghai Spacesail Technologies (SSST), plan to be launched May 17, 2026 at 1442 UTC aboard a Long March 8 from the Wenchang Commercial Space Launch Site.",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "operator": {
+          "value": "Shanghai Spacesail Technologies (SSST)",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "operator_country": {
+          "value": "China",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "purpose": {
+          "value": "broadband internet",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "first_launch": {
+          "value": "2026-05-17",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "total_count": {
+          "value": 18,
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "file_5fe9e8fe0a70ac79",
+          "date": ""
+        }
+      ],
+      "created_at": "2026-05-20T20:05:03.132210+00:00",
+      "updated_at": "2026-05-20T20:05:03.132261+00:00"
+    },
+    "qianfan_constellation": {
+      "id": "qianfan_constellation",
+      "label": "Qianfan Constellation",
+      "type": "SatelliteConstellation",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "description": {
+          "value": "The Thousand Sails (Qianfan) constellation, also known as G60 Starlink or Spacesail, is China's primary commercial low-Earth orbit (LEO) satellite internet mega constellation project.",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "operator": {
+          "value": "Shanghai Spacecom Satellite Technology (SSST)",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "operator_country": {
+          "value": "China",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "mission": {
+          "value": "LEO internet",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "total_planned": {
+          "value": 15000,
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "status": {
+          "value": "Active",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "file_5fe9e8fe0a70ac79",
+          "date": ""
+        }
+      ],
+      "created_at": "2026-05-20T20:05:03.140517+00:00",
+      "updated_at": "2026-05-20T20:05:03.140555+00:00"
+    },
+    "long_march_8": {
+      "id": "long_march_8",
+      "label": "Long March 8",
+      "type": "LaunchVehicle",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "manufacturer": {
+          "value": "China Aerospace Science and Technology Corp. (CASC)",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "country_of_origin": {
+          "value": "China",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "vehicle_family": {
+          "value": "Long March",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "status": {
+          "value": "Active",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "first_flight": {
+          "value": null,
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "file_5fe9e8fe0a70ac79",
+          "date": ""
+        }
+      ],
+      "created_at": "2026-05-20T20:05:03.152420+00:00",
+      "updated_at": "2026-05-20T20:05:03.152456+00:00"
+    },
+    "wenchang_commercial_space_launch_site": {
+      "id": "wenchang_commercial_space_launch_site",
+      "label": "Wenchang Commercial Space Launch Site",
+      "type": "LaunchSite",
+      "inferred_types": [
+        "Physical",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "country": {
+          "value": "China",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "location": {
+          "value": "Hainan",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        },
+        "status": {
+          "value": "Active",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "file_5fe9e8fe0a70ac79",
+          "date": ""
+        }
+      ],
+      "created_at": "2026-05-20T20:05:03.157700+00:00",
+      "updated_at": "2026-05-20T20:05:03.157740+00:00"
+    },
+    "shanghai_spacesail_technologies_(ssst)": {
+      "id": "shanghai_spacesail_technologies_(ssst)",
+      "label": "Shanghai Spacesail Technologies (SSST)",
+      "type": "Company",
+      "inferred_types": [
+        "Organization",
+        "Entity"
+      ],
+      "schema_status": "confirmed",
+      "attributes": {
+        "country": {
+          "value": "China",
+          "event_date": "2026-05-17",
+          "source_id": "file_5fe9e8fe0a70ac79"
+        }
+      },
+      "sources": [
+        {
+          "source_id": "file_5fe9e8fe0a70ac79",
+          "date": ""
+        }
+      ],
+      "created_at": "2026-05-20T20:05:03.162631+00:00",
+      "updated_at": "2026-05-20T20:05:03.162677+00:00"
+    }
+  },
+  "edges": {
+    "e_new_glenn_launchedBy_blue_origin": {
+      "source": "new_glenn",
+      "label": "launchedBy",
+      "target": "blue_origin",
+      "sources": [
+        {
+          "source_id": "sha_af580fe7b2250bcf",
+          "date": "2026-04-20"
+        }
+      ],
+      "id": "e_new_glenn_launchedBy_blue_origin",
+      "created_at": "2026-04-20T13:35:46.203339+00:00",
+      "updated_at": "2026-04-20T13:35:46.203370+00:00"
+    },
+    "e_avio_launchContractWith_taiwan_space_agency": {
+      "source": "avio",
+      "label": "launchContractWith",
+      "target": "taiwan_space_agency",
+      "sources": [
+        {
+          "source_id": "sha_4f5d7d8d3adfdb57",
+          "date": "2026-04-20"
+        }
+      ],
+      "id": "e_avio_launchContractWith_taiwan_space_agency",
+      "created_at": "2026-04-20T13:47:00.385262+00:00",
+      "updated_at": "2026-04-20T13:47:00.385289+00:00"
+    },
+    "e_42920_operatedBy_taiwan_space_agency": {
+      "source": "42920",
+      "label": "operatedBy",
+      "target": "taiwan_space_agency",
+      "sources": [
+        {
+          "source_id": "sha_4f5d7d8d3adfdb57",
+          "date": "2026-04-20"
+        }
+      ],
+      "id": "e_42920_operatedBy_taiwan_space_agency",
+      "created_at": "2026-04-20T13:48:01.664068+00:00",
+      "updated_at": "2026-04-20T13:48:01.664142+00:00"
+    },
+    "e_20580_operatedBy_nasa": {
+      "source": "20580",
+      "label": "operatedBy",
+      "target": "nasa",
+      "sources": [
+        {
+          "source_id": "snapi_37603",
+          "date": "2026-04-20T14:01:01Z"
+        }
+      ],
+      "id": "e_20580_operatedBy_nasa",
+      "created_at": "2026-04-20T14:17:48.091888+00:00",
+      "updated_at": "2026-04-20T14:17:48.091927+00:00"
+    },
+    "e_libera_operatedBy_nasa": {
+      "source": "libera",
+      "label": "operatedBy",
+      "target": "nasa",
+      "sources": [
+        {
+          "source_id": "sha_ce149fad26ca2b9c",
+          "date": "2026-04-20"
+        }
+      ],
+      "id": "e_libera_operatedBy_nasa",
+      "created_at": "2026-04-20T14:20:38.317425+00:00",
+      "updated_at": "2026-04-20T14:20:38.317442+00:00"
+    },
+    "e_41473_operatedBy_china_national_space_administration": {
+      "source": "41473",
+      "label": "operatedBy",
+      "target": "china_national_space_administration",
+      "sources": [
+        {
+          "source_id": "sha_30fd8e1a6e0f5b45",
+          "date": "2026-04-20"
+        }
+      ],
+      "id": "e_41473_operatedBy_china_national_space_administration",
+      "created_at": "2026-04-20T18:48:58.186978+00:00",
+      "updated_at": "2026-04-20T18:48:58.187001+00:00"
+    },
+    "e_41473_manufacturedBy_china_national_space_administration": {
+      "source": "41473",
+      "label": "manufacturedBy",
+      "target": "china_national_space_administration",
+      "sources": [
+        {
+          "source_id": "sha_b6e32b21c1a73b5f",
+          "date": "2026-04-20"
+        }
+      ],
+      "id": "e_41473_manufacturedBy_china_national_space_administration",
+      "created_at": "2026-04-20T20:07:09.157313+00:00",
+      "updated_at": "2026-04-20T20:07:09.157334+00:00"
+    },
+    "e_41473_carriedBy_long_march_2c": {
+      "source": "41473",
+      "label": "carriedBy",
+      "target": "long_march_2c",
+      "sources": [
+        {
+          "source_id": "sha_b6e32b21c1a73b5f",
+          "date": "2026-04-20"
+        }
+      ],
+      "id": "e_41473_carriedBy_long_march_2c",
+      "created_at": "2026-04-20T20:07:09.914725+00:00",
+      "updated_at": "2026-04-20T20:07:09.914746+00:00"
+    },
+    "e_41473_manufacturedBy_china_aerospace_science_and_technology_corp._(casc)": {
+      "source": "41473",
+      "label": "manufacturedBy",
+      "target": "china_aerospace_science_and_technology_corp._(casc)",
+      "sources": [
+        {
+          "source_id": "sha_5d451e3be09139c7",
+          "date": "2026-04-20"
+        }
+      ],
+      "id": "e_41473_manufacturedBy_china_aerospace_science_and_technology_corp._(casc)",
+      "created_at": "2026-04-20T20:08:16.493932+00:00",
+      "updated_at": "2026-04-20T20:08:16.493953+00:00"
+    },
+    "e_42920_carriedBy_falcon_heavy": {
+      "source": "42920",
+      "label": "carriedBy",
+      "target": "falcon_heavy",
+      "sources": [
+        {
+          "source_id": "sha_56a8b9a1ea2f120e",
+          "date": "2026-04-21"
+        }
+      ],
+      "id": "e_42920_carriedBy_falcon_heavy",
+      "created_at": "2026-04-21T03:07:50.697050+00:00",
+      "updated_at": "2026-04-21T03:07:50.698441+00:00"
+    },
+    "e_42920_operatedBy_noaa": {
+      "source": "42920",
+      "label": "operatedBy",
+      "target": "noaa",
+      "sources": [
+        {
+          "source_id": "sha_18af273a1f413dc4",
+          "date": "2026-03-27"
+        }
+      ],
+      "id": "e_42920_operatedBy_noaa",
+      "created_at": "2026-04-21T13:54:00.224934+00:00",
+      "updated_at": "2026-04-21T13:54:00.224984+00:00"
+    },
+    "e_yaogan_operatedBy_people's_liberation_army's_strategic_support_force": {
+      "source": "yaogan",
+      "label": "operatedBy",
+      "target": "people's_liberation_army's_strategic_support_force",
+      "sources": [
+        {
+          "source_id": "sha_0ea3665e575ed4d2",
+          "date": "2026-04-12"
+        }
+      ],
+      "id": "e_yaogan_operatedBy_people's_liberation_army's_strategic_support_force",
+      "created_at": "2026-04-21T19:40:54.520269+00:00",
+      "updated_at": "2026-04-21T19:40:54.520289+00:00"
+    },
+    "e_46810_carriedBy_long_march_2c": {
+      "source": "46810",
+      "label": "carriedBy",
+      "target": "long_march_2c",
+      "sources": [
+        {
+          "source_id": "sha_445a872f380c7c81",
+          "date": "2026-04-21"
+        }
+      ],
+      "id": "e_46810_carriedBy_long_march_2c",
+      "created_at": "2026-04-21T19:45:04.978901+00:00",
+      "updated_at": "2026-04-21T19:52:27.041583+00:00"
+    },
+    "e_46810_operatedBy_beijing_guodian_gaoke_technology_co._ltd.": {
+      "source": "46810",
+      "label": "operatedBy",
+      "target": "beijing_guodian_gaoke_technology_co._ltd.",
+      "sources": [
+        {
+          "source_id": "sha_445a872f380c7c81",
+          "date": "2026-04-21"
+        }
+      ],
+      "id": "e_46810_operatedBy_beijing_guodian_gaoke_technology_co._ltd.",
+      "created_at": "2026-04-21T19:45:07.269945+00:00",
+      "updated_at": "2026-04-21T19:52:27.041583+00:00"
+    },
+    "e_41473_memberOfSeries_yaogan": {
+      "id": "e_41473_memberOfSeries_yaogan",
+      "source": "41473",
+      "label": "memberOfSeries",
+      "target": "yaogan",
+      "sources": [
+        {
+          "source_id": "manual",
+          "date": "2026-04-21"
+        }
+      ],
+      "created_at": "2026-04-21T19:52:27.041583+00:00",
+      "updated_at": "2026-04-21T19:52:27.041583+00:00"
+    },
+    "e_46810_memberOfConstellation_tianqi_constellation": {
+      "id": "e_46810_memberOfConstellation_tianqi_constellation",
+      "source": "46810",
+      "label": "memberOfConstellation",
+      "target": "tianqi_constellation",
+      "sources": [
+        {
+          "source_id": "manual",
+          "date": "2026-04-21"
+        }
+      ],
+      "created_at": "2026-04-21T19:52:27.041583+00:00",
+      "updated_at": "2026-04-21T19:52:27.041583+00:00"
+    },
+    "e_tianqi_constellation_operatedBy_beijing_guodian_gaoke_technology_co._ltd.": {
+      "id": "e_tianqi_constellation_operatedBy_beijing_guodian_gaoke_technology_co._ltd.",
+      "source": "tianqi_constellation",
+      "label": "operatedBy",
+      "target": "beijing_guodian_gaoke_technology_co._ltd.",
+      "sources": [
+        {
+          "source_id": "manual",
+          "date": "2026-04-21"
+        }
+      ],
+      "created_at": "2026-04-21T19:52:27.041583+00:00",
+      "updated_at": "2026-04-21T19:52:27.041583+00:00"
+    },
+    "e_formosat7_cosmic2_constellation_operatedBy_taiwan_space_agency": {
+      "id": "e_formosat7_cosmic2_constellation_operatedBy_taiwan_space_agency",
+      "source": "formosat7_cosmic2_constellation",
+      "label": "operatedBy",
+      "target": "taiwan_space_agency",
+      "sources": [
+        {
+          "source_id": "manual",
+          "date": "2026-04-21"
+        }
+      ],
+      "created_at": "2026-04-21T19:52:27.041583+00:00",
+      "updated_at": "2026-04-21T19:52:27.041583+00:00"
+    },
+    "e_formosat7_cosmic2_constellation_operatedBy_noaa": {
+      "id": "e_formosat7_cosmic2_constellation_operatedBy_noaa",
+      "source": "formosat7_cosmic2_constellation",
+      "label": "operatedBy",
+      "target": "noaa",
+      "sources": [
+        {
+          "source_id": "manual",
+          "date": "2026-04-21"
+        }
+      ],
+      "created_at": "2026-04-21T19:52:27.041583+00:00",
+      "updated_at": "2026-04-21T19:52:27.041583+00:00"
+    },
+    "e_44349_memberOfConstellation_formosat7_cosmic2_constellation": {
+      "id": "e_44349_memberOfConstellation_formosat7_cosmic2_constellation",
+      "source": "44349",
+      "label": "memberOfConstellation",
+      "target": "formosat7_cosmic2_constellation",
+      "sources": [
+        {
+          "source_id": "manual",
+          "date": "2026-04-21"
+        }
+      ],
+      "created_at": "2026-04-21T19:52:27.041583+00:00",
+      "updated_at": "2026-04-21T19:52:27.041583+00:00"
+    },
+    "e_50321_memberOfSeries_shiyan_12_series": {
+      "id": "e_50321_memberOfSeries_shiyan_12_series",
+      "source": "50321",
+      "label": "memberOfSeries",
+      "target": "shiyan_12_series",
+      "sources": [
+        {
+          "source_id": "manual",
+          "date": "2026-04-21"
+        }
+      ],
+      "created_at": "2026-04-21T19:52:27.041583+00:00",
+      "updated_at": "2026-04-21T19:52:27.041583+00:00"
+    },
+    "e_50322_memberOfSeries_shiyan_12_series": {
+      "id": "e_50322_memberOfSeries_shiyan_12_series",
+      "source": "50322",
+      "label": "memberOfSeries",
+      "target": "shiyan_12_series",
+      "sources": [
+        {
+          "source_id": "manual",
+          "date": "2026-04-21"
+        }
+      ],
+      "created_at": "2026-04-21T19:52:27.041583+00:00",
+      "updated_at": "2026-04-21T19:52:27.041583+00:00"
+    },
+    "e_50321_operatedBy_china_aerospace_science_and_technology_corp._(casc)": {
+      "source": "50321",
+      "label": "operatedBy",
+      "target": "china_aerospace_science_and_technology_corp._(casc)",
+      "sources": [
+        {
+          "source_id": "sha_3233a83f6a474404",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_50321_operatedBy_china_aerospace_science_and_technology_corp._(casc)",
+      "created_at": "2026-04-22T17:55:57.843827+00:00",
+      "updated_at": "2026-04-22T17:55:57.843844+00:00"
+    },
+    "e_50322_operatedBy_china_aerospace_science_and_technology_corp._(casc)": {
+      "source": "50322",
+      "label": "operatedBy",
+      "target": "china_aerospace_science_and_technology_corp._(casc)",
+      "sources": [
+        {
+          "source_id": "sha_3233a83f6a474404",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_50322_operatedBy_china_aerospace_science_and_technology_corp._(casc)",
+      "created_at": "2026-04-22T17:55:58.461773+00:00",
+      "updated_at": "2026-04-22T17:55:58.461792+00:00"
+    },
+    "e_50321_manufacturedBy_china_academy_of_space_technology_(cast)": {
+      "source": "50321",
+      "label": "manufacturedBy",
+      "target": "china_academy_of_space_technology_(cast)",
+      "sources": [
+        {
+          "source_id": "sha_3233a83f6a474404",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_50321_manufacturedBy_china_academy_of_space_technology_(cast)",
+      "created_at": "2026-04-22T17:55:58.899782+00:00",
+      "updated_at": "2026-04-22T17:55:58.899903+00:00"
+    },
+    "e_50322_manufacturedBy_china_academy_of_space_technology_(cast)": {
+      "source": "50322",
+      "label": "manufacturedBy",
+      "target": "china_academy_of_space_technology_(cast)",
+      "sources": [
+        {
+          "source_id": "sha_3233a83f6a474404",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_50322_manufacturedBy_china_academy_of_space_technology_(cast)",
+      "created_at": "2026-04-22T17:55:59.312529+00:00",
+      "updated_at": "2026-04-22T17:55:59.312546+00:00"
+    },
+    "e_50321_carriedBy_long_march_7a": {
+      "source": "50321",
+      "label": "carriedBy",
+      "target": "long_march_7a",
+      "sources": [
+        {
+          "source_id": "sha_3233a83f6a474404",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_50321_carriedBy_long_march_7a",
+      "created_at": "2026-04-22T17:55:59.856275+00:00",
+      "updated_at": "2026-04-22T17:55:59.856294+00:00"
+    },
+    "e_50322_carriedBy_long_march_7a": {
+      "source": "50322",
+      "label": "carriedBy",
+      "target": "long_march_7a",
+      "sources": [
+        {
+          "source_id": "sha_3233a83f6a474404",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_50322_carriedBy_long_march_7a",
+      "created_at": "2026-04-22T17:56:00.254800+00:00",
+      "updated_at": "2026-04-22T17:56:00.254819+00:00"
+    },
+    "e_long_march_7a_builtBy_china_aerospace_science_and_technology_corp._(casc)": {
+      "source": "long_march_7a",
+      "label": "builtBy",
+      "target": "china_aerospace_science_and_technology_corp._(casc)",
+      "sources": [
+        {
+          "source_id": "sha_3233a83f6a474404",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_long_march_7a_builtBy_china_aerospace_science_and_technology_corp._(casc)",
+      "created_at": "2026-04-22T17:56:01.571935+00:00",
+      "updated_at": "2026-04-22T17:56:01.571957+00:00"
+    },
+    "e_long_march_2c_builtBy_china_aerospace_science_and_technology_corp._(casc)": {
+      "source": "long_march_2c",
+      "label": "builtBy",
+      "target": "china_aerospace_science_and_technology_corp._(casc)",
+      "sources": [
+        {
+          "source_id": "sha_1425b27254b02cf3",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_long_march_2c_builtBy_china_aerospace_science_and_technology_corp._(casc)",
+      "created_at": "2026-04-22T19:55:32.275338+00:00",
+      "updated_at": "2026-04-22T19:55:32.275357+00:00"
+    },
+    "e_65851_memberOfSeries_shiyan_30_series": {
+      "source": "65851",
+      "label": "memberOfSeries",
+      "target": "shiyan_30_series",
+      "sources": [
+        {
+          "source_id": "sha_1425b27254b02cf3",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_65851_memberOfSeries_shiyan_30_series",
+      "created_at": "2026-04-22T19:55:18.040885+00:00",
+      "updated_at": "2026-04-22T19:55:18.040908+00:00"
+    },
+    "e_65851_manufacturedBy_shanghai_academy_of_spaceflight_technology_(sast)": {
+      "source": "65851",
+      "label": "manufacturedBy",
+      "target": "shanghai_academy_of_spaceflight_technology_(sast)",
+      "sources": [
+        {
+          "source_id": "sha_1425b27254b02cf3",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_65851_manufacturedBy_shanghai_academy_of_spaceflight_technology_(sast)",
+      "created_at": "2026-04-22T19:55:20.876858+00:00",
+      "updated_at": "2026-04-22T19:55:20.876884+00:00"
+    },
+    "e_65851_operatedBy_china_aerospace_science_and_technology_corp._(casc)": {
+      "source": "65851",
+      "label": "operatedBy",
+      "target": "china_aerospace_science_and_technology_corp._(casc)",
+      "sources": [
+        {
+          "source_id": "sha_1425b27254b02cf3",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_65851_operatedBy_china_aerospace_science_and_technology_corp._(casc)",
+      "created_at": "2026-04-22T19:55:23.538056+00:00",
+      "updated_at": "2026-04-22T19:55:23.538077+00:00"
+    },
+    "e_65851_carriedBy_long_march_2c": {
+      "source": "65851",
+      "label": "carriedBy",
+      "target": "long_march_2c",
+      "sources": [
+        {
+          "source_id": "sha_1425b27254b02cf3",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_65851_carriedBy_long_march_2c",
+      "created_at": "2026-04-22T19:55:25.257284+00:00",
+      "updated_at": "2026-04-22T19:55:25.257310+00:00"
+    },
+    "e_65852_memberOfSeries_shiyan_30_series": {
+      "source": "65852",
+      "label": "memberOfSeries",
+      "target": "shiyan_30_series",
+      "sources": [
+        {
+          "source_id": "sha_1425b27254b02cf3",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_65852_memberOfSeries_shiyan_30_series",
+      "created_at": "2026-04-22T19:55:18.950007+00:00",
+      "updated_at": "2026-04-22T19:55:18.950025+00:00"
+    },
+    "e_65852_manufacturedBy_shanghai_academy_of_spaceflight_technology_(sast)": {
+      "source": "65852",
+      "label": "manufacturedBy",
+      "target": "shanghai_academy_of_spaceflight_technology_(sast)",
+      "sources": [
+        {
+          "source_id": "sha_1425b27254b02cf3",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_65852_manufacturedBy_shanghai_academy_of_spaceflight_technology_(sast)",
+      "created_at": "2026-04-22T19:55:21.897840+00:00",
+      "updated_at": "2026-04-22T19:55:21.897874+00:00"
+    },
+    "e_65852_operatedBy_china_aerospace_science_and_technology_corp._(casc)": {
+      "source": "65852",
+      "label": "operatedBy",
+      "target": "china_aerospace_science_and_technology_corp._(casc)",
+      "sources": [
+        {
+          "source_id": "sha_1425b27254b02cf3",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_65852_operatedBy_china_aerospace_science_and_technology_corp._(casc)",
+      "created_at": "2026-04-22T19:55:24.430822+00:00",
+      "updated_at": "2026-04-22T19:55:24.430850+00:00"
+    },
+    "e_65852_carriedBy_long_march_2c": {
+      "source": "65852",
+      "label": "carriedBy",
+      "target": "long_march_2c",
+      "sources": [
+        {
+          "source_id": "sha_1425b27254b02cf3",
+          "date": "2026-04-22"
+        }
+      ],
+      "id": "e_65852_carriedBy_long_march_2c",
+      "created_at": "2026-04-22T19:55:25.898030+00:00",
+      "updated_at": "2026-04-22T19:55:25.898047+00:00"
+    },
+    "e_prsc-e03_launchedFrom_taiyuan_satellite_launch_center": {
+      "source": "prsc-e03",
+      "label": "launchedFrom",
+      "target": "taiyuan_satellite_launch_center",
+      "sources": [
+        {
+          "source_id": "sha_538b8d2943d9804c",
+          "date": "2026-05-03"
+        }
+      ],
+      "id": "e_prsc-e03_launchedFrom_taiyuan_satellite_launch_center",
+      "created_at": "2026-05-04T14:15:31.048952+00:00",
+      "updated_at": "2026-05-04T14:15:31.048976+00:00"
+    },
+    "e_prsc-e03_carriedBy_long_march_6": {
+      "source": "prsc-e03",
+      "label": "carriedBy",
+      "target": "long_march_6",
+      "sources": [
+        {
+          "source_id": "sha_538b8d2943d9804c",
+          "date": "2026-05-03"
+        }
+      ],
+      "id": "e_prsc-e03_carriedBy_long_march_6",
+      "created_at": "2026-05-04T14:15:33.247124+00:00",
+      "updated_at": "2026-05-04T14:15:33.247143+00:00"
+    },
+    "e_prsc-e03_manufacturedBy_suparco": {
+      "source": "prsc-e03",
+      "label": "manufacturedBy",
+      "target": "suparco",
+      "sources": [
+        {
+          "source_id": "file_d7ec093dc174de8d",
+          "date": ""
+        }
+      ],
+      "id": "e_prsc-e03_manufacturedBy_suparco",
+      "created_at": "2026-05-02T17:55:21.525845+00:00",
+      "updated_at": "2026-05-02T17:55:21.525870+00:00"
+    },
+    "e_prsc-e03_operatedBy_suparco": {
+      "source": "prsc-e03",
+      "label": "operatedBy",
+      "target": "suparco",
+      "sources": [
+        {
+          "source_id": "file_d7ec093dc174de8d",
+          "date": ""
+        }
+      ],
+      "id": "e_prsc-e03_operatedBy_suparco",
+      "created_at": "2026-05-02T17:55:21.892896+00:00",
+      "updated_at": "2026-05-02T17:55:21.892916+00:00"
+    },
+    "e_qianfan_jigui_polar_group_08_memberOfConstellation_qianfan_constellation": {
+      "source": "qianfan_jigui_polar_group_08",
+      "label": "memberOfConstellation",
+      "target": "qianfan_constellation",
+      "sources": [
+        {
+          "source_id": "file_5fe9e8fe0a70ac79",
+          "date": ""
+        }
+      ],
+      "id": "e_qianfan_jigui_polar_group_08_memberOfConstellation_qianfan_constellation",
+      "created_at": "2026-05-20T20:05:03.167117+00:00",
+      "updated_at": "2026-05-20T20:05:03.167163+00:00"
+    },
+    "e_qianfan_jigui_polar_group_08_launchedFrom_wenchang_commercial_space_launch_site": {
+      "source": "qianfan_jigui_polar_group_08",
+      "label": "launchedFrom",
+      "target": "wenchang_commercial_space_launch_site",
+      "sources": [
+        {
+          "source_id": "file_5fe9e8fe0a70ac79",
+          "date": ""
+        }
+      ],
+      "id": "e_qianfan_jigui_polar_group_08_launchedFrom_wenchang_commercial_space_launch_site",
+      "created_at": "2026-05-20T20:05:03.170587+00:00",
+      "updated_at": "2026-05-20T20:05:03.170622+00:00"
+    },
+    "e_qianfan_jigui_polar_group_08_carriedBy_long_march_8": {
+      "source": "qianfan_jigui_polar_group_08",
+      "label": "carriedBy",
+      "target": "long_march_8",
+      "sources": [
+        {
+          "source_id": "file_5fe9e8fe0a70ac79",
+          "date": ""
+        }
+      ],
+      "id": "e_qianfan_jigui_polar_group_08_carriedBy_long_march_8",
+      "created_at": "2026-05-20T20:05:03.173922+00:00",
+      "updated_at": "2026-05-20T20:05:03.173959+00:00"
+    },
+    "e_long_march_8_builtBy_china_aerospace_science_and_technology_corp._(casc)": {
+      "source": "long_march_8",
+      "label": "builtBy",
+      "target": "china_aerospace_science_and_technology_corp._(casc)",
+      "sources": [
+        {
+          "source_id": "file_5fe9e8fe0a70ac79",
+          "date": ""
+        }
+      ],
+      "id": "e_long_march_8_builtBy_china_aerospace_science_and_technology_corp._(casc)",
+      "created_at": "2026-05-20T20:05:03.177421+00:00",
+      "updated_at": "2026-05-20T20:05:03.177462+00:00"
+    },
+    "e_wenchang_commercial_space_launch_site_operatesLaunchSite_shanghai_spacesail_technologies_(ssst)": {
+      "source": "wenchang_commercial_space_launch_site",
+      "label": "operatesLaunchSite",
+      "target": "shanghai_spacesail_technologies_(ssst)",
+      "sources": [
+        {
+          "source_id": "file_5fe9e8fe0a70ac79",
+          "date": ""
+        }
+      ],
+      "id": "e_wenchang_commercial_space_launch_site_operatesLaunchSite_shanghai_spacesail_technologies_(ssst)",
+      "created_at": "2026-05-20T20:05:03.180396+00:00",
+      "updated_at": "2026-05-20T20:05:03.180436+00:00"
+    }
+  },
+  "conflicts": [
+    {
+      "id": "p_ba6b5097",
+      "entity_id": "nasa",
+      "field": "website",
+      "assessment": "The two URLs represent different official NASA websites, requiring human verification to determine the correct or primary one.",
+      "detected_at": "2026-04-20T14:19:57.196960+00:00"
+    },
+    {
+      "id": "p_51263b63",
+      "entity_id": "long_march_2c",
+      "field": "name",
+      "assessment": "The new value 'Long March 4B' is factually incompatible with the existing value 'Long March 2C' as they refer to different rocket models, requiring human verification.",
+      "detected_at": "2026-04-20T14:43:58.748834+00:00"
+    },
+    {
+      "id": "p_ee119c86",
+      "entity_id": "41473",
+      "field": "description",
+      "assessment": "The descriptions refer to different launch dates and potentially different satellite groups, requiring human verification.",
+      "detected_at": "2026-04-20T20:05:52.007810+00:00"
+    },
+    {
+      "id": "p_71077cdb",
+      "entity_id": "41473",
+      "field": "norad_id",
+      "assessment": "The new value 'null' contradicts the existing NORAD catalog number '41473', indicating a potential error or data entry issue that requires human verification.",
+      "detected_at": "2026-04-20T20:05:53.179764+00:00"
+    },
+    {
+      "id": "p_0aed0551",
+      "entity_id": "44859",
+      "field": "launch_date",
+      "assessment": "The two sources provide conflicting launch dates for the same entity, requiring human verification to determine the correct date.",
+      "detected_at": "2026-04-20T23:43:42.658932+00:00"
+    },
+    {
+      "id": "p_0d30fde2",
+      "entity_id": "44859",
+      "field": "manufacturer",
+      "assessment": "The two sources provide different manufacturers for the same satellite, which is factually incompatible and requires human verification.",
+      "detected_at": "2026-04-20T23:43:43.684412+00:00"
+    },
+    {
+      "id": "p_95cfe5f5",
+      "entity_id": "42920",
+      "field": "description",
+      "assessment": "The existing value describes the entity as an Earth observation satellite, while the new value describes it as part of a meteorological satellite constellation, which are factually different purposes.",
+      "detected_at": "2026-04-20T23:47:43.606764+00:00"
+    },
+    {
+      "id": "p_db1de003",
+      "entity_id": "46810",
+      "field": "name",
+      "assessment": "The existing value 'Tianqi-6' and the new value 'USAF' are factually incompatible names for the same entity, requiring human verification.",
+      "detected_at": "2026-04-20T23:47:47.697048+00:00"
+    },
+    {
+      "id": "p_82c85675",
+      "entity_id": "46810",
+      "field": "description",
+      "assessment": "The existing and new values describe entirely different entities, indicating a factual incompatibility that requires human intervention.",
+      "detected_at": "2026-04-20T23:47:48.395472+00:00"
+    },
+    {
+      "id": "p_7a260a0f",
+      "entity_id": "46810",
+      "field": "name",
+      "assessment": "The names 'Tianqi-6' and 'Falcon Heavy' refer to different entities, indicating a factual incompatibility that requires human intervention.",
+      "detected_at": "2026-04-20T23:47:49.722812+00:00"
+    },
+    {
+      "id": "p_9da78deb",
+      "entity_id": "46810",
+      "field": "description",
+      "assessment": "The existing and new values describe entirely different entities, indicating a factual incompatibility that requires human intervention.",
+      "detected_at": "2026-04-20T23:47:50.456661+00:00"
+    },
+    {
+      "id": "p_de190445",
+      "entity_id": "46810",
+      "field": "manufacturer",
+      "assessment": "The manufacturers 'Beijing Guodian Gaoke Technology Co. Ltd.' and 'SpaceX' are factually incompatible for the same rocket, requiring human verification.",
+      "detected_at": "2026-04-20T23:47:51.478406+00:00"
+    },
+    {
+      "id": "p_3f7ad8d6",
+      "entity_id": "42920",
+      "field": "norad_id",
+      "assessment": "The existing and new values represent different NORAD catalog numbers, indicating a factual discrepancy that requires human verification.",
+      "detected_at": "2026-04-21T13:52:52.462583+00:00"
+    },
+    {
+      "id": "p_1796d7b8",
+      "entity_id": "long_march_2c",
+      "field": "name",
+      "assessment": "The new value 'Chang Zheng 7A' is factually incompatible with the existing value 'CHANG ZHENG 2C' as they refer to different rocket models, requiring human verification.",
+      "detected_at": "2026-04-21T20:22:54.336360+00:00"
+    },
+    {
+      "id": "p_1fca11c6",
+      "entity_id": "shiyan_12_series",
+      "field": "purpose",
+      "assessment": "The two values describe different purposes for the same entity, requiring human judgment to determine if they are factually incompatible or represent different mission phases.",
+      "detected_at": "2026-04-22T17:53:35.651850+00:00"
+    },
+    {
+      "id": "p_d8fbc9c9",
+      "entity_id": "shiyan_12_series",
+      "field": "first_launch",
+      "assessment": "The new value indicates a future launch date that contradicts the existing past launch date, suggesting a factual inconsistency that requires human review.",
+      "detected_at": "2026-04-22T17:53:36.432550+00:00"
+    },
+    {
+      "id": "p_4c9ec03c",
+      "entity_id": "yaogan",
+      "field": "operator",
+      "assessment": "The two values represent different organizations, suggesting a potential conflict in the reported operator of the Yaogan series, requiring human verification.",
+      "detected_at": "2026-04-22T17:53:57.524673+00:00"
+    },
+    {
+      "id": "p_46d90108",
+      "entity_id": "yaogan",
+      "field": "operator",
+      "assessment": "The two values represent different organizations, suggesting a potential conflict in the operator of the Yaogan series that requires human verification.",
+      "detected_at": "2026-04-22T17:54:55.473576+00:00"
+    },
+    {
+      "id": "p_0e5f2c71",
+      "entity_id": "yaogan",
+      "field": "description",
+      "assessment": "The new value 'Classified satellite series' and the existing value 'Chinese military reconnaissance satellite series' are factually incompatible descriptions of the same entity, requiring human judgment to resolve.",
+      "detected_at": "2026-04-22T17:55:11.480835+00:00"
+    },
+    {
+      "id": "p_bff112b4",
+      "entity_id": "yaogan",
+      "field": "operator",
+      "assessment": "The two values represent different organizations, suggesting a potential change in operator or conflicting information that requires human verification.",
+      "detected_at": "2026-04-22T17:55:12.627883+00:00"
+    },
+    {
+      "id": "p_61bcfa77",
+      "entity_id": "yaogan",
+      "field": "operator",
+      "assessment": "The two values represent different organizations, suggesting a potential change in operator or conflicting information, requiring human verification.",
+      "detected_at": "2026-04-22T17:55:26.195033+00:00"
+    },
+    {
+      "id": "p_50c11c28",
+      "entity_id": "yaogan",
+      "field": "operator",
+      "assessment": "The two values represent different operators for the Yaogan series, indicating a potential change or error that requires human verification.",
+      "detected_at": "2026-04-22T17:56:03.321956+00:00"
+    },
+    {
+      "id": "p_e5c78276",
+      "entity_id": "yaogan",
+      "field": "operator",
+      "assessment": "The two values represent different organizations, suggesting a potential change in operator or conflicting information, requiring human verification.",
+      "detected_at": "2026-04-22T17:56:11.995012+00:00"
+    },
+    {
+      "id": "p_f859b2ca",
+      "entity_id": "long_march_2c",
+      "field": "name",
+      "assessment": "The new value 'Long March 2D' is factually incompatible with the existing value 'Long March', indicating a potential misidentification of the rocket model that requires human verification.",
+      "detected_at": "2026-04-22T19:54:28.439088+00:00"
+    },
+    {
+      "id": "p_9fad2d93",
+      "entity_id": "65851",
+      "field": "launch_date",
+      "assessment": "The two launch dates are factually incompatible, indicating a conflict that requires human intervention to determine the correct date.",
+      "detected_at": "2026-04-22T20:39:49.326162+00:00"
+    },
+    {
+      "id": "p_8987a2dd",
+      "entity_id": "65851",
+      "field": "manufacturer",
+      "assessment": "The two values represent different manufacturers for the same satellite, which is factually incompatible and requires human verification.",
+      "detected_at": "2026-04-22T20:39:50.180854+00:00"
+    },
+    {
+      "id": "p_28b2c6bc",
+      "entity_id": "65851",
+      "field": "operator",
+      "assessment": "The two values represent different entities, suggesting conflicting information about the operator of the satellite.",
+      "detected_at": "2026-04-22T20:39:51.397104+00:00"
+    },
+    {
+      "id": "p_e259c0fa",
+      "entity_id": "shiyan_30_series",
+      "field": "operator",
+      "assessment": "The two values indicate different operators for the same entity, suggesting a factual conflict that requires human intervention to resolve.",
+      "detected_at": "2026-04-22T20:39:55.860677+00:00"
+    },
+    {
+      "id": "p_c915e871",
+      "entity_id": "shiyan_30_series",
+      "field": "purpose",
+      "assessment": "The new value 'Technology demonstration' is a subset of the existing value, which includes multiple purposes, indicating a potential conflict in the scope of the mission's purpose.",
+      "detected_at": "2026-04-22T20:39:57.489518+00:00"
+    },
+    {
+      "id": "p_84ae5bda",
+      "entity_id": "tianqi_constellation",
+      "field": "first_launch",
+      "assessment": "The two dates for the first constellation launch are factually incompatible, requiring human verification to determine the correct date.",
+      "detected_at": "2026-05-06T18:32:19.032571+00:00"
+    },
+    {
+      "id": "p_633ce384",
+      "entity_id": "tianqi_constellation",
+      "field": "aliases",
+      "assessment": "The new value is an empty list, which contradicts the existing list of aliases, requiring human verification.",
+      "detected_at": "2026-05-06T18:36:49.095608+00:00"
+    },
+    {
+      "id": "p_b7ee827e",
+      "entity_id": "tianqi_constellation",
+      "field": "first_launch",
+      "assessment": "The two dates for the first constellation launch are factually incompatible, requiring human verification to determine the correct date.",
+      "detected_at": "2026-05-06T18:36:53.457639+00:00"
+    },
+    {
+      "id": "p_3e239306",
+      "entity_id": "64467",
+      "field": "mission",
+      "assessment": "The new value describes a different mission purpose than the existing value, indicating a factual inconsistency that requires human evaluation.",
+      "detected_at": "2026-05-20T19:25:02.535184+00:00"
+    }
+  ],
+  "sources": {
+    "sha_af580fe7b2250bcf": {
+      "type": "report",
+      "title": "https://www.nasaspaceflight.com/2026/04/ng-3-launch/",
+      "url": "https://www.nasaspaceflight.com/2026/04/ng-3-launch/",
+      "date": "2026-04-20",
+      "news_site": ""
+    },
+    "sha_bc5d53540eedd9ca": {
+      "type": "report",
+      "title": "https://spacenews.com/china-launches-new-group-of-classified-yaogan-30-satellites/",
+      "url": "https://spacenews.com/china-launches-new-group-of-classified-yaogan-30-satellites/",
+      "date": "2026-04-20",
+      "news_site": ""
+    },
+    "sha_f4f1d0e40e1b15b8": {
+      "type": "report",
+      "title": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-artemis-ii-human-research-data-methodology-challenge/",
+      "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nasa-artemis-ii-human-research-data-methodology-challenge/",
+      "date": "2026-04-20",
+      "news_site": ""
+    },
+    "sha_4f5d7d8d3adfdb57": {
+      "type": "report",
+      "title": "https://europeanspaceflight.com/avio-to-launch-four-earth-observation-satellites-for-taiwan/",
+      "url": "https://europeanspaceflight.com/avio-to-launch-four-earth-observation-satellites-for-taiwan/",
+      "date": "2026-04-20",
+      "news_site": ""
+    },
+    "sha_464c378eabfdeb3d": {
+      "type": "report",
+      "title": "https://www.nasaspaceflight.com/2019/07/long-march-2c-yaogan-30-group-05-satellites/",
+      "url": "https://www.nasaspaceflight.com/2019/07/long-march-2c-yaogan-30-group-05-satellites/",
+      "date": "2026-04-20",
+      "news_site": ""
+    },
+    "sha_ce149fad26ca2b9c": {
+      "type": "report",
+      "title": "https://science.nasa.gov/missions/libera/nasa-earth-energy-instrument-completes-testing-ready-for-delivery/",
+      "url": "https://science.nasa.gov/missions/libera/nasa-earth-energy-instrument-completes-testing-ready-for-delivery/",
+      "date": "2026-04-20",
+      "news_site": ""
+    },
+    "sha_f470746cedbaecd1": {
+      "type": "report",
+      "title": "https://www.cnsa.gov.cn/n6758823/n6758838/c10739812/content.html",
+      "url": "https://www.cnsa.gov.cn/n6758823/n6758838/c10739812/content.html",
+      "date": "2026-04-20",
+      "news_site": ""
+    },
+    "snapi_37608": {
+      "type": "news",
+      "title": "NASA Invites Media to SpaceX’s 34th Resupply Launch to Space Station",
+      "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-spacexs-34th-resupply-launch-to-space-station/",
+      "date": "2026-04-20T18:02:28Z",
+      "news_site": "NASA"
+    },
+    "sha_15bee02539f07db9": {
+      "type": "report",
+      "title": "NASA’s Hubble Dazzles With Young Stars in Trifid Nebula",
+      "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-dazzles-with-young-stars-in-trifid-nebula/",
+      "date": "2026-04-20",
+      "news_site": ""
+    },
+    "snapi_36994": {
+      "type": "news",
+      "title": "NASA’s Hubble Revisits Crab Nebula to Track 25 Years of Expansion",
+      "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-revisits-crab-nebula-to-track-25-years-of-expansion/",
+      "date": "2026-03-23T14:00:54Z",
+      "news_site": "NASA"
+    },
+    "snapi_35079": {
+      "type": "news",
+      "title": "TanDEM X marks 15 years mapping Earth in 3D",
+      "url": "https://www.spacedaily.com/reports/TanDEM_X_marks_15_years_mapping_Earth_in_3D_999.html",
+      "date": "2026-01-01T11:20:58Z",
+      "news_site": "SpaceDaily"
+    },
+    "snapi_37000": {
+      "type": "news",
+      "title": "NASA’s Hubble, Webb Telescopes Survey Pinwheel Galaxy",
+      "url": "https://www.nasa.gov/image-article/nasas-hubble-webb-telescopes-survey-pinwheel-galaxy/",
+      "date": "2026-03-23T16:32:17Z",
+      "news_site": "NASA"
+    },
+    "snapi_36871": {
+      "type": "news",
+      "title": "New Moog Innovations for the Satellite Market on Full Display at SATELLITE 2026 Conference",
+      "url": "https://spacenews.com/new-moog-innovations-for-the-satellite-market-on-full-display-at-satellite-2026-conference/",
+      "date": "2026-03-16T12:00:00Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_34590": {
+      "type": "news",
+      "title": "RISTRETTO spectrograph cleared for Proxima b atmospheric hunt",
+      "url": "https://www.spacedaily.com/reports/RISTRETTO_spectrograph_cleared_for_Proxima_b_atmospheric_hunt_999.html",
+      "date": "2025-12-09T04:08:14Z",
+      "news_site": "SpaceDaily"
+    },
+    "snapi_36901": {
+      "type": "news",
+      "title": "Sirius Space Services Acquires AMM-42 as It Prepares for Inaugural Flight",
+      "url": "https://europeanspaceflight.com/sirius-space-services-acquires-amm-42-as-it-prepares-for-inaugural-flight/",
+      "date": "2026-03-17T14:22:19Z",
+      "news_site": "European Spaceflight"
+    },
+    "snapi_36917": {
+      "type": "news",
+      "title": "NASA’s Hubble Unexpectedly Catches Comet Breaking Up",
+      "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-unexpectedly-catches-comet-breaking-up/",
+      "date": "2026-03-18T14:00:36Z",
+      "news_site": "NASA"
+    },
+    "snapi_37309": {
+      "type": "news",
+      "title": "Moog Highlights Growing Satellite Bus Capabilities with Full‑Scale METEOR Reveal at Space Symposium",
+      "url": "https://spacenews.com/moog-highlights-growing-satellite-bus-capabilities-with-full-scale-meteor-reveal-at-space-symposium/",
+      "date": "2026-04-06T19:19:49Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_37437": {
+      "type": "news",
+      "title": "Moog Technology Keeps Artemis II Astronauts Safe During Historic Lunar Mission",
+      "url": "https://spacenews.com/moog-technology-keeps-artemis-ii-astronauts-safe-during-historic-lunar-mission/",
+      "date": "2026-04-11T00:41:38Z",
+      "news_site": "SpaceNews"
+    },
+    "sha_30fd8e1a6e0f5b45": {
+      "type": "report",
+      "title": "China launches three more Yaogan spysats",
+      "url": "https://spaceflightnow.com/2021/07/25/china-launches-three-more-yaogan-spysats/",
+      "date": "2026-04-20",
+      "news_site": ""
+    },
+    "snapi_37050": {
+      "type": "news",
+      "title": "NASA Awards Astrophysics Postdoctoral Fellowships for 2026",
+      "url": "https://science.nasa.gov/missions/hubble/nasa-awards-astrophysics-postdoctoral-fellowships-for-2026/",
+      "date": "2026-03-25T16:00:08Z",
+      "news_site": "NASA"
+    },
+    "snapi_36578": {
+      "type": "news",
+      "title": "Two Observatories, One Cosmic Eye: Hubble and Euclid View Cat’s Eye Nebula",
+      "url": "https://science.nasa.gov/missions/hubble/two-observatories-one-cosmic-eye-hubble-and-euclid-view-cats-eye-nebula/",
+      "date": "2026-03-03T14:00:09Z",
+      "news_site": "NASA"
+    },
+    "sha_5d451e3be09139c7": {
+      "type": "report",
+      "title": "China launches latest trio of Yaogan-30 remote sensing satellites",
+      "url": "https://spacenews.com/china-launches-latest-trio-of-yaogan-30-remote-sensing-satellites/",
+      "date": "2026-04-20",
+      "news_site": ""
+    },
+    "sha_b6e32b21c1a73b5f": {
+      "type": "report",
+      "title": "China launches Chang Zheng 2C with trio of Yaogan-30 satellites",
+      "url": "https://www.nasaspaceflight.com/2021/06/yaogan-30-group-9/",
+      "date": "2026-04-20",
+      "news_site": ""
+    },
+    "sha_ff92db2ffdf3247e": {
+      "type": "report",
+      "title": "https://www.friendsofnasa.org/2026/04/china-launches-high-precision.html?m=1",
+      "url": "https://www.friendsofnasa.org/2026/04/china-launches-high-precision.html?m=1",
+      "date": "2026-04-20",
+      "news_site": ""
+    },
+    "sha_56a8b9a1ea2f120e": {
+      "type": "report",
+      "title": "https://zh.wikipedia.org/zh-tw/%E7%A6%8F%E7%88%BE%E6%91%A9%E6%B2%99%E8%A1%9B%E6%98%9F%E4%B8%83%E8%99%9F",
+      "url": "https://zh.wikipedia.org/zh-tw/%E7%A6%8F%E7%88%BE%E6%91%A9%E6%B2%99%E8%A1%9B%E6%98%9F%E4%B8%83%E8%99%9F",
+      "date": "2026-04-21",
+      "news_site": ""
+    },
+    "sha_59221c2b228a2c2f": {
+      "type": "report",
+      "title": "https://mmb.dragonarmy.rocks/notso/77bb0aae-8690-4800-9f4e-86618afb5c03",
+      "url": "https://mmb.dragonarmy.rocks/notso/77bb0aae-8690-4800-9f4e-86618afb5c03",
+      "date": "2026-04-21",
+      "news_site": ""
+    },
+    "sha_18af273a1f413dc4": {
+      "type": "wikipedia",
+      "title": "COSMIC-2",
+      "url": "https://en.wikipedia.org/wiki/COSMIC-2",
+      "date": "2026-03-27",
+      "news_site": "en.wikipedia.org"
+    },
+    "sha_0ea3665e575ed4d2": {
+      "type": "wikipedia",
+      "title": "Yaogan",
+      "url": "https://en.wikipedia.org/wiki/Yaogan",
+      "date": "2026-04-12",
+      "news_site": "en.wikipedia.org"
+    },
+    "sha_a7eb59c17a9664c6": {
+      "type": "report",
+      "title": "2026年1月16日04时10分，星河动力航天公司在山东日照近海海域（海龙湾海域）使用由烟台海阳东方航天港总装出厂的谷神…",
+      "url": "",
+      "date": "2026-04-21",
+      "news_site": ""
+    },
+    "snapi_37619": {
+      "type": "news",
+      "title": "A Fresh Look at the Crab Nebula",
+      "url": "https://www.nasa.gov/image-article/a-fresh-look-at-the-crab-nebula/",
+      "date": "2026-04-21T15:30:12Z",
+      "news_site": "NASA"
+    },
+    "sha_445a872f380c7c81": {
+      "type": "report",
+      "title": "TIANQI-6, 46810 is a payload satellite owned by Guodian Gaok…",
+      "url": "",
+      "date": "2026-04-21",
+      "news_site": ""
+    },
+    "snapi_37603": {
+      "type": "news",
+      "title": "NASA’s Hubble Dazzles With Young Stars in Trifid Nebula",
+      "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-dazzles-with-young-stars-in-trifid-nebula/",
+      "date": "2026-04-20T14:01:01Z",
+      "news_site": "NASA"
+    },
+    "snapi_10046": {
+      "type": "news",
+      "title": "China tests fairing recovery technologies on Long March 2C launch with four satellites",
+      "url": "https://www.nasaspaceflight.com/2021/07/china-fairing-recovery-long-march-2c/",
+      "date": "2021-07-19T04:19:28Z",
+      "news_site": "NASASpaceflight"
+    },
+    "snapi_13413": {
+      "type": "news",
+      "title": "China launches pair of experimental satellites on Chang Zheng 7A",
+      "url": "https://www.nasaspaceflight.com/2021/12/experimental-sats-cz-7a/",
+      "date": "2021-12-23T19:03:36Z",
+      "news_site": "NASASpaceflight"
+    },
+    "snapi_37602": {
+      "type": "news",
+      "title": "Hubble turns 36 with a dazzling Trifid Nebula portrait",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Hubble_turns_36_with_a_dazzling_Trifid_Nebula_portrait",
+      "date": "2026-04-20T14:00:00Z",
+      "news_site": "ESA"
+    },
+    "snapi_37456": {
+      "type": "news",
+      "title": "Hubble Spies an Active Spiral",
+      "url": "https://science.nasa.gov/missions/hubble/hubble-spies-an-active-spiral/",
+      "date": "2026-04-13T12:24:40Z",
+      "news_site": "NASA"
+    },
+    "snapi_37076": {
+      "type": "news",
+      "title": "NASA’s Hubble Detects First-Ever Spin Reversal of Tiny Comet",
+      "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-detects-first-ever-spin-reversal-of-tiny-comet/",
+      "date": "2026-03-26T14:00:11Z",
+      "news_site": "NASA"
+    },
+    "snapi_9737": {
+      "type": "news",
+      "title": "China launches Chang Zheng 2C with trio of Yaogan-30 satellites",
+      "url": "https://www.nasaspaceflight.com/2021/06/yaogan-30-group-9/",
+      "date": "2021-06-18T13:36:36Z",
+      "news_site": "NASASpaceflight"
+    },
+    "snapi_37056": {
+      "type": "news",
+      "title": "Webb Captures Saturn in Infrared",
+      "url": "https://www.nasa.gov/image-article/webb-captures-saturn-in-infrared/",
+      "date": "2026-03-25T18:33:40Z",
+      "news_site": "NASA"
+    },
+    "snapi_37055": {
+      "type": "news",
+      "title": "NASA Webb, Hubble Share Most Comprehensive View of Saturn to Date",
+      "url": "https://science.nasa.gov/missions/webb/nasa-webb-hubble-share-most-comprehensive-view-of-saturn-to-date/",
+      "date": "2026-03-25T18:00:00Z",
+      "news_site": "NASA"
+    },
+    "snapi_9734": {
+      "type": "news",
+      "title": "China launches new group of classified Yaogan-30 satellites",
+      "url": "https://spacenews.com/china-launches-new-group-of-classified-yaogan-30-satellites/",
+      "date": "2021-06-18T10:43:54Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_37072": {
+      "type": "news",
+      "title": "Webb & Hubble capture new views of Saturn",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Webb/Webb_Hubble_capture_new_views_of_Saturn",
+      "date": "2026-03-25T18:00:00Z",
+      "news_site": "ESA"
+    },
+    "snapi_7145": {
+      "type": "news",
+      "title": "China launches latest trio of Yaogan-30 remote sensing satellites",
+      "url": "https://spacenews.com/china-launches-latest-trio-of-yaogan-30-remote-sensing-satellites/",
+      "date": "2020-10-26T22:48:58Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_7138": {
+      "type": "news",
+      "title": "China launches new Yaogan-30 group of military satellites",
+      "url": "https://www.nasaspaceflight.com/2020/10/china-launches-new-yaogan-30-group-of-military-satellites/",
+      "date": "2020-10-26T16:43:26Z",
+      "news_site": "NASASpaceflight"
+    },
+    "snapi_3319": {
+      "type": "news",
+      "title": "Long March 2C lofts Yaogan-30 Group 05 satellites",
+      "url": "https://www.nasaspaceflight.com/2019/07/long-march-2c-yaogan-30-group-05-satellites/",
+      "date": "2019-07-26T04:53:54Z",
+      "news_site": "NASASpaceflight"
+    },
+    "snapi_13410": {
+      "type": "news",
+      "title": "Long March 7A launches classified Shiyan-12 satellites",
+      "url": "https://spacenews.com/long-march-7a-launches-classified-shiyan-12-satellites/",
+      "date": "2021-12-23T11:36:42Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_6415": {
+      "type": "news",
+      "title": "Weather models improve with COSMIC-2 and Spire Global data",
+      "url": "https://spacenews.com/radio-occultations-growing-importance/",
+      "date": "2020-08-14T15:25:47Z",
+      "news_site": "SpaceNews"
+    },
+    "sha_3233a83f6a474404": {
+      "type": "report",
+      "title": "Long March 7A launches classified Shiyan-12 satellites",
+      "url": "https://spacenews.com/long-march-7a-launches-classified-shiyan-12-satellites/",
+      "date": "2026-04-22",
+      "news_site": ""
+    },
+    "snapi_36869": {
+      "type": "news",
+      "title": "China launches new highly retrograde Yaogan satellite, KZ-11 rideshare deploys 8 satellites",
+      "url": "https://spacenews.com/china-launches-new-highly-retrograde-yaogan-satellite-kz-11-rideshare-deploys-8-satellites/",
+      "date": "2026-03-16T10:59:46Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_35380": {
+      "type": "news",
+      "title": "China’s first launches of 2026 send Yaogan spacecraft into unusual orbit, loft Guowang satellites",
+      "url": "https://spacenews.com/chinas-first-launches-of-2026-send-yaogan-spacecraft-into-unusual-orbit-loft-guowang-satellites/",
+      "date": "2026-01-14T10:46:43Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_35481": {
+      "type": "news",
+      "title": "Galactic Energy conducts sixth offshore Ceres 1 mission from Yellow Sea platform",
+      "url": "https://www.spacedaily.com/reports/Galactic_Energy_conducts_sixth_offshore_Ceres_1_mission_from_Yellow_Sea_platform_999.html",
+      "date": "2026-01-19T09:56:59Z",
+      "news_site": "SpaceDaily"
+    },
+    "snapi_34602": {
+      "type": "news",
+      "title": "China launches 4 times in 4 days, boosting megaconstellation and surveillance assets",
+      "url": "https://spacenews.com/china-launches-4-times-in-4-days-boosting-megaconstellation-and-surveillance-assets/",
+      "date": "2025-12-09T11:06:05Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_36746": {
+      "type": "news",
+      "title": "NASA’s Van Allen Probe A to Re-Enter Atmosphere",
+      "url": "https://www.nasa.gov/missions/van-allen-probes/nasa-van-allen-probe-a-to-re-enter-atmosphere/",
+      "date": "2026-03-09T19:55:37Z",
+      "news_site": "NASA"
+    },
+    "snapi_21505": {
+      "type": "news",
+      "title": "Launch Roundup: Starship, Falcon 9, and Chang Zheng-2C this week",
+      "url": "https://www.nasaspaceflight.com/2023/11/roundup-3/",
+      "date": "2023-11-15T17:57:44Z",
+      "news_site": "NASASpaceflight"
+    },
+    "snapi_33741": {
+      "type": "news",
+      "title": "China launches first GEO Yaogan satellite as India lofts record-mass commsat",
+      "url": "https://spacenews.com/china-launches-first-geo-yaogan-satellite-as-india-lofts-record-mass-commsat/",
+      "date": "2025-11-03T11:14:10Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_12695": {
+      "type": "news",
+      "title": "China launches second pair of Yaogan 32 satellites on Chang Zheng 2C",
+      "url": "https://www.nasaspaceflight.com/2021/11/yaogan-32-2-launch/",
+      "date": "2021-11-03T17:01:10Z",
+      "news_site": "NASASpaceflight"
+    },
+    "snapi_35447": {
+      "type": "news",
+      "title": "China launches AlSat-3A for Algeria, Ceres-1 sea launch adds to Tianqi constellation",
+      "url": "https://spacenews.com/china-launches-alsat-3a-for-algeria-ceres-1-sea-launch-adds-to-tianqi-constellation/",
+      "date": "2026-01-16T10:51:15Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_32940": {
+      "type": "news",
+      "title": "China launches mystery Yaogan-45 spysat, expands Geesatcom constellation",
+      "url": "https://spacenews.com/china-launches-mystery-yaogan-45-spysat-expands-geesatcom-constellation/",
+      "date": "2025-09-09T11:29:21Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_36626": {
+      "type": "news",
+      "title": "Origami style lunar rover wheel expands to climb steep caves",
+      "url": "https://www.spacedaily.com/reports/Origami_style_lunar_rover_wheel_expands_to_climb_steep_caves_999.html",
+      "date": "2026-03-05T09:54:43Z",
+      "news_site": "SpaceDaily"
+    },
+    "snapi_32890": {
+      "type": "news",
+      "title": "China launches new set of Yaogan-40 satellites into polar orbit",
+      "url": "https://spacenews.com/china-launches-new-set-of-yaogan-40-satellites-into-polar-orbit/",
+      "date": "2025-09-07T11:21:15Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_36473": {
+      "type": "news",
+      "title": "Rare lensed supernova offers new route to measure cosmic expansion",
+      "url": "https://www.spacedaily.com/reports/Rare_lensed_supernova_offers_new_route_to_measure_cosmic_expansion_999.html",
+      "date": "2026-02-25T10:14:21Z",
+      "news_site": "SpaceDaily"
+    },
+    "snapi_31198": {
+      "type": "news",
+      "title": "China adds to classified TJS, Yaogan satellite series with two launches",
+      "url": "https://spacenews.com/china-adds-to-classified-tjs-yaogan-satellite-series-with-two-launches/",
+      "date": "2025-05-12T22:10:25Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_25735": {
+      "type": "news",
+      "title": "China launches new set of classified Yaogan-43 satellites",
+      "url": "https://spacenews.com/china-launches-new-set-of-classified-yaogan-43-satellites/",
+      "date": "2024-09-03T09:53:00Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_10463": {
+      "type": "news",
+      "title": "Chang Zheng 2C lofts experimental Chinese internet satellites into orbit",
+      "url": "https://www.nasaspaceflight.com/2021/08/cz-2c-internet-satellite-launch/",
+      "date": "2021-08-24T16:46:12Z",
+      "news_site": "NASASpaceflight"
+    },
+    "snapi_25396": {
+      "type": "news",
+      "title": "Long March 4B launches experimental Yaogan-43 satellite group",
+      "url": "https://spacenews.com/long-march-4b-launches-experimental-yaogan-43-satellite-group/",
+      "date": "2024-08-16T11:40:07Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_35489": {
+      "type": "news",
+      "title": "China lofts AlSat 3A imaging craft for Algeria",
+      "url": "https://www.spacedaily.com/reports/China_lofts_AlSat_3A_imaging_craft_for_Algeria_999.html",
+      "date": "2026-01-19T09:56:59Z",
+      "news_site": "SpaceDaily"
+    },
+    "snapi_23304": {
+      "type": "news",
+      "title": "China launches second Yaogan-42 reconnaissance satellite",
+      "url": "https://spacenews.com/china-launches-second-yaogan-42-reconnaissance-satellite/",
+      "date": "2024-04-22T11:22:20Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_36443": {
+      "type": "news",
+      "title": "Record LOFAR Radio Sky Map Charts Millions Of Growing Black Holes",
+      "url": "https://www.spacedaily.com/reports/Record_LOFAR_Radio_Sky_Map_Charts_Millions_Of_Growing_Black_Holes_999.html",
+      "date": "2026-02-24T08:42:37Z",
+      "news_site": "SpaceDaily"
+    },
+    "snapi_37585": {
+      "type": "news",
+      "title": "NASA’s SPHEREx Observatory Maps Interstellar Ice in Milky Way",
+      "url": "https://www.nasa.gov/image-article/nasas-spherex-observatory-maps-interstellar-ice-in-milky-way/",
+      "date": "2026-04-17T14:14:33Z",
+      "news_site": "NASA"
+    },
+    "snapi_7285": {
+      "type": "news",
+      "title": "Introducing China’s new commercial rocket, Ceres-1",
+      "url": "https://www.nasaspaceflight.com/2020/11/introducing-chinas-new-commercial-rocket-ceres-1/",
+      "date": "2020-11-08T23:06:52Z",
+      "news_site": "NASASpaceflight"
+    },
+    "snapi_34137": {
+      "type": "news",
+      "title": "New satellites boost China's orbital technology capabilities",
+      "url": "https://www.spacewar.com/reports/New_satellites_boost_Chinas_orbital_technology_capabilities_999.html",
+      "date": "2025-11-21T09:30:15Z",
+      "news_site": "SpaceDaily"
+    },
+    "snapi_37557": {
+      "type": "news",
+      "title": "Just opened: five tonnes of science and supplies",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/04/Just_opened_five_tonnes_of_science_and_supplies",
+      "date": "2026-04-16T07:34:00Z",
+      "news_site": "ESA"
+    },
+    "snapi_36442": {
+      "type": "news",
+      "title": "Simple collapse may build cosmic snowman worlds",
+      "url": "https://www.spacedaily.com/reports/Simple_collapse_may_build_cosmic_snowman_worlds_999.html",
+      "date": "2026-02-24T08:42:37Z",
+      "news_site": "SpaceDaily"
+    },
+    "snapi_29560": {
+      "type": "news",
+      "title": "China adds to SuperView remote sensing constellation with Long March 2C launch",
+      "url": "https://spacenews.com/china-adds-to-superview-remote-sensing-constellation-with-long-march-2c-launch/",
+      "date": "2025-02-27T10:16:42Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_36340": {
+      "type": "news",
+      "title": "Study revisits chances of detecting alien technosignatures",
+      "url": "https://www.spacedaily.com/reports/Study_revisits_chances_of_detecting_alien_technosignatures_999.html",
+      "date": "2026-02-19T12:07:23Z",
+      "news_site": "SpaceDaily"
+    },
+    "snapi_36326": {
+      "type": "news",
+      "title": "42 Years of Measuring the Sun, the Earth and the Energy in Between",
+      "url": "https://science.nasa.gov/missions/explorer/42-years-of-measuring-the-sun-the-earth-and-the-energy-in-between/",
+      "date": "2026-02-18T19:23:36Z",
+      "news_site": "NASA"
+    },
+    "snapi_37545": {
+      "type": "news",
+      "title": "NASA Launches Six CubeSats to International Space Station",
+      "url": "https://www.nasa.gov/image-article/nasa-launches-six-cubesats-to-international-space-station/",
+      "date": "2026-04-15T20:27:22Z",
+      "news_site": "NASA"
+    },
+    "snapi_36316": {
+      "type": "news",
+      "title": "NASA’s Hubble Identifies One of Darkest Known Galaxies",
+      "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-identifies-one-of-darkest-known-galaxies/",
+      "date": "2026-02-18T15:00:27Z",
+      "news_site": "NASA"
+    },
+    "snapi_28114": {
+      "type": "news",
+      "title": "Celebrating 20 Years: Night Sky Network",
+      "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/celebrating-20-years-night-sky-network/",
+      "date": "2024-12-16T19:25:17Z",
+      "news_site": "NASA"
+    },
+    "snapi_37536": {
+      "type": "news",
+      "title": "NASA’s SPHEREx Mission Maps Water Ice Throughout Cygnus X",
+      "url": "https://science.nasa.gov/photojournal/nasas-spherex-mission-maps-water-ice-throughout-cygnus-x/",
+      "date": "2026-04-15T15:04:38Z",
+      "news_site": "NASA"
+    },
+    "snapi_26995": {
+      "type": "news",
+      "title": "Memorable Moment 2024",
+      "url": "https://www.nasa.gov/image-article/memorable-moment-2024/",
+      "date": "2024-10-29T15:02:31Z",
+      "news_site": "NASA"
+    },
+    "snapi_36258": {
+      "type": "news",
+      "title": "Einstein probe catch may show black hole shredding white dwarf",
+      "url": "https://www.spacedaily.com/reports/Einstein_probe_catch_may_show_black_hole_shredding_white_dwarf_999.html",
+      "date": "2026-02-16T02:42:40Z",
+      "news_site": "SpaceDaily"
+    },
+    "snapi_24244": {
+      "type": "news",
+      "title": "Johnson Celebrates LGBTQI+ Pride Month: Eva Granger",
+      "url": "https://www.nasa.gov/general/johnson-celebrates-lgbtqi-pride-month-eva-granger/",
+      "date": "2024-06-24T21:00:00Z",
+      "news_site": "NASA"
+    },
+    "snapi_35897": {
+      "type": "news",
+      "title": "Lab made cosmic dust experiment reveals paths to life chemistry",
+      "url": "https://www.spacedaily.com/reports/Lab_made_cosmic_dust_experiment_reveals_paths_to_life_chemistry_999.html",
+      "date": "2026-02-03T04:52:30Z",
+      "news_site": "SpaceDaily"
+    },
+    "snapi_37521": {
+      "type": "news",
+      "title": "Curiosity Blog, Sols 4859-4866: One Small Crater and Thousands of Polygons",
+      "url": "https://science.nasa.gov/blog/curiosity-blog-sols-4859-4866-one-small-crater-and-thousands-of-polygons/",
+      "date": "2026-04-15T00:07:09Z",
+      "news_site": "NASA"
+    },
+    "snapi_23993": {
+      "type": "news",
+      "title": "Johnson Celebrates LGBTQI+ Pride Month: Meet Maya FarrHenderson",
+      "url": "https://www.nasa.gov/centers-and-facilities/johnson/johnson-celebrates-lgbtqi-pride-month-meet-maya-farrhenderson/",
+      "date": "2024-06-17T20:42:53Z",
+      "news_site": "NASA"
+    },
+    "snapi_37496": {
+      "type": "news",
+      "title": "NASA’s Webb Redefines Dividing Line Between Planets, Stars",
+      "url": "https://science.nasa.gov/missions/webb/nasas-webb-redefines-dividing-line-between-planets-stars/",
+      "date": "2026-04-14T14:00:00Z",
+      "news_site": "NASA"
+    },
+    "snapi_21038": {
+      "type": "news",
+      "title": "Alba Orbital Move into new PocketQube Manufacturing Facility",
+      "url": "https://europeanspaceflight.com/alba-orbital-move-into-new-pocketqube-manufacturing-facility/",
+      "date": "2023-10-03T14:17:56Z",
+      "news_site": "European Spaceflight"
+    },
+    "snapi_37464": {
+      "type": "news",
+      "title": "Live coverage: Space Station to capture, berth Cygnus XL ’S.S. Steven R. Nagel’ cargo spacecraft",
+      "url": "https://spaceflightnow.com/2026/04/13/live-coverage-space-station-to-capture-berth-cygnus-xl-s-s-steven-r-nagel-cargo-spacecraft/",
+      "date": "2026-04-13T16:01:20Z",
+      "news_site": "Spaceflight Now"
+    },
+    "snapi_27667": {
+      "type": "news",
+      "title": "China launches pair of SuperView Neo-2 radar satellites",
+      "url": "https://spacenews.com/china-launches-pair-of-superview-neo-2-radar-satellites/",
+      "date": "2024-11-25T11:44:14Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_37446": {
+      "type": "news",
+      "title": "Falcon 9 launches Cygnus cargo spacecraft to the ISS",
+      "url": "https://spacenews.com/falcon-9-launches-cygnus-cargo-spacecraft-to-the-iss/",
+      "date": "2026-04-11T16:28:21Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_37444": {
+      "type": "news",
+      "title": "NASA Science, Cargo Launch Aboard Northrop Grumman CRS-24",
+      "url": "https://www.nasa.gov/news-release/nasa-science-cargo-launch-aboard-northrop-grumman-crs-24/",
+      "date": "2026-04-11T13:49:05Z",
+      "news_site": "NASA"
+    },
+    "snapi_37443": {
+      "type": "news",
+      "title": "Falcon 9 launches CRS NG-24 cargo ship to ISS",
+      "url": "https://www.nasaspaceflight.com/2026/04/crs-ng-24-launch/",
+      "date": "2026-04-11T13:37:36Z",
+      "news_site": "NASASpaceflight"
+    },
+    "snapi_23114": {
+      "type": "news",
+      "title": "China launches first of a new series of Yaogan reconnaissance satellites",
+      "url": "https://spacenews.com/china-launches-first-of-a-new-series-of-yaogan-reconnaissance-satellites/",
+      "date": "2024-04-03T11:40:38Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_27233": {
+      "type": "news",
+      "title": "Long March 2C launches 4 PIESAT-2 commercial radar satellites",
+      "url": "https://spacenews.com/long-march-2c-launches-4-piesat-2-commercial-radar-satellites/",
+      "date": "2024-11-09T22:12:36Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_16649": {
+      "type": "news",
+      "title": "China conducts three launches with Shiyan and Yaogan satellites",
+      "url": "https://www.nasaspaceflight.com/2022/09/china-three-launches-shiyan-yaogan/",
+      "date": "2022-09-27T15:51:45Z",
+      "news_site": "NASASpaceflight"
+    },
+    "snapi_8385": {
+      "type": "news",
+      "title": "China launches trio of Yaogan-31 ocean reconnaissance satellites",
+      "url": "https://spacenews.com/china-launches-trio-of-yaogan-31-ocean-reconnaissance-satellites/",
+      "date": "2021-02-24T09:14:48Z",
+      "news_site": "SpaceNews"
+    },
+    "snapi_15816": {
+      "type": "news",
+      "title": "Long March rocket launches two radar satellites for China Siwei",
+      "url": "https://spaceflightnow.com/2022/07/18/long-march-rocket-launches-two-radar-satellites-for-china-siwei/",
+      "date": "2022-07-18T04:10:03Z",
+      "news_site": "Spaceflight Now"
+    },
+    "sha_983ffdbce4fbd1f8": {
+      "type": "report",
+      "title": "China’s first launches of 2026 send Yaogan spacecraft into unusual orbit, loft Guowang satellites",
+      "url": "https://spacenews.com/chinas-first-launches-of-2026-send-yaogan-spacecraft-into-unusual-orbit-loft-guowang-satellites/",
+      "date": "2026-04-22",
+      "news_site": ""
+    },
+    "sha_7b40851e453ffa7c": {
+      "type": "report",
+      "title": "JDay 111 at 0600z:\n\nBased on current SDA observations and av…",
+      "url": "",
+      "date": "2026-04-22",
+      "news_site": ""
+    },
+    "sha_1425b27254b02cf3": {
+      "type": "report",
+      "title": "China sends experimental Shiyan-30 satellites into orbit as launch cadence intensifies",
+      "url": "https://spacenews.com/china-sends-experimental-shiyan-30-satellites-into-orbit-as-launch-cadence-intensifies/",
+      "date": "2026-04-22",
+      "news_site": ""
+    },
+    "file_ee2977c30fbe5ce9": {
+      "type": "report",
+      "title": "Mission Management Board 2.pdf",
+      "url": "",
+      "date": "D:20260421133715+00'00'",
+      "news_site": ""
+    },
+    "file_29a4194bbcf2283e": {
+      "type": "report",
+      "title": "Mission Management Board 2.mhtml",
+      "url": "",
+      "date": "",
+      "news_site": ""
+    },
+    "file_81d967007bb6a546": {
+      "type": "report",
+      "title": "JCO_launch_report.mhtml",
+      "url": "",
+      "date": "",
+      "news_site": ""
+    },
+    "sha_1847145aef5f35b4": {
+      "type": "wikipedia",
+      "title": "高分三号",
+      "url": "https://zh.wikipedia.org/wiki/%E9%AB%98%E5%88%86%E4%B8%89%E5%8F%B7",
+      "date": "2025-12-05",
+      "news_site": "zh.wikipedia.org"
+    },
+    "file_d7ec093dc174de8d": {
+      "type": "report",
+      "title": "JCO_launch_report_0502.mhtml",
+      "url": "",
+      "date": "",
+      "news_site": ""
+    },
+    "sha_538b8d2943d9804c": {
+      "type": "report",
+      "title": "HELSINKI — China took its total launches this year to 26 ove…",
+      "url": "",
+      "date": "2026-05-03",
+      "news_site": ""
+    },
+    "file_02cb6795ce56f4e6": {
+      "type": "report",
+      "title": "JCO_manuver_report_0506.mhtml",
+      "url": "",
+      "date": "",
+      "news_site": ""
+    },
+    "sha_0cb561b52c0603f2": {
+      "type": "report",
+      "title": "https://www.space.com/classified-chinese-satellite-shijian-23-releases-subsatellite",
+      "url": "https://www.space.com/classified-chinese-satellite-shijian-23-releases-subsatellite",
+      "date": "2026-05-06",
+      "news_site": ""
+    },
+    "sha_f74ea7d5b932d38d": {
+      "type": "report",
+      "title": "https://www.nasaspaceflight.com/2023/01/kicks-off-2023/",
+      "url": "https://www.nasaspaceflight.com/2023/01/kicks-off-2023/",
+      "date": "2026-05-06",
+      "news_site": ""
+    },
+    "sha_07e0b668990e9ba6": {
+      "type": "report",
+      "title": "One of the five satellites was Tianqi-13, part of the Tianqi…",
+      "url": "",
+      "date": "2026-05-06",
+      "news_site": ""
+    },
+    "file_2cb0b4b999df1bf1": {
+      "type": "report",
+      "title": "JCO_manuver_report_0501.mhtml",
+      "url": "",
+      "date": "",
+      "news_site": ""
+    },
+    "file_874ab4e172ff35fb": {
+      "type": "report",
+      "title": "NOTSO_Photometric Change_COSMOS_2589(64467)_19May_2101Z.mhtml",
+      "url": "",
+      "date": "",
+      "news_site": ""
+    },
+    "file_f8129074e591fff3": {
+      "type": "report",
+      "title": "NOTSO_Photometric Change_Cosmos_2589_(64467)_18May-1527Z.mhtml",
+      "url": "",
+      "date": "",
+      "news_site": ""
+    },
+    "file_5fe9e8fe0a70ac79": {
+      "type": "report",
+      "title": "NOTSO_Launch_LM-8 (94486)_Qianfan_Digui_Group_10A_R_(94468_94485).mhtml",
+      "url": "",
+      "date": "",
+      "news_site": ""
+    }
+  },
+  "processed_sources": [
+    "file_02cb6795ce56f4e6",
+    "snapi_29560",
+    "snapi_32940",
+    "snapi_36869",
+    "snapi_37608",
+    "sha_ce149fad26ca2b9c",
+    "snapi_36626",
+    "snapi_34602",
+    "snapi_26995",
+    "snapi_3319",
+    "snapi_36340",
+    "file_2cb0b4b999df1bf1",
+    "snapi_21038",
+    "sha_3233a83f6a474404",
+    "snapi_31198",
+    "snapi_36316",
+    "snapi_27667",
+    "snapi_25396",
+    "snapi_37464",
+    "snapi_37076",
+    "snapi_13410",
+    "sha_18af273a1f413dc4",
+    "sha_1425b27254b02cf3",
+    "sha_4f5d7d8d3adfdb57",
+    "snapi_35079",
+    "snapi_35447",
+    "snapi_36901",
+    "snapi_37545",
+    "snapi_8385",
+    "snapi_28114",
+    "sha_30fd8e1a6e0f5b45",
+    "snapi_23114",
+    "snapi_34590",
+    "sha_538b8d2943d9804c",
+    "snapi_37437",
+    "snapi_36443",
+    "snapi_37603",
+    "snapi_37536",
+    "snapi_36746",
+    "sha_a7eb59c17a9664c6",
+    "snapi_7145",
+    "snapi_35489",
+    "snapi_35481",
+    "file_874ab4e172ff35fb",
+    "snapi_36917",
+    "snapi_37443",
+    "snapi_23304",
+    "snapi_13413",
+    "snapi_37619",
+    "snapi_37557",
+    "sha_f470746cedbaecd1",
+    "snapi_37309",
+    "snapi_37050",
+    "snapi_37055",
+    "snapi_36578",
+    "sha_ff92db2ffdf3247e",
+    "sha_f4f1d0e40e1b15b8",
+    "snapi_37056",
+    "snapi_35897",
+    "snapi_37496",
+    "snapi_37072",
+    "snapi_34137",
+    "snapi_10046",
+    "sha_15bee02539f07db9",
+    "sha_7b40851e453ffa7c",
+    "snapi_36871",
+    "sha_983ffdbce4fbd1f8",
+    "snapi_36326",
+    "sha_5d451e3be09139c7",
+    "snapi_37602",
+    "snapi_36442",
+    "snapi_7138",
+    "sha_0ea3665e575ed4d2",
+    "snapi_37521",
+    "sha_56a8b9a1ea2f120e",
+    "snapi_7285",
+    "file_d7ec093dc174de8d",
+    "snapi_37444",
+    "snapi_27233",
+    "file_f8129074e591fff3",
+    "snapi_37446",
+    "snapi_37000",
+    "snapi_25735",
+    "snapi_36473",
+    "snapi_9737",
+    "snapi_33741",
+    "sha_bc5d53540eedd9ca",
+    "snapi_21505",
+    "sha_464c378eabfdeb3d",
+    "snapi_35380",
+    "sha_b6e32b21c1a73b5f",
+    "snapi_36994",
+    "snapi_6415",
+    "snapi_15816",
+    "snapi_37585",
+    "snapi_9734",
+    "snapi_12695",
+    "snapi_32890",
+    "snapi_37456",
+    "snapi_23993",
+    "file_5fe9e8fe0a70ac79",
+    "snapi_16649",
+    "sha_59221c2b228a2c2f",
+    "snapi_24244",
+    "sha_af580fe7b2250bcf",
+    "snapi_10463",
+    "snapi_36258",
+    "sha_445a872f380c7c81"
+  ]
+}

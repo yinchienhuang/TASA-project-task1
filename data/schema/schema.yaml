@@ -1,0 +1,159 @@
+version: "1.0"
+
+entity_types:
+  Entity:
+    attributes:
+      name:        { type: string,  required: true,  description: "Common name of the entity" }
+      aliases:     { type: list,    required: false, description: "Alternate names, abbreviations, or foreign-language equivalents, e.g. ['天启', 'TQ', 'Tianqi Constellation']" }
+      description: { type: string,  required: false, description: "Short summary" }
+    children:
+      Physical:
+        children:
+          LaunchVehicleFamily:
+            description: "Top-level rocket family sharing a name/heritage (e.g. Long March, Falcon, Soyuz, Ariane)"
+            attributes:
+              manufacturer:      { type: string,  required: true,  description: "Primary builder, e.g. CASC, SpaceX" }
+              country_of_origin: { type: country, required: true,  description: "Country of development" }
+              status:            { type: string,  required: false, description: "Active / Retired / In Development" }
+          LaunchVehicleSeries:
+            description: "A numbered sub-series within a family (e.g. Long March 2, Long March 6, Falcon 9)"
+            attributes:
+              manufacturer:      { type: string,  required: true,  description: "Builder of this series" }
+              country_of_origin: { type: country, required: true,  description: "Country of development" }
+              status:            { type: string,  required: false, description: "Active / Retired / In Development" }
+              first_flight:      { type: date,    required: false, description: "Date of series maiden flight (YYYY-MM-DD)" }
+          LaunchVehicle:
+            attributes:
+              manufacturer:      { type: string,  required: true,  description: "Company that built the rocket", example: "SpaceX" }
+              country_of_origin: { type: country, required: true,  description: "Country where the vehicle was developed", example: "USA" }
+              vehicle_family:    { type: string,  required: false, description: "Rocket family name, e.g. Falcon, Long March, Soyuz (legacy; prefer variantOfSeries relation)" }
+              payload_capacity_kg: { type: number, required: false, description: "Payload to LEO in kg" }
+              reusable:          { type: string,  required: false, description: "Yes / No / Partial" }
+              status:            { type: string,  required: false, description: "Active / Retired / In Development" }
+              first_flight:      { type: date,    required: false, description: "Date of first flight (YYYY-MM-DD)" }
+          LaunchSite:
+            description: "A ground facility from which rockets are launched"
+            attributes:
+              country:       { type: country, required: true,  description: "Country where the site is located" }
+              operator:      { type: string,  required: false, description: "Entity operating the facility" }
+              location:      { type: string,  required: false, description: "City / region, e.g. Jiuquan, Gansu" }
+              also_known_as: { type: string,  required: false, description: "Alternate names / abbreviations, e.g. JSLC, Shuang Cheng Zi" }
+              status:        { type: string,  required: false, description: "Active / Inactive" }
+          SatelliteConstellation:
+            description: "A coordinated group of satellites operating together as a unified system (e.g. Starlink, BeiDou, FORMOSAT-7/COSMIC-2, Tianqi)"
+            attributes:
+              operator:         { type: string,  required: true,  description: "Entity operating the constellation" }
+              operator_country: { type: country, required: true,  description: "Country of the operator" }
+              mission:          { type: string,  required: true,  description: "Collective mission purpose, e.g. IoT, broadband, weather" }
+              orbit_shell:      { type: string,  required: false, description: "Target orbit, e.g. LEO 550 km / SSO 850 km" }
+              total_planned:    { type: number,  required: false, description: "Total number of satellites planned" }
+              total_deployed:   { type: number,  required: false, description: "Number currently deployed" }
+              first_launch:     { type: date,    required: false, description: "Date of first constellation launch" }
+              status:           { type: string,  required: false, description: "Active / Planned / Retired" }
+          SatelliteSeries:
+            description: "A named lineage of independently-operating satellites sharing a program name (e.g. Yaogan, Cosmos, Fengyun)"
+            attributes:
+              operator:         { type: string,  required: true,  description: "Entity operating the series" }
+              operator_country: { type: country, required: true,  description: "Country of the operator" }
+              purpose:          { type: string,  required: false, description: "Mission family purpose, e.g. reconnaissance, weather" }
+              first_launch:     { type: date,    required: false, description: "Date of first series launch" }
+              total_count:      { type: number,  required: false, description: "Total number of satellites launched in series" }
+          Satellite:
+            attributes:
+              norad_id:         { type: string,  required: true,  description: "NORAD catalog number", example: "25544" }
+              notos_id:         { type: string,  required: false, description: "NOTOS provisional tracking number assigned before official USSPACECOM cataloging (e.g. 94327). Never the same as norad_id." }
+              launch_date:      { type: date,    required: true,  description: "Launch date (YYYY-MM-DD)", example: "1998-11-20" }
+              manufacturer:     { type: string,  required: true,  description: "Company that built the satellite" }
+              operator:         { type: string,  required: true,  description: "Entity operating the satellite" }
+              operator_country: { type: country, required: true,  description: "Country of the operator", example: "USA" }
+              mission:          { type: string,  required: true,  description: "Primary mission purpose" }
+              orbit_type:       { type: string,  required: false, description: "LEO / MEO / GEO / HEO" }
+              altitude_km:      { type: number,  required: false, description: "Nominal orbital altitude in km" }
+              inclination_deg:  { type: number,  required: false, description: "Orbital inclination in degrees" }
+              inclination:      { type: float,   required: false, description: "Orbital inclination in degrees (from TLE)" }
+              orbital_period:   { type: float,   required: false, description: "Orbital period in minutes (1440 / mean_motion)" }
+              news_keywords:    { type: string,  required: false, description: "Comma-separated search terms for news fetching. Leave empty to exclude from news feed.", example: "ISS, International Space Station" }
+            children:
+              CivilSatellite:
+                attributes:
+                  funding_agency: { type: string, required: false, description: "Government funding agency" }
+              MilitarySatellite:
+                attributes:
+                  military_branch:   { type: string,  required: true,  description: "Branch of military operating it" }
+                  country_of_origin: { type: country, required: true,  description: "Country that owns the satellite" }
+                  classification:    { type: string,  required: false, description: "Stated mission classification if known" }
+              CommercialSatellite:
+                attributes:
+                  revenue_model: { type: string, required: false, description: "e.g. broadband, imagery, communications" }
+      Organization:
+        attributes:
+          country: { type: country, required: true,  description: "Country of registration" }
+          website: { type: url,     required: false, description: "Official website" }
+        children:
+          SpaceAgency:
+            attributes:
+              founded_year: { type: number, required: false, description: "Year the agency was founded" }
+          Company:
+            attributes:
+              stock_ticker: { type: string, required: false, description: "Stock ticker symbol if publicly traded" }
+          MilitaryUnit:
+            attributes:
+              branch: { type: string, required: true, description: "Army / Navy / Air Force / SSF etc." }
+      Mission:
+        attributes:
+          start_date: { type: date,   required: false, description: "Mission start date" }
+          end_date:   { type: date,   required: false, description: "Mission end date (null if ongoing)" }
+          status:     { type: string, required: false, description: "Active / Completed / Planned" }
+        children:
+          CargoMission: {}
+          CrewMission:
+            attributes:
+              crew_size: { type: number, required: false, description: "Number of crew members" }
+          ScienceMission: {}
+      Person:
+        attributes:
+          nationality: { type: country, required: false, description: "Nationality of the person" }
+        children:
+          Astronaut:
+            attributes:
+              agency:       { type: string, required: false, description: "Space agency affiliation" }
+              flight_count: { type: number, required: false, description: "Number of spaceflights" }
+          Official:
+            attributes:
+              title: { type: string, required: false, description: "Job title or role" }
+      Document:
+        attributes:
+          published_at: { type: date,   required: true,  description: "Publication or issue date" }
+          url:          { type: url,    required: false, description: "Link to original document" }
+          source_name:  { type: string, required: false, description: "Name of the publishing organization" }
+        children:
+          JCOReport:
+            attributes:
+              report_id:  { type: string, required: true, description: "JCO report identifier, e.g. #2026-041" }
+              event_type: { type: string, required: true, description: "conjunction / maneuver / anomaly" }
+          NewsArticle: {}
+
+relationship_types:
+  memberOfConstellation: { domain: [Satellite], range: [SatelliteConstellation], description: "Satellite is a member of an operational constellation" }
+  memberOfSeries:        { domain: [Satellite], range: [SatelliteSeries],        description: "Satellite belongs to a named program/series lineage" }
+  variantOfSeries:       { domain: [LaunchVehicle],      range: [LaunchVehicleSeries],  description: "Specific rocket variant belongs to this numbered series (e.g. Long March 2D → Long March 2)" }
+  memberOfFamily:        { domain: [LaunchVehicleSeries], range: [LaunchVehicleFamily], description: "Series belongs to this rocket family (e.g. Long March 2 → Long March)" }
+  launchedFrom:          { domain: [Satellite, Mission],  range: [LaunchSite],          description: "Launched from this ground facility" }
+  operatesLaunchSite:    { domain: [Organization],        range: [LaunchSite],          description: "Organization that operates the launch site" }
+  operatedBy:     { domain: [Satellite],             range: [Organization] }
+  manufacturedBy: { domain: [Satellite],             range: [Organization] }
+  launchedBy:     { domain: [Satellite, Mission],    range: [Organization] }
+  carriedBy:      { domain: [Satellite, Mission],    range: [LaunchVehicle] }
+  builtBy:        { domain: [LaunchVehicle],          range: [Organization] }
+  partOf:         { domain: [Satellite],             range: [Mission] }
+  contractedWith: { domain: [Organization],          range: [Organization] }
+  crewOf:         { domain: [Person],                range: [Mission] }
+  mentions:       { domain: [Document],              range: [Entity] }
+  concerns:       { domain: [Document],              range: [Satellite] }
+  receivedCargo:  { domain: [Satellite],             range: [Mission] }
+  missionTo:      { domain: [Organization],          range: [Satellite] }
+  contractedBy:   { domain: [Organization],          range: [Organization] }
+  crewOn:         { domain: [Organization],          range: [Mission] }
+  managedBy:      { domain: [Mission],               range: [Organization] }
+  partneredWith:  { domain: [Organization],          range: [Organization] }
+  launchContractWith: { domain: [Mission],           range: [Organization] }

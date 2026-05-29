@@ -1,0 +1,130 @@
+{"event_date": "2026-04-20", "change_type": "edge_added", "edge_id": "e_new_glenn_launchedBy_blue_origin", "source_id": "sha_af580fe7b2250bcf", "ingested_at": "2026-04-20T13:35:46.203388+00:00"}
+{"event_date": "2026-04-20", "change_type": "node_added", "entity_id": "blue_origin", "source_id": "sha_af580fe7b2250bcf", "ingested_at": "2026-04-20T13:38:52.965442+00:00"}
+{"event_date": "2026-04-20", "change_type": "node_added", "entity_id": "new_glenn", "source_id": "sha_af580fe7b2250bcf", "ingested_at": "2026-04-20T13:39:29.652165+00:00"}
+{"event_date": "2026-04-20", "change_type": "node_added", "entity_id": "yaogan_30", "source_id": "sha_bc5d53540eedd9ca", "ingested_at": "2026-04-20T13:42:09.575412+00:00"}
+{"event_date": "2026-04-20", "change_type": "node_added", "entity_id": "nasa", "source_id": "sha_f4f1d0e40e1b15b8", "ingested_at": "2026-04-20T13:44:17.579263+00:00"}
+{"event_date": "2026-04-20", "change_type": "node_added", "entity_id": "avio", "source_id": "sha_4f5d7d8d3adfdb57", "ingested_at": "2026-04-20T13:46:40.881534+00:00"}
+{"event_date": "2026-04-20", "change_type": "node_added", "entity_id": "taiwan_space_agency", "source_id": "sha_4f5d7d8d3adfdb57", "ingested_at": "2026-04-20T13:46:42.385128+00:00"}
+{"event_date": "2026-04-20", "change_type": "edge_added", "edge_id": "e_avio_launchContractWith_taiwan_space_agency", "source_id": "sha_4f5d7d8d3adfdb57", "ingested_at": "2026-04-20T13:47:00.385306+00:00"}
+{"event_date": "2026-04-20", "change_type": "node_added", "entity_id": "formosat", "source_id": "sha_4f5d7d8d3adfdb57", "ingested_at": "2026-04-20T13:47:46.496408+00:00"}
+{"event_date": "2026-04-20", "change_type": "edge_added", "edge_id": "e_formosat_operatedBy_taiwan_space_agency", "source_id": "sha_4f5d7d8d3adfdb57", "ingested_at": "2026-04-20T13:48:01.664159+00:00"}
+{"event_date": "2026-04-20", "change_type": "conflict_resolved", "entity_id": "yaogan_30", "field": "name", "chosen": "option_a", "reason": "", "ingested_at": "2026-04-20T14:02:29.981471+00:00"}
+{"event_date": "2026-04-20", "change_type": "node_added", "entity_id": "vega_c", "source_id": "sha_4f5d7d8d3adfdb57", "ingested_at": "2026-04-20T14:06:24.250364+00:00"}
+{"event_date": "2026-04-20", "change_type": "node_added", "entity_id": "long_march_2c", "source_id": "sha_464c378eabfdeb3d", "ingested_at": "2026-04-20T14:06:43.559359+00:00"}
+{"event_date": "2026-04-20", "change_type": "attribute_changed", "entity_id": "yaogan_30", "field": "description", "old_value": "Classified Chinese military satellite", "new_value": "A group of Chinese military satellites launched by Long March 2C.", "source_id": "", "ingested_at": "2026-04-20T14:06:59.358811+00:00"}
+{"event_date": "2026-04-20", "change_type": "conflict_resolved", "entity_id": "yaogan_30", "field": "mission", "chosen": "option_a", "reason": "", "ingested_at": "2026-04-20T14:07:23.792105+00:00"}
+{"event_date": "2026-04-20T14:01:01Z", "change_type": "node_added", "entity_id": "nasa", "source_id": "snapi_37603", "ingested_at": "2026-04-20T14:17:36.052292+00:00"}
+{"event_date": "2026-04-20T14:01:01Z", "change_type": "edge_added", "edge_id": "e_20580_operatedBy_nasa", "source_id": "snapi_37603", "ingested_at": "2026-04-20T14:17:48.091945+00:00"}
+{"event_date": "2026-04-20T14:01:01Z", "change_type": "node_added", "entity_id": "20580", "source_id": "snapi_37603", "ingested_at": "2026-04-20T14:19:07.160954+00:00"}
+{"event_date": "", "change_type": "conflict_resolved", "entity_id": "nasa", "field": "website", "chosen": "option_a", "reason": "", "ingested_at": "2026-04-20T14:20:14.051713+00:00"}
+{"event_date": "2026-04-20", "change_type": "node_added", "entity_id": "libera", "source_id": "sha_ce149fad26ca2b9c", "ingested_at": "2026-04-20T14:20:37.470540+00:00"}
+{"event_date": "2026-04-20", "change_type": "edge_added", "edge_id": "e_libera_operatedBy_nasa", "source_id": "sha_ce149fad26ca2b9c", "ingested_at": "2026-04-20T14:20:38.317454+00:00"}
+{"event_date": "2026-04-20", "change_type": "node_added", "entity_id": "high_precision_atmospheric_composite_detection_satellite", "source_id": "sha_f470746cedbaecd1", "ingested_at": "2026-04-20T14:45:07.837172+00:00"}
+{"event_date": "2026-04-20", "change_type": "node_added", "entity_id": "china_national_space_administration", "source_id": "sha_f470746cedbaecd1", "ingested_at": "2026-04-20T14:45:21.925748+00:00"}
+{"event_date": "2026-04-20", "change_type": "edge_added", "edge_id": "e_high_precision_atmospheric_composite_detection_satellite_operatedBy_china_national_space_administration", "source_id": "sha_f470746cedbaecd1", "ingested_at": "2026-04-20T14:45:24.557075+00:00"}
+{"event_date": "2026-04-20", "change_type": "attribute_changed", "entity_id": "41473", "field": "description", "old_value": "A group of Chinese military satellites launched by Long March 2C.", "new_value": "Military spy satellite series launched by China.", "source_id": "", "ingested_at": "2026-04-20T18:48:21.985923+00:00"}
+{"event_date": "2026-04-20", "change_type": "attribute_changed", "entity_id": "41473", "field": "mission", "old_value": "Classified", "new_value": "Naval surveillance", "source_id": "", "ingested_at": "2026-04-20T18:48:45.746500+00:00"}
+{"event_date": "2026-04-20", "change_type": "edge_added", "edge_id": "e_41473_operatedBy_china_national_space_administration", "source_id": "sha_30fd8e1a6e0f5b45", "ingested_at": "2026-04-20T18:48:58.187016+00:00"}
+{"event_date": "2026-04-20", "change_type": "node_added", "entity_id": "null", "source_id": "sha_5d451e3be09139c7", "ingested_at": "2026-04-20T20:06:17.142482+00:00"}
+{"event_date": "2026-04-20", "change_type": "edge_added", "edge_id": "e_41473_manufacturedBy_china_national_space_administration", "source_id": "sha_b6e32b21c1a73b5f", "ingested_at": "2026-04-20T20:07:09.157348+00:00"}
+{"event_date": "2026-04-20", "change_type": "edge_added", "edge_id": "e_41473_carriedBy_long_march_2c", "source_id": "sha_b6e32b21c1a73b5f", "ingested_at": "2026-04-20T20:07:09.914759+00:00"}
+{"event_date": "2026-04-20", "change_type": "conflict_resolved", "entity_id": "41473", "field": "norad_id", "chosen": "option_a", "reason": "", "ingested_at": "2026-04-20T20:07:24.830966+00:00"}
+{"event_date": "2026-04-20", "change_type": "node_added", "entity_id": "china_aerospace_science_and_technology_corp._(casc)", "source_id": "sha_5d451e3be09139c7", "ingested_at": "2026-04-20T20:07:57.865514+00:00"}
+{"event_date": "2026-04-20", "change_type": "node_added", "entity_id": "beijing_guodian_gaoke_technology_co._ltd.", "source_id": "sha_5d451e3be09139c7", "ingested_at": "2026-04-20T20:08:05.046144+00:00"}
+{"event_date": "2026-04-20", "change_type": "edge_added", "edge_id": "e_41473_manufacturedBy_china_aerospace_science_and_technology_corp._(casc)", "source_id": "sha_5d451e3be09139c7", "ingested_at": "2026-04-20T20:08:16.493966+00:00"}
+{"event_date": "", "change_type": "conflict_resolved", "entity_id": "41473", "field": "description", "chosen": "option_a", "reason": "", "ingested_at": "2026-04-20T20:08:35.186145+00:00"}
+{"event_date": "2026-04-20T23:39:28.991245+00:00", "ingested_at": "2026-04-20T23:39:28.991245+00:00", "change_type": "node_added", "entity_id": "58017", "source_id": "manual"}
+{"event_date": "2026-04-20", "change_type": "attribute_changed", "entity_id": "42920", "field": "mission", "old_value": "Earth observation", "new_value": "Meteorological forecasting, climate change research, and ionospheric monitoring.", "source_id": "", "ingested_at": "2026-04-20T23:48:36.324788+00:00"}
+{"event_date": "2026-04-20", "change_type": "conflict_resolved", "entity_id": "null", "field": "name", "chosen": "option_b", "reason": "", "ingested_at": "2026-04-20T23:48:54.608485+00:00"}
+{"event_date": "2026-04-20", "change_type": "attribute_changed", "entity_id": "42920", "field": "news_keywords", "old_value": "FORMOSAT-5, FORMOSAT, 福衛", "new_value": "FORMOSAT-7, FS-7, FS-7/C-2", "source_id": "", "ingested_at": "2026-04-20T23:52:56.288674+00:00"}
+{"event_date": "2026-04-21", "change_type": "node_added", "entity_id": "42920", "source_id": "sha_56a8b9a1ea2f120e", "ingested_at": "2026-04-21T00:17:32.116281+00:00"}
+{"event_date": "2026-04-21", "change_type": "edge_added", "edge_id": "e_42920_carriedBy_falcon_heavy", "source_id": "sha_56a8b9a1ea2f120e", "ingested_at": "2026-04-21T03:07:50.699521+00:00"}
+{"event_date": "2026-04-21", "change_type": "node_added", "entity_id": "falcon_heavy", "source_id": "sha_56a8b9a1ea2f120e", "ingested_at": "2026-04-21T03:07:52.313058+00:00"}
+{"event_date": "2026-04-21T13:15:42.664186+00:00", "ingested_at": "2026-04-21T13:15:42.664186+00:00", "change_type": "node_added", "entity_id": "50321", "source_id": "manual"}
+{"event_date": "2026-03-27", "change_type": "attribute_changed", "entity_id": "42920", "field": "description", "old_value": "FORMOSAT-7 is a Taiwanese meteorological satellite constellation.", "new_value": "Joint U.S.-Taiwanese research satellite constellation", "source_id": "", "ingested_at": "2026-04-21T13:53:17.027602+00:00"}
+{"event_date": "2026-03-27", "change_type": "edge_added", "edge_id": "e_42920_operatedBy_noaa", "source_id": "sha_18af273a1f413dc4", "ingested_at": "2026-04-21T13:54:00.225019+00:00"}
+{"event_date": "2026-03-27", "change_type": "node_added", "entity_id": "noaa", "source_id": "sha_18af273a1f413dc4", "ingested_at": "2026-04-21T13:54:01.768126+00:00"}
+{"event_date": "2026-03-27", "change_type": "attribute_changed", "entity_id": "42920", "field": "name", "old_value": "FORMOSAT-7", "new_value": "COSMIC-2/FORMOSAT-7", "source_id": "", "ingested_at": "2026-04-21T13:54:25.748078+00:00"}
+{"event_date": "2026-04-21", "change_type": "node_added", "entity_id": "noaa", "source_id": "sha_56a8b9a1ea2f120e", "ingested_at": "2026-04-21T13:54:34.224072+00:00"}
+{"event_date": "2026-04-21T15:00:39.561596+00:00", "ingested_at": "2026-04-21T15:00:39.561596+00:00", "change_type": "node_added", "entity_id": "44910", "source_id": "manual"}
+{"event_date": "2026-04-21T15:01:33.480270+00:00", "ingested_at": "2026-04-21T15:01:33.480270+00:00", "change_type": "node_added", "entity_id": "50322", "source_id": "manual"}
+{"event_date": "2026-03-27", "change_type": "attribute_changed", "entity_id": "42920", "field": "manufacturer", "old_value": "Surrey Satellite Technology Ltd.", "new_value": "National Space Organization and SSTL", "source_id": "", "ingested_at": "2026-04-21T15:54:59.177921+00:00"}
+{"event_date": "2026-04-21", "change_type": "conflict_resolved", "entity_id": "42920", "field": "norad_id", "chosen": "option_a", "reason": "", "ingested_at": "2026-04-21T15:55:08.675152+00:00"}
+{"event_date": "2026-04-21T19:23:57.357389+00:00", "ingested_at": "2026-04-21T19:23:57.357389+00:00", "change_type": "node_added", "entity_id": "44349", "source_id": "manual"}
+{"event_date": "2026-04-21", "change_type": "edge_added", "edge_id": "e_天启星座06组卫星_carriedBy_谷神星一号海射型遥七火箭", "source_id": "sha_a7eb59c17a9664c6", "ingested_at": "2026-04-21T19:40:49.142798+00:00"}
+{"event_date": "2026-04-21", "change_type": "edge_added", "edge_id": "e_天启星座06组卫星_operatedBy_星河动力航天公司", "source_id": "sha_a7eb59c17a9664c6", "ingested_at": "2026-04-21T19:40:49.831419+00:00"}
+{"event_date": "2026-04-21", "change_type": "node_added", "entity_id": "星河动力航天公司", "source_id": "sha_a7eb59c17a9664c6", "ingested_at": "2026-04-21T19:40:50.522827+00:00"}
+{"event_date": "2026-04-21", "change_type": "node_added", "entity_id": "天启星座06组卫星", "source_id": "sha_a7eb59c17a9664c6", "ingested_at": "2026-04-21T19:40:51.169853+00:00"}
+{"event_date": "2026-04-21", "change_type": "node_added", "entity_id": "谷神星一号海射型遥七火箭", "source_id": "sha_a7eb59c17a9664c6", "ingested_at": "2026-04-21T19:40:51.995831+00:00"}
+{"event_date": "2026-04-12", "change_type": "edge_added", "edge_id": "e_yaogan_operatedBy_people's_liberation_army's_strategic_support_force", "source_id": "sha_0ea3665e575ed4d2", "ingested_at": "2026-04-21T19:40:54.520299+00:00"}
+{"event_date": "2026-04-12", "change_type": "node_added", "entity_id": "yaogan", "source_id": "sha_0ea3665e575ed4d2", "ingested_at": "2026-04-21T19:40:55.190294+00:00"}
+{"event_date": "2026-04-12", "change_type": "node_added", "entity_id": "people's_liberation_army's_strategic_support_force", "source_id": "sha_0ea3665e575ed4d2", "ingested_at": "2026-04-21T19:40:55.595466+00:00"}
+{"event_date": "2026-04-21", "change_type": "edge_added", "edge_id": "e_null_carriedBy_long_march_2c", "source_id": "sha_445a872f380c7c81", "ingested_at": "2026-04-21T19:45:04.978934+00:00"}
+{"event_date": "2026-04-21", "change_type": "edge_added", "edge_id": "e_null_operatedBy_beijing_guodian_gaoke_technology_co._ltd.", "source_id": "sha_445a872f380c7c81", "ingested_at": "2026-04-21T19:45:07.269981+00:00"}
+{"event_date": "2026-04-21", "change_type": "attribute_changed", "entity_id": "null", "field": "norad_id", "old_value": "null", "new_value": "46810", "source_id": "", "ingested_at": "2026-04-21T19:45:12.624002+00:00"}
+{"event_date": "2026-04-21", "change_type": "node_added", "entity_id": "beijing_guodian_gaoke_technology_co._ltd.", "source_id": "sha_445a872f380c7c81", "ingested_at": "2026-04-21T19:45:26.177005+00:00"}
+{"event_date": "2026-04-21", "change_type": "node_added", "entity_id": "long_march_2c", "source_id": "sha_445a872f380c7c81", "ingested_at": "2026-04-21T19:45:41.887827+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_50321_operatedBy_china_aerospace_science_and_technology_corp._(casc)", "source_id": "sha_3233a83f6a474404", "ingested_at": "2026-04-22T17:55:57.843859+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_50322_operatedBy_china_aerospace_science_and_technology_corp._(casc)", "source_id": "sha_3233a83f6a474404", "ingested_at": "2026-04-22T17:55:58.461804+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_50321_manufacturedBy_china_academy_of_space_technology_(cast)", "source_id": "sha_3233a83f6a474404", "ingested_at": "2026-04-22T17:55:58.899922+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_50322_manufacturedBy_china_academy_of_space_technology_(cast)", "source_id": "sha_3233a83f6a474404", "ingested_at": "2026-04-22T17:55:59.312555+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_50321_carriedBy_long_march_7a", "source_id": "sha_3233a83f6a474404", "ingested_at": "2026-04-22T17:55:59.856305+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_50322_carriedBy_long_march_7a", "source_id": "sha_3233a83f6a474404", "ingested_at": "2026-04-22T17:56:00.254854+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_long_march_7a_builtBy_china_aerospace_science_and_technology_corp._(casc)", "source_id": "sha_3233a83f6a474404", "ingested_at": "2026-04-22T17:56:01.571969+00:00"}
+{"event_date": "2026-04-22", "change_type": "node_added", "entity_id": "long_march_7a", "source_id": "sha_3233a83f6a474404", "ingested_at": "2026-04-22T17:56:04.254019+00:00"}
+{"event_date": "2026-04-22", "change_type": "node_added", "entity_id": "china_academy_of_space_technology_(cast)", "source_id": "sha_3233a83f6a474404", "ingested_at": "2026-04-22T17:56:05.680866+00:00"}
+{"event_date": "", "change_type": "conflict_resolved", "entity_id": "shiyan_12_series", "field": "purpose", "chosen": "option_a", "reason": "", "ingested_at": "2026-04-22T17:56:55.472610+00:00"}
+{"event_date": "2026-01-14T10:46:43Z", "change_type": "node_added", "entity_id": "long_march_2c", "source_id": "snapi_35380", "ingested_at": "2026-04-22T17:57:30.234687+00:00"}
+{"event_date": "2026-01-14T10:46:43Z", "change_type": "node_added", "entity_id": "guowang", "source_id": "snapi_35380", "ingested_at": "2026-04-22T17:57:42.289983+00:00"}
+{"event_date": "", "change_type": "conflict_resolved", "entity_id": "shiyan_12_series", "field": "first_launch", "chosen": "option_b", "reason": "", "ingested_at": "2026-04-22T17:58:12.304474+00:00"}
+{"event_date": "2026-04-22T19:40:58.040885+00:00", "ingested_at": "2026-04-22T19:40:58.040885+00:00", "change_type": "node_added", "entity_id": "55131", "source_id": "manual"}
+{"event_date": "2026-04-22T19:45:43.558909+00:00", "ingested_at": "2026-04-22T19:45:43.558909+00:00", "change_type": "node_added", "entity_id": "65851", "source_id": "manual"}
+{"event_date": "2026-04-22", "change_type": "node_added", "entity_id": "shiyan_30_series", "source_id": "sha_1425b27254b02cf3", "ingested_at": "2026-04-22T19:55:13.509164+00:00"}
+{"event_date": "2026-04-22", "change_type": "node_added", "entity_id": "49112", "source_id": "sha_1425b27254b02cf3", "ingested_at": "2026-04-22T19:55:14.203539+00:00"}
+{"event_date": "2026-04-22", "change_type": "node_added", "entity_id": "49114", "source_id": "sha_1425b27254b02cf3", "ingested_at": "2026-04-22T19:55:14.850661+00:00"}
+{"event_date": "2026-04-22", "change_type": "node_added", "entity_id": "shanghai_academy_of_spaceflight_technology_(sast)", "source_id": "sha_1425b27254b02cf3", "ingested_at": "2026-04-22T19:55:16.724229+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_49112_memberOfSeries_shiyan_30_series", "source_id": "sha_1425b27254b02cf3", "ingested_at": "2026-04-22T19:55:18.040925+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_49114_memberOfSeries_shiyan_30_series", "source_id": "sha_1425b27254b02cf3", "ingested_at": "2026-04-22T19:55:18.950035+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_49112_manufacturedBy_shanghai_academy_of_spaceflight_technology_(sast)", "source_id": "sha_1425b27254b02cf3", "ingested_at": "2026-04-22T19:55:20.876898+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_49114_manufacturedBy_shanghai_academy_of_spaceflight_technology_(sast)", "source_id": "sha_1425b27254b02cf3", "ingested_at": "2026-04-22T19:55:21.897891+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_49112_operatedBy_china_aerospace_science_and_technology_corp._(casc)", "source_id": "sha_1425b27254b02cf3", "ingested_at": "2026-04-22T19:55:23.538087+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_49114_operatedBy_china_aerospace_science_and_technology_corp._(casc)", "source_id": "sha_1425b27254b02cf3", "ingested_at": "2026-04-22T19:55:24.430863+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_49112_carriedBy_long_march_2c", "source_id": "sha_1425b27254b02cf3", "ingested_at": "2026-04-22T19:55:25.257325+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_49114_carriedBy_long_march_2c", "source_id": "sha_1425b27254b02cf3", "ingested_at": "2026-04-22T19:55:25.898056+00:00"}
+{"event_date": "2026-04-22", "change_type": "edge_added", "edge_id": "e_long_march_2c_builtBy_china_aerospace_science_and_technology_corp._(casc)", "source_id": "sha_1425b27254b02cf3", "ingested_at": "2026-04-22T19:55:32.275366+00:00"}
+{"event_date": "2026-04-22", "change_type": "nodes_merged", "entity_id": "65851", "merged_from": "49112", "source_id": "", "ingested_at": "2026-04-22T20:05:23.965489+00:00"}
+{"event_date": "2026-01-14T10:46:43Z", "change_type": "conflict_resolved", "entity_id": "long_march_2c", "field": "name", "chosen": "option_a", "reason": "", "ingested_at": "2026-04-22T20:34:31.100070+00:00"}
+{"event_date": "2026-04-22", "change_type": "conflict_resolved", "entity_id": "shiyan_30_series", "field": "operator", "chosen": "option_a", "reason": "", "ingested_at": "2026-04-22T20:43:49.731429+00:00"}
+{"event_date": "", "change_type": "node_added", "entity_id": "65852", "source_id": "file_29a4194bbcf2283e", "ingested_at": "2026-04-22T20:44:02.560936+00:00"}
+{"event_date": "2026-04-22", "change_type": "nodes_merged", "entity_id": "65852", "merged_from": "49114", "source_id": "", "ingested_at": "2026-04-22T20:51:27.819949+00:00"}
+{"event_date": "2026-04-29T20:44:10.480588+00:00", "ingested_at": "2026-04-29T20:44:10.480588+00:00", "change_type": "node_added", "entity_id": "41727", "source_id": "manual"}
+{"event_date": "2026-04-29T20:44:50.577942+00:00", "ingested_at": "2026-04-29T20:44:50.577942+00:00", "change_type": "node_added", "entity_id": "49495", "source_id": "manual"}
+{"event_date": "2026-04-29T20:45:08.805874+00:00", "ingested_at": "2026-04-29T20:45:08.805874+00:00", "change_type": "node_added", "entity_id": "52200", "source_id": "manual"}
+{"event_date": "2026-04-29T20:45:25.402926+00:00", "ingested_at": "2026-04-29T20:45:25.402926+00:00", "change_type": "node_added", "entity_id": "41727", "source_id": "manual"}
+{"event_date": "", "change_type": "node_added", "entity_id": "68835", "source_id": "file_d7ec093dc174de8d", "ingested_at": "2026-05-02T17:55:16.176362+00:00"}
+{"event_date": "", "change_type": "node_added", "entity_id": "long_march_6", "source_id": "file_d7ec093dc174de8d", "ingested_at": "2026-05-02T17:55:17.926220+00:00"}
+{"event_date": "", "change_type": "node_added", "entity_id": "taiyuan_satellite_launch_center", "source_id": "file_d7ec093dc174de8d", "ingested_at": "2026-05-02T17:55:18.891253+00:00"}
+{"event_date": "", "change_type": "edge_added", "edge_id": "e_68835_manufacturedBy_suparco", "source_id": "file_d7ec093dc174de8d", "ingested_at": "2026-05-02T17:55:21.525886+00:00"}
+{"event_date": "", "change_type": "edge_added", "edge_id": "e_68835_operatedBy_suparco", "source_id": "file_d7ec093dc174de8d", "ingested_at": "2026-05-02T17:55:21.892931+00:00"}
+{"event_date": "2026-05-03", "change_type": "node_added", "entity_id": "prsc-e03", "source_id": "sha_538b8d2943d9804c", "ingested_at": "2026-05-04T14:15:24.059830+00:00"}
+{"event_date": "2026-05-03", "change_type": "edge_added", "edge_id": "e_prsc-e03_launchedFrom_taiyuan_satellite_launch_center", "source_id": "sha_538b8d2943d9804c", "ingested_at": "2026-05-04T14:15:31.049002+00:00"}
+{"event_date": "2026-05-03", "change_type": "edge_added", "edge_id": "e_prsc-e03_carriedBy_long_march_6", "source_id": "sha_538b8d2943d9804c", "ingested_at": "2026-05-04T14:15:33.247154+00:00"}
+{"event_date": "2026-05-04", "change_type": "nodes_merged", "entity_id": "prsc-e03", "merged_from": "prsc_e03", "source_id": "", "ingested_at": "2026-05-04T14:16:46.518288+00:00"}
+{"event_date": "2026-05-04", "change_type": "nodes_merged", "entity_id": "prsc-e03", "merged_from": "68835", "source_id": "", "ingested_at": "2026-05-04T14:17:36.438547+00:00"}
+{"event_date": "", "change_type": "node_added", "entity_id": "63157", "source_id": "file_2cb0b4b999df1bf1", "ingested_at": "2026-05-06T19:18:18.548068+00:00"}
+{"event_date": "2026-05-08T01:22:48.440594+00:00", "ingested_at": "2026-05-08T01:22:48.440594+00:00", "change_type": "node_added", "entity_id": "66666", "source_id": "manual"}
+{"event_date": "", "change_type": "node_added", "entity_id": "64467", "source_id": "file_874ab4e172ff35fb", "ingested_at": "2026-05-20T19:22:13.439842+00:00"}
+{"event_date": "", "change_type": "node_added", "entity_id": "51281", "source_id": "file_874ab4e172ff35fb", "ingested_at": "2026-05-20T19:22:14.033976+00:00"}
+{"event_date": "", "change_type": "conflict_resolved", "entity_id": "64467", "field": "mission", "chosen": "option_a", "reason": "", "ingested_at": "2026-05-20T19:26:37.344793+00:00"}
+{"event_date": "", "change_type": "node_added", "entity_id": "64527", "source_id": "file_f8129074e591fff3", "ingested_at": "2026-05-20T19:26:46.657671+00:00"}
+{"event_date": "", "change_type": "attribute_changed", "entity_id": "64467", "field": "classification", "old_value": "Suspected to have satellite inspection or \"satellite killing\" capabilities.", "new_value": "Uncertain function", "source_id": "", "ingested_at": "2026-05-20T19:26:54.730003+00:00"}
+{"event_date": "", "change_type": "node_added", "entity_id": "qianfan_jigui_polar_group_08", "source_id": "", "ingested_at": "2026-05-20T20:05:03.132381+00:00"}
+{"event_date": "", "change_type": "node_added", "entity_id": "qianfan_constellation", "source_id": "", "ingested_at": "2026-05-20T20:05:03.140656+00:00"}
+{"event_date": "", "change_type": "node_added", "entity_id": "long_march_8", "source_id": "", "ingested_at": "2026-05-20T20:05:03.152476+00:00"}
+{"event_date": "", "change_type": "node_added", "entity_id": "wenchang_commercial_space_launch_site", "source_id": "", "ingested_at": "2026-05-20T20:05:03.157819+00:00"}
+{"event_date": "", "change_type": "node_added", "entity_id": "shanghai_spacesail_technologies_(ssst)", "source_id": "", "ingested_at": "2026-05-20T20:05:03.162702+00:00"}
+{"event_date": "", "change_type": "edge_added", "edge_id": "e_qianfan_jigui_polar_group_08_memberOfConstellation_qianfan_constellation", "source_id": "", "ingested_at": "2026-05-20T20:05:03.167406+00:00"}
+{"event_date": "", "change_type": "edge_added", "edge_id": "e_qianfan_jigui_polar_group_08_launchedFrom_wenchang_commercial_space_launch_site", "source_id": "", "ingested_at": "2026-05-20T20:05:03.170651+00:00"}
+{"event_date": "", "change_type": "edge_added", "edge_id": "e_qianfan_jigui_polar_group_08_carriedBy_long_march_8", "source_id": "", "ingested_at": "2026-05-20T20:05:03.173982+00:00"}
+{"event_date": "", "change_type": "edge_added", "edge_id": "e_long_march_8_builtBy_china_aerospace_science_and_technology_corp._(casc)", "source_id": "", "ingested_at": "2026-05-20T20:05:03.177488+00:00"}
+{"event_date": "", "change_type": "edge_added", "edge_id": "e_wenchang_commercial_space_launch_site_operatesLaunchSite_shanghai_spacesail_technologies_(ssst)", "source_id": "", "ingested_at": "2026-05-20T20:05:03.180461+00:00"}
