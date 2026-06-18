@@ -1,0 +1,385 @@
+{
+  "metadata": {
+    "total_questions": 25,
+    "specialized_mean": 0.78,
+    "rag_mean": 0.34,
+    "advantage": "Specialized",
+    "note": "Partial update: re-ran 3 questions, merged with existing 22 results",
+    "specialized_correct": 17,
+    "specialized_partial": 5,
+    "specialized_wrong": 3,
+    "rag_correct": 7,
+    "rag_partial": 3,
+    "rag_wrong": 15
+  },
+  "specialized_scores": {
+    "a01": 1.0,
+    "a02": 1.0,
+    "a03": 1.0,
+    "a04": 1.0,
+    "a05": 1.0,
+    "b01": 0.0,
+    "b02": 1.0,
+    "b03": 1.0,
+    "b04": 1.0,
+    "b05": 0.5,
+    "c01": 0.0,
+    "c02": 0.0,
+    "c03": 1.0,
+    "d01": 1.0,
+    "d02": 1.0,
+    "d03": 1.0,
+    "d04": 1.0,
+    "e01": 0.5,
+    "e02": 0.5,
+    "e03": 0.5,
+    "f01": 1.0,
+    "f02": 1.0,
+    "f03": 1.0,
+    "g01": 0.5,
+    "g02": 1.0,
+    "e04": 1.0
+  },
+  "rag_scores": {
+    "a01": 0.0,
+    "a02": 0.0,
+    "a03": 1.0,
+    "a04": 0.0,
+    "a05": 1.0,
+    "b01": 0.0,
+    "b02": 0.0,
+    "b03": 0.5,
+    "b04": 0.0,
+    "b05": 0.0,
+    "c01": 0.0,
+    "c02": 0.0,
+    "c03": 0.0,
+    "d01": 0.0,
+    "d02": 0.5,
+    "d03": 1.0,
+    "d04": 1.0,
+    "e01": 0.0,
+    "e02": 0.0,
+    "e03": 0.5,
+    "f01": 1.0,
+    "f02": 1.0,
+    "f03": 1.0,
+    "g01": 0.0,
+    "g02": 0.0,
+    "e04": 1.0
+  },
+  "detailed_results": [
+    {
+      "id": "a01",
+      "question": "What is the exact delta-V (in m/s) for the COSMOS 2614 maneuver?",
+      "category": "A. Event Precision",
+      "answer_type": "numeric",
+      "ground_truth": "107.05",
+      "specialized_answer": "The delta-V for the COSMOS 2614 maneuver on May 21, 2026, was 107.05 m/s. \n\n- **Event Date:** 2026-05-21\n- **Delta-V:** 107.05 m/s\n- **Maneuver Type:** Plane change\n- **Analyst Assessment:** This maneuver does not appear to be a station-keeping maneuver and is not within the historical pattern of life for this object.\n\n(Source: Maneuver history data)",
+      "specialized_score": 1.0,
+      "rag_answer": "The provided context does not contain information about the exact delta-V (in m/s) for the COSMOS 2614 maneuver.",
+      "rag_score": 0.0
+    },
+    {
+      "id": "a02",
+      "question": "What was the period change (in seconds) for TJS-6's second maneuver? Is it positive or negative?",
+      "category": "A. Event Precision",
+      "answer_type": "numeric_with_sign",
+      "ground_truth": "2.63",
+      "specialized_answer": "The period change for TJS-6's second maneuver was 2.63 seconds. This change is positive.\n\n- **Period Change:** +2.63 seconds\n- **Maneuver Date:** 2026-06-02\n\n(Source: Maneuver history for TJS-6)",
+      "specialized_score": 1.0,
+      "rag_answer": "The provided context does not contain information about the period change (in seconds) for TJS-6's second maneuver, nor does it specify whether the change is positive or negative.",
+      "rag_score": 0.0
+    },
+    {
+      "id": "a03",
+      "question": "What is the orbital inclination of the Qianfan 10A-R launch in degrees?",
+      "category": "A. Event Precision",
+      "answer_type": "numeric",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "specialized_answer": "I couldn't find any information on a satellite named \"Qianfan 10A-R\" in the knowledge graph. It's possible that the satellite is not yet documented in the available data. If you have any other details or identifiers for this satellite, please let me know, and I can try searching again.",
+      "specialized_score": 1.0,
+      "rag_answer": "The provided context does not contain information about the orbital inclination of the Qianfan 10A-R launch.",
+      "rag_score": 1.0
+    },
+    {
+      "id": "a04",
+      "question": "By how many magnitudes did COSMOS 2589 change brightness on May 19?",
+      "category": "A. Event Precision",
+      "answer_type": "numeric",
+      "ground_truth": "1.0",
+      "specialized_answer": "On May 19, 2026, COSMOS 2589 experienced a photometric change where it became 1.0 magnitude dimmer. This change was detected and noted as a return to its pattern of life.\n\n- **Magnitude Change**: 1.0 (dimmer)\n- **Event Date**: May 19, 2026\n- **Verification Status**: Detected\n\n(Source: Photometric change events for COSMOS 2589)",
+      "specialized_score": 1.0,
+      "rag_answer": "The provided context does not contain information about the magnitude change in brightness for COSMOS 2589 on May 19.",
+      "rag_score": 0.0
+    },
+    {
+      "id": "a05",
+      "question": "What was the apogee change (km) and perigee change (km) for SJ-29B's maneuver?",
+      "category": "A. Event Precision",
+      "answer_type": "numeric_pair",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "specialized_answer": "The maneuver event for SJ-29B on 2026-05-30 did not include specific details about the apogee or perigee changes. The available data only mentions a delta-v of 3.39 m/s and that the satellite parked at 73.4 degrees East. Therefore, the apogee and perigee changes are not specified in the current records.\n\nSource: Maneuver history for SJ-29B.",
+      "specialized_score": 1.0,
+      "rag_answer": "The provided context does not contain information about the apogee change (km) and perigee change (km) for SJ-29B's maneuver.",
+      "rag_score": 1.0
+    },
+    {
+      "id": "b01",
+      "question": "How many total maneuver events appear across all NOTOS/JCO reports?",
+      "category": "B. Cross-Document Aggregation",
+      "answer_type": "numeric_exact",
+      "ground_truth": "19",
+      "specialized_answer": "There are a total of 19 maneuver events reported across all NOTOS/JCO reports. \n\n(Source: `functions.search_events`)",
+      "specialized_score": 0.0,
+      "rag_answer": "The context provides information about two different maneuver events:\n\n1. TJS-6 (47613) with two separate reports:\n   - GEO_01Jun-1611Z\n   - GEO_02Jun-1225Z\n\n2. COSMOS 2614 (68764) with one report:\n   - LEO_22May-1248Z\n\nBased on the provided context, there are a total of three maneuver events across all NOTSO/JCO reports.",
+      "rag_score": 0.0
+    },
+    {
+      "id": "b02",
+      "question": "How many times does COSMOS 2589 appear in photometric change reports?",
+      "category": "B. Cross-Document Aggregation",
+      "answer_type": "numeric_exact",
+      "ground_truth": "7",
+      "specialized_answer": "COSMOS 2589 appears in 7 photometric change reports. Here are some details about these events:\n\n- **Event Dates**: The events occurred between May 16, 2026, and June 3, 2026.\n- **Magnitude Changes**: The changes in magnitude ranged from 1.0 to 2.0, with variations in brightness (both dimmer and brighter).\n- **Associated Satellites**: Some events were associated with other satellites like CHINASAT 2E and USA 325.\n- **Analyst Assessments**: The photometric variations were generally consistent with the historical pattern of life for COSMOS 2589.\n- **Regime**: All events occurred in the GEO (Geostationary Earth Orbit) regime.\n\nThese events indicate that COSMOS 2589 is actively monitored for photometric changes, which are consistent with its suspected military operations and potential counterspace capabilities.",
+      "specialized_score": 1.0,
+      "rag_answer": "Based on the provided context, COSMOS 2589 appears in photometric change reports five times.",
+      "rag_score": 0.0
+    },
+    {
+      "id": "b03",
+      "question": "Which satellite experienced maneuvers most frequently? How many times?",
+      "category": "B. Cross-Document Aggregation",
+      "answer_type": "entity_count",
+      "ground_truth": "TJS-24 with 3 maneuvers",
+      "specialized_answer": "The satellite that experienced maneuvers most frequently in the past year is \"TJS-24 Candidate\" with a total of 3 maneuvers. Here are the details:\n\n- **TJS-24 Candidate**\n  - **Maneuver Dates**: \n    - 2026-06-03\n    - 2026-06-02\n    - 2026-06-01\n\nThese maneuvers were identified as part of the satellite's operations, supporting military functions. The maneuvers involved changes in drift rate, period, and altitude adjustments. \n\n(Source: functions.search_events)",
+      "specialized_score": 1.0,
+      "rag_answer": "Based on the provided context, the satellite TJS-6 (47613) experienced maneuvers most frequently. It is mentioned in three different documents:\n\n1. NOTSO_Maneuver / TJS-6 (47613) / GEO_01Jun-1611Z\n2. NOTSO_Maneuver_TJS-6 (47613)_GEO_02Jun-1225Z\n3. NOTSO_Maneuver _ TJS-6 (47613) _ GEO_03Jun-1534Z\n\nTherefore, TJS-6 (47613) experienced maneuvers three times.",
+      "rag_score": 0.5
+    },
+    {
+      "id": "b04",
+      "question": "How many unique satellites appear across all reports?",
+      "category": "B. Cross-Document Aggregation",
+      "answer_type": "numeric_exact",
+      "ground_truth": "13",
+      "specialized_answer": "There are 13 unique satellites mentioned across all reports. This information was retrieved from a search of report content.",
+      "specialized_score": 1.0,
+      "rag_answer": "The provided context only mentions one satellite, COSMOS 2589, across all reports. Therefore, based on the provided context, there is only one unique satellite mentioned.",
+      "rag_score": 0.0
+    },
+    {
+      "id": "b05",
+      "question": "List all satellites that had launch events in these reports.",
+      "category": "B. Cross-Document Aggregation",
+      "answer_type": "list",
+      "ground_truth": "Satellites with launch events: 68835, 69235, 94327",
+      "specialized_answer": "Here are the satellites that had launch events according to the reports:\n\n1. **TJS-24**\n   - Launch Date: 2026-05-26\n   - Launch Site: Wenchang, China (LC-201)\n   - Launch Vehicle: LM-7A\n   - Orbital Regime: GEO\n\n2. **Qianfan Digui Group 10A-R**\n   - Launch Date: 2026-05-17\n   - Launch Site: Hainan, China\n   - Launch Vehicle: LM-8\n   - Orbital Regime: LEO\n\n3. **Qianfan Jigui Group 10A-R**\n   - Launch Date: 2026-05-17\n   - Launch Site: Wenchang Space Launch Site\n   - Launch Vehicle: Long March 8\n   - Orbital Regime: LEO\n\n4. **PRSC-E03**\n   - Launch Date: 2026-04-25\n   - Launch Site: Taiyuan Satellite Launch Center\n   - Launch Vehicle: CZ-6 (Long March 6)\n   - Orbital Regime: LEO\n\n5. **Xingwang Jishu Shiyan 09A-C**\n   - Launch Date: 2026-04-24\n   - Launch Site: Xichang Satellite Launch Center\n   - Launch Vehicle: LM-2D\n   - Orbital Regime: LEO\n\nNote: Some launch events did not have specific satellite labels or IDs associated with them.",
+      "specialized_score": 0.5,
+      "rag_answer": "Based on the provided context, the satellites that had launch events in these reports are:\n\n1. Qianfan Digui Group 10A R\n2. TJS-24",
+      "rag_score": 0.0
+    },
+    {
+      "id": "c01",
+      "question": "At exactly what UTC datetime did the COSMOS 2614 maneuver occur? (ISO 8601 format)",
+      "category": "C. Date Format Normalization",
+      "answer_type": "datetime_iso",
+      "ground_truth": "2026-05-21 at 13:58:00 UTC",
+      "specialized_answer": "The maneuver for COSMOS 2614 occurred on 2026-05-21 at 13:58:00 UTC.",
+      "specialized_score": 0.0,
+      "rag_answer": "The context does not provide the exact UTC datetime of the COSMOS 2614 maneuver in ISO 8601 format.",
+      "rag_score": 0.0
+    },
+    {
+      "id": "c02",
+      "question": "What is the report date for TJS-24's earliest launch report in ISO 8601?",
+      "category": "C. Date Format Normalization",
+      "answer_type": "date_iso",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "specialized_answer": "The earliest launch report for TJS-24 is dated 2023-06-01. This is based on the report file named \"NOTSO_Launch_ TJS-24 (69235)_ GEO _01Jun-2009Z.mhtml\" which mentions the launch details.",
+      "specialized_score": 0.0,
+      "rag_answer": "The earliest launch report date for TJS-24 in the provided context is 2026-05-25, as indicated in the document titled \"NOTSO_Launch_ TJS-24 (69235)_ GEO _01Jun-2009Z.mhtml\" with the timestamp 2026-05-25T09:49:20.919Z.",
+      "rag_score": 0.0
+    },
+    {
+      "id": "c03",
+      "question": "When was the Luch Olymp 2 RPO event reported? (ISO 8601 format)",
+      "category": "C. Date Format Normalization",
+      "answer_type": "date_iso",
+      "ground_truth": "2026-06-01T20:57:00Z",
+      "specialized_answer": "The Luch Olymp 2 RPO event was reported on 2026-06-01T20:57:00Z.",
+      "specialized_score": 1.0,
+      "rag_answer": "The Luch Olymp 2 RPO event was reported on 2026-06-02T19:31:54.500Z.",
+      "rag_score": 0.0
+    },
+    {
+      "id": "d01",
+      "question": "Which satellite had the largest single delta-V maneuver? What country operates it?",
+      "category": "D. Multi-Hop Reasoning",
+      "answer_type": "entity_relation",
+      "ground_truth": "COSMOS 2614, delta-V of 107.05 m/s, Russia",
+      "specialized_answer": "The satellite with the largest single delta-V maneuver is COSMOS 2614, which had a delta-V of 107.05 m/s. It is operated by the Russian Ministry of Defense. \n\n- **Satellite Name**: COSMOS 2614\n- **Delta-V**: 107.05 m/s\n- **Operator**: Russian Ministry of Defense\n- **Country**: Russia\n\n(Source: Maneuver events data, Satellite information)",
+      "specialized_score": 1.0,
+      "rag_answer": "The provided context does not contain enough information to determine which satellite had the largest single delta-V maneuver or the country that operates it.",
+      "rag_score": 0.0
+    },
+    {
+      "id": "d02",
+      "question": "Which satellite experienced photometric change in these reports? Is it military or commercial?",
+      "category": "D. Multi-Hop Reasoning",
+      "answer_type": "entity_relation",
+      "ground_truth": "COSMOS 2589 (Military)",
+      "specialized_answer": "The satellite that experienced photometric changes in the reports is \"COSMOS 2589.\" It is a Russian satellite that supports military operations. The mission of COSMOS 2589 is suspected to involve servicing/inspection and RPO (Rendezvous and Proximity Operations) activity, with potential counterspace capabilities. \n\n- **Satellite Name:** COSMOS 2589\n- **Type:** Military\n- **Operator:** Russia\n\nThis information is based on the photometric change events detected for COSMOS 2589, as reported in the structured data.",
+      "specialized_score": 1.0,
+      "rag_answer": "The satellite that experienced photometric change in these reports is Cosmos 2589 (64467). The context does not specify whether it is military or commercial.",
+      "rag_score": 0.5
+    },
+    {
+      "id": "d03",
+      "question": "Which system satellite has the highest pass frequency over Taiwan?",
+      "category": "D. Multi-Hop Reasoning",
+      "answer_type": "free_form",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "specialized_answer": "There are currently no Chinese satellites with recorded pass frequencies over Taiwan in the past 30 days. This might be due to a lack of available data or specific satellite operations during this period.",
+      "specialized_score": 1.0,
+      "rag_answer": "The provided context does not contain information about the pass frequency of any satellite over Taiwan.",
+      "rag_score": 1.0
+    },
+    {
+      "id": "e01",
+      "question": "How many kilometers did Luch Olymp 2 come closest to Intelsat 39?",
+      "category": "E. Specialized Event Types (RPO)",
+      "answer_type": "numeric_or_missing",
+      "ground_truth": "60km",
+      "specialized_answer": "Based on the available report, Luch Olymp 2 maintained a distance between 10 to 60 kilometers from Intelsat 39. The closest approach recorded was within this range, but the exact minimum distance is not specified beyond this range. \n\nSource: NOTSO_RPO report on Luch Olymp 2 vs Intelsat 39.",
+      "specialized_score": 0.5,
+      "rag_answer": "The provided context does not contain information about the distance in kilometers that Luch Olymp 2 came closest to Intelsat 39.",
+      "rag_score": 0.0
+    },
+    {
+      "id": "e02",
+      "question": "What does the analyst assessment say about the Luch Olymp 2 - Intelsat 39 encounter?",
+      "category": "E. Specialized Event Types (RPO)",
+      "answer_type": "free_form",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "specialized_answer": "The analyst assessment regarding the encounter between Luch Olymp 2 and Intelsat 39 is as follows:\n\n- **Date of Encounter**: The encounter was noted on June 2, 2025.\n- **Observation Details**: Since March 6, 2025, Luch Olymp 2 has been positioned east of Intelsat 39, maintaining a distance between 10 to 60 kilometers.\n- **Maneuver Details**: The last maneuver by Luch Olymp 2 occurred on June 1, 2025, at 20:57 UTC. This maneuver resulted in a slight drift towards Intelsat 39 rather than initiating separation.\n- **Close Approach**: A close approach was recorded on June 2, 2025, at 08:12 UTC.\n\nThis information is based on current Space Domain Awareness (SDA) observations and available PAIR data.",
+      "specialized_score": 0.5,
+      "rag_answer": "The provided context does not contain any specific information about the analyst assessment regarding the Luch Olymp 2 - Intelsat 39 encounter.",
+      "rag_score": 0.0
+    },
+    {
+      "id": "e03",
+      "question": "What fields or attributes does the RPO (Rendezvous/Proximity) report have that differ from standard maneuver reports?",
+      "category": "E. Specialized Event Types (RPO)",
+      "answer_type": "free_form",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "specialized_answer": "I couldn't find specific RPO (Rendezvous/Proximity Operations) reports or details about their fields and attributes in the available data. Without access to specific report content or metadata, I can't provide a detailed comparison between RPO reports and standard maneuver reports.\n\nIf you have access to specific RPO reports or additional resources, reviewing those documents would be the best way to identify the differences in fields or attributes.",
+      "specialized_score": 0.5,
+      "rag_answer": "The provided context does not contain information about the fields or attributes of the RPO (Rendezvous/Proximity) report or how they differ from standard maneuver reports.",
+      "rag_score": 0.5
+    },
+    {
+      "id": "e04",
+      "question": "In the RPO event between Luch Olymp 2 and Intelsat 39, what are their orbital regimes?",
+      "category": "E. Specialized Event Types (RPO)",
+      "answer_type": "entity_pair",
+      "ground_truth": "GEO",
+      "specialized_answer": "- **Luch Olymp 2** is in the **GEO (Geostationary Earth Orbit)** regime.\n- **Intelsat 39** is also in the **GEO (Geostationary Earth Orbit)** regime.\n\nBoth satellites operate in geostationary orbit, which is typical for communication and surveillance satellites.",
+      "specialized_score": 1.0,
+      "rag_answer": "The context indicates that the RPO event between Luch Olymp 2 and Intelsat 39 occurs in the GEO (Geostationary Earth Orbit) regime.",
+      "rag_score": 1.0
+    },
+    {
+      "id": "f01",
+      "question": "What is the fuel consumption (kg) for SJ-29B's maneuver?",
+      "category": "F. I Don't Know (Hallucination Test)",
+      "answer_type": "refuse_or_hallucinate",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "specialized_answer": "- The recent maneuver for SJ-29B involved a delta-v of 3.39 m/s.\n- Unfortunately, there is no specific information available regarding the fuel consumption in kilograms for this maneuver.\n\nIf you need further details, such as typical fuel consumption rates for similar maneuvers, additional analysis or expert consultation might be required.",
+      "specialized_score": 1.0,
+      "rag_answer": "The provided context does not contain information about the fuel consumption (kg) for SJ-29B's maneuver.",
+      "rag_score": 1.0
+    },
+    {
+      "id": "f02",
+      "question": "What caused COSMOS 2589's photometric brightness change?",
+      "category": "F. I Don't Know (Hallucination Test)",
+      "answer_type": "refuse_or_hallucinate",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "specialized_answer": "The photometric brightness change of COSMOS 2589 was detected on several occasions, with the most recent event occurring on June 3, 2026. Here are the key details:\n\n- **Event Date:** June 3, 2026\n- **Magnitude Change:** The satellite became dimmer by 1.0 magnitude.\n- **Analyst Assessment:** The photometric variation is consistent with the historical pattern of life for this object.\n- **Associated Satellite:** CHINASAT 2E was nearby, at a distance of 46 km.\n- **Mission Context:** COSMOS 2589 is a Russian satellite suspected to be involved in servicing/inspection and RPO (Rendezvous and Proximity Operations) activities, with potential counterspace capabilities.\n\nThe changes in brightness are consistent with its operational pattern and are likely related to its mission activities, which include close-proximity operations with other satellites.\n\n(Source: search_events)",
+      "specialized_score": 1.0,
+      "rag_answer": "The provided context does not contain information about the cause of COSMOS 2589's photometric brightness change.",
+      "rag_score": 1.0
+    },
+    {
+      "id": "f03",
+      "question": "What is the payload mass (kg) of TJS-24?",
+      "category": "F. I Don't Know (Hallucination Test)",
+      "answer_type": "refuse_or_hallucinate",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "specialized_answer": "The payload mass of TJS-24 is not specified in the available data. If you need this specific information, it might be necessary to consult detailed launch reports or proprietary databases.",
+      "specialized_score": 1.0,
+      "rag_answer": "The provided context does not contain information about the payload mass of TJS-24.",
+      "rag_score": 1.0
+    },
+    {
+      "id": "g01",
+      "question": "NORAD catalog ID 47613 experienced what events in these reports?",
+      "category": "G. Satellite Name Variants",
+      "answer_type": "entity_search",
+      "ground_truth": "6 maneuver events",
+      "specialized_answer": "The satellite with NORAD catalog ID 47613, identified as TJS-6, experienced the following events according to the reports:\n\n1. **Maneuver on 03 June (JDay 154):**\n   - Occurred at 0113z.\n   - The satellite maneuvered from 178.53� E longitude with a delta-v of 15.19 m/s.\n   - Resulted in an inclination change of 0.25� to a final inclination of 0.29�.\n   - Described as a RAAN flip station-keeping maneuver, consistent with its historical pattern.\n\n2. **Possible Maneuver on 02 June (JDay 153):**\n   - Detected at 0931z.\n   - Located at 178.50� E longitude.\n   - Resulted in an inclination change of -0.25� to a final inclination of 0.02�.\n   - RAAN change of +137.15� to a final RAAN of 227�.\n   - Indicated as a station-keeping maneuver.\n\n3. **Maneuver on 01 June (JDay 152):**\n   - Occurred at 0110z.\n   - The satellite maneuvered with a delta-v of 15.35 m/s.\n   - Resulted in an inclination change of -0.28� to a final inclination of 0.27�.\n   - Identified as a station-keeping maneuver, occurring annually and within its historical pattern.\n\nThese maneuvers are typical for maintaining the satellite's geostationary position and operational parameters.",
+      "specialized_score": 0.5,
+      "rag_answer": "The provided context does not contain any information about NORAD catalog ID 47613 or any events related to it.",
+      "rag_score": 0.0
+    },
+    {
+      "id": "g02",
+      "question": "How many photometric change reports exist for satellite 64467?",
+      "category": "G. Satellite Name Variants",
+      "answer_type": "numeric_exact",
+      "ground_truth": "7",
+      "specialized_answer": "There are 7 photometric change reports for satellite 64467 (COSMOS 2589). Here are some details:\n\n- **Event Dates**: The reports cover events from May 16, 2026, to June 3, 2026.\n- **Magnitude Changes**: The changes in magnitude range from 1.0 to 2.0, with variations in brightness (both dimmer and brighter).\n- **Associated Satellites**: Some events are associated with other satellites like CHINASAT 2E and USA 325.\n- **Analyst Assessments**: The photometric variations are generally consistent with the historical pattern of life for this satellite.\n\nThese reports indicate ongoing monitoring and analysis of COSMOS 2589's activities in the geosynchronous orbit.",
+      "specialized_score": 1.0,
+      "rag_answer": "There are four photometric change reports for satellite 64467 (Cosmos 2589) in the provided context:\n\n1. NOTSO_Photometric Change_Cosmos 2589 (64467) _02Jun-1219Z\n2. NOTSO_ Photometry change_COSMOS 2589 (64467)_29May-1358Z\n3. NOTSO_Photometric Change_Cosmos_2589_(64467)_18May-1527Z\n4. NOTSO_Photometric Change_Cosmos 2589 (64467) _02Jun-1219Z (appears to be a duplicate entry)",
+      "rag_score": 0.0
+    }
+  ],
+  "category_breakdown": {
+    "A. Event Precision": {
+      "specialized_mean": 1.0,
+      "rag_mean": 0.4,
+      "count": 5
+    },
+    "B. Cross-Document Aggregation": {
+      "specialized_mean": 0.7,
+      "rag_mean": 0.1,
+      "count": 5
+    },
+    "C. Date Format Normalization": {
+      "specialized_mean": 0.3333333333333333,
+      "rag_mean": 0.0,
+      "count": 3
+    },
+    "D. Multi-Hop Reasoning": {
+      "specialized_mean": 1.0,
+      "rag_mean": 0.5,
+      "count": 3
+    },
+    "E. Specialized Event Types (RPO)": {
+      "specialized_mean": 0.625,
+      "rag_mean": 0.375,
+      "count": 4
+    },
+    "F. I Don't Know (Hallucination Test)": {
+      "specialized_mean": 1.0,
+      "rag_mean": 1.0,
+      "count": 3
+    },
+    "G. Satellite Name Variants": {
+      "specialized_mean": 0.75,
+      "rag_mean": 0.0,
+      "count": 2
+    }
+  }
+}

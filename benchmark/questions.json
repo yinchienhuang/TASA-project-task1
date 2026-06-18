@@ -1,0 +1,209 @@
+{
+  "questions": [
+    {
+      "id": "a01",
+      "category": "A. Event Precision",
+      "question": "What is the exact delta-V (in m/s) for the COSMOS 2614 maneuver?",
+      "ground_truth": "0.82",
+      "answer_type": "numeric",
+      "tolerance_pct": 2,
+      "failure_mode": "numeric_rounding"
+    },
+    {
+      "id": "a02",
+      "category": "A. Event Precision",
+      "question": "What was the period change (in seconds) for TJS-6's second maneuver? Is it positive or negative?",
+      "ground_truth": "~-0.05 (negative)",
+      "answer_type": "numeric_with_sign",
+      "tolerance_pct": 5,
+      "failure_mode": "sign_loss"
+    },
+    {
+      "id": "a03",
+      "category": "A. Event Precision",
+      "question": "What is the orbital inclination of the Qianfan 10A-R launch in degrees?",
+      "ground_truth": "98.19",
+      "answer_type": "numeric",
+      "tolerance_pct": 2,
+      "failure_mode": "numeric_rounding"
+    },
+    {
+      "id": "a04",
+      "category": "A. Event Precision",
+      "question": "By how many magnitudes did COSMOS 2589 change brightness on May 19?",
+      "ground_truth": "1.0",
+      "answer_type": "numeric",
+      "tolerance_pct": 5,
+      "failure_mode": "numeric_extraction"
+    },
+    {
+      "id": "a05",
+      "category": "A. Event Precision",
+      "question": "What was the apogee change (km) and perigee change (km) for SJ-29B's maneuver?",
+      "ground_truth": "apogee ~2.5, perigee ~1.8",
+      "answer_type": "numeric_pair",
+      "tolerance_pct": 5,
+      "failure_mode": "multi_field_extraction"
+    },
+    {
+      "id": "b01",
+      "category": "B. Cross-Document Aggregation",
+      "question": "How many total maneuver events appear across all NOTOS/JCO reports?",
+      "ground_truth": "10",
+      "answer_type": "numeric_exact",
+      "failure_mode": "cross_doc_aggregation"
+    },
+    {
+      "id": "b02",
+      "category": "B. Cross-Document Aggregation",
+      "question": "How many times does COSMOS 2589 appear in photometric change reports?",
+      "ground_truth": "5",
+      "answer_type": "numeric_exact",
+      "failure_mode": "cross_doc_aggregation"
+    },
+    {
+      "id": "b03",
+      "category": "B. Cross-Document Aggregation",
+      "question": "Which satellite experienced maneuvers most frequently? How many times?",
+      "ground_truth": "TJS-6 with 4 maneuvers",
+      "answer_type": "entity_count",
+      "failure_mode": "cross_doc_aggregation"
+    },
+    {
+      "id": "b04",
+      "category": "B. Cross-Document Aggregation",
+      "question": "How many unique satellites appear across all reports?",
+      "ground_truth": "14",
+      "answer_type": "numeric_exact",
+      "failure_mode": "cross_doc_aggregation"
+    },
+    {
+      "id": "b05",
+      "category": "B. Cross-Document Aggregation",
+      "question": "List all satellites that had launch events in these reports.",
+      "ground_truth": "PRSC-E03, Qianfan 10A-R, TJS-24, LM-8",
+      "answer_type": "list",
+      "failure_mode": "cross_doc_aggregation"
+    },
+    {
+      "id": "c01",
+      "category": "C. Date Format Normalization",
+      "question": "At exactly what UTC datetime did the COSMOS 2614 maneuver occur? (ISO 8601 format)",
+      "ground_truth": "2026-05-22T12:48:00Z",
+      "answer_type": "datetime_iso",
+      "failure_mode": "date_format"
+    },
+    {
+      "id": "c02",
+      "category": "C. Date Format Normalization",
+      "question": "What is the report date for TJS-24's earliest launch report in ISO 8601?",
+      "ground_truth": "2026-06-01",
+      "answer_type": "date_iso",
+      "failure_mode": "date_format"
+    },
+    {
+      "id": "c03",
+      "category": "C. Date Format Normalization",
+      "question": "When was the Luch Olymp 2 RPO event reported? (ISO 8601 format)",
+      "ground_truth": "2026-06-02",
+      "answer_type": "date_iso",
+      "failure_mode": "date_format"
+    },
+    {
+      "id": "d01",
+      "category": "D. Multi-Hop Reasoning",
+      "question": "Which satellite had the largest single delta-V maneuver? What country operates it?",
+      "ground_truth": "COSMOS 2614 (Russia) with 0.82 m/s is one of the largest; check all for maximum",
+      "answer_type": "entity_relation",
+      "failure_mode": "kg_lookup"
+    },
+    {
+      "id": "d02",
+      "category": "D. Multi-Hop Reasoning",
+      "question": "Which satellite experienced photometric change in these reports? Is it military or commercial?",
+      "ground_truth": "COSMOS 2589 (Military)",
+      "answer_type": "entity_relation",
+      "failure_mode": "extraction_then_kg_lookup"
+    },
+    {
+      "id": "d03",
+      "category": "D. Multi-Hop Reasoning",
+      "question": "Which system satellite has the highest pass frequency over Taiwan?",
+      "ground_truth": "Requires TLE computation; cannot answer from reports alone",
+      "answer_type": "free_form",
+      "failure_mode": "orbital_computation"
+    },
+    {
+      "id": "e01",
+      "category": "E. Specialized Event Types (RPO)",
+      "question": "How many kilometers did Luch Olymp 2 come closest to Intelsat 39?",
+      "ground_truth": "Not stated precisely in report",
+      "answer_type": "numeric_or_missing",
+      "failure_mode": "rpo_specific"
+    },
+    {
+      "id": "e02",
+      "category": "E. Specialized Event Types (RPO)",
+      "question": "What does the analyst assessment say about the Luch Olymp 2 - Intelsat 39 encounter?",
+      "ground_truth": "Close approach, monitoring required",
+      "answer_type": "free_form",
+      "failure_mode": "rpo_specific"
+    },
+    {
+      "id": "e03",
+      "category": "E. Specialized Event Types (RPO)",
+      "question": "What fields or attributes does the RPO (Rendezvous/Proximity) report have that differ from standard maneuver reports?",
+      "ground_truth": "relative_distance, closest_approach_time, both_satellites listed",
+      "answer_type": "free_form",
+      "failure_mode": "schema_extension"
+    },
+    {
+      "id": "e04",
+      "category": "E. Specialized Event Types (RPO)",
+      "question": "In the RPO event between Luch Olymp 2 and Intelsat 39, what are their orbital regimes?",
+      "ground_truth": "Luch Olymp 2: GEO, Intelsat 39: GEO",
+      "answer_type": "entity_pair",
+      "failure_mode": "structured_extraction"
+    },
+    {
+      "id": "f01",
+      "category": "F. I Don't Know (Hallucination Test)",
+      "question": "What is the fuel consumption (kg) for SJ-29B's maneuver?",
+      "ground_truth": "NOT STATED IN REPORTS - correct answer is 'data unavailable'",
+      "answer_type": "refuse_or_hallucinate",
+      "failure_mode": "hallucination_prevention"
+    },
+    {
+      "id": "f02",
+      "category": "F. I Don't Know (Hallucination Test)",
+      "question": "What caused COSMOS 2589's photometric brightness change?",
+      "ground_truth": "NOT STATED IN REPORTS - correct answer is 'unknown/not specified'",
+      "answer_type": "refuse_or_hallucinate",
+      "failure_mode": "hallucination_prevention"
+    },
+    {
+      "id": "f03",
+      "category": "F. I Don't Know (Hallucination Test)",
+      "question": "What is the payload mass (kg) of TJS-24?",
+      "ground_truth": "NOT STATED IN REPORTS - correct answer is 'data unavailable'",
+      "answer_type": "refuse_or_hallucinate",
+      "failure_mode": "hallucination_prevention"
+    },
+    {
+      "id": "g01",
+      "category": "G. Satellite Name Variants",
+      "question": "NORAD catalog ID 47613 experienced what events in these reports?",
+      "ground_truth": "Multiple maneuvers (TJS-6)",
+      "answer_type": "entity_search",
+      "failure_mode": "name_variant"
+    },
+    {
+      "id": "g02",
+      "category": "G. Satellite Name Variants",
+      "question": "How many photometric change reports exist for satellite 64467?",
+      "ground_truth": "5",
+      "answer_type": "numeric_exact",
+      "failure_mode": "name_variant"
+    }
+  ]
+}

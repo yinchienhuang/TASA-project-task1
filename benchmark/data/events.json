@@ -1,0 +1,1060 @@
+{
+  "events": [
+    {
+      "type": "launch",
+      "satellite_id": "94327",
+      "notos_id": "94328",
+      "satellite_label": "Xingwang Jishu Shiyan 09A-C",
+      "event_date": "2026-04-24T06:35:00Z",
+      "launch_site": "Xichang Satellite Launch Center",
+      "launch_vehicle": "LM-2D",
+      "orbital_inclination": 51.6761,
+      "orbital_period": 96.6,
+      "notam_ids": [],
+      "trajectory_zones": [],
+      "analyst_assessment": null,
+      "pai_summary": "These satellite internet technology test satellites will primarily be used for testing and verifying technologies such as direct broadband connection to satellite for mobile phones and the integration of space and ground networks.",
+      "regime": "LEO"
+    },
+    {
+      "type": "launch",
+      "satellite_id": "68835",
+      "notos_id": "94220",
+      "satellite_label": "PRSC-E03",
+      "event_date": "2026-04-25T12:16:00Z",
+      "launch_site": "Taiyuan Satellite Launch Center",
+      "launch_vehicle": "CZ-6 (Long March 6)",
+      "orbital_inclination": 38.0045,
+      "orbital_period": 95.6,
+      "notam_ids": [
+        "A1286/26",
+        "B2268/26"
+      ],
+      "trajectory_zones": [
+        {
+          "notam_id": "A1286/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              34.35,
+              121.0833
+            ],
+            [
+              33.85,
+              121.9833
+            ],
+            [
+              33.55,
+              121.7333
+            ],
+            [
+              34.0667,
+              120.8333
+            ]
+          ],
+          "active_start": "2026-04-25T12:08:00Z",
+          "active_end": "2026-04-25T12:37:00Z"
+        },
+        {
+          "notam_id": "B2268/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              -19.5667,
+              -162.6833
+            ],
+            [
+              -20.15,
+              -163.15
+            ],
+            [
+              -18.45,
+              -165.3833
+            ],
+            [
+              -17.9,
+              -164.9167
+            ]
+          ],
+          "active_start": "2026-04-25T12:10:00Z",
+          "active_end": "2026-04-25T13:00:00Z"
+        }
+      ],
+      "analyst_assessment": "Successful launch into planned LEO orbit.",
+      "pai_summary": "PRSC-E03 is a Pakistani Earth observation satellite built by SUPARCO for environmental management operations.",
+      "regime": "LEO"
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "63157",
+      "satellite_label": "TJS-15",
+      "event_date": "2026-04-30T20:59:00Z",
+      "delta_v": 0.19,
+      "period_change": -0.0008,
+      "apogee_change": -0.32,
+      "perigee_change": 0.32,
+      "inclination_change": -0.0036,
+      "verification_status": "verified",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Station-keeping maneuver within historical pattern of life for this object.",
+      "pai_summary": "TJS-15 is a Chinese satellite that supports military operations; mission believed to support missile early warning, signals intelligence, and/or other unidentified missions."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "55131",
+      "satellite_label": "SJ-23",
+      "event_date": "2026-05-06T09:30:00Z",
+      "delta_v": 1.45,
+      "period_change": null,
+      "apogee_change": null,
+      "perigee_change": null,
+      "inclination_change": null,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "The satellite maneuvered from 175.52deg E longitude with a delta-v of 1.45 m/s, resulting in an increase of its westward drift up to 0.670 W deg/day.",
+      "pai_summary": null
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "65851",
+      "satellite_label": "SHIYAN 30-01",
+      "event_date": "2026-04-09T07:31:00Z",
+      "delta_v": 2.27,
+      "period_change": 1.71,
+      "apogee_change": 0.91,
+      "perigee_change": 1.83,
+      "inclination_change": -0.0,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "These maneuvers do not appear to be station-keeping maneuvers.",
+      "pai_summary": "SHIYAN 30-01 is a Chinese satellite that supports military operations. The mission of SHIYAN30-01 is Earth Observation / Remote Sensing."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "65852",
+      "satellite_label": "SHIYAN 30-02",
+      "event_date": "2026-04-09T01:53:00Z",
+      "delta_v": 0.86,
+      "period_change": 2.02,
+      "apogee_change": 2.3,
+      "perigee_change": 0.95,
+      "inclination_change": 0.0,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "These maneuvers do not appear to be station-keeping maneuvers.",
+      "pai_summary": "SHIYAN 30-02 is a Chinese satellite that supports military operations. The mission of SHIYAN30-02 is Earth Observation / Remote Sensing."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "65852",
+      "satellite_label": "SHIYAN 30-02",
+      "event_date": "2026-04-10T02:00:00Z",
+      "delta_v": 1.04,
+      "period_change": 1.78,
+      "apogee_change": 2.76,
+      "perigee_change": 0.09,
+      "inclination_change": 0.0,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "These maneuvers do not appear to be station-keeping maneuvers.",
+      "pai_summary": "SHIYAN 30-02 is a Chinese satellite that supports military operations. The mission of SHIYAN30-02 is Earth Observation / Remote Sensing."
+    },
+    {
+      "type": "photometric_change",
+      "satellite_id": "50322",
+      "satellite_label": "SY-12 02",
+      "event_date": "2026-03-29T02:08:00Z",
+      "magnitude_change_min": 1.7,
+      "magnitude_change_max": 2.0,
+      "magnitude_direction": "dimmer",
+      "recovery_date": "2026-03-30",
+      "verification_status": "detected",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Photometric variation consistent with historical pattern of life; satellite has since returned to nominal photometrics.",
+      "associated_satellite_id": "62852",
+      "associated_satellite_label": "SPAINSAT NG1",
+      "associated_distance_km": 130,
+      "pai_summary": "SY-12 02 is a China satellite that supports military operations."
+    },
+    {
+      "type": "photometric_change",
+      "satellite_id": "64467",
+      "satellite_label": "COSMOS 2589",
+      "event_date": "2026-06-01T10:08:00Z",
+      "magnitude_change_min": 1.0,
+      "magnitude_change_max": 1.0,
+      "magnitude_direction": "brighter",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "return_to_pol",
+      "analyst_assessment": "Photometric variation is consistent with the historical pattern of life for this object in the past few weeks.",
+      "associated_satellite_id": "49062",
+      "associated_satellite_label": "Chinasat 2E",
+      "associated_distance_km": 35,
+      "pai_summary": "Cosmos 2589 is a Russian satellite that supports military operations. Cosmos 2589 is an Inspection satellite suspected to have 'satellite killing' capabilities."
+    },
+    {
+      "type": "launch",
+      "satellite_id": "69235",
+      "notos_id": null,
+      "satellite_label": "TJS-24",
+      "event_date": "2026-05-26T16:16:00Z",
+      "launch_site": "Wenchang, China (LC-201)",
+      "launch_vehicle": "LM-7A",
+      "orbital_inclination": 19.5443,
+      "orbital_period": 631.9,
+      "notam_ids": [
+        "B2228/26",
+        "B2219/26",
+        "B1768/26",
+        "B1771/26"
+      ],
+      "trajectory_zones": [
+        {
+          "notam_id": "B2228/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              19.3333,
+              123.4333
+            ],
+            [
+              19.2333,
+              124.4333
+            ],
+            [
+              18.7,
+              124.3833
+            ],
+            [
+              18.7833,
+              123.4
+            ]
+          ],
+          "active_start": "2026-05-26T16:10:00Z",
+          "active_end": "2026-05-26T17:12:00Z"
+        },
+        {
+          "notam_id": "B2219/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              19.7,
+              118.7
+            ],
+            [
+              19.6167,
+              120.15
+            ],
+            [
+              19.0,
+              120.1
+            ],
+            [
+              19.0667,
+              118.6833
+            ]
+          ],
+          "active_start": "2026-05-26T16:08:00Z",
+          "active_end": "2026-05-26T17:08:00Z"
+        },
+        {
+          "notam_id": "B1768/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              19.0667,
+              118.6833
+            ],
+            [
+              19.6833,
+              118.7333
+            ],
+            [
+              19.6167,
+              120.1667
+            ],
+            [
+              18.9833,
+              120.1167
+            ]
+          ],
+          "active_start": "2026-05-26T16:00:00Z",
+          "active_end": "2026-05-30T22:00:00Z"
+        },
+        {
+          "notam_id": "B1771/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              18.7833,
+              123.3667
+            ],
+            [
+              19.3167,
+              123.4167
+            ],
+            [
+              19.2333,
+              124.4167
+            ],
+            [
+              18.7,
+              124.3667
+            ]
+          ],
+          "active_start": "2026-05-26T16:00:00Z",
+          "active_end": "2026-05-30T22:00:00Z"
+        }
+      ],
+      "analyst_assessment": null,
+      "pai_summary": "TJS-24 is a Chinese military satellite going to the GEO belt. It is developed by SAST and officially 'mainly used to conduct verification of multi-band, high-speed satellite communication technologies', which suggests a SIGINT role.",
+      "regime": "GEO"
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "94771",
+      "satellite_label": "TJS-24 candidate",
+      "event_date": "2026-06-02T11:58:00Z",
+      "delta_v": 1.01,
+      "period_change": 100.36,
+      "apogee_change": 5.42,
+      "perigee_change": 60.07,
+      "inclination_change": -0.0003,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "The satellite maneuvered from 90.30 degrees E longitude with a delta-v of 1.01 m/s, resulting in a reduction of eastward drift rate to near-stationary at 0.0018deg/day.",
+      "pai_summary": "TJS-24 is a Chinese satellite that supports military operations."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "94771",
+      "satellite_label": "TJS-24 candidate",
+      "event_date": "2026-06-01T11:24:00Z",
+      "delta_v": 96.68,
+      "period_change": 7094.21,
+      "apogee_change": -10.74,
+      "perigee_change": 4701.76,
+      "inclination_change": -0.5126,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "The satellite maneuvered from ~91 deg E longitude with a delta-v of 96.68 m/s, resulting in a period decrease of 7094 sec, raising the perigee by 4701 km.",
+      "pai_summary": "TJS-24 is a Chinese satellite that supports military operations."
+    },
+    {
+      "type": "launch",
+      "satellite_id": "69235",
+      "notos_id": null,
+      "satellite_label": "TJS-24",
+      "event_date": "2026-05-26T16:16:00Z",
+      "launch_site": "Wenchang, China (LC-201)",
+      "launch_vehicle": "LM-7A",
+      "orbital_inclination": 0.0442,
+      "orbital_period": 1439.4,
+      "notam_ids": [
+        "B2228/26",
+        "B2219/26",
+        "B2223/26"
+      ],
+      "trajectory_zones": [
+        {
+          "notam_id": "B2228/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              19.3333,
+              123.4333
+            ],
+            [
+              19.2333,
+              124.4333
+            ],
+            [
+              18.7,
+              124.3833
+            ],
+            [
+              18.7833,
+              123.4
+            ]
+          ],
+          "active_start": "2026-05-26T16:10:00Z",
+          "active_end": "2026-05-26T17:12:00Z"
+        },
+        {
+          "notam_id": "B2219/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              19.7,
+              118.7
+            ],
+            [
+              19.6167,
+              120.15
+            ],
+            [
+              19.0,
+              120.1
+            ],
+            [
+              19.0667,
+              118.6667
+            ]
+          ],
+          "active_start": "2026-05-26T16:08:00Z",
+          "active_end": "2026-05-26T17:08:00Z"
+        },
+        {
+          "notam_id": "B2223/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              19.3333,
+              123.4333
+            ],
+            [
+              19.2333,
+              124.4333
+            ],
+            [
+              18.7,
+              124.3833
+            ],
+            [
+              18.7833,
+              123.4
+            ]
+          ],
+          "active_start": "2026-05-26T16:10:00Z",
+          "active_end": "2026-05-27T17:12:00Z"
+        }
+      ],
+      "analyst_assessment": "TJS-24 is a Chinese military satellite going to the GEO belt, developed by SAST for verification of multi-band, high-speed satellite communication technologies.",
+      "pai_summary": "TJS-24 is a Chinese classified military GEO satellite; officially described as supporting satellite communications, radio, television, data transmission, and multi-band high-speed throughput technology verification.",
+      "regime": "GEO"
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "69235",
+      "satellite_label": "TJS-24",
+      "event_date": "2026-06-01T11:24:00Z",
+      "delta_v": 96.68,
+      "period_change": -7094.21,
+      "apogee_change": -10.74,
+      "perigee_change": 4701.76,
+      "inclination_change": -0.5126,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "The satellite maneuvered from ~91 deg E longitude with a delta-v of 96.68 m/s, resulting in a period decrease of 7094 sec, raising the perigee by 4701 km.",
+      "pai_summary": "TJS-24 is a Chinese satellite that supports military operations."
+    },
+    {
+      "type": "launch",
+      "satellite_id": "69235",
+      "notos_id": null,
+      "satellite_label": "TJS-24",
+      "event_date": "2026-05-26T16:16:00Z",
+      "launch_site": "Wenchang, China (LC-201)",
+      "launch_vehicle": "LM-7A",
+      "orbital_inclination": 19.5443,
+      "orbital_period": 631.8,
+      "notam_ids": [],
+      "trajectory_zones": [],
+      "analyst_assessment": null,
+      "pai_summary": "TJS-24 is a Chinese satellite that supports military operations.",
+      "regime": "GEO"
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "94771",
+      "satellite_label": "TJS-24 candidate",
+      "event_date": "2026-06-02T11:58:00Z",
+      "delta_v": 1.01,
+      "period_change": 100.36,
+      "apogee_change": 5.42,
+      "perigee_change": 60.07,
+      "inclination_change": -0.0003,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "The maneuver appears to decrease the drift rate & period.",
+      "pai_summary": "TJS-24 is a Chinese satellite that supports military operations."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "94771",
+      "satellite_label": "TJS-24 candidate",
+      "event_date": "2026-06-01T11:24:00Z",
+      "delta_v": 96.68,
+      "period_change": 7094.21,
+      "apogee_change": -10.74,
+      "perigee_change": 4701.76,
+      "inclination_change": -0.5126,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "The maneuver resulted in a period decrease of 7094 sec, raising the perigee by 4701 km.",
+      "pai_summary": "TJS-24 is a Chinese satellite that supports military operations."
+    },
+    {
+      "type": "launch",
+      "satellite_id": "69235",
+      "notos_id": null,
+      "satellite_label": "TJS-24",
+      "event_date": "2026-05-26T16:16:00Z",
+      "launch_site": "Wenchang, China (LC-201)",
+      "launch_vehicle": "LM-7A",
+      "orbital_inclination": 19.5443,
+      "orbital_period": 631.8,
+      "notam_ids": [
+        "B2228/26",
+        "B2219/26",
+        "B2223/26"
+      ],
+      "trajectory_zones": [
+        {
+          "notam_id": "B2228/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              19.3333,
+              123.4333
+            ],
+            [
+              19.2333,
+              124.4333
+            ],
+            [
+              18.7,
+              124.3833
+            ],
+            [
+              18.7833,
+              123.4
+            ]
+          ],
+          "active_start": "2026-05-26T16:10:00Z",
+          "active_end": "2026-05-26T17:12:00Z"
+        },
+        {
+          "notam_id": "B2219/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              19.7,
+              118.7
+            ],
+            [
+              19.6167,
+              120.15
+            ],
+            [
+              19.0,
+              120.1
+            ],
+            [
+              19.0667,
+              118.6667
+            ]
+          ],
+          "active_start": "2026-05-26T16:08:00Z",
+          "active_end": "2026-05-26T17:08:00Z"
+        },
+        {
+          "notam_id": "B2223/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              19.3333,
+              123.4333
+            ],
+            [
+              19.2333,
+              124.4333
+            ],
+            [
+              18.7,
+              124.3833
+            ],
+            [
+              18.7833,
+              123.4
+            ]
+          ],
+          "active_start": "2026-05-26T16:10:00Z",
+          "active_end": "2026-05-27T17:12:00Z"
+        }
+      ],
+      "analyst_assessment": null,
+      "pai_summary": "TJS-24 is a Chinese military satellite going to the GEO belt. It is developed by SAST and officially 'mainly used to conduct verification of multi-band, high-speed satellite communication technologies', which suggests a SIGINT role.",
+      "regime": "GEO"
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "69235",
+      "satellite_label": "TJS-24",
+      "event_date": "2026-06-01T11:24:00Z",
+      "delta_v": 96.68,
+      "period_change": 7094.21,
+      "apogee_change": -10.74,
+      "perigee_change": 4701.76,
+      "inclination_change": -0.5126,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "The satellite maneuvered from ~91 deg E longitude with a delta-v of 96.68 m/s, resulting in a period decrease of 7094 sec, raising the perigee by 4701 km.",
+      "pai_summary": "TJS-24 is a Chinese satellite that supports military operations. The mission of TJS-24 is unknown."
+    },
+    {
+      "type": "launch",
+      "satellite_id": null,
+      "notos_id": "94486",
+      "satellite_label": "Qianfan Digui Group 10A-R",
+      "event_date": "2026-05-17T14:43:00Z",
+      "launch_site": "Hainan, China",
+      "launch_vehicle": "LM-8",
+      "orbital_inclination": 98.1931,
+      "orbital_period": 98.8,
+      "notam_ids": [
+        "A1733/26",
+        "A1379/26"
+      ],
+      "trajectory_zones": [
+        {
+          "notam_id": "A1733/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              1.5833,
+              107.45
+            ],
+            [
+              2.4833,
+              107.6
+            ],
+            [
+              2.3667,
+              108.3167
+            ],
+            [
+              1.4667,
+              108.1667
+            ],
+            [
+              1.5833,
+              107.45
+            ]
+          ],
+          "active_start": "2026-05-17T14:35:00Z",
+          "active_end": "2026-05-17T15:08:00Z"
+        },
+        {
+          "notam_id": "A1379/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              10.4833,
+              109.3833
+            ],
+            [
+              11.3833,
+              109.5167
+            ],
+            [
+              11.3333,
+              109.8833
+            ],
+            [
+              10.2667,
+              109.7667
+            ]
+          ],
+          "active_start": "2026-05-17T14:34:00Z",
+          "active_end": "2026-05-17T14:57:00Z"
+        }
+      ],
+      "analyst_assessment": "Successful launch into planned SSO orbit.",
+      "pai_summary": "The Qianfan Diqui Group is for commercial purposes and is China's LEO internet constellation project.",
+      "regime": "LEO"
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "47613",
+      "satellite_label": "TJS-6",
+      "event_date": "2026-06-03T01:13:00Z",
+      "delta_v": 15.19,
+      "period_change": 2.18,
+      "apogee_change": 24.82,
+      "perigee_change": -23.39,
+      "inclination_change": 0.25,
+      "verification_status": "verified",
+      "pol_status": "within_pol",
+      "analyst_assessment": "This maneuver appears to be a RAAN flip station-keeping maneuver and is within the historical pattern of life for this object.",
+      "pai_summary": "TJS-6 is a Chinese satellite that supports military operations. The mission of TJS-6 is officially described by China as a Communications Engineering Test Satellite, but it is actually a Huoyan-1 series infrared missile launch warning satellite."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "47613",
+      "satellite_label": "TJS-6",
+      "event_date": "2026-06-02T01:07:00Z",
+      "delta_v": 15.36,
+      "period_change": 2.63,
+      "apogee_change": 23.94,
+      "perigee_change": -22.22,
+      "inclination_change": -0.244,
+      "verification_status": "verified",
+      "pol_status": "within_pol",
+      "analyst_assessment": "This maneuver appears to be a RAAN flip station-keeping maneuver and is within the historical pattern of life for this object.",
+      "pai_summary": "TJS-6 is a Chinese satellite that supports military operations. The mission of TJS-6 is officially described by China as a Communications Engineering Test Satellite, but it is actually a Huoyan-1 series infrared missile launch warning satellite."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "47613",
+      "satellite_label": "TJS-6",
+      "event_date": "2026-06-01T01:10:00Z",
+      "delta_v": 15.35,
+      "period_change": 4.13,
+      "apogee_change": 12.97,
+      "perigee_change": -10.27,
+      "inclination_change": -0.2832,
+      "verification_status": "verified",
+      "pol_status": "within_pol",
+      "analyst_assessment": "This maneuver appears to be a station-keeping maneuver and occurs annually and is within the historical pattern of life for this object.",
+      "pai_summary": "TJS-6 is a Chinese satellite that supports military operations. The mission of TJS-6 is officially described by China as a Communications Engineering Test Satellite, but it is actually a Huoyan-1 series infrared missile launch warning satellite."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "68764",
+      "satellite_label": "COSMOS 2614",
+      "event_date": "2026-05-21T13:58:00Z",
+      "delta_v": 107.05,
+      "period_change": 7.1,
+      "apogee_change": 2.22,
+      "perigee_change": 9.27,
+      "inclination_change": 0.75,
+      "verification_status": "detected",
+      "pol_status": "outside_pol",
+      "analyst_assessment": "This maneuver does not appear to be a station-keeping maneuver and is not within the historical pattern of life for this object.",
+      "pai_summary": "COSMOS 2614 is a Russian satellite that supports military operations. The mission of COSMOS 2614 is currently unknown."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "67403",
+      "satellite_label": "SJ-29B",
+      "event_date": "2026-05-30T16:01:00Z",
+      "delta_v": 3.39,
+      "period_change": null,
+      "apogee_change": null,
+      "perigee_change": null,
+      "inclination_change": null,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "The satellite maneuvered with a delta-v of 3.39 m/s, parking at 73.4 deg E.",
+      "pai_summary": null
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "50322",
+      "satellite_label": "SY-12 02",
+      "event_date": "2026-05-15T01:34:00Z",
+      "delta_v": 0.12,
+      "period_change": -9.47,
+      "apogee_change": 0.13,
+      "perigee_change": -6.31,
+      "inclination_change": 0.0004,
+      "verification_status": "verified",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Avoidance maneuver to push close approaches to be outside 30km.",
+      "pai_summary": "SY-12 02 is a Chinese satellite that supports military operations; mission officially for space environment exploration and related technology tests, suspected as a military test satellite with possible military SSA application in GEO."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "47613",
+      "satellite_label": "TJS-6",
+      "event_date": "2026-06-01T01:10:00Z",
+      "delta_v": 15.35,
+      "period_change": 4.13,
+      "apogee_change": 12.97,
+      "perigee_change": -10.27,
+      "inclination_change": -0.2832,
+      "verification_status": "verified",
+      "pol_status": "within_pol",
+      "analyst_assessment": "This maneuver appears to be a station-keeping maneuver and occurs annually and is within the historical pattern of life for this object.",
+      "pai_summary": "TJS-6 is a Chinese satellite that supports military operations. The mission of TJS-6 is officially described by China as a Communications Engineering Test Satellite but it is actually a Huoyan-1 series infrared missile launch warning satellite."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "47613",
+      "satellite_label": "TJS-6",
+      "event_date": "2026-06-02T09:31:00Z",
+      "delta_v": null,
+      "period_change": null,
+      "apogee_change": null,
+      "perigee_change": null,
+      "inclination_change": -0.25,
+      "verification_status": "detected",
+      "pol_status": "unknown",
+      "analyst_assessment": "Based on initial indications, it appears to be resulting in a station-keeping maneuver.",
+      "pai_summary": "TJS-6 is a Chinese satellite that supports military operations. The mission of TJS-6 is officially described by China as a Communications Engineering Test Satellite but it is actually a Huoyan-1 series infrared missile launch warning satellite."
+    },
+    {
+      "type": "photometric_change",
+      "satellite_id": "64467",
+      "satellite_label": "COSMOS 2589",
+      "event_date": "2026-06-03T12:30:00Z",
+      "magnitude_change_min": 1.0,
+      "magnitude_change_max": 1.0,
+      "magnitude_direction": "dimmer",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Photometric variation is consistent with the historical pattern of life for this object.",
+      "associated_satellite_id": "49062",
+      "associated_satellite_label": "CHINASAT 2E",
+      "associated_distance_km": 46.0,
+      "pai_summary": "COSMOS 2589 is a Russian satellite that supports military operations. The mission of COSMOS 2589 is suspected to be servicing/inspection and RPO activity, with potential counterspace capabilities."
+    },
+    {
+      "type": "photometric_change",
+      "satellite_id": "64467",
+      "satellite_label": "COSMOS 2589",
+      "event_date": "2026-06-02T18:33:00Z",
+      "magnitude_change_min": -2.0,
+      "magnitude_change_max": -2.0,
+      "magnitude_direction": "brighter",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Photometric variation is consistent with the historical pattern of life for this object.",
+      "associated_satellite_id": "51281",
+      "associated_satellite_label": "USA 325",
+      "associated_distance_km": 16.19,
+      "pai_summary": "COSMOS 2589 is a Russian satellite that supports military operations. The mission of COSMOS 2589 is suspected to be servicing/inspection and RPO activity, with potential counterspace capabilities."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "62485",
+      "satellite_label": "SJ-25",
+      "event_date": "2026-06-02T09:07:00Z",
+      "delta_v": 0.22,
+      "period_change": -21.59,
+      "apogee_change": -8.89,
+      "perigee_change": -5.2,
+      "inclination_change": null,
+      "verification_status": "detected",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Pattern of life station keeping maneuver.",
+      "pai_summary": "SJ-25 is a Chinese satellite that supports military operations. The mission of SJ-25 is satellite fuel replenishment and life extension service technologies."
+    },
+    {
+      "type": "photometric_change",
+      "satellite_id": "62485",
+      "satellite_label": "SJ-25",
+      "event_date": "2026-06-02T08:11:00Z",
+      "magnitude_change_min": 0.75,
+      "magnitude_change_max": 0.75,
+      "magnitude_direction": "brighter",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Photometric variation consistent with historical pattern of life for potential neighborhood threats/activity.",
+      "associated_satellite_id": "36744",
+      "associated_satellite_label": "COMS 1",
+      "associated_distance_km": 1100,
+      "pai_summary": "SJ-25 is a Chinese satellite that supports military operations. The mission of SJ-25 is satellite fuel replenishment and life extension service technologies."
+    },
+    {
+      "type": "photometric_change",
+      "satellite_id": "64467",
+      "satellite_label": "Cosmos 2589",
+      "event_date": "2026-06-01T10:08:00Z",
+      "magnitude_change_min": 1.0,
+      "magnitude_change_max": 1.0,
+      "magnitude_direction": "brighter",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Photometric variation is consistent with the historical pattern of life for this object in the past few weeks.",
+      "associated_satellite_id": "49062",
+      "associated_satellite_label": "Chinasat 2E",
+      "associated_distance_km": 35,
+      "pai_summary": "Cosmos 2589 is a suspected Russian military inspector satellite, believed to be linked to the Nivelir anti-satellite program, designed to conduct close-proximity surveillance and rendezvous operations with other spacecraft in the geosynchronous belt."
+    },
+    {
+      "type": "photometric_change",
+      "satellite_id": "64467",
+      "satellite_label": "COSMOS 2589",
+      "event_date": "2026-06-01T10:08:00Z",
+      "magnitude_change_min": 1.0,
+      "magnitude_change_max": 1.0,
+      "magnitude_direction": "brighter",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "return_to_pol",
+      "analyst_assessment": "Photometric variation is consistent with the historical pattern of life for this object in the past few weeks.",
+      "associated_satellite_id": "49062",
+      "associated_satellite_label": "Chinasat 2E",
+      "associated_distance_km": 35,
+      "pai_summary": "Cosmos 2589 is a Russian satellite that supports military operations. Cosmos 2589 is an Inspection satellite suspected to have 'satellite killing' capabilities."
+    },
+    {
+      "type": "photometric_change",
+      "satellite_id": "64467",
+      "satellite_label": "COSMOS 2589",
+      "event_date": "2026-05-19T20:50:00Z",
+      "magnitude_change_min": 1.0,
+      "magnitude_change_max": 1.0,
+      "magnitude_direction": "dimmer",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "return_to_pol",
+      "analyst_assessment": "Photometry appeared to return to pattern of life.",
+      "associated_satellite_id": "51281",
+      "associated_satellite_label": "USA 325",
+      "associated_distance_km": 18,
+      "pai_summary": "Cosmos 2589 is a suspected Russian military inspector satellite, believed to be linked to the Nivelir anti-satellite program, designed to conduct close-proximity surveillance and rendezvous operations with other spacecraft in the geosynchronous belt."
+    },
+    {
+      "type": "photometric_change",
+      "satellite_id": "64467",
+      "satellite_label": "COSMOS 2589",
+      "event_date": "2026-05-16T11:37:00Z",
+      "magnitude_change_min": null,
+      "magnitude_change_max": null,
+      "magnitude_direction": null,
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "unknown",
+      "analyst_assessment": null,
+      "associated_satellite_id": "49062",
+      "associated_satellite_label": "CHINASAT 2E",
+      "associated_distance_km": 66,
+      "pai_summary": "COSMOS 2589 is a Russian military satellite of uncertain function, linked to the Central Scientific Research Institute of Chemistry and Mechanics (TsNIIKhM) and associated with Russia's Nivelir satellite inspection program and related co-orbital counterspace development efforts."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "62485",
+      "satellite_label": "SJ-25",
+      "event_date": "2026-06-02T09:07:00Z",
+      "delta_v": 0.22,
+      "period_change": -21.59,
+      "apogee_change": -8.89,
+      "perigee_change": -5.2,
+      "inclination_change": null,
+      "verification_status": "detected",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Pattern of life station keeping maneuver.",
+      "pai_summary": "SJ-25 is a Chinese satellite that supports military operations. The mission of SJ-25 is satellite fuel replenishment and life extension service technologies."
+    },
+    {
+      "type": "photometric_change",
+      "satellite_id": "62485",
+      "satellite_label": "SJ-25",
+      "event_date": "2026-06-02T08:11:00Z",
+      "magnitude_change_min": 0.75,
+      "magnitude_change_max": 0.75,
+      "magnitude_direction": "brighter",
+      "recovery_date": "2026-06-03",
+      "verification_status": "detected",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Photometric variation consistent with historical pattern of life; satellite has since returned to nominal photometrics.",
+      "associated_satellite_id": "36744",
+      "associated_satellite_label": "COMS 1",
+      "associated_distance_km": 1100,
+      "pai_summary": "SJ-25 is a Chinese satellite that supports military operations. The mission of SJ-25 is satellite fuel replenishment and life extension service technologies."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "55841",
+      "satellite_label": "LUCH (OLYMP) 2",
+      "event_date": "2026-06-01T20:57:00Z",
+      "delta_v": null,
+      "period_change": null,
+      "apogee_change": null,
+      "perigee_change": null,
+      "inclination_change": null,
+      "verification_status": "detected",
+      "pol_status": "unknown",
+      "analyst_assessment": "The last maneuver by Luch Olymp 2 maintained a slight drift towards Intelsat 39 instead of starting to separate again.",
+      "pai_summary": "LUCH (OLYMP) 2 is a Russian satellite that supports military operations. The mission is to conduct Electronic Intelligence Operations to spy on communications satellites."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "67302",
+      "satellite_label": "SJ-29A",
+      "event_date": "2026-05-31T21:48:00Z",
+      "delta_v": 0.59,
+      "period_change": -51.97,
+      "apogee_change": -8.05,
+      "perigee_change": -25.85,
+      "inclination_change": -0.0002,
+      "verification_status": "verified",
+      "pol_status": "within_pol",
+      "analyst_assessment": "SJ-29A maneuvered from 73.29 deg E Longitude with a delta-v of 0.59 m/s, resulting in a period decrease of 52 secs and SJ-29A parking at 73.29 deg E Longitude.",
+      "pai_summary": "SHIJIAN-29 A is a Chinese satellite that supports military operations. It is described as a demonstration of new technologies for spatial target detection."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "67302",
+      "satellite_label": "SJ-29A",
+      "event_date": "2026-05-28T19:57:00Z",
+      "delta_v": 0.75,
+      "period_change": 62.49,
+      "apogee_change": 11.32,
+      "perigee_change": 29.44,
+      "inclination_change": 0.0,
+      "verification_status": "detected",
+      "pol_status": "unknown",
+      "analyst_assessment": "The satellite maneuvered from 73.93deg E longitude with a delta-v of 0.75 m/s, resulting in the initiation of westward drift.",
+      "pai_summary": "SHIJIAN-29 A is a Chinese satellite that supports military operations. It is described as a demonstration of new technologies for spatial target detection."
+    },
+    {
+      "type": "photometric_change",
+      "satellite_id": "50321",
+      "satellite_label": "SY-12 01",
+      "event_date": "2026-05-31T16:24:00Z",
+      "magnitude_change_min": 0.6,
+      "magnitude_change_max": 0.6,
+      "magnitude_direction": "dimmer",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "unknown",
+      "analyst_assessment": "The reason for the change is unknown but SY-12 01 was ~500km away from SJ-29A and SJ-29B.",
+      "associated_satellite_id": "67302",
+      "associated_satellite_label": "SJ-29A",
+      "associated_distance_km": 130,
+      "pai_summary": "Shiyan 12 01 is a Chinese satellite that supports military operations. Officially the mission of the satellite is for 'space environment exploration and related technology tests' however, it is suspected that it is actually a military test satellite."
+    },
+    {
+      "type": "photometric_change",
+      "satellite_id": "67302",
+      "satellite_label": "SJ-29A",
+      "event_date": "2026-05-28T18:34:00Z",
+      "magnitude_change_min": 0.8,
+      "magnitude_change_max": 0.8,
+      "magnitude_direction": "brighter",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "unknown",
+      "analyst_assessment": "The photometric change was advantageous for SJ-29A due to its limited visibility for USA 324.",
+      "associated_satellite_id": "51280",
+      "associated_satellite_label": "USA 324",
+      "associated_distance_km": 40,
+      "pai_summary": "SHIJIAN-29 A is a Chinese satellite that supports military operations. It is described as a demonstration of new technologies for spatial target detection."
+    },
+    {
+      "type": "maneuver",
+      "satellite_id": "47613",
+      "satellite_label": "TJS-6",
+      "event_date": "2026-06-01T01:10:00Z",
+      "delta_v": 15.35,
+      "period_change": 4.13,
+      "apogee_change": 12.97,
+      "perigee_change": -10.27,
+      "inclination_change": -0.2832,
+      "verification_status": "verified",
+      "pol_status": "within_pol",
+      "analyst_assessment": "This maneuver appears to be a station-keeping maneuver and occurs annually and is within the historical pattern of life for this object.",
+      "pai_summary": "TJS-6 is the third satellite in the Huoyan infrared missile early warning program. Believed to be a military experimental communications under China's Ballistic Missile Defense Organization."
+    }
+  ],
+  "count": 44
+}

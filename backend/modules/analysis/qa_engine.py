@@ -35,11 +35,11 @@ _TOOL_SCHEMAS = [
         "type": "function",
         "function": {
             "name": "get_satellite_info",
-            "description": "Get KG metadata for a satellite: label, type, operator, orbital params, mission info.",
+            "description": "Get KG metadata for a satellite: label, type, operator, orbital params, mission info. Can query by satellite name (e.g. 'TJS-24'), KG node ID, or NORAD ID.",
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "satellite_id": {"type": "string", "description": "KG node ID or NORAD ID"}
+                    "satellite_id": {"type": "string", "description": "Satellite name (e.g. TJS-24, COSMOS 2589), KG node ID, or NORAD catalog number"}
                 },
                 "required": ["satellite_id"],
             },
@@ -56,7 +56,7 @@ _TOOL_SCHEMAS = [
                     "type": {"type": "string", "description": "Event type filter: maneuver | launch | photometric_change"},
                     "regime": {"type": "string", "description": "Orbital regime filter: LEO | MEO | GEO | HEO"},
                     "days": {"type": "integer", "description": "Limit to events in the past N days"},
-                    "satellite_id": {"type": "string", "description": "Filter by satellite KG node ID or NORAD ID"},
+                    "satellite_id": {"type": "string", "description": "Filter by satellite name (e.g. TJS-24), KG node ID, or NORAD ID"},
                 },
             },
         },
@@ -69,7 +69,7 @@ _TOOL_SCHEMAS = [
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "satellite_id": {"type": "string", "description": "KG node ID or NORAD ID"},
+                    "satellite_id": {"type": "string", "description": "Satellite name (e.g. TJS-24), KG node ID, or NORAD ID"},
                     "days": {"type": "integer", "description": "Only return maneuvers in the past N days"},
                 },
                 "required": ["satellite_id"],
@@ -108,7 +108,48 @@ _TOOL_SCHEMAS = [
             },
         },
     },
+    {
+        "type": "function",
+        "function": {
+            "name": "search_report_content",
+            "description": "Search raw NOTOS/JCO report files by satellite name/ID or keyword. Use only when structured data is insufficient (e.g., needing specific analyst assessment, detailed orbits, or report-specific context).",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "satellite_name_or_id": {"type": "string", "description": "Satellite name (e.g. 'COSMOS 2589', 'TJS-15', 'SHIYAN 30-01') or NORAD ID"},
+                    "keyword": {"type": "string", "description": "Optional keyword to filter results (e.g. 'maneuver', 'photometric', 'delta_v')"},
+                },
+                "required": ["satellite_name_or_id"],
+            },
+        },
+    },
 ]
+
+
+def _resolve_satellite_id(sat_id: str) -> str | None:
+    """Convert satellite name, KG node ID, or NORAD ID to the canonical satellite identifier.
+    Returns the satellite_id (node ID or NORAD ID) for use in event queries, or None if not found."""
+    from modules.knowledge_graph.kg_store import kg_store
+
+    # Direct node ID match
+    if sat_id in kg_store.nodes:
+        return sat_id
+
+    # Try NORAD ID lookup
+    if str(sat_id).isdigit():
+        for n in kg_store.nodes.values():
+            nid = str(((n.get("attributes") or {}).get("norad_id") or {}).get("value") or "")
+            if nid == sat_id:
+                return n.get("id")
+
+    # Try satellite name/label lookup (case-insensitive)
+    sat_id_lower = str(sat_id).lower()
+    for n in kg_store.nodes.values():
+        if n.get("label", "").lower() == sat_id_lower:
+            return n.get("id")
+
+    # Not found
+    return None
 
 
 async def _call_tool(name: str, args: dict) -> dict:
@@ -116,35 +157,39 @@ async def _call_tool(name: str, args: dict) -> dict:
     if name == "get_satellite_info":
         from modules.knowledge_graph.kg_store import kg_store
         sat_id = args["satellite_id"]
-        node = kg_store.nodes.get(sat_id)
+        resolved_id = _resolve_satellite_id(sat_id)
+        if not resolved_id:
+            return {"error": f"Satellite '{sat_id}' not found in knowledge graph"}
+        node = kg_store.nodes.get(resolved_id)
         if not node:
-            # Try NORAD ID lookup
-            for n in kg_store.nodes.values():
-                nid = str(((n.get("attributes") or {}).get("norad_id") or {}).get("value") or "")
-                if nid == sat_id:
-                    node = n
-                    break
-        if not node:
-            return {"error": f"Satellite {sat_id} not found in knowledge graph"}
+            return {"error": f"Satellite '{sat_id}' not found in knowledge graph"}
         attrs = {k: v.get("value") for k, v in (node.get("attributes") or {}).items()}
         return {"id": node["id"], "label": node.get("label"), "type": node.get("type"), "attributes": attrs}
 
     elif name == "search_events":
         from modules.events.event_store import event_store
+        sat_id = args.get("satellite_id")
+        if sat_id:
+            sat_id = _resolve_satellite_id(sat_id)
+            if not sat_id:
+                return {"error": f"Satellite '{args.get('satellite_id')}' not found"}
         events = event_store.query_events(
             event_type=args.get("type"),
             regime=args.get("regime"),
             days=args.get("days"),
-            satellite_id=args.get("satellite_id"),
+            satellite_id=sat_id,
         )
         # Trim to 20 events to keep context manageable
         return {"count": len(events), "events": events[:20]}
 
     elif name == "get_maneuver_history":
         from modules.events.event_store import event_store
+        sat_id = _resolve_satellite_id(args["satellite_id"])
+        if not sat_id:
+            return {"error": f"Satellite '{args['satellite_id']}' not found"}
         events = event_store.query_events(
             event_type="maneuver",
-            satellite_id=args["satellite_id"],
+            satellite_id=sat_id,
             days=args.get("days"),
         )
         return {"count": len(events), "maneuvers": events[:30]}
@@ -178,7 +223,7 @@ async def _call_tool(name: str, args: dict) -> dict:
             return {"error": f"Unknown region '{region}'"}
 
         # Import coverage helper
-        from api.routes_analysis import _is_satellite_node, _is_chinese_satellite
+        from modules.analysis.satellite_utils import _is_satellite_node, _is_chinese_satellite
 
         results = []
         for node in kg_store.nodes.values():
@@ -207,11 +252,71 @@ async def _call_tool(name: str, args: dict) -> dict:
         results.sort(key=lambda r: r["summary"]["avg_passes_per_day"], reverse=True)
         return {"country": country, "region": region, "days": days, "count": len(results), "top_satellites": results[:10]}
 
+    elif name == "search_report_content":
+        from pathlib import Path
+        from modules.knowledge_graph.mhtml_reader import read_mhtml
+
+        sat_query = args.get("satellite_name_or_id", "").lower().strip()
+        keyword = (args.get("keyword") or "").lower().strip()
+
+        if not sat_query:
+            return {"error": "satellite_name_or_id is required"}
+
+        # Use absolute path to be work-directory agnostic
+        report_dir = Path(__file__).parents[3] / "data" / "JCO report"
+        if not report_dir.exists():
+            return {"error": "Report directory not found"}
+
+        results = []
+        for mhtml_file in sorted(report_dir.glob("*.mhtml")):
+            try:
+                text = read_mhtml(mhtml_file)
+                if not text:
+                    continue
+
+                # Check if satellite appears in this report
+                if sat_query not in text.lower():
+                    continue
+
+                filename = mhtml_file.name
+
+                # Split into paragraphs and find relevant sections
+                paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
+                relevant_sections = []
+                for para in paragraphs:
+                    para_lower = para.lower()
+                    # Match satellite and optionally keyword
+                    if sat_query in para_lower:
+                        if not keyword or keyword in para_lower:
+                            relevant_sections.append(para[:500])  # truncate long sections
+
+                if relevant_sections:
+                    results.append({
+                        "file": filename,
+                        "matched_sections": relevant_sections[:3],  # limit to 3 sections per file
+                    })
+            except Exception as e:
+                pass
+
+        if not results:
+            return {"count": 0, "message": f"No reports found for '{sat_query}'" + (f" with keyword '{keyword}'" if keyword else "")}
+
+        return {"count": len(results), "satellite_query": sat_query, "keyword_filter": keyword, "results": results[:5]}
+
     return {"error": f"Unknown tool: {name}"}
 
 
-async def run_qa(question: str, satellite_id: str | None = None) -> dict:
-    """Run the agentic Q&A loop. Returns {answer, steps, iterations}."""
+async def run_qa(question: str, satellite_id: str | None = None, history: list[dict] | None = None) -> dict:
+    """Run the agentic Q&A loop with multi-turn conversation support.
+
+    Args:
+        question: Current user question
+        satellite_id: Optional KG node ID of selected satellite for context
+        history: Previous conversation turns (list of {role, content} dicts)
+
+    Returns:
+        {answer, steps, iterations, ...}
+    """
     client = _get_client()
 
     context = ""
@@ -220,8 +325,19 @@ async def run_qa(question: str, satellite_id: str | None = None) -> dict:
 
     messages = [
         {"role": "system", "content": _SYSTEM_PROMPT},
-        {"role": "user", "content": question + context},
     ]
+
+    # Add conversation history (only assistant answers, not reasoning steps)
+    if history:
+        for msg in history:
+            # msg is a HistoryMessage Pydantic model, use attribute access
+            role = msg.role if hasattr(msg, "role") else msg.get("role", "user")
+            content = msg.content if hasattr(msg, "content") else msg.get("content", "")
+            if role in ("user", "assistant") and content:
+                messages.append({"role": role, "content": content})
+
+    # Add current question
+    messages.append({"role": "user", "content": question + context})
 
     steps: list[dict] = []
     MAX_ITER = 8

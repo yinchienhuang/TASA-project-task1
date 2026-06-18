@@ -1,0 +1,209 @@
+{
+  "metadata": {
+    "total_questions": 25,
+    "status": "MANUALLY VERIFIED",
+    "instructions": "These are the manually verified ground truth values with confirmed scores."
+  },
+  "ground_truth": [
+    {
+      "id": "a01",
+      "question": "What is the exact delta-V (in m/s) for the COSMOS 2614 maneuver?",
+      "category": "A. Event Precision",
+      "answer_type": "numeric",
+      "ground_truth": "107.05",
+      "notes": "Manually verified. Specialized: 1.0, RAG: 0.0"
+    },
+    {
+      "id": "a02",
+      "question": "What was the period change (in seconds) for TJS-6's second maneuver? Is it positive or negative?",
+      "category": "A. Event Precision",
+      "answer_type": "numeric_with_sign",
+      "ground_truth": "2.63",
+      "notes": "Manually verified. Specialized: 1.0, RAG: 0.0"
+    },
+    {
+      "id": "a03",
+      "question": "What is the orbital inclination of the Qianfan 10A-R launch in degrees?",
+      "category": "A. Event Precision",
+      "answer_type": "numeric",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "notes": "Manually verified. Specialized: 1.0, RAG: 1.0"
+    },
+    {
+      "id": "a04",
+      "question": "By how many magnitudes did COSMOS 2589 change brightness on May 19?",
+      "category": "A. Event Precision",
+      "answer_type": "numeric",
+      "ground_truth": "1.0",
+      "notes": "Manually verified. Specialized: 1.0, RAG: 0.0"
+    },
+    {
+      "id": "a05",
+      "question": "What was the apogee change (km) and perigee change (km) for SJ-29B's maneuver?",
+      "category": "A. Event Precision",
+      "answer_type": "numeric_pair",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "notes": "Manually verified. Specialized: 1.0, RAG: 1.0"
+    },
+    {
+      "id": "b01",
+      "question": "How many total maneuver events appear across all NOTOS/JCO reports?",
+      "category": "B. Cross-Document Aggregation",
+      "answer_type": "numeric_exact",
+      "ground_truth": "19",
+      "notes": "Manually verified. Specialized: 0.0, RAG: 0.0"
+    },
+    {
+      "id": "b02",
+      "question": "How many times does COSMOS 2589 appear in photometric change reports?",
+      "category": "B. Cross-Document Aggregation",
+      "answer_type": "numeric_exact",
+      "ground_truth": "7",
+      "notes": "Manually verified. Specialized: 1.0, RAG: 0.0"
+    },
+    {
+      "id": "b03",
+      "question": "Which satellite experienced maneuvers most frequently? How many times?",
+      "category": "B. Cross-Document Aggregation",
+      "answer_type": "entity_count",
+      "ground_truth": "TJS-24 with 3 maneuvers",
+      "notes": "Manually verified. Specialized: 1.0, RAG: 0.5"
+    },
+    {
+      "id": "b04",
+      "question": "How many unique satellites appear across all reports?",
+      "category": "B. Cross-Document Aggregation",
+      "answer_type": "numeric_exact",
+      "ground_truth": "13",
+      "notes": "Manually verified. Specialized: 1.0, RAG: 0.0"
+    },
+    {
+      "id": "b05",
+      "question": "List all satellites that had launch events in these reports.",
+      "category": "B. Cross-Document Aggregation",
+      "answer_type": "list",
+      "ground_truth": "Satellites with launch events: 68835, 69235, 94327",
+      "notes": "Manually verified. Specialized: 0.5, RAG: 0.0"
+    },
+    {
+      "id": "c01",
+      "question": "At exactly what UTC datetime did the COSMOS 2614 maneuver occur? (ISO 8601 format)",
+      "category": "C. Date Format Normalization",
+      "answer_type": "datetime_iso",
+      "ground_truth": "2026-05-21 at 13:58:00 UTC",
+      "notes": "Manually verified. Specialized: 0.0, RAG: 0.0"
+    },
+    {
+      "id": "c02",
+      "question": "What is the report date for TJS-24's earliest launch report in ISO 8601?",
+      "category": "C. Date Format Normalization",
+      "answer_type": "date_iso",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "notes": "Manually verified. Specialized: 0.0, RAG: 0.0"
+    },
+    {
+      "id": "c03",
+      "question": "When was the Luch Olymp 2 RPO event reported? (ISO 8601 format)",
+      "category": "C. Date Format Normalization",
+      "answer_type": "date_iso",
+      "ground_truth": "2026-06-01T20:57:00Z",
+      "notes": "Manually verified. Specialized: 1.0, RAG: 0.0"
+    },
+    {
+      "id": "d01",
+      "question": "Which satellite had the largest single delta-V maneuver? What country operates it?",
+      "category": "D. Multi-Hop Reasoning",
+      "answer_type": "entity_relation",
+      "ground_truth": "COSMOS 2614, delta-V of 107.05 m/s, Russia",
+      "notes": "Manually verified. Specialized: 1.0, RAG: 0.0"
+    },
+    {
+      "id": "d02",
+      "question": "Which satellite experienced photometric change in these reports? Is it military or commercial?",
+      "category": "D. Multi-Hop Reasoning",
+      "answer_type": "entity_relation",
+      "ground_truth": "COSMOS 2589 (Military)",
+      "notes": "Multi-hop: extract photometric change satellite from reports → COSMOS 2589, then KG lookup for military/commercial status."
+    },
+    {
+      "id": "d03",
+      "question": "Which system satellite has the highest pass frequency over Taiwan?",
+      "category": "D. Multi-Hop Reasoning",
+      "answer_type": "free_form",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "notes": "Manually verified. Specialized: 0.0, RAG: 1.0"
+    },
+    {
+      "id": "e04",
+      "question": "In the RPO event between Luch Olymp 2 and Intelsat 39, what are their orbital regimes?",
+      "category": "E. Specialized Event Types (RPO)",
+      "answer_type": "entity_pair",
+      "ground_truth": "GEO",
+      "notes": "Manually verified. Specialized: 1.0, RAG: 1.0"
+    },
+    {
+      "id": "e01",
+      "question": "How many kilometers did Luch Olymp 2 come closest to Intelsat 39?",
+      "category": "E. Specialized Event Types (RPO)",
+      "answer_type": "numeric_or_missing",
+      "ground_truth": "60km",
+      "notes": "Manually verified. Specialized: 0.5, RAG: 0.0"
+    },
+    {
+      "id": "e02",
+      "question": "What does the analyst assessment say about the Luch Olymp 2 - Intelsat 39 encounter?",
+      "category": "E. Specialized Event Types (RPO)",
+      "answer_type": "free_form",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "notes": "Manually verified. Specialized: 0.5, RAG: 0.0"
+    },
+    {
+      "id": "e03",
+      "question": "What fields or attributes does the RPO (Rendezvous/Proximity) report have that differ from standard maneuver reports?",
+      "category": "E. Specialized Event Types (RPO)",
+      "answer_type": "free_form",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "notes": "Manually verified. Specialized: 0.5, RAG: 0.5"
+    },
+    {
+      "id": "f01",
+      "question": "What is the fuel consumption (kg) for SJ-29B's maneuver?",
+      "category": "F. I Don't Know (Hallucination Test)",
+      "answer_type": "refuse_or_hallucinate",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "notes": "Manually verified. Specialized: 1.0, RAG: 1.0"
+    },
+    {
+      "id": "f02",
+      "question": "What caused COSMOS 2589's photometric brightness change?",
+      "category": "F. I Don't Know (Hallucination Test)",
+      "answer_type": "refuse_or_hallucinate",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "notes": "Manually verified. Specialized: 1.0, RAG: 1.0"
+    },
+    {
+      "id": "f03",
+      "question": "What is the payload mass (kg) of TJS-24?",
+      "category": "F. I Don't Know (Hallucination Test)",
+      "answer_type": "refuse_or_hallucinate",
+      "ground_truth": "NOT STATED IN EVENTS",
+      "notes": "Manually verified. Specialized: 1.0, RAG: 1.0"
+    },
+    {
+      "id": "g01",
+      "question": "NORAD catalog ID 47613 experienced what events in these reports?",
+      "category": "G. Satellite Name Variants",
+      "answer_type": "entity_search",
+      "ground_truth": "6 maneuver events",
+      "notes": "Manually verified. Specialized: 0.5, RAG: 0.0"
+    },
+    {
+      "id": "g02",
+      "question": "How many photometric change reports exist for satellite 64467?",
+      "category": "G. Satellite Name Variants",
+      "answer_type": "numeric_exact",
+      "ground_truth": "7",
+      "notes": "Manually verified. Specialized: 1.0, RAG: 0.0"
+    }
+  ]
+}
