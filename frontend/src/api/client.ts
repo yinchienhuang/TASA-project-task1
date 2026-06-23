@@ -11,6 +11,34 @@ import type { SatelliteInfo, Position, KGNode, KGEdge, ThreatAssessment } from '
 const API_BASE = 'http://localhost:8000';
 const delay = (ms = 400) => new Promise((r) => setTimeout(r, ms));
 
+// ── TLE Cache (preload to avoid lag in SatellitePanel) ─────────────────────────
+const tleCache = new Map<string, any>();
+
+export async function getTLEWithCache(noradId: string) {
+  if (tleCache.has(noradId)) {
+    return tleCache.get(noradId);
+  }
+  try {
+    const res = await fetch(`${API_BASE}/api/propagation/tle/${encodeURIComponent(noradId)}`);
+    if (res.ok) {
+      const data = await res.json();
+      tleCache.set(noradId, data);
+      return data;
+    }
+  } catch (e) {}
+  return null;
+}
+
+export async function preloadTLEs(noradIds: string[]) {
+  // Fetch all TLEs in parallel, but don't wait for all to complete
+  // This allows the UI to remain responsive while TLEs are loading
+  noradIds.forEach(id => {
+    if (!tleCache.has(id)) {
+      getTLEWithCache(id).catch(() => {});
+    }
+  });
+}
+
 // ── Orbit positions (real backend, fallback to mock) ─────────────────────────
 
 export interface BackendPosition {
@@ -240,6 +268,18 @@ export async function getKGSatellites(): Promise<KGSatellite[]> {
   }));
 }
 
+export async function enrichSatelliteTags(): Promise<{ proposed: number; satellites_checked: number }> {
+  const res = await fetch(`${API_BASE}/api/kg/enrich/satellite-tags`, { method: 'POST' });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
+
+export async function enrichSatelliteRelations(): Promise<{ proposed: number; edges: number; nodes: number }> {
+  const res = await fetch(`${API_BASE}/api/kg/enrich/satellite-relations`, { method: 'POST' });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
+
 // ── Satellite info (real KG first, mock fallback) ─────────────────────────────
 
 /** identifier may be a real NORAD ID ("42920") or a KG node ID slug ("high_precision_...") */
@@ -400,6 +440,14 @@ export interface SatelliteEvent {
   magnitude_change_max?: number;
   magnitude_direction?: string;
   recovery_date?: string;
+  associated_satellite_id?: string;
+  associated_satellite_label?: string;
+  associated_distance_km?: number;
+  // shared implication fields (maneuver + photometric + launch)
+  verification_status?: 'verified' | 'possible' | 'detected';
+  pol_status?: 'within_pol' | 'outside_pol' | 'return_to_pol' | 'unknown';
+  analyst_assessment?: string;
+  pai_summary?: string;
   // launch fields
   notos_id?: string;
   launch_time_start?: string;
@@ -453,6 +501,39 @@ export async function deleteEvent(eventId: string): Promise<boolean> {
     });
     return res.ok;
   } catch { return false; }
+}
+
+export interface EventUpdate {
+  field: string;
+  old: unknown;
+  new: unknown;
+  type: 'added' | 'updated' | 'removed';
+}
+
+export interface EventUpdateHistory {
+  timestamp: string;
+  changes: EventUpdate[];
+  summary: string;
+}
+
+export interface EventUpdateInfo {
+  event_id: string;
+  satellite_label: string;
+  type: string;
+  created_at: string;
+  total_updates: number;
+  updates: EventUpdateHistory[];
+}
+
+export async function getEventUpdates(eventId: string, limit: number = 10): Promise<EventUpdateInfo | null> {
+  try {
+    const res = await fetch(
+      `${API_BASE}/api/events/${encodeURIComponent(eventId)}/updates?limit=${limit}`,
+      { signal: AbortSignal.timeout(5000) }
+    );
+    if (!res.ok) return null;
+    return res.json();
+  } catch { return null; }
 }
 
 // ── Analysis API ──────────────────────────────────────────────────────────────
@@ -514,15 +595,74 @@ export async function getFleetCoverage(params: {
   } catch { return []; }
 }
 
-export async function queryAnalysis(question: string, satelliteId?: string): Promise<QueryResult> {
+export async function queryAnalysis(
+  question: string,
+  satelliteId?: string,
+  history?: Array<{ role: 'user' | 'assistant'; content: string }>,
+  onToolCall?: (toolName: string, args: Record<string, any>) => void
+): Promise<QueryResult> {
   const res = await fetch(`${API_BASE}/api/analysis/query`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ question, satellite_id: satelliteId ?? null }),
+    body: JSON.stringify({
+      question,
+      satellite_id: satelliteId ?? null,
+      history: history ?? null,
+    }),
     signal: AbortSignal.timeout(120000),
   });
   if (!res.ok) throw new Error(`Query failed: ${res.status}`);
-  return res.json();
+
+  // Parse Server-Sent Events
+  const reader = res.body?.getReader();
+  if (!reader) {
+    throw new Error('No response body');
+  }
+
+  let result: QueryResult | null = null;
+  const decoder = new TextDecoder();
+  let buffer = '';
+
+  try {
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split('\n');
+
+      // Keep the last incomplete line in buffer
+      buffer = lines[lines.length - 1];
+
+      for (const line of lines.slice(0, -1)) {
+        if (line.startsWith('data: ')) {
+          try {
+            const event = JSON.parse(line.substring(6));
+
+            if (event.type === 'tool_call') {
+              // Notify about tool call
+              if (onToolCall) {
+                onToolCall(event.tool, event.args);
+              }
+            } else if (event.type === 'result') {
+              // Final result
+              result = event.data;
+            }
+          } catch (e) {
+            // Skip invalid JSON
+          }
+        }
+      }
+    }
+  } finally {
+    reader.releaseLock();
+  }
+
+  if (!result) {
+    throw new Error('No result received from server');
+  }
+
+  return result;
 }
 
 // ── NOTAM ingest ──────────────────────────────────────────────────────────────

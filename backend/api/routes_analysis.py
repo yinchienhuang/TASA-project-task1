@@ -6,7 +6,10 @@ from functools import lru_cache
 from datetime import datetime, timezone
 
 from fastapi import APIRouter, HTTPException, Query
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
+import json
+from asyncio import Queue
 
 from modules.analysis.coverage import compute_passes, passes_summary, REGIONS
 from modules.analysis.satellite_utils import _is_chinese_satellite, _is_satellite_node
@@ -125,14 +128,66 @@ async def run_query(req: QueryRequest):
     """Run a natural language Q&A over satellite data using GPT-4o tool calling.
 
     Supports multi-turn conversation with context from previous exchanges.
+    Returns Server-Sent Events stream for real-time progress updates.
     """
     from modules.analysis.qa_engine import run_qa
-    result = await run_qa(
-        req.question,
-        satellite_id=req.satellite_id,
-        history=req.history or []
+
+    async def event_generator():
+        # Queue for real-time tool call events
+        event_queue: Queue = Queue()
+
+        # Async callback to send tool calls in real-time
+        async def on_tool_call(tool_name: str, args: dict):
+            event = {
+                "type": "tool_call",
+                "tool": tool_name,
+                "args": args
+            }
+            await event_queue.put(event)
+
+        # Start the QA task
+        qa_task = asyncio.create_task(
+            run_qa(
+                req.question,
+                satellite_id=req.satellite_id,
+                history=req.history or [],
+                on_tool_call=on_tool_call
+            )
+        )
+
+        # Stream events while QA is running
+        while not qa_task.done():
+            try:
+                # Wait for events with timeout to avoid blocking
+                event = await asyncio.wait_for(event_queue.get(), timeout=0.5)
+                yield f"data: {json.dumps(event)}\n\n"
+            except asyncio.TimeoutError:
+                # Timeout is normal, just check if task is done
+                pass
+
+        # Get final result
+        result = await qa_task
+
+        # Send any remaining events in queue
+        while not event_queue.empty():
+            event = await event_queue.get()
+            yield f"data: {json.dumps(event)}\n\n"
+
+        # Send final result
+        final_event = {
+            "type": "result",
+            "data": result
+        }
+        yield f"data: {json.dumps(final_event)}\n\n"
+
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no"
+        }
     )
-    return result
 
 
 @router.get("/conjunction/nearby")
