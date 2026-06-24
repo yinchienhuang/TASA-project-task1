@@ -70,11 +70,52 @@ class KGStore:
     def register_source(self, source_id: str, metadata: dict) -> None:
         self.sources[source_id] = metadata
 
+    # ── Alias validation ───────────────────────────────────────────────────────
+
+    def _validate_aliases_immutable(self, node_id: str, new_aliases: list) -> None:
+        """
+        Validate that aliases can only be added, never removed.
+
+        Raises ValueError if any existing aliases are missing from new_aliases.
+        """
+        if node_id not in self.nodes:
+            return  # New node, no validation needed
+
+        existing_node = self.nodes[node_id]
+        existing_aliases = (existing_node.get("attributes", {})
+                           .get("aliases", {})
+                           .get("value", []) or [])
+
+        if not existing_aliases:
+            return  # No existing aliases, any new aliases are fine
+
+        new_aliases = new_aliases or []
+        existing_set = set(existing_aliases)
+        new_set = set(new_aliases)
+
+        removed_aliases = existing_set - new_set
+        if removed_aliases:
+            raise ValueError(
+                f"Node '{node_id}': Aliases can only be added, not removed. "
+                f"Removed aliases: {removed_aliases}. "
+                f"Existing: {existing_set}, New: {new_set}"
+            )
+
     # ── Nodes ─────────────────────────────────────────────────────────────────
 
     def upsert_node(self, node: dict) -> str:
-        """Insert or update a node. Returns 'created' | 'updated' | 'duplicate'."""
+        """Insert or update a node. Returns 'created' | 'updated' | 'duplicate'.
+
+        Raises ValueError if aliases are being removed.
+        """
         node_id = node["id"]
+
+        # Validate aliases before making any changes
+        new_aliases = (node.get("attributes", {})
+                      .get("aliases", {})
+                      .get("value", []) or [])
+        self._validate_aliases_immutable(node_id, new_aliases)
+
         if node_id not in self.nodes:
             self.nodes[node_id] = {**node, "created_at": _now(), "updated_at": _now()}
             return "created"
@@ -102,8 +143,18 @@ class KGStore:
         return "duplicate"
 
     def apply_node(self, node: dict) -> None:
-        """Directly write a node to the store (used when approving pending items)."""
+        """Directly write a node to the store (used when approving pending items).
+
+        Raises ValueError if aliases are being removed.
+        """
         node_id = node["id"]
+
+        # Validate aliases before making any changes
+        new_aliases = (node.get("attributes", {})
+                      .get("aliases", {})
+                      .get("value", []) or [])
+        self._validate_aliases_immutable(node_id, new_aliases)
+
         if node_id in self.nodes:
             self.nodes[node_id].update({**node, "updated_at": _now()})
         else:

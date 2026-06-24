@@ -1,0 +1,70 @@
+NOTSO_ID: 02f7 / Photometric Change / SJ-20 (44910) / GEO_04Jun-1713Z
+
+JDay 156 at 0430z;
+
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on SJ-20 (44910). This change occurred on 04JUN (JDay 155) between the solar phase angles of  9 deg to 25 deg and appeared to be 0.5 to 0.8 visual magnitude brighter. 
+The cause of the change is possibly due to a return to pattern of life following the reported photometric change that occured on 03Jun2125z.
+ 
+The satellite is in GEO and is currently at 44.8 degs E longitude and is geo-stationary. Neighborhood is provided. Click link above to view products
+ 
+PAI suggests that SJ-20 is a Chinese satellite that supports civil communications and technology testing operations. The mission of SHIJIAN 20 is to test high-throughput communications, Ka-band payloads, electric xenon propulsion, laser communications, and quantum communications payloads.
+
+Time window of change: 04JUN2125z to 2230z
+Solar phase angle window: 09 to 25 degs
+Vismag pre change: 9.2
+Vismag post change:8.7
+Current longitude: 44.8 E Longitude
+Current drift rate: 0.006 E deg/day
+ 
+Current TLE as of 05JUN0021z provided by KBR:
+1 44910U 19097A   26156.01465281  .00000000  00000-0  00000-0 0    04
+2 44910   4.8875  75.2083 0013716  50.9780 177.2936  1.00273672023574
+------------------------------------------------------------------------------------------------------------------
+JDay 155 at 1616z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on SJ-20 (44910). This change occurred on 03JUN (JDay 154) between the solar phase angles of 9 deg to 25 deg and appeared to be 0.5 to 0.8 visual magnitude dimmer and afterwards returned to pattern of life. 
+ 
+The cause of the change may be associated with a close approach with COSMOS 2520 (42907) on 03Jun2111z at 151km, w/favorable lighting for SJ-20. There was also a close approach with Azerspace (43632) on 03Jun2109z at 175km, w/favorable lighting for SJ-20.
+
+This photometric variation is not consistent with the historical pattern of life for this object. Analysis is ongoing.
+ 
+The satellite is in GEO and is currently at 44.65 degs E longitude and is geo-stationary. Neighborhood is provided. Click link above to view products
+ 
+PAI suggests that SJ-20 is a Chinese satellite that supports civil communications and technology testing operations. The mission of SHI JIAN 20 is to test high-throughput communications, Ka-band payloads, electric xenon propulsion, laser communications, and quantum communications payloads.
+ 
+PAI suggests that COSMOS 2520 / BLAGOVEST 11L is a Russian satellite that supports military communications operations. The mission of COSMOS 2520 is to provide high-speed internet access, data communications, telephony, and videoconferencing services for Russian military and domestic users.
+
+PAI suggests that AZERSPACE-2 / INTELSAT 38 is an Azerbaijani commercial satellite that supports communications operations. The mission of AZERSPACE-2 / INTELSAT 38 is to provide direct-to-home broadcasting, high-throughput communications, government services, and continuity of service for INTELSAT 12.
+ 
+Time window of change: 03JUN2125z to 2230z
+Solar phase angle window: 09 to 25 degs
+Vismag pre change: 14.5
+Vismag post change: 15.00
+Close approaches within window: COSMOS 2520 (42907) on 03Jun2111z at 151km and Azerspace (43632) on 03Jun2109z at 175km
+Current longitude: 44.65 E Longitude
+Current drift rate: 0.007 E deg/day
+ 
+Current TLE as of 04JUN0319z provided by KBR:
+1 44910U 19097A   26155.13830267 +.00000096 +00000-0 +80336-4 0  0005
+2 44910   4.8854  75.2202 0013753  51.0866 220.8165  1.00273685000008
+
+JDAY 155, 1430Z
+
+Mission Summary:
+Shijian 20 (SJ-20) is a heavy Chinese experimental communications satellite operating in geostationary orbit (GEO). Serving as the maiden verification flight for China’s next-generation DFH-5 satellite platform, its primary mission is to test ultra-high-performance technologies, including high-thrust ion propulsion, laser communications, and a massive solar wing configuration, providing up to 28 kilowatts of payload power. By successfully validating these advanced systems after the failure of the previous DFH-5 prototype (Shijian 18) in 2017, Shijian 20 laid the structural and technological foundation for China’s modern, high-capacity civilian and military space communications infrastructure.
+Source: RC
+
+Satellite Summary:
+44910 | SHI JIAN 20 | GEO-GSO / Geostationary | CAST - Chinese Academy of Space Technology (China) | Active - Inclined (aged) / Manoeuverable | Civil/Other | Communications / Communications - Experimental,Communications / Communications - High Throughput,Technology / Technology Test/Prototype | 27/12/2019 (6.44 years old) | Experimental HTS Communications Satellite. | Re-flight of the Long March 5 following the failure in July 2017. Flew without YZ-2 upper stage on Long March 5 as had LIPS-300 electrical engine to raise orbit.HTS payload capable of 300 gps. Also carrying high-thrust ion propulsion developed by the Lanzhou Institute of Physics for performance test and a laser communications payload and a quantum communications payload. | Yes - On-board Propulsion | Electric - Xenon | Ka,Laser | Source: Seradata
+
+Space Weather during photometric change (JDAY 154 2125Z-2230Z, and JDAY 155, 0319Z)
+Radio Blackout Impacts – R0 (N/A)
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)
+Source: https://www.spaceweather.gov/communities/space-weather-enthusiasts-dashboard (Read More)
+
+SJ-20 / Waterfall / KBR / JDAY 155 / 17:13Z
+
+Satellites Number Name Orbit Country 44910 SJ-20 N/A China (PRC)
+
+NOTSO_ID: 02f7 / Photometric Change / SJ-20 (44910) / GEO_05Jun-0447Z

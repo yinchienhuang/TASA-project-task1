@@ -1,7 +1,7 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useAppStore } from '../../store/appStore';
-import { getFleetEvents, getFleetCoverage, queryAnalysis } from '../../api/client';
-import type { SatelliteEvent, FleetCoverageResult, QueryResult } from '../../api/client';
+import { getFleetEvents, getFleetCoverage } from '../../api/client';
+import type { SatelliteEvent, FleetCoverageResult } from '../../api/client';
 
 const REGIONS = [
   { id: 'taiwan', label: 'Taiwan' },
@@ -10,13 +10,6 @@ const REGIONS = [
   { id: 'korean_peninsula', label: 'Korean Peninsula' },
   { id: 'persian_gulf', label: 'Persian Gulf' },
   { id: 'ukraine', label: 'Ukraine' },
-];
-
-const STARTER_QUESTIONS = [
-  'List all maneuver events in LEO in the past 30 days',
-  'Which Chinese satellites pass over Taiwan most often?',
-  'Which Chinese satellites pass over Taiwan most? Have any of them maneuvered recently?',
-  'What launches have occurred in the past 60 days?',
 ];
 
 function fmtDate(iso?: string) {
@@ -32,6 +25,24 @@ function sign(n?: number) {
 
 // ── Fleet Event Query ─────────────────────────────────────────────────────────
 
+const POL_COLOR: Record<string, string> = {
+  within_pol: '#3fb950',
+  outside_pol: '#f78166',
+  return_to_pol: '#58a6ff',
+  unknown: '#484f58',
+};
+const POL_LABEL: Record<string, string> = {
+  within_pol: 'Within POL',
+  outside_pol: 'Outside POL',
+  return_to_pol: 'Return to POL',
+  unknown: 'POL unknown',
+};
+const VERIF_COLOR: Record<string, string> = {
+  verified: '#3fb950',
+  possible: '#e3b341',
+  detected: '#8b949e',
+};
+
 function FleetEventQuery() {
   const { setSelectedSatelliteId } = useAppStore();
   const [eventType, setEventType] = useState<string>('');
@@ -40,6 +51,7 @@ function FleetEventQuery() {
   const [events, setEvents] = useState<SatelliteEvent[]>([]);
   const [loading, setLoading] = useState(false);
   const [searched, setSearched] = useState(false);
+  const [expandedId, setExpandedId] = useState<string | null>(null);
 
   const handleSearch = async () => {
     setLoading(true);
@@ -95,43 +107,127 @@ function FleetEventQuery() {
                 <th style={th}>Satellite</th>
                 <th style={th}>Date</th>
                 <th style={th}>Type</th>
-                <th style={th}>Regime</th>
+                <th style={th}>POL</th>
                 <th style={th}>Δv / detail</th>
                 <th style={th}></th>
               </tr>
             </thead>
             <tbody>
-              {events.map((ev) => (
-                <tr key={ev.id} style={{ borderBottom: '1px solid #21262d' }}
-                  onMouseEnter={(e) => (e.currentTarget.style.background = '#161b22')}
-                  onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}
-                >
-                  <td style={td}>{ev.satellite_label || ev.satellite_id}</td>
-                  <td style={td}>{fmtDate(ev.event_date)}</td>
-                  <td style={td}>
-                    <span style={{ color: ev.type === 'launch' ? '#3fb950' : ev.type === 'maneuver' ? '#58a6ff' : '#e3b341' }}>
-                      {ev.type}
-                    </span>
-                    {ev.maneuver_type && <span style={{ color: '#484f58', marginLeft: 4 }}>[{ev.maneuver_type}]</span>}
-                  </td>
-                  <td style={td}>{ev.regime || '—'}</td>
-                  <td style={td}>
-                    {ev.type === 'maneuver'
-                      ? `${sign(ev.jco_delta_v ?? ev.delta_v)} m/s${ev.discrepancy_flag ? ' ⚠' : ''}`
-                      : ev.type === 'launch'
-                        ? ev.launch_site || '—'
-                        : `${ev.magnitude_change_min}–${ev.magnitude_change_max} mag`
-                    }
-                  </td>
-                  <td style={td}>
-                    {ev.satellite_id && (
-                      <button onClick={() => setSelectedSatelliteId(ev.satellite_id)} style={{ ...btnSmall, color: '#58a6ff' }}>
-                        Focus
-                      </button>
+              {events.map((ev) => {
+                const isExpanded = expandedId === ev.id;
+                const hasContext = ev.analyst_assessment || ev.pai_summary ||
+                  ev.associated_satellite_label || ev.verification_status;
+                return (
+                  <>
+                    <tr key={ev.id}
+                      style={{ borderBottom: isExpanded ? 'none' : '1px solid #21262d', cursor: hasContext ? 'pointer' : 'default' }}
+                      onClick={() => hasContext && setExpandedId(isExpanded ? null : ev.id)}
+                      onMouseEnter={(e) => (e.currentTarget.style.background = '#161b22')}
+                      onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}
+                    >
+                      <td style={td}>
+                        <span style={{ marginRight: 4, color: '#484f58', fontSize: 9 }}>
+                          {hasContext ? (isExpanded ? '▼' : '▶') : ''}
+                        </span>
+                        {ev.satellite_label || ev.satellite_id}
+                        {ev.verification_status && ev.verification_status !== 'verified' && (
+                          <span style={{ marginLeft: 5, fontSize: 9, color: VERIF_COLOR[ev.verification_status] }}>
+                            [{ev.verification_status}]
+                          </span>
+                        )}
+                      </td>
+                      <td style={td}>{fmtDate(ev.event_date)}</td>
+                      <td style={td}>
+                        <span style={{ color: ev.type === 'launch' ? '#3fb950' : ev.type === 'maneuver' ? '#58a6ff' : '#e3b341' }}>
+                          {ev.type}
+                        </span>
+                        {ev.maneuver_type && <span style={{ color: '#484f58', marginLeft: 4 }}>[{ev.maneuver_type}]</span>}
+                      </td>
+                      <td style={td}>
+                        {ev.pol_status ? (
+                          <span style={{ fontSize: 10, color: POL_COLOR[ev.pol_status] }}>
+                            {POL_LABEL[ev.pol_status]}
+                          </span>
+                        ) : '—'}
+                      </td>
+                      <td style={td}>
+                        {ev.type === 'maneuver' ? (
+                          <span>
+                            {sign(ev.jco_delta_v ?? ev.delta_v)} m/s
+                            {ev.discrepancy_flag && <span style={{ color: '#f78166', marginLeft: 4 }}>⚠ TLE discrepancy</span>}
+                          </span>
+                        ) : ev.type === 'launch' ? (
+                          <span>
+                            {ev.launch_site && <span style={{ color: '#3fb950' }}>{ev.launch_site}</span>}
+                            {ev.launch_vehicle && <span style={{ color: '#8b949e', marginLeft: 6 }}>· {ev.launch_vehicle}</span>}
+                            {ev.orbital_inclination != null && (
+                              <span style={{ color: '#8b949e', marginLeft: 6 }}>· {ev.orbital_inclination}° / {ev.orbital_period} min</span>
+                            )}
+                            {!ev.launch_site && !ev.satellite_label && <span style={{ color: '#484f58' }}>NOTAM zone only</span>}
+                          </span>
+                        ) : (
+                          <span>
+                            <span style={{ color: ev.magnitude_direction === 'dimmer' ? '#f78166' : '#3fb950', fontWeight: 600, marginRight: 4 }}>
+                              {ev.magnitude_direction === 'dimmer' ? '▼' : ev.magnitude_direction === 'brighter' ? '▲' : ''}
+                              {ev.magnitude_direction}
+                            </span>
+                            {(ev.magnitude_change_min != null || ev.magnitude_change_max != null) && (
+                              <span style={{ color: '#8b949e' }}>
+                                {ev.magnitude_change_min != null && ev.magnitude_change_max != null
+                                  ? `${ev.magnitude_change_min}–${ev.magnitude_change_max}`
+                                  : ev.magnitude_change_min ?? ev.magnitude_change_max} mag
+                              </span>
+                            )}
+                            {ev.recovery_date && (
+                              <span style={{ color: '#3fb950', marginLeft: 6, fontSize: 10 }}>recovered {ev.recovery_date.slice(0, 10)}</span>
+                            )}
+                          </span>
+                        )}
+                      </td>
+                      <td style={td}>
+                        {ev.satellite_id && (
+                          <button onClick={(e) => { e.stopPropagation(); setSelectedSatelliteId(ev.satellite_id); }}
+                            style={{ ...btnSmall, color: '#58a6ff' }}>
+                            Focus
+                          </button>
+                        )}
+                      </td>
+                    </tr>
+                    {isExpanded && (
+                      <tr key={ev.id + '_detail'} style={{ borderBottom: '1px solid #21262d' }}>
+                        <td colSpan={6} style={{ padding: '0 8px 10px 20px' }}>
+                          <div style={{ background: '#0d1117', borderRadius: 4, padding: '8px 10px', fontSize: 11 }}>
+                            {ev.analyst_assessment && (
+                              <div style={{ marginBottom: 6 }}>
+                                <span style={{ color: '#484f58', fontSize: 10, fontWeight: 600, marginRight: 6 }}>ASSESSMENT</span>
+                                <span style={{ color: '#c9d1d9', lineHeight: 1.5 }}>{ev.analyst_assessment}</span>
+                              </div>
+                            )}
+                            {ev.associated_satellite_label && (
+                              <div style={{ marginBottom: 6 }}>
+                                <span style={{ color: '#484f58', fontSize: 10, fontWeight: 600, marginRight: 6 }}>NEARBY SAT</span>
+                                <span style={{ color: '#e3b341' }}>{ev.associated_satellite_label}</span>
+                                {ev.associated_satellite_id && (
+                                  <span style={{ color: '#484f58', marginLeft: 4 }}>({ev.associated_satellite_id})</span>
+                                )}
+                                {ev.associated_distance_km != null && (
+                                  <span style={{ color: '#8b949e', marginLeft: 6 }}>at {ev.associated_distance_km} km</span>
+                                )}
+                              </div>
+                            )}
+                            {ev.pai_summary && (
+                              <div>
+                                <span style={{ color: '#484f58', fontSize: 10, fontWeight: 600, marginRight: 6 }}>PAI</span>
+                                <span style={{ color: '#8b949e', lineHeight: 1.5 }}>{ev.pai_summary}</span>
+                              </div>
+                            )}
+                          </div>
+                        </td>
+                      </tr>
                     )}
-                  </td>
-                </tr>
-              ))}
+                  </>
+                );
+              })}
             </tbody>
           </table>
           <div style={{ fontSize: 10, color: '#484f58', marginTop: 4 }}>{events.length} event{events.length !== 1 ? 's' : ''}</div>
@@ -224,144 +320,6 @@ function CoverageQuery() {
   );
 }
 
-// ── Q&A Chat ──────────────────────────────────────────────────────────────────
-
-interface ChatMessage {
-  role: 'user' | 'assistant';
-  content: string;
-  steps?: QueryResult['steps'];
-  warning?: string;
-}
-
-function QAChat() {
-  const { selectedSatelliteId } = useAppStore();
-  const [messages, setMessages] = useState<ChatMessage[]>([]);
-  const [input, setInput] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [expandedStep, setExpandedStep] = useState<string | null>(null);
-  const bottomRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages, loading]);
-
-  const send = async (question: string) => {
-    if (!question.trim() || loading) return;
-    const q = question.trim();
-    setInput('');
-    setMessages((prev) => [...prev, { role: 'user', content: q }]);
-    setLoading(true);
-    try {
-      const result = await queryAnalysis(q, selectedSatelliteId ?? undefined);
-      setMessages((prev) => [...prev, {
-        role: 'assistant',
-        content: result.answer,
-        steps: result.steps,
-        warning: result.warning,
-      }]);
-    } catch (e) {
-      setMessages((prev) => [...prev, { role: 'assistant', content: 'Error: could not reach analysis API.' }]);
-    }
-    setLoading(false);
-  };
-
-  return (
-    <div style={{ borderTop: '1px solid #21262d', display: 'flex', flexDirection: 'column', height: 380 }}>
-      <div style={{ fontSize: 11, fontWeight: 600, color: '#8b949e', padding: '8px 12px 4px', letterSpacing: '0.05em' }}>
-        Q&A ASSISTANT
-      </div>
-
-      {/* Message area */}
-      <div style={{ flex: 1, overflowY: 'auto', padding: '4px 12px' }}>
-        {messages.length === 0 && (
-          <div style={{ marginTop: 8 }}>
-            <div style={{ fontSize: 10, color: '#484f58', marginBottom: 6 }}>Suggested questions:</div>
-            {STARTER_QUESTIONS.map((q) => (
-              <button key={q} onClick={() => send(q)} style={{
-                display: 'block', width: '100%', textAlign: 'left',
-                background: 'none', border: '1px solid #30363d', borderRadius: 4,
-                color: '#58a6ff', fontSize: 11, padding: '4px 8px', marginBottom: 4, cursor: 'pointer',
-              }}>
-                {q}
-              </button>
-            ))}
-          </div>
-        )}
-
-        {messages.map((msg, i) => (
-          <div key={i} style={{ marginBottom: 10 }}>
-            {msg.role === 'user' ? (
-              <div style={{ background: '#1f6feb22', border: '1px solid #1f6feb44', borderRadius: 6, padding: '6px 10px', fontSize: 12, color: '#e6edf3' }}>
-                {msg.content}
-              </div>
-            ) : (
-              <div>
-                {/* Reasoning trace */}
-                {msg.steps && msg.steps.length > 0 && (
-                  <div style={{ marginBottom: 6 }}>
-                    {msg.steps.map((step, si) => {
-                      const key = `${i}-${si}`;
-                      const expanded = expandedStep === key;
-                      return (
-                        <div key={si} style={{ marginBottom: 3 }}>
-                          <button onClick={() => setExpandedStep(expanded ? null : key)} style={{
-                            background: '#161b22', border: '1px solid #30363d', borderRadius: 4,
-                            color: '#8b949e', fontSize: 10, padding: '2px 8px', cursor: 'pointer', width: '100%', textAlign: 'left',
-                          }}>
-                            {expanded ? '▼' : '▶'} Step {si + 1}: {step.tool}({Object.entries(step.args).map(([k, v]) => `${k}=${JSON.stringify(v)}`).join(', ')})
-                          </button>
-                          {expanded && (
-                            <pre style={{
-                              margin: 0, padding: '6px 8px', background: '#0d1117', borderRadius: '0 0 4px 4px',
-                              fontSize: 10, color: '#8b949e', overflowX: 'auto', maxHeight: 200, overflowY: 'auto',
-                              border: '1px solid #30363d', borderTop: 'none',
-                            }}>
-                              {JSON.stringify(step.result, null, 2)}
-                            </pre>
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
-                )}
-                {/* Answer */}
-                <div style={{ background: '#161b22', border: '1px solid #21262d', borderRadius: 6, padding: '8px 10px', fontSize: 12, color: '#e6edf3', whiteSpace: 'pre-wrap', lineHeight: 1.5 }}>
-                  {msg.content}
-                </div>
-                {msg.warning && <div style={{ fontSize: 10, color: '#f0a500', marginTop: 2 }}>⚠ {msg.warning}</div>}
-              </div>
-            )}
-          </div>
-        ))}
-
-        {loading && (
-          <div style={{ color: '#484f58', fontSize: 11, padding: '6px 0' }}>Analyzing…</div>
-        )}
-        <div ref={bottomRef} />
-      </div>
-
-      {/* Input */}
-      <div style={{ padding: '6px 12px', borderTop: '1px solid #21262d', display: 'flex', gap: 6 }}>
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyDown={(e) => { if (e.key === 'Enter') send(input); }}
-          placeholder="Ask about satellites, maneuvers, coverage…"
-          disabled={loading}
-          style={{
-            flex: 1, background: '#161b22', border: '1px solid #30363d', borderRadius: 4,
-            color: '#e6edf3', fontSize: 11, padding: '5px 8px', outline: 'none',
-          }}
-        />
-        <button onClick={() => send(input)} disabled={loading || !input.trim()} style={btnStyle}>
-          Send
-        </button>
-      </div>
-    </div>
-  );
-}
-
 // ── Main panel ────────────────────────────────────────────────────────────────
 
 export default function AnalysisPanel() {
@@ -369,7 +327,6 @@ export default function AnalysisPanel() {
     <div style={{ display: 'flex', flexDirection: 'column', height: '100%', background: '#0d1117', color: '#e6edf3', overflowY: 'auto' }}>
       <FleetEventQuery />
       <CoverageQuery />
-      <QAChat />
     </div>
   );
 }

@@ -1,0 +1,188 @@
+NOTSO_Maneuver / SHIYAN 30-01 (65851) & SHIYAN 30-02 (65852) / LEO_10Apr-1551Z
+
+JDay 100 at 1535z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have verified one maneuver on SHIYAN 30-01 (65851) occurring 09Apr0731z and two maneuvers on SHIYAN 30-02 (65852) occurring 09Apr0153z and 10Apr0200z.
+
+SHIYAN 30-01 (65851) maneuvered with a delta v of 2.27 m/s, resulting in a period increase of 1.71sec to a final period of 96.49min. SHIYAN 30-02 (65852) maneuvered with a combined delta v of 1.9 m/s, resulting in a total period increase of 3.8sec to a final period of 96.52min. 
+
+As a result of the maneuvers, they now have a close approach at ~72km on 12Apr. These maneuvers do not appear to be station-keeping maneuvers. Neighborhood is provided showing their relativity to each other. Click link above to view products.
+ 
+PAI suggests that SHIYAN 30-01 (65851) is a Chinese satellite that supports military operations. The mission of SHIYAN30-01 is Earth Observation / Remote Sensing.
+ 
+PAI suggests that SHIYAN 30-02 (65852) is a Chinese satellite that supports military operations. The mission of SHIYAN30-02 is Earth Observation / Remote Sensing.
+ 
+The specifics of the 65851 maneuver are: 
+--Time of Maneuver: 09Apr0731z
+--Delta V: 2.27 m/s
+--Period Change: +1.71 secs
+--Apogee Change: +0.91 km
+--Perigee Change: +1.83 km
+--Inclination Change: -0.00 degs
+
+The specifics of the first 65852 maneuver are: 
+--Time of Maneuver: 09Apr0153z
+--Delta V: 0.86 m/s
+--Period Change: +2.02 secs
+--Apogee Change: +2.30 km
+--Perigee Change: +0.95 km
+--Inclination Change: +0.00 degs
+
+The specifics of the second 65852 maneuver are: 
+--Time of Maneuver: 10Apr0200z
+--Delta V: 1.04 m/s
+--Period Change: +1.78 secs
+--Apogee Change: +2.76 km
+--Perigee Change: +0.09 km
+--Inclination Change: +0.00 degs
+ 
+Post Maneuver Current TLE for 65851 as of 10Apr1010z provided by:
+1 65851U 25222A   26100.42399394 +.00001045 +00000-0 +10019-3 0  0007
+2 65851  34.9827 308.0782 0001184 245.5757  87.5969 14.92284111000004
+
+Post Maneuver Current TLE for 65852 as of 10Apr1009z provided by KBR:
+1 65852U 25222B   26100.42308561 +.00001015 +00000-0 +98479-4 0  0008
+2 65852  35.0015 308.1732 0004967 268.1965  64.1917 14.91791716000003
+
+JDAY100, 1516Z
+
+Mission Summary:
+The Shiyan (SY) series is a classified experimental satellite program believed to serve as the initial trial of new space system technologies such as sensors, communication subsystems, or environmental instruments. SY 30 is a series of Chinese technology demonstration satellites for tests of Earth observation technology. SY 30-1 and 30-2 were launched together in September 2025. The were followed by the launch of SY 30-3 and SY 30-4 in March 2026.
+Source: PSM
+
+Satellite Summary:  
+65851 | SHIYAN-30 01 | LEO / LEO - Standard | Chinese Ministry of Defence (China) | Active / Manoeuverable | Military | Earth Observation / Earth Observation/Imaging (<5m res),Earth Observation / Remote Sensing (>5m res) | 29/09/2025 (0.53 years old) | 5.0 years | Shiyan-30 Chinese military satellites officially with a mission to "test and verify Earth observation technology" but thought to be Earth Observation satellites for China. | Yes - On-board Propulsion | Propulsion Unknown | ,SHIYAN-30 02 | Source: Seradata
+
+65852 | SHIYAN-30 02 | LEO / LEO - Standard | Chinese Ministry of Defence (China) | Active / Manoeuverable | Military | Earth Observation / Earth Observation/Imaging (<5m res),Earth Observation / Remote Sensing (>5m res) | 29/09/2025 (0.53 years old) | 5.0 years | Shiyan-30 Chinese military satellites officially with a mission to "test and verify Earth observation technology" but thought to be Earth Observation satellites for China. | Yes - On-board Propulsion | Propulsion Unknown | SHIYAN-30 01, | Source: Seradata
+
+Space Weather Conditions during maneuver for 56851 JDAY 099, 1526Z  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (2Kp)
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard 
+
+Space Weather Conditions during maneuver for 56852 JDAY 099, 0405Z  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (1Kp)
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard (Read More)
+
+SHIYAN 30 01 / Neighborhood / KBR / JDAY 100 / 21:01Z
+
+2026-04-10T21:01:43.260Z
+
+SHIYAN 30 01 / TRIC Plot / KBR / JDAY 100 / 21:01Z
+
+2026-04-10T21:01:36.640Z
+
+SHIYAN 30 01 / DC Results / KBR / JDAY 100 / 21:01Z
+
+2026-04-10T21:01:29.420Z
+
+SHIYAN 30 01 / PASCHED / Slingshot / JDAY 100 / 15:48Z
+
+2026-04-10T15:48:25.710Z
+
+SHIYAN 30 02 / PASCHED / Slingshot / JDAY 100 / 15:47Z
+
+2026-04-10T15:48:17.770Z
+
+SHIYAN 30 01 / TRIC Plot / LeoLabs / JDAY 100 / 15:47Z
+
+2026-04-10T15:47:48.030Z
+
+SHIYAN 30 02 / PASCHED / LeoLabs / JDAY 100 / 15:47Z
+
+2026-04-10T15:47:36.760Z
+
+SHIYAN 30 02 / Waterfall / LeoLabs / JDAY 100 / 15:47Z
+
+2026-04-10T15:47:27.460Z
+
+SHIYAN 30 02 / TRIC Plot / LeoLabs / JDAY 100 / 15:47Z
+
+2026-04-10T15:47:17.060Z
+
+SHIYAN 30 02 / Residuals / LeoLabs / JDAY 100 / 15:46Z
+
+2026-04-10T15:47:06.560Z
+
+SHIYAN 30 01 / PASCHED / LeoLabs / JDAY 100 / 15:46Z
+
+2026-04-10T15:46:51.850Z
+
+SHIYAN 30 01 / Residuals / LeoLabs / JDAY 100 / 15:46Z
+
+2026-04-10T15:46:41.140Z
+
+SHIYAN 30 01 / Waterfall / LeoLabs / JDAY 100 / 15:46Z
+
+2026-04-10T15:46:28.480Z
+
+SHIYAN 30 01 / TRIC Plot / LeoLabs / JDAY 100 / 15:46Z
+
+2026-04-10T15:46:18.150Z
+
+SHIYAN 30 01 / TRIC Plot / KBR / JDAY 100 / 15:45Z
+
+2026-04-10T15:46:05.260Z
+
+SHIYAN 30 01 / Neighborhood / KBR / JDAY 100 / 15:45Z
+
+2026-04-10T15:45:56.510Z
+
+SHIYAN 30 02 / DC Results / KBR / JDAY 100 / 15:45Z
+
+2026-04-10T15:45:46.770Z
+
+SHIYAN 30 01 / DC Results / KBR / JDAY 100 / 15:45Z
+
+2026-04-10T15:45:37.630Z
+
+2026-04-10T21:04:02.577Z
+
+2026-04-10T15:51:23.188Z
+
+Satellites Number Name Orbit Country 65851 SHIYAN 30 01 China (PRC) 65852 SHIYAN 30 02 China (PRC)
+
+Number Name Orbit Country 65851 SHIYAN 30 01 China (PRC) 65852 SHIYAN 30 02 China (PRC)
+
+65851 SHIYAN 30 01 China (PRC) 65852 SHIYAN 30 02 China (PRC)
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a690c331-743b-4a8b-916e-7b4645f2be5d/SHIYAN%2030%2001%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20100%20/%2021%3A01Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/18818fae-66d2-4d37-adc2-3c0ed23fcd69/SHIYAN%2030%2001%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20100%20/%2021%3A01Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/6646f960-db3d-4c2c-aff3-ae5dbe27468c/SHIYAN%2030%2001%20/%20DC%20Results%20/%20KBR%20/%20JDAY%20100%20/%2021%3A01Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/637a96f1-3867-4ed9-85f3-b357c027a415/SHIYAN%2030%2001%20/%20PASCHED%20/%20Slingshot%20/%20JDAY%20100%20/%2015%3A48Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/0583eaaf-ceec-41e1-a6df-afaa62275407/SHIYAN%2030%2002%20/%20PASCHED%20/%20Slingshot%20/%20JDAY%20100%20/%2015%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/4bbb46d9-85cd-4a8e-ba30-61dc00d0f2f8/SHIYAN%2030%2001%20/%20TRIC%20Plot%20/%20LeoLabs%20/%20JDAY%20100%20/%2015%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/7ac31330-dad9-4ae3-b808-f017907b1d15/SHIYAN%2030%2002%20/%20PASCHED%20/%20LeoLabs%20/%20JDAY%20100%20/%2015%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/46d1e4aa-ffc7-41af-8159-bd68d3447af9/SHIYAN%2030%2002%20/%20Waterfall%20/%20LeoLabs%20/%20JDAY%20100%20/%2015%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/4c0c7794-e433-484d-a56c-3adaa9f81d85/SHIYAN%2030%2002%20/%20TRIC%20Plot%20/%20LeoLabs%20/%20JDAY%20100%20/%2015%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/faa93026-7fde-4bf1-9688-08fe3de87d78/SHIYAN%2030%2002%20/%20Residuals%20/%20LeoLabs%20/%20JDAY%20100%20/%2015%3A46Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/1f80188a-b00e-4c52-949f-2dca188e5173/SHIYAN%2030%2001%20/%20PASCHED%20/%20LeoLabs%20/%20JDAY%20100%20/%2015%3A46Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/64311962-7169-4a28-ada8-24c37176c54e/SHIYAN%2030%2001%20/%20Residuals%20/%20LeoLabs%20/%20JDAY%20100%20/%2015%3A46Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/4ce49c83-27d9-480e-8623-14daaf974afc/SHIYAN%2030%2001%20/%20Waterfall%20/%20LeoLabs%20/%20JDAY%20100%20/%2015%3A46Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/ecf878d7-a860-4822-97eb-0554e464ceaa/SHIYAN%2030%2001%20/%20TRIC%20Plot%20/%20LeoLabs%20/%20JDAY%20100%20/%2015%3A46Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/9b613394-ae4a-4ec3-b075-3eaf46b9fe51/SHIYAN%2030%2001%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20100%20/%2015%3A45Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/c368254f-c5e2-4385-a307-cdc13540a77f/SHIYAN%2030%2001%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20100%20/%2015%3A45Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/563a9355-b509-4023-b0aa-86ec3ccf9367/SHIYAN%2030%2002%20/%20DC%20Results%20/%20KBR%20/%20JDAY%20100%20/%2015%3A45Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/0bd8d4b4-8b22-471f-ba77-fc4f1aafa8bc/SHIYAN%2030%2001%20/%20DC%20Results%20/%20KBR%20/%20JDAY%20100%20/%2015%3A45Z
+
+NOTSO_Maneuver / SHIYAN 30-01 (65851) & SHIYAN 30-02 (65852) / LEO_10Apr-2104Z

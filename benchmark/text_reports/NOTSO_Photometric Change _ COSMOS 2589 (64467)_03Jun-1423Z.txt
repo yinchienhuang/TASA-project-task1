@@ -1,0 +1,223 @@
+NOTSO_Photometric Change / COSMOS 2589 (64467)_03Jun-1423Z
+
+JDay 154 at 1407z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on COSMOS 2589 (64467). This change occurred on 03JUN (JDay 154) between the solar phase angles of -78 deg to -68 deg and appeared to be 1 visual magnitude dimmer. 
+ 
+The cause of the change may be associated with a good visibility conditions against Chinasat 2E (49062). 
+This photometric variation is consistent with the historical pattern of life for this object. Analysis is ongoing.
+ 
+The satellite is in GEO and is currently at 98.02 degs E longitude and is drifting at -.0148W deg/day. Neighborhood is provided. Click link above to view products
+ 
+PAI suggests that COSMOS 2589 is a Russian satellite that supports military operations. The mission of COSMOS 2589 is suspected to be servicing/inspection and RPO activity, with potential counterspace capabilities.
+
+PAI suggests that CHINASAT 2E is a Chinese satellite that supports military operations. The mission of CHINASAT 2E is to provide secure voice and data communications services for PLA units using Ku Band. 
+ 
+Time window of change: 03jun1230z to 03jun1310z
+Solar phase angle window: -78 to -68 degs
+Vismag pre change: 12.80
+Vismag post change: 13.80
+Close approaches within window: TCA w/49062 (CHINASAT 2E) on 03jun 1210z at 46.00 km; with good lighting
+Current longitude: 98.02 E Longitude
+Current drift rate: -0.0148 W degs/day
+ 
+Current TLE as of 03Jun 1402z provided by NorthStar:
+1 64467U 25131A   26154.57007194  .00000000  00000-0  00000-0 0    03
+2 64467   0.0508  63.8141 0001469  87.0917  44.3634  1.00269680096761
+
+==========================================================================
+JDay 154 at 1058z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on COSMOS 2589 (64467). This change occurred on 03JUN (JDay 154) between the solar phase angles of -127 deg to -117 deg and appeared to be at first slightly dimmer at first then 06 visual magnitude brighter. 
+ 
+This photometric change was collected by a single sensor but time wise, the cause of the change may be associated with a good visibility conditions against Chinasat 2E (49062) which was about 45km distant at that time. 
+This photometric variation is not consistent with the historical pattern of life for this object. Analysis is ongoing.
+ 
+The satellite is in GEO and is currently at 98.01 degs E longitude and is drifting at -.0141W deg/day. Neighborhood is provided. Click link above to view products
+ 
+PAI suggests that COSMOS 2589 is a Russian satellite that supports military operations. The mission of COSMOS 2589 is suspected to be servicing/inspection and RPO activity, with potential counterspace capabilities.
+
+PAI suggests that CHINASAT 2E is a Chinese satellite that supports military operations. The mission of CHINASAT 2E is to provide secure voice and data communications services for PLA units using Ku Band. 
+ 
+Time window of change: 03jun0925z to 03jun 1000z
+Solar phase angle window: -127 to -117 degs
+Vismag pre change: 14.00
+Vismag post change: 08.00
+Close approaches within window: TCA w/49062 (CHINASAT 2E) on 03jun 0156z at 45.00 km; with good lighting
+Current longitude: 98.01 E Longitude
+Current drift rate: -0.0141 W degs/day
+ 
+Current TLE as of 03Jun 1043z provided by NorthStar:
+1 64467U 25131A   26154.42164546  .00000000  00000-0  00000-0 0    02
+2 64467   0.0511  64.1887 0001375  89.9899 347.5118  1.00269893096763
+==========================================================================
+JDay 153 at 2102z:
+
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on COSMOS 2589 (64467). This change occurred on 02JUN (JDay 153) between the solar phase angles of 14.3 deg to 24.3 deg and appeared to be approximately 2.0 visual magnitude brighter.
+
+The cause of the change may be associated with a close approach with USA 325 (51281) at 02JUN1825z at 16.19 km. USA 325 had good lighting to view COSMOS 2589 at the POCA. This photometric variation is consistent with the historical pattern of life for this object. However, close approaches between COSMOS 2589 and USA 325 have been observed previously. Analysis is ongoing.
+
+The satellite is in GEO and is currently at 98.03 degs E longitude and is drifting at 0.0051 W deg/day. Neighborhood is provided. Click link above to view products.
+
+PAI suggests that COSMOS 2589 is a Russian satellite that supports military operations. The mission of COSMOS 2589 is suspected to be servicing/inspection and RPO activity, with potential counterspace capabilities.
+
+PAI suggests that USA 325 is a United States satellite. Mission details were not provided in the available PAIR data.
+
+Time window of change: 02JUN1833z to 02JUN1911z
+Solar phase angle window: 14.3 to 24.3 degs
+Vismag pre change: 11.40
+Vismag post change: 9.40
+Close approaches within window: TCA w/(51281) on 02JUN1825z at 16.19 km; with good lighting
+Current longitude: 98.03 E Longitude
+Current drift rate: 0.0051 W degs/day
+
+Current TLE as of 02JUN1944z provided by KBR:
+
+1 64467U 25131A   26153.82228036 +.00000030 +00000-0 +24849-4 0  0004
+2 64467   0.0498  64.5176 0001606  86.9093 133.9035  1.00270297000009
+
+3 Jun, JDAY 154, 1407Z
+
+Space Weather Conditions photometric change (1230-1310Z, JDAY 154)  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard  
+
+*************************************************
+3 Jun, JDAY 154, 1106Z
+
+Red object of interest:
+49062 | CHINASAT 2E | GEO-GSO / Geostationary | Chinese Ministry of Defence (China) | Active / Manoeuverable | Military | Communications / Communications - General | 05/08/2021 (4.83 years old) | 15.0 years | Officially a civil sat for China Satcom but really a Military Shentong 2 communications spacecraft. | CHINASAT 2E or ZHONGXING 2E is probably part of the Shentong programme of Military communications satellites. The Shentong satellites are operated by the Peoples Liberation Army (PLA) to provide secure voice and data communications services for PLA units using Ku Band. | Yes - On-board Propulsion | Propulsion Unknown | Ku | Source: Seradata
+
+**********************************************************************************
+2 Jun, JDAY 153 2043Z
+
+Mission Summary:
+PAIR AI assisted expanded Seradata reference information
+
+64467 | Cosmos 2589 (Kosmos-2589) | HEO-GSO transitioning to GEO / Near-Geosynchronous (originally highly eccentric: apogee ~51,200 km, perigee ~20,374 km; circularizing to GEO from Nov 2025) | Russian Aerospace Forces (VKS) / Reshetnev ISS (manufacturer) — Russia | Active / Maneuverable | Military | Space Situational Awareness / Inspection-RPO / Potential Counterspace | 19/06/2025 (~0.95 years old) | Unknown / Classified | Cosmos 2589 was delivered into a highly eccentric orbit by an Angara A5/Briz-M rocket from Plesetsk on 19 June 2025 — the first operational launch of the Angara A5 — and on 26 June released a sub-satellite subsequently designated Cosmos 2590 (NORAD 64527); Cosmos 2589 is believed to be of the 14F166A type, built on the heavier Express-2000 platform and equipped with SPD-100V electric thrusters for orbit-raising; the satellite is attributed to Reshetnev ISS | Cosmos 2589 is suspected to be an inspector satellite with links to the same Russian companies responsible for the Nivelir inspection satellites; the orbit was oriented to ensure the spacecraft remains over Russian territory; Western agencies characterize Cosmos 2589 and 2590 as possessing similar maneuvering capabilities to Russia's Luch series and view them as part of Russia's broader hybrid warfare strategy — potential "inspector" assets capable of holding adversary satellites at risk | On-Orbit Activity: through summer and autumn 2025, Cosmos 2590 was the primary maneuvering object conducting RPO at distances of 6–15 km, with Cosmos 2589 acting as the "target"; from approximately 2–14 November 2025, Cosmos 2590 conducted close RPO with Cosmos 2589, remaining within 2 km, before the two separated to more than 20,000 km apart by 28 November; from 19 November 2025 Cosmos 2589 began orbit 
+circularization maneuvers every ~12 hours, steadily raising its perigee and lowering its apogee toward standard GEO; Western intelligence agencies were closely monitoring the pair, with concern growing that the programme represents an escalating counterspace threat in the GEO belt | Yes — Electric Propulsion | SPD-100V Hall-effect electric thrusters (Stationary Plasma Drive) | Sources: Russian Strategic Nuclear Forces (russianforces.org), ISR University Issues 135 & 137, COMSPOC, Satcat/Kayhan Space, TASS, SatNews, Angara A5 Wikipedia, SpaceLaunchNow
+Review: DCJ
+
+Standard Seradata info
+64467 | COSMOS 2589 (14F166A) | GEO-GSO / Geostationary | Russian Ministry of Defence - VKS (MORF) (Russia) | Active / Maneuverable | Military | Servicing/Inspection / Inspection Satellite, Cargo / Spacecraft Delivery/Deployment | 19/06/2025 (0.95 years old) | Russian military satellite. Suspected to have satellite inspection or "satellite killing" capabilities. | Yes - On-board Propulsion | Propulsion Unknown |COSMOS 2590 | Source: Seradata
+
+Photometric Change may be due to proximity of USA 325:
+51281 |USA 325 | GEO-GSO / Geostationary | US Space Force (USSF) (United States) | Active / Maneuverable | Military | Servicing/Inspection / Observational/Situational Awareness | 21/01/2022 (4.36 years old) | 5.0 years | USA 325 and USA 324 6 are a pair of space object tracking satellites. | These satellites are operated by the 50th Space Wing at Shriever SFB, Colorado, USA. One part of the USSF 8 Mission is carrying cameras to observe other satellites and space debris. | Yes - On-board Propulsion | Monopropellant (Liquid Catalytic Chemical) - MMH (Monomethyl Hydrazine) | GSSAP 5 (USA 324), | Source: Seradata
+
+Space Weather Conditions during photometric change (0833-1911Z, JDAY 153)  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard (Read More)
+
+COSMOS 2589 / Lightcurve / NorthStar / JDAY 154 / 14:22Z
+
+2026-06-03T14:23:01.040Z
+
+COSMOS 2589 / CATS / NorthStar / JDAY 154 / 14:22Z
+
+2026-06-03T14:22:41.910Z
+
+COSMOS 2589 / TRIC Plot / NorthStar / JDAY 154 / 14:21Z
+
+2026-06-03T14:22:17.730Z
+
+COSMOS 2589 / Neighborhood / NorthStar / JDAY 154 / 14:21Z
+
+2026-06-03T14:21:48.800Z
+
+COSMOS 2589 / TRIC Plot / KBR / JDAY 154 / 14:21Z
+
+2026-06-03T14:21:28.480Z
+
+COSMOS 2589 / Residuals / KBR / JDAY 154 / 14:20Z
+
+2026-06-03T14:21:09.530Z
+
+COSMOS 2589 / Lightcurve / NorthStar / JDAY 154 / 14:18Z
+
+2026-06-03T14:20:27.700Z
+
+COSMOS 2589 / 3D Visualization / NorthStar / JDAY 154 / 10:50Z
+
+2026-06-03T11:27:19.960Z
+
+COSMOS 2589 / Residuals / NorthStar / JDAY 154 / 10:47Z
+
+2026-06-03T11:26:33.030Z
+
+COSMOS 2589 / TRIC Plot / NorthStar / JDAY 154 / 10:47Z
+
+2026-06-03T11:25:43.080Z
+
+COSMOS 2589 / Neighborhood / NorthStar / JDAY 154 / 10:47Z
+
+2026-06-03T11:25:23.010Z
+
+COSMOS 2589 / Lightcurve / NorthStar / JDAY 154 / 10:47Z
+
+2026-06-03T11:24:58.110Z
+
+COSMOS 2589 / CATS / NorthStar / JDAY 154 / 10:47Z
+
+2026-06-03T11:24:22.560Z
+
+COSMOS 2589 / TRIC Plot / KBR / JDAY 153 / 21:05Z
+
+2026-06-02T21:05:29.490Z
+
+COSMOS 2589 / Neighborhood / KBR / JDAY 153 / 21:04Z
+
+2026-06-02T21:05:00.930Z
+
+COSMOS 2589 / Residual  / KBR / JDAY 153 / 21:04Z
+
+2026-06-02T21:04:37.800Z
+
+COSMOS 2589 / Waterfall / EXOMAPS / JDAY 153 / 21:02Z
+
+2026-06-02T21:04:14.500Z
+
+2026-06-03T14:23:25.802Z
+
+2026-06-03T11:27:51.266Z
+
+2026-06-02T21:12:30.287Z
+
+Satellites Number Name Orbit Country 64467 COSMOS 2589 N/A Russia (CIS)
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/5f63f2d3-bd94-42bd-bb21-95aa61fdca3d/COSMOS%202589%20/%20Lightcurve%20/%20NorthStar%20/%20JDAY%20154%20/%2014%3A22Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/d2f5fd06-83a6-44db-92cb-29a432d1fd49/COSMOS%202589%20/%20CATS%20/%20NorthStar%20/%20JDAY%20154%20/%2014%3A22Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/8595845f-e80c-40c1-ab1f-49dc7d8c5328/COSMOS%202589%20/%20TRIC%20Plot%20/%20NorthStar%20/%20JDAY%20154%20/%2014%3A21Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f91524f6-9245-4c86-a764-6963edc0cd92/COSMOS%202589%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20154%20/%2014%3A21Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/7b187bd0-791b-4b21-9845-ce081be7594c/COSMOS%202589%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20154%20/%2014%3A21Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/eb6c7238-1cfb-4c11-b6ff-a536d74df872/COSMOS%202589%20/%20Residuals%20/%20KBR%20/%20JDAY%20154%20/%2014%3A20Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/0ae815c7-ef03-464f-a615-a73213ca5cfc/COSMOS%202589%20/%20Lightcurve%20/%20NorthStar%20/%20JDAY%20154%20/%2014%3A18Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/4524eddf-8d82-4f66-bdbc-60dada63e9fb/COSMOS%202589%20/%203D%20Visualization%20/%20NorthStar%20/%20JDAY%20154%20/%2010%3A50Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/9f71d29d-a245-4138-8e69-4c272d915a65/COSMOS%202589%20/%20Residuals%20/%20NorthStar%20/%20JDAY%20154%20/%2010%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/19347a82-4423-4a52-9a6c-918decbdbe1f/COSMOS%202589%20/%20TRIC%20Plot%20/%20NorthStar%20/%20JDAY%20154%20/%2010%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/600e7c6c-1419-471b-9a9f-e789d6d29c74/COSMOS%202589%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20154%20/%2010%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/52089678-121c-4602-912e-e00da978261d/COSMOS%202589%20/%20Lightcurve%20/%20NorthStar%20/%20JDAY%20154%20/%2010%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/84aaadd0-81dd-433d-a740-45f2bb85afbb/COSMOS%202589%20/%20CATS%20/%20NorthStar%20/%20JDAY%20154%20/%2010%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2547d74a-3d48-4036-b519-90d462844003/COSMOS%202589%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20153%20/%2021%3A05Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/b793fc27-e789-4196-9e9a-73246fd1d493/COSMOS%202589%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20153%20/%2021%3A04Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/d0f8d983-2367-4ec4-8101-81f60fd71707/COSMOS%202589%20/%20Residual%20%20/%20KBR%20/%20JDAY%20153%20/%2021%3A04Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/bba3434d-38b9-4801-a106-521c833663d6/COSMOS%202589%20/%20Waterfall%20/%20EXOMAPS%20/%20JDAY%20153%20/%2021%3A02Z

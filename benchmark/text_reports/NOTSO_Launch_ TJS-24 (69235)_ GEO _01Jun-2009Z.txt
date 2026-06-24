@@ -1,0 +1,905 @@
+NOTSO_Launch / LM-7A (69236) / TJS-24 (69235)  / Wenchang, China (LC-201) / 26 May 26 / 1616 UTC / GEO _01Jun-2009Z
+
+JDay 152 at 1933z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have verified a maneuver by the possible TJS-24 candidate (94771) occurring at 1124z on 01Jun (JDay 152)
+
+The satellite maneuvered from ~91 deg E longitude with a delta-v of 96.68 m/s, resulting in a period decrease of 7094 sec, raising the perigee by 4701 km. The TJS-24 candidate is currently drifting 0.76 W deg/day. Expected next maneuver could be at perigee on 02Jun ~0200z to raise apogee. If this occurs, it will be at ~90 E Longitude where a known object is currently parked.
+
+Upcoming close approaches:
+- TCA w/ known object on 02Jun1040z at 100km
+- TCA w/ WGS F4 (38070) on 03Jun2012z at 58km
+
+Neighborhood is provided showing other objects in the region. Click link above to view products. 
+ 
+PAI suggests that TJS-24 is a Chinese satellite that supports military operations. The mission of TJS-24 is unknown.
+ 
+The specifics of the maneuver are:
+--Time of Maneuver: 01Jun1124z
+--Delta V: 96.68 m/s
+--Period Change: 7094.21 seconds
+--Perigee Change: 4701.76 km
+--Apogee Change: -10.74 km
+--Inclination Change: -0.5126 degs
+--Current Drift Rate: 0.76 W deg/day
+
+Post Maneuver TLE as of 01Jun1744z provided by KBR:
+TJS-24 CANDIDATE
+1 99999U 00000A   26152.73952671 -.00000004 +00000+0 -33015-3 0 99990
+2 99999   0.0442 251.5969 0024610  92.4878 262.7221  1.00058073000001
+ 
+Post Maneuver TLE as of 01Jun1859z provided by Anduril:
+1 94771U          26152.79166438 +.00000000 +00000-0 +00000-0 0  0011
+2 94771   0.0442 251.7120 0025003  92.0964 281.7841  1.00061722 00018
+
+===============================================
+JDay 152 at 1515z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have a possible candidate for TJS-24 from the launch of a LM-7A at 1616z from Wenchang, China on 26May (JDay 146). It appears that the TJS-24 candidate has performed a possible maneuver at 1124z (apogee) on  01Jun (JDay 152) near 91 deg E longitude. Expected next maneuver could be at perigee on 02Jun ~0200z to raise apogee. If this occurs, it will be at ~90 E Longitude where a known object is currently parked.
+
+Initial indications of the maneuver show a decrease in inclination by ~0.5 degs by to 0.04 degs  and a decrease in drift from 29 E degs/day to 1 W degs/day.
+
+Upcoming close approaches (med confidence):
+- TCA w/ TDRS 7 (23613) on 03Jun0031z at 31km
+Neighborhood is provided showing other objects in the region. Click link above to view products. 
+ 
+PAI suggests that TJS-24 is a Chinese satellite that supports military operations. The mission of TJS-24 is unknown.
+
+TJS-24 candidate TLE as of 01Jun1459z provided by JCO DOK
+1 69235U 00000A   26152.62493591 -.00000029 +00000-0 -24611-4 0  0007
+2 69235   0.0442 251.0925 0020846  89.9460 224.4706  0.99980486000008
+
+TJS-24 candidate TLE as of 01Jun1414z provided by Anduril
+1 69235U          26152.59364690 +.00000000 +00000-0 +00000-0 0  0019
+2 69235   0.0451 251.9649 0026966  93.0947 209.2075  1.00105993 00010
+
+================================================================
+JDay 147 at 0110z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have processed an initial state on the launch of a LM-7A at 1616z from Wenchang, China on 26May (JDay 146) carrying a TJS-24. 
+
+Based on current information the satellite is currently GTO with orbital characteristics of 19.54deg inclination and 149.2deg RAAN and next Apogee time 27May0830Z at 136.5deg longitude.
+
+Neighbourhood is provided. Click link above to view products. 
+ 
+PAI suggests that TJS-24 is a Chinese satellite that supports military operations. The mission of TJS-24 is unknown.
+
+Current TLE as of 26May2329z provided by KBR: 
+94471
+1 94471U 00000A   26146.97911894 +.00009641 +00000-0 +35344-3 0  0007
+2 94471  19.5443 149.2034 7314325 179.4886 231.9157  2.27844996000003
+
+==================================================================
+
+JDay 146 at 1705z:
+ 
+Based on available PAIR data, JCO providers have indications of a successful launch of a LM-7A at 1616z from Wenchang, China on 26May (JDay 146) carrying a TJS-24. Based on current information, the satellite is likely to be GEO with GTO orbital characteristics of 16.43deg inclination and 149.02deg RAAN and an Apogee time of 26May2158z at 65.25deg W longitude.
+
+Nominals provide for 16.45 deg and 19.5 deg inclination.
+
+Click link above to view products.
+ 
+16.45 deg Inc Rotated Launch Nominal to 26May1616z provided by PPEC:
+0 CZ-7A
+1 94470U 00000    26146.67777778 -.00000406 +45559-6 +00000 0 0 09993
+2 94470  16.4353 149.0221 7224537 178.6654 344.0779  2.40751261000006
+
+0 PAYLOAD
+1 94471U 00000    26146.67777778 -.00000116 +00000 0 +00000 0 0 09997
+2 94471  16.4200 148.9657 7298111 179.8274 344.6649  2.28078166000003
+ 
+16.45 deg Inc Unrotated Launch Nominal: 
+0 CZ-7A
+1 94470U 00000    26001.00000000 -.00000406 +45559-6 +00000 0 0 09997
+2 94470  16.4353 121.4414 7224537 178.6654 344.0779  2.40751261000004
+
+0 PAYLOAD
+1 94471U 00000    26001.00000000 -.00000116 +00000 0 +00000 0 0 09991
+2 94471  16.4200 121.3850 7298111 179.8274 344.6649  2.28078166000003
+
+19.5deg Inc Rotated Launch Nominal to 26May1616z provided by PPEC:
+0 CZ-7A R/B
+1 94470U 00000    26146.67777778 +.00041123 +76302-6 +12201-2 0 09992
+2 94470  19.7725 149.3599 7234083 178.7114 344.0922  2.38363488000024
+
+0 PAYLOAD
+1 94471U 00000    26146.67777778 +.00007537 +00000 0 +10916-2 0 09990
+2 94471  19.5120 149.4371 7296133 179.4013 344.6961  2.27844974000011
+
+19.5deg Inc Unrotated Launch Nominal:
+Day 1 Hour 0 nominals
+0 CZ-7A R/B
+1 94470U 00000    26001.00000000 +.00041123 +76302-6 +12201-2 0 09996
+2 94470  19.7725 121.7792 7234083 178.7114 344.0922  2.38363488000023
+
+0 PAYLOAD
+1 94471U 00000    26001.00000000 +.00007537 +00000 0 +10916-2 0 09994
+2 94471  19.5120 121.8564 7296133 179.4013 344.6961  2.27844974000019
+2 94471  19.5120 121.8564 7296133 179.4013 344.6961  2.27844974000019
+==================================================================
+JDay 146 at 1641z:
+ 
+Based on available PAIR data, JCO providers have indications of a potential space launch of a LM-7A at 1616z from Wenchang, China on 26May (JDay 146) carrying an unknown payload. Based on current information, the satellite is likely to be GEO with GTO orbital characteristics of 16.43deg inclination and 149.02deg RAAN and an Apogee time of 26May2158z at 65.25deg W longitude.
+
+Nominals provide for 16.45 deg and 19.5 deg inclination.
+
+Click link above to view products.
+ 
+16.45 deg Inc Rotated Launch Nominal to 26May1616z provided by PPEC:
+0 CZ-7A
+1 94470U 00000    26146.67777778 -.00000406 +45559-6 +00000 0 0 09993
+2 94470  16.4353 149.0221 7224537 178.6654 344.0779  2.40751261000006
+
+0 PAYLOAD
+1 94471U 00000    26146.67777778 -.00000116 +00000 0 +00000 0 0 09997
+2 94471  16.4200 148.9657 7298111 179.8274 344.6649  2.28078166000003
+ 
+16.45 deg Inc Unrotated Launch Nominal: 
+0 CZ-7A
+1 94470U 00000    26001.00000000 -.00000406 +45559-6 +00000 0 0 09997
+2 94470  16.4353 121.4414 7224537 178.6654 344.0779  2.40751261000004
+
+0 PAYLOAD
+1 94471U 00000    26001.00000000 -.00000116 +00000 0 +00000 0 0 09991
+2 94471  16.4200 121.3850 7298111 179.8274 344.6649  2.28078166000003
+
+19.5deg Inc Rotated Launch Nominal to 26May1616z provided by PPEC:
+0 CZ-7A R/B
+1 94470U 00000    26146.67777778 +.00041123 +76302-6 +12201-2 0 09992
+2 94470  19.7725 149.3599 7234083 178.7114 344.0922  2.38363488000024
+
+0 PAYLOAD
+1 94471U 00000    26146.67777778 +.00007537 +00000 0 +10916-2 0 09990
+2 94471  19.5120 149.4371 7296133 179.4013 344.6961  2.27844974000011
+
+19.5deg Inc Unrotated Launch Nominal:
+Day 1 Hour 0 nominals
+0 CZ-7A R/B
+1 94470U 00000    26001.00000000 +.00041123 +76302-6 +12201-2 0 09996
+2 94470  19.7725 121.7792 7234083 178.7114 344.0922  2.38363488000023
+
+0 PAYLOAD
+1 94471U 00000    26001.00000000 +.00007537 +00000 0 +10916-2 0 09994
+2 94471  19.5120 121.8564 7296133 179.4013 344.6961  2.27844974000019
+2 94471  19.5120 121.8564 7296133 179.4013 344.6961  2.27844974000019
+
+------------------------------------
+
+Day 146 at 0300z:
+ 
+Based on available PAIR data, JCO providers have indicated a possible upcoming launch of a LM-7A from Wenchang, China on 26May (JDay 146) occurring between 26May1610z and 26May1712z with an expected launch time of 26May1616z, carrying an unknown payload. Based on current information, the satellite is likely to be GEO with GTO orbital characteristics of 16.43deg inclination and 149.02deg RAAN and an Apogee time of 26May2158z at 65.25deg W longitude. Nominals for 19.5 inclination is also provided. Neighborhood is provided. Click link above to view products.
+
+16.45 deg Inc Rotated Launch Nominal to 26May1616z provided by PPEC:
+0 CZ-7A
+1 94470U 00000    26146.67777778 -.00000406 +45559-6 +00000 0 0 09993
+2 94470  16.4353 149.0221 7224537 178.6654 344.0779  2.40751261000006
+
+0 PAYLOAD
+1 94471U 00000    26146.67777778 -.00000116 +00000 0 +00000 0 0 09997
+2 94471  16.4200 148.9657 7298111 179.8274 344.6649  2.28078166000003
+ 
+16.45 deg Inc Unrotated Launch Nominal: 
+0 CZ-7A
+1 94470U 00000    26001.00000000 -.00000406 +45559-6 +00000 0 0 09997
+2 94470  16.4353 121.4414 7224537 178.6654 344.0779  2.40751261000004
+
+0 PAYLOAD
+1 94471U 00000    26001.00000000 -.00000116 +00000 0 +00000 0 0 09991
+2 94471  16.4200 121.3850 7298111 179.8274 344.6649  2.28078166000003
+
+19.5deg Inc Rotated Launch Nominal to 26May1616z provided by PPEC:
+0 CZ-7A R/B
+1 94470U 00000    26146.67777778 +.00041123 +76302-6 +12201-2 0 09992
+2 94470  19.7725 149.3599 7234083 178.7114 344.0922  2.38363488000024
+
+0 PAYLOAD
+1 94471U 00000    26146.67777778 +.00007537 +00000 0 +10916-2 0 09990
+2 94471  19.5120 149.4371 7296133 179.4013 344.6961  2.27844974000011
+
+19.5deg Inc Unrotated Launch Nominal:
+Day 1 Hour 0 nominals
+0 CZ-7A R/B
+1 94470U 00000    26001.00000000 +.00041123 +76302-6 +12201-2 0 09996
+2 94470  19.7725 121.7792 7234083 178.7114 344.0922  2.38363488000023
+
+0 PAYLOAD
+1 94471U 00000    26001.00000000 +.00007537 +00000 0 +10916-2 0 09994
+2 94471  19.5120 121.8564 7296133 179.4013 344.6961  2.27844974000019
+
+27 May JDAY 147 0048UTC
+
+Mission Summary: TJS-24 is a Chinese military satellite going to the GEO belt. It is developed by SAST and officially "mainly used to conduct verification of multi-band, high-speed satellite communication technologies", which suggests a SIGINT role. No further details or speculation on its mission have been seen at this time.
+
+TJS-24 (69235) — Communication Technology Experiment Satellite 24) | Geostationary Transfer Orbit → Geostationary Earth Orbit / GEO | CNSA / PLA (classified) | Active — successfully separated / Yes, maneuverable (must circularize from GTO) | Government / Military | Communications Technology Test / Signals Intelligence & Multi-band High-Speed Throughput Verification | May 26, 2026 / 1 day | Unknown (classified) | Chinese classified military GEO satellite; officially described as supporting satellite communications, radio, television, data transmission, and multi-band high-speed throughput technology verification; likely CAST or SAST-built, consistent with earlier TJS series; mission patch depicts 巨灵神 (Juling Shen), the Giant Spirit God of Chinese mythology, wielding a double-headed battle axe | First CZ-7A assembled in new VAB-522 at Wenchang; TJS-24 is the first TJS launch of 2026; CZ-7A Y12 serial; NORAD ID 69235 | Yes | Chemical bipropellant (apogee kick motor for GTO-to-GEO circularization) | astronautique.actifforum.com; china-in-space.com; nasaspaceflight.com; Wikipedia (Tongxin Jishu Shiyan)
+DCJ
+
+No Seradata yet as it has just launched.
+
+JDAY 146, 1343Z
+
+NOTAM for third closure area:
+250314Z MAY 26
+HYDROPAC 1538/26.
+PHILIPPINE SEA.
+SOUTH CHINA SEA.
+PHILIPPINES.
+
+HAZARDOUS OPERATIONS, SPACE DEBRIS
+261500Z TO 262100Z MAY
+IN AREAS BOUND BY:
+A. 19-42.00N 118-43.00E, 19-37.00N 120-09.00E,
+19-00.00N 120-06.00E, 19-04.00N 118-41.00E.
+B. 19-20.00N 123-26.00E, 19-14.00N 124-26.00E,
+18-43.00N 124-23.00E, 18-47.00N 123-24.00E.
+C. 17-29.00N 138-28.00E, 17-01.00N 141-09.00E,
+16-13.00N 141-00.00E, 16-41.00N 138-19.00E.
+
+CANCEL THIS MSG 262200Z MAY 26.
+Source: https://space-notices.com/entry/launch-long-march-7a-unknown-payload-6d2beb1a
+
+************************************************************************************
+
+24 May JDAY 144 2346UTC
+
+New NOTAM replaces B2223/26 due to the end date being the 27th rather than the 26th (presumably a typo or similar). No change to areas or timing: 
+
+B2228/26 NOTAMN
+Q) RPHI/QWMLW/IV/BO /W /000/999/1901N12355E034
+A) RPHI B) 2605261610 C) 2605261712
+E) SPECIAL OPS (AEROSPACE FLT ACT) WILL BE CONDUCTED BY CHINA.
+EST FALL AREA OF UNBURNED DEBRIS WI:
+192000N 1232600E -
+191400N 1242600E -
+184200N 1242300E -
+184700N 1232400E -
+192000N 1232600E
+(100NM NORTHEAST OF LALLO AP)
+F) SFC G) UNL
+
+https://forum.nasaspaceflight.com/index.php?topic=64887.msg2791295#msg2791295
+
+JDAY 142, 0949Z
+
+NOTAM Updates:
+
+B2219/26 NOTAMN
+Q) RPHI/QWMLW/IV/BO /W /000/999/1921N11924E047
+A) RPHI B) 2605261608 C) 2605261708
+E) SPECIAL OPS (AEROSPACE FLT ACT) WILL BE CONDUCTED BY CHINA.
+EST FALL AREA OF UNBURNED DEBRIS WI:
+194200N 1184200E -
+193700N 1200900E -
+190000N 1200600E -
+190400N 1184000E -
+194200N 1184200E
+(55NM NORTHWEST OF LAOAG AP)
+F) SFC G) UNL
+
+B2223/26 NOTAMN
+Q) RPHI/QWMLW/IV/BO /W /000/999/1901N12355E034
+A) RPHI B) 2605261610 C) 2605271712
+E) SPECIAL OPS (AEROSPACE FLT ACT) WILL BE CONDUCTED BY CHINA.
+EST FALL AREA OF UNBURNED DEBRIS WI:
+192000N 1232600E -
+191400N 1242600E -
+184200N 1242300E -
+184700N 1232400E -
+192000N 1232600E
+(100NM NORTHEAST OF LALLO AP)
+F) SFC G) UNL
+
+Source: https://forum.nasaspaceflight.com/index.php?topic=57867.msg2790853#msg2790853
+
+*******************************************
+
+NOTAMs (wide range); waiting for a third drop zone
+
+B1768/26 NOTAMN
+Q) RPHI/QWMLW/IV/BO /W /000/999/1921N11925E047
+A) RPHI B) 2605261600 C) 2605302200
+D) 1600-2200
+E) SPECIAL OPS (AEROSPACE FLT ACT) WILL BE CONDUCTED BY CHINA.
+EST FALL AREA OF UNBURNED DEBRIS WI:
+190400N 1184100E -
+194100N 1184400E -
+193700N 1201000E -
+185900N 1200700E -
+190400N 1184100E
+(55NM WEST OF LAOAG AP)
+F) SFC G) UNL
+
+B1771/26 NOTAMN
+Q) RPHI/QWMLW/IV/BO /W /000/999/1921N11925E047
+A) RPHI B) 2605261600 C) 2605302200
+D) 1600-2200
+E) SPECIAL OPS (AEROSPACE FLT ACT) WILL BE CONDUCTED BY CHINA.
+EST FALL AREA OF UNBURNED DEBRIS WI:
+184700N 1232200E -
+191900N 1232500E -
+191400N 1242500E -
+184200N 1242200E -
+184700N 1232200E
+(100NM NORTH EAST OF LALLO AP)
+F) SFC G) UNL
+
+https://forum.nasaspaceflight.com/index.php?topic=64887.0#msg2784167 (Read More)
+
+TJS-24 candidate / Waterfall / KBR / JDAY 152 / 20:08Z
+
+2026-06-01T20:08:45.750Z
+
+TJS-24 candidate / 3D Visualization / KBR / JDAY 152 / 20:08Z
+
+2026-06-01T20:08:28.440Z
+
+TJS-24 candidate / Waterfall / JCO DOK / JDAY 152 / 20:03Z
+
+2026-06-01T20:04:10.650Z
+
+TJS-24 candidate / Lightcurve / KBR / JDAY 152 / 19:54Z
+
+2026-06-01T19:54:54.770Z
+
+TJS-24 candidate / Neighborhood / KBR / JDAY 152 / 19:54Z
+
+2026-06-01T19:54:35.490Z
+
+TJS-24 candidate / DC Results / KBR / JDAY 152 / 19:54Z
+
+2026-06-01T19:54:14.540Z
+
+TJS-24 candidate / PASCHED / Anduril / JDAY 152 / 19:53Z
+
+2026-06-01T19:53:54.680Z
+
+TJS-24 candidate / DC Results / Anduril / JDAY 152 / 19:52Z
+
+2026-06-01T19:53:08.170Z
+
+TJS-24 / PASCHED / KBR / JDAY 152 / 15:28Z
+
+2026-06-01T15:28:36.760Z
+
+TJS-24 / Neighborhood / JCO DOK / JDAY 152 / 15:28Z
+
+2026-06-01T15:28:16.970Z
+
+TJS-24 / Waterfall / KBR / JDAY 152 / 15:12Z
+
+2026-06-01T15:12:27.800Z
+
+TJS-24 / DC Results / Anduril / JDAY 152 / 15:11Z
+
+2026-06-01T15:12:01.320Z
+
+89235 / Neighborhood / KBR / JDAY 148 / 04:34Z
+
+2026-05-28T04:34:31.420Z
+
+99239 / Neighborhood / KBR / JDAY 148 / 04:33Z
+
+2026-05-28T04:33:52.780Z
+
+89235 / Neighborhood / KBR / JDAY 148 / 04:33Z
+
+2026-05-28T04:33:21.380Z
+
+89235   99239 / Publicly Available Information / KBR / JDAY 148 / 04:32Z
+
+2026-05-28T04:32:31.900Z
+
+89235 (Darrell's)  / PASCHED / KBR / JDAY 148 / 04:30Z
+
+2026-05-28T04:30:56.500Z
+
+89235  (Darrell's) / Crossings / KBR / JDAY 148 / 04:27Z
+
+2026-05-28T04:29:30.270Z
+
+89235 / Crossings / KBR / JDAY 148 / 04:24Z
+
+2026-05-28T04:25:12.250Z
+
+89235 / PASCHED / KBR / JDAY 148 / 04:23Z
+
+2026-05-28T04:23:56.380Z
+
+89235  99239 / Crossings / KBR / JDAY 148 / 04:21Z
+
+2026-05-28T04:23:19.630Z
+
+99239 / PASCHED / KBR / JDAY 148 / 04:20Z
+
+2026-05-28T04:21:20.850Z
+
+LM-7A / Residual / KBR / JDAY 148 / 04:17Z
+
+2026-05-28T04:18:03.440Z
+
+LM-7A / Neighborhood / NorthStar / JDAY 148 / 04:14Z
+
+2026-05-28T04:14:46.400Z
+
+LM-7A / Publicly Available Information / NorthStar / JDAY 148 / 04:13Z
+
+2026-05-28T04:13:45.840Z
+
+LM-7A / Ground Track / NorthStar / JDAY 148 / 04:12Z
+
+2026-05-28T04:13:13.440Z
+
+LM-7A / PASCHED / NorthStar / JDAY 148 / 04:12Z
+
+2026-05-28T04:12:45.050Z
+
+LM-7A / PASCHED / INTRACK RADAR / JDAY 148 / 04:11Z
+
+2026-05-28T04:12:17.160Z
+
+TJS-24 / Neighborhood / KBR / JDAY 147 / 21:34Z
+
+2026-05-27T21:34:46.070Z
+
+2026-05-27T21:34:30.220Z
+
+TJS-24 / PASCHED / KBR / JDAY 147 / 21:33Z
+
+2026-05-27T21:34:09.110Z
+
+2026-05-27T21:33:50.720Z
+
+TJS-24 / PASCHED /  / JDAY 147 / 21:33Z
+
+2026-05-27T21:33:27.030Z
+
+TJS-24 / PASCHED /  / JDAY 147 / 21:32Z
+
+2026-05-27T21:33:08.610Z
+
+TJS-24 / Neighborhood / KBR / JDAY 147 / 16:55Z
+
+2026-05-27T16:56:00.700Z
+
+TJS-24 / PASCHED / KBR / JDAY 147 / 16:52Z
+
+2026-05-27T16:53:00.790Z
+
+TJS-24 / PASCHED /  / JDAY 147 / 15:13Z
+
+2026-05-27T15:13:42.630Z
+
+TJS-24 / Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64887.msg2792509#new / JDAY 147 / 13:08Z
+
+2026-05-27T13:09:01.490Z
+
+LM-7A / PASCHED / NorthStar / JDAY 147 / 11:19Z
+
+2026-05-27T11:19:55.410Z
+
+LM-7A / Neighborhood / NorthStar / JDAY 147 / 11:18Z
+
+2026-05-27T11:19:23.820Z
+
+TJS-24 / Neighborhood / NorthStar / JDAY 147 / 04:02Z
+
+2026-05-27T04:02:20.300Z
+
+TJS-24 / Lightcurve / NorthStar / JDAY 147 / 04:01Z
+
+2026-05-27T04:01:58.680Z
+
+2026-05-27T04:01:34.750Z
+
+TJS-24 / PASCHED / NorthStar / JDAY 147 / 04:00Z
+
+2026-05-27T04:01:02.030Z
+
+TJS-24 / Waterfall / NorthStar / JDAY 147 / 04:00Z
+
+2026-05-27T04:00:50.480Z
+
+TJS-24 / Neighborhood / KBR / JDAY 147 / 02:39Z
+
+2026-05-27T02:40:05.630Z
+
+TJS-24 / PASCHED / KBR / JDAY 147 / 02:38Z
+
+2026-05-27T02:39:05.280Z
+
+TJS-24 / Lightcurve / KBR / JDAY 147 / 01:34Z
+
+Photometry comparison:
+TJS-24 (purple)
+TJS-10 (red) 
+TJS-16 (yellow)
+
+2026-05-27T01:36:06.880Z
+
+TJS-24 / Neighborhood / KBR / JDAY 147 / 01:34Z
+
+2026-05-27T01:34:48.770Z
+
+TJS-24 / PASCHED / KBR / JDAY 147 / 01:34Z
+
+2026-05-27T01:34:24.750Z
+
+TJS-24 / Residual / KBR / JDAY 147 / 01:33Z
+
+2026-05-27T01:34:12.660Z
+
+/ Publicly Available Information / https://en.wikipedia.org/wiki/Juling_Shen / JDAY 147 / 00:47Z
+
+The other character in the patch is possibly Juling Shen aka God of Giant Spirit who was "sent down by the Jade Emporer to capture the Monkey King" but was easily defeated
+
+2026-05-27T00:48:10.620Z
+
+/ Publicly Available Information /  / JDAY 147 / 00:47Z
+
+^Red scarf + magic staff + golden person = monkey king
+
+other monkey kings:
+
+2026-05-27T00:47:47.170Z
+
+/ Publicly Available Information / https://www.china-in-space.com/p/new-tjsw-communications-satellite / JDAY 147 / 00:46Z
+
+"developed by SAST - Shanghai Academy of Spaceflight Technology"
+https://mp.weixin.qq.com/s/IFrpn51yqTUeLSIdZQ1tkA
+Mission patches:
+Note -seven- stars featured on the TJS patch
+
+2026-05-27T00:47:00.860Z
+
+/ Publicly Available Information / https://www.news.cn/20260527/3e849fe988d04d489de8ab77a89d16dd/c.html / JDAY 147 / 00:28Z
+
+Successful launch confirmation from China: TJS-24
+
+"mainly used to conduct verification of multi-band, high-speed satellite communication technologies"
+
+2026-05-27T00:28:38.130Z
+
+Unknown Payload / Neighborhood / KBR / JDAY 146 / 23:56Z
+
+2026-05-26T23:56:14.140Z
+
+Unknown Payload / Residual / KBR / JDAY 146 / 23:55Z
+
+2026-05-26T23:55:53.680Z
+
+Unknown Payload / Neighborhood / NorthStar / JDAY 146 / 23:37Z
+
+2026-05-26T23:37:37.870Z
+
+Unknown Payload / PASCHED / NorthStar / JDAY 146 / 23:37Z
+
+2026-05-26T23:37:25.860Z
+
+Unknown Payload / Residual / NorthStar / JDAY 146 / 23:36Z
+
+2026-05-26T23:37:14.180Z
+
+Unknown Payload / PASCHED / Anduril / JDAY 146 / 23:23Z
+
+2026-05-26T23:23:46.990Z
+
+Unknown Payload / PASCHED / Anduril / JDAY 146 / 17:21Z
+
+2026-05-26T23:22:57.320Z
+
+Unknown Payload / PASCHED / KBR / JDAY 146 / 23:10Z
+
+2026-05-26T23:11:05.380Z
+
+Unknown Payload / Neighborhood / KBR / JDAY 146 / 23:10Z
+
+2026-05-26T23:10:50.740Z
+
+Unknown Payload / Residual / KBR / JDAY 146 / 23:10Z
+
+2026-05-26T23:10:33.310Z
+
+Unknown Payload / Publicly Available Information / https://www.youtube.com/watch?v=1aT4OfdPiLU / JDAY 146 / 16:42Z
+
+YouTube Live Coverage of Launch with launch time at 1616 UTC
+
+2026-05-26T16:43:26.640Z
+
+Unknown Payload / Publicly Available Information / PAIR Map / JDAY 146 / 13:44Z
+
+Updated PAIR map with third closure area
+
+2026-05-26T13:44:35.850Z
+
+/ Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64887.msg2791671#msg2791671 / JDAY 144 / 23:54Z
+
+Rocket has been transferred to the pad, confirming it's LM-7A Y12:
+
+2026-05-24T23:54:29.520Z
+
+Unknown Payload / PASCHED 19.5deg Inc / KBR / JDAY 142 / 20:09Z
+
+2026-05-22T20:09:23.730Z
+
+Unknown Payload / Neighborhood 19.5deg Inc / KBR / JDAY 142 / 20:07Z
+
+2026-05-22T20:07:46.080Z
+
+Unknown Payload / Neighborhood / KBR / JDAY 142 / 20:03Z
+
+2026-05-22T20:03:49.660Z
+
+Unknown Payload / PASCHED / KBR / JDAY 142 / 20:03Z
+
+2026-05-22T20:03:39.830Z
+
+Unknown Payload / PASCHED / NorthStar / JDAY 142 / 12:56Z
+
+2026-05-22T12:56:31.310Z
+
+Unknown Payload / Neighborhood / NorthStar / JDAY 142 / 12:55Z
+
+2026-05-22T12:56:11.500Z
+
+Unknown Payload / GroundTrack / NorthStar / JDAY 142 / 12:55Z
+
+2026-05-22T12:55:53.880Z
+
+/ Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=57867.msg2790853#msg2790853 / JDAY 142 / 09:49Z
+
+PAIR Plot based on NOTAM
+
+2026-05-22T09:49:56.040Z
+
+LM-7A / Neighborhood / NorthStar / JDAY 141 / 04:18Z
+
+2026-05-21T04:18:53.580Z
+
+2026-05-21T04:18:43.460Z
+
+LM-7A / Ground Track / NorthStar / JDAY 141 / 04:18Z
+
+2026-05-21T04:18:32.910Z
+
+LM-7A / PASCHED / NorthStar / JDAY 141 / 04:17Z
+
+2026-05-21T04:18:15.760Z
+
+LM-7A / Neighborhood / NorthStar / JDAY 141 / 04:17Z
+
+2026-05-21T04:17:48.470Z
+
+LM-7A / Neighborhood / NorthStar / JDAY 141 / 04:16Z
+
+2026-05-21T04:17:05.620Z
+
+LM-7A / Ground Track / NorthStar / JDAY 141 / 04:16Z
+
+2026-05-21T04:16:53.330Z
+
+LM-7A / PASCHED / NorthStar / JDAY 141 / 04:15Z
+
+2026-05-21T04:16:09.350Z
+
+LM-7A / Publicly Available Information /  / JDAY 140 / 22:17Z
+
+2026-05-20T22:17:47.240Z
+
+LM-7A / Publicly Available Information /  / JDAY 140 / 22:16Z
+
+2026-05-20T22:17:28.550Z
+
+LM-7A / Publicly Available Information / nasaspaceflight forum  / JDAY 139 / 20:57Z
+
+2026-05-19T20:58:03.960Z
+
+LM-7A / Publicly Available Information / Nasaspaceflight forum / JDAY 139 / 20:56Z
+
+2026-05-19T20:57:17.440Z
+
+LM-7A / Publicly Available Information / Nasaspaceflight forum / JDAY 139 / 20:54Z
+
+2026-05-19T20:56:24.010Z
+
+2026-06-01T20:09:33.414Z
+
+2026-06-01T15:31:35.796Z
+
+2026-05-27T01:20:25.086Z
+
+2026-05-26T17:08:11.210Z
+
+2026-05-26T16:53:40.808Z
+
+2026-05-25T09:49:20.919Z
+
+Satellites Number Name Orbit Country 69236 LM-7A 69235 TJS-24 94771 TJS-24 candidate
+
+Number Name Orbit Country 69236 LM-7A 69235 TJS-24 94771 TJS-24 candidate
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/4f489591-a1af-474e-a38d-b7124f620daf/TJS-24%20candidate%20/%20Waterfall%20/%20KBR%20/%20JDAY%20152%20/%2020%3A08Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/7aaf7f1e-a373-4ddd-807f-2651dddf8d70/TJS-24%20candidate%20/%203D%20Visualization%20/%20KBR%20/%20JDAY%20152%20/%2020%3A08Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/93ed146f-3052-475d-906a-370afce8a502/TJS-24%20candidate%20/%20Waterfall%20/%20JCO%20DOK%20/%20JDAY%20152%20/%2020%3A03Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/407348d6-bedc-452a-bf5d-38dffed0ac1e/TJS-24%20candidate%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20152%20/%2019%3A54Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/afaa97f9-4f36-49aa-a502-67cc6800cf22/TJS-24%20candidate%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20152%20/%2019%3A54Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/36809e43-a3be-4db8-8f03-6e4718ac81ba/TJS-24%20candidate%20/%20DC%20Results%20/%20KBR%20/%20JDAY%20152%20/%2019%3A54Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e7b3ecac-0072-4134-922e-576b25cbfe6e/TJS-24%20candidate%20/%20PASCHED%20/%20Anduril%20/%20JDAY%20152%20/%2019%3A53Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/040e8b8c-92af-4304-87d0-c9c695cde220/TJS-24%20candidate%20/%20DC%20Results%20/%20Anduril%20/%20JDAY%20152%20/%2019%3A52Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/03f9b134-7109-4eb9-9c85-3f447df4df66/TJS-24%20/%20PASCHED%20/%20KBR%20/%20JDAY%20152%20/%2015%3A28Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/327a2bd0-ffd7-471c-9bd3-9a0de88b0fb9/TJS-24%20/%20Neighborhood%20/%20JCO%20DOK%20/%20JDAY%20152%20/%2015%3A28Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a8cba22c-c8e8-4f89-a472-5419687217a9/TJS-24%20/%20Waterfall%20/%20KBR%20/%20JDAY%20152%20/%2015%3A12Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/704d34a0-346a-4f71-aa28-69d0182ef01b/TJS-24%20/%20DC%20Results%20/%20Anduril%20/%20JDAY%20152%20/%2015%3A11Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/04567368-be76-4bc6-aeaa-d1a915f561e9/89235%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20148%20/%2004%3A34Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/68ac5b27-f6af-45f3-9895-09a72e042baf/99239%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20148%20/%2004%3A33Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/8c2d69af-e0e2-4cf7-aed7-4d963740d12b/89235%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20148%20/%2004%3A33Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/d8c145a5-737e-4788-b7f5-376b8f83791f/89235%20%20%2099239%20/%20Publicly%20Available%20Information%20/%20KBR%20/%20JDAY%20148%20/%2004%3A32Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/6509fd82-f337-41d2-aa85-36ab521e5b90/89235%20%28Darrell%27s%29%20%20/%20PASCHED%20/%20KBR%20/%20JDAY%20148%20/%2004%3A30Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/6e130c81-f023-456e-8882-e79525a04ca5/89235%20%20%28Darrell%27s%29%20/%20Crossings%20/%20KBR%20/%20JDAY%20148%20/%2004%3A27Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/aae75e91-6453-4efc-b8aa-a093835da8c9/89235%20/%20Crossings%20/%20KBR%20/%20JDAY%20148%20/%2004%3A24Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/4db8f0ed-7fb2-4b09-a520-96ce7e1d8c81/89235%20/%20PASCHED%20/%20KBR%20/%20JDAY%20148%20/%2004%3A23Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/77541ac3-03c3-46c6-9227-053467fe5c92/89235%20%2099239%20/%20Crossings%20/%20KBR%20/%20JDAY%20148%20/%2004%3A21Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/b8b452c0-9e08-40c5-9e20-73a6246d57c7/99239%20/%20PASCHED%20/%20KBR%20/%20JDAY%20148%20/%2004%3A20Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/c17201df-9cb4-465e-95ed-ee1f6db5ea69/LM-7A%20/%20Residual%20/%20KBR%20/%20JDAY%20148%20/%2004%3A17Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/efbe9904-ff4a-4c21-b2f7-f26310753449/LM-7A%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20148%20/%2004%3A14Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/0341f031-0562-4420-93a2-22f1d9a8bb82/LM-7A%20/%20Publicly%20Available%20Information%20/%20NorthStar%20/%20JDAY%20148%20/%2004%3A13Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/594d05d8-ad7a-40f1-a366-a41e506dd46b/LM-7A%20/%20Ground%20Track%20/%20NorthStar%20/%20JDAY%20148%20/%2004%3A12Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/d124143a-3774-418d-8665-633ec56cf4ec/LM-7A%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20148%20/%2004%3A12Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a66de412-4af7-42f2-bab7-b34cc8fa1095/LM-7A%20/%20PASCHED%20/%20INTRACK%20RADAR%20/%20JDAY%20148%20/%2004%3A11Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/733ddc3b-0e81-431e-a035-8963a3a73ba1/TJS-24%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20147%20/%2021%3A34Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/5c7c2281-c320-49de-8faa-2508215fc456/TJS-24%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20147%20/%2021%3A34Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/88674c63-b32d-4ad0-80a8-728ea82b8cd4/TJS-24%20/%20PASCHED%20/%20KBR%20/%20JDAY%20147%20/%2021%3A33Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/71579547-6c6f-4d1d-a3d0-30ddb560b502/TJS-24%20/%20PASCHED%20/%20KBR%20/%20JDAY%20147%20/%2021%3A33Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/4b4ecbc7-1598-47cc-855b-5e9a99f5bdd3/TJS-24%20/%20PASCHED%20/%20%20/%20JDAY%20147%20/%2021%3A33Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/8f4664a1-5ec3-4e47-87e3-7b8f2eafebe4/TJS-24%20/%20PASCHED%20/%20%20/%20JDAY%20147%20/%2021%3A32Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/ceadafc0-38da-4fe7-87b0-9fa05a09c74d/TJS-24%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20147%20/%2016%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/36a0b0e8-52eb-434b-91e8-264bb04b6a2c/TJS-24%20/%20PASCHED%20/%20KBR%20/%20JDAY%20147%20/%2016%3A52Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/52141dbc-c858-45d0-89b2-17d4afe25d0a/TJS-24%20/%20PASCHED%20/%20%20/%20JDAY%20147%20/%2015%3A13Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/ea168bfb-9449-4e5b-b294-483d461b3392/TJS-24%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64887.msg2792509%23new%20/%20JDAY%20147%20/%2013%3A08Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/89a9aedf-5f9e-406f-b8b6-f377925c1618/LM-7A%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20147%20/%2011%3A19Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/9031be2b-17b0-431f-b9bd-5d2da9bf54e9/LM-7A%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20147%20/%2011%3A18Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/63ecbb3f-0f7b-4d6f-bcdd-463a7c8e5e50/TJS-24%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20147%20/%2004%3A02Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/74b5617a-0ea8-4947-ac2e-528c68bc8259/TJS-24%20/%20Lightcurve%20/%20NorthStar%20/%20JDAY%20147%20/%2004%3A01Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/5e8192e4-781b-440d-9117-317ee5499502/TJS-24%20/%20Lightcurve%20/%20NorthStar%20/%20JDAY%20147%20/%2004%3A01Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2f93ef07-1b4e-49af-9f21-406fa26a57f5/TJS-24%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20147%20/%2004%3A00Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/daa59c3b-364c-4754-93ec-1471e4ec8196/TJS-24%20/%20Waterfall%20/%20NorthStar%20/%20JDAY%20147%20/%2004%3A00Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/4ec6039d-fa25-4e0c-a3a6-413894cebac0/TJS-24%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20147%20/%2002%3A39Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a8615a91-ac6c-434b-b26e-516a8fd656ec/TJS-24%20/%20PASCHED%20/%20KBR%20/%20JDAY%20147%20/%2002%3A38Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/38256340-607c-4e6f-8f94-9ebcba7fe163/TJS-24%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20147%20/%2001%3A34Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/3792e0c7-07a2-4f66-b640-5d51d9abcbc2/TJS-24%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20147%20/%2001%3A34Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2ebfa20b-343e-40ac-a846-e32066dc8bc1/TJS-24%20/%20PASCHED%20/%20KBR%20/%20JDAY%20147%20/%2001%3A34Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/0f50bb0e-cba1-4a67-8921-c5d010b04df2/TJS-24%20/%20Residual%20/%20KBR%20/%20JDAY%20147%20/%2001%3A33Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/51773613-4bbb-4f48-a7cb-319ca519878c/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fen.wikipedia.org/wiki/Juling_Shen%20/%20JDAY%20147%20/%2000%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/9bc60d83-e4be-4db3-a3b7-c17d3e849733/%20/%20Publicly%20Available%20Information%20/%20%20/%20JDAY%20147%20/%2000%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/b00f1a6c-a198-4c64-a9d9-14500ec075a5/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fwww.china-in-space.com/p/new-tjsw-communications-satellite%20/%20JDAY%20147%20/%2000%3A46Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/8dd568e5-fcda-45c2-a532-9d70bdd92f83/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fwww.news.cn/20260527/3e849fe988d04d489de8ab77a89d16dd/c.html%20/%20JDAY%20147%20/%2000%3A28Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/8994e7ad-5ab9-4d20-bfba-35396abdd14c/Unknown%20Payload%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20146%20/%2023%3A56Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/83dd09d8-86fd-4ce2-afdb-78e3476009b5/Unknown%20Payload%20/%20Residual%20/%20KBR%20/%20JDAY%20146%20/%2023%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/8d6a7717-4b13-4050-8fd0-fb4c03c3e245/Unknown%20Payload%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20146%20/%2023%3A37Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/449a89f0-bed5-4b17-be8b-76525ce32d8e/Unknown%20Payload%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20146%20/%2023%3A37Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/0989fdad-3791-4dcc-8ca4-4fc3ebc5671e/Unknown%20Payload%20/%20Residual%20/%20NorthStar%20/%20JDAY%20146%20/%2023%3A36Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/77128b3d-1652-4f50-8683-d3b04f5cdec0/Unknown%20Payload%20/%20PASCHED%20/%20Anduril%20/%20JDAY%20146%20/%2023%3A23Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/968cc3ec-20a6-402d-9b10-df498bad2ba9/Unknown%20Payload%20/%20PASCHED%20/%20Anduril%20/%20JDAY%20146%20/%2017%3A21Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/5df92a2d-ede1-42fd-9a86-d6a099cfb352/Unknown%20Payload%20/%20PASCHED%20/%20KBR%20/%20JDAY%20146%20/%2023%3A10Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/af21a6f7-b69a-4118-8692-3b9024b0a4ef/Unknown%20Payload%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20146%20/%2023%3A10Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/c2dcec0f-ee4f-4dda-9a13-82074e4685b2/Unknown%20Payload%20/%20Residual%20/%20KBR%20/%20JDAY%20146%20/%2023%3A10Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/0c3a58f4-68ce-4993-ab2c-6b224dead98e/Unknown%20Payload%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fwww.youtube.com/watch%3Fv%3D1aT4OfdPiLU%20/%20JDAY%20146%20/%2016%3A42Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/d716676d-6b91-4610-8ffb-00d39b3b4fbb/Unknown%20Payload%20/%20Publicly%20Available%20Information%20/%20PAIR%20Map%20/%20JDAY%20146%20/%2013%3A44Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/90de03c3-2fe3-4bfb-917e-6d6347d064d0/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64887.msg2791671%23msg2791671%20/%20JDAY%20144%20/%2023%3A54Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/094119e7-a927-45d2-b324-99bd4734fc17/Unknown%20Payload%20/%20PASCHED%2019.5deg%20Inc%20/%20KBR%20/%20JDAY%20142%20/%2020%3A09Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/12dd1306-c7a8-4847-bfe1-96aa257183c4/Unknown%20Payload%20/%20Neighborhood%2019.5deg%20Inc%20/%20KBR%20/%20JDAY%20142%20/%2020%3A07Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/05d4157e-dc69-4e70-bae6-a890872e71c8/Unknown%20Payload%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20142%20/%2020%3A03Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/6193b1b2-bd16-427c-98a7-eb936166224f/Unknown%20Payload%20/%20PASCHED%20/%20KBR%20/%20JDAY%20142%20/%2020%3A03Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a2e424af-a5b9-486c-8250-17cf30620a74/Unknown%20Payload%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20142%20/%2012%3A56Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f1788105-142e-406a-9809-1b713a8e5d91/Unknown%20Payload%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20142%20/%2012%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/23628add-dcf1-4867-90bf-edd1dda598b1/Unknown%20Payload%20/%20GroundTrack%20/%20NorthStar%20/%20JDAY%20142%20/%2012%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f8674e37-455d-4810-b34c-90489db49343/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D57867.msg2790853%23msg2790853%20/%20JDAY%20142%20/%2009%3A49Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e8c0de79-9ac4-4881-bbb2-1033931d11e6/LM-7A%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20141%20/%2004%3A18Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/0efd3d4b-d1d2-4bdf-b6e2-fb4626176fb0/LM-7A%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20141%20/%2004%3A18Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e995d0b1-20a0-4107-913b-10e146681b2f/LM-7A%20/%20Ground%20Track%20/%20NorthStar%20/%20JDAY%20141%20/%2004%3A18Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/193b2663-12f9-4a4b-930b-d2c650c42f0c/LM-7A%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20141%20/%2004%3A17Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/d926a2d3-338b-42d5-80f3-e1407d578b14/LM-7A%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20141%20/%2004%3A17Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/1b7ffd53-6dc2-43be-9b89-fef1969bdd7a/LM-7A%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20141%20/%2004%3A16Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/6eb844c3-9355-4d99-a442-fa6ae1738c7f/LM-7A%20/%20Ground%20Track%20/%20NorthStar%20/%20JDAY%20141%20/%2004%3A16Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/0c9d8325-1041-4900-a15d-c47cb6255932/LM-7A%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20141%20/%2004%3A15Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/77d7994e-39b3-40f7-8ed3-8b841d67057f/LM-7A%20/%20Publicly%20Available%20Information%20/%20%20/%20JDAY%20140%20/%2022%3A17Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/7bcc0ec0-1202-4cc5-886a-2b5dce339680/LM-7A%20/%20Publicly%20Available%20Information%20/%20%20/%20JDAY%20140%20/%2022%3A16Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/ab07fec4-d416-4573-a3ad-37e3dc36fde7/LM-7A%20/%20Publicly%20Available%20Information%20/%20nasaspaceflight%20forum%20%20/%20JDAY%20139%20/%2020%3A57Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a42f56a8-8971-4d19-81c3-60dab97c1e9e/LM-7A%20/%20Publicly%20Available%20Information%20/%20Nasaspaceflight%20forum%20/%20JDAY%20139%20/%2020%3A56Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e9f43b42-2394-4c45-9b5d-8186483cf21f/LM-7A%20/%20Publicly%20Available%20Information%20/%20Nasaspaceflight%20forum%20/%20JDAY%20139%20/%2020%3A54Z
+
+NOTSO_Launch / LM-7A (69236) / TJS-24 (69235)  / Wenchang, China (LC-201) / 26 May 26 / 1616 UTC / GEO _01Jun-1531Z
+
+NOTSO_Launch / LM-7A (94470) / TJS-24 (94471)  / Wenchang, China (LC-201) / 26 May 26 / 1616 UTC / GEO _27May-0120Z
+
+NOTSO_Launch / LM-7A (94470) / TJS-24 (94471)  / Wenchang, China (LC-201) / 26 May 26 / 1616 UTC / GEO _26May-1708Z
+
+NOTSO_Launch / LM-7A (94470) / Unknown Payload (94471)  / Wenchang, China (LC-201) / 26 May 26 / 1616 UTC / GEO _26May-1653Z
+
+NOTSO_Launch / LM-7A (94470) / Unknown Payload (94471)  / Wenchang, China (LC-201) / 26 May 26 / 1616 UTC / GEO _25May-0949Z

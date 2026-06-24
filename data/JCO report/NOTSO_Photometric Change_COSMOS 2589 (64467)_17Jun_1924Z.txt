@@ -1,0 +1,31 @@
+NOTSO_Photometric Change / COSMOS 2589 (64467)_17Jun-1924Z
+
+JDay 168 at 1919z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on COSMOS 2589 (64467). This change occurred on 17Jun (JDay 168) at the solar phase angle of -5 deg and appeared to be 1 visual magnitude dimmer and then returned to pattern of life photometry afterwards. 
+
+Note that this is a low confidence photometry change due to only seeing 1 track but there was a close approach during the timeframe and COSMOS 2589 has had repeated photometric changes during close approaches with USA 325.
+ ... (Read More)
+
+17 Jun, JDAY 168, 1703Z
+
+Modified satellite summary:
+**64467 | COSMOS 2589** (Kosmos 2589, 2025-131A; program 14F166A) | GEO / geostationary (~35,786 km, incl. ~0.43°; inserted via supersynchronous transfer orbit) | ISS Reshetnev (Reshetnev Information Satellite Systems) for Russian MoD / Russian Space Forces (Aerospace Forces) | Operational / Yes — maneuverable (GEO station-keeping) | Military / Government (defense) | Communications-relay or reconnaissance (classified) | Launched 19 Jun 2025, ~03:01 UTC (≈1 year / ~12 months old as of Jun 2026) | Unconfirmed (~15 yr typical for an Ekspress-2000-class bus) | Classified Russian military GEO satellite built by ISS Reshetnev (likely on the Ekspress-2000 bus, ~2.3 t); launched on the first operational Angara A5/Briz-M from Plesetsk Site 35/1 carrying live payloads; exact mission and configuration not officially disclosed | Co-launched with COSMOS 2590 (an apparent sub-satellite/inspector that separated from 2589 post-deployment); payload identity and parameters remain uncertain in open sources | Yes (GEO satellites require onboard propulsion for orbit raising and station-keeping) | Likely chemical (bipropellant apogee/station-keeping) plus electric (SPT/Hall-effect) thrusters — unconfirmed | Gunter's Space Page, Grokipedia (Angara A5), NASASpaceflight forum, Space Launch Now / Nextspaceflight, SatelliteMap.space, Satcat/Kayhan
+Note: COSMOS 2589 is a classified Russian military satellite, so several fields (design life, exact mission, propulsion specifics) are inferred from the likely bus and standard GEO practice rather than officially confirmed.
+... (Read More)
+
+COSMOS 2589 / 3D Visualization / KBR / JDAY 168 / 19:19Z
+
+COSMOS 2589 / TRIC Plot / KBR / JDAY 168 / 19:18Z
+
+COSMOS 2589 / Neighborhood / KBR / JDAY 168 / 19:18Z
+
+COSMOS 2589 / Waterfall / KBR / JDAY 168 / 19:17Z
+
+COSMOS 2589 / Lightcurve / Anduril / JDAY 168 / 19:17Z
+
+COSMOS 2589 / Lightcurve / KBR / JDAY 168 / 19:16Z
+
+COSMOS 2589 / PASCHED / KBR / JDAY 168 / 19:16Z
+
+Satellites Number Name Orbit Country 64467 COSMOS 2589 HEO Russia (CIS)

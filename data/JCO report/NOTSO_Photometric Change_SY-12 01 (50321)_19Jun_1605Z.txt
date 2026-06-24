@@ -1,0 +1,35 @@
+NOTSO_Photometric Change / SY-12 01 (50321)	_19Jun-1605Z
+
+JDay 170 at 1550z:
+
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on SY-12 01 (50321). This change occurred on 19 JUN (JDay 170) between the solar phase angles of 49 deg to 93 deg and appeared to be 01 visual magnitude dimmer and is a return to pattern of life. Analysis is ongoing.
+
+The satellite is in GEO and is currently at 58.11 degs E longitude and is drifting at 0.83 W deg/day. Neighborhood is provided. Click link above to view products
+
+PAI suggests that SY-12 01 (50321) is a Chinese satellite that supports military operations. The mission of SY-12 01 is officially space environment exploration and related technology tests; however, it is suspected that it is actually a military test satellite. Possible military SSA (Space Situational Awareness) application in GEO.
+
+Time window of change: 18Jun2303z to 19Jun0202z
+Solar phase angle window: 49 to 93 degs
+Vismag pre change: 13.8
+Vismag post change: 14.1
+Current longitude: 58.11 E Longitude
+Current drift rate: 0.83 W degs/day
+
+Current TLE as of 19JUN 1425z provided by SAFRAN:
+0 SHIYAN 12 01 (SY12-01)
+1 50321U 21129A   26170.60097222  .00000000  00000-0  00000-0 0  9990
+2 50321   3.6822  79.8856 0003248 286.5541 175.8129  1.00039640  6669
+
+SY-12 01 (50321) / Waterfall / KBR / JDAY 170 / 15:31Z
+
+Juan Pablo Jimenez Sosa
+
+SY-12 01 (50321) / Neighborhood / KBR / JDAY 170 / 15:30Z
+
+SY-12 01 (50321) / PASCHED / KBR / JDAY 170 / 15:30Z
+
+SY-12 01 (50321) / Lightcurve / KBR / JDAY 170 / 15:29Z
+
+Satellites Number Name Orbit Country 50321 SHIYAN 12 01 (SY-12 01) GEO China (PRC)
+
+Number Name Orbit Country 50321 SHIYAN 12 01 (SY-12 01) GEO China (PRC)

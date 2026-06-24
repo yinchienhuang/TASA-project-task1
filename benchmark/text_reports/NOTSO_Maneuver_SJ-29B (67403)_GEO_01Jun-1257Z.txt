@@ -1,0 +1,193 @@
+NOTSO_Maneuver / SJ-29B (67403) / GEO  _01Jun-1257Z
+
+JDay 152 at 1250z:
+
+*** Correction NOTSO: Updated possible maneuver date ***
+
+Based on current SDA observations and available PAIR data, JCO providers have verified a maneuver by SJ-29B (67403) occurring at 1601z on 30MAY (JDay 150).
+The satellite maneuvered with a delta-v of 3.39 m/s, parking at 73.4 deg E.... (Read More)
+
+JDAY 152, 1218Z
+
+Space Weather Conditions during possible maneuver (1732Z, JDAY 151)  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  ... (Read More)
+
+SJ-29B / DC Results / Northstar / JDAY 152 / 07:55Z
+
+2026-06-01T07:55:39.280Z
+
+SJ-29B / PASCHED / Northstar / JDAY 152 / 07:54Z
+
+2026-06-01T07:55:16.500Z
+
+SJ-29B / Residuals / Northstar / JDAY 152 / 07:54Z
+
+2026-06-01T07:54:50.170Z
+
+SJ-29B / Neighborhood / KBR / JDAY 152 / 07:53Z
+
+2026-06-01T07:54:06.940Z
+
+SJ-29B / Residuals / KBR / JDAY 152 / 07:53Z
+
+2026-06-01T07:53:32.780Z
+
+SJ-29B / Waterfall / KBR / JDAY 152 / 07:52Z
+
+2026-06-01T07:53:06.300Z
+
+SJ-29B / Orbital Plot Result / KBR / JDAY 152 / 07:51Z
+
+2026-06-01T07:52:47.160Z
+
+SJ-29B / TRIC Plot / KBR / JDAY 152 / 07:50Z
+
+2026-06-01T07:51:41.130Z
+
+SJ-29B / PASCHED / KBR / JDAY 152 / 06:37Z
+
+2026-06-01T06:38:17.390Z
+
+SJ-29B / Residuals / KBR / JDAY 152 / 06:36Z
+
+2026-06-01T06:37:50.460Z
+
+SJ-29B / Neighborhood / KBR / JDAY 152 / 06:36Z
+
+2026-06-01T06:36:38.570Z
+
+SJ-29B / Residuals / KBR / JDAY 152 / 06:35Z
+
+2026-06-01T06:36:17.570Z
+
+SJ-29B / ORBITAL PLOT / KBR / JDAY 152 / 06:34Z
+
+2026-06-01T06:35:26.960Z
+
+SJ-29B / Waterfall / KBR / JDAY 152 / 06:34Z
+
+2026-06-01T06:34:49.340Z
+
+SJ-29B / Neighborhood / NorthStar / JDAY 152 / 01:14Z
+
+2026-06-01T01:14:24.460Z
+
+SJ-29B / DC Results / NorthStar / JDAY 152 / 01:13Z
+
+2026-06-01T01:14:02.690Z
+
+SJ-29B / PASCHED / NorthStar / JDAY 152 / 01:13Z
+
+2026-06-01T01:13:39.620Z
+
+SJ-29B / DC Results / EXO / JDAY 149 / 22:13Z
+
+2026-05-29T22:13:33.930Z
+
+SJ-29B / Neighborhood / KBR / JDAY 149 / 22:13Z
+
+2026-05-29T22:13:09.030Z
+
+SJ-29B / PASCHED / KBR / JDAY 149 / 22:12Z
+
+2026-05-29T22:12:45.500Z
+
+SJ-29B / Neighborhood / KBR / JDAY 149 / 22:11Z
+
+2026-05-29T22:11:59.840Z
+
+SJ-29B / Lightcurve / KBR / JDAY 149 / 22:11Z
+
+2026-05-29T22:11:23.740Z
+
+SJ-29A/B vs Arcturus / TRIC Plot / KBR / JDAY 149 / 22:10Z
+
+2026-05-29T22:10:41.870Z
+
+SJ-29B / TRIC Plot / KBR / JDAY 148 / 20:22Z
+
+2026-05-28T20:22:25.390Z
+
+SJ-29B / Neighborhood / KBR / JDAY 148 / 20:21Z
+
+2026-05-28T20:22:13.810Z
+
+SJ-29B / Waterfall / KBR / JDAY 148 / 20:21Z
+
+2026-05-28T20:21:17.760Z
+
+SJ-29B / PASCHED / KBR / JDAY 148 / 20:17Z
+
+2026-05-28T20:17:43.500Z
+
+SJ-29B / Lightcurve / KBR / JDAY 148 / 20:16Z
+
+2026-05-28T20:17:18.460Z
+
+2026-06-01T12:57:35.001Z
+
+2026-06-01T07:56:03.040Z
+
+2026-06-01T01:52:47.414Z
+
+2026-05-29T23:04:00.770Z
+
+2026-05-28T20:40:29.343Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/d9f905d2-9064-4b90-a15a-853589dece6d/SJ-29B%20/%20DC%20Results%20/%20Northstar%20/%20JDAY%20152%20/%2007%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/cae06992-6c01-4505-a8ac-0e3cfa0a70f5/SJ-29B%20/%20PASCHED%20/%20Northstar%20/%20JDAY%20152%20/%2007%3A54Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/39081ed8-1463-425b-b9a5-678d3a5afac1/SJ-29B%20/%20Residuals%20/%20Northstar%20/%20JDAY%20152%20/%2007%3A54Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e76eb369-f8e1-460d-ad25-e060abff1dd0/SJ-29B%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20152%20/%2007%3A53Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/28cbd5a8-4c99-4212-b88e-1a2a28a1c608/SJ-29B%20/%20Residuals%20/%20KBR%20/%20JDAY%20152%20/%2007%3A53Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/5e68ff07-b2d3-46e1-a6c2-bc8df3a861f9/SJ-29B%20/%20Waterfall%20/%20KBR%20/%20JDAY%20152%20/%2007%3A52Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/87978048-72a9-4aee-86d0-18b48ae13454/SJ-29B%20/%20Orbital%20Plot%20Result%20/%20KBR%20/%20JDAY%20152%20/%2007%3A51Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/064999de-b170-4aeb-ad63-182be082296d/SJ-29B%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20152%20/%2007%3A50Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f7d2b51a-3e32-44b7-820f-a4e8f9b12322/SJ-29B%20/%20PASCHED%20/%20KBR%20/%20JDAY%20152%20/%2006%3A37Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/cdfdf437-45dd-40e6-8a8f-6c7eed69acb5/SJ-29B%20/%20Residuals%20/%20KBR%20/%20JDAY%20152%20/%2006%3A36Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/9bcc73d6-f2a2-4928-b45f-52169d293e83/SJ-29B%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20152%20/%2006%3A36Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/b5ba3bd2-547a-4c73-aa6f-ed6b84286048/SJ-29B%20/%20Residuals%20/%20KBR%20/%20JDAY%20152%20/%2006%3A35Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/4611deeb-8222-4f8c-8229-6137d2a16ff8/SJ-29B%20/%20ORBITAL%20PLOT%20/%20KBR%20/%20JDAY%20152%20/%2006%3A34Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/5aca0804-bc69-45c0-b9e0-ac68940593c3/SJ-29B%20/%20Waterfall%20/%20KBR%20/%20JDAY%20152%20/%2006%3A34Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/6e612a15-7986-4f7b-86e2-02e54ef2ac14/SJ-29B%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20152%20/%2001%3A14Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/4cf0e37b-d699-47c9-8f4a-e67f2f378abf/SJ-29B%20/%20DC%20Results%20/%20NorthStar%20/%20JDAY%20152%20/%2001%3A13Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/241222a1-4aab-4c31-b9d9-a322f403a39b/SJ-29B%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20152%20/%2001%3A13Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a84031e7-d938-4854-8898-2e64c4f66690/SJ-29B%20/%20DC%20Results%20/%20EXO%20/%20JDAY%20149%20/%2022%3A13Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/051ebe17-1f95-4a07-b38e-c2fefebc0844/SJ-29B%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20149%20/%2022%3A13Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/16324cab-dc79-4271-a100-c3171345423e/SJ-29B%20/%20PASCHED%20/%20KBR%20/%20JDAY%20149%20/%2022%3A12Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/b4a63893-73e1-4fad-9da7-61905aa88088/SJ-29B%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20149%20/%2022%3A11Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/db139c8a-1600-45c9-bbf6-447ebc072d5a/SJ-29B%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20149%20/%2022%3A11Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/9e367871-a0d3-4ae3-9513-7db7b65ef271/SJ-29A/B%20vs%20Arcturus%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20149%20/%2022%3A10Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/242c6751-65d2-4984-88d8-d4f2d80263ba/SJ-29B%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20148%20/%2020%3A22Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/64bf6146-17a0-462e-83f6-0f8ddb99f3f5/SJ-29B%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20148%20/%2020%3A21Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2816a613-33e0-4c5b-99b5-518e4e4c9d88/SJ-29B%20/%20Waterfall%20/%20KBR%20/%20JDAY%20148%20/%2020%3A21Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/c48874ac-33a6-403e-be9e-3f0fd9e88bc3/SJ-29B%20/%20PASCHED%20/%20KBR%20/%20JDAY%20148%20/%2020%3A17Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/45cd364a-1411-4f72-8deb-2f38ebecc607/SJ-29B%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20148%20/%2020%3A16Z

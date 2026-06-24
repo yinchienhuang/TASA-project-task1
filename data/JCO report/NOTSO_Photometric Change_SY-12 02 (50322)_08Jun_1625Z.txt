@@ -1,0 +1,61 @@
+NOTSO_Photometric Change / SY-12 02 (50322)_08Jun-1625Z
+
+JDay 159 at 1525z:
+
+**CORRECTION NOTSO**
+SY-12 02 (50322) has not returned back to pattern-of-life photometry.
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on SY-12 02 (50322). This change was detected by multiple sensors occurring 06Jun between the solar phase angles of -102 deg to -80 deg and appeared to be ~0.75 visual magnitude dimmer.
+ 
+This distinct pattern change has been historically common but has not been seen recently; typically this pattern change occurs for days to weeks without previously identified genesis. The pattern change continues to be occurring up to 07Jun. Analysis is ongoing.
+
+The satellite is in GEO and is currently at 82.24 E longitude and is drifting at 0.79 E deg/day. Neighborhood is provided. Click link above to view products.
+ 
+PAI suggests that SY-12 02 is a Chinese satellite that supports military operations. The mission of SY-12 02 is space environment exploration and related technology tests. However, it is suspected that it is actually a military test satellite .
+ 
+Time window of 06Jun change: 06Jun1219z to 06Jun1348z
+Solar phase angle window: -102 to -80 degs
+Vismag pre change: 15
+Vismag post change: 15.75
+Current longitude: 82.24 E Longitude
+Current drift rate: 0.79 E deg/day
+ 
+Current TLE as of 07Jun2028z provided by KBR:
+1 50322U 21129B   26158.85341216 -.00000307 +00000-0 -25352-5 0  0006
+2 50322   3.6490  80.0443 0002693  53.2740 151.7140  1.00491907000006
+
+====================================
+
+JDay 159 at 0930z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected a previously unreported photometric change on SY-12 02 (50322) . The change was detected initially by a single sensor (EXO1956) as the satellite came out of Solar Exclusion at ~1140z 05JUN (JDay 158) with several other sensors also detecting the brighter signature between the solar phase angles of -118 deg to -89 deg and appeared to be 0.5 visual magnitude brighter. The photometry had returned to normal POL by 1336z 05 JUN.
+ 
+The satellite is in GEO and is currently at 81.86 degs E longitude and is drifting at 0.79 E deg/day or geo-stationary. There were no identified BLUE HRR objects in the vicinity at the time, however this satellite was expected to pass by several Red HRR objects. Neighborhood is provided. Click link above to view products
+
+PAI suggests that SY-12 02 is a Chinese satellite that supports military operations. The mission of SY-12 02 is space environment exploration and related technology tests. However, it is suspected that it is actually a military test satellite .
+ 
+
+Time window of change: ~05JUN1140z 
+Solar phase angle window: -118 to -89 degs
+Vismag pre change: 15.5
+Vismag post change: 16
+Current longitude: 81.86 E Longitude
+Current drift rate: 0.79 E degs/day
+ 
+Current TLE as of 08JUN 0900z provided by NorthStar:
+1 50322U 21129B   26159.29796291  .00000000  00000-0  00000-0 0    08
+2 50322   3.6618  80.1857 0002128  69.6589 296.0082  1.00491421016403
+
+8 Jun 26, JDAY 159, 0726Z
+
+Mission Summary:
+Shiyan 12-02 (SY-12 02, NORAD 50322, COSPAR 2021-129B) is a Chinese experimental satellite launched on December 23, 2021, aboard a Long March 7A rocket from Wenchang alongside its twin Shiyan 12-01. It operates in a near-geostationary orbit (approximately 35,730–35,740 km altitude with ~3.6° inclination) and is officially described for space environment monitoring and technology verification, though it is widely assessed as a maneuverable inspector satellite with classified military/intelligence capabilities. It has demonstrated advanced rendezvous and proximity operations (RPO), notably in the 2022 “cat-and-mouse” encounter with U.S. surveillance satellite USA 270 in GEO, where it performed evasive maneuvers and positioned itself for imaging opportunities. More recently, it has conducted multiple close approaches, including a ~70 km flyby of Iran’s Jam e Jam 1 satellite in April 2026. It remains actively maneuvering and operational as of May 2026.
+Source: TAB
+
+50322 | SHIYAN 12-02 | GEO-GSO / Geostationary | Chinese Ministry of Defence (China) | Active - Inclined (aged) / Manoeuverable | Military | Servicing/Inspection / Observational/Situational Awareness,Technology / Technology Test/Prototype | 23/12/2021 (4.46 years old) | 15.0 years | Officially the mission of the satellite is for" space environment exploration and related technology tests" however, it is suspected that it is actually a military test satellite. Possible military SSA (Space Situational Awareness) application in GEO. | Yes - On-board Propulsion | Propulsion Unknown | SHIYAN 12-01, | Source: Seradata (Read More)
+
+SHIYAN 12 02 (SY-12 02) / TRIC Plot / KBR / JDAY 159 / 15:50Z
+
+Satellites Number Name Orbit Country 50322 SHIYAN 12 02 (SY-12 02) N/A China (PRC)
+
+Number Name Orbit Country 50322 SHIYAN 12 02 (SY-12 02) N/A China (PRC)

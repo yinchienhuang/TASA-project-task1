@@ -1,0 +1,363 @@
+NOTSO_Maneuver / TJS-6 (47613) / GEO_03Jun-1534Z
+
+JDay 154 at 1430z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have verified a maneuver on TSJ-6 (47613), occurring at 0113z on 03 June (JDay 154).
+
+For GEO satellites: The satellite maneuvered from 178.53 deg E longitude with a delta-v of 15.19 m/s, resulting in an inclination change of 0.25 degs to a final inclination of 0.29 degs. This maneuver appears to be a RAAN flip station-keeping maneuver and is within the historical pattern of life for this object. Neighborhood of nearby objects is attached showing upcoming close approaches as a result of this maneuver.
+ 
+PAI suggests that TJS-6 is a Chinese satellite that supports military operations. The mission of TJS-6 is officially described by China as a Communications Engineering Test Satellite, but it is actually a Huoyan-1 series infrared missile launch warning satellite.
+ 
+The specifics of the maneuver are: 
+--Time of Maneuver: 03Jun0113z
+--Delta V: 15.19 m/s
+--Period Change: 2.18 seconds
+--Perigee Change: -23.39 km
+--Apogee Change: 24.82 km
+--Inclination Change: 0.25 degs
+--Current Drift Rate: 0.04 W deg/day
+
+Post Maneuver TLE as of 03Jun1500Z provided by KBR:
+1 47613U 21010A   26154.60215704 +.00000049 +00000-0 +41094-4 0  0006
+2 47613   0.2850 264.6967 0016563 259.8842 122.8830  1.00261735000006
+------------------------------------------------------------------------------------------------------------------------------
+JDay 154 at 1227z:
+
+Based on current SDA observations and available PAIR data, JCO providers have detected a possible maneuver on TSJ-6 (47613), occurring at 0119z on 03 June (JDay 154).
+
+The satellite was located at 178.52 degs E longitude. This is the third maneuver in the last days. This combined maneuver appears to be resulting in an inclination change of 0.24 degs to an inclination of 0.26 degs and in a RAAN change of -31.98 degs to a RAAN of 267.17 degs.
+The associated Neighbourhood has been generated using the pre-maneuver state and may differ from the post-maneuver state.
+Click link above to view products. Analysis is ongoing.
+
+PAI suggests that TJS-6 is a Chinese satellite that supports military operations. The mission of TJS-6 is officially described by China as a Communications Engineering Test Satellite but it is actually a Huoyan-1 series infrared missile launch warning satellite.
+
+Preliminary Pre-maneuver TLE as of 02Jun0944z provided by NortherStar:
+1 47613U 21010A   26153.82259606  .00000000  00000-0  00000-0 0    03
+2 47613   0.0241 222.3521 0010594 299.2156 204.4438  1.00258715096740
+
+-------------------------------------------------------------------------------------------------------------------------
+JDay 153 at 1550z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have verified a maneuver on TSJ-6 (47613), occurring at 0107z on 02 June (JDay 153).
+
+For GEO satellites: The satellite maneuvered from 178.59 deg E longitude with a delta-v of 15.36 m/s, resulting in an inclination change of -0.244 degs to a final inclination of 0.03 degs. This maneuver appears to be a RAAN flip station-keeping maneuver and is within the historical pattern of life for this object. Neighborhood of nearby objects is attached showing upcoming close approaches as a result of this maneuver.
+ 
+PAI suggests that TJS-6 is a Chinese satellite that supports military operations. The mission of TJS-6 is officially described by China as a Communications Engineering Test Satellite, but it is actually a Huoyan-1 series infrared missile launch warning satellite.
+ 
+The specifics of the maneuver are: 
+--Time of Maneuver: 02Jun0107z
+--Delta V: 15.36 m/s
+--Period Change: 2.63 seconds
+--Perigee Change: -22.22 km
+--Apogee Change: 23.94 km
+--Inclination Change: -0.2440 degs
+--Current Drift Rate: 0.03 W deg/day
+
+Post Maneuver TLE as of 02Jun1514Z provided by KBR:
+1 47613U 21010A   26153.63538362 +.00000000 +00000-0 +00000-0 0  0001
+2 47613   0.0335 203.5876 0010863 315.1728 139.6794  1.00264848000002
+
+------------------------------------------------------------------------------------------------------------------------------
+JDay 153 at 1045z:
+
+Based on current SDA observations and available PAIR data, JCO providers have detected a possible maneuver on TSJ-6 (47613), occurring at 0931z on 02 June (JDay 153).
+
+The satellite was located at 178.50 degs E longitude. Based on initial indications, it appears to be resulting in a station-keeping maneuver. It also appears to be resulting in an inclination change of -0.25 degs to a final inclination of 0.02 degs and in a RAAN change of +137.15 degs to a final RAAN of 227.17 degs.
+The associated Neighbourhood has been generated using the pre-maneuver state and may differ from the post-maneuver state.
+Click link above to view products. Analysis is ongoing.
+
+PAI suggests that TJS-6 is a Chinese satellite that supports military operations. The mission of TJS-6 is officially described by China as a Communications Engineering Test Satellite but it is actually a Huoyan-1 series infrared missile launch warning satellite.
+
+Preliminary Post-maneuver TLE as of 02Jun0944z provided by NortherStar:
+1 47613U 21010A   26153.40578969  .00000000  00000-0  00000-0 0    03
+2 47613   0.0241 227.1742 0010561 291.9171  56.4759  1.00261919019654
+
+-----------------------------
+JDay 152 at 1540z:
+
+Based on current SDA observations and available provider data, JCO providers have verified a maneuver by TSJ-6 (47613), occurring at 0110z on 01 June (JDay 152).
+
+The satellite maneuvered with a delta-v of 15.35 m/s, resulting in an inclination change of -0.28 degs to a final inclination of 0.27 degs.  This maneuver appears to be a station-keeping maneuver and occurs annually and is within the historical pattern of life for this object. There are more maneuvers expected.
+No close approaches of concern. Neighborhood of nearby objects is attached. 
+Click the link above to view products
+
+The specifics of the maneuver are:
+--Time of Maneuver: 01Jun0110z
+--Delta V: 15.35 m/s
+--Period Change: 4.13 seconds
+--Perigee Change: -10.27 km
+--Apogee Change: 12.97 km
+--Inclination Change: -0.2832 deg
+--Current Drift Rate: 0.01 W deg/day 
+
+Post-maneuver TLE as of 01Jun1351z provided by NortherStar:
+1 47613U 21010A   26152.57773515  .00000000  00000-0  00000-0 0    04
+2 47613   0.2782  89.9774 0005222  54.3024 132.3240  1.00271184019655
+
+Post-maneuver TLE as of 01Jun1351z provided by Anduril:
+1 47613U 21010A   26152.57773515 +.00000000 +00000-0 +00000-0 0  0015
+2 47613   0.2777  89.9498 0005407  52.1872 134.4663  1.00272461 00015
+
+Post maneuver TLE  as of 01Jun1351z  provided by KBR:
+1 47613U 21010A   26152.57773515 +.00000026 +00000-0 +21717-4 0  0004
+2 47613   0.2779  89.9824 0005402  54.4623 132.1565  1.00267541000002
+
+3 Jun 26, JDAY 154, 1230Z
+
+Space Weather Conditions during [possible maneuver (0119Z, Jun 3, JDAY 154)  
+Radio Blackout Impacts – R1 (Minor)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard   
+
+**************************************************************************
+JDAY 153, 1047Z
+
+Space Weather Conditions during possible maneuver (0107Z, JDAY 153)  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard  
+
+************************************************************************
+JDAY 152, 0416Z
+
+Mission Summary:
+TJS-6 is the third satellite in the Huoyan infrared missile early warning program. Believed to be a military experimental communications under China's Ballistic Missile Defense Organization. Other TJS satellites suspected to be part of the Huoyan Early Warning group are TJS-2 and TJS-5.
+Source: TAB
+
+47613 | TJS-6 (HOUYAN-1 03) | GEO-GSO / Geostationary | Chinese Ministry of Defence (China) | Active / Manoeuverable | Military | Communications / Communications - Experimental,Early Warning / Early Warning | 04/02/2021 (5.32 years old) | 12.0 years | Huoyan-1 series infrared missile launch warning satellite. Replacement for TJS-6 FAIL. | Officially described by China as a Communications Engineering Test Satellite but actually a Huoyan-1 series infrared missile launch warning satellite built by SAST/Shanghai. | Yes - On-board Propulsion | Electric - Xenon | Gateway Down: S | User Down: X | Source: Seradata
+
+Space Weather Conditions during possible maneuver (0110Z, JDAY 152)  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard (Read More)
+
+TJS-6 / Orbital Plot / KBR / JDAY 154 / 15:30Z
+
+2026-06-03T15:30:45.130Z
+
+TJS-6 / DC Results / KBR / JDAY 154 / 15:29Z
+
+2026-06-03T15:29:50.800Z
+
+TJS-6 / Waterfall / KBR / JDAY 154 / 15:00Z
+
+2026-06-03T15:28:57.930Z
+
+TJS-6 / DC Results / NorthStar / JDAY 154 / 14:33Z
+
+2026-06-03T14:33:51.000Z
+
+TJS-6 / Residuals / NorthStar / JDAY 154 / 14:33Z
+
+2026-06-03T14:33:33.490Z
+
+TJS-6 / Neighborhood / Northstar / JDAY 154 / 12:55Z
+
+2026-06-03T12:55:48.240Z
+
+TJS-6 / DC Results / Northstar / JDAY 154 / 12:48Z
+
+2026-06-03T12:48:20.890Z
+
+TJS-6 / Residuals / Northstar / JDAY 154 / 12:47Z
+
+2026-06-03T12:47:54.690Z
+
+TJS-6 / RAAN Change / Northstar / JDAY 154 / 12:46Z
+
+2026-06-03T12:47:15.700Z
+
+TJS-6 / Inclination change / Northstar / JDAY 154 / 12:46Z
+
+2026-06-03T12:46:32.880Z
+
+TJS-6 / Residuals / Northstar / JDAY 154 / 12:45Z
+
+2026-06-03T12:45:43.860Z
+
+TJS-6 / PASCHED / Northstar / JDAY 154 / 12:43Z
+
+2026-06-03T12:44:41.620Z
+
+TJS-6 / Orbit Plot Results / KBR / JDAY 154 / 05:34Z
+
+2026-06-03T05:35:30.850Z
+
+TJS-6 / Neighborhood / KBR / JDAY 154 / 05:34Z
+
+2026-06-03T05:34:47.270Z
+
+TJS-6 / PASCHED / KBR / JDAY 154 / 05:34Z
+
+2026-06-03T05:34:22.810Z
+
+TJS-6 / Residuals / KBR / JDAY 154 / 05:33Z
+
+2026-06-03T05:34:02.120Z
+
+TJS-6 / PASCHED / NorthStar / JDAY 154 / 00:04Z
+
+2026-06-03T00:05:07.220Z
+
+TJS-6 / Residuals /  / JDAY 154 / 00:04Z
+
+2026-06-03T00:04:45.950Z
+
+TJS-6 / Neighborhood / NorthStar / JDAY 154 / 00:03Z
+
+2026-06-03T00:04:01.900Z
+
+TJS-6 / Neighborhood / KBR / JDAY 153 / 16:21Z
+
+2026-06-02T16:21:20.940Z
+
+TJS-6 / Orbital Plot / KBR / JDAY 153 / 16:20Z
+
+2026-06-02T16:21:10.930Z
+
+TJS-6 / DC Results / KBR / JDAY 153 / 16:20Z
+
+2026-06-02T16:20:58.230Z
+
+TJS-6 / Neighborhood / NorthStar / JDAY 153 / 11:10Z
+
+2026-06-02T11:10:53.450Z
+
+TJS-6 / Residuals / NorthStar / JDAY 153 / 11:04Z
+
+2026-06-02T11:05:11.080Z
+
+TJS-6 / DC Results / NorthStar / JDAY 153 / 10:59Z
+
+2026-06-02T11:00:28.760Z
+
+TJS-6 / Waterfall / KBR / JDAY 152 / 15:55Z
+
+2026-06-01T15:55:52.720Z
+
+TJS-6 / Neighborhood / KBR / JDAY 152 / 15:55Z
+
+2026-06-01T15:55:23.300Z
+
+TJS-6 / DC Results / KBR / JDAY 152 / 15:54Z
+
+2026-06-01T15:55:04.050Z
+
+TJS-6 / Waterfall / Anduril / JDAY 152 / 15:53Z
+
+2026-06-01T15:54:08.330Z
+
+TJS-6 / Residuals /  / JDAY 152 / 14:27Z
+
+2026-06-01T14:28:24.010Z
+
+TJS-6 / Residuals vs Time / Northstar / JDAY 152 / 14:20Z
+
+2026-06-01T14:20:58.070Z
+
+TJS-6 / DC Results / Northstar / JDAY 152 / 14:18Z
+
+2026-06-01T14:18:27.020Z
+
+TJS-6 / Neighborhood / Northstar / JDAY 152 / 14:17Z
+
+2026-06-01T14:18:03.820Z
+
+TJS-6 / RAAN Plot / Northstar / JDAY 152 / 14:17Z
+
+2026-06-01T14:17:36.900Z
+
+TJS-6 / Inclination Plot / Northstar / JDAY 152 / 14:16Z
+
+2026-06-01T14:17:18.900Z
+
+TJS-6 / Residuals / Northstar / JDAY 152 / 14:15Z
+
+2026-06-01T14:16:18.980Z
+
+2026-06-03T15:34:39.184Z
+
+2026-06-03T13:18:23.751Z
+
+2026-06-02T16:25:01.023Z
+
+2026-06-02T12:25:52.815Z
+
+2026-06-01T16:12:00.459Z
+
+Satellites Number Name Orbit Country 47613 TJS-6 N/A China (PRC)
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/00fb71df-1a9f-4908-9722-e5db46ff8154/TJS-6%20/%20Orbital%20Plot%20/%20KBR%20/%20JDAY%20154%20/%2015%3A30Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/04152c76-9eb4-4021-8acc-ea01e69e8b20/TJS-6%20/%20DC%20Results%20/%20KBR%20/%20JDAY%20154%20/%2015%3A29Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e86d304e-509d-436c-9431-06aa1fd43186/TJS-6%20/%20Waterfall%20/%20KBR%20/%20JDAY%20154%20/%2015%3A00Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e6c91cac-6a5c-4300-9e28-db14aca2845b/TJS-6%20/%20DC%20Results%20/%20NorthStar%20/%20JDAY%20154%20/%2014%3A33Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/852f138d-28f4-4227-a860-d8d37a2fdb7f/TJS-6%20/%20Residuals%20/%20NorthStar%20/%20JDAY%20154%20/%2014%3A33Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e06e77a0-f718-4644-8173-c5a6417fab1f/TJS-6%20/%20Neighborhood%20/%20Northstar%20/%20JDAY%20154%20/%2012%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/353b7691-c11b-4705-b312-48c0610c3469/TJS-6%20/%20DC%20Results%20/%20Northstar%20/%20JDAY%20154%20/%2012%3A48Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/5ca2c390-4529-465a-aa3a-873d4f288c78/TJS-6%20/%20Residuals%20/%20Northstar%20/%20JDAY%20154%20/%2012%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/31ffc3a2-8a41-412a-bdad-434f9c1dc66d/TJS-6%20/%20RAAN%20Change%20/%20Northstar%20/%20JDAY%20154%20/%2012%3A46Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a3fe5ed9-fa68-49ef-9481-4df0aac46048/TJS-6%20/%20Inclination%20change%20/%20Northstar%20/%20JDAY%20154%20/%2012%3A46Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/98b6d600-4cdf-4a20-9dd2-ce81f59804fb/TJS-6%20/%20Residuals%20/%20Northstar%20/%20JDAY%20154%20/%2012%3A45Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e1dd0204-0894-4fc6-b45f-a147b9fa9ca5/TJS-6%20/%20PASCHED%20/%20Northstar%20/%20JDAY%20154%20/%2012%3A43Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/89146de1-c143-4095-8ba7-d926bd9e83a2/TJS-6%20/%20Orbit%20Plot%20Results%20/%20KBR%20/%20JDAY%20154%20/%2005%3A34Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/b0423f30-de67-4420-a23f-74b04d0151bc/TJS-6%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20154%20/%2005%3A34Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/abd6c8be-3be5-484e-b478-ffa4facfa1e7/TJS-6%20/%20PASCHED%20/%20KBR%20/%20JDAY%20154%20/%2005%3A34Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/c2fdd9c4-b94b-40da-9b9f-e78e11fc1ec9/TJS-6%20/%20Residuals%20/%20KBR%20/%20JDAY%20154%20/%2005%3A33Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2c59cd18-f2fe-4e55-89bf-dac3753f5559/TJS-6%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20154%20/%2000%3A04Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/40fa20b3-12f0-4c12-a9ad-8a545089e1b9/TJS-6%20/%20Residuals%20/%20%20/%20JDAY%20154%20/%2000%3A04Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/07a3fad4-1f18-42d9-8a0b-5e32f6716431/TJS-6%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20154%20/%2000%3A03Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/0f3b4735-02b6-4f65-ab8f-622f6b09d95d/TJS-6%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20153%20/%2016%3A21Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/763d568e-a4a3-4771-8473-b85d66f925cf/TJS-6%20/%20Orbital%20Plot%20/%20KBR%20/%20JDAY%20153%20/%2016%3A20Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/bfb879ae-63d7-43d3-9346-8c4d781bc61d/TJS-6%20/%20DC%20Results%20/%20KBR%20/%20JDAY%20153%20/%2016%3A20Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/5b61ef50-9704-49bd-9ec8-ac34b6f46d53/TJS-6%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20153%20/%2011%3A10Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/85d27bff-6ea1-4a44-ae2e-4ef49a259aa6/TJS-6%20/%20Residuals%20/%20NorthStar%20/%20JDAY%20153%20/%2011%3A04Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/912213d9-c4f5-4748-a6f0-6a6ea86c0184/TJS-6%20/%20DC%20Results%20/%20NorthStar%20/%20JDAY%20153%20/%2010%3A59Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/9d67c4c0-3eef-4bf7-9792-1ceab0816dbd/TJS-6%20/%20Waterfall%20/%20KBR%20/%20JDAY%20152%20/%2015%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/6c0deaec-8834-4371-92bf-06d9ecc29d08/TJS-6%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20152%20/%2015%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2db63b6c-2cff-473b-a2be-7ddf8e30ede6/TJS-6%20/%20DC%20Results%20/%20KBR%20/%20JDAY%20152%20/%2015%3A54Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/b917942a-d2c2-4eea-b709-db8f02e5b257/TJS-6%20/%20Waterfall%20/%20Anduril%20/%20JDAY%20152%20/%2015%3A53Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/39c02112-24ca-448d-a5c4-35f10b76982d/TJS-6%20/%20Residuals%20/%20%20/%20JDAY%20152%20/%2014%3A27Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/6038d889-7f15-4818-8a60-fb8900e275c7/TJS-6%20/%20Residuals%20vs%20Time%20/%20Northstar%20/%20JDAY%20152%20/%2014%3A20Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/465afdd0-910a-4daa-ad63-9bad4edf8817/TJS-6%20/%20DC%20Results%20/%20Northstar%20/%20JDAY%20152%20/%2014%3A18Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/9b819abe-389a-4c6e-b457-180b1a88be89/TJS-6%20/%20Neighborhood%20/%20Northstar%20/%20JDAY%20152%20/%2014%3A17Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/ca848530-93df-405c-9dad-6c1d036fec8d/TJS-6%20/%20RAAN%20Plot%20/%20Northstar%20/%20JDAY%20152%20/%2014%3A17Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/78b25619-970a-48ea-b986-4d11979e68a4/TJS-6%20/%20Inclination%20Plot%20/%20Northstar%20/%20JDAY%20152%20/%2014%3A16Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e92ae596-412b-4df0-a7a1-2f93571cdb0d/TJS-6%20/%20Residuals%20/%20Northstar%20/%20JDAY%20152%20/%2014%3A15Z

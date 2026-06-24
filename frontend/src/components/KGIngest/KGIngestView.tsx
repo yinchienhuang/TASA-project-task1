@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+import EventUpdateNotification from '../EventUpdateNotification';
 
 const API = 'http://localhost:8000';
 
@@ -117,6 +118,97 @@ async function clearPending(): Promise<number> {
   } catch { return 0; }
 }
 
+interface JcoFile { filename: string; size_kb: number; }
+interface EventUpdate {
+  field: string;
+  old: unknown;
+  new: unknown;
+  type: 'added' | 'updated' | 'removed';
+}
+interface JcoResult {
+  file: string;
+  status: string;
+  events_created?: number;
+  events_updated?: number;
+  events?: number;
+  event_updates?: Array<{
+    event_id: string;
+    satellite_label: string;
+    type: string;
+    changes: EventUpdate[];
+    summary: string;
+    is_significant: boolean;
+  }>;
+  kg_proposals: number;
+  error?: string;
+}
+
+async function fetchUnprocessedJco(): Promise<{ unprocessed: JcoFile[]; needs_kg: JcoFile[] }> {
+  try {
+    const r = await fetch(`${API}/api/events/jco/unprocessed`);
+    if (!r.ok) return { unprocessed: [], needs_kg: [] };
+    const d = await r.json();
+    return { unprocessed: d.unprocessed ?? [], needs_kg: d.needs_kg ?? [] };
+  } catch { return { unprocessed: [], needs_kg: [] }; }
+}
+
+async function processJcoFiles(files: string[]): Promise<JcoResult[]> {
+  try {
+    const r = await fetch(`${API}/api/events/jco/process`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ files }),
+    });
+    if (!r.ok) return [];
+    const d = await r.json();
+    return d.results ?? [];
+  } catch { return []; }
+}
+
+async function processJcoKgOnly(files: string[]): Promise<JcoResult[]> {
+  try {
+    const r = await fetch(`${API}/api/events/jco/process-kg`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ files }),
+    });
+    if (!r.ok) return [];
+    const d = await r.json();
+    return d.results ?? [];
+  } catch { return []; }
+}
+
+interface JcoSource {
+  source_id: string; title: string; ingested_at: string;
+  event_count: number; proposal_count: number; has_file: boolean;
+}
+interface JcoSourceDetail extends JcoSource {
+  events: Record<string, unknown>[];
+  proposals: { id: string; type: string; status: string; label: string; entity_type: string; excerpt: string }[];
+}
+
+async function fetchJcoSources(): Promise<JcoSource[]> {
+  try {
+    const r = await fetch(`${API}/api/events/jco/sources`);
+    if (!r.ok) return [];
+    return (await r.json()).sources ?? [];
+  } catch { return []; }
+}
+
+async function fetchJcoSourceDetail(sourceId: string): Promise<JcoSourceDetail | null> {
+  try {
+    const r = await fetch(`${API}/api/events/jco/source/${encodeURIComponent(sourceId)}`);
+    return r.ok ? r.json() : null;
+  } catch { return null; }
+}
+
+async function reprocessJcoSource(sourceId: string): Promise<{ new_events: number; kg_proposals: number; deleted_events: number } | null> {
+  try {
+    const r = await fetch(`${API}/api/events/jco/reprocess/${encodeURIComponent(sourceId)}`, { method: 'POST' });
+    return r.ok ? r.json() : null;
+  } catch { return null; }
+}
+
 interface SchemaNode { type: string; children: SchemaNode[]; }
 
 async function fetchSchemaTree(): Promise<SchemaNode[]> {
@@ -206,17 +298,73 @@ export default function KGIngestView() {
   const [schemaTree, setSchemaTree] = useState<SchemaNode[]>([]);
   const [nodeLabels, setNodeLabels] = useState<Map<string, string>>(new Map());
 
+  // JCO source browser
+  const [jcoSources, setJcoSources] = useState<JcoSource[]>([]);
+  const [jcoSourcesExpanded, setJcoSourcesExpanded] = useState(false);
+  const [expandedSourceId, setExpandedSourceId] = useState<string | null>(null);
+  const [sourceDetail, setSourceDetail] = useState<JcoSourceDetail | null>(null);
+  const [sourceDetailLoading, setSourceDetailLoading] = useState(false);
+  const [reprocessingId, setReprocessingId] = useState<string | null>(null);
+  const [reprocessResult, setReprocessResult] = useState<{ source_id: string; new_events: number; kg_proposals: number } | null>(null);
+
+  // JCO unprocessed file discovery
+  const [jcoFiles, setJcoFiles] = useState<JcoFile[]>([]);
+  const [jcoNeedsKg, setJcoNeedsKg] = useState<JcoFile[]>([]);
+  const [jcoExpanded, setJcoExpanded] = useState(false);
+  const [jcoSelected, setJcoSelected] = useState<Set<string>>(new Set());
+  const [jcoKgSelected, setJcoKgSelected] = useState<Set<string>>(new Set());
+  const [jcoProcessing, setJcoProcessing] = useState(false);
+  const [jcoKgProcessing, setJcoKgProcessing] = useState(false);
+  const [jcoResults, setJcoResults] = useState<JcoResult[]>([]);
+
   const refreshIncoming = () => fetchIncoming().then(setIncoming);
   const refreshPending = () => {
     setLoadingPending(true);
     fetchPending(pendingFilter).then((d) => { setPending(d); setLoadingPending(false); });
   };
 
+  const refreshJcoSources = () => fetchJcoSources().then(setJcoSources);
+
+  const handleExpandSource = async (sourceId: string) => {
+    if (expandedSourceId === sourceId) {
+      setExpandedSourceId(null);
+      setSourceDetail(null);
+      return;
+    }
+    setExpandedSourceId(sourceId);
+    setSourceDetail(null);
+    setSourceDetailLoading(true);
+    const detail = await fetchJcoSourceDetail(sourceId);
+    setSourceDetail(detail);
+    setSourceDetailLoading(false);
+  };
+
+  const handleReprocess = async (sourceId: string) => {
+    setReprocessingId(sourceId);
+    setReprocessResult(null);
+    const result = await reprocessJcoSource(sourceId);
+    if (result) {
+      setReprocessResult({ source_id: sourceId, new_events: result.new_events, kg_proposals: result.kg_proposals });
+      // Refresh detail view
+      const detail = await fetchJcoSourceDetail(sourceId);
+      setSourceDetail(detail);
+      await refreshJcoSources();
+      setTimeout(refreshPending, 800);
+    }
+    setReprocessingId(null);
+  };
+
+  const refreshJco = () => fetchUnprocessedJco().then(({ unprocessed, needs_kg }) => {
+    setJcoFiles(unprocessed);
+    setJcoNeedsKg(needs_kg);
+  });
+
   useEffect(() => {
     refreshIncoming();
     fetchSchemaTree().then(setSchemaTree);
     fetchNodeLabels().then(setNodeLabels);
-    // Poll incoming queue every 5s so News Feed additions appear without manual refresh
+    refreshJco();
+    refreshJcoSources();
     const timer = setInterval(refreshIncoming, 5000);
     return () => clearInterval(timer);
   }, []);
@@ -286,6 +434,29 @@ export default function KGIngestView() {
     setClearing(false);
   };
 
+  const handleJcoProcess = async () => {
+    if (jcoSelected.size === 0) return;
+    setJcoProcessing(true);
+    setJcoResults([]);
+    const results = await processJcoFiles([...jcoSelected]);
+    setJcoResults(results);
+    setJcoSelected(new Set());
+    await refreshJco();
+    setJcoProcessing(false);
+  };
+
+  const handleJcoKgOnly = async () => {
+    if (jcoKgSelected.size === 0) return;
+    setJcoKgProcessing(true);
+    setJcoResults([]);
+    const results = await processJcoKgOnly([...jcoKgSelected]);
+    setJcoResults(results.map(r => ({ ...r, events: 0 })));
+    setJcoKgSelected(new Set());
+    await refreshJco();
+    setJcoKgProcessing(false);
+    setTimeout(refreshPending, 800);
+  };
+
   const handleBulkIngest = async () => {
     setBulkIngesting(true);
     setBulkResult(null);
@@ -326,7 +497,7 @@ export default function KGIngestView() {
     <div style={{ display: 'flex', height: '100%', background: '#0d1117', color: '#e6edf3', fontFamily: 'inherit', gap: 0 }}>
 
       {/* ── Left: Incoming Pool ── */}
-      <div style={{ width: 340, flexShrink: 0, borderRight: '1px solid #21262d', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ width: 340, flexShrink: 0, borderRight: '1px solid #21262d', display: 'flex', flexDirection: 'column', overflowY: 'auto', minHeight: 0 }}>
         <SectionHeader title="Incoming Documents" badge={`${incoming.filter(d => d.status === 'queued').length} queued`} badgeColor="#8b949e">
           <button
             onClick={handleClearQueue}
@@ -350,6 +521,401 @@ export default function KGIngestView() {
             </span>
           )}
         </div>
+
+        {/* JCO unprocessed file discovery */}
+        <div style={{ borderBottom: '1px solid #21262d' }}>
+            <button
+              onClick={() => setJcoExpanded(v => !v)}
+              style={{
+                width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '7px 12px', background: 'none', border: 'none', cursor: 'pointer',
+                color: '#e6edf3',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 7 }}>
+                <span style={{ fontSize: 11, fontWeight: 600, color: '#8b949e', letterSpacing: '0.04em' }}>
+                  JCO FILES
+                </span>
+                {jcoFiles.length > 0 && (
+                  <span style={{
+                    fontSize: 10, padding: '1px 6px', borderRadius: 10, fontWeight: 600,
+                    background: '#e3b34122', color: '#e3b341', border: '1px solid #e3b34144',
+                  }}>
+                    {jcoFiles.length} unprocessed
+                  </span>
+                )}
+                {jcoNeedsKg.length > 0 && (
+                  <span style={{
+                    fontSize: 10, padding: '1px 6px', borderRadius: 10, fontWeight: 600,
+                    background: '#f7816622', color: '#f78166', border: '1px solid #f7816644',
+                  }}>
+                    {jcoNeedsKg.length} needs KG
+                  </span>
+                )}
+              </div>
+              <span style={{ fontSize: 10, color: '#484f58' }}>{jcoExpanded ? '▲' : '▼'}</span>
+            </button>
+
+            {jcoExpanded && (
+              <div style={{ padding: '0 12px 10px' }}>
+                {jcoFiles.length > 0 && (
+                  <>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 6 }}>
+                      <button
+                        onClick={() => setJcoSelected(
+                          jcoSelected.size === jcoFiles.length
+                            ? new Set()
+                            : new Set(jcoFiles.map(f => f.filename))
+                        )}
+                        style={{ ...ghostBtn, fontSize: 10, padding: '2px 8px' }}
+                      >
+                        {jcoSelected.size === jcoFiles.length ? 'Deselect All' : 'Select All'}
+                      </button>
+                      <button
+                        onClick={handleJcoProcess}
+                        disabled={jcoProcessing || jcoSelected.size === 0}
+                        style={{
+                          ...primaryBtn, fontSize: 10, padding: '3px 10px',
+                          opacity: jcoSelected.size === 0 ? 0.4 : 1,
+                        }}
+                      >
+                        {jcoProcessing ? 'Processing…' : `Process ${jcoSelected.size > 0 ? `(${jcoSelected.size})` : ''}`}
+                      </button>
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+                      {jcoFiles.map(f => (
+                        <label key={f.filename} style={{
+                          display: 'flex', alignItems: 'center', gap: 7, padding: '4px 6px',
+                          borderRadius: 4, cursor: 'pointer',
+                          background: jcoSelected.has(f.filename) ? '#1f6feb18' : 'transparent',
+                          border: `1px solid ${jcoSelected.has(f.filename) ? '#388bfd44' : 'transparent'}`,
+                        }}>
+                          <input
+                            type="checkbox"
+                            checked={jcoSelected.has(f.filename)}
+                            onChange={e => {
+                              const s = new Set(jcoSelected);
+                              e.target.checked ? s.add(f.filename) : s.delete(f.filename);
+                              setJcoSelected(s);
+                            }}
+                            style={{ accentColor: '#388bfd', flexShrink: 0 }}
+                          />
+                          <span style={{ fontSize: 11, color: '#c9d1d9', flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                            {f.filename}
+                          </span>
+                          <span style={{ fontSize: 10, color: '#484f58', flexShrink: 0 }}>{f.size_kb} KB</span>
+                        </label>
+                      ))}
+                    </div>
+                  </>
+                )}
+
+                {/* Files with events but missing KG extraction */}
+                {jcoNeedsKg.length > 0 && (
+                  <div style={{ marginTop: jcoFiles.length > 0 ? 10 : 0 }}>
+                    <div style={{ fontSize: 10, color: '#f78166', fontWeight: 600, marginBottom: 6, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <span>NEEDS KG EXTRACTION</span>
+                      <div style={{ display: 'flex', gap: 6 }}>
+                        <button
+                          onClick={() => setJcoKgSelected(
+                            jcoKgSelected.size === jcoNeedsKg.length
+                              ? new Set()
+                              : new Set(jcoNeedsKg.map(f => f.filename))
+                          )}
+                          style={{ ...ghostBtn, fontSize: 10, padding: '2px 8px' }}
+                        >
+                          {jcoKgSelected.size === jcoNeedsKg.length ? 'Deselect All' : 'Select All'}
+                        </button>
+                        <button
+                          onClick={handleJcoKgOnly}
+                          disabled={jcoKgProcessing || jcoKgSelected.size === 0}
+                          style={{
+                            background: jcoKgSelected.size === 0 ? '#21262d' : '#3a1a0a',
+                            border: `1px solid ${jcoKgSelected.size === 0 ? '#30363d' : '#f7816666'}`,
+                            borderRadius: 4, color: jcoKgSelected.size === 0 ? '#484f58' : '#f78166',
+                            cursor: jcoKgSelected.size === 0 ? 'default' : 'pointer',
+                            fontSize: 10, padding: '2px 8px',
+                          }}
+                        >
+                          {jcoKgProcessing ? 'Running…' : `Run KG${jcoKgSelected.size > 0 ? ` (${jcoKgSelected.size})` : ''}`}
+                        </button>
+                      </div>
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+                      {jcoNeedsKg.map(f => (
+                        <label key={f.filename} style={{
+                          display: 'flex', alignItems: 'center', gap: 7, padding: '4px 6px',
+                          borderRadius: 4, cursor: 'pointer',
+                          background: jcoKgSelected.has(f.filename) ? '#f7816612' : 'transparent',
+                          border: `1px solid ${jcoKgSelected.has(f.filename) ? '#f7816644' : 'transparent'}`,
+                        }}>
+                          <input
+                            type="checkbox"
+                            checked={jcoKgSelected.has(f.filename)}
+                            onChange={e => {
+                              const s = new Set(jcoKgSelected);
+                              e.target.checked ? s.add(f.filename) : s.delete(f.filename);
+                              setJcoKgSelected(s);
+                            }}
+                            style={{ accentColor: '#f78166', flexShrink: 0 }}
+                          />
+                          <span style={{ fontSize: 11, color: '#c9d1d9', flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                            {f.filename}
+                          </span>
+                          <span style={{ fontSize: 10, color: '#484f58', flexShrink: 0 }}>{f.size_kb} KB</span>
+                        </label>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Results from last process run */}
+                {jcoResults.length > 0 && (
+                  <div style={{ marginTop: jcoFiles.length > 0 ? 8 : 0, display: 'flex', flexDirection: 'column', gap: 2 }}>
+                    <div style={{ fontSize: 10, color: '#484f58', marginBottom: 3 }}>LAST RUN</div>
+
+                    {/* Event Update Notifications */}
+                    {jcoResults.some(r => r.event_updates && r.event_updates.length > 0) && (
+                      <EventUpdateNotification
+                        updates={jcoResults
+                          .flatMap(r => (r.event_updates || []).map(u => ({
+                            event_id: u.event_id,
+                            status: 'updated' as const,
+                            satellite_label: u.satellite_label,
+                            type: u.type,
+                            changes: u.changes,
+                            summary: u.summary,
+                            is_significant: u.is_significant,
+                            source_file: r.file,
+                          })))
+                          .concat(
+                            jcoResults
+                              .filter(r => r.status === 'ok' && (!r.event_updates || r.event_updates.length === 0) && (r.events_created || 0) > 0)
+                              .map(r => ({
+                                event_id: r.file,
+                                status: 'created' as const,
+                                satellite_label: r.file.split('_')[1] || 'Unknown',
+                                type: 'event',
+                                changes: [],
+                                summary: `Created ${r.events_created || 0} event(s)`,
+                                is_significant: false,
+                                source_file: r.file,
+                              }))
+                          )}
+                        onClose={() => setJcoResults([])}
+                      />
+                    )}
+
+                    {jcoResults.map(r => (
+                      <div key={r.file} style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 11 }}>
+                        <span style={{
+                          color: r.status === 'ok' ? '#3fb950' : r.status === 'error' ? '#f78166' : '#e3b341',
+                          flexShrink: 0,
+                        }}>
+                          {r.status === 'ok' ? '✓' : r.status === 'error' ? '✕' : '—'}
+                        </span>
+                        <span style={{ color: '#8b949e', flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                          {r.file}
+                        </span>
+                        <span style={{ color: r.status === 'ok' ? '#3fb950' : '#484f58', flexShrink: 0 }}>
+                          {r.status === 'ok'
+                            ? [
+                              (r.events_created || r.events || 0) > 0 && `${r.events_created || r.events} created`,
+                              (r.events_updated || 0) > 0 && `${r.events_updated} updated`,
+                              `${r.kg_proposals} KG proposals`
+                            ].filter(Boolean).join(' · ')
+                            : (r.error ?? r.status)}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+
+        {/* JCO Reports source browser */}
+        {jcoSources.length > 0 && (
+          <div style={{ borderBottom: '1px solid #21262d' }}>
+            <button
+              onClick={() => setJcoSourcesExpanded(v => !v)}
+              style={{
+                width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '7px 12px', background: 'none', border: 'none', cursor: 'pointer', color: '#e6edf3',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 7 }}>
+                <span style={{ fontSize: 11, fontWeight: 600, color: '#8b949e', letterSpacing: '0.04em' }}>JCO REPORTS</span>
+                <span style={{ fontSize: 10, padding: '1px 6px', borderRadius: 10, background: '#58a6ff22', color: '#58a6ff', border: '1px solid #58a6ff44' }}>
+                  {jcoSources.length}
+                </span>
+              </div>
+              <span style={{ fontSize: 10, color: '#484f58' }}>{jcoSourcesExpanded ? '▲' : '▼'}</span>
+            </button>
+
+            {jcoSourcesExpanded && (
+              <div style={{ paddingBottom: 4 }}>
+                {jcoSources.map(src => {
+                  const isOpen = expandedSourceId === src.source_id;
+                  const isReprocessing = reprocessingId === src.source_id;
+                  const showResult = reprocessResult?.source_id === src.source_id;
+                  return (
+                    <div key={src.source_id} style={{ borderTop: '1px solid #161b22' }}>
+                      {/* Source row */}
+                      <div
+                        onClick={() => handleExpandSource(src.source_id)}
+                        style={{
+                          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                          padding: '7px 12px', cursor: 'pointer',
+                          background: isOpen ? '#161b22' : 'transparent',
+                        }}
+                      >
+                        <div style={{ flex: 1, minWidth: 0 }}>
+                          <div style={{ fontSize: 11, color: '#c9d1d9', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                            {src.title}
+                          </div>
+                          <div style={{ display: 'flex', gap: 8, marginTop: 2 }}>
+                            <span style={{ fontSize: 10, color: src.event_count > 0 ? '#3fb950' : '#484f58' }}>
+                              {src.event_count} events
+                            </span>
+                            <span style={{ fontSize: 10, color: src.proposal_count > 0 ? '#e3b341' : '#484f58' }}>
+                              {src.proposal_count} proposals
+                            </span>
+                            <span style={{ fontSize: 10, color: '#484f58' }}>
+                              {new Date(src.ingested_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                            </span>
+                          </div>
+                        </div>
+                        <span style={{ fontSize: 10, color: '#484f58', flexShrink: 0, marginLeft: 8 }}>{isOpen ? '▲' : '▼'}</span>
+                      </div>
+
+                      {/* Expanded detail */}
+                      {isOpen && (
+                        <div style={{ padding: '0 12px 10px', background: '#0d1117' }}>
+                          {/* Re-process button */}
+                          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+                            {src.has_file ? (
+                              <button
+                                onClick={() => handleReprocess(src.source_id)}
+                                disabled={isReprocessing}
+                                style={{
+                                  background: isReprocessing ? '#21262d' : '#1a1a2e',
+                                  border: `1px solid ${isReprocessing ? '#30363d' : '#388bfd66'}`,
+                                  borderRadius: 4, color: isReprocessing ? '#484f58' : '#58a6ff',
+                                  cursor: isReprocessing ? 'default' : 'pointer',
+                                  fontSize: 10, padding: '3px 10px',
+                                }}
+                              >
+                                {isReprocessing ? '↻ Processing…' : '↻ Re-process'}
+                              </button>
+                            ) : (
+                              <span style={{ fontSize: 10, color: '#484f58' }}>File not in JCO folder</span>
+                            )}
+                            {showResult && reprocessResult && (
+                              <span style={{ fontSize: 10, color: '#3fb950' }}>
+                                ✓ {reprocessResult.new_events} events · {reprocessResult.kg_proposals} KG proposals
+                              </span>
+                            )}
+                          </div>
+
+                          {sourceDetailLoading && (
+                            <div style={{ color: '#484f58', fontSize: 11, padding: '8px 0' }}>Loading…</div>
+                          )}
+
+                          {sourceDetail && sourceDetail.source_id === src.source_id && (
+                            <>
+                              {/* Events */}
+                              {sourceDetail.events.length > 0 && (
+                                <div style={{ marginBottom: 8 }}>
+                                  <div style={{ fontSize: 10, color: '#484f58', fontWeight: 600, marginBottom: 4 }}>EVENTS ({sourceDetail.events.length})</div>
+                                  {sourceDetail.events.map((ev: any) => (
+                                    <div key={ev.id} style={{
+                                      padding: '4px 8px', marginBottom: 3, borderRadius: 4,
+                                      background: '#161b22', border: '1px solid #21262d',
+                                    }}>
+                                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                        <span style={{
+                                          fontSize: 9, padding: '1px 5px', borderRadius: 3, marginRight: 6,
+                                          background: ev.type === 'maneuver' ? '#e3b34122' : ev.type === 'launch' ? '#3fb95022' : '#bc8cff22',
+                                          color: ev.type === 'maneuver' ? '#e3b341' : ev.type === 'launch' ? '#3fb950' : '#bc8cff',
+                                          border: `1px solid ${ev.type === 'maneuver' ? '#e3b34144' : ev.type === 'launch' ? '#3fb95044' : '#bc8cff44'}`,
+                                        }}>
+                                          {ev.type}
+                                        </span>
+                                        <span style={{ fontSize: 11, color: '#c9d1d9', flex: 1 }}>{ev.satellite_label ?? ev.satellite_id ?? '—'}</span>
+                                        <span style={{ fontSize: 10, color: '#484f58', flexShrink: 0 }}>
+                                          {ev.event_date ? ev.event_date.slice(0, 10) : ''}
+                                        </span>
+                                      </div>
+                                      {ev.delta_v != null && (
+                                        <div style={{ fontSize: 10, color: '#8b949e', marginTop: 2 }}>
+                                          ΔV {ev.delta_v} m/s
+                                          {ev.period_change != null && ` · period ${ev.period_change > 0 ? '+' : ''}${ev.period_change} s`}
+                                        </div>
+                                      )}
+                                      {ev.magnitude_direction && (
+                                        <div style={{ fontSize: 10, color: '#8b949e', marginTop: 2 }}>
+                                          {ev.magnitude_direction} · {ev.magnitude_change_min ?? '?'} mag
+                                        </div>
+                                      )}
+                                    </div>
+                                  ))}
+                                </div>
+                              )}
+
+                              {/* KG Proposals */}
+                              {sourceDetail.proposals.length > 0 && (
+                                <div>
+                                  <div style={{ fontSize: 10, color: '#484f58', fontWeight: 600, marginBottom: 4 }}>
+                                    KG PROPOSALS ({sourceDetail.proposals.length})
+                                  </div>
+                                  {sourceDetail.proposals.slice(0, 12).map((p) => (
+                                    <div key={p.id} style={{
+                                      display: 'flex', alignItems: 'center', gap: 6,
+                                      padding: '3px 8px', marginBottom: 2,
+                                      borderRadius: 4, background: '#161b22',
+                                    }}>
+                                      <span style={{
+                                        fontSize: 9, padding: '1px 5px', borderRadius: 3, flexShrink: 0,
+                                        background: p.type === 'node_add' ? '#3fb95022' : p.type === 'edge_add' ? '#58a6ff22' : '#e3b34122',
+                                        color: p.type === 'node_add' ? '#3fb950' : p.type === 'edge_add' ? '#58a6ff' : '#e3b341',
+                                        border: `1px solid ${p.type === 'node_add' ? '#3fb95044' : p.type === 'edge_add' ? '#58a6ff44' : '#e3b34144'}`,
+                                      }}>
+                                        {p.type?.replace('_', ' ')}
+                                      </span>
+                                      <span style={{ fontSize: 11, color: '#c9d1d9', flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                                        {p.label ?? p.entity_type ?? '—'}
+                                      </span>
+                                      <span style={{
+                                        fontSize: 9, padding: '1px 5px', borderRadius: 3, flexShrink: 0,
+                                        color: p.status === 'approved' ? '#3fb950' : p.status === 'rejected' ? '#f78166' : '#e3b341',
+                                      }}>
+                                        {p.status}
+                                      </span>
+                                    </div>
+                                  ))}
+                                  {sourceDetail.proposals.length > 12 && (
+                                    <div style={{ fontSize: 10, color: '#484f58', padding: '2px 8px' }}>
+                                      +{sourceDetail.proposals.length - 12} more proposals
+                                    </div>
+                                  )}
+                                </div>
+                              )}
+
+                              {sourceDetail.events.length === 0 && sourceDetail.proposals.length === 0 && (
+                                <div style={{ fontSize: 11, color: '#484f58' }}>No events or proposals found for this source.</div>
+                              )}
+                            </>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        )}
 
         {/* Add form */}
         <div style={{ padding: '10px 12px', borderBottom: '1px solid #21262d' }}>

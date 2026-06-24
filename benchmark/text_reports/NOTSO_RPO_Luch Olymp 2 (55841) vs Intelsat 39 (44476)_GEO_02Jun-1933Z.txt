@@ -1,0 +1,137 @@
+NOTSO_RPO / Luch Olymp 2 (55841) vs Intelsat 39 (44476) / GEO_02Jun-1933Z
+
+JDay 153 at 1818z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected an RPO by Luch Olymp 2 (55841) with Intelsat 39 (44476). 
+Since 06Mar2025, Luch Olymp 2 has sat in an offset position east of Intelsat 39 maintaining a distance between 10 to 60 kms. The last maneuver by Luch Olymp 2 was done at 2057z on 01Jun (JDay 152) which maintained a slight drift towards Intelsat 39 instead of starting to separate again. 
+There was a close approach on 02Jun0812z at 0.7km. Luch Olymp 2 is currently separating by ~1.5km per day from Intelsat 39 and appears to be drifting to the west side of Intelsat 39.  
+
+Next TCA will be 03Jun0812z at 1.5km
+The satellites are IVO 61.9 deg E longitude. 
+
+RPO: Drifting NMC
+--Radial: 5 km
+--Intrack: -1.4 km and increasing by -1.5 km per/day
+--Crosstrack: 24 km and increasing by 1.5 km per/day
+ 
+RPO conditions at time of closet approach
+--Closest Approach: 02Jun0812z at 0.7 km
+--Radial: 0.6 km
+--Intrack: 0.2 km
+--Crosstrack: 0.3 km
+ 
+The TRIC plot will show the new relative motion. Click link above to view products.
+
+PAI indicates that LUCH (OLYMP) 2 (55841) is a Russian satellite that supports military operations. The mission of LUCH (OLYMP) 2 is to conduct Electronic Intelligence Operations to spy on communications satellites. It is also suspected of engaging in Russian espionage activities.
+
+PAI indicates that INTELSAT 39 (44476) is a US satellite that supports commercial operations. The mission of INTELSAT 39 is to provide high-throughput service, including broadband Internet and direct TV to Africa, Europe, the Middle East, Asia, and the Indian Ocean region.
+ 
+Current TLE of Luch Olymp 2 as of 02Jun1644z provided by Anduril:
+0 LUCH(OLYMP)-2
+1 55841U 23031A   26153.69757928 +.00000000 +00000-0 +00000-0 0  0016
+2 55841   0.0321  63.2968 0000589 123.3396  17.6318  1.00270438 00016
+
+Current TLE of Intelsat 39 as of 02Jun1644z provided by Anduril:
+0 INTELSAT-39
+1 44476U 19049B   26153.69757928 +.00000000 +00000-0 +00000-0 0  0012
+2 44476   0.0065 306.9954 0000609  26.4801 230.7800  1.00270779 00014
+
+Mission Summary Luch 2:
+Russian military SIGINT satellite LUCH (OLYMP-K) 2 (2023-031A) was launched  on 12 March 2023, and like its predecessor LUCH (OLYMP-K) 1, it has since moved about along the geostationary belt, doing proximity operations near western commercial geostationary satellites. 
+
+Each two to four months, it is moved to a new target, where it stays in close proximity until moved to a new target again, behaviour in a similar fashion to the US satellite PAN/NEMESIS-1 in the past. It is probably clandestinely accessing and monitoring communication streams of the target satellites, and perhaps mapping contact networks. It can sometimes come very close to its target, to within a few to a few tens of kilometers.
+
+From September 2024 onwards it was positioned at 0.93 W close to Intelsat 1002, but on February 7, 2025, it started a drift eastwards. After a significant one-month drift over 62 degrees in longitude, it settled again on March 7  near 62 E, its new eavesdropping target being Intelsat 39 (2029-049B). This latest move is the largest since it was launched.
+
+Mission Summary Intelsat 39:
+Intelsat 39 is designed with wide and high-powered steerable spot beams and replaced Intelsat 902 at 62° East to meet the needs of broadband networking, video, and government customers across Africa, Asia-Pacific, Europe, and the Middle East. It provides C- and Ku-band capabilities and enhanced mobile connectivity for aeronautical, maritime, and government users operating in the Indian Ocean region. It provides a powerful platform enabling mobile network operators, enterprises, and internet service providers to deliver faster and more efficient connectivity services, and gives governments the ability to expand connectivity to remote areas and narrow the digital divide.
+
+The German Bundeswehr (armed forces) is among the known users of Intelsat 39. Both Intelsat 10-02 and Intelsat 39 provide C-band and Ku-band coverage across Europe and the Middle East, including Ukraine. 
+
+According to reporting, the satellite's proximity allows Russia to intercept communications sent between Earth and Intelsat-39 because those transmissions are not encrypted. European military representatives and security agencies reportedly use such civilian satellites at least in part because secure alternatives remain limited. Experts also believe Luch-2 may be able to intercept control signals sent from ground stations to satellites such as Intelsat-39, raising the possibility of operational interference.
+
+Satellite Summaries:
+55841 | LUCH 5X (OLYMP K-2) | GEO-GSO / Geostationary | Russian Ministry of Defence - VKS (MORF) (Russia) | Active / Manoeuverable | Military | Communications / Communications - Data Relay,Servicing/Inspection / Observational/Situational Awareness,Signals Intelligence / Signals Intelligence - Electronic | 12/03/2023 (3.23 years old) | 15.0 years | Military communications satellite also with ELECTRONIC INTELLIGENCE (ELINT) function to spy on communications of other satellites. | Second in a series of suspected Russian espionage/ electronic intelligence satellites.| Yes - On-board Propulsion | Electric - Xenon,Monopropellant (Liquid Catalytic Chemical) - Hydrazine (N2H4) | Ku,Laser,S | Source: Seradata
+
+44476 | INTELSAT 39 | GEO-GSO / Geostationary | Intelsat S.A. (United States) | Active / Manoeuverable | Commercial | Communications / Communications - General | 06/08/2019 (6.83 years old) | 15.0 years | Providing high-throughput service including broadband Internet and direct TV to Africa, Europe, The Middle East, Asia and Indian Ocean region. | A portion of the capacity of the satellite has been purchased by the Government of Myanmar to provide a continuation of service for its satellite-based 2G and 3G services. Myanmar reportedly paid Intelsat US$155.7m. | Yes - On-board Propulsion | Bi-propellant (Liquid Chemical) - MMH (Monomethyl Hydrazine),Electric - Xenon | Gateway Down: C,Ku | User Down: Ku | EDRS C (HYLAS 3), | Source: Seradata
+
+Space Weather:
+Space Weather Conditions during activity (JDAY 152-153)  
+Radio Blackout Impacts – JDAY 152 = R0 (N/A), JDAY 153 = Intermittent R1 (Minor) throughout the day
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)
+Source: https://www.spaceweather.gov/communities/space-weather-enthusiasts-dashboard (Read More)
+
+55841 vs 44476 / historical plots / KBR / JDAY 153 / 19:31Z
+
+2026-06-02T19:31:54.500Z
+
+55841 vs 44476 / 3D Visualization / KBR / JDAY 153 / 19:31Z
+
+2026-06-02T19:31:33.070Z
+
+55841 vs 44476 / TRIC Plot / KBR / JDAY 153 / 19:31Z
+
+2026-06-02T19:31:16.530Z
+
+INTELSAT 39 / Passive RF /  / JDAY 153 / 19:30Z
+
+2026-06-02T19:30:57.140Z
+
+LUCH (OLYMP) 2 / Passive RF / KBR / JDAY 153 / 19:30Z
+
+2026-06-02T19:30:32.630Z
+
+INTELSAT 39 / Lightcurve / KBR / JDAY 153 / 19:29Z
+
+2026-06-02T19:29:58.910Z
+
+LUCH (OLYMP) 2 / Lightcurve / KBR / JDAY 153 / 19:29Z
+
+2026-06-02T19:29:31.640Z
+
+55841 vs 44476 / PASCHED / KBR / JDAY 153 / 19:28Z
+
+2026-06-02T19:29:09.280Z
+
+55841 vs 44476 / Waterfall / KBR / JDAY 153 / 19:27Z
+
+2026-06-02T19:28:07.720Z
+
+55841 vs 44476 / Neighborhood / KBR / JDAY 153 / 19:27Z
+
+2026-06-02T19:27:33.360Z
+
+55841 vs 44476 / DC Results / Anduril / JDAY 153 / 19:26Z
+
+2026-06-02T19:27:10.610Z
+
+2026-06-02T19:33:07.273Z
+
+Satellites Number Name Orbit Country 55841 LUCH (OLYMP) 2 Russia (CIS) 44476 INTELSAT 39 International Telecomm. Sat. Org. (ITSO)
+
+Number Name Orbit Country 55841 LUCH (OLYMP) 2 Russia (CIS) 44476 INTELSAT 39 International Telecomm. Sat. Org. (ITSO)
+
+55841 LUCH (OLYMP) 2 Russia (CIS) 44476 INTELSAT 39 International Telecomm. Sat. Org. (ITSO)
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/00256081-e85d-429a-926e-4b5ff7e9b475/55841%20vs%2044476%20/%20historical%20plots%20/%20KBR%20/%20JDAY%20153%20/%2019%3A31Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/140cfb88-a9b0-4dbb-b554-dde5ca53b702/55841%20vs%2044476%20/%203D%20Visualization%20/%20KBR%20/%20JDAY%20153%20/%2019%3A31Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/892ba8d7-7f46-4ed8-8d9a-c38c03e5f2b8/55841%20vs%2044476%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20153%20/%2019%3A31Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/63e654c1-2ea3-43d6-b38f-3729a2a6eb6c/INTELSAT%2039%20/%20Passive%20RF%20/%20%20/%20JDAY%20153%20/%2019%3A30Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/962ddcea-e9e6-41ab-8f28-d4a821c997c9/LUCH%20%28OLYMP%29%202%20/%20Passive%20RF%20/%20KBR%20/%20JDAY%20153%20/%2019%3A30Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a643abb2-b468-4138-9d3c-55a542294912/INTELSAT%2039%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20153%20/%2019%3A29Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a95fca6a-9c25-4f41-82f8-6269adb537ed/LUCH%20%28OLYMP%29%202%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20153%20/%2019%3A29Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/5a5f98b6-c791-4718-9e28-2ee15486d9ce/55841%20vs%2044476%20/%20PASCHED%20/%20KBR%20/%20JDAY%20153%20/%2019%3A28Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/41635bc5-899c-4c7f-af3a-678182a40cfb/55841%20vs%2044476%20/%20Waterfall%20/%20KBR%20/%20JDAY%20153%20/%2019%3A27Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/9b10e773-3f6c-451f-81a1-58237470d512/55841%20vs%2044476%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20153%20/%2019%3A27Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/b092d51c-c77c-4834-9629-4ec16d37a811/55841%20vs%2044476%20/%20DC%20Results%20/%20Anduril%20/%20JDAY%20153%20/%2019%3A26Z

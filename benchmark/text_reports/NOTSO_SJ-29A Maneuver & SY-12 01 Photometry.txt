@@ -1,0 +1,515 @@
+NOTSO_SJ-29A Maneuver & SY-12 01 Photometry / SJ-29A (67302) & SJ-29B (67403) / GEO_01Jun-1731Z
+
+JDay 152 at 1616z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have verified a maneuver by SJ-29A (67302) occurring at 2148z on 31May (JDay 151). There are NO active maneuvers by SJ-29B at this time. Also, there was a photometric change by SY-12 01 (50321) as it drifted by SJ-29A and SJ-29B on 31May and they were ~500km apart.
+
+SJ-29A maneuvered from 73.29 deg E Longitude with a delta-v of 0.59 m/s, resulting in a period decrease of 52 secs and SJ-29A parking at 73.29 deg E Longitude. 
+
+SJ-29A is west of SJ-29B and both objects are located at 73 degs E Longitude and they are ~40km apart. SJ-29B has not been tracked today so this statement is with med confidence. 
+
+SY-12 01 (50321) had a close approach with both SJ-29A and SJ-29B on 01Jun1517z
+- SY-12 01 TCA with SJ-29A at ~130km
+- SY-12 01 TCA with SJ-29B at ~165km
+
+The photometric change for SY-12 01 occurred on 31May from -35 to -10 SEPA and was 0.6 VisMag dimmer. The reason for the change is unknown but SY-12 01 was ~500km away from SJ-29A and SJ-29B.
+
+Neighborhood of nearby objects is attached showing upcoming close approaches as a result of this maneuver. Click the link above to see products
+ 
+PAI suggests that SHIJIAN-29 A is a Chinese satellite that supports military operations. The mission of SHIJIAN-29 B is assessed as servicing/inspection and observational/space situational awareness. SHIJIAN-29 A and SHIJIAN-29 B are described as demonstrations of new technologies for spatial target detection.
+
+PAI suggests that Shiyan 12 01 is a Chinese satellite that supports military operations. Officially the mission of the satellite is for "space environment exploration and related technology tests" however, it is suspected that it is actually a military test satellite. 
+ 
+The specifics of the SJ-29A maneuver are:
+--Time of Maneuver: 31May2148z
+--Delta V: 0.59 m/s
+--Period Change: -51.97 seconds
+--Perigee Change: -25.85 km
+--Apogee Change: -8.05 km
+--Inclination Change: -0.0002 deg
+--Current Drift Rate: 0.02 E deg/day
+ 
+Photometric change of SY-12 01
+Time window of change: 312May1624z to 1823zz
+Solar phase angle window: -35 to -10 degs
+Vismag pre change: 12.4
+Vismag post change: 13
+Close approaches within window: TCA w/SJ-29A and SJ-29B at ~500km on 31May1732z 
+Current longitude: 73.62 E Longitude
+Current drift rate: 0.8 W degs/day
+
+SJ-29 A Post Maneuver  TLE as of 01Jun1541z provided by Anduril:
+1 67302U 25315A   26152.65376129 +.00000000 +00000-0 +00000-0 0  0013
+2 67302   3.3585  95.4888 0003592  21.9441  81.3417  1.00263112 00017
+
+SJ-29B current TLE as of 31May1758z provided by Anduril:
+1 67403U 25315C   26151.74908113 +.00000000 +00000-0 +00000-0 0  0018
+2 67403   3.3564  95.4880 0002394 261.2314 235.5903  1.00271259 00019
+
+SY-12 01 current TLE as of 01Jun1442z provided by KBR:
+1 50321U 21129A   26152.61310036 -.00000041 +00000-0 -34487-4 0  0002
+2 50321   3.6349  80.1180 0003702 291.1976 172.6748  1.00038256000003
+
+=========================================================
+JDay 152 at 0300z:
+
+Based on current SDA observations and available PAIR data, JCO providers have detected a possible maneuver on SJ-29A (67302), occurring at 2000z on 31 May (JDay 151).
+
+The satellite was located at 73.30 degs E longitude. Based on initial indications it appears the satellite has increased its orbital period.
+
+Additionally, previously reported photometric change that occurred on 28MAY (JDay 148), between the solar phase angles of -13.78 deg and -6.45 deg SEPA has now reverted back to POL lightcurve signature.
+
+The associated Neighbourhood has been generated using the pre-maneuver state and may differ from the post-maneuver state.Click link above to view products. Analysis is ongoing.
+
+PAI suggests that SHIJIAN-29 A is a Chinese satellite that supports military operations. The mission of SHIJIAN-29 B is assessed as servicing/inspection and observational/space situational awareness. SHIJIAN-29 A and SHIJIAN-29 B are described as demonstrations of new technologies for spatial target detection.
+
+Pre-maneuver TLE as of 31May1758z provided by Northstar:
+1 67302U 25315A   26151.74908113  .00000000  00000-0  00000-0 0    05
+2 67302   3.3567  95.5110 0000901 199.3048 297.4062  1.00215760001440
+
+===============================================================
+Jday 149 at 1240z:
+
+Based on current passive RF observations, JCO providers have an update on a possible maneuver by SJ-29A (67302), occurring at 1957z on 28May (JDay 148).
+
+The satellite maneuvered from 73.93deg E longitude with a delta-v of 0.75 m/s, resulting in the initiation of westward drift. This maneuver appears to be similar to the one performed by SHIJIAN-29 B (67403). Neighborhood of nearby objects is attached showing upcoming close approaches as a result of this maneuver. 
+
+The attached TRIC plot shows the initiation of this drift rate resulted in the further separation of SJ-29 A (67402) from USA 324 (51280). Their earlier close approach occurred on 29 May (JDay 149) at 0913Z with a distance at closest approach of 6km and good lighting conditions for SJ-29A.
+
+Click link above to view products. Analysis is ongoing.
+
+PAI suggests that SHIJIAN-29 A is a Chinese satellite that supports military operations. The mission of SHIJIAN-29 B is assessed as servicing/inspection and observational/space situational awareness. SHIJIAN-29 A and SHIJIAN-29 B are described as demonstrations of new technologies for spatial target detection.
+
+The specifics of the maneuver are: 
+--Time of Maneuver: 28May1957z
+--Delta V: 0.75 m/s
+--Period Change: 62.49 secs
+--Apogee Change: 11.32 km
+--Perigee Change: 29.44 km
+--Inclination Change: 0.00 degs
+--Current Drift Rate: -0.26 W deg/day
+ 
+Post Maneuver Current TLE as of 29May1117z provided by NorthStar:
+
+1 67302U 25315A   26149.47077541  .00000000  00000-0  00000-0 0    04
+2 67302   3.3515  95.5613 0001049 234.0458 160.6267  1.00208837096659
+
+
+========================================================================
+
+Jday 149 at 0320z:
+
+JCO providers have detected a Photometric change on SJ-29A (67302) followed on from the previously reported possible maneuver that occurred at 2026z on 28May (Jday 148). 
+
+The initial change occurred between 1832z and 1900z on 28MAY (JDay 148), between the solar phase angles of -13.78 deg and -6.45 deg SEPA and appeared to be 1 visual magnitude brighter. The secondary photometric changes provided a 2Vm brightness increase between 15.9 and 16.2deg SEPAs (28/2026-2027z), followed by an up to 1.5Vm dimness between 16.2 and 16.8deg SEPAs (28/2027-2030z).
+
+The resulting photometric change was advantageous for SJ-29A (67402) due to its limited visibility for USA 324 (51280) which was ~400km away at the time of the change but approaching min separation of 36.5km at 28 May 2114z. Neighbourhood is attached. 
+
+The satellite was located at 73.8 degs E longitude. Based on initial indications, it appears to have a period increase of 34sec.
+
+Click link above to view products. Analysis is ongoing.
+
+PAI suggests that SHIJIAN-29 A is a Chinese satellite that supports military operations. The mission of SHIJIAN-29 B is assessed as servicing/inspection and observational/space situational awareness. SHIJIAN-29 A and SHIJIAN-29 B are described as demonstrations of new technologies for spatial target detection.
+
+Time window of photometry change: 28May1834z to 2012z
+Solar phase angle window: -10 to 20 degs
+Vismag pre change: 10.5
+Vismag post change: 8
+Close approaches within window: TCA USA 324 (51280) on 29May0921z at 16.9km; with good lighting
+Current longitude: 73.8 E Longitude
+Current drift rate: -0.13 W degs/day
+
+Pre-maneuver TLE as of 28May2215z provided by Northstar of low confidence:
+1 67302U 25315A   26148.92768833 +.00000000 +00000-0 +00000-0 0  0004
+2 67302   3.3502  95.5699 0000504 277.8460 280.8914  1.00235198000000
+
+========================================================================
+
+JDay 148 at 2121z:
+
+Based on current SDA observations and available PAIR data, JCO providers have detected a possible maneuver by SJ-29A (67302), occurring at 2026z on 28May (JDay 148). 
+
+Of note: SJ-29B (67403) performed a maneuver in the last 24hrs and there was a projected close approach of <1km on 29May0316z between the two satellites with SY-12 02 being 50km away at the time of the close approach. There was an additional close approach of  USA 342 (51280) on 28May2114z at 40km
+
+There was also a photometry change from -13 to 12 SEPA where SJ-29A was 0.8 VisMag brighter. This change could be due to the maneuver.
+
+The satellite was located at 73.8 degs E longitude. Based on initial indications, it appears to be a period decrease of 28sec.
+
+The associated Neighborhood has been generated using the pre-maneuver state and may differ from the post-maneuver state. SY 12-02 (50322) and USA 324 (51280) are in the neighborhood as well.
+
+Click link above to view products. Analysis is ongoing.
+
+PAI suggests that SHIJIAN-29 A is a Chinese satellite that supports military operations. The mission of SHIJIAN-29 B is assessed as servicing/inspection and observational/space situational awareness. SHIJIAN-29 A and SHIJIAN-29 B are described as demonstrations of new technologies for spatial target detection.
+
+Time window of photometry change: 28May1834z to 2012z
+Solar phase angle window: -13 to 12 degs
+Vismag pre change: 10.18
+Vismag post change: 9.23
+Close approaches within window: TCA 51280 on 28May2114z at 40km; with bad lighting
+Current longitude: 73.8 E Longitude
+Current drift rate: 0.01 E degs/day
+
+Pre-maneuver TLE as of 28May2005z provided by KBR:
+1 67302U 25315A   26148.83736937 +.00000085 +00000-0 +70548-4 0  0005
+2 67302   3.3501  95.5740 0003187 336.8464 189.2952  1.00275078000001
+
+JDay 148 at 2133z:
+
+Mission Summary:
+Shijian-29A (NORAD 67302) was built by the Shanghai Academy of Spaceflight Technology, a CASC subsidiary, and launched on 31 December 2025 aboard a Long March 7A from Wenchang, weighing approximately 3,500 kg. The satellite settled into GEO at 73.0°E longitude with an inclination of 3.1° and a RAAN of 98.67°, where it maintained a co-planar formation with SJ-29B at a separation of roughly 30–70 km — and as of early February 2026, SJ-29A had not maneuvered since arriving on orbit, with SJ-29B conducting the more active proximity operations of the pair. China officially described SJ-29A as tasked with space environment monitoring and related technology tests — the Chinese equivalent of what the US calls space situational awareness — meaning the satellite is designed to detect, track, and predict the movements of orbiting objects including other satellites, rocket stages, and debris.
+Source: DCJ
+
+Neighborhood:
+**67403 | SHIJIAN-29 B** | GEO-GSO / Geostationary | Chinese Ministry of Defence (China) | Active / Maneuverable | Military | Servicing/Inspection / Observational/Situational Awareness | 30/12/2025 (0.41 years old) | 12.0 years | SHIJIAN-29 B. Classified Chinese military satellite thought to be for space situational awareness (SSA). | Both SHIJIAN-29 A and SHIJIAN-29 B are described as 'demonstration of new technologies for spatial targets detection'. | Yes - On-board Propulsion | Propulsion Unknown | SHIJIAN-29 A, | Source: Seradata
+
+50322 | SHIYAN 12-02 | GEO-GSO / Geostationary | Chinese Ministry of Defence (China) | Active - Inclined (aged) / Maneuverable | Military | Servicing/Inspection / Observational/Situational Awareness, Technology / Technology Test/Prototype | 23/12/2021 (4.43 years old) | 15.0 years | Officially the mission of the satellite is for" space environment exploration and related technology tests" however, it is suspected that it is actually a military test satellite. Possible military SSA (Space Situational Awareness) application in GEO. | Yes - On-board Propulsion | Propulsion Unknown | SHIYAN 12-01, | Source: Seradata
+
+51280 | USA 324 | GEO-GSO / Geostationary | US Space Force (USSF) (United States) | Active / Maneuverable | Military | Servicing/Inspection / Observational/Situational Awareness | 21/01/2022 (4.35 years old) | 5.0 years | USA 324 and USA 325 are a pair of space object tracking satellites.  Carrying cameras to observe other satellites and space debris.; | Yes - On-board Propulsion | Monopropellant (Liquid Catalytic Chemical) - MMH (Monomethyl Hydrazine) | , USA 325 | Source: Seradata
+
+40887 | MUOS 4 | GEO-GSO / Geosynchronous | US Navy (USN) (United States) | Active / Maneuverable | Military | Communications / Communications - General | 02/09/2015 (10.74 years old) | 10.0 years | MUOS - Mobile User Objective System military telecommunications satellite. | MUOS system expected to consist of four satellites plus one in-orbit spare. | Yes - On-board Propulsion | Monopropellant (Liquid Catalytic Chemical) - Hydrazine (N2H4) | Gateway Down: S | User Down: Ka,UHF,VHF | Source: Seradata
+
+Space Weather Conditions during maneuver (2026Z, JDAY 148)  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard (Read More)
+
+SJ-29B / TRIC Plot / NorthStar / JDAY 153 / 03:31Z
+
+2026-06-02T03:31:29.820Z
+
+SJ-29B / TRIC Plot / NorthStar / JDAY 153 / 03:29Z
+
+2026-06-02T03:29:42.290Z
+
+SJ-29B / Neighborhood / NorthStar / JDAY 153 / 03:27Z
+
+2026-06-02T03:27:19.970Z
+
+SHIYAN 12 01 (SY-12 01) / PASCHED / NorthStar / JDAY 153 / 03:25Z
+
+2026-06-02T03:25:38.770Z
+
+SJ-29B / PASCHED / NorthStar / JDAY 153 / 03:25Z
+
+2026-06-02T03:25:25.050Z
+
+SJ-29A / PASCHED / NorthStar / JDAY 153 / 03:24Z
+
+2026-06-02T03:25:09.830Z
+
+SJ-29A / historical plot / KBR / JDAY 152 / 17:31Z
+
+2026-06-01T17:31:21.600Z
+
+SJ-29A / Neighborhood / KBR / JDAY 152 / 17:27Z
+
+NOTE: this does show SJ-29B on the West side of SJ-29A but SJ-29B is on the East site
+
+2026-06-01T17:30:52.240Z
+
+SJ-29A / DC Results / KBR / JDAY 152 / 17:26Z
+
+2026-06-01T17:26:39.980Z
+
+SJ-29A vs SJ-29B / TRIC Plot / JCO DOK / JDAY 152 / 17:24Z
+
+B is East / A is West, and the objects are slowly closing due to a slightly higher westward drift rate by B
+
+2026-06-01T17:25:31.670Z
+
+SJ-29A and SJ-29B vs SY-1201 / TRIC Plot / JCO DOK / JDAY 152 / 17:24Z
+
+2026-06-01T17:24:26.260Z
+
+SJ-29A and SJ-29B vs SY-1201 / TRIC Plot / JCO DOK / JDAY 152 / 17:23Z
+
+2026-06-01T17:23:47.310Z
+
+SJ-29A and SJ-29B vs SY-1201 / residuals / Anduril / JDAY 152 / 17:22Z
+
+2026-06-01T17:23:23.050Z
+
+SHIYAN 12 01 (SY-12 01) / Lightcurve / Anduril / JDAY 152 / 17:21Z
+
+2026-06-01T17:22:06.540Z
+
+SJ-29A / Lightcurve / Northstar / JDAY 152 / 02:55Z
+
+2026-06-01T02:55:19.500Z
+
+SJ-29A / Residuals / Northstar / JDAY 152 / 02:54Z
+
+2026-06-01T02:55:01.070Z
+
+SJ-29A / PASCHED / Northstar / JDAY 152 / 02:53Z
+
+2026-06-01T02:54:21.840Z
+
+SJ-29A / Neighborhood / Northstar / JDAY 152 / 02:53Z
+
+2026-06-01T02:53:49.050Z
+
+SJ-29A / Residuals / Northstar / JDAY 152 / 02:52Z
+
+2026-06-01T02:53:33.310Z
+
+SJ-29A / Lightcurve / KBR / JDAY 149 / 15:17Z
+
+2026-05-29T15:17:15.630Z
+
+SJ-29A / DC Results / KBR / JDAY 149 / 15:16Z
+
+2026-05-29T15:17:06.350Z
+
+SJ-29A / Neighborhood / KBR / JDAY 149 / 15:16Z
+
+2026-05-29T15:16:38.960Z
+
+SJ-29A / Lightcurve / KBR / JDAY 149 / 15:16Z
+
+2026-05-29T15:16:22.730Z
+
+SJ-29A / TRIC Plot / SAFRAN / JDAY 149 / 15:13Z
+
+2026-05-29T15:15:59.200Z
+
+SJ-29A / Orbit State / SAFRAN / JDAY 149 / 15:13Z
+
+2026-05-29T15:13:34.500Z
+
+SJ-29A / DC Results / NorthStar / JDAY 149 / 15:06Z
+
+2026-05-29T15:12:51.460Z
+
+SJ-29A / Neighborhood / Northstar / JDAY 149 / 15:05Z
+
+2026-05-29T15:06:21.380Z
+
+SJ-29A / Camera-Target-Sun Angle / NorthStar / JDAY 149 / 13:13Z
+
+2026-05-29T13:15:07.180Z
+
+SJ-29A / 3D Visualization / NorthStar / JDAY 149 / 12:51Z
+
+2026-05-29T12:51:46.410Z
+
+SJ-29A / TRIC Plot / NorthStar / JDAY 149 / 12:51Z
+
+2026-05-29T12:51:23.630Z
+
+SJ-29A / Neighborhood / NorthStar / JDAY 149 / 12:47Z
+
+2026-05-29T12:48:15.400Z
+
+SJ-29A / DC Results / NorthStar / JDAY 149 / 12:38Z
+
+2026-05-29T12:38:53.740Z
+
+SJ-29A / TRIC Plot / Northstar / JDAY 149 / 02:56Z
+
+2026-05-29T02:57:14.560Z
+
+SJ-29A / Lightcurve / Northstar / JDAY 149 / 02:56Z
+
+2026-05-29T02:56:57.830Z
+
+SJ-29A / PASCHED / Northstar / JDAY 149 / 02:56Z
+
+2026-05-29T02:56:43.510Z
+
+SJ-29A / Neighborhood / Northstar / JDAY 149 / 02:56Z
+
+2026-05-29T02:56:29.250Z
+
+SJ-29A / Lightcurve / Northstar / JDAY 149 / 02:55Z
+
+2026-05-29T02:56:11.380Z
+
+SJ-29A / DC Results / Northstar / JDAY 149 / 02:55Z
+
+2026-05-29T02:55:57.670Z
+
+SJ-29A / Waterfall / ExoMAps / JDAY 149 / 02:55Z
+
+2026-05-29T02:55:39.160Z
+
+SJ-29A / Lightcurve / KBR / JDAY 149 / 02:54Z
+
+2026-05-29T02:55:09.150Z
+
+2026-05-29T02:54:54.940Z
+
+SJ-29A / PASCHED / KBR / JDAY 149 / 02:54Z
+
+2026-05-29T02:54:42.130Z
+
+2026-05-29T02:54:26.550Z
+
+SJ-29A / Lightcurve / KBR / JDAY 149 / 02:53Z
+
+2026-05-29T02:54:00.040Z
+
+SJ-29A / TRIC Plot / KBR / JDAY 149 / 02:53Z
+
+2026-05-29T02:53:27.980Z
+
+SJ-29A / Neighborhood / KBR / JDAY 149 / 02:52Z
+
+2026-05-29T02:53:03.050Z
+
+SJ-29A / TRIC Plot / KBR / JDAY 149 / 02:51Z
+
+2026-05-29T02:52:44.100Z
+
+SJ-29A / residuals / KBR / JDAY 148 / 21:41Z
+
+2026-05-28T21:42:42.840Z
+
+SJ-29A / Lightcurve / KBR / JDAY 148 / 21:41Z
+
+2026-05-28T21:41:41.390Z
+
+SJ-29A / Neighborhood / KBR / JDAY 148 / 21:40Z
+
+2026-05-28T21:40:59.900Z
+
+SJ-29A / Waterfall / KBR / JDAY 148 / 21:40Z
+
+2026-05-28T21:40:39.670Z
+
+SJ-29A / Passive RF / KBR / JDAY 148 / 21:40Z
+
+2026-05-28T21:40:21.840Z
+
+SJ-29A / Residuals / KBR / JDAY 148 / 21:39Z
+
+2026-05-28T21:39:57.570Z
+
+2026-06-01T17:31:55.670Z
+
+2026-06-01T03:08:45.522Z
+
+2026-05-29T13:16:01.078Z
+
+2026-05-29T03:20:53.561Z
+
+2026-05-28T21:52:56.385Z
+
+Satellites Number Name Orbit Country 67302 SJ-29A 51280 USA 324 67403 SJ-29B 50321 SHIYAN 12 01 (SY-12 01)
+
+Number Name Orbit Country 67302 SJ-29A 51280 USA 324 67403 SJ-29B 50321 SHIYAN 12 01 (SY-12 01)
+
+67302 SJ-29A 51280 USA 324 67403 SJ-29B 50321 SHIYAN 12 01 (SY-12 01)
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/558fdaf2-798c-4ff0-a61d-f420326e502c/SJ-29B%20/%20TRIC%20Plot%20/%20NorthStar%20/%20JDAY%20153%20/%2003%3A31Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/94409975-a807-4aa9-8134-6842f108dce3/SJ-29B%20/%20TRIC%20Plot%20/%20NorthStar%20/%20JDAY%20153%20/%2003%3A29Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a1d9ab35-a59c-4465-bc8c-aff3d4ef6ec1/SJ-29B%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20153%20/%2003%3A27Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2f19ac6c-a43c-4ef4-bdb3-69f15c80c98b/SHIYAN%2012%2001%20%28SY-12%2001%29%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20153%20/%2003%3A25Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/59b048fc-2588-478c-84ab-9e71edaf42b0/SJ-29B%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20153%20/%2003%3A25Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/7f2e3a14-23be-40bd-94f7-e88f78302b92/SJ-29A%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20153%20/%2003%3A24Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/07a98ffc-eb05-44e2-8bc1-d2ab5092cb6e/SJ-29A%20/%20historical%20plot%20/%20KBR%20/%20JDAY%20152%20/%2017%3A31Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f4c38d40-eb90-4afb-afd6-d5295afcbfc4/SJ-29A%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20152%20/%2017%3A27Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/19ad4374-1dc6-4126-ab86-ea3af58ecf44/SJ-29A%20/%20DC%20Results%20/%20KBR%20/%20JDAY%20152%20/%2017%3A26Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/888210b0-3f41-4e3b-88bf-10c9e4ad0c8c/SJ-29A%20vs%20SJ-29B%20/%20TRIC%20Plot%20/%20JCO%20DOK%20/%20JDAY%20152%20/%2017%3A24Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/055f8f18-1b27-4d4a-a2b4-477761aec6fa/SJ-29A%20and%20SJ-29B%20vs%20SY-1201%20/%20TRIC%20Plot%20/%20JCO%20DOK%20/%20JDAY%20152%20/%2017%3A24Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/c54d74ef-ea57-4acf-956a-5534b06e94a5/SJ-29A%20and%20SJ-29B%20vs%20SY-1201%20/%20TRIC%20Plot%20/%20JCO%20DOK%20/%20JDAY%20152%20/%2017%3A23Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f55ba4a4-b558-446b-ae16-7e511b02c35d/SJ-29A%20and%20SJ-29B%20vs%20SY-1201%20/%20residuals%20/%20Anduril%20/%20JDAY%20152%20/%2017%3A22Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/9b25c761-629e-49df-8f4d-33d1d6929841/SHIYAN%2012%2001%20%28SY-12%2001%29%20/%20Lightcurve%20/%20Anduril%20/%20JDAY%20152%20/%2017%3A21Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2969c683-f857-42e4-91e0-9d6974329181/SJ-29A%20/%20Lightcurve%20/%20Northstar%20/%20JDAY%20152%20/%2002%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/22cab70c-6319-4ecc-8b81-c73ed3bddf81/SJ-29A%20/%20Residuals%20/%20Northstar%20/%20JDAY%20152%20/%2002%3A54Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/91449d10-7823-42a7-9170-f60e72f6b0f8/SJ-29A%20/%20PASCHED%20/%20Northstar%20/%20JDAY%20152%20/%2002%3A53Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2285ef28-d45a-4168-8deb-30fa42172dd9/SJ-29A%20/%20Neighborhood%20/%20Northstar%20/%20JDAY%20152%20/%2002%3A53Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/48a71a90-5d8e-4b61-bb77-fa26dd082ef1/SJ-29A%20/%20Residuals%20/%20Northstar%20/%20JDAY%20152%20/%2002%3A52Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/7768b947-44c6-47d9-ac8b-f7d8540943d2/SJ-29A%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20149%20/%2015%3A17Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/dfbc2eef-8ef1-402d-b88f-e59d661d0d16/SJ-29A%20/%20DC%20Results%20/%20KBR%20/%20JDAY%20149%20/%2015%3A16Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/28b9ee63-20c2-43c5-bd14-217dbe4a31ab/SJ-29A%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20149%20/%2015%3A16Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/8fc5b520-d29d-4863-b091-cf2351ebd95b/SJ-29A%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20149%20/%2015%3A16Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2b2f813d-a00e-4103-8139-707c869ee8d5/SJ-29A%20/%20TRIC%20Plot%20/%20SAFRAN%20/%20JDAY%20149%20/%2015%3A13Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/62bb9888-8363-4adf-bf70-acf51036e45d/SJ-29A%20/%20Orbit%20State%20/%20SAFRAN%20/%20JDAY%20149%20/%2015%3A13Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/bf0d2f53-e409-4339-9e47-048f0d9d3ae1/SJ-29A%20/%20DC%20Results%20/%20NorthStar%20/%20JDAY%20149%20/%2015%3A06Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/c38ff208-866c-4e1c-84db-4f33cc0ddb0a/SJ-29A%20/%20Neighborhood%20/%20Northstar%20/%20JDAY%20149%20/%2015%3A05Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e823933d-ff5b-4242-a527-07c03537b945/SJ-29A%20/%20Camera-Target-Sun%20Angle%20/%20NorthStar%20/%20JDAY%20149%20/%2013%3A13Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/440ef103-f202-4941-af93-0b4a43f1a0c7/SJ-29A%20/%203D%20Visualization%20/%20NorthStar%20/%20JDAY%20149%20/%2012%3A51Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/7a176849-2a0f-49a4-837a-2819bd3590af/SJ-29A%20/%20TRIC%20Plot%20/%20NorthStar%20/%20JDAY%20149%20/%2012%3A51Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/53c3d8f4-a141-486f-a1bc-84c54d2125e0/SJ-29A%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20149%20/%2012%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/99ba36b3-fc1a-4263-9759-aca4e5413836/SJ-29A%20/%20DC%20Results%20/%20NorthStar%20/%20JDAY%20149%20/%2012%3A38Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e6a4c8ea-7c63-4af8-8690-6c32366ec4d8/SJ-29A%20/%20TRIC%20Plot%20/%20Northstar%20/%20JDAY%20149%20/%2002%3A56Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/692b49d6-71c8-4bbb-828f-7ae693ffd529/SJ-29A%20/%20Lightcurve%20/%20Northstar%20/%20JDAY%20149%20/%2002%3A56Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/04f05151-07da-4d4b-9299-affa3e722194/SJ-29A%20/%20PASCHED%20/%20Northstar%20/%20JDAY%20149%20/%2002%3A56Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/1be12270-7954-4f04-b1f9-7664b1caa529/SJ-29A%20/%20Neighborhood%20/%20Northstar%20/%20JDAY%20149%20/%2002%3A56Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/25deb6ec-6d79-4957-8270-3a10d4adb652/SJ-29A%20/%20Lightcurve%20/%20Northstar%20/%20JDAY%20149%20/%2002%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f87377e7-50a8-4031-acb1-f1ef1cf7afcc/SJ-29A%20/%20DC%20Results%20/%20Northstar%20/%20JDAY%20149%20/%2002%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/ab0d3db2-5560-46f8-9dbc-e8f062193643/SJ-29A%20/%20Waterfall%20/%20ExoMAps%20/%20JDAY%20149%20/%2002%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/9f571c0d-06db-49d4-a985-3d7972742a02/SJ-29A%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20149%20/%2002%3A54Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f3172c72-d3f7-4396-9b74-ff56dc88ea8c/SJ-29A%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20149%20/%2002%3A54Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/28417784-ce85-4310-a106-3fceced6fe14/SJ-29A%20/%20PASCHED%20/%20KBR%20/%20JDAY%20149%20/%2002%3A54Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/09227b99-5514-47c5-9bb3-e8a390ff355c/SJ-29A%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20149%20/%2002%3A54Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e1cb967c-3d6d-477a-9e11-0f1d76e77e8e/SJ-29A%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20149%20/%2002%3A53Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/1d188546-c0cd-4498-b81c-8fb148119527/SJ-29A%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20149%20/%2002%3A53Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/9bdb4788-ee4a-4781-9107-945e6a48589e/SJ-29A%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20149%20/%2002%3A52Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/c4c15aa5-b639-48c0-9413-4c389469950f/SJ-29A%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20149%20/%2002%3A51Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f07e9c4e-cea0-4cc6-982d-482fcbff1144/SJ-29A%20/%20residuals%20/%20KBR%20/%20JDAY%20148%20/%2021%3A41Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/d66a8434-f479-4f8e-8bfe-42d4c5a04760/SJ-29A%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20148%20/%2021%3A41Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/82e4ac37-d8cb-4642-8536-d21b9ffe5e85/SJ-29A%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20148%20/%2021%3A40Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/dfa83309-949a-4d7e-8614-5768a32b1620/SJ-29A%20/%20Waterfall%20/%20KBR%20/%20JDAY%20148%20/%2021%3A40Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/36f338ad-9aeb-43d1-b0b5-053b56d11961/SJ-29A%20/%20Passive%20RF%20/%20KBR%20/%20JDAY%20148%20/%2021%3A40Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/d973727e-263d-4335-a67a-78afcd73827e/SJ-29A%20/%20Residuals%20/%20KBR%20/%20JDAY%20148%20/%2021%3A39Z
+
+NOTSO_Maneuver / Photometric Change /  SJ-29A (67302) / GEO_01Jun-0308Z
+
+NOTSO_Maneuver / Photometric Change /  SJ-29A (67302) / GEO_29May-1315Z
+
+NOTSO_Maneuver / Photometric Change /  SJ-29A (67302) / GEO_29May-0320Z

@@ -171,12 +171,29 @@ Given a document, extract entities and relationships and return them as JSON.
    b. Link the launched satellite or mission to the site with a launchedFrom relation.
    c. If an operating organization is mentioned alongside the site, add an operatesLaunchSite relation.
    d. Do NOT create a LaunchSite node if only a country is named ("launched in China") — a specific facility name is required.
-8. If no schema type fits an entity, propose a new type: set "schema_status": "proposed" and include "proposed_type_info": {{"suggested_parent": "...", "suggested_attributes": [...], "reason": "..."}}.
-9. For each relation, use ONLY the relationship types listed in the schema.
-10. "excerpt" must be the EXACT verbatim sentence(s) from the text that support the extraction. If you cannot find a verbatim excerpt, do NOT extract that fact.
-11. Try to extract the real-world event_date for each entity/relation (e.g., when a satellite was launched, when a maneuver occurred). Use ISO date format (YYYY-MM-DD or YYYY-MM-DDThh:mm:ssZ).
-12. At the top level, include "event_date" (the most relevant date in the document, e.g., article publication date or main event date) and "event_date_approximate" (true if the date is estimated).
-13. CRITICAL: Only extract facts EXPLICITLY stated in the document text. Do NOT use your training knowledge to fill in missing facts. If a piece of information (e.g., launch vehicle, manufacturer) is not clearly stated in the text, leave it null. An entity appearing only in a navigation list (without context) should NOT be extracted with inferred attributes.
+8. PAIR SECTION EXTRACTION — JCO/NOTOS reports often contain pipe-delimited intelligence summaries formatted as:
+   `NORAD | Name (designation) | Orbit | Operator (Country) | Status | Users | Mission | Launch date | Intel description | Propulsion | ...`
+   Or narrative paragraphs beginning with "PAI suggests..." or "According to PAI...".
+   When you encounter these sections, extract ALL of the following Satellite attributes if present:
+   - `status`: the operational status field (e.g. "Active / Manoeuverable")
+   - `maneuverable`: "Yes" if "Manoeuverable" or "Yes, maneuverable" appears; "No" if explicitly stated not maneuverable; else "Unknown"
+   - `propulsion_type`: the propulsion field (e.g. "Chemical bipropellant", "On-board Propulsion / Unknown", "Hydrazine")
+   - `designation`: the platform/bus designation in parentheses after the name (e.g. "14F166A" from "COSMOS 2589 (14F166A)")
+   - `intel_description`: the free-text intelligence assessment (e.g. "Russian military satellite. Suspected to have satellite inspection or 'satellite killing' capabilities.")
+   - `mission`: the mission/purpose field if more specific than already recorded
+   - `operator`: the operator field (e.g. "Russian Ministry of Defence - VKS (MORF)")
+   Also extract any associated satellites mentioned (e.g. "COSMOS 2590" in the same row) as separate Satellite entities and link with appropriate relations.
+9. COUNTRY NODES — when a satellite's operating country is mentioned:
+   a. Extract a Country node with its canonical English name (e.g. "China", "USA", "Russia").
+   b. Link the satellite to the country with an "operatingCountry" relation.
+   c. Use consistent canonical names: "China" (not PRC), "USA" (not United States), "Russia" (not Russian Federation).
+   d. Do NOT extract Country nodes for countries only mentioned in passing — only when directly tied to a satellite as its operator country.
+10. If no schema type fits an entity, propose a new type: set "schema_status": "proposed" and include "proposed_type_info": {{"suggested_parent": "...", "suggested_attributes": [...], "reason": "..."}}.
+11. For each relation, use ONLY the relationship types listed in the schema.
+12. "excerpt" must be the EXACT verbatim sentence(s) from the text that support the extraction. If you cannot find a verbatim excerpt, do NOT extract that fact.
+13. Try to extract the real-world event_date for each entity/relation (e.g., when a satellite was launched, when a maneuver occurred). Use ISO date format (YYYY-MM-DD or YYYY-MM-DDThh:mm:ssZ).
+14. At the top level, include "event_date" (the most relevant date in the document, e.g., article publication date or main event date) and "event_date_approximate" (true if the date is estimated).
+15. CRITICAL: Only extract facts EXPLICITLY stated in the document text. Do NOT use your training knowledge to fill in missing facts. If a piece of information (e.g., launch vehicle, manufacturer) is not clearly stated in the text, leave it null. An entity appearing only in a navigation list (without context) should NOT be extracted with inferred attributes.
 
 Return ONLY valid JSON in this exact structure:
 {{

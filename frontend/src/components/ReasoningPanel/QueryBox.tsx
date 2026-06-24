@@ -183,6 +183,29 @@ export default function QueryBox() {
         }
       );
       setToolProgress(null);
+
+      // Auto-select and display identified satellites
+      if (result.identified_satellites && result.identified_satellites.length > 0) {
+        const { selectSatellite, toggleSatelliteVisibility } = useAppStore.getState();
+
+        // Find primary satellite (highest confidence or type === 'primary')
+        const primarySats = result.identified_satellites.filter(s => s.type === 'primary' || !s.type);
+        const relatedSats = result.identified_satellites.filter(s => s.type === 'related');
+
+        // Select the primary satellite with highest confidence
+        if (primarySats.length > 0) {
+          const selectedSat = primarySats.reduce((prev, current) =>
+            (prev.confidence > current.confidence) ? prev : current
+          );
+          selectSatellite(selectedSat.id);
+        }
+
+        // Show all satellites (primary + related) on globe
+        result.identified_satellites.forEach(sat => {
+          toggleSatelliteVisibility(sat.id);
+        });
+      }
+
       setMessages((prev) => [...prev, {
         role: 'assistant',
         content: result.answer,

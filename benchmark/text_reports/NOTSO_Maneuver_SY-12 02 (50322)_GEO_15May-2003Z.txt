@@ -1,0 +1,116 @@
+NOTSO_Maneuver / SY-12 02 (50322) / GEO_15May-2003Z
+
+JDay 135 at 1919z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have verified a maneuver by SY 12-02 (50322) occurring at 0134z on 15May (JDay 135).
+
+The satellite was located at 62.92 degs E longitude. It appears to be an avoidance maneuver with a Delta V of 0.12 m/s and a period decrease of 9.5 sec. 
+
+There was a close approach with a known object on 16May0924z at 20km. The maneuver pushed the TCA to 16May0925z at 46km. This is within pattern of life for SY 12-02 as they usually do maneuvers to push close approaches to be outside 30km.
+Neighborhood is attached. Click the link above to view products.
+ 
+PAI suggests that SY-12 02 is a Chinese satellite that supports military operations. The mission of SY-12 02 is officially space environment exploration and related technology tests. However, it is suspected that it is actually a military test satellite with possible military SSA (Space Situational Awareness) application in GEO.
+ 
+The specifics of the maneuver are:
+--Time of Maneuver: 15May0134z
+--Delta V: 0.12 m/s
+--Period Change: -9.47 seconds
+--Perigee Change: -6.31 km
+--Apogee Change: 0.13 km
+--Inclination Change: 0.0004 degs
+--Current Drift Rate: 0.79 E deg/day
+ 
+Post Maneuver Current TLE as of 15May1859z provided by KBR:
+1 50322U 21129B   26135.79154598 +.00000016 +00000-0 +13361-4 0  0000
+2 50322   3.5907  80.3390 0001879  52.6746  88.7253  1.00489813000003
+
+Post Maneuver Current TLE as of 15May1844z provided by Anduril:
+1 50322U 21129B   26135.78123421 +.00000000 +00000-0 +00000-0 0  0016
+2 50322   3.5904  80.3397 0001793  53.9769  83.6928  1.00490940 00018
+
+
+=======================================
+JDay 135 at 1220z:
+
+Based on current SDA observations and available PAIR data, JCO providers have detected a possible maneuver on SY-12 02 (50322), occurring between 0600z and 0800z on 15MAY (JDAY 135).
+
+The satellite was located at 62.92 degs E longitude. Based on initial indications, it appears to be  an avoidance maneuver as it had CA with KBR UCT (73001 / 901001707) on 16MAY0924z within 20km.
+The associated Neighborhood has been generated using the pre-maneuver state and may differ from the post-maneuver state.
+Click link above to view products. Analysis is ongoing.
+
+PAI suggests that SY-12 02 is a Chinese satellite that supports military operations. The mission of SY-12 02 is officially space environment exploration and related technology tests. However, it is suspected that it is actually a military test satellite with possible military SSA (Space Situational Awareness) application in GEO.
+
+Pre-maneuver TLE as of 15MAY0247z provided by Northstar:
+1 50322U 21129B   26135.11631582  .00000000  00000-0  00000-0 0    04
+2 50322   3.5885  80.3550 0001379  75.5644 181.5295  1.00471218000000
+
+JDAY 135, 1214Z
+
+Mission Summary:
+Shiyan 12-02 (SY-12 02, NORAD 50322, COSPAR 2021-129B) is a Chinese experimental satellite launched on December 23, 2021, aboard a Long March 7A rocket from Wenchang alongside its twin Shiyan 12-01. It operates in a near-geostationary orbit (approximately 35,730–35,740 km altitude with ~3.6° inclination) and is officially described for space environment monitoring and technology verification, though it is widely assessed as a maneuverable inspector satellite with classified military/intelligence capabilities. It has demonstrated advanced rendezvous and proximity operations (RPO), notably in the 2022 “cat-and-mouse” encounter with U.S. surveillance satellite USA 270 in GEO, where it performed evasive maneuvers and positioned itself for imaging opportunities. More recently, it has conducted multiple close approaches, including a ~70 km flyby of Iran’s Jam e Jam 1 satellite in April 2026. It remains actively maneuvering and operational as of May 2026.
+Source: RC
+
+Satellite Summary:
+50322 | SHIYAN 12-02 | GEO-GSO / Geostationary | Chinese Ministry of Defence (China) | Active - Inclined (aged) / Manoeuverable | Military | Servicing/Inspection / Observational/Situational Awareness,Technology / Technology Test/Prototype | 23/12/2021 (4.39 years old) | 15.0 years | Officially the mission of the satellite is for" space environment exploration and related technology tests" however, it is suspected that it is actually a military test satellite. Possible military SSA (Space Situational Awareness) application in GEO. | Yes - On-board Propulsion | Propulsion Unknown | SHIYAN 12-01, | Source: Seradata
+
+Space Weather:
+Space Weather Conditions during maneuver (0630Z and 0134ZJDAY 135)
+Radio Blackout Impacts – R0 (N/A)
+Solar Radiation Storm Impacts – S0 (N/A)
+Geomagnetic Storm Impacts – G0 (N/A) Source: https://www.spaceweather.gov/communities/space-weather-enthusiasts-dashboard (Read More)
+
+SHIYAN 12 02 (SY-12 02) / TRIC Plot / KBR / JDAY 135 / 19:52Z
+
+2026-05-15T19:52:54.560Z
+
+SHIYAN 12 02 (SY-12 02) / Neighborhood / KBR / JDAY 135 / 19:49Z
+
+2026-05-15T19:49:19.160Z
+
+SHIYAN 12 02 (SY-12 02) / Waterfall / KBR / JDAY 135 / 19:48Z
+
+2026-05-15T19:49:06.130Z
+
+SHIYAN 12 02 (SY-12 02) / DC Results / KBR / JDAY 135 / 19:48Z
+
+2026-05-15T19:48:49.290Z
+
+SHIYAN 12 02 (SY-12 02) / PASCHED / DRACO / JDAY 135 / 12:35Z
+
+2026-05-15T12:36:26.810Z
+
+SHIYAN 12 02 (SY-12 02) / Waterfall / DRACO / JDAY 135 / 12:34Z
+
+2026-05-15T12:35:49.620Z
+
+SHIYAN 12 02 (SY-12 02) / Residuals / Northstar / JDAY 135 / 12:21Z
+
+2026-05-15T12:22:11.960Z
+
+SHIYAN 12 02 (SY-12 02) / Neighborhood / Northstar / JDAY 135 / 12:14Z
+
+2026-05-15T12:15:23.200Z
+
+2026-05-15T20:03:11.303Z
+
+2026-05-15T12:37:03.217Z
+
+Satellites Number Name Orbit Country 50322 SHIYAN 12 02 (SY-12 02) N/A China (PRC)
+
+Number Name Orbit Country 50322 SHIYAN 12 02 (SY-12 02) N/A China (PRC)
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/81c4c83b-8c35-4ea2-ba6a-15dc9f153731/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20135%20/%2019%3A52Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/de3b348b-f37a-49d7-bd0a-c9ae4021fe4c/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20135%20/%2019%3A49Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/3944aae4-92f1-44a8-9988-b4b2e707542e/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20Waterfall%20/%20KBR%20/%20JDAY%20135%20/%2019%3A48Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/0056b866-5e72-42ef-b845-138ec635942f/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20DC%20Results%20/%20KBR%20/%20JDAY%20135%20/%2019%3A48Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/1739a9c9-e9f3-4dd1-9871-56c09a06efa2/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20PASCHED%20/%20DRACO%20/%20JDAY%20135%20/%2012%3A35Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/06b887ba-6f79-461d-abc2-ab9b00b4ffeb/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20Waterfall%20/%20DRACO%20/%20JDAY%20135%20/%2012%3A34Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2db96cab-d898-4825-bb2b-30ae1c2391d9/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20Residuals%20/%20Northstar%20/%20JDAY%20135%20/%2012%3A21Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/dd02fb6a-7886-41e6-b6b0-de55e92847a8/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20Neighborhood%20/%20Northstar%20/%20JDAY%20135%20/%2012%3A14Z

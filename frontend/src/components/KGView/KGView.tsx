@@ -33,6 +33,7 @@ const NODE_COLORS: Record<string, string> = {
   Person: '#e3b341',
   Astronaut: '#e3b341',
   Official: '#e3b341',
+  Country: '#e6924a',
 };
 
 function nodeColor(type: string, inferred_types?: string[]): string {
@@ -105,7 +106,8 @@ export default function KGView() {
   const [tooltip, setTooltip] = useState<EdgeTooltip | null>(null);
   const [refreshing, setRefreshing] = useState(false);
   const [panelItem, setPanelItem] = useState<PanelItem | null>(null);
-  const [typeFilter, setTypeFilter] = useState<string | null>(null);
+  const [typeFilter, setTypeFilter] = useState<Set<string>>(new Set());
+  const [hopFilterNodeId, setHopFilterNodeId] = useState<string | null>(null);
   const legendEntries = buildLegendEntries(nodes);
   const cyRef = useRef<Cytoscape.Core | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -126,15 +128,70 @@ export default function KGView() {
     }
   }, [selectedSatelliteId]);
 
+  // Apply display:none/element to nodes based on typeFilter and hopFilter whenever either changes.
+  // This preserves positions — nodes stay where they were laid out.
+  useEffect(() => {
+    const cy = cyRef.current;
+    if (!cy) return;
+
+    const hopNodeIds = hopFilterNodeId ? getHopFilterNodeIds(hopFilterNodeId) : null;
+
+    cy.batch(() => {
+      cy.nodes().forEach(n => {
+        const nodeId = n.id();
+        const t = n.data('type') as string;
+        const inferred = (n.data('inferred_types') as string[]) ?? [];
+
+        // Check type filter
+        const typeHidden = typeFilter.size > 0 && !typeFilter.has(t) && !inferred.some(i => typeFilter.has(i));
+
+        // Check hop filter
+        const hopHidden = hopNodeIds && !hopNodeIds.has(nodeId);
+
+        const hidden = typeHidden || hopHidden;
+        n.style('display', hidden ? 'none' : 'element');
+      });
+      cy.edges().forEach(e => {
+        const srcHidden = e.source().style('display') === 'none';
+        const tgtHidden = e.target().style('display') === 'none';
+        e.style('display', srcHidden || tgtHidden ? 'none' : 'element');
+      });
+    });
+  }, [typeFilter, hopFilterNodeId]);
+
   const nodeById = (id: string) => nodes.find((n) => n.id === id);
   const edgeById = (id: string) => edges.find((e) => e.id === id);
 
-  const typeFilterIds = typeFilter
-    ? new Set(nodes.filter(n => n.type === typeFilter || (n.inferred_types ?? []).includes(typeFilter)).map(n => n.id))
+  // Calculate 1-hop neighbors (including the center node)
+  const getHopFilterNodeIds = (centerId: string): Set<string> => {
+    const result = new Set<string>([centerId]);
+    // Find all edges connected to center node
+    edges.forEach(e => {
+      if (e.source === centerId) result.add(e.target);
+      if (e.target === centerId) result.add(e.source);
+    });
+    return result;
+  };
+
+  // Hidden node IDs: matches type filter exclusion (nodes NOT in the selected types)
+  let hiddenNodeIds = typeFilter.size > 0
+    ? new Set(nodes.filter(n => !typeFilter.has(n.type) && !(n.inferred_types ?? []).some(t => typeFilter.has(t))).map(n => n.id))
     : new Set<string>();
 
-  const dimHighlightIds = typeFilterIds.size > 0 ? typeFilterIds : activeReasoningSubgraphIds;
+  // Apply 1-hop filter if active
+  if (hopFilterNodeId) {
+    const hopNodeIds = getHopFilterNodeIds(hopFilterNodeId);
+    const hopHidden = new Set(nodes.filter(n => !hopNodeIds.has(n.id)).map(n => n.id));
+    hiddenNodeIds = new Set([...hiddenNodeIds, ...hopHidden]);
+  }
 
+  // Visible node count for the counter badge
+  const visibleNodes = nodes.filter(n => !hiddenNodeIds.has(n.id));
+
+  // Reasoning subgraph dims non-highlighted nodes (separate from type filter)
+  const dimHighlightIds = activeReasoningSubgraphIds;
+
+  // Always pass ALL nodes/edges — use display:none via style to preserve positions
   const elements = buildElements(nodes, edges, activeReasoningSubgraphIds, dimHighlightIds, new Set(), selectedSatelliteId);
 
   const stylesheet: Cytoscape.StylesheetCSS[] = [
@@ -178,15 +235,21 @@ export default function KGView() {
             {refreshing ? '⟳ Refreshing…' : '↻ Refresh'}
           </button>
           {legendEntries.map(({ type, color }) => {
-            const active = typeFilter === type;
+            const active = typeFilter.has(type);
             return (
               <button
                 key={type}
-                onClick={() => setTypeFilter(active ? null : type)}
+                onClick={() => {
+                  setTypeFilter(prev => {
+                    const next = new Set(prev);
+                    active ? next.delete(type) : next.add(type);
+                    return next;
+                  });
+                }}
                 style={{
                   background: active ? color + '22' : '#161b22',
-                  border: `1px solid ${active ? color : color + '88'}`,
-                  borderRadius: 4, padding: '2px 8px', fontSize: 11, color,
+                  border: `1px solid ${active ? color : color + '44'}`,
+                  borderRadius: 4, padding: '2px 8px', fontSize: 11, color: active ? color : color + 'aa',
                   cursor: 'pointer', fontFamily: 'inherit',
                   fontWeight: active ? 600 : 400,
                 }}
@@ -195,17 +258,22 @@ export default function KGView() {
               </button>
             );
           })}
-          {typeFilter && (
-            <button
-              onClick={() => setTypeFilter(null)}
-              style={{
-                background: 'none', border: '1px solid #30363d', borderRadius: 4,
-                padding: '2px 8px', fontSize: 11, color: '#8b949e',
-                cursor: 'pointer', fontFamily: 'inherit',
-              }}
-            >
-              ✕ clear filter
-            </button>
+          {(typeFilter.size > 0 || hopFilterNodeId) && (
+            <>
+              <span style={{ fontSize: 10, color: '#484f58', padding: '2px 4px' }}>
+                {visibleNodes.length} / {nodes.length} nodes
+              </span>
+              <button
+                onClick={() => { setTypeFilter(new Set()); setHopFilterNodeId(null); }}
+                style={{
+                  background: 'none', border: '1px solid #30363d', borderRadius: 4,
+                  padding: '2px 8px', fontSize: 11, color: '#8b949e',
+                  cursor: 'pointer', fontFamily: 'inherit',
+                }}
+              >
+                ✕ show all
+              </button>
+            </>
           )}
           {activeReasoningSubgraphIds.size > 0 && (
             <span style={{
@@ -238,6 +306,9 @@ export default function KGView() {
                 }
                 const full = nodeById(nodeId);
                 if (full) setPanelItem({ kind: 'node', data: full });
+
+                // Activate 1-hop filter
+                setHopFilterNodeId(nodeId);
               });
               cy.on('tap', 'edge', (e) => {
                 const edgeId: string = e.target.id();

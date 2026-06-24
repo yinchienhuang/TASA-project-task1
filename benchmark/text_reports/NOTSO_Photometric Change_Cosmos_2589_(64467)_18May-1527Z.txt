@@ -1,0 +1,107 @@
+NOTSO_Photometric Change / Cosmos 2589 (64467)_18May-1527Z
+
+JDay 138 1515z:
+
+**Update NOTSO**
+
+For the photometry change that occurred on 16May (JDay 136) between 1137z to 1200z, it should be noted that Chinasat 2E (49062) was ~66km away and COSMOS 2589 had great lighting at the time of the photometric change.
+Click the link above to view products... (Read More)
+
+18 May JDAY 138 0449 UTC
+
+Mission Summary:
+COSMOS 2589 (64467) is a Russian military satellite of uncertain function, launched 19 June 2025 aboard an Angara-A5/Briz-M and operated by the Russian Aerospace Forces (VKS). Built on an Express-2000-series bus with an estimated wet mass of approximately 3,200 kg, the satellite has been linked by publicly available research to the Central Scientific Research Institute of Chemistry and Mechanics (TsNIIKhM), the organization associated with Russia's Nivelir satellite inspection program and related co-orbital counterspace development efforts. On approximately 26 June 2025, COSMOS 2589 deployed a sub-satellite subsequently cataloged as COSMOS 2590 (64527); the pair conducted rendezvous and proximity operations through summer and fall 2025, with COSMOS 2590 serving as the active maneuvering vehicle during sustained approaches as close as two kilometers. Following a final close-proximity test period in early November 2025, COSMOS 2589 began orbit-circularization maneuvers consistent with a transition toward the geostationary belt, a process that prior Russian missions using similar supersynchronous transfer orbit profiles required three to six months to complete.
+Source: JB
+... (Read More)
+
+COSMOS 2589 / TRIC Plot / KBR / JDAY 138 / 15:26Z
+
+2026-05-18T15:26:45.380Z
+
+COSMOS 2589 / Waterfall / NorthStar / JDAY 138 / 05:07Z
+
+2026-05-18T05:07:38.010Z
+
+COSMOS 2589 / PASCHED / NorthStar / JDAY 138 / 04:55Z
+
+2026-05-18T04:55:57.070Z
+
+COSMOS 2589 / TRIC Plot / NorthStar / JDAY 138 / 04:55Z
+
+2026-05-18T04:55:48.130Z
+
+COSMOS 2589 / Neighborhood / NorthStar / JDAY 138 / 04:55Z
+
+2026-05-18T04:55:32.280Z
+
+COSMOS 2589 / Lightcurve / NorthStar / JDAY 138 / 04:52Z
+
+2026-05-18T04:55:21.440Z
+
+COSMOS 2589 / Waterfall / KBR / JDAY 138 / 04:52Z
+
+2026-05-18T04:52:18.910Z
+
+COSMOS 2589 / 3D Visualization / KBR / JDAY 138 / 04:51Z
+
+2026-05-18T04:52:07.630Z
+
+COSMOS 2589 / TRIC Plot / KBR / JDAY 138 / 04:51Z
+
+2026-05-18T04:51:55.720Z
+
+COSMOS 2589 / Neighborhood / KBR / JDAY 138 / 04:51Z
+
+2026-05-18T04:51:45.760Z
+
+COSMOS 2589 / DC Results / KBR / JDAY 138 / 04:51Z
+
+2026-05-18T04:51:36.210Z
+
+COSMOS 2589 / PASCHED / KBR / JDAY 138 / 04:51Z
+
+2026-05-18T04:51:15.240Z
+
+COSMOS 2589 / Lightcurve / KBR / JDAY 138 / 04:50Z
+
+2026-05-18T04:51:02.540Z
+
+2026-05-18T04:50:52.290Z
+
+2026-05-18T15:27:40.786Z
+
+2026-05-18T05:43:32.966Z
+
+Satellites Number Name Orbit Country 64467 COSMOS 2589 N/A Russia (CIS) 49062 CHINASAT 2E N/A China (PRC)
+
+Number Name Orbit Country 64467 COSMOS 2589 N/A Russia (CIS) 49062 CHINASAT 2E N/A China (PRC)
+
+64467 COSMOS 2589 N/A Russia (CIS) 49062 CHINASAT 2E N/A China (PRC)
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/7f9c92bb-c53c-4e45-832a-b577e3aa31ed/COSMOS%202589%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20138%20/%2015%3A26Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/96bdf078-7ce2-4c9f-9c8b-cbf04c98dfc4/COSMOS%202589%20/%20Waterfall%20/%20NorthStar%20/%20JDAY%20138%20/%2005%3A07Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e942af8f-4386-4824-bca6-ac1856ff0e69/COSMOS%202589%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20138%20/%2004%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/23127ad2-2087-488d-88f7-6fe3ae1f4dea/COSMOS%202589%20/%20TRIC%20Plot%20/%20NorthStar%20/%20JDAY%20138%20/%2004%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/0292ab8d-2d96-45df-9331-31dba181cb60/COSMOS%202589%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20138%20/%2004%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e96f9ae6-741d-4868-8c3c-949fb45b6985/COSMOS%202589%20/%20Lightcurve%20/%20NorthStar%20/%20JDAY%20138%20/%2004%3A52Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/c5760d2e-deb6-40e0-8b6a-0c604ed421fd/COSMOS%202589%20/%20Waterfall%20/%20KBR%20/%20JDAY%20138%20/%2004%3A52Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f7de27bb-04a4-453e-985c-7f9f5d4577ef/COSMOS%202589%20/%203D%20Visualization%20/%20KBR%20/%20JDAY%20138%20/%2004%3A51Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/46ea95c6-e042-4069-85a1-4cf9861ff8d0/COSMOS%202589%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20138%20/%2004%3A51Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/7609caa2-5389-4e46-b437-b3d29390a647/COSMOS%202589%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20138%20/%2004%3A51Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/fc5b6356-f2b2-4ad9-b30c-f7ed7bd465de/COSMOS%202589%20/%20DC%20Results%20/%20KBR%20/%20JDAY%20138%20/%2004%3A51Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/7231c557-c4f3-471e-b1d0-53f96a212f3a/COSMOS%202589%20/%20PASCHED%20/%20KBR%20/%20JDAY%20138%20/%2004%3A51Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/22770b28-82e0-43d6-a6de-54da74efc1d5/COSMOS%202589%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20138%20/%2004%3A50Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e3b1c045-0aeb-4858-8194-24ce8d5f0712/COSMOS%202589%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20138%20/%2004%3A50Z

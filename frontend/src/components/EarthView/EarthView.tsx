@@ -1,10 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import * as Cesium from 'cesium';
 import { useAppStore } from '../../store/appStore';
-import type { TrajectoryZone } from '../../store/appStore';
 import { MOCK_POSITIONS } from '../../data/mockData';
 import type { Position } from '../../data/mockData';
-import { getPositions, getCurrentPosition, getKGSatellites } from '../../api/client';
+import { getPositions, getCurrentPosition, getKGSatellites, preloadTLEs } from '../../api/client';
 import Timeline from './Timeline';
 import 'cesium/Build/Cesium/Widgets/widgets.css';
 
@@ -104,8 +103,8 @@ const LAUNCH_SITES: LaunchSite[] = [
 const LAUNCH_SITE_COLOR = Cesium.Color.fromCssColorString('#f0a500');
 
 const INIT_VIEW = {
-  destination: Cesium.Cartesian3.fromDegrees(0, 20, 20_000_000),
-  orientation: { heading: 0, pitch: -Math.PI / 2, roll: 0 },
+  destination: Cesium.Cartesian3.fromDegrees(0, 0, 35_000_000),  // Equator view, 35M km altitude to see whole Earth
+  orientation: { heading: 0, pitch: -Math.PI / 2, roll: 0 },  // Look straight down
 };
 
 const TIMELINE_H = 40;
@@ -190,7 +189,7 @@ export default function EarthView() {
   const positionsRef = useRef<Record<string, Position[]>>({ ...MOCK_POSITIONS });
 
   const [dataSource, setDataSource] = useState<'mock' | 'sgp4'>('mock');
-  const [showLaunchSites, setShowLaunchSites] = useState(true);
+  const [showLaunchSites, setShowLaunchSites] = useState(false);
   const [selectedLaunchSite, setSelectedLaunchSite] = useState<LaunchSite | null>(null);
   const [distKm, setDistKm] = useState<number | null>(null);
   const [closestPairLabel, setClosestPairLabel] = useState('');
@@ -202,166 +201,69 @@ export default function EarthView() {
     posCount: 1440,
   });
 
-  const { currentTimeIndex, visibleSatelliteIds, notamZones, setNotamZones } = useAppStore();
+  const { currentTimeIndex, visibleSatelliteIds, hideAllSatellites } = useAppStore();
 
-  // ── Load satellite labels from KG ──────────────────────────────────────────
+  // ── Load satellite labels from KG and supplement with common names ────────
   useEffect(() => {
-    getKGSatellites().then((sats) => {
-      setSatLabelMap(new Map(
-        sats.filter(s => s.noradId).map(s => [s.noradId!, s.name])
-      ));
-    });
-  }, []);
-
-  // ── Load existing NOTAM zones from API on mount ────────────────────────────
-  useEffect(() => {
-    fetch('http://localhost:8000/api/events/notam', { signal: AbortSignal.timeout(5000) })
-      .then((r) => r.ok ? r.json() : [])
-      .then((events: unknown[]) => {
-        const zones: TrajectoryZone[] = [];
-        for (const ev of events) {
-          const z = (ev as { trajectory_zones?: TrajectoryZone[] }).trajectory_zones ?? [];
-          zones.push(...z);
-        }
-        if (zones.length > 0) setNotamZones(zones);
-      })
-      .catch(() => {/* backend may not be running */});
-  }, []);
-
-  // ── Render NOTAM zones on globe ───────────────────────────────────────────
-  useEffect(() => {
-    const viewer = viewerRef.current;
-    if (!viewer) return;
-
-    // Remove all existing NOTAM entities (fill + outline + label each have their own id)
-    const toRemove = viewer.entities.values.filter(
-      (e) => typeof e.id === 'string' && (e.id as string).startsWith('notam:')
-    );
-    for (const e of toRemove) viewer.entities.remove(e);
-
-    const now = Date.now();
-
-    for (const zone of notamZones) {
-      const start = new Date(zone.active_start).getTime();
-      const end = new Date(zone.active_end).getTime();
-      const isActive = now >= start && now <= end;
-      const isPast   = now > end;
-
-      // Color scheme: red = active, amber = upcoming, grey = past
-      const baseHex   = isActive ? '#ff4444' : isPast ? '#5a6270' : '#f0c040';
-      const baseColor = Cesium.Color.fromCssColorString(baseHex);
-      const fillColor = baseColor.withAlpha(isActive ? 0.35 : isPast ? 0.10 : 0.22);
-      const lineWidth = isActive ? 5 : 2.5;
-
-      // Centroid helper
-      const centroid = (lats: number[], lons: number[]) => ({
-        clat: lats.reduce((a, b) => a + b, 0) / lats.length,
-        clon: lons.reduce((a, b) => a + b, 0) / lons.length,
-      });
-
-
-      if (zone.shape === 'polygon' && zone.vertices && zone.vertices.length >= 3) {
-        const positions = Cesium.Cartesian3.fromDegreesArray(
-          zone.vertices.flatMap(([lat, lon]) => [lon, lat])
+    const loadLabels = async () => {
+      try {
+        const kgSats = await getKGSatellites();
+        const labelMap = new Map<string, string>(
+          kgSats.filter(s => s.noradId).map(s => [s.noradId!, s.name])
         );
-        const lats = zone.vertices.map(([lat]) => lat);
-        const lons = zone.vertices.map(([, lon]) => lon);
-        const { clat, clon } = centroid(lats, lons);
 
-        // Fill (CLAMP_TO_GROUND — outline property silently ignored by Cesium here)
-        viewer.entities.add({
-          id: `notam:fill:${zone.notam_id}`,
-          polygon: {
-            hierarchy: new Cesium.PolygonHierarchy(positions),
-            material: new Cesium.ColorMaterialProperty(fillColor),
-            heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-            classificationType: Cesium.ClassificationType.TERRAIN,
-          },
-        });
+        // Add common GEO satellite aliases for better visibility
+        const commonAliases: Record<string, string> = {
+          '44910': 'SJ-20',
+          '50321': 'SY-12 01',
+          '50322': 'SY-12 02',
+          '42920': 'SJ-25',
+          '67302': 'SJ-29A',
+          '68835': 'SJ-29B',
+          '66666': 'TJS-6',
+          '64467': 'COSMOS 2589',
+          '42907': 'COSMOS 2520',
+        };
 
-        // Outline drawn as a ground-clamped polyline (the only way it renders)
-        viewer.entities.add({
-          id: `notam:outline:${zone.notam_id}`,
-          polyline: {
-            positions: [...positions, positions[0]], // close the loop
-            width: lineWidth,
-            material: isActive
-              ? new Cesium.PolylineGlowMaterialProperty({ glowPower: 0.25, color: baseColor })
-              : new Cesium.ColorMaterialProperty(baseColor.withAlpha(0.9)),
-            clampToGround: true,
-          },
-        });
+        // Add aliases for satellites not yet in KG
+        for (const [id, name] of Object.entries(commonAliases)) {
+          if (!labelMap.has(id)) {
+            labelMap.set(id, name);
+          }
+        }
 
-        // Label at centroid — subtle, small
-        viewer.entities.add({
-          id: `notam:label:${zone.notam_id}`,
-          position: Cesium.Cartesian3.fromDegrees(clon, clat, 50000),
-          label: {
-            text: zone.notam_id,
-            font: '11px sans-serif',
-            fillColor: baseColor.withAlpha(0.85),
-            outlineColor: Cesium.Color.BLACK,
-            outlineWidth: 2,
-            style: Cesium.LabelStyle.FILL_AND_OUTLINE,
-            verticalOrigin: Cesium.VerticalOrigin.CENTER,
-            horizontalOrigin: Cesium.HorizontalOrigin.CENTER,
-            disableDepthTestDistance: Number.POSITIVE_INFINITY,
-            showBackground: false,
-          },
-        });
-
-      } else if (zone.shape === 'circle' && zone.center_lat != null && zone.center_lon != null) {
-        const pos = Cesium.Cartesian3.fromDegrees(zone.center_lon, zone.center_lat, 50000);
-        const r = (zone.radius_km ?? 20) * 1000;
-
-        viewer.entities.add({
-          id: `notam:fill:${zone.notam_id}`,
-          position: Cesium.Cartesian3.fromDegrees(zone.center_lon, zone.center_lat),
-          ellipse: {
-            semiMinorAxis: r,
-            semiMajorAxis: r,
-            material: new Cesium.ColorMaterialProperty(fillColor),
-            outline: true,            // ellipse outline DOES render
-            outlineColor: baseColor.withAlpha(0.9),
-            outlineWidth: lineWidth,
-            heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-          },
-        });
-
-        viewer.entities.add({
-          id: `notam:label:${zone.notam_id}`,
-          position: pos,
-          label: {
-            text: zone.notam_id,
-            font: '11px sans-serif',
-            fillColor: baseColor.withAlpha(0.85),
-            outlineColor: Cesium.Color.BLACK,
-            outlineWidth: 2,
-            style: Cesium.LabelStyle.FILL_AND_OUTLINE,
-            verticalOrigin: Cesium.VerticalOrigin.CENTER,
-            horizontalOrigin: Cesium.HorizontalOrigin.CENTER,
-            disableDepthTestDistance: Number.POSITIVE_INFINITY,
-            showBackground: false,
-          },
-        });
+        setSatLabelMap(labelMap);
+      } catch (err) {
+        console.warn('[EarthView] Failed to load satellite labels:', err);
       }
-    }
-  }, [notamZones]);
-
-  // ── Listen for focus events from NotamIngestPanel ──────────────────────────
-  useEffect(() => {
-    const handler = (e: Event) => {
-      const { lat, lon } = (e as CustomEvent<{ lat: number; lon: number }>).detail;
-      const viewer = viewerRef.current;
-      if (!viewer) return;
-      viewer.camera.flyTo({
-        destination: Cesium.Cartesian3.fromDegrees(lon, lat, 2_000_000),
-        duration: 1.5,
-      });
     };
-    window.addEventListener('notam:focus', handler);
-    return () => window.removeEventListener('notam:focus', handler);
+
+    loadLabels();
   }, []);
+
+  // ── Update label map when satellites are identified from query ─────────────
+  useEffect(() => {
+    const unsubscribe = useAppStore.subscribe(
+      (state) => state.identifiedSatellites,
+      (satellites) => {
+        if (satellites && satellites.length > 0) {
+          setSatLabelMap((prev) => {
+            const updated = new Map(prev);
+            for (const sat of satellites) {
+              if (sat.id && sat.name && !updated.has(sat.id)) {
+                updated.set(sat.id, sat.name);
+              }
+            }
+            return updated;
+          });
+        }
+      }
+    );
+    return unsubscribe;
+  }, []);
+
+
+
 
   // ── Init viewer ────────────────────────────────────────────────────────────
   useEffect(() => {
@@ -386,18 +288,102 @@ export default function EarthView() {
     if (viewer.scene.sun) viewer.scene.sun.show = false;
     if (viewer.scene.moon) viewer.scene.moon.show = false;
 
-    const slowWheel = (e: WheelEvent) => {
+    // Enable camera controls - allow smooth zooming in/out to view GEO satellites
+    if (viewer.screenSpaceCameraController) {
+      viewer.screenSpaceCameraController.enableRotate = true;
+      viewer.screenSpaceCameraController.enableTranslate = true;
+      viewer.screenSpaceCameraController.enableZoom = true;
+    }
+
+    // Smart wheel zoom: zoom towards mouse position (satellite or ground)
+    let lastMousePos = { x: 0, y: 0 };
+    let hoveredSatellite: string | null = null;
+
+    const onMouseMove = (e: MouseEvent) => {
+      lastMousePos = { x: e.clientX, y: e.clientY };
+
+      // Check if mouse is over a satellite
+      const picked = viewer.scene.pick(new Cesium.Cartesian2(e.clientX, e.clientY));
+      if (picked?.primitive && picked.primitive instanceof Cesium.PointPrimitive) {
+        const match = Object.entries(satRefs.current).find(([, r]) => r.point === picked.primitive);
+        hoveredSatellite = match ? match[0] : null;
+      } else {
+        hoveredSatellite = null;
+      }
+    };
+
+    const smartWheel = (e: WheelEvent) => {
       if (!e.isTrusted) return;
       e.stopImmediatePropagation();
       e.preventDefault();
-      viewer.canvas.dispatchEvent(new WheelEvent('wheel', {
-        bubbles: e.bubbles, cancelable: e.cancelable,
-        clientX: e.clientX, clientY: e.clientY,
-        deltaX: e.deltaX * 0.25, deltaY: e.deltaY * 0.25,
-        deltaZ: e.deltaZ * 0.25, deltaMode: e.deltaMode,
-      }));
+
+      const direction = e.deltaY > 0 ? -1 : 1;  // -1 = zoom out, 1 = zoom in
+      const zoomSpeed = 0.08;  // Smooth zoom factor
+
+      try {
+        const mousePos = new Cesium.Cartesian2(e.clientX, e.clientY);
+        let zoomCenter: Cesium.Cartesian3 | null = null;
+        let isZoomingToSatellite = false;
+
+        // Priority 1: Zoom towards hovered satellite (mouse directly on satellite)
+        if (hoveredSatellite && satRefs.current[hoveredSatellite]) {
+          zoomCenter = satRefs.current[hoveredSatellite].point.position;
+          isZoomingToSatellite = true;
+        }
+        // Priority 2: Try to get mouse position on Earth surface
+        else {
+          const cartesian = viewer.scene.pickPosition(mousePos);
+          if (Cesium.defined(cartesian)) {
+            zoomCenter = cartesian;
+          }
+        }
+
+        // Priority 3: If mouse is outside Earth, zoom towards selected satellite instead
+        if (!zoomCenter) {
+          const selectedSatId = useAppStore.getState().selectedSatelliteId;
+          if (selectedSatId && satRefs.current[selectedSatId]) {
+            zoomCenter = satRefs.current[selectedSatId].point.position;
+            isZoomingToSatellite = true;
+          }
+        }
+
+        // Fallback: Zoom towards Earth center
+        if (!zoomCenter) {
+          zoomCenter = Cesium.Cartesian3.ZERO;
+        }
+
+        const camPos = viewer.camera.position;
+        const towardCenter = Cesium.Cartesian3.subtract(zoomCenter, camPos, new Cesium.Cartesian3());
+        const distance = Cesium.Cartesian3.magnitude(towardCenter);
+
+        if (distance > 100) {  // Only zoom if there's distance
+          const minDistance = isZoomingToSatellite ? 100_000 : 6_378_137;
+          const newDistance = Math.max(distance * (1 - direction * zoomSpeed), minDistance);
+
+          // Calculate zoom amount
+          const zoomAmount = distance - newDistance;
+          const moveDirection = Cesium.Cartesian3.normalize(towardCenter, new Cesium.Cartesian3());
+
+          // Move camera by zoom amount
+          const movement = Cesium.Cartesian3.multiplyByScalar(moveDirection, zoomAmount, new Cesium.Cartesian3());
+          const newPos = Cesium.Cartesian3.add(camPos, movement, new Cesium.Cartesian3());
+
+          viewer.camera.position = newPos;
+
+          // Update camera direction to face the zoom center
+          const newDirection = Cesium.Cartesian3.subtract(zoomCenter, newPos, new Cesium.Cartesian3());
+          const normalizedDir = Cesium.Cartesian3.normalize(newDirection, new Cesium.Cartesian3());
+          if (Cesium.Cartesian3.magnitude(normalizedDir) > 0.1) {
+            viewer.camera.direction = normalizedDir;
+          }
+        }
+      } catch (err) {
+        console.warn('Zoom error:', err);
+      }
     };
-    viewer.canvas.addEventListener('wheel', slowWheel, { capture: true, passive: false });
+
+    viewer.canvas.addEventListener('mousemove', onMouseMove, { passive: true });
+    viewer.canvas.addEventListener('wheel', smartWheel, { capture: true, passive: false });
     viewer.camera.setView(INIT_VIEW);
 
     const points    = new Cesium.PointPrimitiveCollection();
@@ -471,7 +457,8 @@ export default function EarthView() {
     viewerRef.current = viewer;
     return () => {
       handler.destroy();
-      viewer.canvas.removeEventListener('wheel', slowWheel, { capture: true });
+      viewer.canvas.removeEventListener('mousemove', onMouseMove, { passive: true });
+      viewer.canvas.removeEventListener('wheel', smartWheel, { capture: true });
       satRefs.current = {};
       proximityLineRef.current = null;
       pointsRef.current = null;
@@ -509,11 +496,18 @@ export default function EarthView() {
         outlineColor: Cesium.Color.WHITE, outlineWidth: 1,
       });
       const labelPrim = labels.add({
-        position: cart, text: label, font: '13px sans-serif',
-        fillColor: Cesium.Color.WHITE, outlineColor: Cesium.Color.BLACK, outlineWidth: 2,
+        position: cart,
+        text: label,
+        font: 'bold 14px sans-serif',
+        fillColor: Cesium.Color.WHITE,
+        outlineColor: Cesium.Color.BLACK,
+        outlineWidth: 2,
         style: Cesium.LabelStyle.FILL_AND_OUTLINE,
-        pixelOffset: new Cesium.Cartesian2(0, -20),
-        distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0, 30_000_000),
+        pixelOffset: new Cesium.Cartesian2(15, -5),  // Right and slightly up from point
+        distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0, 200_000_000),  // Show from far away (200M km)
+        showBackground: true,
+        backgroundColor: Cesium.Color.BLACK.withAlpha(0.5),
+        backgroundPadding: new Cesium.Cartesian2(4, 2),
       });
       const orbitLine = polylines.add({
         positions: posArr.length ? orbitPositions(posArr, currentIdx) : [cart, cart],
@@ -522,29 +516,30 @@ export default function EarthView() {
       });
       satRefs.current[id] = { point, label: labelPrim, orbitLine, color };
 
-      // Always fetch real positions; use mock/existing as placeholder while loading
-      getPositions(id).then(({ positions, source }) => {
-        if (!positions.length) return;
-        positionsRef.current[id] = positions;
-        if (source === 'sgp4') setDataSource('sgp4');
-        // Update timeline from first visible satellite
-        const ids = Array.from(useAppStore.getState().visibleSatelliteIds);
-        if (ids[0] === id) {
-          const nowIdx = findNowIndex(positions);
-          setTimelineMeta({ startTimestamp: positions[0].timestamp, stepMs: STEP_MS, nowIndex: nowIdx, posCount: positions.length });
-          useAppStore.getState().setTimeIndex(nowIdx);
-        }
-        // Update rendered position with real data
-        const refs = satRefs.current[id];
-        if (refs) {
-          const idx = Math.min(useAppStore.getState().currentTimeIndex, positions.length - 1);
-          const pp = positions[idx];
-          const c = Cesium.Cartesian3.fromDegrees(pp.lon, pp.lat, pp.alt * 1000);
-          refs.point.position = c;
-          refs.label.position = c;
-          refs.orbitLine.positions = orbitPositions(positions, idx);
-        }
-      });
+      getPositions(id)
+        .then(({ positions, source }) => {
+          if (!positions.length) return;
+          positionsRef.current[id] = positions;
+          if (source === 'sgp4') setDataSource('sgp4');
+          const ids = Array.from(useAppStore.getState().visibleSatelliteIds);
+          if (ids[0] === id) {
+            const nowIdx = findNowIndex(positions);
+            setTimelineMeta({ startTimestamp: positions[0].timestamp, stepMs: STEP_MS, nowIndex: nowIdx, posCount: positions.length });
+            useAppStore.getState().setTimeIndex(nowIdx);
+          }
+          const refs = satRefs.current[id];
+          if (refs) {
+            const idx = Math.min(useAppStore.getState().currentTimeIndex, positions.length - 1);
+            const pp = positions[idx];
+            const c = Cesium.Cartesian3.fromDegrees(pp.lon, pp.lat, pp.alt * 1000);
+            refs.point.position = c;
+            refs.label.position = c;
+            refs.orbitLine.positions = orbitPositions(positions, idx);
+          }
+        })
+        .catch((err) => {
+          console.warn(`[EarthView] Failed to load positions for ${id}:`, err);
+        });
     }
 
     // Remove hidden satellites
@@ -563,30 +558,92 @@ export default function EarthView() {
     }
   }, [visibleSatelliteIds, satLabelMap]);
 
+  // ── North Pole view ───────────────────────────────────────────────────────
+  const fitViewNorthPole = () => {
+    const viewer = viewerRef.current;
+    if (!viewer) return;
+
+    try {
+      // Position camera above North Pole, looking straight down at Earth
+      // 120M km altitude ensures all GEO satellites (at equator) are visible
+      const northPolePos = Cesium.Cartesian3.fromDegrees(0, 90, 120_000_000);
+
+      // Fly to North Pole position, looking straight down
+      viewer.camera.flyTo({
+        destination: northPolePos,
+        orientation: {
+          heading: 0,
+          pitch: -Math.PI / 2,  // Look straight down (90 degrees)
+          roll: 0,
+        },
+        duration: 1.0,
+      });
+    } catch (err) {
+      console.warn('North Pole view error:', err);
+    }
+  };
+
+  // ── Equator view ──────────────────────────────────────────────────────────
+  const fitViewEquator = () => {
+    const viewer = viewerRef.current;
+    if (!viewer) return;
+
+    try {
+      // Position camera above Equator (0° latitude), at prime meridian (0° longitude)
+      // Looking straight down at Earth
+      const equatorPos = Cesium.Cartesian3.fromDegrees(0, 0, 120_000_000);
+
+      // Fly to Equator position, looking straight down
+      viewer.camera.flyTo({
+        destination: equatorPos,
+        orientation: {
+          heading: 0,
+          pitch: -Math.PI / 2,  // Look straight down (90 degrees)
+          roll: 0,
+        },
+        duration: 1.0,
+      });
+    } catch (err) {
+      console.warn('Equator view error:', err);
+    }
+  };
+
   // ── Toggle launch site visibility ─────────────────────────────────────────
   useEffect(() => {
     if (launchSitePointsRef.current) launchSitePointsRef.current.show = showLaunchSites;
     if (launchSiteLabelsRef.current) launchSiteLabelsRef.current.show = showLaunchSites;
   }, [showLaunchSites]);
 
+  // ── Preload TLE data for visible satellites ────────────────────────────────
+  useEffect(() => {
+    const ids = Array.from(visibleSatelliteIds);
+    if (ids.length > 0) {
+      preloadTLEs(ids);
+    }
+  }, [visibleSatelliteIds]);
+
   // ── 30-second real-time poll ───────────────────────────────────────────────
   useEffect(() => {
     const poll = async () => {
       for (const id of useAppStore.getState().visibleSatelliteIds) {
-        const pos = await getCurrentPosition(id);
-        if (!pos) continue;
-        const posArr = positionsRef.current[id];
-        if (!posArr?.length) continue;
-        const nowIdx = findNowIndex(posArr);
-        posArr[nowIdx] = { lat: pos.lat, lon: pos.lon, alt: pos.alt, timestamp: pos.timestamp };
-        const currentIdx = useAppStore.getState().currentTimeIndex;
-        if (Math.abs(currentIdx - nowIdx) <= 2) {
-          const refs = satRefs.current[id];
-          if (refs) {
-            const cart = Cesium.Cartesian3.fromDegrees(pos.lon, pos.lat, pos.alt * 1000);
-            refs.point.position = cart;
-            refs.label.position = cart;
+        try {
+          const pos = await getCurrentPosition(id);
+          if (!pos) continue;
+          const posArr = positionsRef.current[id];
+          if (!posArr?.length) continue;
+          const nowIdx = findNowIndex(posArr);
+          posArr[nowIdx] = { lat: pos.lat, lon: pos.lon, alt: pos.alt, timestamp: pos.timestamp };
+          const currentIdx = useAppStore.getState().currentTimeIndex;
+          if (Math.abs(currentIdx - nowIdx) <= 2) {
+            const refs = satRefs.current[id];
+            if (refs) {
+              const cart = Cesium.Cartesian3.fromDegrees(pos.lon, pos.lat, pos.alt * 1000);
+              refs.point.position = cart;
+              refs.label.position = cart;
+            }
           }
+        } catch (err) {
+          console.warn(`[EarthView] Failed to poll position for ${id}:`, err);
         }
       }
     };
@@ -698,6 +755,54 @@ export default function EarthView() {
         color: '#fff', letterSpacing: '0.5px',
       }}>
         {dataSource === 'sgp4' ? '● SGP4' : '○ MOCK'}
+      </div>
+
+      {/* View buttons */}
+      <div style={{ position: 'absolute', top: 8, right: 8, zIndex: 10, display: 'flex', gap: 8 }}>
+        {visibleSatelliteIds.size > 0 && (
+          <button
+            onClick={hideAllSatellites}
+            style={{
+              padding: '6px 12px', borderRadius: 4, fontSize: 12, fontWeight: 600,
+              background: '#21262d', color: '#f0883e',
+              border: '1px solid #6e3810',
+              cursor: 'pointer',
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.background = '#2d1f0e')}
+            onMouseLeave={(e) => (e.currentTarget.style.background = '#21262d')}
+          >
+            Hide All
+          </button>
+        )}
+        <button
+          onClick={fitViewNorthPole}
+          style={{
+            padding: '6px 12px', borderRadius: 4, fontSize: 12, fontWeight: 600,
+            background: '#1f6feb', color: '#fff', border: 'none',
+            cursor: 'pointer', letterSpacing: '0.5px',
+            transition: 'background 0.2s',
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.background = '#388bfd')}
+          onMouseLeave={(e) => (e.currentTarget.style.background = '#1f6feb')}
+          title="View from North Pole"
+        >
+          🧭 N.Pole
+        </button>
+
+        <button
+          onClick={fitViewEquator}
+          style={{
+            padding: '6px 12px', borderRadius: 4, fontSize: 12, fontWeight: 600,
+            background: '#1f6feb', color: '#fff', border: 'none',
+            cursor: 'pointer', letterSpacing: '0.5px',
+            transition: 'background 0.2s',
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.background = '#388bfd')}
+          onMouseLeave={(e) => (e.currentTarget.style.background = '#1f6feb')}
+          title="View from Equator"
+        >
+          🌍 Equator
+        </button>
       </div>
 
       {/* Proximity badge — only shown when 2+ satellites visible */}

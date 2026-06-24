@@ -1,0 +1,101 @@
+NOTSO_Photometric Change / COSMOS 2589 (64467)_19May-2101Z
+
+JDay 139 at 2050z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on COSMOS 2589 (64467). This change occurred on 19MAY (JDay 139) between the solar phase angles of 24 to 35 deg and appeared  ~1 Visual Magnitude dimmer.  After the change COSMOS 2589 photometry appeared to return to pattern of life.
+ 
+The cause of the change may be associated with a close approach with USA 325 (51281) on 19May1922z at 18km. USA 325 had favorable lighting to view COSMOS 2589.
+Click the link above to view products.  Analysis is ongoing.... (Read More)
+
+Mission Summary:
+Cosmos 2589 is a suspected Russian military inspector satellite, believed to be linked to the Nivelir anti-satellite program, designed to conduct close-proximity surveillance and rendezvous operations with other spacecraft in the geosynchronous belt. On June 26, 2025 — just one week after launch — it released a sub-satellite designated Cosmos 2590, which subsequently acted as the maneuvering object in a series of rendezvous and proximity operations, closing to within 2 km of Cosmos 2589 itself over a two-week period in November 2025. By late November 2025, Cosmos 2589 began circularizing its orbit to transition into a standard geosynchronous orbit, where analysts expect it to conduct ongoing inspection missions — potentially shadowing or closely monitoring other satellites in that orbital regime.
+
+Satellite Summary:
+64467 | COSMOS 2589 (14F166A) | GEO-GSO / Geostationary | Russian Ministry of Defence - VKS (MORF) (Russia) | Active / Manoeuverable | Military | Servicing/Inspection / Inspection Satellite,Cargo / Spacecraft Delivery/Deployment | 19/06/2025 (0.92 years old) | Russian military satellite. Suspected to have satellite inspection or "satellite killing" capabilities. | Yes - On-board Propulsion | Propulsion Unknown | ,COSMOS 2590 | Source: Seradata
+... (Read More)
+
+COSMOS 2589 / Neighborhood / Northstar / JDAY 140 / 01:55Z
+
+2026-05-20T01:55:19.700Z
+
+COSMOS 2589 / PASCHED / KBR / JDAY 140 / 01:53Z
+
+2026-05-20T01:53:25.860Z
+
+COSMOS 2589 / Neighborhood / KBR / JDAY 140 / 01:52Z
+
+2026-05-20T01:52:59.120Z
+
+COSMOS 2589 / TRIC Plot / KBR / JDAY 140 / 01:52Z
+
+2026-05-20T01:52:41.700Z
+
+COSMOS 2589 / PASCHED / Northstar / JDAY 140 / 01:50Z
+
+2026-05-20T01:51:06.400Z
+
+COSMOS 2589 / TRIC Plot / KBR / JDAY 139 / 20:49Z
+
+2026-05-19T20:49:54.350Z
+
+COSMOS 2589 / Lightcurve / KBR / JDAY 139 / 20:49Z
+
+2026-05-19T20:49:32.300Z
+
+COSMOS 2589 / Waterfall / Anduril / JDAY 139 / 20:48Z
+
+2026-05-19T20:49:16.020Z
+
+COSMOS 2589 / Lightcurve / Anduril / JDAY 139 / 20:48Z
+
+2026-05-19T20:48:52.920Z
+
+COSMOS 2589 / TRIC Plot / KBR / JDAY 139 / 15:13Z
+
+2026-05-19T15:14:05.980Z
+
+Juan Pablo Jimenez Sosa
+
+COSMOS 2589 / Neighborhood / KBR / JDAY 139 / 15:13Z
+
+2026-05-19T15:13:43.150Z
+
+COSMOS 2589 / Lightcurve / KBR / JDAY 139 / 15:13Z
+
+2026-05-19T15:13:23.830Z
+
+COSMOS 2589 / Waterfall / Exomaps / JDAY 139 / 15:12Z
+
+2026-05-19T15:12:59.680Z
+
+2026-05-19T21:01:32.524Z
+
+2026-05-19T16:06:05.718Z
+
+Satellites Number Name Orbit Country 64467 COSMOS 2589 N/A Russia (CIS)
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/08f94bcd-239f-480f-8389-fd9d9c6af402/COSMOS%202589%20/%20Neighborhood%20/%20Northstar%20/%20JDAY%20140%20/%2001%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/68944c0d-39cc-4a85-9279-dd67532c5f62/COSMOS%202589%20/%20PASCHED%20/%20KBR%20/%20JDAY%20140%20/%2001%3A53Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a631bb8e-71be-4a64-b209-614de9f1e0ba/COSMOS%202589%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20140%20/%2001%3A52Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/13d69b97-1372-43e5-ae07-9e24b7ce7b4f/COSMOS%202589%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20140%20/%2001%3A52Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/ae45bcb8-9882-45d1-8b43-1b5c38df47cd/COSMOS%202589%20/%20PASCHED%20/%20Northstar%20/%20JDAY%20140%20/%2001%3A50Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/81ef4294-2f8f-4a8e-94f0-3ae8187c9ef0/COSMOS%202589%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20139%20/%2020%3A49Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/61e44be0-8eac-4e32-b43e-196914ec3d20/COSMOS%202589%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20139%20/%2020%3A49Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/b10652ad-d817-4425-8928-3387f0bdf723/COSMOS%202589%20/%20Waterfall%20/%20Anduril%20/%20JDAY%20139%20/%2020%3A48Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/be239042-cef2-45ea-baf5-ee155f83e7a1/COSMOS%202589%20/%20Lightcurve%20/%20Anduril%20/%20JDAY%20139%20/%2020%3A48Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/06cd7eca-6be8-4cc2-bd2d-48e708b5f403/COSMOS%202589%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20139%20/%2015%3A13Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/7ab8e8df-eb47-46cb-a721-232e578f004c/COSMOS%202589%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20139%20/%2015%3A13Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/4ce735e5-4363-45c7-8ded-6e81e2f9ff61/COSMOS%202589%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20139%20/%2015%3A13Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/3acee9c7-5f81-4ee4-8edb-a28d3e3d999b/COSMOS%202589%20/%20Waterfall%20/%20Exomaps%20/%20JDAY%20139%20/%2015%3A12Z

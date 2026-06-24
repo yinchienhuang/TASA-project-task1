@@ -1,0 +1,61 @@
+NOTSO_Photometric Change / SHIYAN 12 02 (50322)_17Jun-1647Z
+
+JDay 168 at 1616z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on SHIYAN 12 02 (50322). This change occurred sometime between 16Jun (JDay 167) at 2143z to 17Jun (JDAY 168) at 1235, between the solar phase angles of -90 deg to -75 deg and appeared to be 1 visual magnitude dimmer afterwards SHIYAN 12 02 returned to pattern of life photometry. 
+ 
+SHIYAN 12 02 had a close approach with TDRS 7 (23613) on 17JUN 1032z at 208 km with good lighting conditions. This photometric variation is not consistent with the historical pattern of life for this object. Analysis is ongoing.
+Note that SHIYAN 12 02 (50322) performed a similar photometric change yesterday, with a close approach with WGS F4 (38070) of 201 km.
+ 
+The satellite is in GEO and is currently at 89.36 degs E longitude and is drifting at 0.78 E deg/day. Neighborhood is provided. Click link above to view products
+ 
+PAI suggests that SY-12 02 is a Chinese satellite that supports military operations. The mission of SY-12 02 is space environment exploration and related technology tests. However, it is suspected that it is actually a military test satellite. 
+
+Time window of change: sometime between 16Jun 2143z to 17Jun 1235z
+Solar phase angle window: -90.3 to -75.4 degs
+Vismag pre change: 14.3
+Vismag post change: 15.3
+Close approaches within window: TCA w/ 23613 on 17JUN 1032z at 208.56km; with good lighting.
+Current longitude: 89.36 E Longitude
+Current drift rate: 0.78 E degs/day
+ 
+Current TLE as of 17Jun1510z provided by Anduril:
+1 50322U 21129B   26168.63243696 +.00000000 +00000-0 +00000-0 0  0013
+2 50322   3.6757  79.9013 0002553  60.9808  81.9365  1.00489137 00013
+
+18  Jun, JDAY 168, 1543Z
+
+Mission Summary:
+Shiyan 12-02 (SY-12 02, NORAD 50322, COSPAR 2021-129B) is a Chinese experimental satellite launched on December 23, 2021, aboard a Long March 7A rocket from Wenchang alongside its twin Shiyan 12-01. It operates in a near-geostationary orbit (approximately 35,730–35,740 km altitude with ~3.6° inclination) and is officially described for space environment monitoring and technology verification, though it is widely assessed as a maneuverable inspector satellite with classified military/intelligence capabilities. It has demonstrated advanced rendezvous and proximity operations (RPO), notably in the 2022 “cat-and-mouse” encounter with U.S. surveillance satellite USA 270 in GEO, where it performed evasive maneuvers and positioned itself for imaging opportunities. More recently, it has conducted multiple close approaches, including a ~70 km flyby of Iran’s Jam e Jam 1 satellite in April 2026. It remains actively maneuvering and operational as of May 2026.
+Source: TAB
+
+
+50322 | SHIYAN 12-02 | GEO-GSO / Geostationary | Chinese Ministry of Defence (China) | Active - Inclined (aged) / Manoeuverable | Military | Servicing/Inspection / Observational/Situational Awareness,Technology / Technology Test/Prototype | 23/12/2021 (4.48 years old) | 15.0 years | Officially the mission of the satellite is for" space environment exploration and related technology tests" however, it is suspected that it is actually a military test satellite. Possible military SSA (Space Situational Awareness) application in GEO. | Yes - On-board Propulsion | Propulsion Unknown | SHIYAN 12-01, | Source: Seradata
+
+Space Weather Conditions during maneuver (1032Z, JDAY 168)  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard (Read More)
+
+SHIYAN 12 02 (SY-12 02) / TRIC Plot / KBR / JDAY 168 / 16:44Z
+
+SHIYAN 12 02 (SY-12 02) / Waterfall / KBR / JDAY 168 / 16:44Z
+
+SHIYAN 12 02 (SY-12 02) / Neighborhood / KBR / JDAY 168 / 16:44Z
+
+SHIYAN 12 02 (SY-12 02) / Orbital Plot / KBR / JDAY 168 / 16:43Z
+
+SHIYAN 12 02 (SY-12 02) / Neighborhood / KBR / JDAY 168 / 16:42Z
+
+SHIYAN 12 02 (SY-12 02) / Lightcurve / ExoAnalitics / JDAY 168 / 16:42Z
+
+SHIYAN 12 02 (SY-12 02) / Lightcurve / KBR / JDAY 168 / 16:41Z
+
+SHIYAN 12 02 (SY-12 02) / Residuals / KBR / JDAY 168 / 16:41Z
+
+SHIYAN 12 02 (SY-12 02) / PASCHED / KBR / JDAY 168 / 16:40Z
+
+Satellites Number Name Orbit Country 50322 SHIYAN 12 02 (SY-12 02) GEO China (PRC)
+
+Number Name Orbit Country 50322 SHIYAN 12 02 (SY-12 02) GEO China (PRC)

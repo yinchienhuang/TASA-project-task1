@@ -1,0 +1,45 @@
+NOTSO_Maneuver / TJS-11 (59020) / GEO_08Jun-0232Z
+
+JDay 159 at 0145z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have verified two maneuvers by TJS-11 (59020), the first occurring at 0127z on 07 Jun (J158) and the second occurring at 1238z on 07 Jun (J158).
+
+The satellite maneuvered from 112.6deg E longitude with a delta-v of 0.97 m/s (1st maneuver) and 1.13 m/s (second maneuver), resulting in an arrest of westward drift rate from 0.74 deg/day to 0.01 deg/day, parking at 112.36deg E longitude.
+
+There are no neighbourhood objects of concern, nor close approaches <190km in the next five days. Neighborhood is provided. Click link above to view products. 
+ 
+PAI suggests that TJS-11 is a Chinese satellite that supports military operations. 
+ 
+The specifics of the first maneuver are: 
+--Time of Maneuver: 07Jun0127z
+--Delta V: 0.97 m/s
+--Period Change: -80.73 secs
+--Apogee Change: -12.6 km
+--Perigee Change: -40.04 km
+--Inclination Change: 0 degs
+--Current Drift Rate: 0.41 W deg/day
+
+The specifics of the second maneuver are: 
+--Time of Maneuver: 07Jun1238z
+--Delta V: 1.13 m/s
+--Period Change: -94.75 secs
+--Apogee Change: -47.38 km
+--Perigee Change: -14.43 km
+--Inclination Change: 0 degs
+--Current Drift Rate: 0.01 W deg/day
+
+Pre Maneuver TLE as of 06 Jun 1955z provided by NorthStar:
+1 59020U 24037A   26157.93049839  .00000000  00000-0  00000-0 0    01
+2 59020   4.2114 326.9244 0003880 138.9600 237.1271  1.00066745008477
+
+Post 1st Maneuver TLE as of 07 Jun 0955z provided by NorthStar:
+1 59020U 24037A   26158.41362823  .00000000  00000-0  00000-0 0    06
+2 59020   4.2128 326.9428 0007429 208.8368 341.4028  1.00160468008473
+
+Post 2nd Maneuver current TLE as of 07 Jun 2052z provided by NorthStar:
+1 59020U 24037A   26158.86982987  .00000000  00000-0  00000-0 0    04
+2 59020   4.2124 326.9539 0003289 105.8134 249.0381  1.00269810008486
+
+TJS-11 / PASCHED / NorthStar / JDAY 159 / 02:07Z
+
+Satellites Number Name Orbit Country 59020 TJS-11 N/A China (PRC)

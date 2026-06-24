@@ -26,6 +26,7 @@ interface AppState {
   setActiveReasoning: (result: ThreatAssessment | null, subgraphIds?: Set<string>) => void;
   setActivePanel: (panel: 'kg' | 'reasoning') => void;
   toggleSatelliteVisibility: (id: string) => void;
+  hideAllSatellites: () => void;
   setNotamZones: (zones: TrajectoryZone[]) => void;
 }
 
@@ -48,5 +49,6 @@ export const useAppStore = create<AppState>((set) => ({
     if (next.has(id)) next.delete(id); else next.add(id);
     return { visibleSatelliteIds: next };
   }),
+  hideAllSatellites: () => set({ visibleSatelliteIds: new Set(), selectedSatelliteId: null }),
   setNotamZones: (zones) => set({ notamZones: zones }),
 }));

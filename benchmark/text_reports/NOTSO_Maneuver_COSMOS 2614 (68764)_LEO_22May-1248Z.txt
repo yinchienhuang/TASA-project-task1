@@ -1,0 +1,322 @@
+NOTSO_Maneuver / COSMOS 2614 (68764) / LEO_22May-1248Z
+
+JDay 142 at 1229z:
+
+Update state based on new Space-Track data, below are updated overall details of the ST.org observed manoeuvre. 
+
+The satellite looks to have maneuvered with a overall deltaV of 107.05m/s, resulting in: +0.75 deg inclination change, +1.23 deg RAAN change and a +7.1s period increase. 
+
+NOTE plane deltas with the following objects are:
+- ICEYE-X36 (59103) Inclination delta of 0.09deg, RAAN delta of -0.27deg
+- ICEYE-X37 (59102) Inclination delta of 0.1deg, RAAN delta of 0.74deg
+
+This maneuver brought COSMOS 2614 into closer plane match with other satellites from this launch event, as seen in Co-Orbital Coplanar Results are provided.  Click link above to view products.
+
+PAI suggests that COSMOS 2614 is a Russian satellite that supports military operations. The mission of COSMOS 2614 is currently unknown. 
+ 
+The specifics of the overall maneuver are: 
+--Time of Maneuver 1358z on 21MAY (JDAY141)
+--Delta V: 107.05 m/s
+--Period Change: 7.1 secs
+--Apogee Change: 2.22 km
+--Perigee Change: 9.27 km
+--Inclination Change: 0.75 degs
+ 
+Post Maneuver Current TLE as of 22MAY0648z provided by Space-Track:
+1 68764U 26083K   26142.28006472 +.00001132 +00000-0 +82758-4 0  9995
+2 68764  97.7740 279.2873 0007797 103.2599 256.9498 15.05653947  5300
+
+----------------------------------------------------------------------------------------------------
+
+JDay 142 at 0435z:
+
+Based on current Space-Track data, a maneuver by COSMOS 2614 (68764) occurred at approximately 1358z on 21MAY (Jday 141). 
+
+The satellite maneuvered with a delta v of 64.55 m/s, resulting in: + 0.48 deg inclination change, 0.03deg RAAN change and a +3.33s period increase. This maneuver does not appear to be a station-keeping maneuver and is not within the historical pattern of life for this object..
+
+NOTE new plane deltas with the following objects:
+- ICEYE-X36 (59103) Inclination delta of -0.059deg, RAAN delta of -0.61deg
+- ICEYE-X37 (59102) Inclination delta of -0.053deg, RAAN delta of 0.404deg
+This manoevure brought COSMOS 2614 into closer plane match with other satellites from this launch event, as seen in Co-Orbital Coplanar Results are provided.  Click link above to view products.
+
+PAI suggests that COSMOS 2614 is a Russian satellite that supports military operations. The mission of COSMOS 2614 is currently unknown. 
+ 
+The specifics of the maneuver are: 
+--Time of Maneuver: between 21May1358z
+--Delta V: 64.55 m/s
+--Period Change: 3.33 secs
+--Apogee Change: 1.87 km
+--Perigee Change: 3.49 km
+--Inclination Change: 0.48 degs
+ 
+Post Maneuver Current TLE as of 21MAY1455z provided by Space-Track:
+1 68764U 26083K   26141.94777464  .00000532  00000-0  78112-4 0    08
+2 68764  97.7740 278.9525 0007783 104.8891 255.3198 15.05653027005250
+
+----------------------------------------------------------------------------------------------------
+
+JDay 141 at 1530z:
+
+Based on current Space-Track data, a maneuver by COSMOS 2614 (68764) occurred between 2200z on 20MAY (Jday 140) and 0030z on 21MAY (JDay 141). 
+
+The satellite maneuvered with a delta v of 68.54 m/s, resulting in: 0.33deg inclination change, 0.90deg RAAN change. This maneuver does not appear to be a station-keeping maneuver and is not within the historical pattern of life for this object..
+
+NOTE new deltas with the following objects:
+- ICEYE-X36 (59103) Inclination delta of -0.38deg, RAAN delta of -0.25
+- ICEYE-X37 (59102) Inclination delta of -0.38deg, RAAN delta of 0.76deg
+
+Co-Orbital Coplanar Results are provided.  Click link above to view products.
+
+PAI suggests that COSMOS 2614 is a Russian satellite that supports military operations. The mission of COSMOS 2614 is currently unknown. 
+ 
+The specifics of the maneuver are: 
+--Time of Maneuver: between 20MAY2200z and 21MAY0030z
+--Delta V: 65.54 m/s
+--Period Change: 3.74 secs
+--Apogee Change: 0.96 km
+--Perigee Change: 5.08 km
+--Inclination Change: 0.33 degs
+ 
+Post Maneuver Current TLE as of 21MAY1455z provided by Space-Track:
+1 68764U 26083K   26141.28333915  .00001089  00000-0  77357-4 0  9999
+2 68764  97.2920 278.2936 0009789 129.5109 230.6986 15.06620279  5152
+
+==========================================================================
+
+JDay 141 at 1132z:
+
+Based on current SDA observations and available PAIR data, JCO providers have detected a possible maneuver on COSMOS 2614 (68764), occurring between 0038z and 0609z on 21May (JDay141 ).
+
+
+Based on initial indications, due to lack of information and miss passes since 20May, it is pointing to be a possible maneuver. 
+The associated COCO has been generated using the pre-maneuver state and may differ from the post-maneuver state.
+Click link above to view products. Analysis is ongoing.
+
+PAI suggests that COSMOS 2614 is a Russian satellite that supports military operations. The mission of COSMOS 2614 is currently unknown.
+
+Pre-maneuver TLE as of 20May2153z provided by KBR:
+1 68764U 26083K   26140.91229771 +.00000205 +00000-0 +13485-4 0  0006
+2 68764  96.9566 277.9499 0012897 145.7925   2.4644 15.07605072000015
+
+JDAY 141, 1125Z
+
+Mission Summary: 
+Cosmos 2614 is a classified Russian military satellite launched into a near-circular Sun-synchronous orbit at an altitude of approximately 550 kilometers with an orbital inclination of 96.95 degrees on April 17, 2026. Analysts suggest the payload may consist of Diamond-X small radar-imaging (SAR) satellites developed by NPO Mashinostroenia to provide all-weather, day-and-night reconnaissance capabilities for the Russian Ministry of Defense.  
+Source: RC
+
+Updated Satellite Summary showing maneuvering capability:
+**68764 | Cosmos 2614** — 2026-083K (11th of 10 catalogued objects; K = last payload object from April 17, 2026 Soyuz-2-1b/Volga launch) | LEO / Retrograde near-polar — ~539–556 km near-circular, 96.95° inclination | Russian Ministry of Defense / Russian Space Forces — Plesetsk Cosmodrome, Site 43, Pad 4 | Active — confirmed maneuvering / Yes — maneuvers confirmed April 28–29, 2026; Cosmos 2611 cluster maneuver May 20, 2026 | Government — Military / Classified | Classified military satellite cluster / Suspected radar-imaging (SAR) — probable Diamond-X candidate | April 17, 2026, 2317 UTC / ~33 days | Unknown (classified) | Fifth and final co-orbital payload (Object K) of the five-satellite group (Objects F–K, Cosmos 2610–2614) released by the Volga upper stage following its inclination-change maneuver from 98.26° to 96.95°; flies in cluster formation with Cosmos 2610–2613 at the same orbital altitude and inclination; by May 2, 2026, US Space Force confirmed six operational payloads from the mission with Objects C and E reclassified as Soyuz third-stage fragments | Probable Diamond-X SAR radar-imaging candidate per NPO Mashinostroenia 2023 concept — five-satellite quintet of 350–400 kg spacecraft designed for 500–550 km SSO with radar imaging capability; between April 28–29 the five-satellite group maneuvered collectively with two spacecraft raising orbit and three lowering by approximately 2 km; Cosmos 2611 (68759) confirmed separate maneuver on May 20, 2026 at 0135 UTC with 0.33° inclination change — Cosmos 2614 should be regarded as equally capable of similar independent maneuvering given shared heritage; as the last-catalogued payload object (K) from this launch, Cosmos 2614 represents the trailing element of the five-satellite formation; LeoLabs custody status post-May 20 maneuver cluster should be verified independently for all five satellites | Yes — confirmed (formation maneuvers April 28–29) | Unknown / classified (consistent with electric or cold-gas propulsion for military microsatellite class) | RussianSpaceWeb (Anatoly Zak, May 3 2026); Defence-Blog; Bart Hendrickx SSA analysis; US Space Force SATCAT; PPEC/IRT conjunction assessment data 
+Source: DCJ
+
+Original Seradata entry showing non manoeuverable:
+68764 | COSMOS 2614 | LEO / LEO - Standard | Russian Ministry of Defence - VKS (MORF) (Russia) | Active / Not Manoeuverable | Military | UNK / Mission Unknown | 16/04/2026 (0.10 years old) | No details are currently available on this payload. | Purpose of this mission is currently unknown. | COSMOS 2609,COSMOS 2610,COSMOS 2611,COSMOS 2612,COSMOS 2613, | Source: Seradata
+
+Space Weather Conditions during maneuver (JDAY 141, 0039Z) and possible maneuver between 20 May JDAY 140 2200Z and 21 May JDAY 141 at 0030Z 
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard (Read More)
+
+COSMOS 2614 / COCO / NorthStar / JDAY 144 / 22:53Z
+
+2026-05-24T22:54:00.050Z
+
+2026-05-24T22:53:47.300Z
+
+COSMOS 2614 / TRIC Plot / NorthStar / JDAY 144 / 22:53Z
+
+2026-05-24T22:53:35.330Z
+
+COSMOS 2614 / PASCHED / NorthStar / JDAY 144 / 22:53Z
+
+2026-05-24T22:53:21.770Z
+
+COSMOS 2614 / PoL / NorthStar / JDAY 144 / 22:52Z
+
+2026-05-24T22:53:05.700Z
+
+COSMOS 2614 / COCO /  / JDAY 142 / 12:18Z
+
+2026-05-22T12:18:30.300Z
+
+COSMOS 2614 / orbital plot result / NorthStar / JDAY 142 / 12:17Z
+
+2026-05-22T12:18:10.230Z
+
+COSMOS 2614 / Delta V tool /  / JDAY 142 / 12:16Z
+
+2026-05-22T12:17:16.300Z
+
+COSMOS 2614 / PASCHED /  / JDAY 142 / 12:16Z
+
+2026-05-22T12:16:50.530Z
+
+COSMOS 2614 / orbital plot result /  / JDAY 142 / 12:15Z
+
+2026-05-22T12:16:06.210Z
+
+COSMOS 2614 / DC Results / NorthStar / JDAY 142 / 04:32Z
+
+2026-05-22T04:32:20.790Z
+
+COSMOS 2614 / COCO / NorthStar / JDAY 142 / 04:31Z
+
+2026-05-22T04:32:05.810Z
+
+COSMOS 2614 / PASCHED / NorthStar / JDAY 142 / 04:31Z
+
+2026-05-22T04:31:52.040Z
+
+COSMOS 2614 / historical plot / NorthStar / JDAY 142 / 04:31Z
+
+2026-05-22T04:31:39.850Z
+
+COSMOS 2614 / historical plot / KBR / JDAY 142 / 04:30Z
+
+2026-05-22T04:31:14.930Z
+
+COSMOS 2614 / DC Results / KBR / JDAY 142 / 04:30Z
+
+2026-05-22T04:30:46.420Z
+
+COSMOS 2614 / PASCHED / KBR / JDAY 142 / 04:30Z
+
+2026-05-22T04:30:33.820Z
+
+COSMOS 2614 / residual / KBR / JDAY 142 / 04:30Z
+
+2026-05-22T04:30:17.580Z
+
+COSMOS 2614 / COCO / NorthStar / JDAY 142 / 04:29Z
+
+2026-05-22T04:29:59.440Z
+
+COSMOS 2614 / COCO / KBR / JDAY 142 / 04:29Z
+
+2026-05-22T04:29:47.280Z
+
+COSMOS 2614 / PASCHED / KBR / JDAY 141 / 15:55Z
+
+2026-05-21T15:55:40.870Z
+
+Andrés Amilcar Ascázubi Bohorquez
+
+COSMOS 2614 / COCO / KBR / JDAY 141 / 15:24Z
+
+2026-05-21T15:24:25.710Z
+
+COSMOS 2614 / Orbital Plot Results / KBR / JDAY 141 / 15:23Z
+
+2026-05-21T15:23:59.810Z
+
+COSMOS 2614 / DC Results / KBR / JDAY 141 / 15:19Z
+
+2026-05-21T15:20:11.970Z
+
+COSMOS 2614 / Orbital Plot Details / KBR / JDAY 141 / 13:46Z
+
+2026-05-21T13:46:42.250Z
+
+COSMOS 2614 / TLE Deltas /  / JDAY 141 / 13:45Z
+
+2026-05-21T13:45:58.870Z
+
+COSMOS 2614 / Orbital Plot Details /  / JDAY 141 / 13:43Z
+
+2026-05-21T13:44:53.660Z
+
+COSMOS 2614 / PASCHED / KBR / JDAY 141 / 11:32Z
+
+2026-05-21T11:32:41.500Z
+
+COSMOS 2614 / Residuals / KBR / JDAY 141 / 11:24Z
+
+2026-05-21T11:28:21.100Z
+
+2026-05-21T11:27:16.850Z
+
+2026-05-21T11:26:32.740Z
+
+COSMOS 2614 / COCO / KBR / JDAY 141 / 11:24Z
+
+2026-05-21T11:25:40.470Z
+
+2026-05-22T12:48:39.511Z
+
+2026-05-22T04:49:30.923Z
+
+2026-05-21T16:08:53.200Z
+
+2026-05-21T11:55:02.199Z
+
+Satellites Number Name Orbit Country 68764 COSMOS 2614 59103 ICEYE-X36 59102 ICEYE-X37
+
+Number Name Orbit Country 68764 COSMOS 2614 59103 ICEYE-X36 59102 ICEYE-X37
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/354db0d7-3324-49c1-915d-1c70ca8b5a10/COSMOS%202614%20/%20COCO%20/%20NorthStar%20/%20JDAY%20144%20/%2022%3A53Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/87251fae-eb94-4a8c-a42b-247c80eff22f/COSMOS%202614%20/%20COCO%20/%20NorthStar%20/%20JDAY%20144%20/%2022%3A53Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/8832d64c-4f1c-473f-b955-ba320704b3c0/COSMOS%202614%20/%20TRIC%20Plot%20/%20NorthStar%20/%20JDAY%20144%20/%2022%3A53Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/7904c12f-b4db-4f83-a19a-a35241503a37/COSMOS%202614%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20144%20/%2022%3A53Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a04ea603-7352-4bcd-83d3-ed63b5731a7c/COSMOS%202614%20/%20PoL%20/%20NorthStar%20/%20JDAY%20144%20/%2022%3A52Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/6b090a26-2770-431a-b50b-b02f8dd8d32d/COSMOS%202614%20/%20COCO%20/%20%20/%20JDAY%20142%20/%2012%3A18Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/fe9c428e-1a17-48ae-9d6a-f97f8e14c04b/COSMOS%202614%20/%20orbital%20plot%20result%20/%20NorthStar%20/%20JDAY%20142%20/%2012%3A17Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/d3b93f92-bff7-4a81-ad3b-cb1e9fe37ea0/COSMOS%202614%20/%20Delta%20V%20tool%20/%20%20/%20JDAY%20142%20/%2012%3A16Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/eb3e4d05-20e3-49c6-9188-3f347bf219c2/COSMOS%202614%20/%20PASCHED%20/%20%20/%20JDAY%20142%20/%2012%3A16Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2c16accf-bd77-4951-b391-47abef611b45/COSMOS%202614%20/%20orbital%20plot%20result%20/%20%20/%20JDAY%20142%20/%2012%3A15Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e8f736ba-5866-4694-9d16-b7377db1d444/COSMOS%202614%20/%20DC%20Results%20/%20NorthStar%20/%20JDAY%20142%20/%2004%3A32Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/97c19695-8eae-4e9a-9d4a-3efb507b825f/COSMOS%202614%20/%20COCO%20/%20NorthStar%20/%20JDAY%20142%20/%2004%3A31Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/aec50212-b119-4697-b6c5-5a3ad43b05f0/COSMOS%202614%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20142%20/%2004%3A31Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/bcc24d03-6ea0-49f4-9e3d-ae724697a517/COSMOS%202614%20/%20historical%20plot%20/%20NorthStar%20/%20JDAY%20142%20/%2004%3A31Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/ee83c922-464d-4e26-bc8e-1ea074c71b4a/COSMOS%202614%20/%20historical%20plot%20/%20KBR%20/%20JDAY%20142%20/%2004%3A30Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/dd53ebd9-384b-4bdd-b15d-484bd75b0dd5/COSMOS%202614%20/%20DC%20Results%20/%20KBR%20/%20JDAY%20142%20/%2004%3A30Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/40691265-d1af-48ad-be36-c9d1448fc7b3/COSMOS%202614%20/%20PASCHED%20/%20KBR%20/%20JDAY%20142%20/%2004%3A30Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/cdbeb525-4a5b-42ea-ae76-200602ae8ce3/COSMOS%202614%20/%20residual%20/%20KBR%20/%20JDAY%20142%20/%2004%3A30Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/90fd8b8d-6914-4bc7-98db-cf333c365b28/COSMOS%202614%20/%20COCO%20/%20NorthStar%20/%20JDAY%20142%20/%2004%3A29Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/faa2c652-127a-4015-9eab-36b6cff92005/COSMOS%202614%20/%20COCO%20/%20KBR%20/%20JDAY%20142%20/%2004%3A29Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/97765c23-37c8-4cfa-befb-912ffe621f3b/COSMOS%202614%20/%20PASCHED%20/%20KBR%20/%20JDAY%20141%20/%2015%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/ed48a679-a914-42e1-b768-2eaf2a8fac6c/COSMOS%202614%20/%20COCO%20/%20KBR%20/%20JDAY%20141%20/%2015%3A24Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/caf92e59-bce1-457c-84e3-d720759db664/COSMOS%202614%20/%20Orbital%20Plot%20Results%20/%20KBR%20/%20JDAY%20141%20/%2015%3A23Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/6895b3e5-f888-4590-99b4-001395b8e4eb/COSMOS%202614%20/%20DC%20Results%20/%20KBR%20/%20JDAY%20141%20/%2015%3A19Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/efac833f-c1d4-4e82-8b33-e977cd4c8d92/COSMOS%202614%20/%20Orbital%20Plot%20Details%20/%20KBR%20/%20JDAY%20141%20/%2013%3A46Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/61712d1f-08c1-4e10-91d0-105f285b063c/COSMOS%202614%20/%20TLE%20Deltas%20/%20%20/%20JDAY%20141%20/%2013%3A45Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e4690c5e-4415-4869-895e-2d31fb0ef4f5/COSMOS%202614%20/%20Orbital%20Plot%20Details%20/%20%20/%20JDAY%20141%20/%2013%3A43Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/6152bba7-3ab0-4da9-ad99-5c7d593269c0/COSMOS%202614%20/%20PASCHED%20/%20KBR%20/%20JDAY%20141%20/%2011%3A32Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e8a162bc-1493-4547-92e1-583c55f6d6bd/COSMOS%202614%20/%20Residuals%20/%20KBR%20/%20JDAY%20141%20/%2011%3A24Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/1cecc24e-6147-4475-8242-12edacb220df/COSMOS%202614%20/%20Residuals%20/%20KBR%20/%20JDAY%20141%20/%2011%3A24Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/eda39f5c-5f58-44c8-9795-85cb0b62efa0/COSMOS%202614%20/%20Residuals%20/%20KBR%20/%20JDAY%20141%20/%2011%3A24Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a0384607-8081-403c-befa-e07fbd29aa31/COSMOS%202614%20/%20COCO%20/%20KBR%20/%20JDAY%20141%20/%2011%3A24Z
+
+NOTSO_ID:ee2a / Maneuver / COSMOS 2614 (68764) / LEO_21May-1608Z
+
+NOTSO_ID:ee2a / Maneuver / COSMOS 2614 (68764) / LEO_21May-1154Z

@@ -1,0 +1,273 @@
+NOTSO_Launch / LM-8 (94486) / Qianfan Digui Group 10A-R (94468-94485) / Hainan, China / 17MAY26 / 1442UTC / SSO_18May-0132Z
+
+JDay 138 at 0006z:
+ 
+Based on available PAIR data, JCO providers have indications of the successful launch of a LM-8 from Hainan, China, occurring at 1443z on 17 May 2026 (JDay 137), carrying the Qianfan Diqui Group 10 with 18(A-R) payloads. The Qianfan Diqui Group is for commercial purposes and is China's LEO internet constellation project.  
+Based on current information, the satellites are likely to be SSO with orbital characteristics of 98 deg Inclination and 25 deg RAAN. 
+The neighbourhood is provided. Click the link above to view products.
+
+Rotated Launch Nominal to 17May1443z provided by PPEC: 
+0 Qianfan
+1 94468U 00000    26137.61335648  .00000000  00000-0  00000-0 0    09
+2 94468  98.1931  25.5433 0000000 139.5520   0.0000 14.57889068    07
+
+0 CZ-8
+1 94486U 00000    26137.61339120  .00000000  00000-0  00000-0 0    08
+2 94486  98.1931  25.5558 0000000 139.5520   0.0000 14.57889068    05
+ 
+Unrotated Launch Nominal: 
+0 Qianfan
+1 94468U 00000    25001.00000000  .00000000  00000+0  00000+0 0    00
+2 94468  98.1931  30.3210 0000000   0.0000 139.5520 14.57889173    01
+
+0 CZ-8
+1 94486U 00000    25001.00000000  .00000000  00000+0  00000+0 0    00
+2 94486  98.1931  30.3210 0000000   0.0000 139.5520 14.57889173    01
+
+=========================================================================
+
+JDay 135 at 2044z:
+ 
+Based on available PAIR data, JCO providers have indicated a possible upcoming launch of a LM-8 from Wenchang on 17 May (JDay 137) occurring between 1434z and 1457z with an expected launch time of 1442z, carrying the Qianfan Jigui Group 8 with 18 payloads. 
+
+Based on current information, the satellite is likely to be a SSO with orbital characteristics of:
+98 deg Inc and 25 deg RAAN.
+
+COCO is provided. Click link above to view products. 
+
+**JCO is currently unable to provide commercial observations on launches prior to cataloging in Space-track. 18SDS will be the final determination for LEO insertions. Please check the public catalog for details.**
+ 
+Rotated Launch Nominal to 17May1442z provided by PPEC: 
+0 Qianfan
+1 94468U 00000    25137.61250000  .00000000  00000+0  00000+0 0    04
+2 94468  98.1931  25.4670 0000000   0.0000 139.5520 14.57889173    06
+
+0 CZ-8
+1 94486U 00000    25137.61250000  .00000000  00000+0  00000+0 0    04
+2 94486  98.1931  25.4670 0000000   0.0000 139.5520 14.57889173    06
+ 
+Unrotated Launch Nominal: 
+0 Qianfan
+1 94468U 00000    25001.00000000  .00000000  00000+0  00000+0 0    00
+2 94468  98.1931  30.3210 0000000   0.0000 139.5520 14.57889173    01
+
+0 CZ-8
+1 94486U 00000    25001.00000000  .00000000  00000+0  00000+0 0    00
+2 94486  98.1931  30.3210 0000000   0.0000 139.5520 14.57889173    01
+
+JDAY 131, 2036Z	
+
+Mission Summary:
+The Thousand Sails (Qianfan) constellation, also known as G60 Starlink or Spacesail, is China's primary commercial low-Earth orbit (LEO) satellite internet mega constellation project. It is designed to provide high-speed, low-latency global broadband coverage, directly competing with Western systems like SpaceX's Starlink. It was created by Shanghai Spacecom Satellite Technology (SSST), a firm backed by the Shanghai Municipal People's Government and the Chinese Academy of Sciences. The project was started in 2024 as a rival to the Starlink satellite constellation installed by SpaceX, and plans to be constituted of over 15,000 satellites by the project's end .
+
+**Qianfan Jigui Polar Group 08 (08A–R)** is a batch of 18 flat-pack broadband internet satellites manufactured by Genesat under contract to Shanghai Spacesail Technologies (SSST), plan to be launched May 17, 2026 at 1442 UTC aboard a Long March 8 from the Wenchang Commercial Space Launch Site (Commercial Launch Pad 1), making it the 9th overall Qianfan batch deployment. Each satellite weighs approximately 300 kg and uses a krypton-fed Hall-effect thruster (20 mN, Isp 1,385s) to raise from a ~709 km circular insertion orbit to its operational shell at ~1,100–1,160 km. The rocket is expected to execute a dogleg maneuver shortly after liftoff on a south-southwest azimuth of approximately 188–190°, clearing the Vietnamese coastline before settling onto its final burn heading (a trajectory confirmed by the NOTAM). TLE-derived orbital parameters suggest an inclination of 98.19° — a Sun-Synchronous retrograde polar orbit, geometrically distinct from the 89° prograde polar shell populated by LM-6A launches out of Taiyuan — establishing that Qianfan's multi-layer architecture uses Wenchang/LM-8 for its SSO shell and Taiyuan/LM-6A for its prograde polar shell concurrently. Group 08 represents the first 18 satellites (of an eventual 36) assigned to orbital plane 08, with its RAAN of 25.2280° fixed by the 1442 UTC launch time. 
+Source: DCJ
+
+Space Weather Forecast (valid for 1440Z, May 17 (JDAY 137); issued 1230Z, May 15 (JDAY 135) 
+
+Radio Blackout Chance – R1-2, 25%; R3, 5%  
+Solar Radiation Storm Chance – S1, 5%
+Geomagnetic Storm Predicted Value: Kp 3 (G0)
+Source: https://www.spaceweather.gov/communities/space-weather-enthusiasts-dashboard  
+
+*****************************************************************
+13 May JDAY 133 0536Z
+
+Indonesian NOTAM adds second drop zone
+
+A1733/26 NOTAMN
+Q)WIIF/QRALW/IV/NBO/W/000/999/0159N10753E036
+A)WIIF
+B)2605171435
+C)2605171508
+E)AIRSPACE RESERVATION FOR AEROSPACE FLT ACT
+WILL TAKE PLACE WITHIN COORD AS FLW:
+013500N1072700E - 022900N1073600E - 022200N1081900E -
+012800N1081000E - 013500N1072700E
+F)SFC
+G)UNL
+
+https://forum.nasaspaceflight.com/index.php?topic=57867.msg2788138#msg2788138
+
+****************************************************************
+
+NOTAM indicates launch at approx. 1442UTC on 17 May
+
+A1379/26 NOTAMN Q) VVHM/QAFXX/IV/NBO/E/000/999/1050N10938E034 A) VVHM  PART 1 OF 2  B) 2605171434  C) 2605171457  E) DUE TO AEROSPACE FLIGHT ACTIVITY FM CHINA, THE FLIGHT
+SAFETY OF THE ACFT IN THE FLW AREA MAY BE AFFECTED:
+102900N1092300E - 112300N1093100E - 112000N1095300E -
+101600N1094600E, POINTS CONNECTION RANGE
+VERTICAL ALTITUDE: SFC-UNL
+
+DRG THIS ACTIVITY, ATS RTE SEGMENTS AND EN-ROUTE HLDG
+MENTIONED BELOW ARE NOT USED:
+
+M771: SUDUN - DAMVO - DOXAR
+N500: AGSIS - DAMVO - MIMUX
+M765: SAMAP - MAPNO
+EN-ROUTE HLDG: DAMVO
+DRG THIS ACTIVITY, ATS RTE SEGMENTS MENTIONED BELOW SHALL
+BE OPERATED AS FLW:
+
+ACFT ON M771: M771 - DAGAG - AGSIS - CRA - NITOM - M771
+ACFT ON N892 - N500 TO VVTS: N892 - MESOX - Q15 - CRA - W15
+ACFT ON N500 TO VVTS AND VICE VERSA: N500 - PANDI - AGSAM -
+OSIXA - DAGAG - ELSAS - M768 OR N500 - PANDI - AGSAM - MIMUX
+
+CRA - PTH
+OVERFLIGHT ACFT ON N500 AND VICE VERSA: N500 - PANDI -
+AGSAM - OSIXA - DAGAG - M768 - TSH
+
+OVERFLIGHT ACFT ON M765 AND VICE VERSA: M765 - IGARI -
+DAGAG - OSIXA - ALDAS - M765
+
+FL310, FL350, FL390 WILL BE APPLIED TO ACFT ON ATS RTE M771
+FL320, FL360, FL400 WILL BE APPLIED TO ACFT ON ATS RTE L642
+REMARKS:
+
+ALL ACFT SHALL AVOID THE AFFECTED AREA OR SUBJ TO ATC
+CLEARANCES
+
+THE AEROSPACE FLIGHT END PART 1 OF 2
+A1379/26 NOTAMN Q) VVHM/QAFXX/IV/NBO/E/000/999/1050N10938E034 A) VVHM  PART 2 OF 2  B) 2605171434  C) 2605171457  E) ACTIVITY CONDUCTED BY CHINA DIRECTLY
+AFFECTS FLIGHT OPERATIONS WI HO CHI MINH FIR. THE CHINA
+PARTY IS REQUIRED TO CONTINUE TO COORDINATE WITH THE
+COMPETENT AUTHORITIES OF VIETNAM IN LINE WITH THE PROCEDURES
+SET OUT IN ANNEX 11 AND AGREED PROCEDURES OF THE REGION
+
+THIS NOTAM IS ISSUED IN ACCORDANCE WITH ICAO REQUIREMENTS
+FOR THE SAFETY OF ACFT OPERATIONS WI HO CHI MINH FIR. END PART 2 OF 2 F) SFC  G) UNL
+
+https://forum.nasaspaceflight.com/index.php?topic=57867.msg2787411#msg2787411 (Read More)
+
+Quinfan Jigui 10A-R / Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64980.0#msg2789453 / JDAY 138 / 12:12Z
+
+Further clarification on naming convention
+
+2026-05-18T12:13:39.670Z
+
+/ Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64980.msg2789235#msg2789235 / JDAY 138 / 01:28Z
+
+Note that before the Xinhua article claimed the launch time to be 1442UTC, observers watching the livestream suggested liftoff occurred at 1443UTC:
+
+2026-05-18T01:29:15.800Z
+
+/ Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64980.msg2789384#msg2789384 / JDAY 138 / 01:13Z
+
+Edit to post above clarifies further that this seems to clearly be group 10, going up on the 9th launch sequentially:
+
+2026-05-18T01:13:31.300Z
+
+/ Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64980.msg2789374#msg2789374 / JDAY 138 / 00:38Z
+
+Official launch success screen at mission control describes this as batch 10. Discussion suggests this is due to its launch sequence, but it is the 9th rather than 10th launch of Qianfans so far. Note that there is agreement that there are 18 satellites in total, as expected:
+
+2026-05-18T00:39:37.010Z
+
+/ Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64980.msg2789298#msg2789298 / JDAY 138 / 00:02Z
+
+Discussion of manufacturers and an indication that batches launched from Taiyuan have a leading 0 while launches from Hainan do not (perhaps explaining the batch 09 a few days ago vs batch 9 today confusion):
+
+2026-05-18T00:02:22.850Z
+
+/ Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64980.msg2789249#msg2789249 / JDAY 137 / 23:57Z
+
+Table of Qianfan launches so far indicates the confusion. Xinhua numbers the batches with no clear pattern and the previous launch (8th sequentially) as batch 09, with this launch (9th sequentially) being batch 9:
+
+2026-05-17T23:57:54.460Z
+
+/ Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64980.msg2789261#msg2789261 / JDAY 137 / 23:47Z
+
+Pictures of the launch and the launch patch:
+
+2026-05-17T23:47:25.830Z
+
+/ Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64980.msg2789248#msg2789248 / JDAY 137 / 23:43Z
+
+Launched successfully at 1442UTC, was a LM-8 from Hainan as expected. Confusion as Xinhua calls both this and the recent launch on May 12 batch 9 of Qianfan
+
+2026-05-17T23:44:28.960Z
+
+Payload / PASCHED / PPEC / JDAY 135 / 20:47Z
+
+2026-05-15T20:47:39.410Z
+
+/ Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64980.msg2788151#msg2788151 / JDAY 133 / 05:40Z
+
+Map of both drop zones and indication the launcher has been transferred to the launch site:
+
+2026-05-13T05:40:13.830Z
+
+Payload / Publicly Available Information / NORTHSTAR / JDAY 133 / 05:03Z
+
+2026-05-13T05:04:28.190Z
+
+Payload / Neighborhood / Northstar / JDAY 132 / 04:41Z
+
+2026-05-12T04:41:39.250Z
+
+Payload / PASCHED / Northstar / JDAY 132 / 04:41Z
+
+2026-05-12T04:41:16.340Z
+
+Payload / Ground trace / PPEC / JDAY 132 / 04:39Z
+
+2026-05-12T04:40:24.150Z
+
+Payload / COCO / KBR / JDAY 132 / 04:38Z
+
+2026-05-12T04:39:36.900Z
+
+Payload / PASCHED / KBR / JDAY 131 / 22:25Z
+
+2026-05-11T22:25:47.180Z
+
+2026-05-11T22:25:35.560Z
+
+/ Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64980.msg2787412#msg2787412  / JDAY 131 / 03:50Z
+
+Indication that this is expected to be Qianfan Jigui Group 8 with 18 payloads (A-R) launching from Wenchang on a LM-8, includes map of drop zone:
+
+2026-05-11T03:51:23.470Z
+
+2026-05-18T01:32:54.282Z
+
+2026-05-15T21:11:35.719Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/607dfd81-6a6b-4963-969b-b87ce0dfe640/Quinfan%20Jigui%2010A-R%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64980.0%23msg2789453%20/%20JDAY%20138%20/%2012%3A12Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/caae49d9-02a4-45c1-bb54-451c18b3b66d/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64980.msg2789235%23msg2789235%20/%20JDAY%20138%20/%2001%3A28Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/53cb0479-79bc-4aed-859b-0e26f1cf4fb3/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64980.msg2789384%23msg2789384%20/%20JDAY%20138%20/%2001%3A13Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f70de844-4725-465f-bce3-876afb09bb87/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64980.msg2789374%23msg2789374%20/%20JDAY%20138%20/%2000%3A38Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/99b8b31e-abd7-4ca1-814f-4197e76ef206/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64980.msg2789298%23msg2789298%20/%20JDAY%20138%20/%2000%3A02Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/b2dafc84-430c-4256-aaae-111f66da1ab6/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64980.msg2789249%23msg2789249%20/%20JDAY%20137%20/%2023%3A57Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/22b13c77-b36d-40db-8947-34643161d833/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64980.msg2789261%23msg2789261%20/%20JDAY%20137%20/%2023%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/86485b33-526f-4e17-acbc-a1b2d4542ef6/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64980.msg2789248%23msg2789248%20/%20JDAY%20137%20/%2023%3A43Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/7588d071-6369-448f-a17c-4661c4d87740/Payload%20/%20PASCHED%20/%20PPEC%20/%20JDAY%20135%20/%2020%3A47Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/640dbddd-a88b-4ea7-b263-d1298dc62b5c/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64980.msg2788151%23msg2788151%20/%20JDAY%20133%20/%2005%3A40Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/914db127-4869-4d55-aba1-424a864cdfa0/Payload%20/%20Publicly%20Available%20Information%20/%20NORTHSTAR%20/%20JDAY%20133%20/%2005%3A03Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/1251bbf2-4cd3-4130-b1ab-168641e1634d/Payload%20/%20Neighborhood%20/%20Northstar%20/%20JDAY%20132%20/%2004%3A41Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/5a717f22-7557-459c-9ca1-012b8e70ec3c/Payload%20/%20PASCHED%20/%20Northstar%20/%20JDAY%20132%20/%2004%3A41Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/c1becf05-3707-4d83-bd1f-94bec53f8b67/Payload%20/%20Ground%20trace%20/%20PPEC%20/%20JDAY%20132%20/%2004%3A39Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/c7a53eb4-3ee5-4f80-8470-5ef7de6ed9be/Payload%20/%20COCO%20/%20KBR%20/%20JDAY%20132%20/%2004%3A38Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/79c1156e-50d1-4d07-8b70-050ec6b167ae/Payload%20/%20PASCHED%20/%20KBR%20/%20JDAY%20131%20/%2022%3A25Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/33924a3b-0707-47a4-a1cb-1dc2f97ccee9/Payload%20/%20PASCHED%20/%20KBR%20/%20JDAY%20131%20/%2022%3A25Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f2e83505-8fac-4b00-8010-e305bf645e4d/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64980.msg2787412%23msg2787412%20%20/%20JDAY%20131%20/%2003%3A50Z
+
+NOTSO_Launch / LM-8 (94486) / Qianfan Digui (G60) 08A-R (94468-94485) / Hainan, China / 17MAY26 / 1442UTC / SSO_15May-2111Z

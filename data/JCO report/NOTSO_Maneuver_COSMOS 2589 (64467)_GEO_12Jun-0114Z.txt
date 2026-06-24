@@ -1,0 +1,87 @@
+NOTSO_Maneuver / COSMOS 2589 (64467) / GEO_12Jun-0114Z
+
+JDay 162 at 2330z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have verified two maneuvers by COSMOS 2589 (64467) occurring between 1520z and 1819z on 11JUN (JDay 162).
+
+The satellite first maneuver occurred at 1520z on 11JUN resulted in a change from 97.98 deg W longitude with a delta-v of 0.30 m/s, resulting in a increase in westward drift rate of 0.0043 deg/day, an inclination change of -0.0037 degs to a final inclination of 0.50 degs. 
+
+The second maneuver occurred at 1819z on 11JUN with a delta-v of 0.25. This resulted in a period change of -3.32 seconds and an eastwards drift rate of 0.0096 deg/day. 
+
+Before these maneuvers, COSMOS 2589 (64467) was about to have a close approach of 16.54 km with USA 325 (51281) at 11JUN1747z. After these two maneuvers, COSMOS 2589 (64467) has increased its minimum distance from USA 325 (51281) to 45.50 km at 12JUN1742z.
+
+PAIR suggests that COSMOS 2589 (64467) is a Russian satellite that supports military operations. The mission of COSMOS 2589 (64467) is Communications-relay or reconnaissance, exact mission and configuration not officially disclosed
+  
+The specifics of the first maneuver are: 
+--Time of Maneuver: 11 Jun 2026 15:20z
+--Delta V: 0.30 m/s
+--Period Change: -0.56 seconds
+--Perigee Change: -0.19 km
+--Apogee Change: -0.17 km
+--Inclination Change: -0.0037°
+--Current Drift Rate: -4.27e-3 °/day
+
+The specifics of the second maneuver are:
+--Time of Maneuver: 11 Jun 2026 18:19z
+--Delta V: 0.25 m/s
+--Period Change: -3.32 seconds
+--Perigee Change: -1.05 km
+--Apogee Change: -1.12 km
+--Inclination Change: -0.0039°
+--Current Drift Rate: 9.61e-3 °/day
+ 
+Post First Maneuver Current TLE as of 112230zJUN26 provided by KBR:
+1 64467U 25131A   26162.73983346 -.00000255 +00000-0 -21258-5 0  0009
+2 64467   0.0506  85.6145 0001149  81.7602  97.0180  1.00270105000009
+
+Post Second Maneuver Current TLE as of 112230zJUN26 provided by KBR:
+1 64467U 25131A   26162.87594150 -.00000233 +00000-0 -19420-5 0  0009
+2 64467   0.0470  83.1789 0001141  85.3595 144.9882  1.00273918000005
+
+
+
+
+************************************************************************************************
+
+
+JDay 162 at 1706z:
+
+Based on current SDA observations and available PAIR data, JCO providers have detected a possible maneuver on COSMOS 2589 (64467), occurring between 1330z and 1500z on 11JUN (JDay 162).
+
+The satellite was located at 97.97 degs E longitude. Based on initial indications, it appears to be lowering its semi-major axis, resulting in a period decrease of 9 seconds. Before the maneuver, COSMOS 2589 (64467) was about to have a close approach of 16.54 km with USA 325 (51281) at 11JUN1747z.
+The associated Neighbourhood has been generated using the pre-maneuver state and may differ from the post-maneuver state.
+Click link above to view products. Analysis is ongoing.
+
+PAI suggests that COSMOS 2589 (64467) is a Russion satellite that supports military operations. The mission of COSMOS 2589 (64467) is Communications-relay or reconnaissance, exact mission and configuration not officially disclosed
+
+Pre-maneuver TLE as of 11JUN1352z provided by KBR:
+1 64467U 25131A   26162.57846097 -.00000075 +00000-0 -62652-4 0  0004
+2 64467   0.0539  80.6112 0001144  85.8055  39.7239  1.00269497000006
+
+11 Jun 26, JDAY 162 1700Z
+
+Satellite Summary:
+
+**64467 | COSMOS 2589** (Kosmos 2589, 2025-131A; program 14F166A) | GEO / geostationary (~35,786 km, incl. ~0.43°; inserted via supersynchronous transfer orbit) | ISS Reshetnev (Reshetnev Information Satellite Systems) for Russian MoD / Russian Space Forces (Aerospace Forces) | Operational / Yes — maneuverable (GEO station-keeping) | Military / Government (defense) | Communications-relay or reconnaissance (classified) | Launched 19 Jun 2025, ~03:01 UTC (≈1 year / ~12 months old as of Jun 2026) | Unconfirmed (~15 yr typical for an Ekspress-2000-class bus) | Classified Russian military GEO satellite built by ISS Reshetnev (likely on the Ekspress-2000 bus, ~2.3 t); launched on the first operational Angara A5/Briz-M from Plesetsk Site 35/1 carrying live payloads; exact mission and configuration not officially disclosed | Co-launched with COSMOS 2590 (an apparent sub-satellite/inspector that separated from 2589 post-deployment); payload identity and parameters remain uncertain in open sources | Yes (GEO satellites require onboard propulsion for orbit raising and station-keeping) | Likely chemical (bipropellant apogee/station-keeping) plus electric (SPT/Hall-effect) thrusters — unconfirmed | Gunter's Space Page, Grokipedia (Angara A5), NASASpaceflight forum, Space Launch Now / Nextspaceflight, SatelliteMap.space, Satcat/Kayhan
+
+COSMOS 2589 / Neighborhood / KBR / JDAY 162 / 18:02Z
+
+COSMOS 2589 / Neighborhood / KBR / JDAY 162 / 23:40Z
+
+COSMOS 2589 / Waterfall / KBR / JDAY 162 / 23:36Z
+
+COSMOS 2589 / Residual / KBR / JDAY 162 / 23:35Z
+
+COSMOS 2589 / Residuals / KBR / JDAY 162 / 17:21Z
+
+Walter  Fernández Leiva
+
+COSMOS 2589 / Neighborhood / KBR / JDAY 162 / 17:21Z
+
+COSMOS 2589 / Lightcurve / KBR / JDAY 162 / 17:20Z
+
+COSMOS 2589 / PoL COEs / KBR / JDAY 162 / 17:08Z
+
+COSMOS 2589 / Waterfall / Anduril / JDAY 162 / 16:55Z
+
+Satellites Number Name Orbit Country 64467 COSMOS 2589 HEO Russia (CIS)

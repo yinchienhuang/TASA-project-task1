@@ -1,0 +1,64 @@
+NOTSO_Photometric Change / COSMOS 2589 (64467)_09Jun-2053Z
+
+JDay 160 at 2040z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on COSMOS 2589 (64467). This change occurred on 09JUN (JDay 160) between the solar phase angles of 6.5 deg to 10.5 deg and appeared to be 3.5 visual magnitude brighter and then returned back to pattern of life photometry. 
+ 
+The cause of the change may be associated with a close approach with USA 325 at 09JUN1755z at 7.1km and COSMOS 2589 had bad lighting to view USA 325. This photometric variation has been observed with close approaches with USA 325 before. Analysis is ongoing.
+ 
+The satellite is in GEO and is currently at 87.98 degs E longitude and is geo-stationary. Neighborhood is provided. Click link above to view products
+ 
+PAI suggests that COSMOS 2589 is a Russian satellite that supports military operations. The mission of COSMOS 2589 is Servicing/Inspection / Inspection Satellite, Cargo / Spacecraft Delivery/Deployment.
+ 
+Time window of change: 09JUN1745z to 09UN1846z
+Solar phase angle window: 6.5 to 10.5 degs
+Vismag pre change: ~11.5
+Vismag post change: ~8
+Close approaches within window: TCA w/(51281) on 09JUN1755z at 7.1 km; with bad lighting
+Current longitude: 87.98 E Longitude
+Current drift rate: 0.004 W degs/day
+ 
+Current TLE as of 09JUN1935z provided by KBR:
+1 64467U 25131A   26160.81638058 -.00000406 +00000-0 -33886-5 0  0001
+2 64467   0.0484  80.2428 0001229  80.3194 129.5023  1.00270823000003
+
+Current TLE as of 09JUN2001z provided by SAFRAN:
+1 64467U 25131A   26160.83459470  .00000000  00000-0  00000-0 0  9994
+2 64467   0.0488  80.3878 0001306  78.3895 137.8618  1.00270527  6669
+
+9 Jun 26, JDAY 160, 2044Z
+
+Mission Summary:
+Cosmos 2589 (NORAD ID: 64467) is a classified Russian military communications and defense technology satellite designed and manufactured by Reshetnev ISS. The satellite—internally designated under the 14F166 / 14F166A project framework—was initially deployed into a highly elliptical, super-synchronous transfer orbit. Over the following weeks, Cosmos 2589 utilized its onboard electric maneuvering thrusters (SPD-100V) alongside a co-launched subsatellite (Cosmos 2590) to circularize its orbit, eventually settling into its planned operational position within geostationary orbit (GEO) at approximately 98°E longitude to support strategic independent communications for the Russian Aerospace Forces. 
+Source: RC
+
+Satellite Summary:
+Expanded AI Assisted summary
+
+64467 | Cosmos 2589 (Kosmos-2589) | GEO (circularized; launched into GTO/highly-elliptical transfer, now near-geostationary belt) | Russian Ministry of Defence / VKS (developer ties to TsNIIKhM / Nivelir contractor network; bus often attributed to ISS Reshetnev) | Active / Highly maneuverable — Yes | Military/Government | Inspector — Rendezvous & Proximity Operations (RPO); suspected GEO-adapted Nivelir inspection demonstrator | 19 Jun 2025 / ~11.7 months | Unknown (not publicly disclosed) | Russian maneuvering "parent" inspector that deployed a sub-satellite (Cosmos 2590) and conducted extended close-proximity operations before circularizing into the GEO belt to enable on-orbit inspection of other satellites | Strongly assessed by Western analysts as a Nivelir-lineage system; released sub-satellite Cosmos 2590 on 26 Jun 2025; conducted months of RPO at sub-2 km separations; circularization sequence completed by spring 2026 | Yes | Not publicly confirmed (impulsive ~12-hr apogee/perigee burns are consistent with a chemical/hypergolic main propulsion system) | satcat.com, satellitemap.space, ISR University (Integrity Flash #135), COMSPOC, GlobalSecurity.org, Wikipedia (Nivelir)
+Reviewed: DCJ
+***************************************
+
+64467 | COSMOS 2589 (14F166A) | GEO-GSO / Geostationary | Russian Ministry of Defence - VKS (MORF) (Russia) | Active / Manoeuverable | Military | Servicing/Inspection / Inspection Satellite,Cargo / Spacecraft Delivery/Deployment | 19/06/2025 (0.97 years old) | Russian military satellite. Suspected to have satellite inspection or "satellite killing" capabilities. | Yes - On-board Propulsion | Propulsion Unknown | ,COSMOS 2590 | Source: Seradata
+
+Space Weather Conditions during photometric change (1745-1846Z, JDAY 160)  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard (Read More)
+
+COSMOS 2589 / Waterfall / KBR / JDAY 160 / 20:35Z
+
+COSMOS 2589 / TRIC Plot / KBR / JDAY 160 / 20:34Z
+
+TRIC Plot showing close approach between COSMOS 2589 and USA 325
+
+COSMOS 2589 / Neighborhood / KBR / JDAY 160 / 20:33Z
+
+COSMOS 2589 / Lightcurve / KBR / JDAY 160 / 20:28Z
+
+COSMOS 2589 / Exo Map / Anduril / JDAY 160 / 20:23Z
+
+Exo Map showing sharp photometric change of from 64467
+
+Satellites Number Name Orbit Country 64467 COSMOS 2589 HEO Russia (CIS)

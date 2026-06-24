@@ -4,8 +4,30 @@ Extracts plain text from .mhtml files.
 """
 import email
 import pathlib
+import re
 from pathlib import Path
 from bs4 import BeautifulSoup
+
+
+def _is_garbage_text(text: str) -> bool:
+    """Check if a line is garbage (URL, timestamp, etc) and should be filtered."""
+    # URLs
+    if text.startswith("http://") or text.startswith("https://"):
+        return True
+    if "URL:" in text and ("http" in text or "amazonaws" in text):
+        return True
+
+    # Pure timestamps (ISO 8601 format)
+    if re.match(r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}', text.strip()):
+        return True
+
+    # Pure date/time lines without other content
+    if re.match(r'^\d{1,2}(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)', text, re.IGNORECASE):
+        # Check if it's just a date with optional time, no other content
+        if len(text.split()) <= 3:
+            return True
+
+    return False
 
 
 def read_mhtml(path: str | Path) -> str:
@@ -15,7 +37,7 @@ def read_mhtml(path: str | Path) -> str:
         path: Absolute or relative path to the .mhtml file
 
     Returns:
-        Plain text content (up to 40,000 characters)
+        Plain text content (up to 40,000 characters), filtered for garbage
     """
     path = Path(path)
     msg = email.message_from_bytes(path.read_bytes())
@@ -46,7 +68,7 @@ def read_mhtml(path: str | Path) -> str:
 
     for tag in body.find_all(["h1", "h2", "h3", "h4", "p", "li", "td", "th", "pre", "blockquote"]):
         t = tag.get_text(separator=" ", strip=True)
-        if len(t) > 20 and t not in seen_texts:
+        if len(t) > 20 and t not in seen_texts and not _is_garbage_text(t):
             parts.append(t)
             seen_texts.add(t)
 
@@ -58,7 +80,7 @@ def read_mhtml(path: str | Path) -> str:
             continue
         t = div.get_text(separator=" ", strip=True)
         # Higher threshold for divs to filter out navigation/button labels
-        if len(t) > 60 and t not in seen_texts:
+        if len(t) > 60 and t not in seen_texts and not _is_garbage_text(t):
             parts.append(t)
             seen_texts.add(t)
 

@@ -73,6 +73,13 @@ entity_types:
               inclination:      { type: float,   required: false, description: "Orbital inclination in degrees (from TLE)" }
               orbital_period:   { type: float,   required: false, description: "Orbital period in minutes (1440 / mean_motion)" }
               news_keywords:    { type: string,  required: false, description: "Comma-separated search terms for news fetching. Leave empty to exclude from news feed.", example: "ISS, International Space Station" }
+              status:           { type: string,  required: false, description: "Operational status from PAIR/intelligence reports, e.g. 'Active / Manoeuverable', 'Inactive', 'Deorbited'" }
+              maneuverable:     { type: string,  required: false, description: "Whether the satellite has demonstrated or known maneuver capability: 'Yes', 'No', 'Unknown'" }
+              propulsion_type:  { type: string,  required: false, description: "Propulsion system type from PAIR data, e.g. 'Chemical bipropellant', 'Electric (ion)', 'Hydrazine monopropellant', 'Unknown'" }
+              designation:      { type: string,  required: false, description: "Platform or bus designation, e.g. '14F166A', 'Express-2000', 'DFH-4'" }
+              intel_description: { type: string, required: false, description: "Intelligence community assessment of capabilities/mission from PAIR section, e.g. 'Suspected satellite inspection or ASAT capability'" }
+              rpo_capability:    { type: string,  required: false, description: "Known or suspected Rendezvous/Proximity Operations capability: 'Confirmed' / 'Suspected' / 'Unknown' / 'None'" }
+              formation_flying:  { type: string,  required: false, description: "Whether satellite operates in close formation with other satellites: 'Yes' / 'No' / 'Unknown'" }
             children:
               CivilSatellite:
                 attributes:
@@ -85,6 +92,12 @@ entity_types:
               CommercialSatellite:
                 attributes:
                   revenue_model: { type: string, required: false, description: "e.g. broadband, imagery, communications" }
+      Country:
+        description: "A nation-state that operates satellites or space programs"
+        attributes:
+          name:     { type: string, required: true,  description: "Canonical English country name, e.g. China, USA, Russia" }
+          iso_code: { type: string, required: false, description: "ISO 3166-1 alpha-3 code, e.g. CHN, USA, RUS" }
+          aliases:  { type: list,   required: false, description: "Alternate names, e.g. ['PRC', 'People's Republic of China']" }
       Organization:
         attributes:
           country: { type: country, required: true,  description: "Country of registration" }
@@ -140,8 +153,9 @@ relationship_types:
   memberOfFamily:        { domain: [LaunchVehicleSeries], range: [LaunchVehicleFamily], description: "Series belongs to this rocket family (e.g. Long March 2 → Long March)" }
   launchedFrom:          { domain: [Satellite, Mission],  range: [LaunchSite],          description: "Launched from this ground facility" }
   operatesLaunchSite:    { domain: [Organization],        range: [LaunchSite],          description: "Organization that operates the launch site" }
-  operatedBy:     { domain: [Satellite],             range: [Organization] }
-  manufacturedBy: { domain: [Satellite],             range: [Organization] }
+  operatedBy:      { domain: [Satellite],             range: [Organization] }
+  manufacturedBy:  { domain: [Satellite],             range: [Organization] }
+  operatingCountry: { domain: [Satellite],            range: [Country],       description: "Country that operates or owns this satellite" }
   launchedBy:     { domain: [Satellite, Mission],    range: [Organization] }
   carriedBy:      { domain: [Satellite, Mission],    range: [LaunchVehicle] }
   builtBy:        { domain: [LaunchVehicle],          range: [Organization] }
@@ -157,3 +171,36 @@ relationship_types:
   managedBy:      { domain: [Mission],               range: [Organization] }
   partneredWith:  { domain: [Organization],          range: [Organization] }
   launchContractWith: { domain: [Mission],           range: [Organization] }
+
+  # RPO (Rendezvous / Proximity Operations) relationship types
+  closeApproachWith: { domain: [Satellite], range: [Satellite], description: "Satellite has been within proximity distance (TCA < 10 km) of another satellite; requires attributes: tca_datetime, min_distance_km" }
+  rendezvousPlannedWith: { domain: [Satellite], range: [Satellite], description: "Satellite was involved in a coordinated maneuver or rendezvous attempt with another satellite" }
+  targetedBy: { domain: [Satellite], range: [Satellite], description: "Satellite has been the apparent target of proximity operations or sustained approach by another satellite; indicates possible inspection, servicing, or threatening behavior" }
+  inConjunctionWith: { domain: [Satellite], range: [Satellite], description: "Satellite shares orbital space with another satellite at a specific time (time-stamped conjunction from ephemeris or maneuver report); requires attributes: conjunction_datetime, predicted_separation_km" }
+
+# RPO relationship attributes (stored with edges)
+rpo_attributes:
+  closeApproachWith:
+    tca_datetime:     { type: datetime, required: true,  description: "Time of closest approach (TCA) in ISO 8601 format" }
+    min_distance_km:  { type: float,    required: true,  description: "Predicted or observed minimum separation distance in kilometers" }
+    source:           { type: string,   required: false, description: "Source of conjunction data: JCO, Space-Track, TLE-derived, manual" }
+    report_title:     { type: string,   required: false, description: "JCO report file or document title that documented this approach" }
+    confidence:       { type: string,   required: false, description: "Confidence level: confirmed / predicted / detected" }
+
+  rendezvousPlannedWith:
+    event_date:       { type: datetime, required: true,  description: "Date/time of the rendezvous attempt or coordinated maneuver" }
+    maneuver_type:    { type: string,   required: false, description: "Type of coordinated activity: rendezvous, docking, formation flying, inspection" }
+    source:           { type: string,   required: false, description: "Source of information" }
+
+  targetedBy:
+    first_approach:   { type: datetime, required: true,  description: "Date/time of first observed close approach" }
+    latest_approach:  { type: datetime, required: false, description: "Date/time of most recent observed approach" }
+    approach_count:   { type: number,   required: false, description: "Total number of close-approach events" }
+    min_distance_km:  { type: float,    required: false, description: "Minimum observed separation" }
+    assessment:       { type: string,   required: false, description: "Analyst assessment of intent: monitoring / inspection / potential threat / unknown" }
+
+  inConjunctionWith:
+    conjunction_datetime: { type: datetime, required: true,  description: "Time of conjunction event in ISO 8601 format" }
+    predicted_separation_km: { type: float, required: true, description: "Predicted separation distance in kilometers at conjunction time" }
+    conjunction_type:       { type: string, required: false, description: "Type: crossing / formation / close-approach" }
+    event_source:          { type: string, required: false, description: "JCO report, Space-Track, TLE propagation" }

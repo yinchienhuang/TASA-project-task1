@@ -1,0 +1,128 @@
+NOTSO_Photometric Change and Maneuver | SJ-25 (62485) | GEO_02Jun-1645Z
+
+JDay 153 at 1644z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on SJ-25 (62485) and a pattern of life station keeping maneuver. The photometric change occurred on 02 June (JDay 153) between the solar phase angles of -117 deg to -108 deg and appeared to be 0.75 visual magnitude brighter and then returned to pattern of life photometry afterwards.  The station keeping maneuver occurred at 0907z on  02Jun.
+ 
+Time of the photometric change is consistent with SJ-25 having favorable lighting on COMS 1 (36744), although they were 1100km apart. This photometric variation is consistent with the historical pattern of life for this object for potential neighborhood threats/activity. Analysis is ongoing.
+
+The satellite is in GEO and is currently at 127.25 degs E longitude and is geo-stationary. Neighborhood is provided. Click link above to view products
+ 
+PAI suggests that SJ-25 is a Chinese satellite that supports military operations. The mission of SJ-25 is satellite fuel replenishment and life extension service technologies.
+  
+PAI suggests that COMS 1 is a Korean satellite that supports civilian operations. The mission of COMS 1 is COMS - Communication, Ocean and Meteorological Satellite.
+
+Time window of change: 02 June 0811z to 02 June 0850z
+Solar phase angle window: -117 to -108 degs
+Vismag pre change: 14.75
+Vismag post change: 13.75
+Current longitude: 127.21 E Longitude
+
+The specifics of the maneuver are: 
+--Time of Maneuver: 02 Jun 2026 09:07z
+--Delta V: 0.22 m/s
+--Period Change: -21.59 seconds
+--Perigee Change: -5.20 km
+--Apogee Change: -8.89 km
+--Current Drift Rate: 0.05 E deg/day
+ 
+Current TLE as of 02 Jun 1444Z provided by Anduril:
+1 62485U 25002A   26153.61454211 +.00000000 +00000-0 +00000-0 0  0019
+2 62485   5.0791  61.2533 0051089 173.1464   5.1316  1.00290431 00015
+
+Mission Summary:
+SJ-25 (62485) is a Chinese on-orbit satellite servicing technology demonstrator developed by the Shanghai Academy of Spaceflight Technology (SAST) and launched 6 January 2025 from Xichang on a CZ-3B/G2; SAST stated the satellite would be used for "satellite fuel replenishment and life extension service technology verification." SJ-25 was launched into a co-planar GEO orbit with Shijian-21 (49330), a space debris mitigation satellite that previously expended significant fuel towing a defunct Beidou-2 G2 navigation satellite to a graveyard orbit in January 2022, making it a likely refueling recipient. Beginning in June 2025, SJ-25 and SJ-21 conducted multiple rendezvous and proximity operations (RPO) at ~128°E, with close approaches on 13–14 June followed by an apparent docking around 2 July, after which the two became optically indistinguishable per COMSPOC and s2a systems tracking. The docked pair conducted significant plane-change maneuvers in August 2025, reducing inclination from ~10.4° to ~4.4° (353.7 m/s delta-V per COMSPOC), before separating on approximately 28–29 November 2025; as of early December, both satellites resumed RPO activity with close approaches of less than 1 km.
+
+Satellite Summaries:
+62485 | SHIJIAN-25 | GEO-GSO / Geostationary | CAST - Chinese Academy of Space Technology (China) | Active / Manoeuverable | Military | Servicing/Inspection / Servicing/Repair/Refuelling,Technology / Technology Test/Prototype | 06/01/2025 (1.40 years old) | Shijian-25 (Practice-25). To satellite fuel replenishment and life extension service technologies. | Apparently capable of carrying "1.3 tons" of fuel as payload. | Yes - On-board Propulsion | Propulsion Unknown | Source: Seradata
+
+49330 | SHI JIAN 21 | GEO-GSO / Geosynchronous | CAST - Chinese Academy of Space Technology (China) | Active / Manoeuverable | Civil/Other | Technology / Technology Test/Prototype | 24/10/2021 (4.61 years old) | 15.0 years | Technology development satellite to test space debris mitigation technologies. Withrendezvous and satellite inspection technology.This may have a military application. | Yes - On-board Propulsion | Propulsion Unknown | , (SUB SAT) | Source: Seradata
+
+Space Weather:
+Space Weather Conditions during maneuver (JDAY 153, 0900z)  
+Radio Blackout Impacts – R1 (Minor)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard (Read More)
+
+SJ-25 / PASCHED / Northstar / JDAY 154 / 11:00Z
+
+2026-06-03T11:00:23.290Z
+
+SJ-25 & COMS 1 / TRIC Plot / Northstar / JDAY 154 / 10:58Z
+
+2026-06-03T10:59:37.770Z
+
+SJ-25 / Residuals / Northstar / JDAY 154 / 10:57Z
+
+2026-06-03T10:58:32.990Z
+
+SJ-25 / Waterfall / Northstar / JDAY 154 / 10:45Z
+
+2026-06-03T10:45:57.910Z
+
+SJ-25 / Neighborhood / Northstar / JDAY 154 / 10:45Z
+
+2026-06-03T10:45:29.210Z
+
+SJ-25 / Lightcurve / Northstar / JDAY 154 / 10:44Z
+
+2026-06-03T10:44:50.090Z
+
+SJ-25 / Neighborhood / KBR / JDAY 153 / 16:07Z
+
+2026-06-02T16:07:57.980Z
+
+SJ-25 / DC Results / KBR / JDAY 153 / 16:07Z
+
+2026-06-02T16:07:10.820Z
+
+SJ-25 / Orbital Plot / KBR / JDAY 153 / 15:39Z
+
+2026-06-02T15:39:38.970Z
+
+SJ-25 / Lightcurve / KBR / JDAY 153 / 15:38Z
+
+2026-06-02T15:38:53.640Z
+
+SJ-25 / Lightcurve / Anduril / JDAY 153 / 15:30Z
+
+2026-06-02T15:30:52.130Z
+
+SJ-25 / DC Results / Anduril / JDAY 153 / 15:30Z
+
+2026-06-02T15:30:27.340Z
+
+2026-06-03T11:08:58.030Z
+
+2026-06-02T16:45:47.561Z
+
+Satellites Number Name Orbit Country 62485 SJ-25 N/A China (PRC) 36744 COMS 1 N/A South Korea (SKOR)
+
+Number Name Orbit Country 62485 SJ-25 N/A China (PRC) 36744 COMS 1 N/A South Korea (SKOR)
+
+62485 SJ-25 N/A China (PRC) 36744 COMS 1 N/A South Korea (SKOR)
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/dd5e16d1-e939-4120-adbd-d7a65d3000c4/SJ-25%20/%20PASCHED%20/%20Northstar%20/%20JDAY%20154%20/%2011%3A00Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2a612f7b-9bef-465e-b4a4-0655274447d0/SJ-25%20%26%20COMS%201%20/%20TRIC%20Plot%20/%20Northstar%20/%20JDAY%20154%20/%2010%3A58Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f4587ad7-8db1-4bc6-9c30-dc1695795e7b/SJ-25%20/%20Residuals%20/%20Northstar%20/%20JDAY%20154%20/%2010%3A57Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/1e55ca40-f666-497a-b973-f3864529a677/SJ-25%20/%20Waterfall%20/%20Northstar%20/%20JDAY%20154%20/%2010%3A45Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/5d04e571-b8b0-434a-a2f6-9b7871639c06/SJ-25%20/%20Neighborhood%20/%20Northstar%20/%20JDAY%20154%20/%2010%3A45Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/0aad8ee8-768d-467c-b0bd-3c7a5d8fa2cc/SJ-25%20/%20Lightcurve%20/%20Northstar%20/%20JDAY%20154%20/%2010%3A44Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/84dbe3bd-aa31-4a9b-ae8f-fdd93db58a5d/SJ-25%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20153%20/%2016%3A07Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/61d5a820-4b0a-4d9f-b92f-64087335d6ee/SJ-25%20/%20DC%20Results%20/%20KBR%20/%20JDAY%20153%20/%2016%3A07Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/3857050d-563b-4f56-a5fb-aa63c06eb012/SJ-25%20/%20Orbital%20Plot%20/%20KBR%20/%20JDAY%20153%20/%2015%3A39Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/c194269a-cfa8-4835-b084-3bd34a750506/SJ-25%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20153%20/%2015%3A38Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/790a753c-9e83-4308-9d36-61b27dc1408d/SJ-25%20/%20Lightcurve%20/%20Anduril%20/%20JDAY%20153%20/%2015%3A30Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e640d185-4ff4-486f-8b4d-012f482fdba4/SJ-25%20/%20DC%20Results%20/%20Anduril%20/%20JDAY%20153%20/%2015%3A30Z

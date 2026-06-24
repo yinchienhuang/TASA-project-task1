@@ -378,4 +378,13 @@ async def extract_launch_events(text: str, source_meta: dict) -> list[dict]:
         print("[notam_extractor] LLM returned no events — trying regex fallback")
         valid = _fallback_parse_notam(text)
 
+    # Normalise trajectory_zone vertices: LLM may return {lat, lon} objects instead of [lat, lon] arrays
+    for ev in valid:
+        for zone in (ev.get("trajectory_zones") or []):
+            if isinstance(zone.get("vertices"), list):
+                zone["vertices"] = [
+                    [v["lat"], v["lon"]] if isinstance(v, dict) else v
+                    for v in zone["vertices"]
+                ]
+
     return valid

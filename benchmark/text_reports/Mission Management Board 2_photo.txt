@@ -1,0 +1,108 @@
+NOTSO_Photometry Change / SY-12 02 (50322)_30Mar-0513Z
+
+JDay 089 at 0405z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on SY-12 02 (50322). This change occurred between the solar phase angles of 59 deg to 86 deg on 29Mar between 0208-0340z and appeared to be 1.7 - 2 visual magnitude dimmer. 
+ 
+The cause of the change may be associated with a close approach with SPAINSAT NG1 (62852) at 29Mar 0301z at 130km and SY-12 02 had good lighting to view SPAINSAT NG1. 
+An upcoming close approach with USA 214 (36868) is expected at 30Mar 1328z of 44km.
+
+This photometric variation is consistent with the historical pattern of life for this object and has since returned to its nominal photometrics on 30 Mar.
+ 
+The satellite is in GEO and is currently at 29.8630 degs E longitude and is drifting at 0.6737 E deg/day. Neighborhood is provided. Click link above to view products
+ 
+SY-12 02 (50322) is a China satellite that supports military operations. The mission of SY-12 02 is described by the PAIR team.
+
+SPAINSAT NG1 (62852) is a Spain satellite that supports military operations. The mission of SPAINSAT NG1 is described by the PAIR team.
+
+USA 214 (36868) is a US satellite that supports military operations.
+ 
+Time window of change: 29MAR0208z to 29MAR0340z 
+- Solar phase angle window: 59 to 86 
+- Vismag pre change: 13.00 
+- Vismag post change: 15.00
+- Close approaches within window: TCA SPAINSAT NG1 (62852) 29Mar 0301z at 130km w/good lighting 
+- Current longitude: 29.8630 E Longitude 
+- Current drift rate: 0.6737 E degs/day
+ 
+Current TLE as of 30Mar 0332z provided by NorthStar: 
+1 50322U 21129B   26089.14775143  .00000000  00000-0  00000-0 0 00007
+2 50322   3.4719  80.9852 0000262  35.7236 153.8817  1.00458918    05
+
+Current TLE as of 30Mar 0332z provided by KBR: 
+1 50322U 21129B   26089.14775143  .00000000  00000-0  00000-0 0 00007
+2 50322   3.4719  80.9852 0000262  35.7236 153.8817  1.00458918    05
+
+50322 | SHIYAN 12-02 | GEO-GSO / Geostationary | Chinese Ministry of Defence (China) | Active - Inclined (aged) / Manoeuverable | Military | Servicing/Inspection / Observational/Situational Awareness,Technology / Technology Test/Prototype | 23/12/2021 (4.27 years old) | 15.0 years | Officially the mission of the satellite is for" space environment exploration and related technology tests" however, it is suspected that it is actually a military test satellite. Possible military SSA (Space Situational Awareness) application in GEO. | Yes - On-board Propulsion | Propulsion Unknown | SHIYAN 12-01, | Source: Seradata
+
+SHIYAN 12 02 (SY-12 02) / Waterfall / Slingshot / JDAY 089 / 18:08Z
+
+2026-03-30T18:10:21.910Z
+
+SHIYAN 12 02 (SY-12 02) / Residuals / slingshot / JDAY 089 / 18:07Z
+
+2026-03-30T18:08:04.990Z
+
+SHIYAN 12 02 (SY-12 02) / Lightcurve / Slingshot / JDAY 089 / 18:06Z
+
+2026-03-30T18:07:15.960Z
+
+SHIYAN 12 02 (SY-12 02) / PASCHED / Slingshot / JDAY 089 / 18:06Z
+
+2026-03-30T18:06:38.500Z
+
+SHIYAN 12 02 (SY-12 02) / TRIC Plot / KBR / JDAY 089 / 04:42Z
+
+2026-03-30T04:42:30.910Z
+
+SHIYAN 12 02 (SY-12 02) / Neighborhood / KBR / JDAY 089 / 04:41Z
+
+2026-03-30T04:42:08.530Z
+
+SHIYAN 12 02 (SY-12 02) / Lightcurve / KBR / JDAY 089 / 04:41Z
+
+2026-03-30T04:41:56.930Z
+
+SHIYAN 12 02 (SY-12 02) / PASCHED / NorthStar / JDAY 089 / 04:04Z
+
+2026-03-30T04:04:12.600Z
+
+SHIYAN 12 02 (SY-12 02) / Neighborhood / NorthStar / JDAY 089 / 04:03Z
+
+2026-03-30T04:03:57.750Z
+
+SHIYAN 12 02 (SY-12 02) / Lightcurve / NorthStar / JDAY 089 / 04:03Z
+
+2026-03-30T04:03:39.440Z
+
+SHIYAN 12 02 (SY-12 02) / Lightcurve / NorthStar / JDAY 089 / 04:02Z
+
+2026-03-30T04:03:11.590Z
+
+2026-03-30T05:14:25.833Z
+
+Satellites Number Name Orbit Country 50322 SHIYAN 12 02 (SY-12 02) N/A China (PRC)
+
+Number Name Orbit Country 50322 SHIYAN 12 02 (SY-12 02) N/A China (PRC)
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/63ba3533-9aa0-4a76-b455-1faabd5507f8/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20Waterfall%20/%20Slingshot%20/%20JDAY%20089%20/%2018%3A08Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/538c109a-3ab1-4bb6-95e2-fc338df4f9f0/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20Residuals%20/%20slingshot%20/%20JDAY%20089%20/%2018%3A07Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a11eafea-8492-4961-8d16-22a8599338a7/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20Lightcurve%20/%20Slingshot%20/%20JDAY%20089%20/%2018%3A06Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a3b07b7d-6d0f-4480-8b23-9d37f1936987/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20PASCHED%20/%20Slingshot%20/%20JDAY%20089%20/%2018%3A06Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2f13c91f-5d9f-48d8-af32-10cd292fe2a9/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20089%20/%2004%3A42Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/b84495af-b42b-4352-ae3f-70fa7de8071e/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20089%20/%2004%3A41Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a30142c0-09c8-421f-8497-c74e92d20152/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20089%20/%2004%3A41Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/1f3d414f-6567-4429-ba69-1f05277794c1/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20089%20/%2004%3A04Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f3af52f5-c0a8-4dc1-95ad-6316d79cc218/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20089%20/%2004%3A03Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/17ec4eec-5637-47c6-9d24-44ecc3389155/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20Lightcurve%20/%20NorthStar%20/%20JDAY%20089%20/%2004%3A03Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/d42bfa30-3607-4674-9b30-cce3092840c0/SHIYAN%2012%2002%20%28SY-12%2002%29%20/%20Lightcurve%20/%20NorthStar%20/%20JDAY%20089%20/%2004%3A02Z

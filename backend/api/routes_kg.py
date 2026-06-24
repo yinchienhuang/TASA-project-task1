@@ -40,6 +40,29 @@ def _now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
+def _normalize_country(country: str) -> str:
+    """Normalize country name variants to canonical form."""
+    if not country:
+        return country
+    normalized_map = {
+        "usa": "USA",
+        "u.s.a": "USA",
+        "u.s.a.": "USA",
+        "united states": "USA",
+        "united states of america": "USA",
+        "the united states": "USA",
+        "ussr": "Russia",
+        "soviet union": "Russia",
+        "u.k.": "United Kingdom",
+        "united kingdom": "United Kingdom",
+        "p.r. china": "China",
+        "peoples republic of china": "China",
+        "prc": "China",
+    }
+    key = country.strip().lower()
+    return normalized_map.get(key, country.strip())
+
+
 def _load_pending() -> dict:
     global _pending_cache
     if _pending_cache is not None:
@@ -167,27 +190,34 @@ async def _enrich_maneuver_event(ev: dict, kg_store_ref) -> None:
     tle_post = get_closest_before(sat_id, event_dt + timedelta(hours=25)) if sat_id else None
 
     ev["tle_available"] = False
-    if tle_pre and tle_post and tle_pre.get("line2") != tle_post.get("line2"):
-        try:
-            pre_period = 1440.0 / float(tle_pre["line2"][52:63])
-            post_period = 1440.0 / float(tle_post["line2"][52:63])
-            ev["tle_pre_period"] = round(pre_period, 4)
-            ev["tle_post_period"] = round(post_period, 4)
-            ev["tle_period_change"] = round(post_period - pre_period, 4)
-            ev["tle_incl_change"] = round(
-                float(tle_post["line2"][8:16]) - float(tle_pre["line2"][8:16]), 4
-            )
-            ev["tle_delta_v_est"] = _estimate_dv_from_period_change(pre_period, post_period)
-            ev["tle_available"] = True
+    if tle_pre and tle_post:
+        # Only process if TLE actually changed (i.e., post-maneuver TLE is available and different)
+        if tle_pre.get("line2") != tle_post.get("line2"):
+            try:
+                pre_period = 1440.0 / float(tle_pre["line2"][52:63])
+                post_period = 1440.0 / float(tle_post["line2"][52:63])
+                ev["tle_pre_period"] = round(pre_period, 4)
+                ev["tle_post_period"] = round(post_period, 4)
+                ev["tle_period_change"] = round(post_period - pre_period, 4)
+                ev["tle_incl_change"] = round(
+                    float(tle_post["line2"][8:16]) - float(tle_pre["line2"][8:16]), 4
+                )
+                ev["tle_delta_v_est"] = _estimate_dv_from_period_change(pre_period, post_period)
+                ev["tle_available"] = True
 
-            jco_dv = ev.get("jco_delta_v") or ev.get("delta_v") or 0
-            tle_dv = ev["tle_delta_v_est"]
-            if float(jco_dv) > 0 and tle_dv > 0:
-                pct = abs(float(jco_dv) - tle_dv) / max(float(jco_dv), tle_dv)
-                ev["discrepancy_pct"] = round(pct, 3)
-                ev["discrepancy_flag"] = pct > 0.25
-        except (ValueError, IndexError):
-            pass
+                # Only calculate discrepancy if both JCO and TLE values are meaningful
+                jco_dv = ev.get("jco_delta_v") or ev.get("delta_v") or 0
+                tle_dv = ev["tle_delta_v_est"]
+                if float(jco_dv) > 0 and tle_dv > 0:
+                    pct = abs(float(jco_dv) - tle_dv) / max(float(jco_dv), tle_dv)
+                    ev["discrepancy_pct"] = round(pct, 3)
+                    ev["discrepancy_flag"] = pct > 0.25
+            except (ValueError, IndexError):
+                pass
+        else:
+            # TLE pre and post exist but are identical (no post-maneuver TLE update yet)
+            # Don't show discrepancy flag — no basis for comparison
+            ev["tle_available"] = False
 
     ev["maneuver_type"] = _classify_maneuver_type(ev)
 
@@ -437,6 +467,58 @@ async def _run_ingest(
         if subject_id == source_id or object_id == source_id:
             continue
 
+        # Validate edge direction against schema domain/range constraints.
+        # Nodes proposed in the same extraction run may not be in kg_store yet — look them
+        # up from pending proposals first so newly-proposed satellites don't get their edges dropped.
+        schema_warning: str | None = None
+        rel_meta = schema_manager.get_relationship_types().get(rp.predicate)
+        if rel_meta:
+            def _node_types(node_id: str) -> set[str]:
+                """Return type set for a node, checking kg_store then pending proposals."""
+                node = kg_store.nodes.get(node_id)
+                if node:
+                    return set([node.get("type", "")] + (node.get("inferred_types") or [])) - {""}
+                # Fall back: scan pending proposals created in this run
+                for item in pending_data.get("pending", []):
+                    if item.get("type") == "node_add":
+                        p = item.get("proposed") or {}
+                        if p.get("id") == node_id:
+                            t = p.get("type", "")
+                            return set([t] + (p.get("inferred_types") or [])) - {""}
+                return set()  # unknown
+
+            s_types = _node_types(subject_id)
+            o_types = _node_types(object_id)
+            domain = set(rel_meta.get("domain", []))
+            range_ = set(rel_meta.get("range", []))
+
+            s_known = bool(s_types)
+            o_known = bool(o_types)
+
+            if s_known and o_known:
+                # Both types known — full validation
+                forward_ok = bool(s_types & domain) and bool(o_types & range_)
+                reverse_ok = bool(o_types & domain) and bool(s_types & range_)
+                if not forward_ok and reverse_ok:
+                    subject_id, object_id = object_id, subject_id
+                    print(f"[routes_kg] auto-flipped {rp.predicate}: '{rp.subject_label}' ↔ '{rp.object_label}'")
+                elif not forward_ok and not reverse_ok:
+                    print(f"[routes_kg] skipped invalid edge: '{rp.subject_label}' --[{rp.predicate}]→ '{rp.object_label}' (types {s_types} / {o_types} don't match domain={domain} range={range_})")
+                    continue
+            elif s_known and not o_known:
+                # Only subject type known
+                if s_types & range_ and not (s_types & domain):
+                    subject_id, object_id = object_id, subject_id  # subject looks like range → flip
+                elif not (s_types & domain) and not (s_types & range_):
+                    schema_warning = f"Subject '{rp.subject_label}' (type {s_types}) not in domain {domain} or range {range_} for '{rp.predicate}'"
+            elif o_known and not s_known:
+                # Only object type known
+                if o_types & domain and not (o_types & range_):
+                    subject_id, object_id = object_id, subject_id  # object looks like domain → flip
+                elif not (o_types & domain) and not (o_types & range_):
+                    schema_warning = f"Object '{rp.object_label}' (type {o_types}) not in domain {domain} or range {range_} for '{rp.predicate}'"
+            # If neither type is known, allow through for human review
+
         new_edge = {
             "source": subject_id,
             "label": rp.predicate,
@@ -455,6 +537,8 @@ async def _run_ingest(
                 "evidence": {"excerpt": rp.excerpt, "source": source},
                 "created_at": _now(),
             }
+            if schema_warning:
+                pending_item["llm_assessment"] = f"⚠ Schema warning: {schema_warning}"
             proposals.append(pending_item)
             if mode == "auto":
                 kg_store.upsert_edge(new_edge)
@@ -866,7 +950,13 @@ def approve_pending(item_id: str):
     elif item_type == "attribute_update":
         node = kg_store.nodes.get(item["entity_id"])
         if node:
-            node.setdefault("attributes", {})[item["field"]] = {"value": item["new_value"], "event_date": event_date, "source_id": source_id}
+            if item["field"] == "type":
+                # Special case: update node type and recompute inferred_types
+                new_type = item["new_value"]
+                node["type"] = new_type
+                node["inferred_types"] = schema_manager.get_ancestors(new_type)
+            else:
+                node.setdefault("attributes", {})[item["field"]] = {"value": item["new_value"], "event_date": event_date, "source_id": source_id}
             node["updated_at"] = datetime.now(timezone.utc).isoformat()
         evolution_tracker.log({"event_date": event_date, "change_type": "attribute_changed",
             "entity_id": item["entity_id"], "field": item["field"],
@@ -1694,3 +1784,428 @@ def find_norad_candidates(node_id: str):
 
     candidates.sort(key=lambda x: x["score"], reverse=True)
     return candidates[:3]
+
+
+# ── Satellite tag enrichment ──────────────────────────────────────────────────
+
+_UCS_PATH = pathlib.Path(__file__).parents[2] / "data" / "reference" / "UCS-Satellite-Database 5-1-2023.csv"
+
+# Known military-adjacent Chinese/Russian org keywords
+_MILITARY_ORG_KEYWORDS = [
+    "casc", "cast", "plasat", "pla", "space and missile",
+    "roscosmos", "khrunichev", "iss reshetnev",
+    "ministry of defence", "department of defense",
+]
+
+
+def _load_ucs_data() -> dict[str, dict]:
+    """Load UCS satellite database, keyed by NORAD number."""
+    import csv as _csv
+    data: dict[str, dict] = {}
+    if not _UCS_PATH.exists():
+        return data
+    with open(_UCS_PATH, encoding="utf-8-sig", errors="replace") as f:
+        for row in _csv.DictReader(f):
+            norad = row.get("NORAD Number", "").strip()
+            if norad:
+                data[norad] = row
+    return data
+
+
+def _infer_satellite_tags(
+    node_id: str,
+    node: dict,
+    ucs: dict | None,
+    edges_by_source: dict[str, list],
+) -> tuple[str | None, str | None]:
+    """Return (new_type, new_country) inferred from UCS + KG graph, or None if not determinable."""
+    attrs = node.get("attributes") or {}
+    existing_country = (attrs.get("country") or {}).get("value") if isinstance(attrs.get("country"), dict) else attrs.get("country")
+
+    # ── Country ──
+    new_country: str | None = None
+    if not existing_country:
+        if ucs:
+            raw_country = (ucs.get("Country of Operator/Owner") or "").strip() or None
+            new_country = _normalize_country(raw_country) if raw_country else None
+        if not new_country:
+            for edge in edges_by_source.get(node_id, []):
+                if edge.get("label") == "operatedBy":
+                    org = kg_store.nodes.get(edge.get("target", ""))
+                    if org:
+                        org_attrs = org.get("attributes") or {}
+                        for field in ("country_of_origin", "country", "operator_country"):
+                            val = org_attrs.get(field)
+                            if isinstance(val, dict):
+                                val = val.get("value")
+                            if val:
+                                raw_val = str(val).strip()
+                                new_country = _normalize_country(raw_val)
+                                break
+                if new_country:
+                    break
+
+    # ── Type ──
+    new_type: str | None = None
+    users = (ucs.get("Users") or "").strip() if ucs else ""
+    purpose = (ucs.get("Purpose") or "").strip() if ucs else ""
+    country = new_country or existing_country or ""
+
+    if users == "Military":
+        new_type = "MilitarySatellite"
+    elif users == "Commercial":
+        new_type = "CommercialSatellite"
+    elif users == "Government":
+        # Check operator for military affiliation
+        is_military = False
+        for edge in edges_by_source.get(node_id, []):
+            if edge.get("label") == "operatedBy":
+                org = kg_store.nodes.get(edge.get("target", ""))
+                if org:
+                    if org.get("type") == "MilitaryUnit":
+                        is_military = True
+                        break
+                    org_lbl = org.get("label", "").lower()
+                    if any(kw in org_lbl for kw in _MILITARY_ORG_KEYWORDS):
+                        is_military = True
+                        break
+        # China/Russia government satellites with tech-dev purpose → military by convention
+        if not is_military and country in ("China", "Russia") and (
+            "Technology Development" in purpose or "Space Science" in purpose
+        ):
+            is_military = True
+        new_type = "MilitarySatellite" if is_military else "CivilSatellite"
+
+    return new_type, new_country
+
+
+@router.post("/enrich/satellite-tags")
+def enrich_satellite_tags():
+    """Propose type and country updates for base-Satellite nodes using UCS DB + KG graph."""
+    ucs_data = _load_ucs_data()
+
+    # Build edge index: source_node_id → list of edges
+    edges_by_source: dict[str, list] = {}
+    for edge in kg_store.edges.values():
+        edges_by_source.setdefault(edge.get("source", ""), []).append(edge)
+
+    pending_data = _load_pending()
+    # Track which (entity_id, field) pairs already have pending proposals to avoid dupes
+    already_pending: set[tuple[str, str]] = {
+        (p["entity_id"], p["field"])
+        for p in pending_data["pending"]
+        if p.get("type") == "attribute_update" and p.get("status") == "pending"
+    }
+
+    new_proposals: list[dict] = []
+    now_str = _now()
+
+    for node_id, node in kg_store.nodes.items():
+        if node.get("type") != "Satellite":
+            continue
+
+        attrs = node.get("attributes") or {}
+        norad = str((attrs.get("norad_id") or {}).get("value", "") or "").strip()
+        ucs = ucs_data.get(norad) if norad else None
+
+        new_type, new_country = _infer_satellite_tags(node_id, node, ucs, edges_by_source)
+
+        source_desc = f"UCS Satellite Database (NORAD {norad})" if ucs else "KG operator relationships"
+        users = (ucs.get("Users") or "") if ucs else ""
+        purpose = (ucs.get("Purpose") or "") if ucs else ""
+
+        if new_country and (node_id, "country") not in already_pending:
+            existing = (attrs.get("country") or {}).get("value") if isinstance(attrs.get("country"), dict) else attrs.get("country")
+            new_proposals.append({
+                "id": f"enrich_{uuid.uuid4().hex[:8]}",
+                "type": "attribute_update",
+                "status": "pending",
+                "entity_id": node_id,
+                "field": "country",
+                "old_value": existing,
+                "new_value": new_country,
+                "evidence": {
+                    "excerpt": f"Country of Operator/Owner: {new_country}",
+                    "source": {"source_id": "ucs_enrichment", "title": source_desc},
+                },
+                "llm_assessment": f"Source: {source_desc}",
+                "created_at": now_str,
+            })
+
+        if new_type and (node_id, "type") not in already_pending:
+            new_proposals.append({
+                "id": f"enrich_{uuid.uuid4().hex[:8]}",
+                "type": "attribute_update",
+                "status": "pending",
+                "entity_id": node_id,
+                "field": "type",
+                "old_value": "Satellite",
+                "new_value": new_type,
+                "evidence": {
+                    "excerpt": f"Users: {users} · Purpose: {purpose}",
+                    "source": {"source_id": "ucs_enrichment", "title": source_desc},
+                },
+                "llm_assessment": f"Inferred: Users={users or 'n/a'}, Purpose={purpose or 'n/a'}, Country={new_country or 'n/a'}",
+                "created_at": now_str,
+            })
+
+    if new_proposals:
+        pending_data["pending"].extend(new_proposals)
+        _save_pending(pending_data)
+
+    return {
+        "proposed": len(new_proposals),
+        "satellites_checked": sum(1 for n in kg_store.nodes.values() if n.get("type") == "Satellite"),
+    }
+
+
+# ── Satellite relation enrichment (launchedFrom / operatedBy / manufacturedBy) ──
+
+# Canonical launch site names — substring match on UCS "Launch Site" value
+_LAUNCH_SITE_CANONICAL: dict[str, str] = {
+    "jiuquan": "Jiuquan Satellite Launch Center",
+    "xichang": "Xichang Satellite Launch Center",
+    "taiyuan": "Taiyuan Satellite Launch Center",
+    "wenchang": "Wenchang Space Launch Site",
+    "cape canaveral": "Cape Canaveral Space Launch Complex",
+    "kennedy": "Kennedy Space Center",
+    "vandenberg": "Vandenberg Space Force Base",
+    "baikonur": "Baikonur Cosmodrome",
+    "satish dhawan": "Satish Dhawan Space Centre",
+    "sriharikota": "Satish Dhawan Space Centre",
+    "kourou": "Guiana Space Centre",
+    "plesetsk": "Plesetsk Cosmodrome",
+    "vostochny": "Vostochny Cosmodrome",
+}
+
+def _canonical_launch_site(raw: str) -> str:
+    low = raw.lower()
+    for key, canonical in _LAUNCH_SITE_CANONICAL.items():
+        if key in low:
+            return canonical
+    return raw.strip()
+
+
+def _find_existing_node(label: str, node_type_hint: str) -> str | None:
+    """Find an existing KG node matching label (case-insensitive exact or close match)."""
+    label_low = label.lower().strip()
+    for nid, node in kg_store.nodes.items():
+        all_types = [node.get("type", "")] + (node.get("inferred_types") or [])
+        if not any(node_type_hint in t or t in node_type_hint for t in all_types if t):
+            continue
+        if node.get("label", "").lower().strip() == label_low:
+            return nid
+        # Also check aliases attribute
+        aliases_attr = (node.get("attributes") or {}).get("aliases")
+        if isinstance(aliases_attr, dict):
+            aliases = aliases_attr.get("value") or []
+        elif isinstance(aliases_attr, list):
+            aliases = aliases_attr
+        else:
+            aliases = []
+        if any(str(a).lower().strip() == label_low for a in aliases):
+            return nid
+    return None
+
+
+def _make_node_proposal(label: str, node_type: str, extra_attrs: dict, source_desc: str, now_str: str) -> tuple[str, dict]:
+    """Return (node_id, pending_item) for a new node proposal."""
+    import re as _re
+    node_id = _re.sub(r"[^\w]", "_", label.lower())[:40].strip("_")
+    inferred = schema_manager.get_ancestors(node_type)
+    node = {
+        "id": node_id,
+        "label": label,
+        "type": node_type,
+        "inferred_types": inferred,
+        "attributes": {k: {"value": v, "event_date": None, "source_id": "ucs_enrichment"} for k, v in extra_attrs.items() if v},
+        "sources": [],
+    }
+    item = {
+        "id": f"enrich_{uuid.uuid4().hex[:8]}",
+        "type": "node_add",
+        "status": "pending",
+        "proposed": node,
+        "evidence": {"excerpt": f"Auto-enriched from UCS database", "source": {"source_id": "ucs_enrichment", "title": source_desc}},
+        "llm_assessment": f"Source: {source_desc}",
+        "created_at": now_str,
+    }
+    return node_id, item
+
+
+@router.post("/enrich/satellite-relations")
+def enrich_satellite_relations():
+    """Propose missing launchedFrom, operatedBy, manufacturedBy edges using UCS database."""
+    ucs_data = _load_ucs_data()
+
+    # Existing edges grouped by (source, label) → set of targets
+    existing_rels: dict[tuple[str, str], set[str]] = {}
+    for edge in kg_store.edges.values():
+        key = (edge.get("source", ""), edge.get("label", ""))
+        existing_rels.setdefault(key, set()).add(edge.get("target", ""))
+
+    pending_data = _load_pending()
+    # Track already-pending edge proposals and node proposals to avoid dupes
+    pending_node_labels: set[str] = set()
+    pending_edge_keys: set[tuple[str, str, str]] = set()
+    for p in pending_data["pending"]:
+        if p.get("status") != "pending":
+            continue
+        if p.get("type") == "node_add":
+            pending_node_labels.add((p.get("proposed") or {}).get("label", "").lower())
+        elif p.get("type") == "edge_add":
+            pr = p.get("proposed") or {}
+            pending_edge_keys.add((pr.get("source", ""), pr.get("label", ""), pr.get("target", "")))
+
+    new_proposals: list[dict] = []
+    now_str = _now()
+    # Track nodes we're proposing in this run so we don't duplicate within one call
+    proposing_nodes: dict[str, str] = {}  # label.lower() → node_id
+
+    def _get_or_propose_node(label: str, node_type: str, extra_attrs: dict, source_desc: str) -> str | None:
+        if not label.strip():
+            return None
+        label_low = label.lower().strip()
+        # 1. Already in KG
+        existing = _find_existing_node(label, node_type)
+        if existing:
+            return existing
+        # 2. Already proposing in this run
+        if label_low in proposing_nodes:
+            return proposing_nodes[label_low]
+        # 3. Already pending
+        if label_low in pending_node_labels:
+            # Find its proposed id from pending
+            for p in pending_data["pending"]:
+                if p.get("type") == "node_add" and (p.get("proposed") or {}).get("label", "").lower() == label_low:
+                    return (p.get("proposed") or {}).get("id", "")
+            return None
+        # 4. Propose new node
+        node_id, item = _make_node_proposal(label, node_type, extra_attrs, source_desc, now_str)
+        new_proposals.append(item)
+        proposing_nodes[label_low] = node_id
+        return node_id
+
+    for node_id, node in kg_store.nodes.items():
+        all_types = [node.get("type", "")] + (node.get("inferred_types") or [])
+        if not any(t == "Satellite" or (isinstance(t, str) and t.endswith("Satellite")) for t in all_types):
+            continue
+
+        attrs = node.get("attributes") or {}
+        norad = str((attrs.get("norad_id") or {}).get("value", "") or "").strip()
+        ucs = ucs_data.get(norad) if norad else None
+        if not ucs:
+            continue
+
+        source_desc = f"UCS Satellite Database (NORAD {norad})"
+
+        def _propose_edge(predicate: str, target_id: str) -> None:
+            key = (node_id, predicate, target_id)
+            already = target_id in existing_rels.get((node_id, predicate), set())
+            if already or key in pending_edge_keys:
+                return
+            new_proposals.append({
+                "id": f"enrich_{uuid.uuid4().hex[:8]}",
+                "type": "edge_add",
+                "status": "pending",
+                "proposed": {"source": node_id, "label": predicate, "target": target_id, "sources": []},
+                "evidence": {"excerpt": ucs.get("Name of Satellite, Alternate Names", "")[:80], "source": {"source_id": "ucs_enrichment", "title": source_desc}},
+                "llm_assessment": f"Source: {source_desc}",
+                "created_at": now_str,
+            })
+            pending_edge_keys.add(key)
+
+        # ── launchedFrom ──
+        if not existing_rels.get((node_id, "launchedFrom")):
+            raw_site = (ucs.get("Launch Site") or "").strip()
+            if raw_site:
+                canonical_site = _canonical_launch_site(raw_site)
+                site_id = _get_or_propose_node(canonical_site, "LaunchSite", {}, source_desc)
+                if site_id:
+                    _propose_edge("launchedFrom", site_id)
+
+        # ── operatedBy ──
+        if not existing_rels.get((node_id, "operatedBy")):
+            raw_op = (ucs.get("Operator/Owner") or "").strip()
+            country_op = (ucs.get("Country of Operator/Owner") or "").strip()
+            users = (ucs.get("Users") or "").strip()
+            if raw_op:
+                org_type = "MilitaryUnit" if users == "Military" else (
+                    "SpaceAgency" if any(k in raw_op.lower() for k in ("space agency", "national space", "nasa", "cnsa", "isro", "jaxa", "esa")) else "Company"
+                )
+                op_id = _get_or_propose_node(raw_op, org_type, {"country": country_op}, source_desc)
+                if op_id:
+                    _propose_edge("operatedBy", op_id)
+
+        # ── manufacturedBy ──
+        if not existing_rels.get((node_id, "manufacturedBy")):
+            raw_mfg = (ucs.get("Contractor") or "").strip()
+            country_mfg = (ucs.get("Country of Contractor") or "").strip()
+            # Skip if same as operator (already handled above) unless different name
+            if raw_mfg:
+                mfg_id = _get_or_propose_node(raw_mfg, "Company", {"country": country_mfg}, source_desc)
+                if mfg_id:
+                    _propose_edge("manufacturedBy", mfg_id)
+
+        # ── operatingCountry ──
+        if not existing_rels.get((node_id, "operatingCountry")):
+            raw_country = (ucs.get("Country of Operator/Owner") or "").strip()
+            if raw_country:
+                canonical = _normalize_country(raw_country)
+                if canonical:
+                    country_id = _get_or_propose_node(canonical, "Country", {"name": canonical}, source_desc)
+                    if country_id:
+                        _propose_edge("operatingCountry", country_id)
+
+    if new_proposals:
+        pending_data["pending"].extend(new_proposals)
+        _save_pending(pending_data)
+
+    edge_count = sum(1 for p in new_proposals if p["type"] == "edge_add")
+    node_count = sum(1 for p in new_proposals if p["type"] == "node_add")
+    return {"proposed": len(new_proposals), "edges": edge_count, "nodes": node_count}
+
+
+# ── Normalize existing country names ──
+
+@router.post("/normalize/country-names")
+def normalize_country_names():
+    """Normalize all country name variants in the KG to canonical form.
+    Updates country, operator_country, country_of_operator attributes in-place."""
+    updated_count = 0
+
+    for node in kg_store.nodes.values():
+        attrs = node.get("attributes") or {}
+        changed = False
+
+        for field in ("country", "operator_country", "country_of_operator"):
+            if field not in attrs:
+                continue
+
+            attr_val = attrs[field]
+            if isinstance(attr_val, dict):
+                current = attr_val.get("value")
+            else:
+                current = attr_val
+
+            if current:
+                normalized = _normalize_country(str(current))
+                if normalized != str(current):
+                    # Update the attribute
+                    if isinstance(attr_val, dict):
+                        attrs[field]["value"] = normalized
+                    else:
+                        attrs[field] = normalized
+                    changed = True
+
+        if changed:
+            updated_count += 1
+            node["attributes"] = attrs
+
+    # Save to KG
+    kg_store.save()
+
+    return {
+        "message": f"Normalized country names in {updated_count} nodes",
+        "count": updated_count,
+    }

@@ -1,0 +1,73 @@
+NOTSO_Photometric Change / SJ-29A (67302)_18Jun-0448Z
+
+JDay169 at 0440z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected a photometric change on SJ-29A (67302). This change occurred on 18 June (JDay 169) between 0000z to 0227z between the solar phase angles of 79.8 deg to 115.5 deg and appeared to be 3 visual magnitudes brighter.
+
+This change was observed by sensor EXO1617, which is typically the only sensor to observe this SEPA range and has previously recorded nominal photometric signatures for SJ-29A.
+
+The photometric change may have coincided with a maximum separation with USA 324 (51280) at approximately 2,000 km, while SJ-29B (67402) maintained a distance of 30km with excellent visibility of SJ-29A (<30 deg CATS). 
+This photometric variation is inconsistent with the historical pattern of this object's life. Analysis is ongoing
+
+SJ-29A continues to maintain recurring 15 km closest approaches with USA 324 every 12 hours at approximately 0800z and 2000z, with USA 324 maintaining excellent visibility of SJ-29A.
+SJ-29A also maintains a distance of less than 40 km from SJ-29B, with SJ-29B holding a +30 km position in the positive in-track direction.
+
+The satellite is in GEO and is currently at 73.18 deg East longitude, drifting at -0.005 deg/day. The neighbourhood is provided. Click the link above to view products.
+
+PAI suggests that SJ-29A is a Chinese manoeuvrable satellite that supports military operations. The mission of SJ-29A is described as a demonstration of new technologies for on-orbit target detection.
+ 
+Time window of change: 18 June  0000z to  0227z
+Solar phase angle window: 79.8 to 115.8 degs.
+Vismag pre change: 13.00
+Vismag post change: 10.00
+Close approaches within the window: 30km with excellent visibility of SJ-29A
+Current longitude: 73.18 E Longitude
+Current drift rate: -0.005  degs/day
+
+Current TLE as of 18/0305z provided by KBR:
+1 67302U 25315A   26169.12854955 -.00000170 +00000-0 -14181-5 0  0000
+2 67302   3.4016  95.0829 0003090  25.5939 265.1529  1.00269818000007
+
+18 Jun JDAY 169, 0340UTC
+
+Mission Summary:
+SJ-29A is a Chinese space target detection technology demonstration satellite manufactured by the Shanghai Academy of Spaceflight Technology (SAST/CASC), launched 31 December 2025 from Wenchang aboard a Chang Zheng 7A into geostationary transfer orbit. Estimated at approximately 3,500 kg, SJ-29A was co-launched with SJ-29B (67403) (manufacturer: CAS Microsat) as a dual-satellite configuration assessed for coordinated space object surveillance, potentially carrying optical, infrared, or radar sensor payloads.
+Source: JB
+
+67302 | SHIJIAN-29 A | GEO-GSO / Geostationary | Chinese Ministry of Defence (China) | Active / Manoeuverable | Military | Servicing/Inspection / Observational/Situational Awareness | 30/12/2025 (0.47 years old) | 12.0 years | SHIJIAN-29 A. Classified Chinese military satellite thought to be for space situational awareness (SSA). | Both SHIJIAN-29 A and SHIJIAN-29 B are described as 'demonstration of new technologies for spatial targets detection'. | Yes - On-board Propulsion | Propulsion Unknown | ,SHIJIAN-29 B | Source: Seradata
+
+Space Weather Conditions during photometric change (0000Z, Jun 18, JDAY 169)  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard (Read More)
+
+SJ-29A / 3D Visualization / NorthStar / JDAY 169 / 03:58Z
+
+SJ-29A / 3D Visualization / KBR / JDAY 169 / 03:46Z
+
+SJ-29A / Neighborhood / KBR / JDAY 169 / 03:43Z
+
+SJ-29A / TRIC Plot / KBR / JDAY 169 / 03:42Z
+
+SJ-29A vs SJ-29B vs USA 324
+
+SJ-29A / Lightcurve / KBR / JDAY 169 / 03:42Z
+
+SJ-29A / PASCHED / KBR / JDAY 169 / 03:41Z
+
+SJ-29A / Residuals / KBR / JDAY 169 / 03:41Z
+
+SJ-29A / PASCHED / NorthStar / JDAY 169 / 03:41Z
+
+SJ-29A / CATS angle / NorthStar / JDAY 169 / 03:40Z
+
+SJ-29A / TRIC Plot / NorthStar / JDAY 169 / 03:39Z
+
+SJ-29A / CATS angle / NorthStar / JDAY 169 / 03:38Z
+
+SJ-29A / Neighborhood / NorthStar / JDAY 169 / 03:35Z
+
+SJ-29A / Residuals / NorthStar / JDAY 169 / 03:35Z
+
+SJ-29A / Lightcurve / NorthStar / JDAY 169 / 03:32Z

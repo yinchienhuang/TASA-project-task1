@@ -33,8 +33,10 @@ function zoneCentroid(zone: TrajectoryZone): { lat: number; lon: number } | null
     return { lat: zone.center_lat, lon: zone.center_lon };
   }
   if (zone.shape === 'polygon' && zone.vertices && zone.vertices.length > 0) {
-    const lats = zone.vertices.map(([lat]) => lat);
-    const lons = zone.vertices.map(([, lon]) => lon);
+    const normV = (v: unknown): [number, number] =>
+      Array.isArray(v) ? v as [number, number] : [(v as {lat:number}).lat, (v as {lon:number}).lon];
+    const lats = zone.vertices.map((v) => normV(v)[0]);
+    const lons = zone.vertices.map((v) => normV(v)[1]);
     return {
       lat: lats.reduce((a, b) => a + b, 0) / lats.length,
       lon: lons.reduce((a, b) => a + b, 0) / lons.length,

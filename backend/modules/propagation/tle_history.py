@@ -7,7 +7,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-TLE_HISTORY_DIR = Path("data/tle_history")
+# Use absolute path (same as tle_store.py) to be work-directory agnostic
+TLE_HISTORY_DIR = Path(__file__).parents[3] / "data" / "tle_history"
 
 
 def _path(norad_id: str) -> Path:

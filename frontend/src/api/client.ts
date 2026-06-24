@@ -555,6 +555,13 @@ export interface QueryResult {
   steps: Array<{ tool: string; args: Record<string, unknown>; result: unknown }>;
   iterations: number;
   warning?: string;
+  identified_satellites?: Array<{
+    name: string;
+    id: string;
+    confidence: number;
+    type?: 'primary' | 'related';  // primary = user asked about, related = close approach etc
+    relation?: string;  // e.g., "closeApproachWith"
+  }>;
 }
 
 export async function getFleetEvents(params: {

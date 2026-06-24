@@ -1,0 +1,58 @@
+NOTSO_Photometric Change / SY 12-01 (50321)_11Jun-1702Z
+
+JDay 162 at 1442z:
+
+Based on current SDA observations and available PAIR data, JCO providers have detected a full photometric signature change on SY 12-01(50321).
+
+The change could be related to known objects in the vicinity. The satellite is in GEO and is currently at 64.79 degs E longitude and is drifting at 0.83 W deg/day. Neighborhood is provided. Click link above to view products.
+
+PAI suggests that SY 12-01 (50321) is a Chinese satellite that supports military operations. The mission of SY 12-01 is inspection and SDA as a space environment exploration and related technology tests.
+
+Current TLE as of 11JUN 0042z provided by KBR:
+1 50321U 21129A   26162.02980730 -.00000192 +00000-0 -16174-5 0  0003
+2 50321   3.6570  79.9984 0003268 284.6322 330.7378  1.00038106000006
+
+Current TLE as of 11JUN 0042z provided by Anduril:
+1 50321U 21129A   26162.02980731 +.00000000 +00000-0 +00000-0 0  0017
+2 50321   3.6571  79.9979 0003267 286.0060 329.3647  1.00038209 00013
+
+Current TLE as of 11JUN 0042z provided by Safran:
+1 50321U 21129A   26162.60071180  .00000000  00000-0  00000-0 0  9996
+2 50321   3.6587  79.9884 0003269 284.1406 176.8476  1.00037899  6666
+
+11 June 26 JDAY 162, 1545UTC
+
+Satellite Summary 
+
+**50321 | SHIYAN 12-01** (Shiyan-12 No. 01 / SY-12-01) | GEO-GSO / Geostationary (drifted to a slightly inclined, "aged" GEO) | Chinese Ministry of National Defence — suspected PLA Strategic Support Force / Aerospace Force; bus and payload widely attributed to a CAST/SAST-affiliated builder (manufacturer not officially disclosed) | Active – Inclined (aged) / Manoeuvrable (demonstrated active station-changing and rendezvous & proximity operations) | Military | Servicing/Inspection / Observational / Space Situational Awareness / Technology Test/Prototype | 23/12/2021, launched on a Long March 7A (CZ-7A) from Wenchang — the third CZ-7A flight; ~4.47 years old as of Jun 2026 | 15.0 years | Co-launched with Shiyan-12-02 as a paired experimental GEO platform. Officially described by China as conducting "space environment exploration and related technology tests," but its behaviour is consistent with a military RPO/inspector demonstrator: the pair carried out close-proximity operations with each other in GEO during 2022, repeatedly closing to short separations and exchanging relative positions — classic inspector/target choreography. Open-source trackers (e.g. ExoAnalytic/COMSPOC) reported a US GSSAP-class inspector (USA 270) maneuvering to observe the pair, after which one Shiyan-12 reportedly repositioned to keep the Sun behind it, complicating optical observation. Suite is assessed to include optical/SSA sensors and possibly robotic or close-approach aids. | Notes: Sibling/companion object is SHIYAN 12-02 (NORAD 50322). RPO and "sun-hiding" behaviour are from open-source SSA reporting, not Chinese disclosure; capability attribution is inferential. Now drifting in an inclined/aged GEO regime. | Yes – On-board Propulsion | Propulsion type unknown (chemical and/or electric not officially confirmed; the maneuver cadence is consistent with onboard chemical thrusters at minimum) | Sources: Seradata (as provided); supplementary context from open-source GEO RPO tracking reporting (2022). SHIYAN 12-02
+Reviewed DCJ
+
+Space Weather Conditions during activity (all day 10 Jun, JDAY 161)  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard (Read More)
+
+SHIYAN 12 01 (SY-12 01) / PASCHED / KBR / JDAY 162 / 16:56Z
+
+SHIYAN 12 01 (SY-12 01) / TRIC Plot / KBR / JDAY 162 / 16:28Z
+
+SHIYAN 12 01 (SY-12 01) / 3D Visualization / KBR / JDAY 162 / 16:28Z
+
+SHIYAN 12 01 (SY-12 01) / COCO / KBR / JDAY 162 / 16:27Z
+
+SHIYAN 12 01 (SY-12 01) / Neighborhood / KBR / JDAY 162 / 16:25Z
+
+SHIYAN 12 01 (SY-12 01) / Waterfall / KBR / JDAY 162 / 16:24Z
+
+SHIYAN 12 01 (SY-12 01) / DC Results / KBR / JDAY 162 / 16:24Z
+
+SHIYAN 12 01 (SY-12 01) / Waterfall / Anduril / JDAY 162 / 16:23Z
+
+SHIYAN 12 01 (SY-12 01) / DC Results / KBR / JDAY 162 / 16:22Z
+
+SHIYAN 12 01 (SY-12 01) / Lightcurve / KBR / JDAY 162 / 16:22Z
+
+Satellites Number Name Orbit Country 50321 SHIYAN 12 01 (SY-12 01) GEO China (PRC)
+
+Number Name Orbit Country 50321 SHIYAN 12 01 (SY-12 01) GEO China (PRC)

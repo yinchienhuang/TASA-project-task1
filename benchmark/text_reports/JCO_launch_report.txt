@@ -1,0 +1,239 @@
+NOTSO_Launch / LM-2D (94328) / Xingwang Jishu Shiyan 09A-C (94327) / Xichang, China / 24 Apr 26 / ~0635 UTC / LEO_24Apr-0933Z
+
+JDay 114 at 0919z:
+ 
+Based on available PAIR data, JCO providers have indications of successful launch of a LM-D2 (94328) from Xichang Satellite Launch Center, China occurring at 0635z on 24Apr26 (JDay 114) , carrying the Xingwang Jishu Shiyan 09A-C  (94327). Based on current information the satellite is likely to be LEO with orbital characteristics of 51.68deg Inc and 259.30deg RAAN. Click link above to view products.
+ 
+Historically, LM-2D have launched to a 35 deg inclination from Xichang launch site, however NOTAM closure area for this launch is 51 deg inclination which indicates an approximate 16.7 deg dogleg. Orbital altitude is estimated to be 595km. Nominals below are provided for pre dogleg and post dogleg.
+ 
+Rotated nominals - 24 Apr 2026 0635z - pre-dogleg
+0 PAYLOAD
+1 94327U 00000    26114.27430556  .00000000  00000+0  00000+0 0    02
+2 94327  51.6761 259.3060 0000000   0.0000 124.7410 14.90941696    06
+0 CZ-2D
+1 94328U 00000    26114.27430556  .00000000  00000+0  00000+0 0    03
+2 94328  51.6761 259.3060 0000000   0.0000 124.7410 14.90941696    07
+
+Rotated nominals - 24 Apr 2026 06:44:50z - post-dogleg
+0 PAYLOAD
+1 94327U 00000    26114.28113426  .00000000  00000+0  00000+0 0    07
+2 94327  34.9950 259.3780 0000000   0.0000 161.3450 14.90941696    00
+0 CZ-2D
+1 94328U 00000    26114.28113426  .00000000  00000+0  00000+0 0    08
+2 94328  35.1290 259.3760 0000000   0.0000 161.3460 14.90941696    00
+
+Unrotated nominals - pre-dogleg
+0 PAYLOAD
+1 94327U 00000    26001.00000000  .00000000  00000+0  00000+0 0    05
+2 94327  51.6761  48.9123 0000000   0.0000 124.7410 14.90941696    08
+0 CZ-2D
+1 94328U 00000    26001.00000000  .00000000  00000+0  00000+0 0    06
+2 94328  51.6761  48.9123 0000000   0.0000 124.7410 14.90941696    09
+
+Unrotated nominals - post-dogleg
+0 PAYLOAD
+1 94327U 00000    26001.00000000  .00000000  00000+0  00000+0 0    05
+2 94327  34.9950  46.5192 0000000   0.0000 161.3450 14.90941696    03
+0 CZ-2D
+1 94328U 00000    26001.00000000  .00000000  00000+0  00000+0 0    06
+2 94328  35.1290  46.5172 0000000   0.0000 161.3460 14.90941696    03
+
+======================================================================
+JDay 113 at 0555z:
+ 
+Based on available PAIR data, JCO providers have indicated a possible upcoming launch of a Long March 2D from Xichang Satellite Launch Center, China on 24 Apr 26 (J Day 114) occurring between 0625z and 0646z with an expected launch time of 0635z, carrying an unknown Payload (94327). Based on current information, the satellite is likely to be in LEO with orbital characteristics of Inc: 35 deg and RAAN: 259 deg. 
+
+COCO is provided. Click link above to view products.
+
+Historically, LM-2D have launched to a 35 deg inclination from Xichang launch site, however NOTAM closure area for this launch is 51 deg inclination which indicates an approximate 16.7 deg dogleg. Orbital altitude is estimated to be 595km. Nominals below are provided for pre dogleg and post dogleg.
+
+Rotated nominals - 24Apr0635z - Pre dogleg
+0 PAYLOAD
+1 94327U 00000    26114.27430556  .00000000  00000+0  00000+0 0    02
+2 94327  51.6761 259.3060 0000000   0.0000 124.7410 14.90941696    06
+
+0 CZ-2D
+1 94328U 00000    26114.27430556  .00000000  00000+0  00000+0 0    03
+2 94328  51.6761 259.3060 0000000   0.0000 124.7410 14.90941696    07
+
+Day 1 Hour 0 nominals - Pre dogleg
+0 PAYLOAD
+1 94327U 00000    26001.00000000  .00000000  00000+0  00000+0 0    05
+2 94327  51.6761  48.9123 0000000   0.0000 124.7410 14.90941696    08
+
+0 CZ-2D
+1 94328U 00000    26001.00000000  .00000000  00000+0  00000+0 0    06
+2 94328  51.6761  48.9123 0000000   0.0000 124.7410 14.90941696    09
+
+Rotated Launch Nominal - Post dogleg to 24Apr0644z provided by PPEC: 
+0 PAYLOAD 
+1 94327U 00000    26114.28113426  .00000000  00000+0  00000+0 0    07
+2 94327  34.9950 259.3780 0000000   0.0000 161.3450 14.90941696    00
+
+0 CZ-2D
+1 94328U 00000    26114.28113426  .00000000  00000+0  00000+0 0    08
+2 94328  35.1290 259.3760 0000000   0.0000 161.3460 14.90941696    00
+ 
+Unrotated Launch Nominal - Post dogleg: 
+0 PAYLOAD
+1 94327U 00000    26001.00000000  .00000000  00000+0  00000+0 0    05
+2 94327  34.9950  46.5192 0000000   0.0000 161.3450 14.90941696    03
+
+0 CZ-2D
+1 94328U 00000    26001.00000000  .00000000  00000+0  00000+0 0    06
+2 94328  35.1290  46.5172 0000000   0.0000 161.3460 14.90941696    03
+
+JDAY 114, 0922Z
+
+The payloads for this launch have been identified as the Xingwang Jishu Shiyan 09A-C. These satellite internet technology test satellites will primarily be used for testing and verifying technologies such as direct broadband connection to satellite for mobile phones and the integration of space and ground networks.
+Source: TAB
+
+*************************************************************************************... (Read More)
+
+Xingwang Jishu Shiyan 09A-D / Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64837.0 / JDAY 114 / 11:37Z
+
+Payload background and indication that there were four, rather than three satellites launched.
+
+2026-04-24T11:37:47.720Z
+
+Xingwang Jishu Shiyan 09A-C / Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64837.0#msg2783033 / JDAY 114 / 08:13Z
+
+Official launch time and payload confirmation
+
+2026-04-24T08:13:57.820Z
+
+Xingwang Jishu Shiyan 09A-C / Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64837.0#msg2783033 / JDAY 114 / 08:09Z
+
+Launch photos and mission patch
+
+2026-04-24T08:10:49.380Z
+
+/ Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64837.msg2783023#msg2783023 / JDAY 114 / 06:38Z
+
+Initial indication of launch:
+
+2026-04-24T06:38:32.360Z
+
+/ Publicly Available Information / https://x.com/Cosmic_Penguin/status/2047552120472092864 / JDAY 114 / 06:30Z
+
+Summary post with no new info:
+
+2026-04-24T06:30:27.870Z
+
+Launch Vehicle / Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64837.0 / JDAY 113 / 21:55Z
+
+Conjecture that this could actually be a KZ-11A (Pro) launch vehicle
+
+2026-04-23T21:57:29.670Z
+
+/ Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=57867.msg2782697#msg2782697 / JDAY 113 / 06:24Z
+
+NOTAM 1260 has been replaced with 1320 which is identical, so no change here:
+
+2026-04-23T06:25:09.540Z
+
+/ PASCHED / EOS / JDAY 113 / 04:40Z
+
+2026-04-23T04:41:13.610Z
+
+/ Publicly Available Information / NORTHSTAR / JDAY 112 / 00:24Z
+
+2026-04-22T00:25:25.520Z
+
+2026-04-22T00:24:40.190Z
+
+/ COCO / NORTHSTAR / JDAY 112 / 00:23Z
+
+2026-04-22T00:23:43.530Z
+
+/ PASCHED / NORTHSTAR / JDAY 112 / 00:19Z
+
+2026-04-22T00:21:45.810Z
+
+/ PASCHED / PPEC / JDAY 112 / 00:16Z
+
+2026-04-22T00:17:16.860Z
+
+Unknown payload / COCO / KBR / JDAY 111 / 18:56Z
+
+2026-04-21T18:56:44.910Z
+
+Juan Pablo Jimenez Sosa
+
+Unknown payload / PASCHED / KBR / JDAY 111 / 18:56Z
+
+2026-04-21T18:56:17.150Z
+
+Unknown payload / PASCHED / KBR / JDAY 111 / 18:55Z
+
+2026-04-21T18:56:03.080Z
+
+Unknown payload / GROUND TRACE  / INTRACK RADAR THECHNOLOGIES  / JDAY 111 / 18:54Z
+
+2026-04-21T18:55:23.930Z
+
+Unknown payload / PAIR Map / Publicly Available Information / JDAY 111 / 18:54Z
+
+2026-04-21T18:54:37.830Z
+
+Unknown payload / Publicly Available Information / PAIR Map / JDAY 111 / 12:10Z
+
+PAIR map of closure area
+
+2026-04-21T12:10:31.990Z
+
+Unknown payload / Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64837.0 / JDAY 111 / 12:09Z
+
+Source suggests this is the LM-2D LV
+
+2026-04-21T12:09:49.490Z
+
+2026-04-24T09:34:04.718Z
+
+2026-04-23T06:28:33.996Z
+
+Satellites Number Name Orbit Country 94327 Unknown Payload 94328 LM-2D R/B
+
+Number Name Orbit Country 94327 Unknown Payload 94328 LM-2D R/B
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a90d8f52-7dd8-4a0f-a5f6-92ad7d8d1a52/Xingwang%20Jishu%20Shiyan%2009A-D%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64837.0%20/%20JDAY%20114%20/%2011%3A37Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/122bbef2-b2c8-4c19-ab3a-7a01de808e53/Xingwang%20Jishu%20Shiyan%2009A-C%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64837.0%23msg2783033%20/%20JDAY%20114%20/%2008%3A13Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/4a842ce4-3df2-4d91-9b90-9d996d1367f6/Xingwang%20Jishu%20Shiyan%2009A-C%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64837.0%23msg2783033%20/%20JDAY%20114%20/%2008%3A09Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/387d7012-d8a9-4892-bd2a-20bb6894ba20/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64837.msg2783023%23msg2783023%20/%20JDAY%20114%20/%2006%3A38Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/954f7dea-1c2f-45f5-95b3-6a4798f249d1/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fx.com/Cosmic_Penguin/status/2047552120472092864%20/%20JDAY%20114%20/%2006%3A30Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/8cb02f88-be86-4584-a52a-14fd246f1959/Launch%20Vehicle%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64837.0%20/%20JDAY%20113%20/%2021%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/34bb81a5-aa45-4398-b3a9-0112dfbdec87/%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D57867.msg2782697%23msg2782697%20/%20JDAY%20113%20/%2006%3A24Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/fdd2d8cb-6233-42e3-8bb6-0432eac69d04/%20/%20PASCHED%20/%20EOS%20/%20JDAY%20113%20/%2004%3A40Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/92f7e27c-2f7f-41d9-9859-0599f2464085/%20/%20Publicly%20Available%20Information%20/%20NORTHSTAR%20/%20JDAY%20112%20/%2000%3A24Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/5cfda58b-3958-475e-9457-0707f22d6386/%20/%20Publicly%20Available%20Information%20/%20NORTHSTAR%20/%20JDAY%20112%20/%2000%3A24Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/3521dc65-f99b-404d-8941-161d469f8f86/%20/%20COCO%20/%20NORTHSTAR%20/%20JDAY%20112%20/%2000%3A23Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/084a0afa-6fc5-41b2-8fa1-8ee185753ae2/%20/%20PASCHED%20/%20NORTHSTAR%20/%20JDAY%20112%20/%2000%3A19Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/1afc2156-7168-4c05-ba03-af12fccd7ae6/%20/%20PASCHED%20/%20PPEC%20/%20JDAY%20112%20/%2000%3A16Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a4a8f5a8-b312-48e0-8593-284e5494adc5/Unknown%20payload%20/%20COCO%20/%20KBR%20/%20JDAY%20111%20/%2018%3A56Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/046f78cb-be67-4426-9b39-471c6d6e4fa6/Unknown%20payload%20/%20PASCHED%20/%20KBR%20/%20JDAY%20111%20/%2018%3A56Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/5aace63e-6cf7-483a-8bec-d1ab3f042d76/Unknown%20payload%20/%20PASCHED%20/%20KBR%20/%20JDAY%20111%20/%2018%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/d8a02ca7-439b-4b93-a21b-e24dddaaf0ac/Unknown%20payload%20/%20GROUND%20TRACE%20%20/%20INTRACK%20RADAR%20THECHNOLOGIES%20%20/%20JDAY%20111%20/%2018%3A54Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/7d242f50-8e78-48c2-acfe-c682b86afd86/Unknown%20payload%20/%20PAIR%20Map%20/%20Publicly%20Available%20Information%20/%20JDAY%20111%20/%2018%3A54Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/6cddf8b5-b33d-42a4-a6f9-aa61e501d5c0/Unknown%20payload%20/%20Publicly%20Available%20Information%20/%20PAIR%20Map%20/%20JDAY%20111%20/%2012%3A10Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/78c4b2dd-268d-4c59-9584-a386db5f60d9/Unknown%20payload%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64837.0%20/%20JDAY%20111%20/%2012%3A09Z
+
+NOTSO_Launch / LM-2D (94328) / Unknown Payload (94327) / Xichang, China / 24 Apr 26 / ~0635 UTC / LEO_23Apr-0628Z

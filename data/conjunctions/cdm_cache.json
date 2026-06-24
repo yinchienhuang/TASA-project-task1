@@ -1,0 +1,895 @@
+{
+  "cdms": [
+    {
+      "norad_id_1": "42387",
+      "norad_id_2": "13028",
+      "name_1": "NOAA 16 DEB",
+      "name_2": "SL-8 R/B",
+      "tca": "2026-06-23T04:37:29.733000+00:00",
+      "min_distance_km": 515.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "42387",
+      "norad_id_2": "13028",
+      "name_1": "NOAA 16 DEB",
+      "name_2": "SL-8 R/B",
+      "tca": "2026-06-23T04:37:29.756000+00:00",
+      "min_distance_km": 648.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "42387",
+      "norad_id_2": "13028",
+      "name_1": "NOAA 16 DEB",
+      "name_2": "SL-8 R/B",
+      "tca": "2026-06-23T04:37:29.759000+00:00",
+      "min_distance_km": 640.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "33461",
+      "norad_id_2": "27617",
+      "name_1": "ARIANE 5 DEB (SYLDA)",
+      "name_2": "COSMOS 2394 (GLONASS)",
+      "tca": "2026-06-23T05:21:57.496000+00:00",
+      "min_distance_km": 4360.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "27617",
+      "norad_id_2": "33461",
+      "name_1": "COSMOS 2394 (GLONASS)",
+      "name_2": "ARIANE 5 DEB (SYLDA)",
+      "tca": "2026-06-23T05:21:57.497000+00:00",
+      "min_distance_km": 4269.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "33461",
+      "norad_id_2": "27617",
+      "name_1": "ARIANE 5 DEB (SYLDA)",
+      "name_2": "COSMOS 2394 (GLONASS)",
+      "tca": "2026-06-23T05:21:57.503000+00:00",
+      "min_distance_km": 4301.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "33461",
+      "norad_id_2": "27617",
+      "name_1": "ARIANE 5 DEB (SYLDA)",
+      "name_2": "COSMOS 2394 (GLONASS)",
+      "tca": "2026-06-23T05:21:57.552000+00:00",
+      "min_distance_km": 4103.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "33461",
+      "norad_id_2": "27617",
+      "name_1": "ARIANE 5 DEB (SYLDA)",
+      "name_2": "COSMOS 2394 (GLONASS)",
+      "tca": "2026-06-23T05:21:57.582000+00:00",
+      "min_distance_km": 4169.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "33461",
+      "norad_id_2": "27617",
+      "name_1": "ARIANE 5 DEB (SYLDA)",
+      "name_2": "COSMOS 2394 (GLONASS)",
+      "tca": "2026-06-23T05:21:57.602000+00:00",
+      "min_distance_km": 4089.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "33461",
+      "norad_id_2": "27617",
+      "name_1": "ARIANE 5 DEB (SYLDA)",
+      "name_2": "COSMOS 2394 (GLONASS)",
+      "tca": "2026-06-23T05:21:57.837000+00:00",
+      "min_distance_km": 4479.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "10709",
+      "norad_id_2": "270211",
+      "name_1": "DELTA 1 DEB",
+      "name_2": "UNKNOWN",
+      "tca": "2026-06-23T05:51:53.383000+00:00",
+      "min_distance_km": 914.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "10709",
+      "norad_id_2": "270211",
+      "name_1": "DELTA 1 DEB",
+      "name_2": "UNKNOWN",
+      "tca": "2026-06-23T05:51:53.385000+00:00",
+      "min_distance_km": 904.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "5731",
+      "norad_id_2": "54486",
+      "name_1": "METEOR 1-10",
+      "name_2": "CZ-6A DEB",
+      "tca": "2026-06-23T07:21:35.506000+00:00",
+      "min_distance_km": 193.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "5731",
+      "norad_id_2": "54486",
+      "name_1": "METEOR 1-10",
+      "name_2": "CZ-6A DEB",
+      "tca": "2026-06-23T07:21:35.549000+00:00",
+      "min_distance_km": 200.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "5731",
+      "norad_id_2": "54486",
+      "name_1": "METEOR 1-10",
+      "name_2": "CZ-6A DEB",
+      "tca": "2026-06-23T07:21:35.561000+00:00",
+      "min_distance_km": 195.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "54486",
+      "norad_id_2": "5731",
+      "name_1": "CZ-6A DEB",
+      "name_2": "METEOR 1-10",
+      "tca": "2026-06-23T07:21:35.599000+00:00",
+      "min_distance_km": 243.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "54486",
+      "norad_id_2": "5731",
+      "name_1": "CZ-6A DEB",
+      "name_2": "METEOR 1-10",
+      "tca": "2026-06-23T07:21:35.608000+00:00",
+      "min_distance_km": 244.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "54486",
+      "norad_id_2": "5731",
+      "name_1": "CZ-6A DEB",
+      "name_2": "METEOR 1-10",
+      "tca": "2026-06-23T07:21:35.627000+00:00",
+      "min_distance_km": 201.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "54486",
+      "norad_id_2": "5731",
+      "name_1": "CZ-6A DEB",
+      "name_2": "METEOR 1-10",
+      "tca": "2026-06-23T07:21:35.645000+00:00",
+      "min_distance_km": 201.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "41304",
+      "norad_id_2": "13648",
+      "name_1": "NOAA 16 DEB",
+      "name_2": "COSMOS 1420",
+      "tca": "2026-06-23T08:24:38.239000+00:00",
+      "min_distance_km": 356.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "41304",
+      "norad_id_2": "13648",
+      "name_1": "NOAA 16 DEB",
+      "name_2": "COSMOS 1420",
+      "tca": "2026-06-23T08:24:38.297000+00:00",
+      "min_distance_km": 279.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "41304",
+      "norad_id_2": "13648",
+      "name_1": "NOAA 16 DEB",
+      "name_2": "COSMOS 1420",
+      "tca": "2026-06-23T08:24:38.304000+00:00",
+      "min_distance_km": 263.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "41304",
+      "norad_id_2": "13648",
+      "name_1": "NOAA 16 DEB",
+      "name_2": "COSMOS 1420",
+      "tca": "2026-06-23T08:24:38.378000+00:00",
+      "min_distance_km": 164.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "41304",
+      "norad_id_2": "13648",
+      "name_1": "NOAA 16 DEB",
+      "name_2": "COSMOS 1420",
+      "tca": "2026-06-23T08:24:38.383000+00:00",
+      "min_distance_km": 156.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "41304",
+      "norad_id_2": "13648",
+      "name_1": "NOAA 16 DEB",
+      "name_2": "COSMOS 1420",
+      "tca": "2026-06-23T08:24:38.389000+00:00",
+      "min_distance_km": 147.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "41304",
+      "norad_id_2": "13648",
+      "name_1": "NOAA 16 DEB",
+      "name_2": "COSMOS 1420",
+      "tca": "2026-06-23T08:24:38.403000+00:00",
+      "min_distance_km": 132.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "41304",
+      "norad_id_2": "13648",
+      "name_1": "NOAA 16 DEB",
+      "name_2": "COSMOS 1420",
+      "tca": "2026-06-23T08:24:38.404000+00:00",
+      "min_distance_km": 129.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "31815",
+      "norad_id_2": "15202",
+      "name_1": "FENGYUN 1C DEB",
+      "name_2": "DELTA 1 R/B(1)",
+      "tca": "2026-06-23T10:29:14.551000+00:00",
+      "min_distance_km": 299.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "31815",
+      "norad_id_2": "15202",
+      "name_1": "FENGYUN 1C DEB",
+      "name_2": "DELTA 1 R/B(1)",
+      "tca": "2026-06-23T10:29:14.556000+00:00",
+      "min_distance_km": 265.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "31815",
+      "norad_id_2": "15202",
+      "name_1": "FENGYUN 1C DEB",
+      "name_2": "DELTA 1 R/B(1)",
+      "tca": "2026-06-23T10:29:14.558000+00:00",
+      "min_distance_km": 246.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "31815",
+      "norad_id_2": "15202",
+      "name_1": "FENGYUN 1C DEB",
+      "name_2": "DELTA 1 R/B(1)",
+      "tca": "2026-06-23T10:29:14.565000+00:00",
+      "min_distance_km": 183.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "31815",
+      "norad_id_2": "15202",
+      "name_1": "FENGYUN 1C DEB",
+      "name_2": "DELTA 1 R/B(1)",
+      "tca": "2026-06-23T10:29:14.566000+00:00",
+      "min_distance_km": 179.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "61157",
+      "norad_id_2": "31536",
+      "name_1": "CZ-6A DEB",
+      "name_2": "FENGYUN 1C DEB",
+      "tca": "2026-06-23T10:38:18.918000+00:00",
+      "min_distance_km": 40.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "28275",
+      "norad_id_2": "14741",
+      "name_1": "COSMOS 1932 DEB",
+      "name_2": "COSMOS 1275 DEB",
+      "tca": "2026-06-23T11:50:57.626000+00:00",
+      "min_distance_km": 244.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "28275",
+      "norad_id_2": "14741",
+      "name_1": "COSMOS 1932 DEB",
+      "name_2": "COSMOS 1275 DEB",
+      "tca": "2026-06-23T11:50:57.631000+00:00",
+      "min_distance_km": 280.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "28275",
+      "norad_id_2": "14741",
+      "name_1": "COSMOS 1932 DEB",
+      "name_2": "COSMOS 1275 DEB",
+      "tca": "2026-06-23T11:50:57.635000+00:00",
+      "min_distance_km": 313.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "33984",
+      "norad_id_2": "18697",
+      "name_1": "COSMOS 2251 DEB",
+      "name_2": "SL-8 DEB",
+      "tca": "2026-06-23T12:08:05.541000+00:00",
+      "min_distance_km": 194.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "33984",
+      "norad_id_2": "18697",
+      "name_1": "COSMOS 2251 DEB",
+      "name_2": "SL-8 DEB",
+      "tca": "2026-06-23T12:08:05.549000+00:00",
+      "min_distance_km": 222.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "59993",
+      "norad_id_2": "25942",
+      "name_1": "METEOR 2-7 DEB",
+      "name_2": "CZ-4B R/B",
+      "tca": "2026-06-23T13:16:31.966000+00:00",
+      "min_distance_km": 188.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "59993",
+      "norad_id_2": "25942",
+      "name_1": "METEOR 2-7 DEB",
+      "name_2": "CZ-4B R/B",
+      "tca": "2026-06-23T13:16:31.976000+00:00",
+      "min_distance_km": 188.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "59993",
+      "norad_id_2": "25942",
+      "name_1": "METEOR 2-7 DEB",
+      "name_2": "CZ-4B R/B",
+      "tca": "2026-06-23T13:16:31.979000+00:00",
+      "min_distance_km": 189.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "36073",
+      "norad_id_2": "35382",
+      "name_1": "COSMOS 2251 DEB",
+      "name_2": "CZ-4 DEB",
+      "tca": "2026-06-23T13:31:40.988000+00:00",
+      "min_distance_km": 40.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "34023",
+      "norad_id_2": "270416",
+      "name_1": "COSMOS 2251 DEB",
+      "name_2": "UNKNOWN",
+      "tca": "2026-06-23T15:04:13.257000+00:00",
+      "min_distance_km": 372.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "34023",
+      "norad_id_2": "270416",
+      "name_1": "COSMOS 2251 DEB",
+      "name_2": "UNKNOWN",
+      "tca": "2026-06-23T15:04:13.282000+00:00",
+      "min_distance_km": 58.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "60850",
+      "norad_id_2": "270423",
+      "name_1": "CZ-6A DEB",
+      "name_2": "UNKNOWN",
+      "tca": "2026-06-23T15:27:13.805000+00:00",
+      "min_distance_km": 248.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "60850",
+      "norad_id_2": "270423",
+      "name_1": "CZ-6A DEB",
+      "name_2": "UNKNOWN",
+      "tca": "2026-06-23T15:27:13.808000+00:00",
+      "min_distance_km": 249.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "60850",
+      "norad_id_2": "270423",
+      "name_1": "CZ-6A DEB",
+      "name_2": "UNKNOWN",
+      "tca": "2026-06-23T15:27:13.820000+00:00",
+      "min_distance_km": 190.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "15698",
+      "norad_id_2": "23621",
+      "name_1": "COSMOS 1651 (GLONASS)",
+      "name_2": "COSMOS 2317 (GLONASS)",
+      "tca": "2026-06-23T19:43:23.468000+00:00",
+      "min_distance_km": 4282.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "23621",
+      "norad_id_2": "15698",
+      "name_1": "COSMOS 2317 (GLONASS)",
+      "name_2": "COSMOS 1651 (GLONASS)",
+      "tca": "2026-06-23T19:43:23.475000+00:00",
+      "min_distance_km": 4577.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "15698",
+      "norad_id_2": "23621",
+      "name_1": "COSMOS 1651 (GLONASS)",
+      "name_2": "COSMOS 2317 (GLONASS)",
+      "tca": "2026-06-23T19:43:23.510000+00:00",
+      "min_distance_km": 4467.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "56629",
+      "norad_id_2": "3597",
+      "name_1": "CZ-6A DEB",
+      "name_2": "OAO 2",
+      "tca": "2026-06-24T02:17:11.253000+00:00",
+      "min_distance_km": 320.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "31462",
+      "norad_id_2": "19250",
+      "name_1": "FENGYUN 1C DEB",
+      "name_2": "THORAD AGENA D DEB",
+      "tca": "2026-06-24T03:05:00.433000+00:00",
+      "min_distance_km": 59.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "31462",
+      "norad_id_2": "19250",
+      "name_1": "FENGYUN 1C DEB",
+      "name_2": "THORAD AGENA D DEB",
+      "tca": "2026-06-24T03:05:00.443000+00:00",
+      "min_distance_km": 127.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "10692",
+      "norad_id_2": "14405",
+      "name_1": "COSMOS 991",
+      "name_2": "COSMOS 1275 DEB",
+      "tca": "2026-06-24T05:18:26.317000+00:00",
+      "min_distance_km": 57.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "10692",
+      "norad_id_2": "14405",
+      "name_1": "COSMOS 991",
+      "name_2": "COSMOS 1275 DEB",
+      "tca": "2026-06-24T05:18:26.321000+00:00",
+      "min_distance_km": 32.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "14405",
+      "norad_id_2": "10692",
+      "name_1": "COSMOS 1275 DEB",
+      "name_2": "COSMOS 991",
+      "tca": "2026-06-24T05:18:26.330000+00:00",
+      "min_distance_km": 72.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "10692",
+      "norad_id_2": "14405",
+      "name_1": "COSMOS 991",
+      "name_2": "COSMOS 1275 DEB",
+      "tca": "2026-06-24T05:18:26.333000+00:00",
+      "min_distance_km": 69.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "14405",
+      "norad_id_2": "10692",
+      "name_1": "COSMOS 1275 DEB",
+      "name_2": "COSMOS 991",
+      "tca": "2026-06-24T05:18:26.337000+00:00",
+      "min_distance_km": 83.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "56281",
+      "norad_id_2": "31623",
+      "name_1": "CZ-6A DEB",
+      "name_2": "FENGYUN 1C DEB",
+      "tca": "2026-06-24T06:51:44.521000+00:00",
+      "min_distance_km": 136.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "56281",
+      "norad_id_2": "31623",
+      "name_1": "CZ-6A DEB",
+      "name_2": "FENGYUN 1C DEB",
+      "tca": "2026-06-24T06:51:44.528000+00:00",
+      "min_distance_km": 131.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "56281",
+      "norad_id_2": "31623",
+      "name_1": "CZ-6A DEB",
+      "name_2": "FENGYUN 1C DEB",
+      "tca": "2026-06-24T06:51:44.548000+00:00",
+      "min_distance_km": 103.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "69327",
+      "norad_id_2": "87271",
+      "name_1": "CZ-12B R/B",
+      "name_2": "UNKNOWN",
+      "tca": "2026-06-24T10:00:24.949000+00:00",
+      "min_distance_km": 507.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "69327",
+      "norad_id_2": "87271",
+      "name_1": "CZ-12B R/B",
+      "name_2": "UNKNOWN",
+      "tca": "2026-06-24T10:00:24.950000+00:00",
+      "min_distance_km": 448.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "28931",
+      "norad_id_2": "28345",
+      "name_1": "ALOS",
+      "name_2": "DMSP 5D-2 F11 DEB",
+      "tca": "2026-06-24T10:51:54.131000+00:00",
+      "min_distance_km": 895.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "28931",
+      "norad_id_2": "28345",
+      "name_1": "ALOS",
+      "name_2": "DMSP 5D-2 F11 DEB",
+      "tca": "2026-06-24T10:51:54.256000+00:00",
+      "min_distance_km": 434.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "28931",
+      "norad_id_2": "28345",
+      "name_1": "ALOS",
+      "name_2": "DMSP 5D-2 F11 DEB",
+      "tca": "2026-06-24T10:51:54.270000+00:00",
+      "min_distance_km": 304.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "32143",
+      "norad_id_2": "243",
+      "name_1": "FENGYUN 1C DEB",
+      "name_2": "THOR ABLESTAR DEB",
+      "tca": "2026-06-24T11:21:46.008000+00:00",
+      "min_distance_km": 101.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "10676",
+      "norad_id_2": "14557",
+      "name_1": "COSMOS 990",
+      "name_2": "COSMOS 1275 DEB",
+      "tca": "2026-06-24T18:30:27.033000+00:00",
+      "min_distance_km": 314.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "10676",
+      "norad_id_2": "14557",
+      "name_1": "COSMOS 990",
+      "name_2": "COSMOS 1275 DEB",
+      "tca": "2026-06-24T18:30:27.039000+00:00",
+      "min_distance_km": 323.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "10676",
+      "norad_id_2": "14557",
+      "name_1": "COSMOS 990",
+      "name_2": "COSMOS 1275 DEB",
+      "tca": "2026-06-24T18:30:27.063000+00:00",
+      "min_distance_km": 363.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "14557",
+      "norad_id_2": "10676",
+      "name_1": "COSMOS 1275 DEB",
+      "name_2": "COSMOS 990",
+      "tca": "2026-06-24T18:30:27.106000+00:00",
+      "min_distance_km": 467.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "35517",
+      "norad_id_2": "270236",
+      "name_1": "ARIANE 1 DEB",
+      "name_2": "UNKNOWN",
+      "tca": "2026-06-24T20:14:35.708000+00:00",
+      "min_distance_km": 290.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "35517",
+      "norad_id_2": "270236",
+      "name_1": "ARIANE 1 DEB",
+      "name_2": "UNKNOWN",
+      "tca": "2026-06-24T20:14:35.710000+00:00",
+      "min_distance_km": 314.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "38572",
+      "norad_id_2": "38583",
+      "name_1": "BREEZE-M DEB",
+      "name_2": "BREEZE-M DEB",
+      "tca": "2026-06-25T00:13:08.694000+00:00",
+      "min_distance_km": 4001.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "38583",
+      "norad_id_2": "38572",
+      "name_1": "BREEZE-M DEB",
+      "name_2": "BREEZE-M DEB",
+      "tca": "2026-06-25T00:13:08.708000+00:00",
+      "min_distance_km": 4004.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "38572",
+      "norad_id_2": "38583",
+      "name_1": "BREEZE-M DEB",
+      "name_2": "BREEZE-M DEB",
+      "tca": "2026-06-25T00:13:08.836000+00:00",
+      "min_distance_km": 4121.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "38022",
+      "norad_id_2": "20442",
+      "name_1": "IRIDIUM 33 DEB",
+      "name_2": "OSCAR 19 (LUSAT)",
+      "tca": "2026-06-25T02:50:58.019000+00:00",
+      "min_distance_km": 930.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "38022",
+      "norad_id_2": "20442",
+      "name_1": "IRIDIUM 33 DEB",
+      "name_2": "OSCAR 19 (LUSAT)",
+      "tca": "2026-06-25T02:50:58.032000+00:00",
+      "min_distance_km": 810.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "38022",
+      "norad_id_2": "20442",
+      "name_1": "IRIDIUM 33 DEB",
+      "name_2": "OSCAR 19 (LUSAT)",
+      "tca": "2026-06-25T02:50:58.036000+00:00",
+      "min_distance_km": 760.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "66958",
+      "norad_id_2": "29098",
+      "name_1": "CZ-6A R/B",
+      "name_2": "SL-16 DEB",
+      "tca": "2026-06-25T03:28:07.803000+00:00",
+      "min_distance_km": 531.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "66958",
+      "norad_id_2": "29098",
+      "name_1": "CZ-6A R/B",
+      "name_2": "SL-16 DEB",
+      "tca": "2026-06-25T03:28:07.806000+00:00",
+      "min_distance_km": 527.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "41870",
+      "norad_id_2": "37200",
+      "name_1": "CZ-3C R/B",
+      "name_2": "BREEZE-M DEB",
+      "tca": "2026-06-25T04:12:03.190000+00:00",
+      "min_distance_km": 3845.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "36231",
+      "norad_id_2": "270397",
+      "name_1": "FENGYUN 1C DEB",
+      "name_2": "UNKNOWN",
+      "tca": "2026-06-25T08:14:41.547000+00:00",
+      "min_distance_km": 161.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "36231",
+      "norad_id_2": "270397",
+      "name_1": "FENGYUN 1C DEB",
+      "name_2": "UNKNOWN",
+      "tca": "2026-06-25T08:14:41.578000+00:00",
+      "min_distance_km": 45.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "46115",
+      "norad_id_2": "62364",
+      "name_1": "ARIANE 5 DEB (SYLDA)",
+      "name_2": "FALCON 9 R/B",
+      "tca": "2026-06-25T08:36:06.899000+00:00",
+      "min_distance_km": 2573.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "23770",
+      "norad_id_2": "14195",
+      "name_1": "DELTA 2 R/B(2)",
+      "name_2": "SL-12 R/B(2)",
+      "tca": "2026-06-25T14:51:59.950000+00:00",
+      "min_distance_km": 3225.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "55862",
+      "norad_id_2": "4420",
+      "name_1": "CZ-6A DEB",
+      "name_2": "SL-3 R/B",
+      "tca": "2026-06-25T15:21:01.399000+00:00",
+      "min_distance_km": 279.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "31411",
+      "norad_id_2": "8685",
+      "name_1": "FENGYUN 1C DEB",
+      "name_2": "DELTA 1 DEB",
+      "tca": "2026-06-25T17:44:08.410000+00:00",
+      "min_distance_km": 89.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    },
+    {
+      "norad_id_1": "42094",
+      "norad_id_2": "20234",
+      "name_1": "DELTA 1 DEB",
+      "name_2": "COSMOS 2040",
+      "tca": "2026-06-25T20:27:05.075000+00:00",
+      "min_distance_km": 78.0,
+      "probability": null,
+      "source": "space-track.org (cdm_public)"
+    }
+  ],
+  "last_updated": "2026-06-23T03:45:58.585652+00:00"
+}

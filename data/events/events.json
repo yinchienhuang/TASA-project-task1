@@ -1,50 +1,5 @@
 {
   "events": {
-    "evt_21c82f7f": {
-      "type": "maneuver",
-      "satellite_id": "65851",
-      "satellite_label": "SHIYAN 30-01",
-      "event_date": "2026-04-09T07:31:00Z",
-      "delta_v": 2.27,
-      "period_change": 1.71,
-      "apogee_change": 0.91,
-      "perigee_change": 1.83,
-      "inclination_change": -0.0,
-      "source_id": "file_29a4194bbcf2283e",
-      "report_title": "Mission Management Board 2.mhtml",
-      "id": "evt_21c82f7f",
-      "created_at": "2026-04-22T20:40:04.844372+00:00"
-    },
-    "evt_58d8406f": {
-      "type": "maneuver",
-      "satellite_id": "65852",
-      "satellite_label": "SHIYAN 30-02",
-      "event_date": "2026-04-09T01:53:00Z",
-      "delta_v": 0.86,
-      "period_change": 2.02,
-      "apogee_change": 2.3,
-      "perigee_change": 0.95,
-      "inclination_change": 0.0,
-      "source_id": "file_29a4194bbcf2283e",
-      "report_title": "Mission Management Board 2.mhtml",
-      "id": "evt_58d8406f",
-      "created_at": "2026-04-22T20:40:04.846391+00:00"
-    },
-    "evt_27feea63": {
-      "type": "maneuver",
-      "satellite_id": "65852",
-      "satellite_label": "SHIYAN 30-02",
-      "event_date": "2026-04-10T02:00:00Z",
-      "delta_v": 1.04,
-      "period_change": 1.78,
-      "apogee_change": 2.76,
-      "perigee_change": 0.09,
-      "inclination_change": 0.0,
-      "source_id": "file_29a4194bbcf2283e",
-      "report_title": "Mission Management Board 2.mhtml",
-      "id": "evt_27feea63",
-      "created_at": "2026-04-22T20:40:04.850296+00:00"
-    },
     "evt_c7865613": {
       "type": "launch",
       "satellite_id": "68835",
@@ -120,7 +75,8 @@
       "source_id": "file_d7ec093dc174de8d",
       "report_title": "JCO_launch_report_0502.mhtml",
       "id": "evt_c7865613",
-      "created_at": "2026-05-02T17:54:53.089949+00:00"
+      "created_at": "2026-05-02T17:54:53.089949+00:00",
+      "regime": "LEO"
     },
     "evt_a436609b": {
       "type": "maneuver",
@@ -142,7 +98,73 @@
       "tle_available": false,
       "maneuver_type": "stationkeeping",
       "id": "evt_a436609b",
-      "created_at": "2026-05-06T15:36:42.475500+00:00"
+      "created_at": "2026-05-06T15:36:42.475500+00:00",
+      "regime": "GEO",
+      "update_history": [
+        {
+          "timestamp": "2026-06-18T00:46:19.130826+00:00",
+          "changes": [
+            {
+              "field": "analyst_assessment",
+              "old": null,
+              "new": "The satellite maneuvered from 175.52deg E longitude with a delta-v of 1.45 m/s, resulting in an increase of its westward drift up to 0.670 W deg/day.",
+              "type": "added"
+            },
+            {
+              "field": "jco_delta_v",
+              "old": 1.45,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "maneuver_type",
+              "old": "stationkeeping",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "pol_status",
+              "old": null,
+              "new": "unknown",
+              "type": "added"
+            },
+            {
+              "field": "regime",
+              "old": "GEO",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "report_title",
+              "old": "JCO_manuver_report_0506.mhtml",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "source_id",
+              "old": "file_02cb6795ce56f4e6",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "tle_available",
+              "old": false,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "verification_status",
+              "old": null,
+              "new": "verified",
+              "type": "added"
+            }
+          ],
+          "summary": "3 field(s) added, 6 field(s) removed"
+        }
+      ],
+      "analyst_assessment": "The satellite maneuvered from 175.52deg E longitude with a delta-v of 1.45 m/s, resulting in an increase of its westward drift up to 0.670 W deg/day.",
+      "pol_status": "unknown",
+      "verification_status": "verified"
     },
     "evt_b54b756d": {
       "type": "maneuver",
@@ -164,13 +186,110 @@
       "tle_available": false,
       "maneuver_type": "stationkeeping",
       "id": "evt_b54b756d",
-      "created_at": "2026-05-06T19:18:04.771092+00:00"
+      "created_at": "2026-05-06T19:18:04.771092+00:00",
+      "regime": "GEO",
+      "update_history": [
+        {
+          "timestamp": "2026-06-18T00:46:19.127526+00:00",
+          "changes": [
+            {
+              "field": "analyst_assessment",
+              "old": null,
+              "new": "Station-keeping maneuver within historical pattern of life for this object.",
+              "type": "added"
+            },
+            {
+              "field": "jco_apogee_change",
+              "old": -0.32,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_delta_v",
+              "old": 0.19,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_inclination_change",
+              "old": -0.0036,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_perigee_change",
+              "old": 0.32,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_period_change",
+              "old": -0.0008,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "maneuver_type",
+              "old": "stationkeeping",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "pai_summary",
+              "old": null,
+              "new": "TJS-15 is a Chinese satellite that supports military operations; mission believed to support missile early warning, signals intelligence, and/or other unidentified missions.",
+              "type": "added"
+            },
+            {
+              "field": "pol_status",
+              "old": null,
+              "new": "within_pol",
+              "type": "added"
+            },
+            {
+              "field": "regime",
+              "old": "GEO",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "report_title",
+              "old": "JCO_manuver_report_0501.mhtml",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "source_id",
+              "old": "file_2cb0b4b999df1bf1",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "tle_available",
+              "old": false,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "verification_status",
+              "old": null,
+              "new": "verified",
+              "type": "added"
+            }
+          ],
+          "summary": "4 field(s) added, 10 field(s) removed"
+        }
+      ],
+      "analyst_assessment": "Station-keeping maneuver within historical pattern of life for this object.",
+      "pai_summary": "TJS-15 is a Chinese satellite that supports military operations; mission believed to support missile early warning, signals intelligence, and/or other unidentified missions.",
+      "pol_status": "within_pol",
+      "verification_status": "verified"
     },
     "evt_872aacd2": {
       "type": "photometric_change",
       "satellite_id": "64467",
       "satellite_label": "COSMOS 2589",
-      "event_date": "2026-05-19T21:01:00Z",
+      "event_date": "2026-05-19T20:50:00Z",
       "magnitude_change_min": 1.0,
       "magnitude_change_max": 1.0,
       "magnitude_direction": "dimmer",
@@ -178,7 +297,89 @@
       "source_id": "file_874ab4e172ff35fb",
       "report_title": "NOTSO_Photometric Change_COSMOS_2589(64467)_19May_2101Z.mhtml",
       "id": "evt_872aacd2",
-      "created_at": "2026-05-20T19:22:05.799659+00:00"
+      "created_at": "2026-05-20T19:22:05.799659+00:00",
+      "regime": "GEO",
+      "update_history": [
+        {
+          "timestamp": "2026-06-18T00:46:19.164462+00:00",
+          "changes": [
+            {
+              "field": "analyst_assessment",
+              "old": null,
+              "new": "Photometry appeared to return to pattern of life.",
+              "type": "added"
+            },
+            {
+              "field": "associated_distance_km",
+              "old": null,
+              "new": 18,
+              "type": "added"
+            },
+            {
+              "field": "associated_satellite_id",
+              "old": null,
+              "new": "51281",
+              "type": "added"
+            },
+            {
+              "field": "associated_satellite_label",
+              "old": null,
+              "new": "USA 325",
+              "type": "added"
+            },
+            {
+              "field": "event_date",
+              "old": "2026-05-19T21:01:00Z",
+              "new": "2026-05-19T20:50:00Z",
+              "type": "updated"
+            },
+            {
+              "field": "pai_summary",
+              "old": null,
+              "new": "Cosmos 2589 is a suspected Russian military inspector satellite, believed to be linked to the Nivelir anti-satellite program, designed to conduct close-proximity surveillance and rendezvous operations with other spacecraft in the geosynchronous belt.",
+              "type": "added"
+            },
+            {
+              "field": "pol_status",
+              "old": null,
+              "new": "return_to_pol",
+              "type": "added"
+            },
+            {
+              "field": "regime",
+              "old": "GEO",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "report_title",
+              "old": "NOTSO_Photometric Change_COSMOS_2589(64467)_19May_2101Z.mhtml",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "source_id",
+              "old": "file_874ab4e172ff35fb",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "verification_status",
+              "old": null,
+              "new": "detected",
+              "type": "added"
+            }
+          ],
+          "summary": "7 field(s) added, 1 field(s) updated, 3 field(s) removed"
+        }
+      ],
+      "analyst_assessment": "Photometry appeared to return to pattern of life.",
+      "associated_distance_km": 18,
+      "associated_satellite_id": "51281",
+      "associated_satellite_label": "USA 325",
+      "pai_summary": "Cosmos 2589 is a suspected Russian military inspector satellite, believed to be linked to the Nivelir anti-satellite program, designed to conduct close-proximity surveillance and rendezvous operations with other spacecraft in the geosynchronous belt.",
+      "pol_status": "return_to_pol",
+      "verification_status": "detected"
     },
     "evt_f39967b2": {
       "type": "photometric_change",
@@ -192,21 +393,8 @@
       "source_id": "file_f8129074e591fff3",
       "report_title": "NOTSO_Photometric Change_Cosmos_2589_(64467)_18May-1527Z.mhtml",
       "id": "evt_f39967b2",
-      "created_at": "2026-05-20T19:25:08.723574+00:00"
-    },
-    "evt_bd28a645": {
-      "type": "photometric_change",
-      "satellite_id": "64467",
-      "satellite_label": "COSMOS 2589",
-      "event_date": "2026-05-18T15:27:00Z",
-      "magnitude_change_min": null,
-      "magnitude_change_max": null,
-      "magnitude_direction": null,
-      "recovery_date": null,
-      "source_id": "file_f8129074e591fff3",
-      "report_title": "NOTSO_Photometric Change_Cosmos_2589_(64467)_18May-1527Z.mhtml",
-      "id": "evt_bd28a645",
-      "created_at": "2026-05-20T19:25:08.725474+00:00"
+      "created_at": "2026-05-20T19:25:08.723574+00:00",
+      "regime": "GEO"
     },
     "evt_a0f47d28": {
       "type": "photometric_change",
@@ -220,7 +408,8 @@
       "source_id": "file_f8129074e591fff3",
       "report_title": "NOTSO_Photometric Change_Cosmos_2589_(64467)_18May-1527Z.mhtml",
       "id": "evt_a0f47d28",
-      "created_at": "2026-05-20T19:25:08.727397+00:00"
+      "created_at": "2026-05-20T19:25:08.727397+00:00",
+      "regime": "GEO"
     },
     "evt_ed4024d6": {
       "type": "launch",
@@ -297,7 +486,8 @@
       "source_id": "file_5fe9e8fe0a70ac79",
       "report_title": "NOTSO_Launch_LM-8 (94486)_Qianfan_Digui_Group_10A_R_(94468_94485).mhtml",
       "id": "evt_ed4024d6",
-      "created_at": "2026-05-20T20:04:31.348182+00:00"
+      "created_at": "2026-05-20T20:04:31.348182+00:00",
+      "regime": "LEO"
     },
     "evt_1987bee8": {
       "type": "launch",
@@ -393,52 +583,2455 @@
       "id": "evt_9e4af2cb",
       "created_at": "2026-05-25T17:37:10.449376+00:00"
     },
-    "evt_c9987970": {
+    "evt_473c86d6": {
+      "type": "photometric_change",
+      "satellite_id": "50322",
+      "satellite_label": "SY-12 02",
+      "event_date": "2026-03-29T02:08:00Z",
+      "magnitude_change_min": 1.7,
+      "magnitude_change_max": 2.0,
+      "magnitude_direction": "dimmer",
+      "recovery_date": "2026-03-30",
+      "report_title": "Mission Management Board 2_photo.mhtml",
+      "id": "evt_473c86d6",
+      "created_at": "2026-06-01T19:05:26.154770+00:00",
+      "regime": "GEO",
+      "update_history": [
+        {
+          "timestamp": "2026-06-18T00:46:19.145291+00:00",
+          "changes": [
+            {
+              "field": "analyst_assessment",
+              "old": null,
+              "new": "Photometric variation consistent with historical pattern of life; satellite has since returned to nominal photometrics.",
+              "type": "added"
+            },
+            {
+              "field": "associated_distance_km",
+              "old": null,
+              "new": 130,
+              "type": "added"
+            },
+            {
+              "field": "associated_satellite_id",
+              "old": null,
+              "new": "62852",
+              "type": "added"
+            },
+            {
+              "field": "associated_satellite_label",
+              "old": null,
+              "new": "SPAINSAT NG1",
+              "type": "added"
+            },
+            {
+              "field": "pai_summary",
+              "old": null,
+              "new": "SY-12 02 is a China satellite that supports military operations.",
+              "type": "added"
+            },
+            {
+              "field": "pol_status",
+              "old": null,
+              "new": "within_pol",
+              "type": "added"
+            },
+            {
+              "field": "regime",
+              "old": "GEO",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "report_title",
+              "old": "Mission Management Board 2_photo.mhtml",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "verification_status",
+              "old": null,
+              "new": "detected",
+              "type": "added"
+            }
+          ],
+          "summary": "7 field(s) added, 2 field(s) removed"
+        }
+      ],
+      "analyst_assessment": "Photometric variation consistent with historical pattern of life; satellite has since returned to nominal photometrics.",
+      "associated_distance_km": 130,
+      "associated_satellite_id": "62852",
+      "associated_satellite_label": "SPAINSAT NG1",
+      "pai_summary": "SY-12 02 is a China satellite that supports military operations.",
+      "pol_status": "within_pol",
+      "verification_status": "detected"
+    },
+    "evt_b72a4c8a": {
+      "type": "maneuver",
+      "satellite_id": "67403",
+      "satellite_label": "SJ-29B",
+      "event_date": "2026-05-30T16:01:00Z",
+      "delta_v": 3.39,
+      "period_change": null,
+      "apogee_change": null,
+      "perigee_change": null,
+      "inclination_change": null,
+      "report_title": "NOTSO_Maneuver_SJ-29B (67403)_GEO_01Jun-1257Z.mhtml",
+      "id": "evt_b72a4c8a",
+      "created_at": "2026-06-01T19:05:36.577439+00:00",
+      "regime": "GEO",
+      "update_history": [
+        {
+          "timestamp": "2026-06-18T00:46:19.159602+00:00",
+          "changes": [
+            {
+              "field": "analyst_assessment",
+              "old": null,
+              "new": "The satellite maneuvered with a delta-v of 3.39 m/s, parking at 73.4 deg E.",
+              "type": "added"
+            },
+            {
+              "field": "pol_status",
+              "old": null,
+              "new": "unknown",
+              "type": "added"
+            },
+            {
+              "field": "regime",
+              "old": "GEO",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "report_title",
+              "old": "NOTSO_Maneuver_SJ-29B (67403)_GEO_01Jun-1257Z.mhtml",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "verification_status",
+              "old": null,
+              "new": "verified",
+              "type": "added"
+            }
+          ],
+          "summary": "3 field(s) added, 2 field(s) removed"
+        }
+      ],
+      "analyst_assessment": "The satellite maneuvered with a delta-v of 3.39 m/s, parking at 73.4 deg E.",
+      "pol_status": "unknown",
+      "verification_status": "verified"
+    },
+    "evt_daa56f0d": {
+      "type": "maneuver",
+      "satellite_id": "65851",
+      "satellite_label": "SHIYAN 30-01",
+      "event_date": "2026-04-09T07:31:00Z",
+      "delta_v": 2.27,
+      "period_change": 1.71,
+      "apogee_change": 0.91,
+      "perigee_change": 1.83,
+      "inclination_change": -0.0,
+      "source_id": "file_29a4194bbcf2283e",
+      "report_title": "Mission Management Board 2.mhtml",
+      "jco_delta_v": 2.27,
+      "jco_period_change": 1.71,
+      "jco_inclination_change": -0.0,
+      "jco_apogee_change": 0.91,
+      "jco_perigee_change": 1.83,
+      "tle_available": false,
+      "maneuver_type": "altitude change",
+      "id": "evt_daa56f0d",
+      "created_at": "2026-06-01T19:18:16.859894+00:00",
+      "regime": "LEO",
+      "update_history": [
+        {
+          "timestamp": "2026-06-18T00:46:19.133938+00:00",
+          "changes": [
+            {
+              "field": "analyst_assessment",
+              "old": null,
+              "new": "These maneuvers do not appear to be station-keeping maneuvers.",
+              "type": "added"
+            },
+            {
+              "field": "jco_apogee_change",
+              "old": 0.91,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_delta_v",
+              "old": 2.27,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_inclination_change",
+              "old": -0.0,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_perigee_change",
+              "old": 1.83,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_period_change",
+              "old": 1.71,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "maneuver_type",
+              "old": "altitude change",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "pai_summary",
+              "old": null,
+              "new": "SHIYAN 30-01 is a Chinese satellite that supports military operations. The mission of SHIYAN30-01 is Earth Observation / Remote Sensing.",
+              "type": "added"
+            },
+            {
+              "field": "pol_status",
+              "old": null,
+              "new": "unknown",
+              "type": "added"
+            },
+            {
+              "field": "regime",
+              "old": "LEO",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "report_title",
+              "old": "Mission Management Board 2.mhtml",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "source_id",
+              "old": "file_29a4194bbcf2283e",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "tle_available",
+              "old": false,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "verification_status",
+              "old": null,
+              "new": "verified",
+              "type": "added"
+            }
+          ],
+          "summary": "4 field(s) added, 10 field(s) removed"
+        }
+      ],
+      "analyst_assessment": "These maneuvers do not appear to be station-keeping maneuvers.",
+      "pai_summary": "SHIYAN 30-01 is a Chinese satellite that supports military operations. The mission of SHIYAN30-01 is Earth Observation / Remote Sensing.",
+      "pol_status": "unknown",
+      "verification_status": "verified"
+    },
+    "evt_7549fd3f": {
+      "type": "maneuver",
+      "satellite_id": "65852",
+      "satellite_label": "SHIYAN 30-02",
+      "event_date": "2026-04-09T01:53:00Z",
+      "delta_v": 0.86,
+      "period_change": 2.02,
+      "apogee_change": 2.3,
+      "perigee_change": 0.95,
+      "inclination_change": 0.0,
+      "source_id": "file_29a4194bbcf2283e",
+      "report_title": "Mission Management Board 2.mhtml",
+      "jco_delta_v": 0.86,
+      "jco_period_change": 2.02,
+      "jco_inclination_change": 0.0,
+      "jco_apogee_change": 2.3,
+      "jco_perigee_change": 0.95,
+      "tle_available": false,
+      "maneuver_type": "altitude change",
+      "id": "evt_7549fd3f",
+      "created_at": "2026-06-01T19:18:16.864331+00:00",
+      "regime": "LEO",
+      "update_history": [
+        {
+          "timestamp": "2026-06-18T00:46:19.137534+00:00",
+          "changes": [
+            {
+              "field": "analyst_assessment",
+              "old": null,
+              "new": "These maneuvers do not appear to be station-keeping maneuvers.",
+              "type": "added"
+            },
+            {
+              "field": "jco_apogee_change",
+              "old": 2.3,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_delta_v",
+              "old": 0.86,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_inclination_change",
+              "old": 0.0,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_perigee_change",
+              "old": 0.95,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_period_change",
+              "old": 2.02,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "maneuver_type",
+              "old": "altitude change",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "pai_summary",
+              "old": null,
+              "new": "SHIYAN 30-02 is a Chinese satellite that supports military operations. The mission of SHIYAN30-02 is Earth Observation / Remote Sensing.",
+              "type": "added"
+            },
+            {
+              "field": "pol_status",
+              "old": null,
+              "new": "unknown",
+              "type": "added"
+            },
+            {
+              "field": "regime",
+              "old": "LEO",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "report_title",
+              "old": "Mission Management Board 2.mhtml",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "source_id",
+              "old": "file_29a4194bbcf2283e",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "tle_available",
+              "old": false,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "verification_status",
+              "old": null,
+              "new": "verified",
+              "type": "added"
+            }
+          ],
+          "summary": "4 field(s) added, 10 field(s) removed"
+        }
+      ],
+      "analyst_assessment": "These maneuvers do not appear to be station-keeping maneuvers.",
+      "pai_summary": "SHIYAN 30-02 is a Chinese satellite that supports military operations. The mission of SHIYAN30-02 is Earth Observation / Remote Sensing.",
+      "pol_status": "unknown",
+      "verification_status": "verified"
+    },
+    "evt_85518700": {
+      "type": "maneuver",
+      "satellite_id": "65852",
+      "satellite_label": "SHIYAN 30-02",
+      "event_date": "2026-04-10T02:00:00Z",
+      "delta_v": 1.04,
+      "period_change": 1.78,
+      "apogee_change": 2.76,
+      "perigee_change": 0.09,
+      "inclination_change": 0.0,
+      "source_id": "file_29a4194bbcf2283e",
+      "report_title": "Mission Management Board 2.mhtml",
+      "jco_delta_v": 1.04,
+      "jco_period_change": 1.78,
+      "jco_inclination_change": 0.0,
+      "jco_apogee_change": 2.76,
+      "jco_perigee_change": 0.09,
+      "tle_available": false,
+      "maneuver_type": "altitude change",
+      "id": "evt_85518700",
+      "created_at": "2026-06-01T19:18:16.868114+00:00",
+      "regime": "LEO",
+      "update_history": [
+        {
+          "timestamp": "2026-06-18T00:46:19.141175+00:00",
+          "changes": [
+            {
+              "field": "analyst_assessment",
+              "old": null,
+              "new": "These maneuvers do not appear to be station-keeping maneuvers.",
+              "type": "added"
+            },
+            {
+              "field": "jco_apogee_change",
+              "old": 2.76,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_delta_v",
+              "old": 1.04,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_inclination_change",
+              "old": 0.0,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_perigee_change",
+              "old": 0.09,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_period_change",
+              "old": 1.78,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "maneuver_type",
+              "old": "altitude change",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "pai_summary",
+              "old": null,
+              "new": "SHIYAN 30-02 is a Chinese satellite that supports military operations. The mission of SHIYAN30-02 is Earth Observation / Remote Sensing.",
+              "type": "added"
+            },
+            {
+              "field": "pol_status",
+              "old": null,
+              "new": "unknown",
+              "type": "added"
+            },
+            {
+              "field": "regime",
+              "old": "LEO",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "report_title",
+              "old": "Mission Management Board 2.mhtml",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "source_id",
+              "old": "file_29a4194bbcf2283e",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "tle_available",
+              "old": false,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "verification_status",
+              "old": null,
+              "new": "verified",
+              "type": "added"
+            }
+          ],
+          "summary": "4 field(s) added, 10 field(s) removed"
+        }
+      ],
+      "analyst_assessment": "These maneuvers do not appear to be station-keeping maneuvers.",
+      "pai_summary": "SHIYAN 30-02 is a Chinese satellite that supports military operations. The mission of SHIYAN30-02 is Earth Observation / Remote Sensing.",
+      "pol_status": "unknown",
+      "verification_status": "verified"
+    },
+    "evt_173ed958": {
+      "type": "maneuver",
+      "satellite_id": "68764",
+      "satellite_label": "COSMOS 2614",
+      "event_date": "2026-05-21T13:58:00Z",
+      "delta_v": 107.05,
+      "period_change": 7.1,
+      "apogee_change": 2.22,
+      "perigee_change": 9.27,
+      "inclination_change": 0.75,
+      "source_id": "file_3b7f6fba7e1a2fd8",
+      "report_title": "NOTSO_Maneuver_COSMOS 2614 (68764)_LEO_22May-1248Z.mhtml",
+      "jco_delta_v": 107.05,
+      "jco_period_change": 7.1,
+      "jco_inclination_change": 0.75,
+      "jco_apogee_change": 2.22,
+      "jco_perigee_change": 9.27,
+      "tle_available": false,
+      "maneuver_type": "plane change",
+      "id": "evt_173ed958",
+      "created_at": "2026-06-01T19:18:48.770586+00:00",
+      "regime": "LEO",
+      "update_history": [
+        {
+          "timestamp": "2026-06-18T00:46:19.155475+00:00",
+          "changes": [
+            {
+              "field": "analyst_assessment",
+              "old": null,
+              "new": "This maneuver does not appear to be a station-keeping maneuver and is not within the historical pattern of life for this object.",
+              "type": "added"
+            },
+            {
+              "field": "jco_apogee_change",
+              "old": 2.22,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_delta_v",
+              "old": 107.05,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_inclination_change",
+              "old": 0.75,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_perigee_change",
+              "old": 9.27,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_period_change",
+              "old": 7.1,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "maneuver_type",
+              "old": "plane change",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "pai_summary",
+              "old": null,
+              "new": "COSMOS 2614 is a Russian satellite that supports military operations. The mission of COSMOS 2614 is currently unknown.",
+              "type": "added"
+            },
+            {
+              "field": "pol_status",
+              "old": null,
+              "new": "outside_pol",
+              "type": "added"
+            },
+            {
+              "field": "regime",
+              "old": "LEO",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "report_title",
+              "old": "NOTSO_Maneuver_COSMOS 2614 (68764)_LEO_22May-1248Z.mhtml",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "source_id",
+              "old": "file_3b7f6fba7e1a2fd8",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "tle_available",
+              "old": false,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "verification_status",
+              "old": null,
+              "new": "detected",
+              "type": "added"
+            }
+          ],
+          "summary": "4 field(s) added, 10 field(s) removed"
+        }
+      ],
+      "analyst_assessment": "This maneuver does not appear to be a station-keeping maneuver and is not within the historical pattern of life for this object.",
+      "pai_summary": "COSMOS 2614 is a Russian satellite that supports military operations. The mission of COSMOS 2614 is currently unknown.",
+      "pol_status": "outside_pol",
+      "verification_status": "detected"
+    },
+    "evt_259ea453": {
+      "type": "photometric_change",
+      "satellite_id": "64467",
+      "satellite_label": "COSMOS 2589",
+      "event_date": "2026-06-01T10:08:00Z",
+      "magnitude_change_min": 1.0,
+      "magnitude_change_max": 1.0,
+      "magnitude_direction": "brighter",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "return_to_pol",
+      "analyst_assessment": "Photometric variation is consistent with the historical pattern of life for this object in the past few weeks.",
+      "associated_satellite_id": "49062",
+      "associated_satellite_label": "Chinasat 2E",
+      "associated_distance_km": 35,
+      "pai_summary": "Cosmos 2589 is a Russian satellite that supports military operations. Cosmos 2589 is an Inspection satellite suspected to have 'satellite killing' capabilities.",
+      "source_id": "file_2cc39367308716a1",
+      "report_title": "NOTSO_Photometric Change_Cosmos 2589 (64467) _02Jun-1219Z.mhtml",
+      "id": "evt_259ea453",
+      "created_at": "2026-06-02T14:51:53.033217+00:00",
+      "regime": "GEO"
+    },
+    "evt_6d484b89": {
+      "type": "maneuver",
+      "satellite_id": "47613",
+      "satellite_label": "TJS-6",
+      "event_date": "2026-06-01T01:10:00Z",
+      "delta_v": 15.35,
+      "period_change": 4.13,
+      "apogee_change": 12.97,
+      "perigee_change": -10.27,
+      "inclination_change": -0.2832,
+      "verification_status": "verified",
+      "pol_status": "within_pol",
+      "analyst_assessment": "This maneuver appears to be a station-keeping maneuver and occurs annually and is within the historical pattern of life for this object.",
+      "pai_summary": "TJS-6 is the third satellite in the Huoyan infrared missile early warning program. Believed to be a military experimental communications under China's Ballistic Missile Defense Organization.",
+      "source_id": "file_c6c30c4f8d10c493",
+      "report_title": "TJS-6 (47613)GEO_01Jun-1611Z.mhtml",
+      "jco_delta_v": 15.35,
+      "jco_period_change": 4.13,
+      "jco_inclination_change": -0.2832,
+      "jco_apogee_change": 12.97,
+      "jco_perigee_change": -10.27,
+      "tle_available": false,
+      "maneuver_type": "plane change",
+      "id": "evt_6d484b89",
+      "created_at": "2026-06-01T20:39:35.551117+00:00",
+      "regime": "GEO"
+    },
+    "evt_08ae4df7": {
+      "type": "photometric_change",
+      "satellite_id": "64467",
+      "satellite_label": "COSMOS 2589",
+      "event_date": "2026-05-28T18:40:00Z",
+      "magnitude_change_min": 1.0,
+      "magnitude_change_max": 1.0,
+      "magnitude_direction": "dimmer",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "return_to_pol",
+      "analyst_assessment": "The change is a return to POL and occurred on 28MAY (JDay 148) between solar phase angles of 15 deg to 22 deg appearing 1 Vismag dimmer.",
+      "associated_satellite_id": "51281",
+      "associated_satellite_label": "USA 325",
+      "associated_distance_km": null,
+      "pai_summary": "Cosmos 2589 is a Russian Military sat based on the 14F166A bus. Suspected to be a superGEO based ELINT or observer sat. Other suggestions include a GEO belt based ELINT/observer, target dummy for Obj C or even ASAT capabilities.",
+      "source_id": "file_da0b447ecba74e8c",
+      "report_title": "NOTSO_ Photometry change_COSMOS 2589 (64467)_29May-1358Z.mhtml",
+      "id": "evt_08ae4df7",
+      "created_at": "2026-06-01T20:44:47.764963+00:00",
+      "regime": "GEO"
+    },
+    "evt_f2a37f3b": {
+      "type": "maneuver",
+      "satellite_id": "69235",
+      "satellite_label": "TJS-24",
+      "event_date": "2026-06-01T11:24:00Z",
+      "delta_v": 96.68,
+      "period_change": 7094,
+      "apogee_change": -10.74,
+      "perigee_change": 4701.76,
+      "inclination_change": -0.5126,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "The satellite maneuvered from ~91 deg E longitude with a delta-v of 96.68 m/s, resulting in a period decrease of 7094 sec, raising the perigee by 4701 km.",
+      "pai_summary": "TJS-24 is a Chinese satellite that supports military operations. The mission of TJS-24 is unknown.",
+      "source_id": "file_c70948d2d77dd120",
+      "report_title": "NOTSO_Launch_LM-7A (69236)_TJS-24 (69235)_GEO _02Jun-1228Z.mhtml",
+      "jco_delta_v": 96.68,
+      "jco_period_change": 7094,
+      "jco_inclination_change": -0.5126,
+      "jco_apogee_change": -10.74,
+      "jco_perigee_change": 4701.76,
+      "tle_available": false,
+      "maneuver_type": "plane change",
+      "id": "evt_f2a37f3b",
+      "created_at": "2026-06-02T12:57:48.604541+00:00",
+      "regime": "GEO"
+    },
+    "evt_216ce3e1": {
       "type": "launch",
-      "satellite_id": null,
+      "satellite_id": "69235",
       "notos_id": null,
-      "satellite_label": null,
-      "event_date": "2026-05-27T01:50:00Z",
-      "launch_time_start": "2026-05-27T01:50:00Z",
-      "launch_time_end": "2026-05-27T02:35:00Z",
-      "launch_site": "Near Korla, Xinjiang",
-      "launch_site_lat": 38.417,
-      "launch_site_lon": 87.767,
-      "launch_vehicle": null,
-      "orbital_inclination": null,
-      "orbital_period": null,
+      "satellite_label": "TJS-24",
+      "event_date": "2026-05-26T16:16:00Z",
+      "launch_site": "Wenchang, China (LC-201)",
+      "launch_vehicle": "LM-7A",
+      "orbital_inclination": 19.5443,
+      "orbital_period": 631.9,
       "notam_ids": [
-        "A1799/26"
+        "B2228/26",
+        "B2219/26",
+        "B2223/26"
       ],
       "trajectory_zones": [
         {
-          "notam_id": "A1799/26",
+          "notam_id": "B2228/26",
           "shape": "polygon",
           "vertices": [
             [
-              38.7931,
-              87.5503
+              19.3333,
+              123.4333
             ],
             [
-              38.7761,
-              88.0806
+              19.2333,
+              124.4333
             ],
             [
-              38.0417,
-              88.0206
+              18.7,
+              124.3833
             ],
             [
-              38.0758,
-              87.4817
+              18.7833,
+              123.4
             ]
           ],
-          "active_start": "2026-05-27T01:50:00Z",
-          "active_end": "2026-05-27T02:35:00Z"
+          "active_start": "2026-05-26T16:10:00Z",
+          "active_end": "2026-05-26T17:12:00Z"
+        },
+        {
+          "notam_id": "B2219/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              19.7,
+              118.7
+            ],
+            [
+              19.6167,
+              120.15
+            ],
+            [
+              19.0,
+              120.1
+            ],
+            [
+              19.0667,
+              118.6667
+            ]
+          ],
+          "active_start": "2026-05-26T16:08:00Z",
+          "active_end": "2026-05-26T17:08:00Z"
+        },
+        {
+          "notam_id": "B2223/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              19.3333,
+              123.4333
+            ],
+            [
+              19.2333,
+              124.4333
+            ],
+            [
+              18.7,
+              124.3833
+            ],
+            [
+              18.7833,
+              123.4
+            ]
+          ],
+          "active_start": "2026-05-26T16:10:00Z",
+          "active_end": "2026-05-27T17:12:00Z"
         }
       ],
-      "report_title": "NOTAM A1799/26",
-      "id": "evt_c9987970",
-      "created_at": "2026-05-25T17:39:58.109307+00:00"
+      "analyst_assessment": "Successful launch into planned GEO orbit.",
+      "pai_summary": "TJS-24 is a Chinese military satellite developed by SAST, mainly used to conduct verification of multi-band, high-speed satellite communication technologies, suggesting a SIGINT role.",
+      "source_id": "file_39ced57a3af2afb0",
+      "report_title": "NOTSO_Launch_ TJS-24 (69235)_ GEO _01Jun-2009Z.mhtml",
+      "id": "evt_216ce3e1",
+      "created_at": "2026-06-02T13:52:28.943873+00:00",
+      "regime": "GEO"
+    },
+    "evt_c39e8879": {
+      "type": "maneuver",
+      "satellite_id": "94771",
+      "satellite_label": "TJS-24 candidate",
+      "event_date": "2026-06-01T11:24:00Z",
+      "delta_v": 96.68,
+      "period_change": -7094.21,
+      "apogee_change": -10.74,
+      "perigee_change": 4701.76,
+      "inclination_change": -0.5126,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "The satellite maneuvered from ~91 deg E longitude, resulting in a period decrease and raising the perigee.",
+      "pai_summary": "TJS-24 is a Chinese satellite that supports military operations.",
+      "source_id": "file_39ced57a3af2afb0",
+      "report_title": "NOTSO_Launch_ TJS-24 (69235)_ GEO _01Jun-2009Z.mhtml",
+      "jco_delta_v": 96.68,
+      "jco_period_change": -7094.21,
+      "jco_inclination_change": -0.5126,
+      "jco_apogee_change": -10.74,
+      "jco_perigee_change": 4701.76,
+      "tle_available": false,
+      "maneuver_type": "plane change",
+      "id": "evt_c39e8879",
+      "created_at": "2026-06-02T13:52:51.783095+00:00"
+    },
+    "evt_72d57bd0": {
+      "type": "maneuver",
+      "satellite_id": "67302",
+      "satellite_label": "SJ-29A",
+      "event_date": "2026-05-31T21:48:00Z",
+      "delta_v": 0.59,
+      "period_change": -51.97,
+      "apogee_change": -8.05,
+      "perigee_change": -25.85,
+      "inclination_change": -0.0002,
+      "verification_status": "verified",
+      "pol_status": "within_pol",
+      "analyst_assessment": "SJ-29A maneuvered from 73.29 deg E Longitude with a delta-v of 0.59 m/s, resulting in a period decrease of 52 secs and SJ-29A parking at 73.29 deg E Longitude.",
+      "pai_summary": "SHIJIAN-29 A is a Chinese satellite that supports military operations. The mission is described as demonstrations of new technologies for spatial target detection.",
+      "source_id": "file_0d8fae2aef65d10a",
+      "report_title": "NOTSO_SJ-29A Maneuver & SY-12 01 Photometry.mhtml",
+      "jco_delta_v": 0.59,
+      "jco_period_change": -51.97,
+      "jco_inclination_change": -0.0002,
+      "jco_apogee_change": -8.05,
+      "jco_perigee_change": -25.85,
+      "tle_available": false,
+      "maneuver_type": "altitude change",
+      "id": "evt_72d57bd0",
+      "created_at": "2026-06-02T14:48:47.537908+00:00",
+      "regime": "GEO"
+    },
+    "evt_8e2a9b8b": {
+      "type": "maneuver",
+      "satellite_id": "67302",
+      "satellite_label": "SJ-29A",
+      "event_date": "2026-05-28T19:57:00Z",
+      "delta_v": 0.75,
+      "period_change": 62.49,
+      "apogee_change": 11.32,
+      "perigee_change": 29.44,
+      "inclination_change": 0.0,
+      "verification_status": "detected",
+      "pol_status": "unknown",
+      "analyst_assessment": "The satellite maneuvered from 73.93deg E longitude with a delta-v of 0.75 m/s, resulting in the initiation of westward drift.",
+      "pai_summary": "SHIJIAN-29 A is a Chinese satellite that supports military operations. It is described as a demonstration of new technologies for spatial target detection.",
+      "source_id": "file_0d8fae2aef65d10a",
+      "report_title": "NOTSO_SJ-29A Maneuver & SY-12 01 Photometry.mhtml",
+      "jco_delta_v": 0.75,
+      "jco_period_change": 62.49,
+      "jco_inclination_change": 0.0,
+      "jco_apogee_change": 11.32,
+      "jco_perigee_change": 29.44,
+      "tle_available": false,
+      "maneuver_type": "altitude change",
+      "id": "evt_8e2a9b8b",
+      "created_at": "2026-06-02T14:48:47.542972+00:00",
+      "regime": "GEO",
+      "update_history": [
+        {
+          "timestamp": "2026-06-18T00:46:19.171754+00:00",
+          "changes": [
+            {
+              "field": "jco_apogee_change",
+              "old": 11.32,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_delta_v",
+              "old": 0.75,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_inclination_change",
+              "old": 0.0,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_perigee_change",
+              "old": 29.44,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "jco_period_change",
+              "old": 62.49,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "maneuver_type",
+              "old": "altitude change",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "pai_summary",
+              "old": "SHIJIAN-29 A is a Chinese satellite that supports military operations. The mission is described as demonstrations of new technologies for spatial target detection.",
+              "new": "SHIJIAN-29 A is a Chinese satellite that supports military operations. It is described as a demonstration of new technologies for spatial target detection.",
+              "type": "updated"
+            },
+            {
+              "field": "regime",
+              "old": "GEO",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "report_title",
+              "old": "NOTSO_SJ-29A Maneuver & SY-12 01 Photometry.mhtml",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "source_id",
+              "old": "file_0d8fae2aef65d10a",
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "tle_available",
+              "old": false,
+              "new": null,
+              "type": "removed"
+            },
+            {
+              "field": "verification_status",
+              "old": "possible",
+              "new": "detected",
+              "type": "updated"
+            }
+          ],
+          "summary": "2 field(s) updated, 10 field(s) removed"
+        }
+      ]
+    },
+    "evt_06dd4e6f": {
+      "type": "photometric_change",
+      "satellite_id": "50321",
+      "satellite_label": "SY-12 01",
+      "event_date": "2026-05-31T16:24:00Z",
+      "magnitude_change_min": 0.6,
+      "magnitude_change_max": 0.6,
+      "magnitude_direction": "dimmer",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "unknown",
+      "analyst_assessment": "The photometric change for SY-12 01 occurred on 31May from -35 to -10 SEPA and was 0.6 VisMag dimmer.",
+      "associated_satellite_id": "67302",
+      "associated_satellite_label": "SJ-29A",
+      "associated_distance_km": 500,
+      "pai_summary": "Shiyan 12 01 is a Chinese satellite that supports military operations. Officially the mission of the satellite is for 'space environment exploration and related technology tests' however, it is suspected that it is actually a military test satellite.",
+      "source_id": "file_0d8fae2aef65d10a",
+      "report_title": "NOTSO_SJ-29A Maneuver & SY-12 01 Photometry.mhtml",
+      "id": "evt_06dd4e6f",
+      "created_at": "2026-06-02T14:48:26.256942+00:00",
+      "regime": "GEO"
+    },
+    "evt_08a81a19": {
+      "type": "photometric_change",
+      "satellite_id": "67302",
+      "satellite_label": "SJ-29A",
+      "event_date": "2026-05-28T18:32:00Z",
+      "magnitude_change_min": 1.0,
+      "magnitude_change_max": 2.0,
+      "magnitude_direction": "brighter",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "unknown",
+      "analyst_assessment": "The initial change occurred between 1832z and 1900z on 28MAY, between the solar phase angles of -13.78 deg and -6.45 deg SEPA and appeared to be 1 visual magnitude brighter.",
+      "associated_satellite_id": "51280",
+      "associated_satellite_label": "USA 324",
+      "associated_distance_km": 400,
+      "pai_summary": "SHIJIAN-29 A is a Chinese satellite that supports military operations. The mission is described as demonstrations of new technologies for spatial target detection.",
+      "source_id": "file_0d8fae2aef65d10a",
+      "report_title": "NOTSO_SJ-29A Maneuver & SY-12 01 Photometry.mhtml",
+      "id": "evt_08a81a19",
+      "created_at": "2026-06-02T14:48:47.546553+00:00",
+      "regime": "GEO"
+    },
+    "evt_458f4ba8": {
+      "type": "maneuver",
+      "satellite_id": "50322",
+      "satellite_label": "SY-12 02",
+      "event_date": "2026-05-15T01:34:00Z",
+      "delta_v": 0.12,
+      "period_change": -9.47,
+      "apogee_change": 0.13,
+      "perigee_change": -6.31,
+      "inclination_change": 0.0004,
+      "verification_status": "verified",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Avoidance maneuver within pattern of life for SY 12-02 as they usually do maneuvers to push close approaches to be outside 30km.",
+      "pai_summary": "SY-12 02 is a Chinese satellite that supports military operations. The mission of SY-12 02 is officially space environment exploration and related technology tests. However, it is suspected that it is actually a military test satellite with possible military SSA (Space Situational Awareness) application in GEO.",
+      "source_id": "file_233cb41a1ed04e51",
+      "report_title": "NOTSO_Maneuver_SY-12 02 (50322)_GEO_15May-2003Z.mhtml",
+      "jco_delta_v": 0.12,
+      "jco_period_change": -9.47,
+      "jco_inclination_change": 0.0004,
+      "jco_apogee_change": 0.13,
+      "jco_perigee_change": -6.31,
+      "tle_available": false,
+      "maneuver_type": "altitude change",
+      "id": "evt_458f4ba8",
+      "created_at": "2026-06-02T15:42:25.341220+00:00",
+      "regime": "GEO"
+    },
+    "evt_4418c067": {
+      "type": "maneuver",
+      "satellite_id": "55841",
+      "satellite_label": "LUCH (OLYMP) 2",
+      "event_date": "2026-06-01T20:57:00Z",
+      "delta_v": null,
+      "period_change": null,
+      "apogee_change": null,
+      "perigee_change": null,
+      "inclination_change": null,
+      "verification_status": "detected",
+      "pol_status": "unknown",
+      "analyst_assessment": "The last maneuver by Luch Olymp 2 maintained a slight drift towards Intelsat 39 instead of starting to separate again.",
+      "pai_summary": "LUCH (OLYMP) 2 is a Russian satellite that supports military operations. The mission is to conduct Electronic Intelligence Operations to spy on communications satellites.",
+      "source_id": "file_4c79e6b6e98536d4",
+      "report_title": "NOTSO_RPO_Luch Olymp 2 (55841) vs Intelsat 39 (44476)_GEO_02Jun-1933Z.mhtml",
+      "id": "evt_4418c067",
+      "created_at": "2026-06-03T15:31:41.742847+00:00",
+      "regime": "GEO"
+    },
+    "evt_6d647905": {
+      "type": "maneuver",
+      "satellite_id": "94771",
+      "satellite_label": "TJS-24 Candidate",
+      "event_date": "2026-06-03T03:32:00Z",
+      "delta_v": null,
+      "period_change": null,
+      "apogee_change": null,
+      "perigee_change": null,
+      "inclination_change": null,
+      "verification_status": "possible",
+      "pol_status": "unknown",
+      "analyst_assessment": "The maneuver appears to decrease the drift rate & period.",
+      "pai_summary": "TJS-24 is a Chinese satellite that supports military operations.",
+      "source_id": "file_3c5196cd7c8f17f9",
+      "report_title": "NOTSO_Launch_LM-7A (69236)_TJS-24 (69235)_ GEO _03Jun-1344Z.mhtml",
+      "jco_delta_v": null,
+      "jco_period_change": null,
+      "jco_inclination_change": null,
+      "jco_apogee_change": null,
+      "jco_perigee_change": null,
+      "tle_available": false,
+      "maneuver_type": "unknown",
+      "id": "evt_6d647905",
+      "created_at": "2026-06-03T15:33:55.540133+00:00"
+    },
+    "evt_7dcc080c": {
+      "type": "maneuver",
+      "satellite_id": "94771",
+      "satellite_label": "TJS-24 Candidate",
+      "event_date": "2026-06-02T11:58:00Z",
+      "delta_v": 1.01,
+      "period_change": 100.36,
+      "apogee_change": 5.42,
+      "perigee_change": 60.07,
+      "inclination_change": -0.0003,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "The satellite maneuvered from 90.30 degrees E longitude with a delta-v of 1.01 m/s, resulting in a reduction of eastward drift rate to near-stationary at 0.0018deg/day.",
+      "pai_summary": "TJS-24 is a Chinese satellite that supports military operations.",
+      "source_id": "file_3c5196cd7c8f17f9",
+      "report_title": "NOTSO_Launch_LM-7A (69236)_TJS-24 (69235)_ GEO _03Jun-1344Z.mhtml",
+      "jco_delta_v": 1.01,
+      "jco_period_change": 100.36,
+      "jco_inclination_change": -0.0003,
+      "jco_apogee_change": 5.42,
+      "jco_perigee_change": 60.07,
+      "tle_available": false,
+      "maneuver_type": "altitude change",
+      "id": "evt_7dcc080c",
+      "created_at": "2026-06-03T15:33:55.543466+00:00"
+    },
+    "evt_844aed4d": {
+      "type": "maneuver",
+      "satellite_id": "62485",
+      "satellite_label": "SJ-25",
+      "event_date": "2026-06-02T09:07:00Z",
+      "delta_v": 0.22,
+      "period_change": -21.59,
+      "apogee_change": -8.89,
+      "perigee_change": -5.2,
+      "inclination_change": null,
+      "verification_status": "detected",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Pattern of life station keeping maneuver.",
+      "pai_summary": "SJ-25 is a Chinese satellite that supports military operations. The mission of SJ-25 is satellite fuel replenishment and life extension service technologies.",
+      "report_title": "NOTSO_Photometric Change and Maneuver_SJ-25 (62485)_GEO_02Jun-1645Z.mhtml",
+      "id": "evt_844aed4d",
+      "created_at": "2026-06-03T15:47:44.460098+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-03T15:47:56.252805+00:00",
+          "changes": [
+            {
+              "field": "jco_apogee_change",
+              "old": null,
+              "new": -8.89,
+              "type": "added"
+            },
+            {
+              "field": "jco_delta_v",
+              "old": null,
+              "new": 0.22,
+              "type": "added"
+            },
+            {
+              "field": "jco_perigee_change",
+              "old": null,
+              "new": -5.2,
+              "type": "added"
+            },
+            {
+              "field": "jco_period_change",
+              "old": null,
+              "new": -21.59,
+              "type": "added"
+            },
+            {
+              "field": "maneuver_type",
+              "old": null,
+              "new": "altitude change",
+              "type": "added"
+            },
+            {
+              "field": "source_id",
+              "old": null,
+              "new": "file_df8a9d11acd63854",
+              "type": "added"
+            },
+            {
+              "field": "tle_available",
+              "old": null,
+              "new": false,
+              "type": "added"
+            }
+          ],
+          "summary": "7 field(s) added"
+        }
+      ],
+      "jco_apogee_change": -8.89,
+      "jco_delta_v": 0.22,
+      "jco_perigee_change": -5.2,
+      "jco_period_change": -21.59,
+      "maneuver_type": "altitude change",
+      "source_id": "file_df8a9d11acd63854",
+      "tle_available": false,
+      "regime": "GEO"
+    },
+    "evt_d306d4ad": {
+      "type": "photometric_change",
+      "satellite_id": "62485",
+      "satellite_label": "SJ-25",
+      "event_date": "2026-06-02T08:11:00Z",
+      "magnitude_change_min": 0.75,
+      "magnitude_change_max": 0.75,
+      "magnitude_direction": "brighter",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Photometric variation consistent with historical pattern of life for potential neighborhood threats/activity.",
+      "associated_satellite_id": "36744",
+      "associated_satellite_label": "COMS 1",
+      "associated_distance_km": 1100,
+      "pai_summary": "SJ-25 is a Chinese satellite that supports military operations. The mission of SJ-25 is satellite fuel replenishment and life extension service technologies.",
+      "report_title": "NOTSO_Photometric Change and Maneuver_SJ-25 (62485)_GEO_02Jun-1645Z.mhtml",
+      "id": "evt_d306d4ad",
+      "created_at": "2026-06-03T15:47:44.465829+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-03T15:47:56.258258+00:00",
+          "changes": [
+            {
+              "field": "source_id",
+              "old": null,
+              "new": "file_df8a9d11acd63854",
+              "type": "added"
+            }
+          ],
+          "summary": "1 field(s) added"
+        }
+      ],
+      "source_id": "file_df8a9d11acd63854",
+      "regime": "GEO"
+    },
+    "evt_86686ab4": {
+      "type": "maneuver",
+      "satellite_id": "47613",
+      "satellite_label": "TJS-6",
+      "event_date": "2026-06-03T01:13:00Z",
+      "delta_v": 15.19,
+      "period_change": 2.18,
+      "apogee_change": 24.82,
+      "perigee_change": -23.39,
+      "inclination_change": 0.25,
+      "verification_status": "verified",
+      "pol_status": "within_pol",
+      "analyst_assessment": "This maneuver appears to be a RAAN flip station-keeping maneuver and is within the historical pattern of life for this object.",
+      "pai_summary": "TJS-6 is a Chinese satellite that supports military operations. The mission of TJS-6 is officially described by China as a Communications Engineering Test Satellite, but it is actually a Huoyan-1 series infrared missile launch warning satellite.",
+      "source_id": "file_8058cda4a6f59d62",
+      "report_title": "NOTSO_Maneuver _ TJS-6 (47613) _ GEO_03Jun-1534Z.mhtml",
+      "id": "evt_86686ab4",
+      "created_at": "2026-06-03T16:05:36.149008+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-03T16:05:51.278012+00:00",
+          "changes": [
+            {
+              "field": "discrepancy_flag",
+              "old": null,
+              "new": true,
+              "type": "added"
+            },
+            {
+              "field": "discrepancy_pct",
+              "old": null,
+              "new": 1.0,
+              "type": "added"
+            },
+            {
+              "field": "jco_apogee_change",
+              "old": null,
+              "new": 24.82,
+              "type": "added"
+            },
+            {
+              "field": "jco_delta_v",
+              "old": null,
+              "new": 15.19,
+              "type": "added"
+            },
+            {
+              "field": "jco_inclination_change",
+              "old": null,
+              "new": 0.25,
+              "type": "added"
+            },
+            {
+              "field": "jco_perigee_change",
+              "old": null,
+              "new": -23.39,
+              "type": "added"
+            },
+            {
+              "field": "jco_period_change",
+              "old": null,
+              "new": 2.18,
+              "type": "added"
+            },
+            {
+              "field": "maneuver_type",
+              "old": null,
+              "new": "plane change",
+              "type": "added"
+            },
+            {
+              "field": "tle_available",
+              "old": null,
+              "new": true,
+              "type": "added"
+            },
+            {
+              "field": "tle_delta_v_est",
+              "old": null,
+              "new": 0.004,
+              "type": "added"
+            },
+            {
+              "field": "tle_incl_change",
+              "old": null,
+              "new": 0.0027,
+              "type": "added"
+            },
+            {
+              "field": "tle_period_change",
+              "old": null,
+              "new": -0.0059,
+              "type": "added"
+            },
+            {
+              "field": "tle_post_period",
+              "old": null,
+              "new": 1436.0876,
+              "type": "added"
+            },
+            {
+              "field": "tle_pre_period",
+              "old": null,
+              "new": 1436.0935,
+              "type": "added"
+            }
+          ],
+          "summary": "14 field(s) added"
+        }
+      ],
+      "discrepancy_flag": true,
+      "discrepancy_pct": 1.0,
+      "jco_apogee_change": 24.82,
+      "jco_delta_v": 15.19,
+      "jco_inclination_change": 0.25,
+      "jco_perigee_change": -23.39,
+      "jco_period_change": 2.18,
+      "maneuver_type": "plane change",
+      "tle_available": true,
+      "tle_delta_v_est": 0.004,
+      "tle_incl_change": 0.0027,
+      "tle_period_change": -0.0059,
+      "tle_post_period": 1436.0876,
+      "tle_pre_period": 1436.0935,
+      "regime": "GEO"
+    },
+    "evt_de73bf8c": {
+      "type": "maneuver",
+      "satellite_id": "47613",
+      "satellite_label": "TJS-6",
+      "event_date": "2026-06-02T01:07:00Z",
+      "delta_v": 15.36,
+      "period_change": 2.63,
+      "apogee_change": 23.94,
+      "perigee_change": -22.22,
+      "inclination_change": -0.244,
+      "verification_status": "verified",
+      "pol_status": "within_pol",
+      "analyst_assessment": "This maneuver appears to be a RAAN flip station-keeping maneuver and is within the historical pattern of life for this object.",
+      "pai_summary": "TJS-6 is a Chinese satellite that supports military operations. The mission of TJS-6 is officially described by China as a Communications Engineering Test Satellite, but it is actually a Huoyan-1 series infrared missile launch warning satellite.",
+      "source_id": "file_8058cda4a6f59d62",
+      "report_title": "NOTSO_Maneuver _ TJS-6 (47613) _ GEO_03Jun-1534Z.mhtml",
+      "id": "evt_de73bf8c",
+      "created_at": "2026-06-03T16:05:36.151296+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-03T16:05:51.288203+00:00",
+          "changes": [
+            {
+              "field": "jco_apogee_change",
+              "old": null,
+              "new": 23.94,
+              "type": "added"
+            },
+            {
+              "field": "jco_delta_v",
+              "old": null,
+              "new": 15.36,
+              "type": "added"
+            },
+            {
+              "field": "jco_inclination_change",
+              "old": null,
+              "new": -0.244,
+              "type": "added"
+            },
+            {
+              "field": "jco_perigee_change",
+              "old": null,
+              "new": -22.22,
+              "type": "added"
+            },
+            {
+              "field": "jco_period_change",
+              "old": null,
+              "new": 2.63,
+              "type": "added"
+            },
+            {
+              "field": "maneuver_type",
+              "old": null,
+              "new": "plane change",
+              "type": "added"
+            },
+            {
+              "field": "tle_available",
+              "old": null,
+              "new": true,
+              "type": "added"
+            },
+            {
+              "field": "tle_delta_v_est",
+              "old": null,
+              "new": 0.0,
+              "type": "added"
+            },
+            {
+              "field": "tle_incl_change",
+              "old": null,
+              "new": 0.0,
+              "type": "added"
+            },
+            {
+              "field": "tle_period_change",
+              "old": null,
+              "new": 0.0,
+              "type": "added"
+            },
+            {
+              "field": "tle_post_period",
+              "old": null,
+              "new": 1436.0935,
+              "type": "added"
+            },
+            {
+              "field": "tle_pre_period",
+              "old": null,
+              "new": 1436.0935,
+              "type": "added"
+            }
+          ],
+          "summary": "12 field(s) added"
+        }
+      ],
+      "jco_apogee_change": 23.94,
+      "jco_delta_v": 15.36,
+      "jco_inclination_change": -0.244,
+      "jco_perigee_change": -22.22,
+      "jco_period_change": 2.63,
+      "maneuver_type": "plane change",
+      "tle_available": true,
+      "tle_delta_v_est": 0.0,
+      "tle_incl_change": 0.0,
+      "tle_period_change": 0.0,
+      "tle_post_period": 1436.0935,
+      "tle_pre_period": 1436.0935,
+      "regime": "GEO"
+    },
+    "evt_6523b269": {
+      "type": "photometric_change",
+      "satellite_id": "64467",
+      "satellite_label": "COSMOS 2589",
+      "event_date": "2026-06-03T12:30:00Z",
+      "magnitude_change_min": 1.0,
+      "magnitude_change_max": 1.0,
+      "magnitude_direction": "dimmer",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Photometric variation is consistent with the historical pattern of life for this object.",
+      "associated_satellite_id": "49062",
+      "associated_satellite_label": "CHINASAT 2E",
+      "associated_distance_km": 46.0,
+      "pai_summary": "COSMOS 2589 is a Russian satellite that supports military operations. The mission of COSMOS 2589 is suspected to be servicing/inspection and RPO activity, with potential counterspace capabilities.",
+      "report_title": "NOTSO_Photometric Change _ COSMOS 2589 (64467)_03Jun-1423Z.mhtml",
+      "id": "evt_6523b269",
+      "created_at": "2026-06-03T16:39:55.434755+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-03T16:40:24.449578+00:00",
+          "changes": [
+            {
+              "field": "source_id",
+              "old": null,
+              "new": "file_941576bce21682e4",
+              "type": "added"
+            }
+          ],
+          "summary": "1 field(s) added"
+        }
+      ],
+      "source_id": "file_941576bce21682e4",
+      "regime": "GEO"
+    },
+    "evt_7eecb9d0": {
+      "type": "photometric_change",
+      "satellite_id": "64467",
+      "satellite_label": "COSMOS 2589",
+      "event_date": "2026-06-02T18:33:00Z",
+      "magnitude_change_min": 2.0,
+      "magnitude_change_max": 2.0,
+      "magnitude_direction": "brighter",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Photometric variation is consistent with the historical pattern of life for this object.",
+      "associated_satellite_id": "51281",
+      "associated_satellite_label": "USA 325",
+      "associated_distance_km": 16.19,
+      "pai_summary": "COSMOS 2589 is a Russian satellite that supports military operations. The mission of COSMOS 2589 is suspected to be servicing/inspection and RPO activity, with potential counterspace capabilities.",
+      "report_title": "NOTSO_Photometric Change _ COSMOS 2589 (64467)_03Jun-1423Z.mhtml",
+      "id": "evt_7eecb9d0",
+      "created_at": "2026-06-03T16:39:55.438138+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-03T16:40:24.454008+00:00",
+          "changes": [
+            {
+              "field": "source_id",
+              "old": null,
+              "new": "file_941576bce21682e4",
+              "type": "added"
+            }
+          ],
+          "summary": "1 field(s) added"
+        }
+      ],
+      "source_id": "file_941576bce21682e4",
+      "regime": "GEO"
+    },
+    "evt_a43d1f98": {
+      "type": "launch",
+      "satellite_id": "94327",
+      "notos_id": "94328",
+      "satellite_label": "Xingwang Jishu Shiyan 09A-C",
+      "event_date": "2026-04-24T06:35:00Z",
+      "launch_site": "Xichang Satellite Launch Center",
+      "launch_vehicle": "LM-2D",
+      "orbital_inclination": 51.6761,
+      "orbital_period": 96.6,
+      "notam_ids": [],
+      "trajectory_zones": [],
+      "analyst_assessment": null,
+      "pai_summary": "These satellite internet technology test satellites will primarily be used for testing and verifying technologies such as direct broadband connection to satellite for mobile phones and the integration of space and ground networks.",
+      "regime": "LEO",
+      "id": "evt_a43d1f98",
+      "created_at": "2026-06-18T00:46:19.097247+00:00"
+    },
+    "evt_c7b405a8": {
+      "type": "launch",
+      "satellite_id": null,
+      "notos_id": "94486",
+      "satellite_label": "Qianfan Digui Group 10A-R",
+      "event_date": "2026-05-17T14:43:00Z",
+      "launch_site": "Hainan, China",
+      "launch_vehicle": "LM-8",
+      "orbital_inclination": 98.1931,
+      "orbital_period": 98.8,
+      "notam_ids": [
+        "A1733/26",
+        "A1379/26"
+      ],
+      "trajectory_zones": [
+        {
+          "notam_id": "A1733/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              1.5833,
+              107.45
+            ],
+            [
+              2.4833,
+              107.6
+            ],
+            [
+              2.3667,
+              108.3167
+            ],
+            [
+              1.4667,
+              108.1667
+            ],
+            [
+              1.5833,
+              107.45
+            ]
+          ],
+          "active_start": "2026-05-17T14:35:00Z",
+          "active_end": "2026-05-17T15:08:00Z"
+        },
+        {
+          "notam_id": "A1379/26",
+          "shape": "polygon",
+          "vertices": [
+            [
+              10.4833,
+              109.3833
+            ],
+            [
+              11.3833,
+              109.5167
+            ],
+            [
+              11.3333,
+              109.8833
+            ],
+            [
+              10.2667,
+              109.7667
+            ]
+          ],
+          "active_start": "2026-05-17T14:34:00Z",
+          "active_end": "2026-05-17T14:57:00Z"
+        }
+      ],
+      "analyst_assessment": "Successful launch into planned SSO orbit.",
+      "pai_summary": "The Qianfan Diqui Group is for commercial purposes and is China's LEO internet constellation project.",
+      "regime": "LEO",
+      "id": "evt_c7b405a8",
+      "created_at": "2026-06-18T00:46:19.150101+00:00"
+    },
+    "evt_b141c138": {
+      "type": "photometric_change",
+      "satellite_id": "64467",
+      "satellite_label": "COSMOS 2589",
+      "event_date": "2026-05-16T11:37:00Z",
+      "magnitude_change_min": null,
+      "magnitude_change_max": null,
+      "magnitude_direction": null,
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "unknown",
+      "analyst_assessment": null,
+      "associated_satellite_id": "49062",
+      "associated_satellite_label": "CHINASAT 2E",
+      "associated_distance_km": 66,
+      "pai_summary": "COSMOS 2589 is a Russian military satellite of uncertain function, linked to the Central Scientific Research Institute of Chemistry and Mechanics (TsNIIKhM) and associated with Russia's Nivelir satellite inspection program and related co-orbital counterspace development efforts.",
+      "id": "evt_b141c138",
+      "created_at": "2026-06-18T00:46:19.168386+00:00",
+      "regime": "GEO"
+    },
+    "evt_b48c4665": {
+      "type": "maneuver",
+      "satellite_id": "49258",
+      "satellite_label": "SHIYAN 10 (SY-10)",
+      "event_date": "2026-06-08T16:09:00Z",
+      "delta_v": 3.38,
+      "period_change": 19.6383,
+      "apogee_change": 19.5542,
+      "perigee_change": -3.4079,
+      "inclination_change": -0.0049,
+      "verification_status": "verified",
+      "pol_status": "within_pol",
+      "analyst_assessment": "This maneuver appears a station-keeping maneuver and is within the historical pattern of life for this object.",
+      "pai_summary": "SHIYAN 10 (SY-10) is a Chinese satellite that supports Military | Communications / Communications - General | Technology development satellite. Built for verification tests of new technologies such as space environmental monitoring.",
+      "report_title": "NOTSO_Verified Maneuver _SHIYAN 10 (SY-10)  (49258)_HEO_12Jun_0607Z.mhtml",
+      "id": "evt_b48c4665",
+      "created_at": "2026-06-22T05:53:09.690306+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-22T05:53:16.683883+00:00",
+          "changes": [
+            {
+              "field": "jco_apogee_change",
+              "old": null,
+              "new": 19.5542,
+              "type": "added"
+            },
+            {
+              "field": "jco_delta_v",
+              "old": null,
+              "new": 3.38,
+              "type": "added"
+            },
+            {
+              "field": "jco_inclination_change",
+              "old": null,
+              "new": -0.0049,
+              "type": "added"
+            },
+            {
+              "field": "jco_perigee_change",
+              "old": null,
+              "new": -3.4079,
+              "type": "added"
+            },
+            {
+              "field": "jco_period_change",
+              "old": null,
+              "new": 19.6383,
+              "type": "added"
+            },
+            {
+              "field": "maneuver_type",
+              "old": null,
+              "new": "altitude change",
+              "type": "added"
+            },
+            {
+              "field": "source_id",
+              "old": null,
+              "new": "file_25b6fbf72ce3e40a",
+              "type": "added"
+            },
+            {
+              "field": "tle_available",
+              "old": null,
+              "new": false,
+              "type": "added"
+            }
+          ],
+          "summary": "8 field(s) added"
+        }
+      ],
+      "jco_apogee_change": 19.5542,
+      "jco_delta_v": 3.38,
+      "jco_inclination_change": -0.0049,
+      "jco_perigee_change": -3.4079,
+      "jco_period_change": 19.6383,
+      "maneuver_type": "altitude change",
+      "source_id": "file_25b6fbf72ce3e40a",
+      "tle_available": false,
+      "regime": "HEO"
+    },
+    "evt_effee413": {
+      "type": "photometric_change",
+      "satellite_id": "64467",
+      "satellite_label": "COSMOS 2589",
+      "event_date": "2026-06-09T17:45:00Z",
+      "magnitude_change_min": 3.5,
+      "magnitude_change_max": 3.5,
+      "magnitude_direction": "brighter",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "return_to_pol",
+      "analyst_assessment": "The change may be associated with a close approach with USA 325 at 7.1 km; photometric variation has been observed with close approaches with USA 325 before.",
+      "associated_satellite_id": "51281",
+      "associated_satellite_label": "USA 325",
+      "associated_distance_km": 7.1,
+      "pai_summary": "COSMOS 2589 is a Russian satellite that supports military operations. The mission of COSMOS 2589 is Servicing/Inspection / Inspection Satellite, Cargo / Spacecraft Delivery/Deployment.",
+      "report_title": "NOTSO_Possible Maneuver_SHIYAN 10 (SY-10)  (49258) _ HEO_11Jun_1225Z.mhtml",
+      "id": "evt_effee413",
+      "created_at": "2026-06-22T05:55:23.870456+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-22T05:55:31.699500+00:00",
+          "changes": [
+            {
+              "field": "analyst_assessment",
+              "old": "Photometric variation has been observed with close approaches with USA 325 before.",
+              "new": "The change may be associated with a close approach with USA 325 at 7.1 km; photometric variation has been observed with close approaches with USA 325 before.",
+              "type": "updated"
+            },
+            {
+              "field": "source_id",
+              "old": null,
+              "new": "file_efd7ca9cc48730fd",
+              "type": "added"
+            }
+          ],
+          "summary": "1 field(s) added, 1 field(s) updated"
+        }
+      ],
+      "source_id": "file_efd7ca9cc48730fd",
+      "regime": "GEO"
+    },
+    "evt_a303185a": {
+      "type": "photometric_change",
+      "satellite_id": "50322",
+      "satellite_label": "SY-12 02",
+      "event_date": "2026-06-06T12:19:00Z",
+      "magnitude_change_min": 0.75,
+      "magnitude_change_max": 0.75,
+      "magnitude_direction": "dimmer",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "within_pol",
+      "analyst_assessment": "This distinct pattern change has been historically common but has not been seen recently; typically this pattern change occurs for days to weeks without previously identified genesis.",
+      "associated_satellite_id": null,
+      "associated_satellite_label": null,
+      "associated_distance_km": null,
+      "pai_summary": "SY-12 02 is a Chinese satellite that supports military operations. The mission of SY-12 02 is space environment exploration and related technology tests. However, it is suspected that it is actually a military test satellite.",
+      "report_title": "NOTSO_Photometric Change_SY-12 02 (50322)_08Jun_1625Z.mhtml",
+      "id": "evt_a303185a",
+      "created_at": "2026-06-22T05:56:58.026553+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-22T05:57:11.775081+00:00",
+          "changes": [
+            {
+              "field": "source_id",
+              "old": null,
+              "new": "file_fd07fa1b16170088",
+              "type": "added"
+            }
+          ],
+          "summary": "1 field(s) added"
+        }
+      ],
+      "source_id": "file_fd07fa1b16170088",
+      "regime": "GEO"
+    },
+    "evt_fb95d391": {
+      "type": "photometric_change",
+      "satellite_id": "50321",
+      "satellite_label": "SY-12 01",
+      "event_date": "2026-06-19T16:05:00Z",
+      "magnitude_change_min": 1.0,
+      "magnitude_change_max": 1.0,
+      "magnitude_direction": "dimmer",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "return_to_pol",
+      "analyst_assessment": "Photometric change is a return to pattern of life.",
+      "associated_satellite_id": null,
+      "associated_satellite_label": null,
+      "associated_distance_km": null,
+      "pai_summary": "SY-12 01 is a Chinese satellite that supports military operations. The mission is officially space environment exploration and related technology tests; however, it is suspected to be a military test satellite with possible military SSA application in GEO.",
+      "report_title": "NOTSO_Photometric Change_SY-12 01 (50321)_19Jun_1605Z.mhtml",
+      "id": "evt_fb95d391",
+      "created_at": "2026-06-22T05:58:16.387287+00:00",
+      "regime": "GEO"
+    },
+    "evt_4d56efa1": {
+      "type": "photometric_change",
+      "satellite_id": "50321",
+      "satellite_label": "SY 12-01",
+      "event_date": "2026-06-11T17:02:00Z",
+      "magnitude_change_min": null,
+      "magnitude_change_max": null,
+      "magnitude_direction": null,
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "unknown",
+      "analyst_assessment": "The change could be related to known objects in the vicinity.",
+      "associated_satellite_id": null,
+      "associated_satellite_label": null,
+      "associated_distance_km": null,
+      "pai_summary": "SY 12-01 is a Chinese satellite that supports military operations. The mission of SY 12-01 is inspection and SDA as a space environment exploration and related technology tests.",
+      "report_title": "NOTSO_Photometric Change_SY 12-01 (50321)_11Jun_1702Z.mhtml",
+      "id": "evt_4d56efa1",
+      "created_at": "2026-06-22T05:59:44.771688+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-22T06:00:11.866960+00:00",
+          "changes": [
+            {
+              "field": "source_id",
+              "old": null,
+              "new": "file_f80504c0ef599716",
+              "type": "added"
+            }
+          ],
+          "summary": "1 field(s) added"
+        }
+      ],
+      "source_id": "file_f80504c0ef599716",
+      "regime": "GEO"
+    },
+    "evt_eca33bd8": {
+      "type": "photometric_change",
+      "satellite_id": "67302",
+      "satellite_label": "SJ-29A",
+      "event_date": "2026-06-18T02:27:00Z",
+      "magnitude_change_min": 3.0,
+      "magnitude_change_max": 3.0,
+      "magnitude_direction": "brighter",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "outside_pol",
+      "analyst_assessment": "The photometric variation is inconsistent with the historical pattern of this object's life. Analysis is ongoing.",
+      "associated_satellite_id": "51280",
+      "associated_satellite_label": "USA 324",
+      "associated_distance_km": 2000,
+      "pai_summary": "SJ-29A is a Chinese manoeuvrable satellite that supports military operations. The mission of SJ-29A is described as a demonstration of new technologies for on-orbit target detection.",
+      "report_title": "NOTSO_Photometric Change_SJ-29A (67302)_18Jun_0448Z.mhtml",
+      "id": "evt_eca33bd8",
+      "created_at": "2026-06-22T06:03:29.484141+00:00",
+      "regime": "GEO"
+    },
+    "evt_f82c30fa": {
+      "type": "photometric_change",
+      "satellite_id": "50322",
+      "satellite_label": "SHIYAN 12 02",
+      "event_date": "2026-06-17T10:32:00Z",
+      "magnitude_change_min": 1.0,
+      "magnitude_change_max": 1.0,
+      "magnitude_direction": "dimmer",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "outside_pol",
+      "analyst_assessment": "This photometric variation is not consistent with the historical pattern of life for this object. Analysis is ongoing.",
+      "associated_satellite_id": "23613",
+      "associated_satellite_label": "TDRS 7",
+      "associated_distance_km": 208,
+      "pai_summary": "SY-12 02 is a Chinese satellite that supports military operations. The mission of SY-12 02 is space environment exploration and related technology tests. However, it is suspected that it is actually a military test satellite.",
+      "report_title": "NOTSO_Photometric Change_SHIYAN 12 02 (50322)_17Jun_1647Z.mhtml",
+      "id": "evt_f82c30fa",
+      "created_at": "2026-06-22T06:07:08.949969+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-22T06:07:21.209489+00:00",
+          "changes": [
+            {
+              "field": "source_id",
+              "old": null,
+              "new": "file_46477140446076ef",
+              "type": "added"
+            }
+          ],
+          "summary": "1 field(s) added"
+        }
+      ],
+      "source_id": "file_46477140446076ef",
+      "regime": "GEO"
+    },
+    "evt_2e442ef2": {
+      "type": "photometric_change",
+      "satellite_id": "64467",
+      "satellite_label": "COSMOS 2589",
+      "event_date": "2026-06-19T17:41:00Z",
+      "magnitude_change_min": 1.5,
+      "magnitude_change_max": 1.5,
+      "magnitude_direction": "dimmer",
+      "recovery_date": "2026-06-19",
+      "verification_status": "detected",
+      "pol_status": "within_pol",
+      "analyst_assessment": "Photometric variation is consistent with the historical pattern of life for this object of performing a photometric change when USA 325 has a close approach with favorable lighting.",
+      "associated_satellite_id": "51281",
+      "associated_satellite_label": "USA 325",
+      "associated_distance_km": 17,
+      "pai_summary": "COSMOS 2589 is a Russian satellite that supports military operations. The mission of COSMOS 2589 is Servicing/Inspection / Inspection Satellite, Cargo / Spacecraft Delivery/Deployment.",
+      "report_title": "NOTSO_Photometric Change_Cosmos 2589 (64467)_19Jun-2123Z.mhtml",
+      "id": "evt_2e442ef2",
+      "created_at": "2026-06-22T06:18:12.957850+00:00",
+      "regime": "GEO"
+    },
+    "evt_8254fa85": {
+      "type": "photometric_change",
+      "satellite_id": "64467",
+      "satellite_label": "COSMOS 2589",
+      "event_date": "2026-06-17T19:19:00Z",
+      "magnitude_change_min": 1.0,
+      "magnitude_change_max": 1.0,
+      "magnitude_direction": "dimmer",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "return_to_pol",
+      "analyst_assessment": "Low confidence photometry change due to only seeing 1 track; COSMOS 2589 has had repeated photometric changes during close approaches with USA 325.",
+      "associated_satellite_id": "51281",
+      "associated_satellite_label": "USA 325",
+      "associated_distance_km": null,
+      "pai_summary": "Classified Russian military GEO satellite built by ISS Reshetnev, likely on the Ekspress-2000 bus, for communications-relay or reconnaissance.",
+      "report_title": "NOTSO_Photometric Change_COSMOS 2589 (64467)_17Jun_1924Z.mhtml",
+      "id": "evt_8254fa85",
+      "created_at": "2026-06-22T06:26:13.478255+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-22T06:26:40.296853+00:00",
+          "changes": [
+            {
+              "field": "pai_summary",
+              "old": "COSMOS 2589 is a classified Russian military satellite, likely on the Ekspress-2000 bus, used for communications-relay or reconnaissance.",
+              "new": "Classified Russian military GEO satellite built by ISS Reshetnev, likely on the Ekspress-2000 bus, for communications-relay or reconnaissance.",
+              "type": "updated"
+            },
+            {
+              "field": "source_id",
+              "old": null,
+              "new": "file_72ac8aec42035003",
+              "type": "added"
+            }
+          ],
+          "summary": "1 field(s) added, 1 field(s) updated"
+        }
+      ],
+      "source_id": "file_72ac8aec42035003",
+      "regime": "GEO"
+    },
+    "evt_8e045861": {
+      "type": "photometric_change",
+      "satellite_id": "67302",
+      "satellite_label": "SJ-29A",
+      "event_date": "2026-06-07T12:17:00Z",
+      "magnitude_change_min": 0.8,
+      "magnitude_change_max": 0.8,
+      "magnitude_direction": "brighter",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "outside_pol",
+      "analyst_assessment": "Photometric variation is not consistent with the historical pattern of life for this object. Analysis is ongoing.",
+      "associated_satellite_id": "51280",
+      "associated_satellite_label": "USA 324",
+      "associated_distance_km": 1670,
+      "pai_summary": "SJ-29A is a Chinese satellite that supports military operations. The mission of SJ-29A is assessed as servicing/inspection and observational/space situational awareness.",
+      "report_title": "NOTSO_Photometric Change _ SJ-29A (67302)_08Jun_0548Z.mhtml",
+      "id": "evt_8e045861",
+      "created_at": "2026-06-22T06:27:31.508842+00:00",
+      "regime": "GEO"
+    },
+    "evt_6a516285": {
+      "type": "photometric_change",
+      "satellite_id": "44910",
+      "satellite_label": "SJ-20",
+      "event_date": "2026-06-04T21:25:00Z",
+      "magnitude_change_min": 0.5,
+      "magnitude_change_max": 0.8,
+      "magnitude_direction": "brighter",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "return_to_pol",
+      "analyst_assessment": "The cause of the change is possibly due to a return to pattern of life following the reported photometric change that occurred on 03Jun2125z.",
+      "associated_satellite_id": null,
+      "associated_satellite_label": null,
+      "associated_distance_km": null,
+      "pai_summary": "SJ-20 is a Chinese satellite that supports civil communications and technology testing operations. The mission of SHIJIAN 20 is to test high-throughput communications, Ka-band payloads, electric xenon propulsion, laser communications, and quantum communications payloads.",
+      "report_title": "NOTSO_Photometric Change _ SJ-20 (44910) _GEO_04Jun_1713Z.mhtml",
+      "id": "evt_6a516285",
+      "created_at": "2026-06-22T06:29:57.724900+00:00",
+      "regime": "GEO"
+    },
+    "evt_c4bc292a": {
+      "type": "photometric_change",
+      "satellite_id": "44910",
+      "satellite_label": "SJ-20",
+      "event_date": "2026-06-03T21:25:00Z",
+      "magnitude_change_min": 0.5,
+      "magnitude_change_max": 0.8,
+      "magnitude_direction": "dimmer",
+      "recovery_date": null,
+      "verification_status": "detected",
+      "pol_status": "outside_pol",
+      "analyst_assessment": "The cause of the change may be associated with a close approach with COSMOS 2520 (42907) on 03Jun2111z at 151km, w/favorable lighting for SJ-20.",
+      "associated_satellite_id": "42907",
+      "associated_satellite_label": "COSMOS 2520",
+      "associated_distance_km": 151,
+      "pai_summary": "SJ-20 is a Chinese satellite that supports civil communications and technology testing operations. The mission of SHI JIAN 20 is to test high-throughput communications, Ka-band payloads, electric xenon propulsion, laser communications, and quantum communications payloads.",
+      "report_title": "NOTSO_Photometric Change _ SJ-20 (44910) _GEO_04Jun_1713Z.mhtml",
+      "id": "evt_c4bc292a",
+      "created_at": "2026-06-22T06:29:57.733047+00:00",
+      "regime": "GEO"
+    },
+    "evt_5b394889": {
+      "type": "maneuver",
+      "satellite_id": "44910",
+      "satellite_label": "SJ-20",
+      "event_date": "2026-06-17T09:25:00Z",
+      "delta_v": 0.3,
+      "period_change": 25.94,
+      "apogee_change": 14.45,
+      "perigee_change": 2.48,
+      "inclination_change": -0.0001,
+      "verification_status": "verified",
+      "pol_status": "within_pol",
+      "analyst_assessment": "This maneuver could be a station-keeping maneuver due to the maneuver being near the longitudal bounds that it is currently residing in.",
+      "pai_summary": "SJ-20 is a Chinese satellite supporting commercial operations. Its mission is communications as an experimental DFH-5-based GEO satellite focused on technology demonstration, including high-throughput, laser, and quantum communications payloads. SJ-20 is assessed to be one of China’s largest communications satellites.",
+      "report_title": "NOTSO_Maneuver_SJ-20 (44910)_GEO_17Jun_2100Z.mhtml",
+      "id": "evt_5b394889",
+      "created_at": "2026-06-22T06:31:27.129958+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-22T06:31:45.547542+00:00",
+          "changes": [
+            {
+              "field": "jco_apogee_change",
+              "old": null,
+              "new": 14.45,
+              "type": "added"
+            },
+            {
+              "field": "jco_delta_v",
+              "old": null,
+              "new": 0.3,
+              "type": "added"
+            },
+            {
+              "field": "jco_inclination_change",
+              "old": null,
+              "new": -0.0001,
+              "type": "added"
+            },
+            {
+              "field": "jco_perigee_change",
+              "old": null,
+              "new": 2.48,
+              "type": "added"
+            },
+            {
+              "field": "jco_period_change",
+              "old": null,
+              "new": 25.94,
+              "type": "added"
+            },
+            {
+              "field": "maneuver_type",
+              "old": null,
+              "new": "altitude change",
+              "type": "added"
+            },
+            {
+              "field": "regime",
+              "old": null,
+              "new": "GEO",
+              "type": "added"
+            },
+            {
+              "field": "source_id",
+              "old": null,
+              "new": "file_79398d3c321c4a5b",
+              "type": "added"
+            },
+            {
+              "field": "tle_available",
+              "old": null,
+              "new": false,
+              "type": "added"
+            }
+          ],
+          "summary": "9 field(s) added"
+        }
+      ],
+      "jco_apogee_change": 14.45,
+      "jco_delta_v": 0.3,
+      "jco_inclination_change": -0.0001,
+      "jco_perigee_change": 2.48,
+      "jco_period_change": 25.94,
+      "maneuver_type": "altitude change",
+      "regime": "GEO",
+      "source_id": "file_79398d3c321c4a5b",
+      "tle_available": false
+    },
+    "evt_ca011efc": {
+      "type": "maneuver",
+      "satellite_id": "59020",
+      "satellite_label": "TJS-11",
+      "event_date": "2026-06-07T01:27:00Z",
+      "delta_v": 0.97,
+      "period_change": -80.73,
+      "apogee_change": -12.6,
+      "perigee_change": -40.04,
+      "inclination_change": 0,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "The satellite maneuvered from 112.6deg E longitude with a delta-v of 0.97 m/s, resulting in an arrest of westward drift rate.",
+      "pai_summary": "TJS-11 is a Chinese satellite that supports military operations.",
+      "report_title": "NOTSO_Maneuver _TJS-11 (59020) _ GEO_08Jun_0232Z.mhtml",
+      "id": "evt_ca011efc",
+      "created_at": "2026-06-22T06:39:56.638493+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-22T06:40:05.155171+00:00",
+          "changes": [
+            {
+              "field": "jco_apogee_change",
+              "old": null,
+              "new": -12.6,
+              "type": "added"
+            },
+            {
+              "field": "jco_delta_v",
+              "old": null,
+              "new": 0.97,
+              "type": "added"
+            },
+            {
+              "field": "jco_inclination_change",
+              "old": null,
+              "new": 0,
+              "type": "added"
+            },
+            {
+              "field": "jco_perigee_change",
+              "old": null,
+              "new": -40.04,
+              "type": "added"
+            },
+            {
+              "field": "jco_period_change",
+              "old": null,
+              "new": -80.73,
+              "type": "added"
+            },
+            {
+              "field": "maneuver_type",
+              "old": null,
+              "new": "altitude change",
+              "type": "added"
+            },
+            {
+              "field": "source_id",
+              "old": null,
+              "new": "file_3dcb14d5696569bd",
+              "type": "added"
+            },
+            {
+              "field": "tle_available",
+              "old": null,
+              "new": false,
+              "type": "added"
+            }
+          ],
+          "summary": "8 field(s) added"
+        }
+      ],
+      "jco_apogee_change": -12.6,
+      "jco_delta_v": 0.97,
+      "jco_inclination_change": 0,
+      "jco_perigee_change": -40.04,
+      "jco_period_change": -80.73,
+      "maneuver_type": "altitude change",
+      "source_id": "file_3dcb14d5696569bd",
+      "tle_available": false,
+      "regime": "GEO"
+    },
+    "evt_ab0935f1": {
+      "type": "maneuver",
+      "satellite_id": "64467",
+      "satellite_label": "COSMOS 2589",
+      "event_date": "2026-06-11T15:20:00Z",
+      "delta_v": 0.3,
+      "period_change": -0.56,
+      "apogee_change": -0.17,
+      "perigee_change": -0.19,
+      "inclination_change": -0.0037,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "First maneuver resulted in a change from 97.98 deg W longitude with a delta-v of 0.30 m/s, resulting in an increase in westward drift rate.",
+      "pai_summary": "COSMOS 2589 is a Russian satellite that supports military operations. The mission is Communications-relay or reconnaissance, exact mission and configuration not officially disclosed.",
+      "report_title": "NOTSO_Maneuver_COSMOS 2589 (64467)_GEO_12Jun-0114Z.mhtml",
+      "id": "evt_ab0935f1",
+      "created_at": "2026-06-22T06:40:51.948024+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-22T06:41:09.537757+00:00",
+          "changes": [
+            {
+              "field": "jco_apogee_change",
+              "old": null,
+              "new": -0.17,
+              "type": "added"
+            },
+            {
+              "field": "jco_delta_v",
+              "old": null,
+              "new": 0.3,
+              "type": "added"
+            },
+            {
+              "field": "jco_inclination_change",
+              "old": null,
+              "new": -0.0037,
+              "type": "added"
+            },
+            {
+              "field": "jco_perigee_change",
+              "old": null,
+              "new": -0.19,
+              "type": "added"
+            },
+            {
+              "field": "jco_period_change",
+              "old": null,
+              "new": -0.56,
+              "type": "added"
+            },
+            {
+              "field": "maneuver_type",
+              "old": null,
+              "new": "altitude change",
+              "type": "added"
+            },
+            {
+              "field": "regime",
+              "old": null,
+              "new": "GEO",
+              "type": "added"
+            },
+            {
+              "field": "source_id",
+              "old": null,
+              "new": "file_32d4cebde17a73fd",
+              "type": "added"
+            },
+            {
+              "field": "tle_available",
+              "old": null,
+              "new": false,
+              "type": "added"
+            }
+          ],
+          "summary": "9 field(s) added"
+        }
+      ],
+      "jco_apogee_change": -0.17,
+      "jco_delta_v": 0.3,
+      "jco_inclination_change": -0.0037,
+      "jco_perigee_change": -0.19,
+      "jco_period_change": -0.56,
+      "maneuver_type": "altitude change",
+      "regime": "GEO",
+      "source_id": "file_32d4cebde17a73fd",
+      "tle_available": false
+    },
+    "evt_bcaa8c20": {
+      "type": "maneuver",
+      "satellite_id": "94401",
+      "satellite_label": "TJS-26A",
+      "event_date": "2026-06-23T18:14:00Z",
+      "delta_v": 328.21,
+      "period_change": 4080.61,
+      "apogee_change": 58.21,
+      "perigee_change": 3381.0,
+      "inclination_change": -4.2307,
+      "verification_status": "verified",
+      "pol_status": "unknown",
+      "analyst_assessment": "Maneuver verified near apogee, associated with successful launch.",
+      "pai_summary": "TJS-26A supports satellite communications, radio and television broadcasting, data transmission, and related technical testing and verification.",
+      "report_title": "NOTSO_Launch _ LM-7A (94402) _ TJS-26A (94401) _ Wenchang (LC-201) _ 23 June _ ~0210 UTC _ GEO_23Jun-2014Z.mhtml",
+      "id": "evt_bcaa8c20",
+      "created_at": "2026-06-24T03:42:35.353342+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-24T03:42:53.346578+00:00",
+          "changes": [
+            {
+              "field": "analyst_assessment",
+              "old": "Maneuver associated with the successful launch of an LM-7A from Wenchang, China.",
+              "new": "Maneuver verified near apogee, associated with successful launch.",
+              "type": "updated"
+            },
+            {
+              "field": "jco_apogee_change",
+              "old": null,
+              "new": 58.21,
+              "type": "added"
+            },
+            {
+              "field": "jco_delta_v",
+              "old": null,
+              "new": 328.21,
+              "type": "added"
+            },
+            {
+              "field": "jco_inclination_change",
+              "old": null,
+              "new": -4.2307,
+              "type": "added"
+            },
+            {
+              "field": "jco_perigee_change",
+              "old": null,
+              "new": 3381.0,
+              "type": "added"
+            },
+            {
+              "field": "jco_period_change",
+              "old": null,
+              "new": 4080.61,
+              "type": "added"
+            },
+            {
+              "field": "maneuver_type",
+              "old": null,
+              "new": "plane change",
+              "type": "added"
+            },
+            {
+              "field": "pai_summary",
+              "old": "TJS-26A is officially described as supporting satellite communications, radio and television broadcasting, data transmission, and related technical testing and verification.",
+              "new": "TJS-26A supports satellite communications, radio and television broadcasting, data transmission, and related technical testing and verification.",
+              "type": "updated"
+            },
+            {
+              "field": "source_id",
+              "old": null,
+              "new": "file_47f50c8bc82470d3",
+              "type": "added"
+            },
+            {
+              "field": "tle_available",
+              "old": null,
+              "new": false,
+              "type": "added"
+            }
+          ],
+          "summary": "8 field(s) added, 2 field(s) updated"
+        }
+      ],
+      "jco_apogee_change": 58.21,
+      "jco_delta_v": 328.21,
+      "jco_inclination_change": -4.2307,
+      "jco_perigee_change": 3381.0,
+      "jco_period_change": 4080.61,
+      "maneuver_type": "plane change",
+      "source_id": "file_47f50c8bc82470d3",
+      "tle_available": false,
+      "regime": "GEO"
+    },
+    "evt_283e2413": {
+      "type": "launch",
+      "satellite_id": "94401",
+      "notos_id": "94402",
+      "satellite_label": "TJS-26A",
+      "event_date": "2026-06-23T02:10:00Z",
+      "launch_site": "Wenchang Satellite Launch Center",
+      "launch_vehicle": "LM-7A",
+      "orbital_inclination": 19.5046,
+      "orbital_period": 630.5,
+      "notam_ids": [],
+      "trajectory_zones": [],
+      "analyst_assessment": null,
+      "pai_summary": "TJS-26A is primarily used for services such as satellite communications, radio and television broadcasting, and data transmission, as well as for conducting relevant technical tests and verification.",
+      "regime": "GEO",
+      "report_title": "NOTSO_Launch _ LM-7A (94402) _ TJS-26A (94401) _ Wenchang (LC-201) _ 23 June _ ~0210 UTC _ GEO_23Jun-2014Z.mhtml",
+      "id": "evt_283e2413",
+      "created_at": "2026-06-24T03:42:35.365953+00:00",
+      "update_history": [
+        {
+          "timestamp": "2026-06-24T03:42:53.371036+00:00",
+          "changes": [
+            {
+              "field": "orbital_period",
+              "old": 630.6,
+              "new": 630.5,
+              "type": "updated"
+            },
+            {
+              "field": "pai_summary",
+              "old": "TJS-26A is officially described as supporting satellite communications, radio and television broadcasting, data transmission, and related technical testing and verification.",
+              "new": "TJS-26A is primarily used for services such as satellite communications, radio and television broadcasting, and data transmission, as well as for conducting relevant technical tests and verification.",
+              "type": "updated"
+            },
+            {
+              "field": "source_id",
+              "old": null,
+              "new": "file_47f50c8bc82470d3",
+              "type": "added"
+            }
+          ],
+          "summary": "1 field(s) added, 2 field(s) updated"
+        }
+      ],
+      "source_id": "file_47f50c8bc82470d3"
     }
   }
 }

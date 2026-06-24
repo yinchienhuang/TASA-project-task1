@@ -1,0 +1,87 @@
+NOTSO_Verified Maneuver / SHIYAN 10 (SY-10)  (49258) / HEO_12Jun-0607Z
+
+JDay 163 at 0509z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have verified a maneuver by SHIYAN 10 (49258) occurring at 1609z on 08Jun (JDay 159).
+The satellite maneuvered from 170.1011deg E longitude with a delta-v of 3.38 m/s, an inclination change of -0.0049 degs to a final inclination of 63.1129 degs, etc. This maneuver appears a station-keeping maneuver and is within the historical pattern of life for this object. Neighborhood of nearby objects is attached showing upcoming close approaches as a result of this maneuver. There's no immediate close approach so far.
+ 
+SHIYAN 10 (SY-10) (49258) is a Chinese satellite that supports Military | Communications / Communications - General | 27/09/2021 (4.71 years old) | Technology development satellite. Built for verification tests of new technologies such as space environmental monitoring.  Source: Seradata.
+  
+The specifics of the maneuver are: 
+--Time of Maneuver: 08Jun1609z
+--Delta V: 3.38 m/s
+--Period Change: 19.6383 secs
+--Apogee Change: 19.5542 km
+--Perigee Change: -3.4079 km
+--Inclination Change: -0.0049 degs
+
+Pre-manoeuvre TLE as of 08Jun1016z provided by Spacetrack:
+1 49258U 21087A   26159.42816681  .00000395  00000-0  00000-0 0    05
+2 49258  63.1127 221.0467 6930785 269.8654  17.6440  2.00652330034358
+
+Post Maneuver Current TLE as of 12Jun0412z provided by NorthStar:
+1 49258U 21087A   26163.17538799  .00000000  00000-0  00000-0 0    06
+2 49258  63.1129 220.6348 6930473 269.6114 203.5190  2.00596576034353
+---------------------------------------------------------------------------------------------------------------------------------------------
+JDay 162 at 1152z:
+
+Based on current SDA observations and available PAIR data, JCO providers have detected a possible maneuver on SHIYAN 10 (SY-10) (49258), occurring at 2001z on 09 June 2026 (JDay 160).
+
+The satellite was located at 170.10 degs E longitude. Based on initial indications, it appears to be Station Keeping maneuver. However,  due to consistent lack of observation, a larger maneuver could not be ruled down. 
+
+SHIYAN 10 (SY-10) (49258) is a Chinese satellite that supports Military | Communications / Communications - General | 27/09/2021 (4.71 years old) | Technology development satellite. Built for verification tests of new technologies such as space environmental monitoring.  Source: Seradata.
+
+ Pre-manoeuvre TLE as of 08 June 2026 1016z provided by Spacetrack:
+
+1 49258U 21087A   26159.42816681  .00000395  00000-0  00000-0 0    05
+2 49258  63.1127 221.0467 6930785 269.8654  17.6440  2.00652330034358
+
+Latest TLE as of 11 June 2026 0501z provided by NorthStar:
+
+1 49258U 21087A   26162.20906290  .00000000  00000-0  00000-0 0    04
+2 49258  63.1142 220.7374 6930423 269.6155 225.6787  2.00584340034351
+
+JDAY 162, 1136Z
+
+Mission Summary:
+SHIYAN 10-01 (NORAD 49258) is a Chinese experimental technology satellite developed by the Shanghai Academy of Spaceflight Technology (SAST). Although Chinese authorities have not disclosed its specific mission, the Shiyan series is generally used to validate new space technologies, sensors, communications systems, and other advanced spacecraft capabilities. Following launch, SHIYAN 10-01 reportedly experienced an anomaly that left it in an unintended highly elliptical orbit, but subsequent tracking showed the spacecraft conducting orbit-raising maneuvers and establishing a Molniya-type orbit, indicating at least partial mission recovery and operational capability. The satellite remains active in a highly elliptical, high-inclination orbit that provides extended coverage of high-latitude regions, suggesting potential applications in communications, space environment monitoring, technology demonstration, or other classified national-security-related experiments.
+Source: RC
+
+Satellite Summary:
+49258 | SHIYAN 10-01 | Elliptical / Elliptical - Molniya | CAST - Chinese Academy of Space Technology (China) | Active / Manoeuverable | Military | Communications / Communications - General | 27/09/2021 (4.71 years old) | Technology developmentsatellite.Identified as "Test No.10" or SHIYAN-10. Launched into a Molniya orbit. Thought to be communications satellite for Northern latitudes. | Built for verification tests of new technologies such as space environmental monitoring.&nbsp;&nbsp; | 80.0% | Yes - On-board Propulsion | Propulsion Unknown | Source: Seradata
+
+Space Weather Conditions during Possible Maneuver (JDAY 161, 10 Jun 0500Z)  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (1.40)  
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard (Read More)
+
+SHIYAN 10 (SY-10) / Neighborhood / Northstar / JDAY 163 / 05:25Z
+
+SHIYAN 10 (SY-10) / PASCHED / Northstar / JDAY 163 / 05:24Z
+
+SHIYAN 10 (SY-10) / Elset History / Northstar / JDAY 163 / 05:24Z
+
+SHIYAN 10 (SY-10) / DC Results / Northstar / JDAY 163 / 05:24Z
+
+SHIYAN 10 (SY-10) / Neighborhood / KBR / JDAY 163 / 05:24Z
+
+SHIYAN 10 (SY-10) / Orbital Plot Results / KBR / JDAY 163 / 05:23Z
+
+SHIYAN 10 (SY-10) / PASCHED / KBR / JDAY 163 / 05:23Z
+
+SHIYAN 10 (SY-10) / residuals / KBR / JDAY 163 / 05:23Z
+
+SHIYAN 10 (SY-10) / PASCHED /  / JDAY 162 / 12:12Z
+
+SHIYAN 10 (SY-10) /  /  / JDAY 162 / 12:11Z
+
+SHIYAN 10 (SY-10) /  /  / JDAY 162 / 12:10Z
+
+SHIYAN 10 (SY-10) / DC Results /  / JDAY 162 / 12:10Z
+
+Satellites Number Name Orbit Country 49258 SHIYAN 10 (SY-10) HEO China (PRC)
+
+Number Name Orbit Country 49258 SHIYAN 10 (SY-10) HEO China (PRC)
+
+NOTSO_Possible Maneuver / SHIYAN 10 (SY-10)  (49258) / HEO_11Jun-1225Z

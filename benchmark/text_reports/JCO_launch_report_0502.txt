@@ -1,0 +1,285 @@
+NOTSO_Launch / LM-6 (94220) / PRSC-E03 (68835) / Taiyuan, China / 25 April 26 / ~1216 UTC / LEO_28Apr-0146Z
+
+JDay 117 at 2004z:
+
+Based on current SDA observations and available PAIR data, JCO providers have an updated track for PRSC-E03 (NORAD ID 68835). Orbital characteristics are LEO with 38.0045 deg inclination and 29.1072 deg RAAN. Neighborhood is provided. It is being tracked on Space-Track as 68835. Click link above to view products.
+
+PAIR suggests that PRSC-E03 is a Pakistan satellite that supports environmental management operations. The mission of PRSC-E03 includes Earth studies in support of agriculture, urban planning, environmental management, disaster management monitoring, deforestation, glacier recession, and water resources. PRSC-E03 appears to work in conjunction with PRSC-E01 (62727) and PRSC-E02 (67752).
+
+Current TLE as of 27APR0938z provided by Northstar:
+
+1 68835U 00000A   26117.40139878 -.00000000 -00000-0  33978-3 0    17
+2 68835  38.0045  29.1072 0007152 304.9842 329.5877 15.05698107    13
+
+-----------------------------------------------------------
+
+JDAY 117 AT 1000Z - CORRECTION NOTSO
+
+Correction to previous NOTSO,
+
+Whilst the launch time and initial state posted below are correct, the rotated and unrotated nominals are incorrect. They were not updated with the latest NOTAM'd information and do not reflect the final drop zone and intended inclination of 38 degrees. Please use the current TLE for this object as posted below.
+
+JDAY 117 AT 0840z
+
+Based on available Pair data, JCO providers have indications of the the successful launch of a CZ-6 (Long March 6) from Taiyuan Satellite Launch Center, China on 25 Apr & JDay 115 occurring at 1215z. Publicly available information states a payload of a Pakistan PRSC-E03 (remote sensing high resolution) satellite. Based on current information the satellite is currently in LEO with orbital characteristics of 29.46 deg RAAN and 38 deg inclination and is being tracked on Space-Track as 68835.
+Neighbourhood is provided. Click link above to view products. 
+
+PAIR suggest PRSC-E03 is a Pakistan satellite that supports environmental  management operations. The mission of the satellite includes Earth studies to support agriculture, urban planning, environmental management, disaster management monitoring and deforestation, glacier recession and water resources. working in conjunction with PRSC-E0 1 (62727)  and PRCS-E0 2 (67752).
+
+Current TLE as of 27APR0803z provided by Northstar :
+1 68835U 00000A   26117.33581103  .00000000  00000-0  00000-0 0 00004
+2 68835  38.0013  29.4632 0005158 327.3381 311.0608 15.06428193    07
+
+Rotated Launch Nominal to 1215z
+PAYLOAD
+1 94219U 00000    26115.51093994  .00000000  00000-0  00000-0 0    03
+2 94219  45.0038  23.7700 0000001  97.9230 360.0000 13.99652642    03
+
+CZ-6
+1 94220U 00000    26115.51094638  .00000000  00000-0  00000-0 0    01
+2 94220  45.0053  23.7683 0000001  97.9260   0.0000 13.99652642    06 
+
+Unrotated Launch Nominal:
+PAYLOAD
+1 94219U 00000    26001.00000000  .00000000  00000+0  00000+0 0    05
+2 94219  45.0038  86.9643 0000000   0.0000  97.9230 13.99652760    01
+CZ-6
+1 94220U 00000    26001.00000000  .00000000  00000+0  00000+0 0    07
+2 94220  45.0053  86.9603 0000000   0.0000  97.9260 13.99652760    09
+
+JDay 114 at 1208z: 
+
+Based on available PAIR data, JCO providers have indicated a possible upcoming launch of a CZ-6 (Long March 6) from Taiyuan Satellite Launch Center, China on 25 Apr (JDay 115) occurring between 1208z and 1237z with an expected launch time of 1216z carrying an unknown payload. Based on current information, the satellite is likely to be LEO with orbital characteristics of 45.00 deg inclination and RAAN ~23.83 deg. 
+COCO is provided. Click link above to view products. 
+
+Rotated Launch Nominal to 25Apr1216z provided by PPEC:
+PAYLOAD
+1 94219U 00000    26115.51111111  .00000000  00000+0  00000+0 0    03
+2 94219  45.0038  23.8270 0000000   0.0000  97.9230 13.99652760    07
+CZ-6
+1 94220U 00000    26115.51111111  .00000000  00000+0  00000+0 0    05
+2 94220  45.0053  23.8230 0000000   0.0000  97.9260 13.99652760    05
+
+Unrotated Launch Nominal:
+PAYLOAD
+1 94219U 00000    26001.00000000  .00000000  00000+0  00000+0 0    05
+2 94219  45.0038  86.9643 0000000   0.0000  97.9230 13.99652760    01
+CZ-6
+1 94220U 00000    26001.00000000  .00000000  00000+0  00000+0 0    07
+2 94220  45.0053  86.9603 0000000   0.0000  97.9260 13.99652760    09
+
+JDAY 116, 1641Z
+
+Mission Summary:
+Payload was a Pakistani PRSC-EO 3 satellite.  This is an EO Imagery remote sensing satellite developed by SUPARCO, Pakistan's space agency for Earth studies to support agriculture, urban planning, environmental management, disaster management, and monitoring, deforestation, glacier recession and water resources. Working together with PRSC-EO 1 (62727, 2025-012C) and PRCS-EO 2 (67752, 2025-027G).
+Source: DCJ
+
+********************************
+JDAY 114, 0742Z
+
+Additional NOTAM:
+B2268/26 NOTAMN
+Q) NZZO/QRDCA/IV/BO /W /000/999/1902S16402W086
+A) NZZO B) 2604251210 C) 2604251300
+E) TEMPO DANGER AREA NZD024 (NORTH AUCKLAND OCEANIC FIR) IS
+PRESCRIBED AS FLW:
+ALL THAT AIRSPACE BOUNDED BY A LINE JOINING
+19 34 S 162 41 W
+20 09 S 163 09 W
+18 27 S 165 23 W
+17 54 S 164 55 W
+19 34 S 162 41 W
+ACTIVITY: SPACE DEBRIS RETURN
+USING AGENCY: FOREIGN SPACE AGENCY
+PRESCRIBED PURSUANT TO CIVIL AVIATION RULE PART 71 UNDER A DELEGATED
+AUTHORITY ISSUED BY THE DIRECTOR OF CIVIL AVIATION
+F) SFC G) UNL
+Source:
+https://notams.aim.faa.gov/notamSearch/nsapp.html#/details
+
+
+Space Weather Forecast (valid for 1200Z, Apr 25 (JDAY115); issued 0030Z, Apr 24 (JDAY 114)  
+
+Radio Blackout Chance – R1-2, 60%; R3, 15% 
+Solar Radiation Storm Chance – S1, 10% 
+Geomagnetic Storm Predicted Value: Kp 2.00 (G0) 
+Source: https://www.spaceweather.gov/communities/space-weather-enthusiasts-dashboard  
+
+****************************************************************************
+
+JDAY 111, 1108Z
+
+The launch payload is unknown at this time. This section will be updated once payload(s) have been identified.
+
+NOTAM:
+A1286/26 NOTAMN
+Q)ZSHA/QRDCA/IV/BO/W/000/999/3358N12124E029
+A)ZSHA B)2604251208 C)2604251237
+E) A TEMPORARY DANGER AREA ESTABLISHED BOUNDED BY:
+N342100E1210500-N335100E1215900-N333300E1214400-N340400E1205000,
+BACK TO START.VERTICAL LIMITS:SFC-UNL.
+AIRCRAFT ARE FORBIDDEN TO FLY INTO THE AREA.
+F)SFC G)UNL
+
+
+Space wx will be added NLT 24 hours prior to launch. (Read More)
+
+Payload / PASCHED / PPEC/IRT / JDAY 117 / 20:01Z
+
+2026-04-27T20:02:15.360Z
+
+Payload / Neighborhood / Northstar / JDAY 117 / 09:15Z
+
+2026-04-27T09:18:07.110Z
+
+PL/RB / Residuals / Northstar / JDAY 117 / 09:12Z
+
+2026-04-27T09:15:06.680Z
+
+Payload / Ground Trace / SLINGSHOT / JDAY 117 / 09:07Z
+
+2026-04-27T09:08:17.300Z
+
+PL/RB / Residuals / SLINGSHOT / JDAY 117 / 09:05Z
+
+2026-04-27T09:07:07.260Z
+
+Pakistani PRSC-EO3 / Publicly Available Information / https://www.orbitalfocus.uk/Diaries/Launches/Launches.php?year=2026#001 / JDAY 116 / 16:38Z
+
+2026-04-26T16:39:20.190Z
+
+Launch Patch / Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64416.0 / JDAY 116 / 16:33Z
+
+Launch Patch showing combined nature of China Pakistan Mission
+
+2026-04-26T16:34:24.240Z
+
+Pakistani PRSC-EO3 / Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64416.0 / JDAY 116 / 16:27Z
+
+PRSC-EO-3 Satellite Photo
+
+2026-04-26T16:29:32.730Z
+
+Pakistani PRSC-EO3 / Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64416.0 / JDAY 116 / 16:25Z
+
+PRSC-EO3 is a Pakistani remote sensing High Resolution EO Satellite
+
+2026-04-26T16:26:56.580Z
+
+LM-6 Launch and Payload / Publicly Available Information / https://forum.nasaspaceflight.com/index.php?topic=64416.0 / JDAY 116 / 16:18Z
+
+Official Launch announcement and ID of payload as Pakistan PRSC-EO3 satellite
+
+2026-04-26T16:20:04.590Z
+
+Unknown Payload / Publicly Available Information / PAIR Map / JDAY 114 / 07:44Z
+
+2026-04-24T07:44:34.920Z
+
+Rocket Body / PASCHED / Slingshot / JDAY 112 / 07:00Z
+
+2026-04-22T07:00:19.560Z
+
+Rocket Body / Ground Trace / Slingshot / JDAY 112 / 06:59Z
+
+2026-04-22T07:00:01.430Z
+
+Rocket Body / Ground Trace / NorthStar / JDAY 112 / 06:58Z
+
+2026-04-22T06:59:21.550Z
+
+Rocket Body / PASCHED / NorthStar / JDAY 112 / 06:58Z
+
+2026-04-22T06:58:43.190Z
+
+Rocket Body / COCO / NorthStar / JDAY 112 / 06:56Z
+
+2026-04-22T06:58:11.210Z
+
+Payload / COCO / KBR / JDAY 111 / 18:32Z
+
+2026-04-21T18:32:46.300Z
+
+Payload / PASCHED / KBR / JDAY 111 / 18:32Z
+
+2026-04-21T18:32:20.090Z
+
+Payload / PASCHED /  / JDAY 111 / 18:31Z
+
+2026-04-21T18:31:51.380Z
+
+Rocket Body / Publicly Available Information / Intrack Radar Technologies / JDAY 111 / 18:30Z
+
+2026-04-21T18:30:27.680Z
+
+Rocket Body / Publicly Available Information / Intrack Radar Technologies / JDAY 111 / 18:28Z
+
+2026-04-21T18:30:08.240Z
+
+Unknown payload / Publicly Available Information / PAIR Map / JDAY 111 / 11:09Z
+
+PAIR map of closure areas
+
+2026-04-21T11:10:15.120Z
+
+2026-04-28T01:46:22.581Z
+
+2026-04-27T10:16:45.352Z
+
+2026-04-27T09:51:41.242Z
+
+2026-04-24T12:12:39.525Z
+
+Satellites Number Name Orbit Country 94219 Payload 94220 Rocket Body 68835 null
+
+Number Name Orbit Country 94219 Payload 94220 Rocket Body 68835 null
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f54becbc-f452-4306-b152-f1ef7ecf1467/Payload%20/%20PASCHED%20/%20PPEC/IRT%20/%20JDAY%20117%20/%2020%3A01Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a5f640e5-4bb5-4160-9c14-c03e3b950bae/Payload%20/%20Neighborhood%20/%20Northstar%20/%20JDAY%20117%20/%2009%3A15Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/ef6c8399-524d-4f3f-bbc0-fbf6ff4f2540/PL/RB%20/%20Residuals%20/%20Northstar%20/%20JDAY%20117%20/%2009%3A12Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/8c305c0f-ac32-4a9c-9fc1-caaa1a545fdf/Payload%20/%20Ground%20Trace%20/%20SLINGSHOT%20/%20JDAY%20117%20/%2009%3A07Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/de2fd5ad-675f-46eb-ab23-de1dbbae4d1d/PL/RB%20/%20Residuals%20/%20SLINGSHOT%20/%20JDAY%20117%20/%2009%3A05Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/1495c20f-eaaf-4ee6-a621-d8d129df9700/Pakistani%20PRSC-EO3%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fwww.orbitalfocus.uk/Diaries/Launches/Launches.php%3Fyear%3D2026%23001%20/%20JDAY%20116%20/%2016%3A38Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/b5bd29bb-9cd2-41d7-a97c-573c07322291/Launch%20Patch%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64416.0%20/%20JDAY%20116%20/%2016%3A33Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/3d169ae5-ce98-4a38-8966-b9be0c58664d/Pakistani%20PRSC-EO3%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64416.0%20/%20JDAY%20116%20/%2016%3A27Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e290e516-4c5c-4d29-bcea-44a7dcf75536/Pakistani%20PRSC-EO3%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64416.0%20/%20JDAY%20116%20/%2016%3A25Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/67f452d7-d320-4480-b779-95124b30a709/LM-6%20Launch%20and%20Payload%20/%20Publicly%20Available%20Information%20/%20https%3A/%2Fforum.nasaspaceflight.com/index.php%3Ftopic%3D64416.0%20/%20JDAY%20116%20/%2016%3A18Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/3a6bdd93-61dd-4b34-8a17-fcbe059f6686/Unknown%20Payload%20/%20Publicly%20Available%20Information%20/%20PAIR%20Map%20/%20JDAY%20114%20/%2007%3A44Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/d61a5274-a328-46b9-bc89-ee7853635ad3/Rocket%20Body%20/%20PASCHED%20/%20Slingshot%20/%20JDAY%20112%20/%2007%3A00Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/67bd3964-1995-49ab-93af-0dab32696010/Rocket%20Body%20/%20Ground%20Trace%20/%20Slingshot%20/%20JDAY%20112%20/%2006%3A59Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/c862f5d6-72e5-401c-ba96-63c718994096/Rocket%20Body%20/%20Ground%20Trace%20/%20NorthStar%20/%20JDAY%20112%20/%2006%3A58Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/8b1ec54e-49c8-463e-b704-e412d36cc727/Rocket%20Body%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20112%20/%2006%3A58Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/3c5b08ef-66d3-478b-830c-caa0ddc75be3/Rocket%20Body%20/%20COCO%20/%20NorthStar%20/%20JDAY%20112%20/%2006%3A56Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f26350e7-b985-4b88-90d3-391ff41275d6/Payload%20/%20COCO%20/%20KBR%20/%20JDAY%20111%20/%2018%3A32Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/19bd6615-cd20-4e27-bcdd-101272dbc140/Payload%20/%20PASCHED%20/%20KBR%20/%20JDAY%20111%20/%2018%3A32Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/01880b63-3e10-48fc-b0df-20a1cf6c4661/Payload%20/%20PASCHED%20/%20%20/%20JDAY%20111%20/%2018%3A31Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/da18ebb6-1f83-416e-ad80-c3846b7d5862/Rocket%20Body%20/%20Publicly%20Available%20Information%20/%20Intrack%20Radar%20Technologies%20/%20JDAY%20111%20/%2018%3A30Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/efd393a0-c63f-4c7f-ad36-9e53b27da16d/Rocket%20Body%20/%20Publicly%20Available%20Information%20/%20Intrack%20Radar%20Technologies%20/%20JDAY%20111%20/%2018%3A28Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/99276332-07c1-48c3-8b42-785e6505f409/Unknown%20payload%20/%20Publicly%20Available%20Information%20/%20PAIR%20Map%20/%20JDAY%20111%20/%2011%3A09Z
+
+NOTSO_Launch / LM-6 (94220) / Unknown Payload (94219) / Taiyuan, China / 25 April 26 / ~1216 UTC / LEO_27Apr-1016Z
+
+NOTSO_Launch / LM-6 (94220) / Unknown Payload (94219) / Taiyuan, China / 25 April 26 / ~1216 UTC / LEO_27Apr-0950Z
+
+NOTSO_Launch / LM-6 (94220) / Unknown Payload (94219) / Taiyuan, China / 25 April 26 / ~1216 UTC / LEO_24Apr-1212Z

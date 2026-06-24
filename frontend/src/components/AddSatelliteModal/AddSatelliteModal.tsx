@@ -16,6 +16,8 @@ export default function AddSatelliteModal({ onClose, onAdded }: Props) {
   const [keywords, setKeywords] = useState('');
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState('');
+  const [mode, setMode] = useState<'search' | 'manual'>('search');
+  const [manualTle, setManualTle] = useState({ name: '', noradId: '', line1: '', line2: '' });
 
   const search = async () => {
     if (!query.trim()) return;

@@ -1,0 +1,63 @@
+NOTSO_Maneuver / SJ-20 (44910) / GEO_17Jun-2100Z
+
+JDay 168 at 2050z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have verified a maneuver by SJ-20 (44910) occurring at 0925z on 17JUN (JDay 168).
+The satellite maneuvered with a delta-v of 0.3 m/s, resulting in period increase of 25 secs, initiating a 0.1 W deg/day drift rate. 
+
+This maneuver could be a station-keeping maneuver due to the maneuver being near the longitudal bounds that it is currently residing in. 
+
+There are no upcoming close approaches of concern due to this maneuver and a Neighborhood of nearby objects is attached showing upcoming close approaches as a result of this maneuver.
+
+PAI suggests that SJ-20 is a Chinese satellite supporting commercial operations. Its mission is communications as an experimental DFH-5-based GEO satellite focused on technology demonstration, including high-throughput, laser, and quantum communications payloads. SJ-20 is assessed to be one of China’s largest communications satellites.
+ 
+The specifics of the maneuver are: 
+--Time of Maneuver: 17Jun0925z 
+--Delta V: 0.30 m/s 
+--Period Change: 25.94 seconds 
+--Perigee Change: 2.48 km 
+--Apogee Change: 14.45 km 
+--Inclination Change: -0.0001 degs
+--Current Drift Rate: 0.10 W deg/day
+
+Post Maneuver Current TLE as of 17JUN 1958z provided by KBR:
+1 44910U 19097A   26168.83240906 +.00000202 +00000-0 +16852-5 0  0003
+2 44910   4.9215  75.0584 0015848  52.7839 122.7765  1.00243040000004
+
+18 Jun, JDAY 168, 2032Z
+
+Mission Summary:
+Shijian 20 (SJ-20) is a heavy Chinese experimental communications satellite operating in geostationary orbit (GEO). Serving as the maiden verification flight for China’s next-generation DFH-5 satellite platform, its primary mission is to test ultra-high-performance technologies, including high-thrust ion propulsion, laser communications, and a massive solar wing configuration, providing up to 28 kilowatts of payload power. By successfully validating these advanced systems after the failure of the previous DFH-5 prototype (Shijian 18) in 2017, Shijian 20 laid the structural and technological foundation for China’s modern, high-capacity civilian and military space communications infrastructure.
+Source: TAB
+
+Satellite Summary:
+44910 | SHI JIAN 20 | GEO-GSO / Geostationary | CAST - Chinese Academy of Space Technology (China) | Active - Inclined (aged) / Manoeuverable | Civil/Other | Communications / Communications - Experimental,Communications / Communications - High Throughput,Technology / Technology Test/Prototype | 27/12/2019 (6.48 years old) | Experimental HTS Communications Satellite. | Re-flight of the Long March 5 following the failure in July 2017.&nbsp;Flew without YZ-2 upper stage on Long March 5 as had LIPS-300 electrical engine to raise orbit.HTS payload capable of 300 gps. Also carrying high-thrust ion propulsion developed by the Lanzhou Institute of Physics for performance test and a laser communications payload and a quantum communications payload. | Yes - On-board Propulsion | Electric - Xenon | Ka,Laser | Source: Seradata
+
+Nearby Blue Object:
+43632 | AZERSPACE-2/INTELSAT 38 | GEO-GSO / Geostationary | Azercosmos/Intelsat Joint (Azerbaijan) | Active / Manoeuverable | Commercial | Communications / Communications - Direct Broadcasting,Communications / Communications - High Throughput | 25/09/2018 (7.73 years old) | 15.0 years | Jointly owned communications spacecraft. | The AZERSPACE 2/INTELSAT 38 satellite is a joint program between Azercosmos -- Azerbaijan's national satellite operator -- and Intelsat. It will provide direct-to-home broadcast services over parts of Europe, the Middle East and South Asia, and support government services over tropical Africa.There will be a back-up station controlled by Intelsat but the satellite will be totally operated by Azercosmos. 15 Ku transponders to be used by Intelsat to provide continuity of service for INTELSAT 12. Intelsat subsequently long term leased part of this payload to SupremeSAT. | Yes - On-board Propulsion | Bi-propellant (Liquid Chemical) - MMH (Monomethyl Hydrazine),Electric - Xenon | User Down: Ku | ,HORIZONS 3e | Source: Seradata
+
+Space Weather Conditions during maneuver 0925Z, JDAY 168)  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  
+Source: https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard (Read More)
+
+SJ-20 / Maneuver Time / SAFRAN / JDAY 168 / 20:54Z
+
+SJ-20 / Orbital Parameter History / SAFRAN / JDAY 168 / 20:53Z
+
+SJ-20 / Orbital Plot / KBR / JDAY 168 / 20:52Z
+
+SJ-20 / Residuals / KBR / JDAY 168 / 20:51Z
+
+SJ-20 / Lightcurve / KBR / JDAY 168 / 20:51Z
+
+SJ-20 / Orbital Plot / KBR / JDAY 168 / 20:51Z
+
+SJ-20 / Neighborhood / KBR / JDAY 168 / 20:50Z
+
+SJ-20 / PASCHED / KBR / JDAY 168 / 20:50Z
+
+SJ-20 / Waterfall / KBR / JDAY 168 / 20:49Z
+
+Satellites Number Name Orbit Country 44910 SJ-20 GEO China (PRC)

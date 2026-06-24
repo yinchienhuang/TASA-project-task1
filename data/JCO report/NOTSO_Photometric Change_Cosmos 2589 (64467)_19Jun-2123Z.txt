@@ -1,0 +1,39 @@
+NOTSO_Photometric Change / Cosmos 2589 (64467)_19Jun-2123Z
+
+Day 170 at 2109z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on COSMOS 2589 (64467). This change occurred on 19Jun (JDay 170) at the solar phase angle of -0 deg and appeared to be ~1.5 visual magnitude dimmer. The time of the change is roughly 19Jun1741z. The photometry did return back to pattern of life on 19Jun at ~1834z.
+
+This is a low confidence photometric change due to their being only one collect during the window.
+ 
+The cause of the change may be associated with a close approach with USA 325 (51281) where USA 325 had favorable lighting on 19Jun1708z at 17. km. This photometric variation is consistent with the historical pattern of life for this object of performing a photometric change when USA 325 has a close approach with favorable lighting. Analysis is ongoing.
+ 
+The satellite is in GEO and is currently at 97.98 E longitude and is drifting 0.002 E degs/day. Neighborhood is provided. Click link above to view products.
+
+PAI suggests that COSMOS 2589 is a Russian satellite that supports military operations. The mission of COSMOS 2589 is Servicing/Inspection / Inspection Satellite, Cargo / Spacecraft Delivery/Deployment.
+ 
+Time of change: 19Jun1742z
+Solar phase angle window: 0
+Vismag pre change: 10.3
+Vismag post change: 1.7
+Close approaches within window: TCA w/(51281) on 19Jun1708z at 17 km; with 51281 having favorable lighting.
+Current longitude: 97.98 E Longitude
+Current drift rate: 0.002 E degs/day
+ 
+Current TLE as of 19Jun1309z provided by SAFRAN:
+1 64467U 25131A   26170.54845223  .00000000  00000-0  00000-0 0  9998
+2 64467   0.0372  86.2657 0001238  53.8874  63.0321  1.00262380  6669
+
+COSMOS 2589 / Neighborhood / KBR / JDAY 170 / 21:22Z
+
+COSMOS 2589 / Waterfall / KBR / JDAY 170 / 21:22Z
+
+COSMOS 2589 / 3D Visualization / KBR / JDAY 170 / 21:21Z
+
+COSMOS 2589 / PASCHED / KBR / JDAY 170 / 21:21Z
+
+COSMOS 2589 / TRIC Plot / KBR / JDAY 170 / 21:21Z
+
+COSMOS 2589 / Lightcurve / KBR / JDAY 170 / 21:21Z
+
+Satellites Number Name Orbit Country 64467 COSMOS 2589 HEO Russia (CIS)

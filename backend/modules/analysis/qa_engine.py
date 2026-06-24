@@ -1,9 +1,12 @@
 """
 GPT-4o agentic Q&A engine with multi-step tool calling for SSA questions.
+Includes three-domain analysis (semantic/temporal/spatial).
 """
 import json
 import os
 from datetime import datetime, timezone
+from dataclasses import dataclass, asdict
+from typing import Optional
 
 from openai import AsyncOpenAI
 
@@ -23,30 +26,115 @@ LLM_MODEL = "gpt-4o"
 # Supported event types in the system
 SUPPORTED_EVENT_TYPES = {"launch", "maneuver", "photometric_change"}
 
+# Three-Domain Analysis Constants
+CONFIDENCE_THRESHOLD_WARN = 0.8
+CONFIDENCE_THRESHOLD_MIN = 0.6
+DEFAULT_TEMPORAL_DAYS = 30
+TOP_N_SATELLITES = 10
+
+# Three-Domain Data Structures
+@dataclass
+class IdentifiedNode:
+    """一个识别出的节点"""
+    name: str                   # 原始提及名称
+    resolved_id: str            # KG 中的规范 ID
+    node_type: str              # satellite, country, organization, location
+    confidence: float           # 识别置信度 [0.0, 1.0]
+
+@dataclass
+class RelationshipInfo:
+    """KG 中的关系"""
+    relation_type: str          # operated_by, launched_from, etc.
+    target_id: str              # 目标节点 ID
+    target_label: str           # 目标节点名称
+    target_type: str            # 目标节点类型
+    sources: list               # 源报告
+
+@dataclass
+class NodeSemanticInfo:
+    """一个节点的语义信息"""
+    node_id: str
+    node_label: str
+    node_type: str
+    properties: dict            # 节点属性 (NORAD ID, orbit_type, etc.)
+    relationships: list         # List[RelationshipInfo]
+    relationship_count: int
+
+@dataclass
+class SemanticDomainInfo:
+    """语义域信息（KG）"""
+    nodes_info: dict            # {node_id: NodeSemanticInfo}
+    identified_nodes_count: int
+    total_relationships: int
+    collection_status: str      # "success", "partial", "failed"
+    error_message: Optional[str] = None
+
+@dataclass
+class EventData:
+    """单个事件"""
+    event_type: str             # maneuver, photometric_change, launch
+    event_date: str
+    satellite_id: str
+    satellite_label: str
+    details: dict               # event-specific details
+    source_report: str
+
+@dataclass
+class TemporalDomainInfo:
+    """时间域信息（事件）"""
+    events_by_satellite: dict   # {sat_id: [EventData]}
+    time_window_days: int
+    default_time_window: bool   # 是否使用默认的 30 天
+    total_events_count: int
+    satellite_activity_summary: dict  # {sat_id: event_count}
+    collection_status: str      # "success", "partial", "failed"
+    error_message: Optional[str] = None
+
+@dataclass
+class ThreeDomainInfo:
+    """三域融合信息"""
+    identified_nodes: list      # List[IdentifiedNode]
+    semantic_info: SemanticDomainInfo
+    temporal_info: TemporalDomainInfo
+    collection_errors: list     # 收集过程中的所有错误
+    formatted_for_agent: str    # 格式化供 Agent 使用的文本
+    markdown_summary: str       # 完整的 Markdown 总结
+
 _SYSTEM_PROMPT = """You are an SSA (Space Situational Awareness) analyst assistant. Answer questions about satellite maneuvers, orbital patterns, coverage, and related intelligence.
 
 ## How to use tools
 
-A PLANNING step has been done first - you have a suggested tool usage plan.
-Review the plan and execute it by calling the suggested tools IN ORDER.
+A PLANNING step has been done first - you have a tool usage PLAN that you MUST follow.
 
-You have autonomy to:
-- Follow the suggested plan (recommended for comprehensive answers)
-- Deviate from the plan if you discover better approaches mid-execution
-- Call additional tools if needed to deepen analysis
-- Skip tools from the plan only if they become unnecessary after earlier results
+**MANDATORY: Execute the plan EXACTLY as specified, IN THE EXACT ORDER given.**
+
+Rules:
+1. **MUST** call the tools in the order specified in the plan
+2. **MUST NOT** skip tools from the plan unless you first call them and confirm they returned no useful data
+3. **DO NOT** call tools not in the plan (unless absolutely critical for safety/accuracy)
+4. **WAIT** until you've called all planned tools before drawing conclusions
+
+Only deviate if:
+- A tool returns an error and cannot be recovered
+- A tool result makes a planned tool redundant (e.g., already have complete answer)
+- User safety requires it
 
 The tool descriptions explain what each tool does - use them to understand when to apply each one.
 
 ## Source Report Enhancement (IMPORTANT)
 
-When your answer references source reports (from search_events, get_entity_relationships, or other tools):
-1. ALWAYS call search_report_content to retrieve the FULL report text
-2. Use the complete report content to enhance and deepen your analysis
-3. Extract specific details, quotes, and context from the full report
-4. This elevates your answer from summary-level to source-level detail
+When your answer would benefit from detailed technical information or when user asks for "why" or "how" questions:
+1. DECIDE if full report context is needed (not every reference needs it):
+   - NEED full report: Technical details, delta-v values, assessments, analysis rationale
+   - DON'T need full report: Simple event lists, timeline summaries, coverage statistics
+2. When you decide to get the full report:
+   - Call search_report_content with satellite name and relevant keywords
+   - Use the complete report to enhance your analysis with technical details, specific values, and assessments
+3. This elevates your answer from summary-level to source-level detail for important questions
 
-Example: If search_events returns "maneuver on 2026-06-17", call search_report_content to get the complete analysis, then include specific technical details, assessments, and context from the report.
+Example:
+- User asks "What did SJ-20 do on June 17?" → Call search_report_content to get technical analysis
+- User asks "List SJ-20's recent events" → Use search_all_events data only, no need for full reports
 
 ## Important Patterns
 
@@ -391,8 +479,14 @@ _CHINESE_SAT_NAMES = {
 
 
 def _normalize_sat_name(name: str) -> str:
-    """Normalize satellite name for comparison: lowercase, remove hyphens/extra spaces/parens.
-    Also translates common Chinese characters to English."""
+    """Normalize satellite name for comparison: lowercase, remove hyphens/spaces/parens.
+    Also translates common Chinese characters to English.
+
+    Examples:
+    - "SY-12 01" → "sy1201"
+    - "SY12 01" → "sy1201"
+    - "sy-12-01" → "sy1201"
+    """
     import re
     s = str(name).lower().strip()
 
@@ -401,7 +495,7 @@ def _normalize_sat_name(name: str) -> str:
         s = s.replace(cn.lower(), en)
 
     s = re.sub(r'\([^)]*\)', '', s)  # Remove parentheses and content
-    s = re.sub(r'[\s\-]+', ' ', s)  # Replace hyphens and multiple spaces with single space
+    s = re.sub(r'[\s\-]+', '', s)   # Remove ALL hyphens and spaces (not replace with space)
     return s.strip()
 
 
@@ -506,6 +600,57 @@ Respond with just the number (1-{len(candidates)}) of the best match, or 0 if no
     return None
 
 
+_COUNTRY_ALIASES: dict[str, str] = {
+    # Chinese variants → China
+    "china": "china", "prc": "china", "中国": "china", "中國": "china",
+    "peoples republic of china": "china", "people's republic of china": "china",
+    # USA variants
+    "usa": "usa", "us": "usa", "united states": "usa", "united states of america": "usa", "america": "usa",
+    # Russia variants
+    "russia": "russia", "russian federation": "russia", "俄罗斯": "russia", "俄羅斯": "russia", "ussr": "russia",
+    # Other common
+    "uk": "united_kingdom", "united kingdom": "united_kingdom", "britain": "united_kingdom",
+    "japan": "japan", "日本": "japan",
+    "france": "france", "india": "india", "germany": "germany",
+}
+
+
+def _resolve_country_id(country_name: str) -> str | None:
+    """Resolve a country name/alias to its KG node ID."""
+    from modules.knowledge_graph.kg_store import kg_store
+
+    normalized = country_name.lower().strip()
+
+    # 1. Check alias table → canonical name → look up in KG
+    canonical = _COUNTRY_ALIASES.get(normalized)
+    if canonical and canonical in kg_store.nodes:
+        return canonical
+
+    # 2. Direct node ID match (e.g. "china" already is the ID)
+    if normalized in kg_store.nodes:
+        return normalized
+
+    # 3. Search KG for Country nodes by label or aliases
+    for node_id, node in kg_store.nodes.items():
+        if node.get("type") != "Country":
+            continue
+        label = node.get("label", "").lower()
+        if label == normalized:
+            return node_id
+        aliases = ((node.get("attributes") or {}).get("aliases") or {}).get("value") or []
+        for alias in aliases:
+            if alias.lower() == normalized:
+                return node_id
+
+    # 4. Fuzzy: canonical name appears in node ID (e.g. "china" in "country_china")
+    if canonical:
+        for node_id in kg_store.nodes:
+            if canonical in node_id:
+                return node_id
+
+    return None
+
+
 def _resolve_satellite_id(sat_id: str) -> str | None:
     """Convert satellite name, KG node ID, or NORAD ID to the canonical satellite identifier.
     Returns the satellite_id (node ID or NORAD ID) for use in event queries, or None if not found.
@@ -554,6 +699,74 @@ def _resolve_satellite_id(sat_id: str) -> str | None:
 
     # Not found
     return None
+
+
+async def _resolve_satellite_id_with_llm(sat_name: str) -> str | None:
+    """LLM-based satellite resolution: when regex/fuzzy matching fails.
+
+    Gives LLM a list of all satellites and asks it to find the closest match.
+    """
+    from modules.knowledge_graph.kg_store import kg_store
+
+    client = _get_client()
+
+    # Build satellite list
+    satellites = []
+    for node in kg_store.nodes.values():
+        if node.get("type") != "Satellite":
+            continue
+        label = node.get("label", "")
+        aliases = (node.get("attributes") or {}).get("aliases", {}).get("value") or []
+        norad_id = str(((node.get("attributes") or {}).get("norad_id") or {}).get("value") or "")
+
+        if label:
+            satellites.append({
+                "id": node.get("id"),
+                "label": label,
+                "norad_id": norad_id,
+                "aliases": aliases
+            })
+
+    if not satellites:
+        return None
+
+    # Format satellite list for LLM
+    sat_list_str = "\n".join([
+        f"- {s['label']} (NORAD: {s['norad_id']}, aliases: {', '.join(s['aliases'])})"
+        for s in satellites[:50]  # Limit to 50 to avoid token overflow
+    ])
+
+    prompt = f"""User asked about a satellite: "{sat_name}"
+
+Below is a list of available satellites in the system. Find the ONE satellite that best matches what the user is asking about. Only return the exact label or most likely alias.
+
+Satellite List:
+{sat_list_str}
+
+If you find a match, return ONLY the satellite label or alias (no explanation). If no reasonable match exists, return "NOT_FOUND".
+
+Your response:"""
+
+    try:
+        response = await client.chat.completions.create(
+            model=LLM_MODEL,
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0,
+            max_tokens=100
+        )
+
+        result = response.choices[0].message.content.strip()
+
+        if result == "NOT_FOUND":
+            return None
+
+        # Try to resolve the LLM's result
+        resolved = _resolve_satellite_id(result)
+        return resolved
+    except Exception as e:
+        import sys
+        print(f"[LLM SATELLITE RESOLUTION ERROR] {str(e)}", file=sys.stderr)
+        return None
 
 
 async def _call_tool(name: str, args: dict) -> dict:
@@ -1077,6 +1290,401 @@ async def _call_tool(name: str, args: dict) -> dict:
     return {"error": f"Unknown tool: {name}"}
 
 
+# Three-Domain Analysis Functions
+
+async def _identify_question_nodes(question: str) -> list[IdentifiedNode]:
+    """识别问题中提及的节点（卫星、国家等）"""
+    client = _get_client()
+
+    prompt = f"""Analyze this SSA question and identify all entities (satellites, countries, organizations, locations) mentioned explicitly or implicitly.
+
+Question: {question}
+
+Return a JSON list with this structure:
+[
+  {{
+    "name": "entity name as mentioned in question",
+    "type": "satellite|country|organization|location",
+    "confidence": 0.0-1.0
+  }}
+]
+
+Focus on: satellites and countries first. Only include if clearly relevant to the question.
+Return ONLY valid JSON list."""
+
+    try:
+        response = await client.chat.completions.create(
+            model=LLM_MODEL,
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0,
+            max_tokens=500
+        )
+
+        response_text = response.choices[0].message.content.strip()
+        # Handle markdown code blocks
+        if "```json" in response_text:
+            response_text = response_text.split("```json")[1].split("```")[0].strip()
+        elif "```" in response_text:
+            response_text = response_text.split("```")[1].split("```")[0].strip()
+
+        entities = json.loads(response_text)
+        identified = []
+
+        for entity in entities:
+            entity_name = entity.get("name", "").lower().strip()
+            entity_type = entity.get("type", "").lower().strip()
+            confidence = entity.get("confidence", 0.5)
+
+            # Resolve ID based on type
+            resolved_id = None
+            if entity_type == "satellite":
+                # Try regex matching first
+                resolved_id = _resolve_satellite_id(entity_name)
+
+                # If failed, use LLM to find best match
+                if not resolved_id:
+                    resolved_id = await _resolve_satellite_id_with_llm(entity_name)
+                    if resolved_id:
+                        # Lower confidence for LLM fallback resolution
+                        confidence = min(confidence, 0.75)
+
+            elif entity_type == "country":
+                # Resolve country name to KG node ID
+                resolved_id = _resolve_country_id(entity_name)
+
+            if resolved_id:
+                identified.append(IdentifiedNode(
+                    name=entity.get("name", ""),
+                    resolved_id=resolved_id,
+                    node_type=entity_type,
+                    confidence=confidence
+                ))
+
+        return identified
+    except Exception as e:
+        import sys
+        print(f"[NODE IDENTIFICATION ERROR] {str(e)}", file=sys.stderr)
+        return []
+
+
+async def _infer_temporal_window(question: str) -> tuple[int, bool]:
+    """从问题推断时间窗口（days）
+
+    Returns: (days, is_default) - days是推断的天数，is_default表示是否使用了默认值
+    """
+    client = _get_client()
+
+    prompt = f"""Analyze this SSA question and infer the time window of interest.
+
+Question: {question}
+
+Return a JSON object:
+{{
+  "time_references": ["recent", "past 7 days", "this year", ...],
+  "inferred_days": <number>,
+  "confidence": <0.0-1.0>,
+  "reasoning": "brief explanation"
+}}
+
+Time mapping:
+- "recent", "lately", "最近" → 7 days
+- "past week", "过去一周" → 7 days
+- "past month", "近期", "一个月内" → 30 days
+- "past 3 months" → 90 days
+- "this year", "今年" → 365 days
+- "no time reference" → use default 30 days
+
+Return ONLY valid JSON."""
+
+    try:
+        response = await client.chat.completions.create(
+            model=LLM_MODEL,
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0,
+            max_tokens=300
+        )
+
+        response_text = response.choices[0].message.content.strip()
+        # Handle markdown code blocks
+        if "```json" in response_text:
+            response_text = response_text.split("```json")[1].split("```")[0].strip()
+        elif "```" in response_text:
+            response_text = response_text.split("```")[1].split("```")[0].strip()
+
+        result = json.loads(response_text)
+        inferred_days = result.get("inferred_days", DEFAULT_TEMPORAL_DAYS)
+        confidence = result.get("confidence", 0.5)
+
+        # If low confidence or no explicit time reference, use default
+        is_default = confidence < 0.6 or not result.get("time_references")
+        if is_default:
+            inferred_days = DEFAULT_TEMPORAL_DAYS
+
+        return inferred_days, is_default
+    except Exception as e:
+        import sys
+        print(f"[TEMPORAL WINDOW INFERENCE ERROR] {str(e)}", file=sys.stderr)
+        return DEFAULT_TEMPORAL_DAYS, True
+
+
+async def _collect_semantic_info(nodes: list[IdentifiedNode]) -> SemanticDomainInfo:
+    """从 KG 收集节点的语义信息（1跳邻域）"""
+    errors = []
+    nodes_info = {}
+    total_relationships = 0
+
+    for node in nodes:
+        try:
+            # Use get_entity_relationships to get all edges
+            relationships_result = await _call_tool("get_entity_relationships", {"entity_id": node.resolved_id})
+
+            if relationships_result.get("error"):
+                errors.append(f"Failed to get relationships for {node.name}: {relationships_result['error']}")
+                continue
+
+            # Extract relationship info
+            rels = []
+            if "relationships" in relationships_result:
+                relationships_data = relationships_result["relationships"]
+                # relationships_data is a dict with relationship types as keys
+                if isinstance(relationships_data, dict):
+                    for rel_type, rel_list in relationships_data.items():
+                        if isinstance(rel_list, list):
+                            for rel in rel_list:
+                                rels.append(RelationshipInfo(
+                                    relation_type=rel_type,
+                                    target_id=rel.get("related_entity_id", rel.get("target_id", "")),
+                                    target_label=rel.get("related_entity", rel.get("target_label", "")),
+                                    target_type=rel.get("related_entity_type", rel.get("target_type", "")),
+                                    sources=rel.get("source_reports", rel.get("sources", []))
+                                ))
+
+            nodes_info[node.resolved_id] = NodeSemanticInfo(
+                node_id=node.resolved_id,
+                node_label=relationships_result.get("label", node.name),
+                node_type=relationships_result.get("type", node.node_type),
+                properties={
+                    "norad_id": relationships_result.get("attributes", {}).get("norad_id"),
+                    "orbit_type": relationships_result.get("attributes", {}).get("orbit_type"),
+                    "operator": relationships_result.get("attributes", {}).get("operator"),
+                    "mission": relationships_result.get("attributes", {}).get("mission"),
+                },
+                relationships=rels,
+                relationship_count=len(rels)
+            )
+            total_relationships += len(rels)
+
+        except Exception as e:
+            errors.append(f"Exception collecting semantic info for {node.name}: {str(e)}")
+
+    collection_status = "success" if not errors else ("partial" if nodes_info else "failed")
+
+    return SemanticDomainInfo(
+        nodes_info=nodes_info,
+        identified_nodes_count=len(nodes),
+        total_relationships=total_relationships,
+        collection_status=collection_status,
+        error_message="; ".join(errors) if errors else None
+    )
+
+
+async def _collect_temporal_info(nodes: list[IdentifiedNode], question: str = "") -> TemporalDomainInfo:
+    """收集节点的时间信息（事件）
+
+    使用智能推断的时间窗口（如果提供了问题）
+    """
+    errors = []
+    events_by_satellite = {}
+    total_events = 0
+    satellite_activity = {}
+
+    # Smart temporal window inference
+    if question:
+        days, is_default = await _infer_temporal_window(question)
+    else:
+        days = DEFAULT_TEMPORAL_DAYS
+        is_default = True
+
+    # Filter satellite nodes only
+    satellite_nodes = [n for n in nodes if n.node_type == "satellite"]
+
+    # If querying by country, get all satellites first
+    country_nodes = [n for n in nodes if n.node_type == "country"]
+    if country_nodes and not satellite_nodes:
+        try:
+            satellites_result = await _call_tool("search_satellites_by_country", {"country": country_nodes[0].resolved_id})
+            if satellites_result.get("satellites"):
+                # Get top N active satellites (would require activity score, for now just top N)
+                for sat in satellites_result.get("satellites", [])[:TOP_N_SATELLITES]:
+                    satellite_nodes.append(IdentifiedNode(
+                        name=sat.get("name", ""),
+                        resolved_id=sat.get("norad_id", sat.get("id", "")),
+                        node_type="satellite",
+                        confidence=1.0
+                    ))
+        except Exception as e:
+            errors.append(f"Failed to get satellites for {country_nodes[0].name}: {str(e)}")
+
+    # Collect events for each satellite
+    for sat_node in satellite_nodes:
+        try:
+            events_result = await _call_tool("search_all_events", {
+                "satellite_id": sat_node.resolved_id,
+                "days": days
+            })
+
+            if events_result.get("error"):
+                errors.append(f"Failed to get events for {sat_node.name}: {events_result['error']}")
+                continue
+
+            events = events_result.get("events", [])
+            if events:
+                # Enrich events with report information (source_report field already present from search_all_events)
+                events_by_satellite[sat_node.resolved_id] = events
+                satellite_activity[sat_node.resolved_id] = len(events)
+                total_events += len(events)
+
+        except Exception as e:
+            errors.append(f"Exception collecting events for {sat_node.name}: {str(e)}")
+
+    collection_status = "success" if not errors else ("partial" if events_by_satellite else "failed")
+
+    return TemporalDomainInfo(
+        events_by_satellite=events_by_satellite,
+        time_window_days=days,
+        default_time_window=is_default,
+        total_events_count=total_events,
+        satellite_activity_summary=satellite_activity,
+        collection_status=collection_status,
+        error_message="; ".join(errors) if errors else None
+    )
+
+
+def _format_three_domain_for_agent(nodes: list[IdentifiedNode], semantic: SemanticDomainInfo, temporal: TemporalDomainInfo) -> str:
+    """Format three-domain information for agent context"""
+    lines = []
+
+    # Header
+    lines.append("🎯 THREE-DOMAIN ANALYSIS CONTEXT:\n")
+
+    # Identified Nodes
+    if nodes:
+        lines.append("**Identified Entities:**")
+        for node in nodes:
+            confidence_warning = ""
+            if node.confidence < CONFIDENCE_THRESHOLD_WARN:
+                confidence_warning = f" ⚠️ (confidence: {node.confidence:.1%})"
+            lines.append(f"- {node.name} ({node.node_type}){confidence_warning}")
+        lines.append("")
+
+    # Semantic Domain
+    if semantic.nodes_info:
+        lines.append("**Semantic Context (Knowledge Graph):**")
+        for node_id, info in semantic.nodes_info.items():
+            if info.relationships:
+                lines.append(f"- {info.node_label}:")
+                for rel in info.relationships[:3]:  # Show top 3 relationships
+                    lines.append(f"  - {rel.relation_type} → {rel.target_label}")
+                if len(info.relationships) > 3:
+                    lines.append(f"  ... and {len(info.relationships) - 3} more relationships")
+        lines.append("")
+
+    # Temporal Domain
+    if temporal.events_by_satellite:
+        lines.append("**Temporal Context (Events):**")
+        if temporal.default_time_window:
+            lines.append(f"⚠️ Using default time window: {temporal.time_window_days} days")
+        for sat_id, events in list(temporal.events_by_satellite.items())[:TOP_N_SATELLITES]:
+            count = len(events)
+            lines.append(f"- {sat_id}: {count} events")
+        if len(temporal.events_by_satellite) > TOP_N_SATELLITES:
+            lines.append(f"... and {len(temporal.events_by_satellite) - TOP_N_SATELLITES} other satellites with events")
+        lines.append("")
+
+    # Collection Errors
+    if semantic.error_message or temporal.error_message:
+        lines.append("⚠️ **Collection Status:**")
+        if semantic.error_message:
+            lines.append(f"Semantic: {semantic.error_message}")
+        if temporal.error_message:
+            lines.append(f"Temporal: {temporal.error_message}")
+
+    return "\n".join(lines)
+
+
+def _create_three_domain_markdown(nodes: list[IdentifiedNode], semantic: SemanticDomainInfo, temporal: TemporalDomainInfo) -> str:
+    """Create a complete Markdown summary of three-domain analysis"""
+    lines = []
+
+    # Header
+    lines.append("# Three-Domain Analysis Summary")
+    lines.append(f"Generated: {datetime.now(timezone.utc).isoformat()}\n")
+
+    # 1. Node Identification
+    lines.append("## 1. Identified Entities")
+    if nodes:
+        for node in nodes:
+            confidence_pct = f"{node.confidence:.1%}"
+            confidence_status = "✅" if node.confidence >= CONFIDENCE_THRESHOLD_WARN else "⚠️"
+            lines.append(f"- **{node.name}** ({node.node_type}) {confidence_status} Confidence: {confidence_pct}")
+    else:
+        lines.append("No entities identified.")
+    lines.append("")
+
+    # 2. Semantic Domain
+    lines.append("## 2. Semantic Domain (Knowledge Graph)")
+    lines.append(f"**Status**: {semantic.collection_status}")
+    lines.append(f"**Total Relationships**: {semantic.total_relationships}\n")
+
+    if semantic.nodes_info:
+        for node_id, info in semantic.nodes_info.items():
+            lines.append(f"### {info.node_label}")
+            lines.append(f"- **Type**: {info.node_type}")
+            lines.append(f"- **Properties**:")
+            for key, value in info.properties.items():
+                if value:
+                    lines.append(f"  - {key}: {value}")
+            if info.relationships:
+                lines.append(f"- **Relationships** ({len(info.relationships)} total):")
+                for rel in info.relationships:
+                    lines.append(f"  - {rel.relation_type} → {rel.target_label} ({rel.target_type})")
+            lines.append("")
+    lines.append("")
+
+    # 3. Temporal Domain
+    lines.append("## 3. Temporal Domain (Events)")
+    lines.append(f"**Status**: {temporal.collection_status}")
+    lines.append(f"**Time Window**: {temporal.time_window_days} days")
+    if temporal.default_time_window:
+        lines.append("**Note**: Using default time window (30 days)")
+    lines.append(f"**Total Events**: {temporal.total_events_count}\n")
+
+    if temporal.events_by_satellite:
+        for sat_id, events in temporal.events_by_satellite.items():
+            lines.append(f"### {sat_id} ({len(events)} events)")
+            for event in events[:5]:  # Show first 5 events
+                lines.append(f"- [{event.get('type', 'unknown')}] {event.get('event_date', 'N/A')}")
+                if event.get('details'):
+                    for key, val in event['details'].items():
+                        if val:
+                            lines.append(f"  - {key}: {val}")
+            if len(events) > 5:
+                lines.append(f"  ... and {len(events) - 5} more events")
+            lines.append("")
+    lines.append("")
+
+    # 4. Errors and Warnings
+    if semantic.error_message or temporal.error_message:
+        lines.append("## ⚠️ Collection Errors")
+        if semantic.error_message:
+            lines.append(f"**Semantic**: {semantic.error_message}")
+        if temporal.error_message:
+            lines.append(f"**Temporal**: {temporal.error_message}")
+        lines.append("")
+
+    return "\n".join(lines)
+
+
 async def _create_tool_plan(question: str) -> tuple[list[str], bool, str]:
     """Let LLM analyze the question and create a tool usage plan.
 
@@ -1201,6 +1809,84 @@ Must be valid JSON. Aim for 2-4 tools for most questions."""
     return plan, False, f"Using fallback: {reason}"
 
 
+def _extract_identified_satellites(nodes: list[IdentifiedNode]) -> list[dict]:
+    """Extract identified satellite nodes for frontend display"""
+    satellites = []
+    if not nodes:
+        return satellites
+
+    for node in nodes:
+        if node.node_type.lower() == "satellite":
+            satellites.append({
+                "name": node.name,
+                "id": node.resolved_id,
+                "confidence": node.confidence,
+                "type": "primary"  # 主要卫星（用户问的）
+            })
+
+    return satellites
+
+
+def _extract_related_satellites(semantic_info: SemanticDomainInfo) -> list[dict]:
+    """提取有 close approach/relationship 的相关卫星"""
+    from modules.knowledge_graph.kg_store import kg_store
+
+    related = []
+    seen_ids = set()
+
+    if not semantic_info or not semantic_info.nodes_info:
+        return related
+
+    for node_id, node_info in semantic_info.nodes_info.items():
+        if not node_info.relationships:
+            continue
+
+        for rel in node_info.relationships:
+            # 只提取卫星类型的相关对象，且不重复
+            if ("satellite" in rel.target_type.lower() and
+                rel.target_id not in seen_ids):
+
+                # Try to resolve the satellite ID using its label
+                resolved_id = _resolve_satellite_id(rel.target_label)
+                if not resolved_id:
+                    # If resolution fails, use target_id as fallback
+                    resolved_id = rel.target_id
+
+                if resolved_id:
+                    related.append({
+                        "name": rel.target_label,
+                        "id": resolved_id,
+                        "confidence": 0.85,  # 从关系推断出的卫星，置信度稍低
+                        "type": "related",  # 关联卫星（close approach 等）
+                        "relation": rel.relation_type
+                    })
+                    seen_ids.add(rel.target_id)
+
+    return related
+
+
+def _extract_temporal_satellites(temporal_info: TemporalDomainInfo, identified_nodes: list[IdentifiedNode]) -> list[dict]:
+    """从 temporal_info 中提取有事件的卫星（用于 country 查询时显示所有相关卫星）"""
+    from modules.knowledge_graph.kg_store import kg_store
+
+    # Only activate when querying by country (no direct satellite in identified_nodes)
+    has_satellite_node = any(n.node_type == "satellite" for n in identified_nodes)
+    if has_satellite_node:
+        return []
+
+    satellites = []
+    for sat_id in temporal_info.events_by_satellite:
+        node = kg_store.nodes.get(sat_id)
+        name = node.get("label", sat_id) if node else sat_id
+        satellites.append({
+            "name": name,
+            "id": sat_id,
+            "confidence": 0.8,
+            "type": "temporal",  # 来自事件查询的卫星
+        })
+    return satellites
+
+
 async def run_qa(
     question: str,
     satellite_id: str | None = None,
@@ -1240,7 +1926,30 @@ async def run_qa(
     # Add current question
     messages.append({"role": "user", "content": question + context})
 
-    # PLANNING STEP: Let LLM create a tool usage plan
+    # THREE-DOMAIN ANALYSIS STEP
+    # Step 1: Identify nodes in the question
+    identified_nodes = await _identify_question_nodes(question)
+
+    # Step 2: Collect semantic information from KG
+    semantic_info = await _collect_semantic_info(identified_nodes)
+
+    # Step 3: Collect temporal information (events)
+    temporal_info = await _collect_temporal_info(identified_nodes, question)
+
+    # Format three-domain information for agent
+    three_domain_formatted = _format_three_domain_for_agent(identified_nodes, semantic_info, temporal_info)
+
+    # Create three-domain info object
+    three_domain_info = ThreeDomainInfo(
+        identified_nodes=identified_nodes,
+        semantic_info=semantic_info,
+        temporal_info=temporal_info,
+        collection_errors=[],
+        formatted_for_agent=three_domain_formatted,
+        markdown_summary=_create_three_domain_markdown(identified_nodes, semantic_info, temporal_info)
+    )
+
+    # PLANNING STEP: Let LLM create a tool usage plan (informed by three-domain analysis)
     tool_plan, plan_success, plan_message = await _create_tool_plan(question)
 
     steps: list[dict] = []
@@ -1254,14 +1963,24 @@ async def run_qa(
         }
     })
 
-    # Add plan to messages so Agent can see it
-    if tool_plan:
-        plan_instruction = f"""ANALYSIS PLAN for this question:
-Based on the question analysis, you should call these tools IN ORDER to comprehensively answer:
-{', '.join(tool_plan)}
+    # Add three-domain context and plan to messages
+    context_message = f"""{three_domain_formatted}
 
-Execute these tools in sequence to gather all necessary information."""
-        messages.append({"role": "assistant", "content": plan_instruction})
+ANALYSIS PLAN for this question:
+Based on the three-domain analysis above, you should call these tools IN ORDER to comprehensively answer:
+{', '.join(tool_plan) if tool_plan else "[Analysis showed sufficient context - use existing information]"}
+
+Execute the plan to gather any additional necessary information."""
+    messages.append({"role": "assistant", "content": context_message})
+
+    # Save markdown summary to a file for the user
+    markdown_filename = f"analysis_context_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}.md"
+    try:
+        with open(markdown_filename, "w", encoding="utf-8") as f:
+            f.write(three_domain_info.markdown_summary)
+    except Exception as e:
+        import sys
+        print(f"[WARNING] Could not save markdown summary: {e}", file=sys.stderr)
 
     MAX_ITER = 8
 
@@ -1278,10 +1997,16 @@ Execute these tools in sequence to gather all necessary information."""
 
         # If no tool calls, we have the final answer
         if not msg.tool_calls:
+            primary_sats = _extract_identified_satellites(identified_nodes)
+            related_sats = _extract_related_satellites(semantic_info)
+            temporal_sats = _extract_temporal_satellites(temporal_info, identified_nodes)
+            seen_ids = {s["id"] for s in primary_sats + related_sats}
+            all_satellites = primary_sats + related_sats + [s for s in temporal_sats if s["id"] not in seen_ids]
             return {
                 "answer": msg.content or "",
                 "steps": steps,
                 "iterations": iteration + 1,
+                "identified_satellites": all_satellites,
             }
 
         # Process all tool calls in this turn
@@ -1320,9 +2045,15 @@ Execute these tools in sequence to gather all necessary information."""
         messages=messages,
         temperature=0,
     )
+    primary_sats = _extract_identified_satellites(identified_nodes)
+    related_sats = _extract_related_satellites(semantic_info)
+    temporal_sats = _extract_temporal_satellites(temporal_info, identified_nodes)
+    seen_ids = {s["id"] for s in primary_sats + related_sats}
+    all_satellites = primary_sats + related_sats + [s for s in temporal_sats if s["id"] not in seen_ids]
     return {
         "answer": final.choices[0].message.content or "",
         "steps": steps,
         "iterations": MAX_ITER,
         "warning": "Max iterations reached",
+        "identified_satellites": all_satellites,
     }

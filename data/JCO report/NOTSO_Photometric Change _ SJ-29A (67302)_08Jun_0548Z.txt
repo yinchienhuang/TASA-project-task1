@@ -1,0 +1,24 @@
+NOTSO_Photometric Change / SJ-29A (67302)_08Jun-0548Z
+
+JDay 159 at 0326z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on SJ-29A (67302). This change occurred on 07 Jun (JDay 158) between the solar phase angles of -111 deg to -104 deg and appeared to be 0.8 visual magnitude brighter. 
+ 
+SJ-29A (67302) is in the vicinity of USA 324 (51280) with close approaches ~110km every 12 hours. At the time of the photometric change, USA 324 (51280) was 1670km from SJ-29A (67302). This photometric variation is not consistent with the historical pattern of life for this object. Analysis is ongoing.
+ 
+The satellite is in GEO and is currently at 73.2 degs E longitude and is geo-stationary. Neighborhood is provided. Click link above to view products
+ 
+PAI suggests that SJ-29A is a Chinese satellite that supports military operations. The mission of SJ-29A is assessed as servicing/inspection and observational/space situational awareness.
+ 
+Time window of change: 07Jun1217z to 07Jun1243z
+Solar phase angle window: -111 to -104 degs
+Vismag pre change: 14.0
+Vismag post change: 13.2
+Current longitude: 73.22 E Longitude
+Current drift rate: 0.02 W degs/day
+ 
+Current TLE as of 07Jun1937z provided by NorthStar:
+1 67302U 25315A   26158.81757940  .00000000  00000-0  00000-0 0    00
+2 67302   3.3729  95.3396 0003647  13.9706 154.4874  1.00286934001518
+
+SJ-29A / PASCHED / KBR / JDAY 159 / 04:42Z

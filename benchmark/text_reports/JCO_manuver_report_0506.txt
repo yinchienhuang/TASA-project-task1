@@ -1,0 +1,199 @@
+NOTSO_Maneuver / SJ-23 (55131) / GEO_06May-1532Z
+
+JDay 126 at 1345z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have verified a second maneuver by SJ-23 (55131), occurring at 0930z on 06May (JDay 126).
+
+The satellite maneuvered from 175.52deg E longitude with a delta-v of 1.45 m/s, resulting in an increase of its westward drift up to 0.670 W deg/day. 
+... (Read More)
+
+JDAY 126, 1504Z
+
+Space Weather Conditions during maneuver (JDAY 126, 0930Z)  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  ... (Read More)
+
+SJ-23 / Waterfall / KBR / JDAY 126 / 15:23Z
+
+2026-05-06T15:23:48.760Z
+
+SJ-23 / TRIC Plot /  / JDAY 126 / 15:07Z
+
+2026-05-06T15:08:08.790Z
+
+SJ-23 / Neighborhood / KBR / JDAY 126 / 15:07Z
+
+2026-05-06T15:07:46.900Z
+
+SJ-23 /  / KBR / JDAY 126 / 15:06Z
+
+2026-05-06T15:07:11.940Z
+
+SJ-23 / TRIC Plot / DRACO / JDAY 126 / 14:31Z
+
+2026-05-06T14:32:01.380Z
+
+SJ-23 / Conjunction information / NorthStar / JDAY 126 / 14:27Z
+
+2026-05-06T14:28:25.760Z
+
+SJ-23 / PASCHED / DRACO / JDAY 126 / 14:27Z
+
+2026-05-06T14:27:40.340Z
+
+SJ-23 / Lightcurve / DRACO / JDAY 126 / 14:26Z
+
+2026-05-06T14:26:51.570Z
+
+SJ-23 / Waterfall / NorthStar / JDAY 126 / 13:45Z
+
+2026-05-06T14:06:36.890Z
+
+SJ-23 / Neighborhood / NorthStar / JDAY 126 / 13:45Z
+
+2026-05-06T13:58:40.060Z
+
+SJ-23 / DC Results / NorthStar / JDAY 126 / 13:45Z
+
+2026-05-06T13:57:08.530Z
+
+SJ-23 / PASCHED / DRACO / JDAY 126 / 11:58Z
+
+2026-05-06T11:58:42.120Z
+
+SJ-23 / Neighborhood / DRACO / JDAY 126 / 10:55Z
+
+2026-05-06T10:56:32.450Z
+
+SJ-23 / Residual ratio / NorthStar / JDAY 126 / 10:00Z
+
+2026-05-06T10:24:14.870Z
+
+SJ-23 / DC Results / NorthStar / JDAY 126 / 10:00Z
+
+2026-05-06T10:19:25.430Z
+
+SJ-23 / DC Results / NorthStar / JDAY 126 / 08:00Z
+
+2026-05-06T08:01:18.030Z
+
+SJ-23 / Period Plot / NorthStar / JDAY 126 / 01:51Z
+
+2026-05-06T01:52:15.920Z
+
+SJ-23 / PASCHED / NorthStar / JDAY 126 / 01:51Z
+
+2026-05-06T01:51:43.880Z
+
+SJ-23 / DC Results / NorthStar / JDAY 126 / 01:51Z
+
+2026-05-06T01:51:34.250Z
+
+SJ-23 / Historical Plot / KBR / JDAY 125 / 21:43Z
+
+50321, 50322, 55131 PoL
+
+2026-05-05T21:44:07.420Z
+
+SJ-23 / TRIC Plot / KBR / JDAY 125 / 21:43Z
+
+2026-05-05T21:43:33.880Z
+
+SJ-23 / 3D Visualization / KBR / JDAY 125 / 21:43Z
+
+2026-05-05T21:43:19.940Z
+
+SJ-23 / Waterfall / KBR / JDAY 125 / 21:42Z
+
+2026-05-05T21:43:05.750Z
+
+SJ-23 / Neighborhood / KBR / JDAY 125 / 21:42Z
+
+2026-05-05T21:42:48.540Z
+
+SJ-23 / Historical Plot / KBR / JDAY 125 / 21:42Z
+
+2026-05-05T21:42:36.900Z
+
+SJ-23 / PASCHED / KBR / JDAY 125 / 21:42Z
+
+2026-05-05T21:42:19.870Z
+
+SJ-23 / Passive RF residuals / KBR / JDAY 125 / 21:41Z
+
+2026-05-05T21:42:09.120Z
+
+SJ-23 / Passive RF Residuals / SAFRAN / JDAY 125 / 21:41Z
+
+2026-05-05T21:41:48.160Z
+
+2026-05-06T15:35:12.045Z
+
+2026-05-06T10:57:51.217Z
+
+2026-05-06T08:57:13.103Z
+
+2026-05-05T21:44:33.782Z
+
+Satellites Number Name Orbit Country 55131 SJ-23 N/A China (PRC) 40746 WGS 7 (USA 263) N/A United States (US)
+
+Number Name Orbit Country 55131 SJ-23 N/A China (PRC) 40746 WGS 7 (USA 263) N/A United States (US)
+
+55131 SJ-23 N/A China (PRC) 40746 WGS 7 (USA 263) N/A United States (US)
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/fc2a4693-83d4-4f56-920a-19fb8c49f6b6/SJ-23%20/%20Waterfall%20/%20KBR%20/%20JDAY%20126%20/%2015%3A23Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/492df9c2-bd5f-4047-aed3-c4b4f92c92b2/SJ-23%20/%20TRIC%20Plot%20/%20%20/%20JDAY%20126%20/%2015%3A07Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/bb97f6ff-1cea-4fac-a39d-abd34835a6a3/SJ-23%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20126%20/%2015%3A07Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a4e8fe5a-f912-475b-a0b1-203ae8cca19d/SJ-23%20/%20%20/%20KBR%20/%20JDAY%20126%20/%2015%3A06Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/8b95d07d-011a-4383-a689-0afa8b2d5899/SJ-23%20/%20TRIC%20Plot%20/%20DRACO%20/%20JDAY%20126%20/%2014%3A31Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/73640aaf-7b97-4632-9725-fad69ce0c7ae/SJ-23%20/%20Conjunction%20information%20/%20NorthStar%20/%20JDAY%20126%20/%2014%3A27Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/d380f3fb-2e6c-4ff0-8b4b-00be2d3a1aa1/SJ-23%20/%20PASCHED%20/%20DRACO%20/%20JDAY%20126%20/%2014%3A27Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/f5402f86-b6a2-4673-ad35-97a36bef359c/SJ-23%20/%20Lightcurve%20/%20DRACO%20/%20JDAY%20126%20/%2014%3A26Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/6bba6529-3d50-419e-bc1f-c87504b4b88d/SJ-23%20/%20Waterfall%20/%20NorthStar%20/%20JDAY%20126%20/%2013%3A45Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/3cafa1c6-87f8-40bd-815d-237c8a711c03/SJ-23%20/%20Neighborhood%20/%20NorthStar%20/%20JDAY%20126%20/%2013%3A45Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/bb2be84d-6bd4-4b4d-987c-012c94a84385/SJ-23%20/%20DC%20Results%20/%20NorthStar%20/%20JDAY%20126%20/%2013%3A45Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/b85194ff-2b6a-42a4-a118-0d37a184e3ef/SJ-23%20/%20PASCHED%20/%20DRACO%20/%20JDAY%20126%20/%2011%3A58Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/0cb16368-4d87-40ba-aad3-6945765cc942/SJ-23%20/%20Neighborhood%20/%20DRACO%20/%20JDAY%20126%20/%2010%3A55Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/4305d964-042c-4548-9517-76f582c0bcf2/SJ-23%20/%20Residual%20ratio%20/%20NorthStar%20/%20JDAY%20126%20/%2010%3A00Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a32fcb32-3eb0-49dd-af4f-a79484e6d61f/SJ-23%20/%20DC%20Results%20/%20NorthStar%20/%20JDAY%20126%20/%2010%3A00Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/486cba7a-f545-4e1e-b140-8beddc8f56ad/SJ-23%20/%20DC%20Results%20/%20NorthStar%20/%20JDAY%20126%20/%2008%3A00Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/a3452c00-2a58-4042-8041-20d74186a42e/SJ-23%20/%20Period%20Plot%20/%20NorthStar%20/%20JDAY%20126%20/%2001%3A51Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/8f4c6e9b-8000-4d48-824c-c83475a9e7fc/SJ-23%20/%20PASCHED%20/%20NorthStar%20/%20JDAY%20126%20/%2001%3A51Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/c9c41bd7-cf51-4493-8df4-63f130830953/SJ-23%20/%20DC%20Results%20/%20NorthStar%20/%20JDAY%20126%20/%2001%3A51Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/69bbfe7a-2011-4b92-a448-5666c5c512d3/SJ-23%20/%20Historical%20Plot%20/%20KBR%20/%20JDAY%20125%20/%2021%3A43Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e9ddc3d1-bd03-4fc3-a4ef-d239b30c660a/SJ-23%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20125%20/%2021%3A43Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/4ec4ea4c-7305-46e1-8c68-b513fd506e98/SJ-23%20/%203D%20Visualization%20/%20KBR%20/%20JDAY%20125%20/%2021%3A43Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/e58e9b13-9a13-4896-a34d-f35ea2b5b9b6/SJ-23%20/%20Waterfall%20/%20KBR%20/%20JDAY%20125%20/%2021%3A42Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/df5e6ef7-144c-457f-9c5e-03a554916776/SJ-23%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20125%20/%2021%3A42Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/0603d57f-d85f-491b-882b-2844ffeadb59/SJ-23%20/%20Historical%20Plot%20/%20KBR%20/%20JDAY%20125%20/%2021%3A42Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/7920233f-fc8a-40a4-af64-7cff02851d51/SJ-23%20/%20PASCHED%20/%20KBR%20/%20JDAY%20125%20/%2021%3A42Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2a2a1d3a-9faa-4fce-bd9c-ffb094ffa2be/SJ-23%20/%20Passive%20RF%20residuals%20/%20KBR%20/%20JDAY%20125%20/%2021%3A41Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2b4c003a-f6eb-410d-9c2b-45d8b069cd99/SJ-23%20/%20Passive%20RF%20Residuals%20/%20SAFRAN%20/%20JDAY%20125%20/%2021%3A41Z

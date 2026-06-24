@@ -16,8 +16,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from api.routes_propagation import router as prop_router
 from api.routes_analysis import router as analysis_router
 
+_SPACETRACK_TLE = "https://www.space-track.org/basicspacedata/query/class/tle_latest/NORAD_CAT_ID"
 _TLE_API = "https://tle.ivanstanojevic.me/api/tle"
-_CELESTRAK_TLE = "https://celestrak.org/satcat/tle.php"  # fallback: ?CATNR=<norad_id>
+_CELESTRAK_TLE = "https://celestrak.org/satcat/tle.php"
 from api.routes_ingestion import router as news_router
 from api.routes_kg import router as kg_router
 from api.routes_wiki import router as wiki_router
@@ -31,8 +32,8 @@ from modules.knowledge_graph.reference_lookup import reference_lookup
 
 
 def _fetch_tle(norad_id: str, label: str):
-    """Try primary TLE API, fall back to CelesTrak. Returns SatelliteMeta or None."""
-    # Primary: tle.ivanstanojevic.me
+    """Try TLE APIs in priority order. Returns SatelliteMeta or None."""
+    # Primary: tle.ivanstanojevic.me (fast)
     try:
         req = urllib.request.Request(
             f"{_TLE_API}/{norad_id}", headers={"User-Agent": "TASA/1.0"}
@@ -44,7 +45,7 @@ def _fetch_tle(norad_id: str, label: str):
     except Exception:
         pass
 
-    # Fallback: CelesTrak (returns raw 3-line TLE text)
+    # Secondary: CelesTrak
     try:
         req = urllib.request.Request(
             f"{_CELESTRAK_TLE}?CATNR={norad_id}", headers={"User-Agent": "TASA/1.0"}
@@ -57,6 +58,37 @@ def _fetch_tle(norad_id: str, label: str):
             return tle_store.upsert(norad_id, name, line1, line2)
         elif len(lines) == 2 and lines[0].startswith("1 ") and lines[1].startswith("2 "):
             return tle_store.upsert(norad_id, label, lines[0], lines[1])
+    except Exception:
+        pass
+
+    # Tertiary: Space-Track (reliable but slower)
+    try:
+        import os
+        username = os.environ.get("SPACETRACK_USERNAME")
+        password = os.environ.get("SPACETRACK_PASSWORD")
+
+        if username and password:
+            import requests
+            session = requests.Session()
+            login_resp = session.post(
+                "https://www.space-track.org/ajaxauth/login",
+                data={"identity": username, "password": password},
+                timeout=8
+            )
+
+            if login_resp.status_code == 200:
+                tle_resp = session.get(
+                    f"{_SPACETRACK_TLE}/{norad_id}/format/json",
+                    timeout=8
+                )
+                if tle_resp.status_code == 200:
+                    data = tle_resp.json()
+                    if data and len(data) > 0:
+                        rec = data[0]
+                        line1 = rec.get("TLE_LINE1", "").strip()
+                        line2 = rec.get("TLE_LINE2", "").strip()
+                        if line1 and line2:
+                            return tle_store.upsert(norad_id, label, line1, line2)
     except Exception:
         pass
 
@@ -116,43 +148,109 @@ _scheduler = BackgroundScheduler()
 @app.on_event("startup")
 async def startup():
     import pathlib
+    import time
+
+    t0 = time.time()
 
     # 1. Load KG (source of truth for which satellites exist)
+    print("[startup] Loading KG...")
     schema_path = pathlib.Path(__file__).parent.parent / "data" / "schema" / "schema.yaml"
     schema_manager.load(schema_path)
     kg_store.load()
     reference_lookup.load()
+    t1 = time.time()
+    print(f"[startup] KG loaded in {t1-t0:.2f}s")
 
-    # 2. Sync TLE store from KG — fetch TLEs for any KG satellite not already seeded
-    fetched = _sync_tle_from_kg()
-    if fetched:
-        print(f"[startup] fetched TLEs for KG satellites: {fetched}")
+    # 1.4 Load TLE from files (data/tle/*.json)
+    print("[startup] Loading TLE files...")
+    tle_store.load_from_disk()
+    t1_tle = time.time()
+    tles_count = len(tle_store.all_satellites())
+    print(f"[startup] Loaded {tles_count} TLEs from disk in {t1_tle-t1:.2f}s")
 
-    # 3. Pre-compute positions only for satellites present in the KG
-    kg_norad_ids: set[str] = set()
+    # 1.5 Populate orbit_type (LEO/MEO/GEO/HEO) for satellites with orbital_period
+    from modules.events.event_store import classify_regime
+    updated = 0
     for node in kg_store.nodes.values():
-        raw = (node.get("attributes") or {}).get("norad_id") or {}
-        norad_id = str(raw.get("value", "") or "").strip()
-        if norad_id and norad_id.isdigit():
-            kg_norad_ids.add(norad_id)
-
-    now = datetime.now(timezone.utc).replace(second=0, microsecond=0)
-    start = now - timedelta(hours=12)
-    end = now + timedelta(hours=12)
-    no_tle = []
-    for norad_id in kg_norad_ids:
-        sat = tle_store.get(norad_id)
-        if not sat:
-            no_tle.append(norad_id)
+        all_types = [node.get("type", "")] + (node.get("inferred_types") or [])
+        is_satellite = any(
+            t == "Satellite" or (isinstance(t, str) and t.endswith("Satellite"))
+            for t in all_types
+        )
+        if not is_satellite:
             continue
-        positions = sgp4_propagator.get_positions(sat.line1, sat.line2, start, end, step_seconds=60)
-        _position_cache[sat.norad_id] = [
-            {"lat": p.lat, "lon": p.lon, "alt": p.alt, "timestamp": p.timestamp}
-            for p in positions
-        ]
-    print(f"[startup] pre-computed positions for {list(_position_cache.keys())}")
-    if no_tle:
-        print(f"[startup] skipped (no TLE available): {no_tle}")
+        attrs = node.get("attributes") or {}
+
+        # Skip if orbit_type already set
+        if attrs.get("orbit_type", {}).get("value"):
+            continue
+
+        # Try to compute from orbital_period
+        period_data = attrs.get("orbital_period") or {}
+        period_val = period_data.get("value") if isinstance(period_data, dict) else period_data
+        if not period_val:
+            continue
+
+        try:
+            period_min = float(period_val)
+            regime = classify_regime(period_min)
+            if "attributes" not in node:
+                node["attributes"] = {}
+            node["attributes"]["orbit_type"] = {"value": regime, "source": "auto_from_orbital_period"}
+            updated += 1
+        except (ValueError, TypeError):
+            pass
+
+    if updated > 0:
+        kg_store.save()
+        print(f"[startup] orbit_type populated for {updated} satellites")
+
+    # 1.6 Backfill regime field in existing events (from satellite's orbit_type or KG data)
+    from modules.events.event_store import event_store
+    event_updated = 0
+    event_store._load()
+    for event in event_store.events.values():
+        if event.get("regime"):
+            continue  # already has regime
+
+        # Try to get regime from satellite's orbit_type in KG
+        sat_id = event.get("satellite_id")
+        if sat_id:
+            for node in kg_store.nodes.values():
+                node_attrs = node.get("attributes") or {}
+                norad_id = str(node_attrs.get("norad_id", {}).get("value", "") or "").strip()
+                if norad_id == sat_id:
+                    orbit_type = node_attrs.get("orbit_type", {}).get("value")
+                    if orbit_type:
+                        event["regime"] = orbit_type
+                        event_updated += 1
+                    break
+            # Try from orbital_period in event itself
+            if not event.get("regime") and event.get("orbital_period"):
+                try:
+                    period_min = float(event.get("orbital_period"))
+                    event["regime"] = classify_regime(period_min)
+                    event_updated += 1
+                except (ValueError, TypeError):
+                    pass
+
+    if event_updated > 0:
+        event_store.save()
+        print(f"[startup] regime backfilled for {event_updated} events")
+
+    # 2. For satellites in KG but not in TLE files, fetch TLE (on-demand only)
+    # We only fetch missing TLEs to avoid excessive API calls
+    print("[startup] Checking for satellites in KG missing TLEs...")
+    missing_tles = _sync_tle_from_kg()
+    if missing_tles:
+        print(f"[startup] Fetched TLEs for {len(missing_tles)} satellites: {', '.join(missing_tles[:5])}")
+    else:
+        print("[startup] All KG satellites have TLE data")
+
+    # 3. Skip position pre-computation (TLEs loaded on-demand)
+    print("[startup] Position caching: deferred to on-demand")
+    t4 = time.time()
+    print(f"[startup] TOTAL STARTUP TIME: {t4-t0:.2f}s")
 
     # 4. Snapshot current TLEs into history archive (runs once at startup, then daily)
     def _snapshot_all_tles():
@@ -161,7 +259,10 @@ async def startup():
             if sat.line1 and sat.line2:
                 _tle_snapshot(sat.norad_id, sat.line1, sat.line2)
                 count += 1
-        print(f"[tle_history] snapshotted {count} TLEs")
+        if count > 0:
+            print(f"[tle_history] snapshotted {count} TLEs")
+        else:
+            print(f"[tle_history] no TLEs in store yet (will snapshot on-demand fetches)")
 
     _scheduler.add_job(
         _snapshot_all_tles,

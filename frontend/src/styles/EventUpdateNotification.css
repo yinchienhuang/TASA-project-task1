@@ -1,0 +1,246 @@
+.event-update-notification {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fafafa;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.notification-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.summary-stat {
+  display: flex;
+  gap: 12px;
+}
+
+.stat-item {
+  font-size: 13px;
+  padding: 4px 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  color: #555;
+  font-weight: 500;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #999;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.close-btn:hover {
+  background: #e8e8e8;
+  color: #333;
+}
+
+/* Significant updates section */
+.significant-section {
+  background: #fffbf0;
+  border-left: 4px solid #ff9800;
+  padding: 12px 12px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.significant-section h4 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #e65100;
+}
+
+/* All updates section */
+.all-updates-section h4 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+}
+
+/* Updates list */
+.updates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.updates-list.compact {
+  gap: 8px;
+}
+
+/* Individual update card */
+.update-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.update-card:hover {
+  border-color: #bbb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+
+.header-info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex: 1;
+}
+
+.satellite-label {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+.event-type {
+  font-size: 12px;
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.status-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.updated {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.status-badge.created {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.expand-btn {
+  background: none;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  color: #999;
+  padding: 4px 8px;
+  transition: color 0.2s;
+}
+
+.expand-btn:hover {
+  color: #666;
+}
+
+/* Card content (expanded) */
+.card-content {
+  padding: 12px;
+}
+
+.summary {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  color: #666;
+  font-weight: 500;
+}
+
+.changes-container {
+  margin: 10px 0;
+}
+
+.field-change {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 0;
+  font-size: 13px;
+}
+
+.field-name {
+  font-weight: 500;
+  color: #333;
+  min-width: 120px;
+}
+
+.field-change.added .change-value.added {
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.field-change.updated {
+  gap: 4px;
+}
+
+.old-value {
+  color: #d32f2f;
+  text-decoration: line-through;
+}
+
+.arrow {
+  color: #999;
+  font-size: 11px;
+}
+
+.new-value {
+  color: #1976d2;
+  font-weight: 500;
+}
+
+.field-change.removed .change-value.removed {
+  color: #c62828;
+  text-decoration: line-through;
+}
+
+.more-changes {
+  margin: 6px 0 0 0;
+  font-size: 12px;
+  color: #999;
+  font-style: italic;
+}
+
+.source-file {
+  margin: 8px 0 0 0;
+  font-size: 12px;
+  color: #999;
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+}

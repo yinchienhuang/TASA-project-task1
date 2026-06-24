@@ -1,0 +1,52 @@
+NOTSO_Photometric Change / Cosmos 2589 (64467) _01Jun-1348Z
+
+JDay 152 at 1330z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have detected a Photometric change on Cosmos 2589 (64467). This change occurred on 1 of June (JDay 152) between 1008Z and 1046Z between the solar phase angles of -115 deg to -102 deg and appeared to be 1 visual magnitude brighter. 
+ At the time of the change Cosmos 2589 (64467) had good lighting to view Chinasat 2E (49062), they are 35-40km apart. 
+This photometric variation is consistent with the historical pattern of life for this object in the past few weeks. ... (Read More)
+
+JDAY 152, 1326Z
+
+Mission Summary: 
+Cosmos 2589 is a suspected Russian military inspector satellite, believed to be linked to the Nivelir anti-satellite program, designed to conduct close-proximity surveillance and rendezvous operations with other spacecraft in the geosynchronous belt. On June 26, 2025 — just one week after launch — it released a sub-satellite designated Cosmos 2590, which subsequently acted as the maneuvering object in a series of rendezvous and proximity operations, closing to within 2 km of Cosmos 2589 itself over a two-week period in November 2025. By late November 2025, Cosmos 2589 began circularizing its orbit to transition into a standard geosynchronous orbit, where analysts expect it to conduct ongoing inspection missions — potentially shadowing or closely monitoring other satellites in that orbital regime.
+Source: TAB
+... (Read More)
+
+COSMOS 2589 /  / Northstar / JDAY 152 / 13:40Z
+
+2026-06-01T13:40:56.630Z
+
+COSMOS 2589 / TRIC Plot / Northstar / JDAY 152 / 13:40Z
+
+2026-06-01T13:40:39.100Z
+
+COSMOS 2589 / Neighborhood / Northstar / JDAY 152 / 13:40Z
+
+2026-06-01T13:40:21.380Z
+
+COSMOS 2589 / Lightcurve / Northstar / JDAY 152 / 13:39Z
+
+2026-06-01T13:40:08.890Z
+
+COSMOS 2589 /  / Northstar / JDAY 152 / 13:39Z
+
+2026-06-01T13:39:51.540Z
+
+2026-06-01T13:39:29.580Z
+
+2026-06-01T13:48:43.460Z
+
+Satellites Number Name Orbit Country 64467 COSMOS 2589 N/A Russia (CIS)
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/075d1aa2-6a6e-4dae-aefd-3bf41adbc22e/COSMOS%202589%20/%20%20/%20Northstar%20/%20JDAY%20152%20/%2013%3A40Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/ed914563-3b74-4c40-a98c-4a611a6817e2/COSMOS%202589%20/%20TRIC%20Plot%20/%20Northstar%20/%20JDAY%20152%20/%2013%3A40Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/d715f4c4-02ca-41ce-99be-191409562514/COSMOS%202589%20/%20Neighborhood%20/%20Northstar%20/%20JDAY%20152%20/%2013%3A40Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/5b04014b-a70c-4519-8886-373e86906e5c/COSMOS%202589%20/%20Lightcurve%20/%20Northstar%20/%20JDAY%20152%20/%2013%3A39Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/abf71885-8847-45db-9b2f-2fe40844607f/COSMOS%202589%20/%20%20/%20Northstar%20/%20JDAY%20152%20/%2013%3A39Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/c8fb2f6f-eaad-454a-afb2-6ccbb5fac198/COSMOS%202589%20/%20%20/%20Northstar%20/%20JDAY%20152%20/%2013%3A39Z

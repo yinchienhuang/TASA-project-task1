@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useAppStore } from '../../store/appStore';
 import {
   getSatelliteInfo, getSatelliteEvents, deleteEvent,
-  findNoradCandidates, assignNoradId,
+  findNoradCandidates, assignNoradId, getTLEWithCache,
 } from '../../api/client';
 import type { SatelliteInfo } from '../../data/mockData';
 import type { SatelliteEvent, NoradCandidate } from '../../api/client';
@@ -433,18 +433,43 @@ function ImagePlaceholder({ name }: { name: string }) {
 function TLEViewer({ noradId }: { noradId: string }) {
   const [tle, setTle] = useState<{ name: string; line1: string; line2: string } | null>(null);
   const [status, setStatus] = useState<'loading' | 'ok' | 'none'>('loading');
+  const [refreshing, setRefreshing] = useState(false);
+  const [refreshMsg, setRefreshMsg] = useState('');
 
-  useEffect(() => {
+  const loadTle = async () => {
     setStatus('loading');
     setTle(null);
-    fetch(`${API}/api/propagation/tle/${encodeURIComponent(noradId)}`)
-      .then((r) => r.ok ? r.json() : null)
-      .then((d) => {
-        if (d?.line1 && d?.line2) { setTle(d); setStatus('ok'); }
-        else setStatus('none');
-      })
-      .catch(() => setStatus('none'));
+    const d = await getTLEWithCache(noradId);
+    if (d?.line1 && d?.line2) { setTle(d); setStatus('ok'); }
+    else setStatus('none');
+  };
+
+  useEffect(() => {
+    loadTle();
   }, [noradId]);
+
+  const handleRefresh = async () => {
+    setRefreshing(true);
+    setRefreshMsg('');
+    try {
+      const r = await fetch(`${API}/api/propagation/tle/${encodeURIComponent(noradId)}/refresh`, {
+        method: 'POST',
+      });
+      if (r.ok) {
+        const data = await r.json();
+        setTle(data);
+        setStatus('ok');
+        setRefreshMsg('✓ Updated from Space-Track');
+        setTimeout(() => setRefreshMsg(''), 3000);
+      } else {
+        setRefreshMsg('Failed to refresh');
+      }
+    } catch (e) {
+      setRefreshMsg('Error refreshing TLE');
+    } finally {
+      setRefreshing(false);
+    }
+  };
 
   const epoch = tle?.line1
     ? (() => {
@@ -459,7 +484,20 @@ function TLEViewer({ noradId }: { noradId: string }) {
 
   return (
     <div style={{ marginTop: 20, borderTop: '1px solid #21262d', paddingTop: 14 }}>
-      <div style={{ color: '#8b949e', fontSize: 11, marginBottom: 8 }}>TLE</div>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
+        <span style={{ color: '#8b949e', fontSize: 11 }}>TLE</span>
+        <button
+          onClick={handleRefresh}
+          disabled={refreshing || status === 'loading'}
+          style={{
+            background: 'none', border: 'none', color: '#58a6ff', cursor: 'pointer',
+            fontSize: 11, padding: 0, opacity: refreshing ? 0.6 : 1,
+          }}
+        >
+          {refreshing ? '⟳ Updating…' : '⟳ Fetch Latest'}
+        </button>
+      </div>
+      {refreshMsg && <div style={{ color: '#3fb950', fontSize: 10, marginBottom: 6 }}>{refreshMsg}</div>}
       {status === 'loading' && <div style={{ color: '#484f58', fontSize: 11 }}>Loading…</div>}
       {status === 'none' && <div style={{ color: '#484f58', fontSize: 11 }}>No TLE registered</div>}
       {status === 'ok' && tle && (

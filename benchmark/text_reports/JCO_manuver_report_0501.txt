@@ -1,0 +1,118 @@
+NOTSO_Possible Maneuver / TJS-15 (63157) / GEO _01May-1514Z
+
+JDay 121 at 1515z:
+ 
+Based on current SDA observations and available PAIR data, JCO providers have verified a maneuver by TJS-15 (63157), occurring at 2059z on 30Apr (JDay 120).
+
+The satellite maneuvered from 94.34 deg E longitude with a delta-v of 0.19 m/s, resulting in 
+an increase in perigee by 0.32km and decrease in apogee by 0.32km.
+
+This maneuver appears to be a station-keeping maneuver and is within the historical pattern of life for this object. 
+Neighborhood of nearby objects is attached showing upcoming close approaches as a result of this maneuver.
+ 
+PAI suggests that TJS-15 is a Chinese satellite that supports military operations. The mission of TJS-15 is believed to support missile early warning, signals intelligence, and/or other unidentified missions. 
+ 
+The specifics of the maneuver are: 
+--Time of Maneuver: 30Apr2059z
+--Delta V: 0.19 m/s
+--Period Change: -0.0008 seconds
+--Perigee Change: 0.32 km
+--Apogee Change: -0.32 km
+--Inclination Change: -0.0036 deg
+--Current Drift Rate: 0.01 E deg/day
+ 
+Post Maneuver Current TLE as of 01May1424z provided by KBR:
+1 63157U 25045A   26121.60074029 -.00000146 +00000-0 -12156-5 0  0004
+2 63157   0.2753  84.4803 0006474 290.0675 155.5953  1.00275761000000
+
+Post Maneuver Current TLE as of 01May1330z provided by Exo:
+1 63157U 25045A   26121.59373259 +.00000000 +00000-0 +00000-0 0  0017
+2 63157   0.2753  84.5006 0006528 290.5529 152.5589  1.00275133 00015
+
+=========================================================================
+JDay 121 at 1317z:
+
+Based on current SDA observations and available PAIR data, JCO providers have detected a  possible maneuver on TJS-15 (63157), occurring at 1014z  on 01MAY (JDay 121).
+
+The satellite was located at 94.37 degs E longitude. Based on initial indications, it appears to be outside Pattern of Life. Analysis is ongoing.
+
+The associated Neighbourhood has been generated using the pre-maneuver state and may differ from the post-maneuver state.
+
+According to PAI, TJS-15 is a Chinese satellite that supports military operations. The mission of TJS-15 is believed to support missile early warning, signals intelligence, and/or other unidentified missions. 
+
+Pre-maneuver TLE as of 30Apr provided by KBR:
+1 63157U 25045A   26120.86999855 +.00000219 +00000-0 +18288-5 0  0005
+2 63157   0.2771  84.4600 0006550 289.9198 251.9653  1.00276015000019
+
+JDAY 121, 1455Z
+
+Space Weather Conditions during possible maneuver (2059 Z, JDAY 120)  
+Radio Blackout Impacts – R0 (N/A)  
+Solar Radiation Storm Impacts – S0 (N/A) 
+Geomagnetic Storm Impacts – G0 (N/A)  ... (Read More)
+
+TJS-15 / Waterfall / Exo / JDAY 121 / 15:06Z
+
+2026-05-01T15:06:45.270Z
+
+TJS-15 / TRIC Plot / KBR / JDAY 121 / 15:06Z
+
+2026-05-01T15:06:29.750Z
+
+TJS-15 / Neighborhood / KBR / JDAY 121 / 15:05Z
+
+2026-05-01T15:05:42.920Z
+
+TJS-15 / DC Results / KBR / JDAY 121 / 15:05Z
+
+2026-05-01T15:05:26.470Z
+
+TJS-15 / Waterfall / KBR / JDAY 121 / 13:21Z
+
+2026-05-01T13:21:12.480Z
+
+TJS-15 / ELSET / KBR / JDAY 121 / 13:19Z
+
+2026-05-01T13:20:07.930Z
+
+TJS-15 / Residuals / KBR / JDAY 121 / 13:19Z
+
+2026-05-01T13:19:45.730Z
+
+TJS-15 / Lightcurve / KBR / JDAY 121 / 13:17Z
+
+2026-05-01T13:17:44.440Z
+
+TJS-15 / PASCHED / KBR / JDAY 121 / 13:17Z
+
+2026-05-01T13:17:35.380Z
+
+TJS-15 / Neighborhood / KBR / JDAY 121 / 13:17Z
+
+2026-05-01T13:17:20.170Z
+
+2026-05-01T15:14:20.886Z
+
+2026-05-01T13:21:47.833Z
+
+Satellites Number Name Orbit Country 63157 TJS-15 N/A China (PRC)
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/4996ae3d-817e-4c94-bf76-fb6b88e20825/TJS-15%20/%20Waterfall%20/%20Exo%20/%20JDAY%20121%20/%2015%3A06Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/93673857-4de0-4a9a-8898-fb2914e97a02/TJS-15%20/%20TRIC%20Plot%20/%20KBR%20/%20JDAY%20121%20/%2015%3A06Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/2cc2af1b-ec15-40f3-ad3f-f62b7bd45dbf/TJS-15%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20121%20/%2015%3A05Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/50eee299-3e7a-4cd7-9cb8-700f083f1f2c/TJS-15%20/%20DC%20Results%20/%20KBR%20/%20JDAY%20121%20/%2015%3A05Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/efebe16f-cf65-494a-8f79-0cce00b9bac9/TJS-15%20/%20Waterfall%20/%20KBR%20/%20JDAY%20121%20/%2013%3A21Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/414c7ac4-b5e1-4699-8df4-1895ac132cee/TJS-15%20/%20ELSET%20/%20KBR%20/%20JDAY%20121%20/%2013%3A19Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/722b730a-4b8f-40a7-9bf7-bc3873bbcaef/TJS-15%20/%20Residuals%20/%20KBR%20/%20JDAY%20121%20/%2013%3A19Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/6a76ba3d-4540-4a03-b59c-db70b5aca081/TJS-15%20/%20Lightcurve%20/%20KBR%20/%20JDAY%20121%20/%2013%3A17Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/5c501013-04d9-4c50-966d-469a09891a14/TJS-15%20/%20PASCHED%20/%20KBR%20/%20JDAY%20121%20/%2013%3A17Z
+
+URL: https://s3.us-gov-west-1.amazonaws.com/do-mmbsync/8203911e-d12b-4e35-bf08-c1c08eb8b697/TJS-15%20/%20Neighborhood%20/%20KBR%20/%20JDAY%20121%20/%2013%3A17Z
